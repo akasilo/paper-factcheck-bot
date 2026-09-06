@@ -37,6 +37,25 @@ def strip_markup(s: str) -> str:
     return s.replace("[[", "**").replace("]]", "**").replace("{{", "**").replace("}}", "**")
 
 
+EVIDENCE_KO = {
+    "meta-analysis": "메타분석 (가장 강한 근거)",
+    "systematic review": "체계적 문헌고찰",
+    "review": "리뷰 논문",
+    "rct": "무작위 대조 시험(RCT)",
+    "cohort": "코호트 연구",
+    "cross-sectional": "단면 연구",
+    "experimental": "실험 연구 (단일 실험)",
+    "animal": "동물 실험",
+    "in-vitro": "세포·시험관 실험",
+    "other": "기타",
+}
+
+
+def evidence_ko(level: str) -> str:
+    key = (level or "").strip().lower()
+    return f"{EVIDENCE_KO.get(key, key or '(미상)')} · `{key}`" if key else "(미상)"
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", required=True)
@@ -74,7 +93,7 @@ def main() -> int:
         "- 글을 고치려면 `queue/" + args.date + ".json` 을 편집한 뒤 댓글로 링크",
         "",
         f"**추천 제품 조건:** {item.get('product_hint') or '(없음)'}",
-        f"**근거 수준:** {item.get('evidence_level', '')}",
+        f"**근거 수준:** {evidence_ko(item.get('evidence_level', ''))}",
         "",
         "### 논문",
         f"- {paper.get('title', '')}",
@@ -87,7 +106,8 @@ def main() -> int:
         if c.get("type") == "source":
             lines.append(f"{i}. (출처 카드)")
         else:
-            t = strip_markup(c.get("text", "")).replace("\n", " / ")
+            # ~ 는 GitHub 마크다운에서 취소선이 되므로 이스케이프
+            t = strip_markup(c.get("text", "")).replace("\n", " / ").replace("~", "\\~")
             lines.append(f"{i}. {t}")
             if c.get("note"):
                 lines.append(f"   - {c['note']}")
