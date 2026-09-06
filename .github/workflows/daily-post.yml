@@ -59,4 +59,5 @@ jobs:
 
       - name: Commit results
         if: always()
-        run: bash bot/commit_push.sh "post: $(date +%Y-%m-%d) [skip ci]" queue posted skipped
+        run: |
+          bash bot/commit_push.sh "post: $(date +%Y-%m-%d) [skip ci]" queue posted skipped
