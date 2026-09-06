@@ -36,13 +36,4 @@ jobs:
         run: python bot/approve_from_comment.py
 
       - name: Commit
-        run: |
-          git config user.name "paper-factcheck-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add -A queue
-          if git diff --cached --quiet; then
-            echo "변경 없음"
-          else
-            git commit -m "approve: issue #${ISSUE_NUMBER} [skip ci]"
-            git push
-          fi
+        run: bash bot/commit_push.sh "approve: issue #${ISSUE_NUMBER} [skip ci]" queue
