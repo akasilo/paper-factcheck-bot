@@ -1,0 +1,24 @@
+name: refresh-tokens
+
+on:
+  schedule:
+    # 매주 월요일 05:00 KST — 60일 토큰을 계속 연장한다
+    - cron: "0 20 * * 0"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+      # 선택: Actions secrets 쓰기 권한이 있는 fine-grained PAT. 있으면 새 토큰을 자동으로 Secrets 에 저장.
+      REPO_PAT: ${{ secrets.REPO_PAT }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python bot/refresh_tokens.py
