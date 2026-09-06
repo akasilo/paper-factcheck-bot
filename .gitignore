@@ -1,0 +1,5 @@
+.env
+secrets.env
+_secrets_do_not_upload/
+__pycache__/
+*.pyc
