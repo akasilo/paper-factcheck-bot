@@ -36,4 +36,5 @@ jobs:
         run: python bot/approve_from_comment.py
 
       - name: Commit
-        run: bash bot/commit_push.sh "approve: issue #${ISSUE_NUMBER} [skip ci]" queue
+        run: |
+          bash bot/commit_push.sh "approve: issue #${ISSUE_NUMBER} [skip ci]" queue
