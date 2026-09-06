@@ -1,6 +1,6 @@
 name: draft-post
 
-# 매일 저녁 8시(KST): 논문 검색 → Gemini 원고 초안 → 카드 렌더 → queue/<내일>.json 커밋 → 승인 이슈 열기
+# 매일 저녁 8시(KST): 논문 검색 → LLM 판정·원고 초안 → 카드 렌더 → queue/<내일>.json 커밋 → 승인 이슈 열기
 on:
   schedule:
     - cron: "0 11 * * *"   # 20:00 KST
@@ -85,16 +85,8 @@ jobs:
         run: python bot/render_cards.py --date "${{ steps.d.outputs.date }}"
 
       - name: Commit draft
-        run: |
-          git config user.name "paper-factcheck-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add -A queue images data
-          if git diff --cached --quiet; then
-            echo "변경 없음"
-          else
-            git commit -m "draft: ${{ steps.d.outputs.date }} [skip ci]"
-            git push
-          fi
+        # 다른 워크플로가 먼저 push 했으면 자동으로 다시 받아서 재시도 (bot/commit_push.sh)
+        run: bash bot/commit_push.sh "draft: ${{ steps.d.outputs.date }} [skip ci]" queue images data
 
       - name: Open approval issue
         run: python bot/open_issue.py --date "${{ steps.d.outputs.date }}"
