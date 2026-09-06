@@ -6,10 +6,11 @@ queue/<date>.json 을 생성한다 (approved: false).
   python bot/draft_post.py --date 2026-09-08                # data/candidate.json 사용
   python bot/draft_post.py --date 2026-09-08 --candidate data/candidate.json
 환경변수
-  LLM_PROVIDER : github (기본, 무료 — GitHub Models) | gemini
-  LLM_MODEL    : github 일 때 모델 (기본 openai/gpt-4.1-mini)
-  GH_TOKEN     : github 일 때 필요 (Actions 에서는 GITHUB_TOKEN, 워크플로에 models: read 권한 필요)
-  GEMINI_API_KEY, GEMINI_MODEL : gemini 일 때
+  LLM_PROVIDER : groq (기본, 무료 티어) | openrouter | cerebras | openai | openai_compat | gemini | github
+  LLM_API_KEY  : OpenAI 호환 제공자의 API 키 (groq 등)
+  LLM_MODEL    : 모델명, 쉼표로 여러 개 적으면 앞에서부터 시도 (비우면 제공자별 기본 후보)
+  LLM_BASE_URL : openai_compat 일 때 필수
+  GEMINI_API_KEY, GEMINI_MODEL : gemini 일 때 / GH_TOKEN : github 일 때
 """
 from __future__ import annotations
 
@@ -127,20 +128,95 @@ def github_models_generate(prompt: str, system: str, model: str, token: str) -> 
     return json.loads(text)
 
 
+def openai_compat_generate(prompt: str, system: str, model: str, api_key: str, base_url: str) -> dict:
+    """OpenAI 호환 chat/completions (Groq, OpenRouter, Cerebras, Together, OpenAI 등 공용)."""
+    url = base_url.rstrip("/") + "/chat/completions"
+    headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
+    body = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": prompt},
+        ],
+        "temperature": 0.7,
+        "max_tokens": 4000,
+        "response_format": {"type": "json_object"},
+    }
+    r = requests.post(url, headers=headers, json=body, timeout=180)
+    if r.status_code >= 400:
+        raise RuntimeError(f"LLM({base_url}) {r.status_code}: {r.text[:500]}")
+    data = r.json()
+    try:
+        choice = data["choices"][0]
+        text = choice["message"]["content"]
+    except (KeyError, IndexError):
+        raise RuntimeError(f"LLM 응답 형식 이상: {json.dumps(data)[:500]}")
+    if choice.get("finish_reason") == "length":
+        raise RuntimeError("출력이 잘렸습니다(finish_reason=length)")
+    text = (text or "").strip()
+    text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text)
+    return json.loads(text)
+
+
+# provider 별 기본 base_url 과 무료로 쓸 만한 모델 후보 (앞에서부터 시도, 404/모델없음이면 다음)
+PROVIDER_DEFAULTS = {
+    "groq": ("https://api.groq.com/openai/v1",
+             ["openai/gpt-oss-120b", "llama-3.3-70b-versatile", "meta-llama/llama-4-maverick-17b-128e-instruct"]),
+    "openrouter": ("https://openrouter.ai/api/v1",
+                   ["openai/gpt-oss-120b:free", "deepseek/deepseek-chat-v3-0324:free", "qwen/qwen3-235b-a22b:free"]),
+    "cerebras": ("https://api.cerebras.ai/v1", ["gpt-oss-120b", "llama-3.3-70b"]),
+    "openai": ("https://api.openai.com/v1", ["gpt-4.1-mini"]),
+    "openai_compat": ("", []),
+}
+
+
 def generate(prompt: str, system: str) -> tuple[dict, str]:
-    """환경변수에 따라 provider 선택. (결과, 사용한 모델명) 반환"""
-    provider = os.environ.get("LLM_PROVIDER", "github").strip().lower()
+    """환경변수에 따라 provider 선택. (결과, 사용한 모델명) 반환
+
+    LLM_PROVIDER = groq | openrouter | cerebras | openai | openai_compat | gemini | github
+    LLM_API_KEY  = 위 OpenAI 호환 제공자의 키
+    LLM_MODEL    = 모델명 (쉼표로 여러 개 적으면 앞에서부터 시도)
+    LLM_BASE_URL = openai_compat 일 때 필수
+    """
+    provider = os.environ.get("LLM_PROVIDER", "groq").strip().lower()
+
     if provider == "gemini":
         key = os.environ.get("GEMINI_API_KEY", "").strip()
         if not key:
             raise SystemExit("GEMINI_API_KEY 가 없습니다.")
         model = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
         return gemini_generate(prompt, system, model, key), f"gemini:{model}"
-    token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or ""
-    if not token.strip():
-        raise SystemExit("GH_TOKEN 이 없습니다 (GitHub Models 호출용).")
-    model = os.environ.get("LLM_MODEL", "openai/gpt-4.1-mini")
-    return github_models_generate(prompt, system, model, token.strip()), f"github:{model}"
+
+    if provider == "github":
+        token = (os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or "").strip()
+        if not token:
+            raise SystemExit("GH_TOKEN 이 없습니다 (GitHub Models 호출용).")
+        model = os.environ.get("LLM_MODEL", "openai/gpt-4.1-mini")
+        return github_models_generate(prompt, system, model, token), f"github:{model}"
+
+    if provider not in PROVIDER_DEFAULTS:
+        raise SystemExit(f"알 수 없는 LLM_PROVIDER: {provider}")
+    base_url = os.environ.get("LLM_BASE_URL", "").strip() or PROVIDER_DEFAULTS[provider][0]
+    if not base_url:
+        raise SystemExit("LLM_BASE_URL 이 필요합니다 (openai_compat).")
+    key = os.environ.get("LLM_API_KEY", "").strip()
+    if not key:
+        raise SystemExit("LLM_API_KEY 가 없습니다. GitHub Secrets 에 넣어주세요.")
+    models = [m.strip() for m in os.environ.get("LLM_MODEL", "").split(",") if m.strip()] \
+        or PROVIDER_DEFAULTS[provider][1]
+    last_err: Exception | None = None
+    for model in models:
+        try:
+            return openai_compat_generate(prompt, system, model, key, base_url), f"{provider}:{model}"
+        except RuntimeError as e:
+            msg = str(e)
+            last_err = e
+            # 모델이 없거나 폐기된 경우만 다음 후보로, 나머지 오류는 그대로 올림
+            if any(k in msg for k in (" 404", "model_not_found", "does not exist", "decommissioned", "not found")):
+                print(f"  모델 {model} 사용 불가 → 다음 후보", file=sys.stderr)
+                continue
+            raise
+    raise RuntimeError(f"사용 가능한 모델이 없습니다: {last_err}")
 
 
 def build_prompt(topic: dict, paper: dict) -> str:
@@ -198,7 +274,7 @@ def main() -> int:
         print(f"이미 큐가 있습니다: {qpath.name} (--force 로 덮어쓰기)")
         return 0
 
-    print(f"원고 작성 ({os.environ.get('LLM_PROVIDER', 'github')}): [{topic['ko']}] {paper['title'][:70]}")
+    print(f"원고 작성 ({os.environ.get('LLM_PROVIDER', 'groq')}): [{topic['ko']}] {paper['title'][:70]}")
     draft = None
     used_model = ""
     problems: list[str] = []
