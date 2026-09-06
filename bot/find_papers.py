@@ -163,8 +163,11 @@ def matches_topic(p: dict, topic: dict) -> bool:
     must = [m.lower() for m in topic.get("must", []) if m]
     if not must:
         return True
-    hay = (p["title"] + " " + p["abstract"]).lower()
-    return any(m in hay for m in must)
+    title = p["title"].lower()
+    if any(m in title for m in must):
+        return True
+    abstract = p["abstract"].lower()
+    return sum(abstract.count(m) for m in must) >= 2   # 초록에 두 번 이상은 나와야 '그 제품' 논문으로 본다
 
 
 def score_paper(p: dict, used: set[str], topic: dict | None = None) -> float:
@@ -214,29 +217,99 @@ def pick_topics(n: int = 3, only: str | None = None) -> list[dict]:
     return pool[:n]
 
 
-def find_best(n_topics: int = 3, only: str | None = None) -> dict | None:
+JUDGE_SYSTEM = """당신은 인스타그램 계정 @paper_factcheck 의 편집장입니다.
+이 계정은 "일상 속 제품(선크림, 프라이팬, 텀블러, 영양제 …)이 의외로 안 좋다/의외로 좋다"를 최신 논문으로 팩트체크합니다.
+아래 후보 논문들 중에서 오늘 게시물로 만들 논문 하나를 고르세요.
+
+판단 기준 (중요한 순서)
+1. 제품 직접성: 논문이 그 제품(또는 그 제품의 핵심 성분·사용 상황)을 직접 다루는가. 환경·하수·작물 같은 간접 경로만 다루면 탈락.
+2. 독자 유용성: 일반 소비자가 "그래서 뭘 바꾸면 되는데?"에 답할 수 있는 결론이 있는가.
+3. 근거 수준: 메타분석·체계적 문헌고찰·RCT·대규모 코호트 > 소규모·동물·세포 실험.
+4. 훅 가능성: 첫 장 한 줄로 궁금증을 만들 수 있는가.
+
+출력은 JSON 하나만:
+{"pick": <후보 번호(1부터) 또는 0(적합한 게 없음)>, "fit": <0~10>, "angle": "<한 줄: 어떤 각도로 쓰면 좋은지>", "reason": "<한 줄 이유>"}
+fit 이 6 미만이면 pick 은 0 으로 하세요."""
+
+
+def llm_judge(cands: list[dict]) -> dict | None:
+    """후보 논문들을 LLM 에게 보여주고 제품 직접성 기준으로 하나를 고르게 한다. 실패하면 None."""
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from draft_post import generate  # noqa
+    except Exception as e:
+        print(f"  judge 불가(import): {e}", file=sys.stderr)
+        return None
+    lines = []
+    for i, c in enumerate(cands, 1):
+        p = c["paper"]
+        abstract = re.sub(r"\s+", " ", p["abstract"])[:900]
+        lines.append(f"[{i}] 주제: {c['topic']['ko']} / 유형: {', '.join(p['pubtypes'][:3])} / {p['year']}\n"
+                     f"제목: {p['title']}\n초록: {abstract}\n")
+    prompt = "후보 논문 목록:\n\n" + "\n".join(lines) + "\n위 기준으로 JSON 을 작성하세요."
+    try:
+        res, model = generate(prompt, JUDGE_SYSTEM)
+    except Exception as e:
+        print(f"  judge 실패: {e}", file=sys.stderr)
+        return None
+    try:
+        pick = int(res.get("pick", 0))
+        fit = float(res.get("fit", 0))
+    except (TypeError, ValueError):
+        return None
+    print(f"  judge({model}): pick={pick} fit={fit} angle={res.get('angle', '')} — {res.get('reason', '')}")
+    if pick < 1 or pick > len(cands) or fit < 6:
+        return {"pick": None, "fit": fit, "reason": res.get("reason", "")}
+    chosen = dict(cands[pick - 1])
+    chosen["angle"] = res.get("angle", "")
+    chosen["fit"] = fit
+    return {"pick": chosen}
+
+
+def find_best(n_topics: int = 3, only: str | None = None, rounds: int = 3) -> dict | None:
     used = set()
     for u in load_json(USED, []):
         used.add(u.get("pmid", ""))
         if u.get("doi"):
             used.add(u["doi"])
 
-    best = None
-    for t in pick_topics(n_topics, only):
-        print(f"검색: {t['ko']} — {t['query']}")
-        try:
-            ids = pubmed_search(t["query"])
-            papers = pubmed_fetch(ids)
-        except Exception as e:
-            print(f"  검색 실패: {e}", file=sys.stderr)
+    tried: set[str] = set()
+    fallback = None
+    for rnd in range(1, rounds + 1):
+        cands: list[dict] = []
+        topics = [t for t in pick_topics(n_topics * rnd, only) if t["id"] not in tried][:n_topics]
+        if not topics:
+            break
+        for t in topics:
+            tried.add(t["id"])
+            print(f"검색: {t['ko']} — {t['query']}")
+            try:
+                ids = pubmed_search(t["query"])
+                papers = pubmed_fetch(ids)
+            except Exception as e:
+                print(f"  검색 실패: {e}", file=sys.stderr)
+                continue
+            for p in papers:
+                sc = score_paper(p, used, t)
+                print(f"  [{sc:4.1f}] {p['year']} {p['title'][:80]}")
+                if sc > 0:
+                    cands.append({"score": sc, "topic": t, "paper": p})
+                    if fallback is None or sc > fallback["score"]:
+                        fallback = {"score": sc, "topic": t, "paper": p}
+            time.sleep(0.4)
+        if not cands:
             continue
-        for p in papers:
-            sc = score_paper(p, used, t)
-            print(f"  [{sc:4.1f}] {p['year']} {p['title'][:80]}")
-            if sc > 0 and (best is None or sc > best["score"]):
-                best = {"score": sc, "topic": t, "paper": p}
-        time.sleep(0.4)
-    return best
+        cands.sort(key=lambda c: -c["score"])
+        cands = cands[:8]
+        verdict = llm_judge(cands)
+        if verdict is None:            # LLM 을 못 쓰면 점수 1등
+            return cands[0]
+        if verdict.get("pick"):
+            return verdict["pick"]
+        print(f"  {rnd}라운드: 적합한 논문 없음 ({verdict.get('reason', '')}) → 다른 주제로 재시도")
+        if only:
+            break
+    return fallback
 
 
 def main() -> int:
@@ -252,6 +325,8 @@ def main() -> int:
         return 1
     print(f"\n선택: [{best['topic']['ko']}] {best['paper']['title']}")
     print(f"  {best['paper']['journal']} ({best['paper']['year']}) DOI {best['paper']['doi']}")
+    if best.get("angle"):
+        print(f"  각도: {best['angle']} (fit {best.get('fit')})")
     save_json(Path(args.out), best)
     return 0
 

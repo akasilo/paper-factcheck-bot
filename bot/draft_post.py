@@ -48,6 +48,9 @@ SYSTEM_PROMPT = """당신은 인스타그램 계정 @paper_factcheck 의 편집�
 8. instagram_caption 본문 끝에 출처 줄을 넣습니다: "📄 출처: 저자, 저널명 (연도). DOI xxx"
 9. verdict 는 논문 결론에 따라 "bad"(일상 제품의 문제), "good"(의외로 좋음), "mixed"(엇갈림) 중 하나.
 10. product_hint 는 독자가 대안으로 찾아볼 제품 조건을 한 줄로 (브랜드 없이). 논문이 제품 선택과 무관하면 빈 문자열.
+11. 논문이 제품을 직접 다루지 않고 성분·물질만 다루면, hook 은 물질 중심으로 잡고 제품은 "이 물질이 쓰이는 제품 예"로만 연결하세요. 제품 자체가 위험/안전하다고 단정 금지.
+12. 영어 학술 용어는 한국어로 풀어쓰세요 (umbrella review → 여러 메타분석을 종합한 리뷰, RCT → 무작위 대조 시험). 해시태그는 주제와 직접 관련된 것만.
+13. instagram_caption 은 첫 줄 훅 → 빈 줄로 나눈 짧은 문단 3~4개 → 오늘의 행동 → 출처 줄 → 해시태그 순서. threads_text 는 말하듯 가볍게, 마지막은 독자에게 묻는 한 문장.
 
 출력은 JSON 하나만. 스키마:
 {
@@ -257,8 +260,9 @@ def generate(prompt: str, system: str) -> tuple[dict, str]:
     raise RuntimeError(f"사용 가능한 모델이 없습니다: {last_err}")
 
 
-def build_prompt(topic: dict, paper: dict) -> str:
-    return f"""[주제] {topic['ko']}  (대안 제품 힌트: {topic.get('hint', '')})
+def build_prompt(topic: dict, paper: dict, angle: str = "") -> str:
+    angle_line = f"\n[편집장이 정한 각도] {angle}\n" if angle else ""
+    return f"""[주제] {topic['ko']}  (대안 제품 힌트: {topic.get('hint', '')}){angle_line}
 
 [논문]
 제목: {paper['title']}
@@ -318,7 +322,7 @@ def main() -> int:
     problems: list[str] = []
     for attempt in range(1, 4):
         try:
-            draft, used_model = generate(build_prompt(topic, paper), SYSTEM_PROMPT)
+            draft, used_model = generate(build_prompt(topic, paper, cand.get("angle", "")), SYSTEM_PROMPT)
         except Exception as e:
             print(f"  시도 {attempt} 실패: {e}", file=sys.stderr)
             continue
