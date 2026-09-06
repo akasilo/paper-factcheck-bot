@@ -55,4 +55,5 @@ jobs:
           fi
 
       - name: Commit images
-        run: bash bot/commit_push.sh "render: cards $(date +%Y-%m-%d) [skip ci]" images queue
+        run: |
+          bash bot/commit_push.sh "render: cards $(date +%Y-%m-%d) [skip ci]" images queue
