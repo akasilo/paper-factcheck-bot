@@ -1,0 +1,76 @@
+{
+  "date": "2026-09-07",
+  "approved": false,
+  "link": "",
+  "topic": "nonstick_pan",
+  "topic_ko": "코팅 프라이팬",
+  "verdict": "bad",
+  "evidence_level": "systematic review",
+  "product_hint": "PFAS‑free 세라믹 코팅 또는 스테인리스·무쇠 프라이팬",
+  "caveats": [
+    "플라스틱 전체 화학물질을 모두 포괄하지 않음",
+    "노출 양과 경로가 구체적으로 제시되지 않음",
+    "프라이팬 코팅에 대한 직접 연구가 부족함"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "우리 주방의\n[[프라이팬]]\n{{PFAS}}\n안전할까?"
+    },
+    {
+      "type": "body",
+      "text": "플라스틱에 쓰이는 [[PFAS]]는 음식과 접촉해 체내로 이동할 수 있다는 보고가 있습니다."
+    },
+    {
+      "type": "body",
+      "text": "PFAS 노출은 아이들의 BMI 증가·과체중, 소녀의 ADHD 위험 증가와 연관된다는 결과가 있습니다."
+    },
+    {
+      "type": "body",
+      "text": "일부 PFAS는 출생 시 체중 감소와 갑상선 기능 변화와도 관련이 있다는 연구가 있습니다."
+    },
+    {
+      "type": "body",
+      "text": "이 리뷰에서는 PFAS 외에도 BPA·프탈레이트·PCB 등 다양한 플라스틱 화학물질이 여러 건강 문제와 연결된다고 제시했습니다.",
+      "note": "※ 관찰 연구 기반, 인과확정 어려움"
+    },
+    {
+      "type": "body",
+      "text": "오늘은 [[PFAS-free 세라믹 코팅]] 프라이팬을 찾아보거나, 무쇠·스테인리스 제품으로 교체해 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "An Umbrella Review of Meta-Analyses Evaluating Associations between Human Health and Exposure to Major Classes of Plastic-Associated Chemicals.",
+        "journal": "Annals of global health",
+        "year": "2024",
+        "doi": "10.5334/aogh.4459",
+        "authors": "Symeonides C, Aromataris E, Mulders Y et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2026-09-07/01.jpg",
+    "images/2026-09-07/02.jpg",
+    "images/2026-09-07/03.jpg",
+    "images/2026-09-07/04.jpg",
+    "images/2026-09-07/05.jpg",
+    "images/2026-09-07/06.jpg",
+    "images/2026-09-07/07.jpg"
+  ],
+  "instagram_caption": "🧪 최신 연구에 따르면, 우리 주방에서 흔히 쓰이는 비스페놀·프탈레이트·PFAS 등 플라스틱 화학물질이 다양한 건강 위험과 연결돼 있습니다. 특히 PFAS는 아이들의 체중 증가·BMI, 소녀의 ADHD, 출생 시 체중 감소, 갑상선 기능 변화와 연관된다는 보고가 있습니다. 이러한 물질은 비스코팅 프라이팬 등 식품 접촉 재료에 사용될 수 있어, 장기간 노출 시 잠재적 위험이 존재합니다. 직접적인 인과관계는 아직 확정되지 않았지만, 관찰 자료가 일관된 부정적 연관성을 보여줍니다. 일상에서 노출을 줄이는 한 가지 방법은 PFAS‑free 세라믹 코팅이나 스테인리스·무쇠 프라이팬을 선택하는 것입니다.\n#논문팩트체크 #paper_factcheck #플라스틱 #PFAS #프라이팬 #건강 #식품안전 #주방용품 #환경 #소비자보호 #비건 #건강챙기기\n📄 출처: Symeonides C et al., Annals of global health (2024). DOI 10.5334/aogh.4459\n*본 카드뉴스의 이미지는 AI를 이용하여 제작되었습니다.",
+  "threads_text": "새로운 umbrella review(2024)에서는 플라스틱에 포함된 PFAS 등 화학물질이 인간 건강에 부정적 영향을 미친다고 보고했습니다. PFAS는 아이들의 BMI·과체중, 소녀의 ADHD 위험을 높이고, 출생 체중 감소와 갑상선 기능 변화를 일으킬 수 있습니다. 직접적인 인과관계는 확정되지 않았지만, 관찰 연구가 일관된 연관성을 보여줍니다. 일상에서 PFAS 노출을 줄이려면 PFAS‑free 세라믹 코팅이나 스테인리스·무쇠 프라이팬을 고려해 보세요.",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "An Umbrella Review of Meta-Analyses Evaluating Associations between Human Health and Exposure to Major Classes of Plastic-Associated Chemicals.",
+    "journal": "Annals of global health",
+    "year": "2024",
+    "doi": "10.5334/aogh.4459",
+    "pmid": "39183960",
+    "authors": "Symeonides C, Aromataris E, Mulders Y et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39183960/"
+  },
+  "drafted_at": "2026-09-06T23:05:33.086687+09:00",
+  "model": "groq:openai/gpt-oss-120b"
+}
