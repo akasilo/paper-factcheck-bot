@@ -82,10 +82,12 @@ def main() -> int:
 
     verdict_ko = {"bad": "⚠️ 문제 있음", "good": "✅ 의외로 좋음", "mixed": "🤔 엇갈림"}.get(item.get("verdict"), "")
     title = f"[승인 대기] {args.date} · {item.get('topic_ko', '')} — {paper.get('title', '')[:60]}"
+    owner = os.environ.get("GITHUB_REPOSITORY_OWNER") or args.repo.split("/")[0]
 
     lines = [
         f"<!-- queue:{args.date} -->",
         f"## {args.date} 게시 초안 · {item.get('topic_ko', '')} {verdict_ko}",
+        f"@{owner} 새 초안이 도착했습니다.",   # 멘션 → 휴대폰 GitHub 앱 알림
         "",
         "### 승인 방법",
         "- 이 이슈에 **쿠팡파트너스 링크 하나**를 댓글로 달면 → 승인 + 링크 저장 → 다음 날 아침 8시 게시",
@@ -123,8 +125,9 @@ def main() -> int:
     body = "\n".join(lines)
 
     ensure_label(args.repo)
+    # 저장소 주인에게 담당자 지정 + 본문 멘션 → Watch 설정과 무관하게 알림이 감
     url = sh("gh", "issue", "create", "--repo", args.repo, "--title", title,
-             "--label", LABEL, "--body-file", "-", input_text=body)
+             "--label", LABEL, "--assignee", owner, "--body-file", "-", input_text=body)
     print(f"이슈 생성: {url}")
     return 0
 
