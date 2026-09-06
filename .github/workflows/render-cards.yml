@@ -55,13 +55,4 @@ jobs:
           fi
 
       - name: Commit images
-        run: |
-          git config user.name "paper-factcheck-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add -A images queue
-          if git diff --cached --quiet; then
-            echo "변경 없음"
-          else
-            git commit -m "render: cards $(date +%Y-%m-%d) [skip ci]"
-            git push
-          fi
+        run: bash bot/commit_push.sh "render: cards $(date +%Y-%m-%d) [skip ci]" images queue
