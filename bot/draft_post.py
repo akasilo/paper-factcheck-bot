@@ -6,7 +6,8 @@ queue/<date>.json 을 생성한다 (approved: false).
   python bot/draft_post.py --date 2026-09-08                # data/candidate.json 사용
   python bot/draft_post.py --date 2026-09-08 --candidate data/candidate.json
 환경변수
-  LLM_PROVIDER : groq (기본, 무료 티어) | openrouter | cerebras | openai | openai_compat | gemini | github
+  LLM_PROVIDER : claude_code (기본, Claude 구독 OAuth 토큰) | groq | openrouter | cerebras | openai | openai_compat | gemini | github
+  CLAUDE_CODE_OAUTH_TOKEN : claude_code 일 때 (claude setup-token 으로 발급). 없으면 groq 로 자동 대체
   LLM_API_KEY  : OpenAI 호환 제공자의 API 키 (groq 등)
   LLM_MODEL    : 모델명, 쉼표로 여러 개 적으면 앞에서부터 시도 (비우면 제공자별 기본 후보)
   LLM_BASE_URL : openai_compat 일 때 필수
@@ -158,6 +159,33 @@ def openai_compat_generate(prompt: str, system: str, model: str, api_key: str, b
     return json.loads(text)
 
 
+def claude_code_generate(prompt: str, system: str, model: str | None = None) -> dict:
+    """Claude Code CLI 를 구독(OAuth 토큰)으로 호출. 환경변수 CLAUDE_CODE_OAUTH_TOKEN 필요."""
+    import shutil
+    import subprocess
+    exe = shutil.which("claude")
+    if not exe:
+        raise RuntimeError("claude CLI 가 설치되어 있지 않습니다 (npm i -g @anthropic-ai/claude-code)")
+    full = system + "\n\n---\n\n" + prompt + "\n\n반드시 JSON 객체 하나만 출력하고 다른 말은 하지 마세요."
+    cmd = [exe, "-p", full, "--output-format", "json", "--max-turns", "1"]
+    if model:
+        cmd += ["--model", model]
+    proc = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
+    if proc.returncode != 0:
+        raise RuntimeError(f"claude CLI 실패({proc.returncode}): {(proc.stderr or proc.stdout)[:500]}")
+    try:
+        data = json.loads(proc.stdout)
+    except json.JSONDecodeError:
+        raise RuntimeError(f"claude CLI 출력 파싱 실패: {proc.stdout[:500]}")
+    if data.get("is_error"):
+        raise RuntimeError(f"claude CLI 오류: {json.dumps(data)[:500]}")
+    text = (data.get("result") or "").strip()
+    m = re.search(r"\{.*\}", text, flags=re.S)   # 앞뒤 설명이 붙어도 JSON 만 뽑는다
+    if not m:
+        raise RuntimeError(f"claude CLI 결과에 JSON 없음: {text[:300]}")
+    return json.loads(m.group(0))
+
+
 # provider 별 기본 base_url 과 무료로 쓸 만한 모델 후보 (앞에서부터 시도, 404/모델없음이면 다음)
 PROVIDER_DEFAULTS = {
     "groq": ("https://api.groq.com/openai/v1",
@@ -178,7 +206,17 @@ def generate(prompt: str, system: str) -> tuple[dict, str]:
     LLM_MODEL    = 모델명 (쉼표로 여러 개 적으면 앞에서부터 시도)
     LLM_BASE_URL = openai_compat 일 때 필수
     """
-    provider = os.environ.get("LLM_PROVIDER", "groq").strip().lower()
+    provider = os.environ.get("LLM_PROVIDER", "claude_code").strip().lower()
+
+    if provider == "claude_code":
+        if os.environ.get("CLAUDE_CODE_OAUTH_TOKEN", "").strip() or os.environ.get("ANTHROPIC_API_KEY", "").strip():
+            model = os.environ.get("LLM_MODEL", "").strip() or None
+            return claude_code_generate(prompt, system, model), f"claude_code:{model or 'default'}"
+        if os.environ.get("LLM_API_KEY", "").strip():
+            print("CLAUDE_CODE_OAUTH_TOKEN 이 없어 groq 로 대체합니다.", file=sys.stderr)
+            provider = "groq"
+        else:
+            raise SystemExit("CLAUDE_CODE_OAUTH_TOKEN 이 없습니다 (claude setup-token 으로 발급).")
 
     if provider == "gemini":
         key = os.environ.get("GEMINI_API_KEY", "").strip()
@@ -274,7 +312,7 @@ def main() -> int:
         print(f"이미 큐가 있습니다: {qpath.name} (--force 로 덮어쓰기)")
         return 0
 
-    print(f"원고 작성 ({os.environ.get('LLM_PROVIDER', 'groq')}): [{topic['ko']}] {paper['title'][:70]}")
+    print(f"원고 작성 ({os.environ.get('LLM_PROVIDER', 'claude_code')}): [{topic['ko']}] {paper['title'][:70]}")
     draft = None
     used_model = ""
     problems: list[str] = []
