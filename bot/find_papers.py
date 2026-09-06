@@ -158,8 +158,19 @@ def _parse_article(art) -> dict:
 # 점수
 # ---------------------------------------------------------------------------
 
-def score_paper(p: dict, used: set[str]) -> float:
+def matches_topic(p: dict, topic: dict) -> bool:
+    """주제의 핵심어(must)가 제목·초록에 하나라도 있어야 한다 — 엉뚱한 논문 방지."""
+    must = [m.lower() for m in topic.get("must", []) if m]
+    if not must:
+        return True
+    hay = (p["title"] + " " + p["abstract"]).lower()
+    return any(m in hay for m in must)
+
+
+def score_paper(p: dict, used: set[str], topic: dict | None = None) -> float:
     if p["pmid"] in used or (p["doi"] and p["doi"] in used):
+        return -1
+    if topic is not None and not matches_topic(p, topic):
         return -1
     if any(pt in EXCLUDE_PUBTYPES for pt in p["pubtypes"]):
         return -1
@@ -179,6 +190,10 @@ def score_paper(p: dict, used: set[str]) -> float:
         s += 1.0
     if not p["doi"]:
         s -= 0.5
+    if topic is not None:
+        must = [m.lower() for m in topic.get("must", []) if m]
+        if any(m in p["title"].lower() for m in must):
+            s += 1.5   # 제목에 핵심어가 있으면 주제 적합도가 높다
     return s
 
 
@@ -216,7 +231,7 @@ def find_best(n_topics: int = 3, only: str | None = None) -> dict | None:
             print(f"  검색 실패: {e}", file=sys.stderr)
             continue
         for p in papers:
-            sc = score_paper(p, used)
+            sc = score_paper(p, used, t)
             print(f"  [{sc:4.1f}] {p['year']} {p['title'][:80]}")
             if sc > 0 and (best is None or sc > best["score"]):
                 best = {"score": sc, "topic": t, "paper": p}

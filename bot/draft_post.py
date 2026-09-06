@@ -6,7 +6,7 @@ queue/<date>.json 을 생성한다 (approved: false).
   python bot/draft_post.py --date 2026-09-08                # data/candidate.json 사용
   python bot/draft_post.py --date 2026-09-08 --candidate data/candidate.json
 환경변수
-  GEMINI_API_KEY (필수), GEMINI_MODEL (기본 gemini-2.5-flash)
+  GEMINI_API_KEY (필수), GEMINI_MODEL (기본 gemini-3.6-flash)
 """
 from __future__ import annotations
 
@@ -133,7 +133,7 @@ def main() -> int:
     ap.add_argument("--date", default=(datetime.now(KST) + timedelta(days=1)).strftime("%Y-%m-%d"),
                     help="큐 날짜 (기본: 내일 KST)")
     ap.add_argument("--candidate", default=str(DATA / "candidate.json"))
-    ap.add_argument("--model", default=os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"))
+    ap.add_argument("--model", default=os.environ.get("GEMINI_MODEL", "gemini-3.6-flash"))
     ap.add_argument("--force", action="store_true", help="같은 날짜 큐가 있어도 덮어씀")
     args = ap.parse_args()
 

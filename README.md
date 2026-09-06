@@ -83,7 +83,7 @@ python bot/render_cards.py --auto                # 이미지 없는 큐 항목 �
 | `GEMINI_API_KEY` | Google AI Studio API 키 (원고 초안, 배경 이미지) |
 | `REPO_PAT` (선택) | Actions secrets 쓰기 권한 PAT. 있으면 토큰 갱신 시 Secrets 자동 업데이트 |
 
-저장소 변수(Variables) `GEMINI_MODEL` 로 모델을 바꿀 수 있다 (기본 `gemini-2.5-flash`).
+저장소 변수(Variables) `GEMINI_MODEL` 로 모델을 바꿀 수 있다 (기본 `gemini-3.6-flash`).
 
 ## 워크플로
 
