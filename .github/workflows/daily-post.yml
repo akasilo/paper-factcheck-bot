@@ -59,14 +59,4 @@ jobs:
 
       - name: Commit results
         if: always()
-        run: |
-          git config user.name "paper-factcheck-bot"
-          git config user.email "bot@users.noreply.github.com"
-          mkdir -p queue posted skipped
-          git add -A queue posted skipped
-          if git diff --cached --quiet; then
-            echo "변경 없음"
-          else
-            git commit -m "post: $(date +%Y-%m-%d) [skip ci]"
-            git push
-          fi
+        run: bash bot/commit_push.sh "post: $(date +%Y-%m-%d) [skip ci]" queue posted skipped
