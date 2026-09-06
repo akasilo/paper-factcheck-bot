@@ -86,7 +86,8 @@ jobs:
 
       - name: Commit draft
         # 다른 워크플로가 먼저 push 했으면 자동으로 다시 받아서 재시도 (bot/commit_push.sh)
-        run: bash bot/commit_push.sh "draft: ${{ steps.d.outputs.date }} [skip ci]" queue images data
+        run: |
+          bash bot/commit_push.sh "draft: ${{ steps.d.outputs.date }} [skip ci]" queue images data
 
       - name: Open approval issue
         run: python bot/open_issue.py --date "${{ steps.d.outputs.date }}"
