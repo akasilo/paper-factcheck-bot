@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-05",
+  "queue": {
+    "date": "2026-09-05",
+    "approved": true,
+    "link": "",
+    "link_required": false,
+    "images": [
+      "images/test/01.jpg",
+      "images/test/02.jpg",
+      "images/test/03.jpg"
+    ],
+    "instagram_caption": "자동 게시 테스트입니다. 곧 삭제됩니다.\n#paper_factcheck #테스트",
+    "threads_text": "자동 게시 테스트입니다. 곧 삭제됩니다.",
+    "threads_reply": "📎 (테스트) 추천 링크 자리\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "",
+      "journal": "",
+      "year": "",
+      "doi": ""
+    }
+  },
+  "instagram_post_id": "18122988265851309",
+  "instagram_posted_at": "2026-09-06T21:03:35.506276+09:00",
+  "threads_post_id": "18135341821722349",
+  "threads_posted_at": "2026-09-06T21:03:57.676346+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/Dc8fioFGyHv",
+  "completed_at": "2026-09-06T21:03:58.113218+09:00"
+}
