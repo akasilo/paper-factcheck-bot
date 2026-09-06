@@ -1,0 +1,76 @@
+{
+  "date": "2026-09-08",
+  "approved": false,
+  "link": "",
+  "topic": "scented_candle",
+  "topic_ko": "향초·디퓨저",
+  "verdict": "mixed",
+  "evidence_level": "systematic review",
+  "product_hint": "향 성분(합성 머스크·프탈레이트 등)이 적은 무향 소이 캔들 또는 향 없이 공기를 순환시키는 공기청정기",
+  "caveats": [
+    "향초·디퓨저를 직접 실험한 연구가 아니라 PCP 전반(샴푸·로션·향수·방향제 등)을 다룬 리뷰이며 향초 특정 데이터는 없음",
+    "인체 건강 위험은 직접 측정된 결과가 아니라 잠재적 노출 경로로만 언급됨",
+    "작물 흡수 정도가 화합물·환경·식물종에 따라 매우 상이해 정량적 결론이 없음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "매일 켜는\n[[향초·디퓨저]]\n그 향,\n어디로 갈까요?"
+    },
+    {
+      "type": "body",
+      "text": "향초·디퓨저·향수 같은 향 제품엔 [[합성 머스크]]·프탈레이트·파라벤 성분이 들어 있어요. 이런 성분을 통틀어 '개인관리제품(PCP)'이라 부릅니다."
+    },
+    {
+      "type": "body",
+      "text": "이 성분들은 씻겨나가거나 씻어 낸 뒤 하수로 흘러가는데, 한 리뷰 논문에 따르면 하수처리장에서 완전히 분해되지 않고 남는 경우가 있다고 해요."
+    },
+    {
+      "type": "body",
+      "text": "남은 찌꺼기(슬러지)나 재생수를 농사에 쓰면 {{작물 뿌리로 흡수}}돼 쌓일 수 있다는 연구들을 정리한 리뷰입니다."
+    },
+    {
+      "type": "body",
+      "text": "다만 흡수 정도는 화합물 종류·토양·식물종마다 크게 달라, 이 리뷰는 아직 '얼마나 위험한지'까지는 결론짓지 않았어요.",
+      "note": "※ 향초·디퓨저의 실내공기 흡입 영향을 측정한 논문이 아니라, 하수·농업 재이용 경로로 작물에 쌓이는지를 정리한 리뷰예요."
+    },
+    {
+      "type": "body",
+      "text": "오늘은 향초·디퓨저 사용을 [[적당히]] 줄이고, 남은 액은 하수구 대신 일반쓰레기로 버려보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Personal care products in soil-plant and hydroponic systems: Uptake, translocation, and accumulation.",
+        "journal": "The Science of the total environment",
+        "year": "2024",
+        "doi": "10.1016/j.scitotenv.2023.168894",
+        "authors": "Fernandes AS, Bragança I, Homem V"
+      }
+    }
+  ],
+  "images": [
+    "images/2026-09-08/01.jpg",
+    "images/2026-09-08/02.jpg",
+    "images/2026-09-08/03.jpg",
+    "images/2026-09-08/04.jpg",
+    "images/2026-09-08/05.jpg",
+    "images/2026-09-08/06.jpg",
+    "images/2026-09-08/07.jpg"
+  ],
+  "instagram_caption": "매일 켜는 향초·디퓨저, 그 향은 다 쓰고 나면 어디로 갈까요?🕯️\n\n향초·디퓨저·향수 같은 향 제품엔 합성 머스크, 프탈레이트, 파라벤, 자외선차단제 성분 같은 '개인관리제품(PCP)' 성분이 들어 있어요.\n\n한 리뷰 논문(2024)에 따르면, 이런 성분들이 씻겨 나가 하수처리장으로 흘러가도 완전히 분해되지 않고 방류수나 하수슬러지(찌꺼기)에 남는 경우가 있다고 해요.\n\n그리고 이 슬러지나 재생수를 순환경제 차원에서 농경지에 뿌리면, 작물 뿌리가 이 성분을 흡수해 축적할 가능성이 있다는 여러 연구를 정리했습니다.\n\n다만 흡수되는 정도는 화합물 종류, 토양, 식물 종에 따라 크게 달라서, 이 리뷰 자체가 '얼마나 위험한지'를 확정한 건 아니에요. 향초·디퓨저를 실내에서 태우거나 확산시킬 때의 흡입 영향을 직접 측정한 논문도 아니고요.\n\n오늘은 향 제품 사용을 적당히 줄이고, 남은 디퓨저 액이나 향초 왁스를 하수구에 흘려보내는 대신 일반쓰레기로 버려보는 건 어떨까요?\n\n📄 출처: Fernandes AS, Bragança I, Homem V, Science of the Total Environment (2024). DOI 10.1016/j.scitotenv.2023.168894\n\n#논문팩트체크 #paper_factcheck #향초 #디퓨저 #향수성분 #하수처리 #순환경제 #퍼스널케어제품 #생활화학 #무향캔들 #친환경생활\n*본 카드뉴스의 이미지는 AI를 이용하여 제작되었습니다.",
+  "threads_text": "향초·디퓨저·향수엔 합성 머스크, 프탈레이트, 파라벤 같은 '개인관리제품(PCP)' 성분이 들어 있어요. 한 리뷰 논문에 따르면 이 성분들이 하수처리장에서 완전히 분해되지 않고 남을 수 있고, 그 찌꺼기나 재생수를 농사에 쓰면 작물이 흡수해 쌓일 가능성이 있다는 연구들이 정리됐습니다. 다만 흡수 정도는 화합물·토양·식물종마다 달라 아직 '얼마나' 위험한지는 불확실해요. 향초 자체의 실내공기 흡입 영향을 본 논문도 아니고요. 향 제품은 적당히 쓰고, 남은 액은 하수구 대신 일반쓰레기로 버려보세요. 📄 Fernandes AS et al., STOTEN(2024). #논문팩트체크",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Personal care products in soil-plant and hydroponic systems: Uptake, translocation, and accumulation.",
+    "journal": "The Science of the total environment",
+    "year": "2024",
+    "doi": "10.1016/j.scitotenv.2023.168894",
+    "pmid": "38036128",
+    "authors": "Fernandes AS, Bragança I, Homem V",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38036128/"
+  },
+  "drafted_at": "2026-09-07T00:04:07.971600+09:00",
+  "model": "claude_code:default"
+}
