@@ -2,11 +2,35 @@
   "date": "2026-09-07",
   "approved": false,
   "link": "",
-  "images": [
-    "images/2026-09-07/01.jpg",
-    "images/2026-09-07/02.jpg",
-    "images/2026-09-07/03.jpg"
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "매일 바르는\n[[선크림]]\n혹시 {{'이 성분'}}\n확인하셨나요?",
+      "bg": "images/2026-09-07/bg01.jpg"
+    },
+    {
+      "type": "body",
+      "text": "본문 카드. 노란 형광은 [[이렇게]], 빨간 글자는 {{이렇게}} 감싸고, 줄바꿈은 \\n 으로 합니다.",
+      "bg": "images/2026-09-07/bg02.jpg"
+    },
+    {
+      "type": "body",
+      "text": "마지막 본문 카드에는 작은 주석을 달 수 있습니다.",
+      "note": "※ 리뷰 논문 1편의 종합 결과이며, 개인별 위험은 노출량·제품에 따라 다릅니다."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "논문 영문 제목",
+        "journal": "Journal Name",
+        "year": "2025",
+        "doi": "10.xxxx/xxxxx",
+        "authors": "First author et al."
+      }
+    }
   ],
+  "images": [],
   "instagram_caption": "여기에 인스타 캡션 (해시태그 포함, 2200자 이내)",
   "threads_text": "여기에 Threads 본문 (500자 이내)",
   "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",

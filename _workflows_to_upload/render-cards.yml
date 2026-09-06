@@ -1,0 +1,67 @@
+name: render-cards
+
+# 큐 JSON 의 cards 를 카드뉴스 이미지(1080x1350 JPEG)로 렌더링해서 images/<date>/ 에 커밋한다.
+#  - queue/*.json 이 push 되면 자동 (cards 는 있는데 이미지가 없는 항목만)
+#  - Actions 탭에서 날짜를 지정해 수동 실행도 가능 (force 로 다시 렌더)
+on:
+  push:
+    paths:
+      - "queue/*.json"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "렌더할 큐 날짜 (YYYY-MM-DD). 비우면 이미지 없는 항목 전부"
+        required: false
+        default: ""
+      force:
+        description: "이미지가 있어도 다시 렌더"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-cards
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: Asia/Seoul
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+          sudo apt-get install -y -q fonts-noto-color-emoji fonts-noto-cjk >/dev/null
+
+      - name: Render
+        run: |
+          if [ -n "${{ github.event.inputs.date }}" ]; then
+            python bot/render_cards.py --date "${{ github.event.inputs.date }}"
+          elif [ "${{ github.event.inputs.force }}" = "true" ]; then
+            python bot/render_cards.py --auto --force
+          else
+            python bot/render_cards.py --auto
+          fi
+
+      - name: Commit images
+        run: |
+          git config user.name "paper-factcheck-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A images queue
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "render: cards $(date +%Y-%m-%d) [skip ci]"
+            git push
+          fi

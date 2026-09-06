@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face {
+    font-family: "Pretendard";
+    src: url("%%FONT%%") format("woff2-variations");
+    font-weight: 100 900;
+    font-display: block;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1350px; overflow: hidden; background: #0b0c10; }
+  body {
+    font-family: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.02em;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+  .card { position: relative; width: 1080px; height: 1350px; overflow: hidden; }
+  .bg {
+    position: absolute; inset: 0;
+    background: %%BG%%;
+    background-size: cover; background-position: center;
+  }
+  .bg.zoom { transform: scale(1.04); }
+  .overlay { position: absolute; inset: 0; }
+  .card.hook .overlay {
+    background: linear-gradient(180deg, rgba(0,0,0,.10) 0%, rgba(0,0,0,.35) 40%, rgba(0,0,0,.82) 72%, rgba(0,0,0,.94) 100%);
+  }
+  .card.body .overlay {
+    background: linear-gradient(180deg, rgba(0,0,0,.30) 0%, rgba(0,0,0,.62) 45%, rgba(0,0,0,.90) 100%);
+  }
+  .card.source .overlay {
+    background: linear-gradient(180deg, rgba(8,9,14,.92) 0%, rgba(8,9,14,.97) 100%);
+  }
+
+  .content {
+    position: absolute; left: 76px; right: 76px;
+    display: flex; flex-direction: column;
+  }
+  .card.hook .content { bottom: 150px; top: 120px; justify-content: flex-end; }
+  .card.body .content { bottom: 150px; top: 120px; justify-content: flex-end; }
+  .card.source .content { top: 130px; bottom: 150px; justify-content: space-between; }
+
+  .kicker {
+    display: inline-flex; align-items: center; gap: 14px;
+    font-size: 30px; font-weight: 700; color: #ffe500;
+    margin-bottom: 34px; letter-spacing: 0;
+  }
+  .kicker::before { content: ""; width: 44px; height: 8px; background: #ffe500; border-radius: 4px; }
+
+  .title {
+    font-size: 112px; line-height: 1.2; font-weight: 800;
+    text-shadow: 0 4px 28px rgba(0,0,0,.65);
+  }
+  .text {
+    font-size: 62px; line-height: 1.55; font-weight: 700;
+    text-shadow: 0 3px 22px rgba(0,0,0,.65);
+  }
+  .note {
+    margin-top: 36px; font-size: 30px; line-height: 1.5; font-weight: 500;
+    color: rgba(255,255,255,.72); letter-spacing: 0;
+  }
+
+  /* [[강조]] → 노란 형광 박스, {{강조}} → 빨간 글자 */
+  .hl {
+    background: #ffe500; color: #111; border-radius: 10px;
+    padding: 0 .14em; margin: 0 .04em;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
+    text-shadow: none;
+  }
+  .red { color: #ff3b3b; }
+
+  .brand {
+    position: absolute; left: 76px; bottom: 64px;
+    font-size: 28px; font-weight: 600; color: rgba(255,255,255,.62); letter-spacing: 0;
+  }
+  .page {
+    position: absolute; right: 76px; bottom: 64px;
+    font-size: 28px; font-weight: 600; color: rgba(255,255,255,.55); letter-spacing: 0;
+  }
+  .swipe {
+    position: absolute; right: 76px; bottom: 64px;
+    display: inline-flex; align-items: center; gap: 12px;
+    font-size: 28px; font-weight: 700; color: #ffe500; letter-spacing: 0;
+  }
+  .swipe::after { content: "→"; font-size: 34px; }
+
+  /* 출처 카드 */
+  .src-head { }
+  .src-title { font-size: 72px; line-height: 1.25; font-weight: 800; margin-bottom: 40px; }
+  .src-box {
+    border-left: 10px solid #ffe500; padding: 8px 0 8px 36px;
+  }
+  .src-label { font-size: 28px; font-weight: 700; color: #ffe500; margin-bottom: 14px; letter-spacing: 0; }
+  .src-paper { font-size: 42px; line-height: 1.4; font-weight: 700; margin-bottom: 18px; }
+  .src-meta { font-size: 32px; line-height: 1.5; font-weight: 500; color: rgba(255,255,255,.8); letter-spacing: 0; }
+  .src-cta { font-size: 46px; line-height: 1.4; font-weight: 800; margin-top: 60px; }
+  .src-disclaimer {
+    font-size: 26px; line-height: 1.5; font-weight: 500; color: rgba(255,255,255,.5); letter-spacing: 0;
+  }
+</style>
+</head>
+<body>
+<div class="card %%CLASS%%">
+  <div class="bg %%BGCLASS%%"></div>
+  <div class="overlay"></div>
+  %%BODY%%
+</div>
+<script>
+  // 긴 문장이 카드를 넘치면 글자 크기를 조금씩 줄인다.
+  (function () {
+    const content = document.querySelector('.content');
+    const targets = [...document.querySelectorAll('.title, .text, .src-paper')];
+    if (!content || targets.length === 0) { document.body.dataset.ready = '1'; return; }
+    const fits = () => content.scrollHeight <= content.clientHeight + 1;
+    let guard = 0;
+    while (!fits() && guard++ < 40) {
+      targets.forEach(el => {
+        const cur = parseFloat(getComputedStyle(el).fontSize);
+        el.style.fontSize = (cur * 0.95) + 'px';
+      });
+    }
+    document.fonts.ready.then(() => { document.body.dataset.ready = '1'; });
+  })();
+</script>
+</body>
+</html>
