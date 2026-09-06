@@ -7,7 +7,7 @@
 ```
 매일 20:00 KST  draft-post.yml
   bot/find_papers.py  ── PubMed 에서 "일상 제품 × 최근 3년 논문" 검색 (data/topics.json 주제 순환)
-  bot/draft_post.py   ── Gemini 로 카드 원고·캡션·쓰레드 본문 초안 → queue/<내일>.json (approved: false)
+  bot/draft_post.py   ── LLM(GitHub Models, 무료)으로 카드 원고·캡션·쓰레드 본문 초안 → queue/<내일>.json (approved: false)
   bot/render_cards.py ── 카드 이미지 렌더 → images/<내일>/
   bot/open_issue.py   ── "[승인 대기]" 이슈 생성 (휴대폰 GitHub 알림)
         │
@@ -80,17 +80,18 @@ python bot/render_cards.py --auto                # 이미지 없는 큐 항목 �
 | `THREADS_APP_ID`, `THREADS_APP_SECRET` | Meta 앱 → Threads 앱 ID / 시크릿 |
 | `THREADS_USER_ID` | Threads 토큰 교환 시 나온 `user_id` |
 | `THREADS_TOKEN` | Threads 장기 토큰 (60일) |
-| `GEMINI_API_KEY` | Google AI Studio API 키 (원고 초안, 배경 이미지) |
+| `GEMINI_API_KEY` | (선택) Google AI Studio API 키 — `LLM_PROVIDER=gemini` 일 때, 나중에 배경 이미지 |
 | `REPO_PAT` (선택) | Actions secrets 쓰기 권한 PAT. 있으면 토큰 갱신 시 Secrets 자동 업데이트 |
 
-저장소 변수(Variables) `GEMINI_MODEL` 로 모델을 바꿀 수 있다 (기본 `gemini-3.6-flash`).
+원고 작성 LLM 은 기본 **GitHub Models(무료, `openai/gpt-4.1-mini`)** 이며 `GITHUB_TOKEN` 으로 호출한다 (워크플로 `models: read` 권한).
+저장소 변수(Variables): `LLM_PROVIDER`(`github`|`gemini`), `LLM_MODEL`(예 `openai/gpt-4.1-mini`, `openai/gpt-4.1`), `GEMINI_MODEL`.
 
 ## 워크플로
 
 | 이름 | 언제 | 하는 일 |
 |---|---|---|
 | `check-tokens` | 수동 | Secrets 가 맞는지 `/me` 호출로 확인 (게시 안 함) |
-| `draft-post` | 매일 20:00 KST / 수동 | 논문 검색 → Gemini 초안 → 렌더 → 승인 이슈. 수동 실행 시 날짜·주제 지정 가능 |
+| `draft-post` | 매일 20:00 KST / 수동 | 논문 검색 → LLM 초안 → 렌더 → 승인 이슈. 수동 실행 시 날짜·주제 지정 가능 |
 | `approve` | 승인 이슈 댓글 | 링크 댓글 → 승인, `skip` → 건너뜀 (저장소 주인 댓글만) |
 | `render-cards` | `queue/*.json` push 시 / 수동 | `cards` → 카드뉴스 이미지 렌더 후 커밋 |
 | `daily-post` | 매일 08:00 KST / 수동 | 오늘 큐 항목 게시. 수동 실행 시 날짜·대상·dry-run 선택 가능 |

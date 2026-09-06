@@ -6,7 +6,10 @@ queue/<date>.json 을 생성한다 (approved: false).
   python bot/draft_post.py --date 2026-09-08                # data/candidate.json 사용
   python bot/draft_post.py --date 2026-09-08 --candidate data/candidate.json
 환경변수
-  GEMINI_API_KEY (필수), GEMINI_MODEL (기본 gemini-3.6-flash)
+  LLM_PROVIDER : github (기본, 무료 — GitHub Models) | gemini
+  LLM_MODEL    : github 일 때 모델 (기본 openai/gpt-4.1-mini)
+  GH_TOKEN     : github 일 때 필요 (Actions 에서는 GITHUB_TOKEN, 워크플로에 models: read 권한 필요)
+  GEMINI_API_KEY, GEMINI_MODEL : gemini 일 때
 """
 from __future__ import annotations
 
@@ -89,6 +92,57 @@ def gemini_generate(prompt: str, system: str, model: str, api_key: str) -> dict:
     return json.loads(text)
 
 
+def github_models_generate(prompt: str, system: str, model: str, token: str) -> dict:
+    """GitHub Models (OpenAI 호환 chat/completions). 무료 사용량 안에서 동작."""
+    url = "https://models.github.ai/inference/chat/completions"
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Accept": "application/vnd.github+json",
+        "Content-Type": "application/json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+    body = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": prompt},
+        ],
+        "temperature": 0.7,
+        "max_tokens": 4000,
+        "response_format": {"type": "json_object"},
+    }
+    r = requests.post(url, headers=headers, json=body, timeout=180)
+    if r.status_code >= 400:
+        raise RuntimeError(f"GitHub Models {r.status_code}: {r.text[:500]}")
+    data = r.json()
+    try:
+        choice = data["choices"][0]
+        text = choice["message"]["content"]
+    except (KeyError, IndexError):
+        raise RuntimeError(f"GitHub Models 응답 형식 이상: {json.dumps(data)[:500]}")
+    if choice.get("finish_reason") == "length":
+        raise RuntimeError("출력이 잘렸습니다(finish_reason=length) — 더 짧게 다시 시도")
+    text = text.strip()
+    text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text)
+    return json.loads(text)
+
+
+def generate(prompt: str, system: str) -> tuple[dict, str]:
+    """환경변수에 따라 provider 선택. (결과, 사용한 모델명) 반환"""
+    provider = os.environ.get("LLM_PROVIDER", "github").strip().lower()
+    if provider == "gemini":
+        key = os.environ.get("GEMINI_API_KEY", "").strip()
+        if not key:
+            raise SystemExit("GEMINI_API_KEY 가 없습니다.")
+        model = os.environ.get("GEMINI_MODEL", "gemini-3.6-flash")
+        return gemini_generate(prompt, system, model, key), f"gemini:{model}"
+    token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN") or ""
+    if not token.strip():
+        raise SystemExit("GH_TOKEN 이 없습니다 (GitHub Models 호출용).")
+    model = os.environ.get("LLM_MODEL", "openai/gpt-4.1-mini")
+    return github_models_generate(prompt, system, model, token.strip()), f"github:{model}"
+
+
 def build_prompt(topic: dict, paper: dict) -> str:
     return f"""[주제] {topic['ko']}  (대안 제품 힌트: {topic.get('hint', '')})
 
@@ -133,14 +187,8 @@ def main() -> int:
     ap.add_argument("--date", default=(datetime.now(KST) + timedelta(days=1)).strftime("%Y-%m-%d"),
                     help="큐 날짜 (기본: 내일 KST)")
     ap.add_argument("--candidate", default=str(DATA / "candidate.json"))
-    ap.add_argument("--model", default=os.environ.get("GEMINI_MODEL", "gemini-3.6-flash"))
     ap.add_argument("--force", action="store_true", help="같은 날짜 큐가 있어도 덮어씀")
     args = ap.parse_args()
-
-    api_key = os.environ.get("GEMINI_API_KEY", "").strip()
-    if not api_key:
-        print("GEMINI_API_KEY 가 없습니다.", file=sys.stderr)
-        return 2
 
     cand = json.loads(Path(args.candidate).read_text(encoding="utf-8"))
     topic, paper = cand["topic"], cand["paper"]
@@ -150,12 +198,13 @@ def main() -> int:
         print(f"이미 큐가 있습니다: {qpath.name} (--force 로 덮어쓰기)")
         return 0
 
-    print(f"Gemini({args.model}) 원고 작성: [{topic['ko']}] {paper['title'][:70]}")
+    print(f"원고 작성 ({os.environ.get('LLM_PROVIDER', 'github')}): [{topic['ko']}] {paper['title'][:70]}")
     draft = None
+    used_model = ""
     problems: list[str] = []
     for attempt in range(1, 4):
         try:
-            draft = gemini_generate(build_prompt(topic, paper), SYSTEM_PROMPT, args.model, api_key)
+            draft, used_model = generate(build_prompt(topic, paper), SYSTEM_PROMPT)
         except Exception as e:
             print(f"  시도 {attempt} 실패: {e}", file=sys.stderr)
             continue
@@ -206,7 +255,7 @@ def main() -> int:
             "url": paper["url"],
         },
         "drafted_at": datetime.now(KST).isoformat(),
-        "model": args.model,
+        "model": used_model,
     }
     QUEUE.mkdir(exist_ok=True)
     qpath.write_text(json.dumps(item, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
