@@ -65,7 +65,25 @@ def save_json(p: Path, data: dict) -> None:
         f.write("\n")
 
 
+def archive_stale(date: str) -> None:
+    """오늘보다 오래됐는데 승인 안 된 큐 항목은 skipped/ 로 치운다 (큐가 쌓이지 않게)."""
+    skipped = ROOT / "skipped"
+    for p in sorted(QUEUE_DIR.glob("????-??-??.json")):
+        if p.stem >= date:
+            continue
+        try:
+            item = load_json(p)
+        except Exception:
+            continue
+        if item.get("approved") is True:
+            continue
+        skipped.mkdir(exist_ok=True)
+        p.rename(skipped / p.name)
+        log.info("승인 안 된 지난 항목 보관: skipped/%s", p.name)
+
+
 def pick_queue_item(date: str) -> Path | None:
+    archive_stale(date)
     exact = QUEUE_DIR / f"{date}.json"
     if exact.exists():
         return exact

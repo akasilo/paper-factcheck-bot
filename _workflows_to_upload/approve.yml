@@ -1,0 +1,48 @@
+name: approve
+
+# 승인 이슈(approval 라벨)에 저장소 주인이 댓글을 달면:
+#   링크 → 큐 승인 + 링크 저장 + 이슈 닫기 / "skip" → 건너뛰기
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  approve:
+    if: >
+      github.event.issue.state == 'open' &&
+      contains(github.event.issue.labels.*.name, 'approval') &&
+      github.event.comment.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+      ISSUE_BODY: ${{ github.event.issue.body }}
+      COMMENT_BODY: ${{ github.event.comment.body }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply comment
+        run: python bot/approve_from_comment.py
+
+      - name: Commit
+        run: |
+          git config user.name "paper-factcheck-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add -A queue
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "approve: issue #${ISSUE_NUMBER} [skip ci]"
+            git push
+          fi

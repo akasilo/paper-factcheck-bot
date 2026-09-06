@@ -1,0 +1,72 @@
+name: daily-post
+
+on:
+  schedule:
+    # 매일 08:00 KST (= 23:00 UTC 전날). 시간 바꾸려면 여기만 수정.
+    - cron: "0 23 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "게시할 큐 날짜 (YYYY-MM-DD). 비우면 오늘(KST)"
+        required: false
+        default: ""
+      target:
+        description: "어디에 올릴지"
+        type: choice
+        options: [both, instagram, threads]
+        default: both
+      dry_run:
+        description: "검증만 하고 실제로 올리지 않기"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: Asia/Seoul
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+      THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+      # 이미지 공개 URL 기준 경로. 저장소가 public 이면 raw URL 로 바로 쓸 수 있다.
+      IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Publish
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.date }}" ]; then ARGS="$ARGS --date ${{ github.event.inputs.date }}"; fi
+          if [ -n "${{ github.event.inputs.target }}" ]; then ARGS="$ARGS --target ${{ github.event.inputs.target }}"; fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          python bot/publish.py $ARGS
+
+      - name: Commit results
+        if: always()
+        run: |
+          git config user.name "paper-factcheck-bot"
+          git config user.email "bot@users.noreply.github.com"
+          mkdir -p queue posted skipped
+          git add -A queue posted skipped
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "post: $(date +%Y-%m-%d) [skip ci]"
+            git push
+          fi
