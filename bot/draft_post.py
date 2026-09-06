@@ -67,7 +67,7 @@ SYSTEM_PROMPT = """당신은 인스타그램 계정 @paper_factcheck 의 편집�
   "instagram_caption": "...",
   "threads_text": "...",
   "product_hint": "...",
-  "evidence_level": "meta-analysis|systematic review|review|rct|cohort|animal|in-vitro|other",
+  "evidence_level": "meta-analysis|systematic review|review|rct|cohort|cross-sectional|experimental|animal|in-vitro|other",
   "caveats": ["원고에 반영하지 못한 한계 1~3개"]
 }
 body_cards 는 3~5개."""
