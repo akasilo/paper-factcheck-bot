@@ -72,5 +72,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/39183960/"
   },
   "drafted_at": "2026-09-06T23:05:33.086687+09:00",
-  "model": "groq:openai/gpt-oss-120b"
+  "model": "groq:openai/gpt-oss-120b",
+  "skipped": true
 }
