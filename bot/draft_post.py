@@ -300,21 +300,37 @@ def validate(d: dict) -> list[str]:
     return problems
 
 
+def next_seq() -> int:
+    """큐/게시완료/건너뜀 을 통틀어 가장 큰 순번 + 1. 큐는 날짜가 아니라 '순서'로 관리한다."""
+    seen = [0]
+    for d in (QUEUE, ROOT / "posted", ROOT / "skipped"):
+        for p in d.glob("*.json"):
+            m = re.match(r"(\d{4})-", p.name)
+            if m:
+                seen.append(int(m.group(1)))
+            else:                       # posted/ 는 날짜 이름이라 안쪽 id 를 본다
+                try:
+                    d2 = json.loads(p.read_text(encoding="utf-8"))
+                except Exception:
+                    continue
+                sid = str((d2.get("queue") or d2).get("id", ""))
+                m2 = re.match(r"(\d{4})-", sid)
+                if m2:
+                    seen.append(int(m2.group(1)))
+    return max(seen) + 1
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--date", default=(datetime.now(KST) + timedelta(days=1)).strftime("%Y-%m-%d"),
-                    help="큐 날짜 (기본: 내일 KST)")
     ap.add_argument("--candidate", default=str(DATA / "candidate.json"))
-    ap.add_argument("--force", action="store_true", help="같은 날짜 큐가 있어도 덮어씀")
     args = ap.parse_args()
 
     cand = json.loads(Path(args.candidate).read_text(encoding="utf-8"))
     topic, paper = cand["topic"], cand["paper"]
 
-    qpath = QUEUE / f"{args.date}.json"
-    if qpath.exists() and not args.force:
-        print(f"이미 큐가 있습니다: {qpath.name} (--force 로 덮어쓰기)")
-        return 0
+    QUEUE.mkdir(exist_ok=True)
+    item_id = f"{next_seq():04d}-{topic['id']}"
+    qpath = QUEUE / f"{item_id}.json"
 
     print(f"원고 작성 ({os.environ.get('LLM_PROVIDER', 'claude_code')}): [{topic['ko']}] {paper['title'][:70]}")
     draft = None
@@ -352,8 +368,9 @@ def main() -> int:
         caption += " #paper_factcheck"
     caption += "\n*본 카드뉴스의 이미지는 AI를 이용하여 제작되었습니다."
 
+    today = datetime.now(KST).strftime("%Y-%m-%d")
     item = {
-        "date": args.date,
+        "id": item_id,
         "approved": False,
         "link": "",
         "topic": topic["id"],
@@ -375,19 +392,18 @@ def main() -> int:
         "drafted_at": datetime.now(KST).isoformat(),
         "model": used_model,
     }
-    QUEUE.mkdir(exist_ok=True)
     qpath.write_text(json.dumps(item, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"큐 생성: {qpath.relative_to(ROOT)}  (카드 {len(cards)}장, verdict={draft['verdict']})")
 
     # ---- 상태 갱신: 주제 사용일, 사용한 논문 ----------------------------
     state_p = DATA / "topic_state.json"
     state = json.loads(state_p.read_text(encoding="utf-8")) if state_p.exists() else {}
-    state[topic["id"]] = {"last_used": args.date, "pmid": paper["pmid"]}
+    state[topic["id"]] = {"last_used": today, "pmid": paper["pmid"]}
     state_p.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     used_p = DATA / "used_papers.json"
     used = json.loads(used_p.read_text(encoding="utf-8")) if used_p.exists() else []
-    used.append({"pmid": paper["pmid"], "doi": paper["doi"], "date": args.date,
+    used.append({"pmid": paper["pmid"], "doi": paper["doi"], "date": today,
                  "topic": topic["id"], "title": paper["title"]})
     used_p.write_text(json.dumps(used, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return 0

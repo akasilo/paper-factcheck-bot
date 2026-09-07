@@ -236,7 +236,8 @@ def main() -> int:
 
     if args.auto:
         targets = []
-        for qpath in sorted((ROOT / "queue").glob("????-??-??.json")):
+        for qpath in sorted(p for p in (ROOT / "queue").glob("*.json")
+                            if not p.name.startswith("_")):
             try:
                 item = json.loads(qpath.read_text(encoding="utf-8"))
             except Exception as e:

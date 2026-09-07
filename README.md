@@ -4,29 +4,45 @@
 
 ## 흐름
 
+큐는 **날짜가 아니라 순서**로 관리한다. 초안이 `queue/0007-airfryer.json` 처럼 쌓여 있고,
+매일 아침 그중 링크가 채워진 가장 오래된 하나가 나간다. 그래서 하루를 건너뛰어도 빈 날이 생기지 않는다.
+
 ```
-매일 20:00 KST  draft-post.yml
-  bot/find_papers.py  ── PubMed 에서 "일상 제품 × 최근 3년 논문" 검색 (data/topics.json 주제 순환)
-  bot/draft_post.py   ── Claude(구독 토큰)로 카드 원고·캡션·쓰레드 본문 초안 → queue/<내일>.json (approved: false)
-  bot/render_cards.py ── 카드 이미지 렌더 → images/<내일>/
-  bot/open_issue.py   ── "[승인 대기]" 이슈 생성 (휴대폰 GitHub 알림)
+매일 19:43 KST  draft-post.yml   ── 대기 초안을 목표 개수(기본 10개)까지 채운다
+  bot/fill_pool.py  → 부족한 만큼 반복:
+      bot/find_papers.py  ── PubMed 검색 + LLM 판정기가 제품 직접성 기준으로 논문 선택
+      bot/draft_post.py   ── Claude(구독 토큰)로 카드 원고·캡션·쓰레드 본문 → queue/NNNN-<주제>.json
+  bot/render_cards.py ── 카드 이미지 렌더 → images/<주제>/
+  bot/sheet_sync.py --push ── 구글시트에 행 추가 (주제·훅·추천 제품 조건·논문·미리보기)
         │
-        ▼  이슈에 쿠팡 링크 댓글  → approve.yml 이 approved: true + link 저장 (skip 이면 건너뜀)
-queue/YYYY-MM-DD.json  (approved: true + link)
+        ▼  사용자가 시트의 '쿠팡 링크' 칸을 틈틈이 채운다 (건너뛰려면 skip)
         │
-        ▼  매일 08:00 KST (.github/workflows/daily-post.yml)
-bot/publish.py ── 인스타 캐러셀 게시
-               ├─ Threads 캐러셀 게시
-               └─ Threads 게시물에 추천 링크 답글
+        ▼  매일 07:37 KST  daily-post.yml
+  bot/sheet_sync.py --pull ── 링크 → approved:true / skip → skipped/ 로 이동
+  bot/publish.py           ── 가장 오래된 승인 초안 하나를
+                                인스타 캐러셀 → Threads 캐러셀 → Threads 링크 답글
+  bot/sheet_sync.py --status ── 시트 '상태' 칸을 게시완료/건너뜀 으로
         │
         ▼
 posted/YYYY-MM-DD.json  (게시물 ID·시간 기록, 큐 파일은 삭제)
 ```
 
-- 큐 항목이 `approved: true` 가 아니거나 `link` 가 비어 있으면 **아무것도 올리지 않고** 조용히 끝납니다.
+- 링크가 채워진 초안이 하나도 없으면 **아무것도 올리지 않고** 조용히 끝납니다.
 - 단계마다 결과를 바로 기록하므로 중간에 실패해도 재실행하면 이미 올린 것은 건너뜁니다.
 - 이미지는 인스타/Threads 서버가 직접 가져가야 하므로 **공개 URL** 이어야 합니다.
   기본값은 이 저장소의 raw URL(`IMAGE_BASE_URL`)이며, 저장소가 public 일 때만 동작합니다.
+- `SHEET_URL` 을 비워두면 시트 대신 예전 방식(GitHub 이슈 댓글 승인, `approve.yml`)으로 돌아갑니다.
+
+## 구글시트 연결
+
+`_sheet/Code.gs` 를 구글시트의 **확장 프로그램 → Apps Script** 에 붙여넣고, 맨 위 `TOKEN` 을
+아무 긴 문자열로 바꾼 뒤 **배포 → 새 배포 → 웹 앱(실행: 나 / 액세스: 모든 사용자)** 으로 배포한다.
+나온 URL 과 TOKEN 을 GitHub Secrets 의 `SHEET_URL`, `SHEET_TOKEN` 에 넣으면 끝.
+
+시트 열: `id · 상태 · 주제 · 훅 · 추천 제품 조건 · 쿠팡 링크 · 논문 · 카드 미리보기 · 만든날짜`
+— 봇이 나머지를 채우고, 사람은 **'쿠팡 링크' 한 칸만** 채운다. 건너뛰려면 그 칸에 `skip`.
+
+Code.gs 를 고쳤으면 **배포 → 배포 관리 → 편집 → 버전: 새 버전 → 배포** 를 해야 반영된다.
 
 ## 큐 파일 형식
 
@@ -49,7 +65,7 @@ posted/YYYY-MM-DD.json  (게시물 ID·시간 기록, 큐 파일은 삭제)
 | `data/topics.json` | 주제 목록. `id`, `ko`(표시명), `query`(PubMed 검색식), `hint`(대안 제품 조건). 자유롭게 추가·삭제 |
 | `data/topic_state.json` | 주제별 마지막 사용일 (봇이 갱신) |
 | `data/used_papers.json` | 이미 쓴 논문 (봇이 갱신) — 같은 논문을 다시 고르지 않음 |
-| `skipped/` | 승인되지 않은 채 날짜가 지난 초안 |
+| `skipped/` | 시트에서 `skip` 처리한 초안 |
 
 ## 카드뉴스 (`cards`)
 
@@ -81,6 +97,7 @@ python bot/render_cards.py --auto                # 이미지 없는 큐 항목 �
 | `THREADS_USER_ID` | Threads 토큰 교환 시 나온 `user_id` |
 | `THREADS_TOKEN` | Threads 장기 토큰 (60일) |
 | `CLAUDE_CODE_OAUTH_TOKEN` | Claude 구독 토큰 (`claude setup-token`) — 원고 작성 기본 |
+| `SHEET_URL`, `SHEET_TOKEN` | 구글시트 Apps Script 웹 앱 URL / 토큰 (없으면 이슈 방식) |
 | `LLM_API_KEY` | (대체) Groq 등 OpenAI 호환 LLM 키 |
 | `GEMINI_API_KEY` | (선택) Google AI Studio API 키 — `LLM_PROVIDER=gemini` 일 때, 나중에 배경 이미지 |
 | `REPO_PAT` (선택) | Actions secrets 쓰기 권한 PAT. 있으면 토큰 갱신 시 Secrets 자동 업데이트 |
@@ -94,11 +111,13 @@ python bot/render_cards.py --auto                # 이미지 없는 큐 항목 �
 | 이름 | 언제 | 하는 일 |
 |---|---|---|
 | `check-tokens` | 수동 | Secrets 가 맞는지 `/me` 호출로 확인 (게시 안 함) |
-| `draft-post` | 매일 20:00 KST / 수동 | 논문 검색 → LLM 초안 → 렌더 → 승인 이슈. 수동 실행 시 날짜·주제 지정 가능 |
-| `approve` | 승인 이슈 댓글 | 링크 댓글 → 승인, `skip` → 건너뜀 (저장소 주인 댓글만) |
+| `draft-post` | 매일 19:43 KST / 수동 | 대기 초안을 목표 개수까지 보충 → 렌더 → 시트에 행 추가 |
+| `approve` | 승인 이슈 댓글 | (시트를 안 쓸 때만) 링크 댓글 → 승인, `skip` → 건너뜀 |
 | `render-cards` | `queue/*.json` push 시 / 수동 | `cards` → 카드뉴스 이미지 렌더 후 커밋 |
-| `daily-post` | 매일 08:00 KST / 수동 | 오늘 큐 항목 게시. 수동 실행 시 날짜·대상·dry-run 선택 가능 |
+| `daily-post` | 매일 07:37 KST / 수동 | 시트에서 링크 받아 가장 오래된 승인 초안 하나 게시 |
 | `refresh-tokens` | 매주 월요일 / 수동 | 60일 토큰 연장 |
+
+저장소에 커밋하는 워크플로는 모두 `bot/commit_push.sh` 를 거친다. 두 워크플로가 동시에 push 해서 거부되면 원격을 다시 받아 자기 변경만 다시 얹어 재시도한다.
 
 ## 로컬 실행
 

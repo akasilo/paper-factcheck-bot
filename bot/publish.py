@@ -74,36 +74,24 @@ def same_item(a: dict, b: dict) -> bool:
     return (a.get("instagram_caption") or "") == (b.get("instagram_caption") or "")
 
 
-def archive_stale(date: str) -> None:
-    """오늘보다 오래됐는데 승인 안 된 큐 항목은 skipped/ 로 치운다 (큐가 쌓이지 않게)."""
-    skipped = ROOT / "skipped"
-    for p in sorted(QUEUE_DIR.glob("????-??-??.json")):
-        if p.stem >= date:
-            continue
-        try:
-            item = load_json(p)
-        except Exception:
-            continue
-        if item.get("approved") is True:
-            continue
-        skipped.mkdir(exist_ok=True)
-        p.rename(skipped / p.name)
-        log.info("승인 안 된 지난 항목 보관: skipped/%s", p.name)
-
-
 def pick_queue_item(date: str) -> Path | None:
-    archive_stale(date)
-    exact = QUEUE_DIR / f"{date}.json"
+    """대기 중인 초안 중 가장 오래된 '승인된' 것 하나.
+
+    큐는 날짜가 아니라 순서(0001-, 0002- …)로 관리하므로, 어떤 날 링크를 안 채워
+    건너뛰더라도 그 자리는 다음 초안이 자연스럽게 메운다.
+    옛 방식(queue/YYYY-MM-DD.json)도 같이 인식한다.
+    """
+    exact = QUEUE_DIR / f"{date}.json"          # 옛 방식 호환: 오늘 날짜 파일이 있으면 우선
     if exact.exists():
         return exact
-    # 놓친 날짜가 있으면 가장 오래된 승인 항목을 집는다
-    for p in sorted(QUEUE_DIR.glob("????-??-??.json")):
-        if p.stem <= date:
-            try:
-                if load_json(p).get("approved") is True:
-                    return p
-            except Exception:
-                continue
+    for p in sorted(QUEUE_DIR.glob("*.json")):
+        if p.name.startswith("_"):
+            continue
+        try:
+            if load_json(p).get("approved") is True:
+                return p
+        except Exception:
+            continue
     return None
 
 
@@ -165,8 +153,8 @@ def main() -> int:
         log.info("게시할 큐 항목이 없습니다 (date=%s). 종료.", args.date)
         return 0
     item = load_json(qpath)
-    date = qpath.stem
-    log.info("큐 항목: %s", qpath.name)
+    date = args.date                     # 기록 파일은 '실제 올린 날짜'로 남긴다
+    log.info("큐 항목: %s (%s)", qpath.name, item.get("topic_ko", ""))
 
     image_urls = resolve_image_urls(item)
     problems = validate(item, image_urls, allow_no_link=args.allow_no_link)
