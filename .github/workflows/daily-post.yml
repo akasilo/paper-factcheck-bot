@@ -2,8 +2,9 @@ name: daily-post
 
 on:
   schedule:
-    # 매일 08:00 KST (= 23:00 UTC 전날). 시간 바꾸려면 여기만 수정.
-    - cron: "0 23 * * *"
+    # 매일 07:37 KST 목표 (= 22:37 UTC 전날). GitHub 예약 실행은 정각에 몰려 20~40분 밀리므로
+    # 어중간한 분으로 잡아 실제로 08시 전후에 올라가게 한다. 시간 바꾸려면 여기만 수정.
+    - cron: "37 22 * * *"
   workflow_dispatch:
     inputs:
       date:
