@@ -305,7 +305,7 @@ def next_seq() -> int:
     seen = [0]
     for d in (QUEUE, ROOT / "posted", ROOT / "skipped"):
         for p in d.glob("*.json"):
-            m = re.match(r"(\d{4})-", p.name)
+            m = re.match(r"(\d{4})-(?=.*[A-Za-z])", p.name)   # 0001-airfryer O, 2026-09-08 X
             if m:
                 seen.append(int(m.group(1)))
             else:                       # posted/ 는 날짜 이름이라 안쪽 id 를 본다
@@ -314,7 +314,7 @@ def next_seq() -> int:
                 except Exception:
                     continue
                 sid = str((d2.get("queue") or d2).get("id", ""))
-                m2 = re.match(r"(\d{4})-", sid)
+                m2 = re.match(r"(\d{4})-(?=.*[A-Za-z])", sid)
                 if m2:
                     seen.append(int(m2.group(1)))
     return max(seen) + 1

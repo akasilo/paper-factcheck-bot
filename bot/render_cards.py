@@ -274,7 +274,8 @@ def render_one(date: str, write: bool = True) -> int:
         print(f"cards 는 2~10장이어야 합니다 (현재 {len(cards)}장)")
         return 1
 
-    seed = int(date.replace("-", "")) % 100000
+    # 큐 이름이 날짜가 아니라 순번(0001-airfryer)이라 문자열에서 안정적인 시드를 만든다
+    seed = sum((i + 1) * ord(c) for i, c in enumerate(date)) % 100000
     outs = render_cards(cards, ROOT / "images" / date, seed=seed)
 
     if write:
