@@ -73,6 +73,14 @@ def main() -> int:
     paper = item.get("paper", {})
     raw_base = f"https://raw.githubusercontent.com/{args.repo}/main/"
 
+    # 이미 승인/건너뜀 처리된 항목이면 이슈를 다시 열지 않음 (수동으로 미리 만든 초안 + 정기 실행이 겹칠 때)
+    if item.get("approved") is True:
+        print(f"{args.date} 는 이미 승인됨 — 이슈 생성 건너뜀")
+        return 0
+    if item.get("skipped"):
+        print(f"{args.date} 는 건너뛰기로 처리됨 — 이슈 생성 건너뜀")
+        return 0
+
     # 이미 열린 승인 이슈가 있으면 중복 생성 안 함
     existing = sh("gh", "issue", "list", "--repo", args.repo, "--label", LABEL, "--state", "open",
                   "--search", f"\"{args.date}\" in:title", "--json", "number", "--jq", ".[].number")
