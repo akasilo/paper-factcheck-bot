@@ -1,9 +1,9 @@
 name: draft-post
 
-# 매일 저녁 8시(KST): 논문 검색 → LLM 판정·원고 초안 → 카드 렌더 → queue/<내일>.json 커밋 → 승인 이슈 열기
+# 매일 저녁 8시 무렵(KST): 논문 검색 → LLM 판정·원고 초안 → 카드 렌더 → queue/<내일>.json 커밋 → 승인 이슈 열기
 on:
   schedule:
-    - cron: "0 11 * * *"   # 20:00 KST
+    - cron: "43 10 * * *"   # 19:43 KST (정각은 GitHub 예약 실행이 몰려 밀리므로 어중간한 분으로)
   workflow_dispatch:
     inputs:
       date:
