@@ -1,0 +1,76 @@
+{
+  "id": "2036-electric_toothbrush",
+  "approved": false,
+  "link": "",
+  "topic": "electric_toothbrush",
+  "topic_ko": "전동칫솔",
+  "verdict": "mixed",
+  "evidence_level": "meta-analysis",
+  "product_hint": "칫솔모가 왕복 회전하는 회전-진동식 전동칫솔 (특히 교정 치료자·어린이용)",
+  "caveats": [
+    "19개 RCT를 통계적으로 종합한 네트워크 메타분석으로, 개별 연구의 칫솔질 시간·압력 등 세부 조건은 초록에 명시되지 않음",
+    "연구 자금 지원원이나 이해상충 정보는 초록에서 확인 불가",
+    "단기 임상시험 결과인지 장기 사용 효과인지 초록만으로는 구분되지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "전동칫솔\n종류마다\n[[효과 차이]]\n있다는 결과"
+    },
+    {
+      "type": "body",
+      "text": "최근 발표된 논문에 따르면, 전동칫솔도 진동 방식에 따라 플라크·잇몸염 감소 효과가 다르게 나타났다는 결과가 나왔어요. 19개 무작위 대조 시험을 종합한 분석입니다."
+    },
+    {
+      "type": "body",
+      "text": "칫솔모가 왕복 회전하는 [[회전-진동식]]이 플라크 감소 순위 1위(SUCRA 89.2%)였고, 소닉(음파식) 72.4%, 초음파식 54.1%, 기타 전동 45.3%, 수동칫솔 18.3% 순으로 나타났대요."
+    },
+    {
+      "type": "body",
+      "text": "잇몸염 감소에서도 비슷한 순위가 나왔고, 특히 교정치료 중인 사람과 어린이에게서 효과가 더 크게 나타났다는 보고예요."
+    },
+    {
+      "type": "body",
+      "text": "전반적으로 연구의 편향 위험은 낮고 결과 일관성도 있었다고 해요. 다만 개인 칫솔질 습관·사용 기간 같은 변수는 초록에 따로 나오지 않아요.",
+      "note": "※ 기존 임상시험들을 통계적으로 종합한 결과로, 개인차가 있을 수 있음"
+    },
+    {
+      "type": "body",
+      "text": "오늘은 내 전동칫솔이 어떤 방식인지 확인해보고, 교체 시 [[회전-진동식]]인지 살펴보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Comparative efficacy of electric toothbrush technologies in plaque and gingivitis reduction: a network meta-analysis.",
+        "journal": "Clinical oral investigations",
+        "year": "2026",
+        "doi": "10.1007/s00784-026-06955-z",
+        "authors": "Luo C, Chen N, Jing Q et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2036-electric_toothbrush/01.jpg",
+    "images/2036-electric_toothbrush/02.jpg",
+    "images/2036-electric_toothbrush/03.jpg",
+    "images/2036-electric_toothbrush/04.jpg",
+    "images/2036-electric_toothbrush/05.jpg",
+    "images/2036-electric_toothbrush/06.jpg",
+    "images/2036-electric_toothbrush/07.jpg"
+  ],
+  "instagram_caption": "전동칫솔, 아무거나 사도 똑같을까요?\n\n최신 논문에 따르면 전동칫솔도 진동 방식에 따라 플라크와 잇몸염 감소 효과가 다르게 나타났다는 결과가 나왔어요.\n\n19개의 무작위 대조 시험을 종합한 네트워크 메타분석에서, 칫솔모가 왕복 회전하는 [[회전-진동식]] 전동칫솔이 플라크 제거 순위 1위(SUCRA 89.2%)를 차지했대요. 그 다음이 소닉(음파식) 72.4%, 초음파식 54.1%, 기타 전동 45.3%, 수동칫솔은 18.3%로 가장 낮았습니다.\n\n잇몸염 감소에서도 비슷한 순위가 나타났고, 특히 교정치료 중인 사람과 어린이에게서 효과가 더 크게 나타났다는 보고예요.\n\n다만 이 결과는 기존에 발표된 임상시험들을 통계적으로 종합한 것으로, 개인마다 칫솔질 습관이나 사용 기간에 따라 차이가 있을 수 있어요.\n\n오늘은 내 전동칫솔이 어떤 진동 방식인지 한번 확인해보는 건 어떨까요? 교정 중이거나 아이 칫솔을 고른다면 특히 참고해보세요.\n\n📄 출처: Luo C, Chen N, Jing Q et al., Clinical oral investigations (2026). DOI 10.1007/s00784-026-06955-z\n\n#논문팩트체크 #paper_factcheck #전동칫솔 #구강건강 #치아관리 #잇몸건강 #플라크 #치과상식 #칫솔질 #교정치료 #양치질 #오럴케어\n*본 카드뉴스의 이미지는 AI를 이용하여 제작되었습니다.",
+  "threads_text": "전동칫솔도 다 똑같은 줄 알았는데, 아니었어요. 최근 네트워크 메타분석(19개 임상시험 종합)을 보니 칫솔모가 왕복 회전하는 [[회전-진동식]]이 플라크·잇몸염 감소에서 가장 순위가 높았대요(SUCRA 89.2%). 소닉, 초음파식, 수동칫솔 순으로 낮아졌고, 특히 교정 중이거나 아이들한테 효과가 더 크게 나타났다고 하네요. 여러분 칫솔은 어떤 방식인가요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Comparative efficacy of electric toothbrush technologies in plaque and gingivitis reduction: a network meta-analysis.",
+    "journal": "Clinical oral investigations",
+    "year": "2026",
+    "doi": "10.1007/s00784-026-06955-z",
+    "pmid": "42234020",
+    "authors": "Luo C, Chen N, Jing Q et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42234020/"
+  },
+  "drafted_at": "2026-09-07T21:58:38.871452+09:00",
+  "model": "claude_code:default"
+}

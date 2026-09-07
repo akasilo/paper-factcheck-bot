@@ -1,0 +1,76 @@
+{
+  "id": "2034-collagen",
+  "approved": false,
+  "link": "",
+  "topic": "collagen",
+  "topic_ko": "콜라겐",
+  "verdict": "good",
+  "evidence_level": "meta-analysis",
+  "product_hint": "저분자 콜라겐 펩타이드 형태이며 원료·섭취 기간 정보가 표시된 제품",
+  "caveats": [
+    "포함된 개별 무작위 대조 시험들에 편향 위험이 있다고 저자들이 밝힘",
+    "탄력 효과의 원료별(p=0.21)·측정방법별(p=0.06) 차이는 통계적으로 유의하지 않았음",
+    "저자들도 결론에서 추가 대규모 무작위 대조 시험이 필요하다고 명시함"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "먹는 콜라겐\n[[임상시험 26건]]\n결과는 {{반전}}\n진짜 효과 있었다"
+    },
+    {
+      "type": "body",
+      "text": "콜라겐 보충제는 효과 논란이 많은 성분이었어요. 그런데 무작위 대조 시험 [[26건]]을 모은 리뷰가 나왔어요. 참가자는 총 1721명이었습니다."
+    },
+    {
+      "type": "body",
+      "text": "결과는 놀라웠어요. 가수분해 콜라겐을 먹은 그룹이 위약군보다 피부 [[수분]]과 탄력이 통계적으로 유의하게 좋아졌다는 결과가 나왔습니다."
+    },
+    {
+      "type": "body",
+      "text": "다만 수분 개선 효과는 콜라겐 [[원료]]와 섭취 기간에 따라 차이가 있었어요. 탄력 효과는 원료나 측정 방법 차이는 크지 않았다고 해요."
+    },
+    {
+      "type": "body",
+      "text": "연구팀은 포함된 시험들에서 몇 가지 편향 가능성도 확인했어요. {{추가로 큰 규모의 무작위 대조 시험이 더 필요}}하다고 밝혔습니다.",
+      "note": "※ 이번 리뷰는 특정 제품이 아닌 가수분해 콜라겐 성분 전반을 다룸"
+    },
+    {
+      "type": "body",
+      "text": "오늘 콜라겐 보충제를 고른다면 [[저분자 펩타이드]] 형태인지, 섭취 기간·원료 정보가 표시돼 있는지 확인해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Effects of Oral Collagen for Skin Anti-Aging: A Systematic Review and Meta-Analysis.",
+        "journal": "Nutrients",
+        "year": "2023",
+        "doi": "10.3390/nu15092080",
+        "authors": "Pu SY, Huang YL, Pu CM et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2034-collagen/01.jpg",
+    "images/2034-collagen/02.jpg",
+    "images/2034-collagen/03.jpg",
+    "images/2034-collagen/04.jpg",
+    "images/2034-collagen/05.jpg",
+    "images/2034-collagen/06.jpg",
+    "images/2034-collagen/07.jpg"
+  ],
+  "instagram_caption": "먹는 콜라겐, 정말 효과 있을까요?\n\n콜라겐 보충제는 그동안 효과 논란이 많았어요. 그런데 무작위 대조 시험 26건, 참가자 1721명을 모아 분석한 리뷰 결과가 나왔습니다.\n\n가수분해 콜라겐을 먹은 그룹은 위약군보다 피부 수분과 탄력이 통계적으로 유의하게 좋아졌다는 결과가 확인됐어요.\n\n다만 수분 개선 효과는 콜라겐 원료와 섭취 기간에 따라 차이가 있었고, 탄력 효과는 원료나 측정 방법에 따른 차이는 크지 않았다고 해요. 연구팀은 포함된 시험들의 편향 가능성도 함께 언급하며, 더 큰 규모의 무작위 대조 시험이 필요하다고 밝혔습니다.\n\n오늘 콜라겐 보충제를 고를 땐 저분자 펩타이드 형태인지, 섭취 기간과 원료 정보가 표시돼 있는지 확인해보세요.\n\n📄 출처: Pu SY, Huang YL, Pu CM et al., Nutrients (2023). DOI 10.3390/nu15092080\n\n#논문팩트체크 #paper_factcheck #콜라겐 #먹는콜라겐 #피부건강 #피부탄력 #피부수분 #가수분해콜라겐 #영양제 #뷰티팩트체크 #무작위대조시험 #스킨케어\n*본 카드뉴스의 이미지는 AI를 이용하여 제작되었습니다.",
+  "threads_text": "콜라겐 먹으면 피부 좋아진다는 말, 반신반의했는데... 무작위 대조 시험 26건(참가자 1721명)을 모은 리뷰를 보니 실제로 피부 수분·탄력이 좋아졌다는 결과가 나왔더라고요. 다만 원료랑 섭취 기간에 따라 효과 차이는 있고, 연구팀도 더 큰 연구가 필요하다고 했어요. 여러분은 콜라겐 챙겨 먹어본 적 있나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Effects of Oral Collagen for Skin Anti-Aging: A Systematic Review and Meta-Analysis.",
+    "journal": "Nutrients",
+    "year": "2023",
+    "doi": "10.3390/nu15092080",
+    "pmid": "37432180",
+    "authors": "Pu SY, Huang YL, Pu CM et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37432180/"
+  },
+  "drafted_at": "2026-09-07T21:56:40.018760+09:00",
+  "model": "claude_code:default"
+}

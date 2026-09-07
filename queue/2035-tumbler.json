@@ -1,0 +1,76 @@
+{
+  "id": "2035-tumbler",
+  "approved": false,
+  "link": "",
+  "topic": "tumbler",
+  "topic_ko": "텀블러·물병",
+  "verdict": "bad",
+  "evidence_level": "cross-sectional",
+  "product_hint": "스테인리스 진공 텀블러",
+  "caveats": [
+    "단면 조사라 인과관계는 증명되지 않음, 상관관계 수준의 결과",
+    "오즈비가 1.05~1.21로 크지 않고, 고혈압의 경우 신뢰구간이 1.00에 걸쳐 경계선 수준",
+    "미세플라스틱 24만 개/L 수치는 이 연구의 직접 측정치가 아니라 배경 설명에서 인용한 값"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "매일 마시는\n[[생수]]\n만성질환과\n{{연관 있다?}}"
+    },
+    {
+      "type": "body",
+      "text": "이탈리아 국가통계청 자료로 성인 [[4만5,597명]]의 생수 섭취 습관과 만성질환을 함께 살펴본 단면 조사 논문이 나왔어요."
+    },
+    {
+      "type": "body",
+      "text": "생수를 마시는 사람은 고혈압(오즈비 1.05), 당뇨(1.09), 위·십이지장궤양(1.21), 신장결석(1.17) 위험이 조금씩 더 높게 나타났어요."
+    },
+    {
+      "type": "body",
+      "text": "논문 서두에는 생수 1리터에 미세·나노플라스틱 입자가 평균 {{24만 개}}가량 들어있다는 다른 연구 결과도 함께 소개돼 있어요."
+    },
+    {
+      "type": "body",
+      "text": "이 결과는 '함께 나타난 관련성'이지 생수가 병의 원인이라고 증명한 건 아니에요. 다른 생활습관 요인이 섞였을 가능성도 있어요.",
+      "note": "※ 단면 조사라 인과관계 확인은 어려움, 오즈비도 1.0~1.2대로 크지 않음"
+    },
+    {
+      "type": "body",
+      "text": "오늘은 외출할 때 [[스테인리스 텀블러]]에 물 담아가는 습관, 하나만 시작해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Consumption of Bottled Water and Chronic Diseases: A Nationwide Cross-Sectional Study.",
+        "journal": "International journal of environmental research and public health",
+        "year": "2024",
+        "doi": "10.3390/ijerph21081074",
+        "authors": "Dolcini J, Chiavarini M, Firmani G et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2035-tumbler/01.jpg",
+    "images/2035-tumbler/02.jpg",
+    "images/2035-tumbler/03.jpg",
+    "images/2035-tumbler/04.jpg",
+    "images/2035-tumbler/05.jpg",
+    "images/2035-tumbler/06.jpg",
+    "images/2035-tumbler/07.jpg"
+  ],
+  "instagram_caption": "매일 마시는 생수, 만성질환이랑 관련 있을까요?\n\n이탈리아 국립통계청 자료로 성인 4만5,597명을 조사한 단면 연구가 나왔어요. 생수(플라스틱 병입수) 섭취와 여러 만성질환의 연관성을 살펴봤습니다.\n\n분석 결과 생수를 마시는 사람에서 고혈압(오즈비 1.05), 당뇨(1.09), 위·십이지장궤양(1.21), 신장결석(1.17) 위험이 소폭 더 높게 나타났어요. 나이, 성별, 교육수준, 경제수준은 보정한 값이에요.\n\n논문은 배경 설명으로 생수 1리터에 미세·나노플라스틱 입자가 평균 24만 개가량 포함된다는 다른 연구 결과도 함께 언급했어요.\n\n다만 이건 단면 조사라 '관련 있다'는 것이지 '생수가 병을 일으킨다'고 증명한 건 아니에요. 오즈비도 1.0~1.2대로 크지 않고, 다른 생활습관 요인이 섞였을 가능성도 있어요.\n\n오늘은 외출할 때 스테인리스 텀블러에 물 담아가는 습관, 하나만 시작해보세요.\n\n📄 출처: Dolcini J, Chiavarini M, Firmani G et al., International Journal of Environmental Research and Public Health (2024). DOI 10.3390/ijerph21081074\n\n#논문팩트체크 #paper_factcheck #생수 #미세플라스틱 #텀블러 #플라스틱프리 #제로웨이스트 #건강습관 #환경건강 #만성질환 #고혈압 #신장결석 #생활건강 #친환경\n*본 카드뉴스의 이미지는 AI를 이용하여 제작되었습니다.",
+  "threads_text": "매일 마시는 생수, 사실 좀 신경 쓰이는 결과가 나왔어요. 이탈리아에서 성인 4만5천명 대상으로 생수 마시는 사람과 비교해봤더니, 고혈압·당뇨·위궤양·신장결석 위험이 조금씩 더 높게 나왔대요(오즈비 1.05~1.21). 논문 배경엔 생수 1리터에 미세플라스틱이 평균 24만 개쯤 들어있다는 얘기도 나와요. 물론 단면 조사라 인과관계까진 증명 못 했고 차이도 크진 않아요. 그래도 텀블러 하나 챙기는 게 손해볼 일은 없겠죠? 여러분은 생수 얼마나 드세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Consumption of Bottled Water and Chronic Diseases: A Nationwide Cross-Sectional Study.",
+    "journal": "International journal of environmental research and public health",
+    "year": "2024",
+    "doi": "10.3390/ijerph21081074",
+    "pmid": "39200683",
+    "authors": "Dolcini J, Chiavarini M, Firmani G et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39200683/"
+  },
+  "drafted_at": "2026-09-07T21:57:34.253764+09:00",
+  "model": "claude_code:default"
+}
