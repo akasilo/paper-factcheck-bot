@@ -65,6 +65,15 @@ def save_json(p: Path, data: dict) -> None:
         f.write("\n")
 
 
+def same_item(a: dict, b: dict) -> bool:
+    """두 큐 항목이 같은 글인지 (논문 pmid/doi 또는 캡션으로 비교)."""
+    pa, pb = a.get("paper") or {}, b.get("paper") or {}
+    for k in ("pmid", "doi"):
+        if pa.get(k) and pb.get(k):
+            return pa[k] == pb[k]
+    return (a.get("instagram_caption") or "") == (b.get("instagram_caption") or "")
+
+
 def archive_stale(date: str) -> None:
     """오늘보다 오래됐는데 승인 안 된 큐 항목은 skipped/ 로 치운다 (큐가 쌓이지 않게)."""
     skipped = ROOT / "skipped"
@@ -178,7 +187,16 @@ def main() -> int:
         log.info("dry-run: 여기까지. 실제 게시는 하지 않습니다.")
         return 0
 
+    # 같은 날짜로 이미 다른 글이 게시된 적 있으면(예: 앞당겨 수동 게시) 기록 파일 이름을 -2, -3 으로 바꿔
+    # 기존 기록 때문에 "이미 게시됨"으로 오인하지 않게 한다.
     result_path = POSTED_DIR / f"{date}.json"
+    n = 1
+    while result_path.exists():
+        prev = load_json(result_path)
+        if same_item(prev.get("queue", {}), item):
+            break
+        n += 1
+        result_path = POSTED_DIR / f"{date}-{n}.json"
     result = load_json(result_path) if result_path.exists() else {"date": date, "queue": item}
     result.setdefault("queue", item)
 
