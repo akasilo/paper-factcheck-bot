@@ -1,7 +1,7 @@
 {
   "id": "2028-protein_powder",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/gQG3YuKgYS",
   "topic": "protein_powder",
   "topic_ko": "단백질 보충제",
   "verdict": "good",
@@ -72,5 +72,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/38626029/"
   },
   "drafted_at": "2026-09-07T17:21:17.679396+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-08T11:35:02.484822+09:00"
 }

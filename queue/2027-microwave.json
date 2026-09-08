@@ -1,7 +1,7 @@
 {
   "id": "2027-microwave",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/gQGYhsh2NU",
   "topic": "microwave",
   "topic_ko": "전자레인지 용기",
   "verdict": "bad",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/37343248/"
   },
   "drafted_at": "2026-09-07T17:19:52.783356+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-08T11:35:02.484493+09:00"
 }
