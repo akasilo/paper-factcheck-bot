@@ -40,6 +40,8 @@ jobs:
       THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
       # 이미지 공개 URL 기준 경로. 저장소가 public 이면 raw URL 로 바로 쓸 수 있다.
       IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/
+      SHEET_URL: ${{ secrets.SHEET_URL }}
+      SHEET_TOKEN: ${{ secrets.SHEET_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -49,6 +51,10 @@ jobs:
 
       - name: Install deps
         run: pip install -r requirements.txt
+
+      # 시트에 채워둔 쿠팡 링크를 큐에 반영한다 (링크 → 승인 / 'skip' → 건너뜀)
+      - name: Pull links from sheet
+        run: python bot/sheet_sync.py --pull
 
       - name: Publish
         run: |
@@ -62,3 +68,8 @@ jobs:
         if: always()
         run: |
           bash bot/commit_push.sh "post: $(date +%Y-%m-%d) [skip ci]" queue posted skipped
+
+      # 게시완료 / 건너뜀 을 시트 '상태' 칸에 반영
+      - name: Write status back to sheet
+        if: always()
+        run: python bot/sheet_sync.py --status
