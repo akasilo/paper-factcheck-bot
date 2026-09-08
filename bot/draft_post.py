@@ -25,6 +25,9 @@ from pathlib import Path
 
 import requests
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import card_styles
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 QUEUE = ROOT / "queue"
@@ -51,6 +54,14 @@ SYSTEM_PROMPT = """당신은 인스타그램 계정 @paper_factcheck 의 편집�
 11. 논문이 제품을 직접 다루지 않고 성분·물질만 다루면, hook 은 물질 중심으로 잡고 제품은 "이 물질이 쓰이는 제품 예"로만 연결하세요. 제품 자체가 위험/안전하다고 단정 금지.
 12. 영어 학술 용어는 한국어로 풀어쓰세요 (umbrella review → 여러 메타분석을 종합한 리뷰, RCT → 무작위 대조 시험). 해시태그는 주제와 직접 관련된 것만.
 13. instagram_caption 은 첫 줄 훅 → 빈 줄로 나눈 짧은 문단 3~4개 → 오늘의 행동 → 출처 줄 → 해시태그 순서. threads_text 는 말하듯 가볍게, 마지막은 독자에게 묻는 한 문장.
+14. 카드 디자인을 이 글의 성격에 맞게 고릅니다.
+    style — "geo": 위험·오염·수치 폭로처럼 경고 톤이 강한 글 (어두운 배경 + 격자·원호 그래픽).
+            "paper": 괴담 반박·안전성 해명·"의외로 괜찮다"처럼 차분히 정리하는 글 (밝은 종이 배경 + 검은 글씨).
+            "soft": 수면·피부·기분처럼 몸에 관한 부드러운 생활 이야기 (은은한 색번짐).
+    accent — 글의 소재에 어울리는 포인트 색 하나:
+            "yellow"(기본·경고), "blue"(물·수면·화면·차분함), "green"(식품·자연·건강),
+            "orange"(열·조리·에너지), "violet"(밤·뷰티·호르몬), "red"(가장 센 경고. 아껴 쓸 것).
+    verdict 가 good 이면 대체로 paper, bad 면 geo 가 어울리지만 글 내용을 우선해서 고르세요.
 
 출력은 JSON 하나만. 스키마:
 {
@@ -68,6 +79,8 @@ SYSTEM_PROMPT = """당신은 인스타그램 계정 @paper_factcheck 의 편집�
   "threads_text": "...",
   "product_hint": "...",
   "evidence_level": "meta-analysis|systematic review|review|rct|cohort|cross-sectional|experimental|animal|in-vitro|other",
+  "style": "geo|paper|soft",
+  "accent": "yellow|blue|green|orange|violet|red",
   "caveats": ["원고에 반영하지 못한 한계 1~3개"]
 }
 body_cards 는 3~5개."""
@@ -297,6 +310,10 @@ def validate(d: dict) -> list[str]:
         problems.append("instagram_caption 길이 이상")
     if len(d.get("threads_text", "")) > 500 or not d.get("threads_text"):
         problems.append("threads_text 길이 이상")
+    if d.get("style") and d["style"] not in card_styles.STYLE_NAMES:
+        problems.append(f"style 값 이상 ({d['style']})")
+    if d.get("accent") and d["accent"] not in card_styles.ACCENTS:
+        problems.append(f"accent 값 이상 ({d['accent']})")
     return problems
 
 
@@ -366,7 +383,7 @@ def main() -> int:
     caption = draft["instagram_caption"].rstrip()
     if "#paper_factcheck" not in caption:
         caption += " #paper_factcheck"
-    caption += "\n*본 카드뉴스의 이미지는 AI를 이용하여 제작되었습니다."
+    caption += "\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다."
 
     today = datetime.now(KST).strftime("%Y-%m-%d")
     item = {
@@ -377,6 +394,9 @@ def main() -> int:
         "topic_ko": topic["ko"],
         "verdict": draft["verdict"],
         "evidence_level": draft.get("evidence_level", ""),
+        "style": card_styles.resolve(draft.get("style")),
+        "accent": draft.get("accent") if draft.get("accent") in card_styles.ACCENTS
+                  else card_styles.DEFAULT_ACCENT,
         "product_hint": draft.get("product_hint") or topic.get("hint", ""),
         "caveats": draft.get("caveats", []),
         "cards": cards,

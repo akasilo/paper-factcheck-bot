@@ -24,7 +24,8 @@ import sys
 import tempfile
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import card_styles
 
 ROOT = Path(__file__).resolve().parent.parent
 RENDER_DIR = ROOT / "render"
@@ -50,49 +51,19 @@ def markup(text: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# 배경 자동 생성 (사진이 없을 때)
+# 배경 자동 생성 — 실제 그림은 bot/card_styles.py 가 담당한다
 # ---------------------------------------------------------------------------
 
-PALETTES = [
-    [(18, 34, 74), (36, 84, 160), (80, 150, 230)],      # 네이비-블루
-    [(60, 18, 52), (140, 40, 110), (230, 110, 150)],    # 와인-핑크
-    [(14, 52, 44), (34, 120, 96), (110, 200, 160)],     # 딥그린
-    [(70, 40, 10), (170, 105, 40), (240, 185, 90)],     # 앰버
-    [(30, 30, 40), (80, 80, 110), (150, 150, 190)],     # 그레이-라벤더
-    [(50, 20, 20), (150, 50, 40), (230, 120, 90)],      # 테라코타
-]
-
-
-def make_background(path: Path, seed: int) -> None:
-    rnd = random.Random(seed)
-    pal = PALETTES[seed % len(PALETTES)]
-    img = Image.new("RGB", (W, H), pal[0])
-    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    d = ImageDraw.Draw(layer)
-    for _ in range(12):
-        r = rnd.randint(260, 720)
-        x = rnd.randint(-r // 2, W - r // 2)
-        y = rnd.randint(-r // 2, H - r // 2)
-        c = rnd.choice(pal[1:])
-        d.ellipse([x, y, x + r, y + r], fill=(*c, rnd.randint(150, 235)))
-    layer = layer.filter(ImageFilter.GaussianBlur(95))
-    img.paste(layer, (0, 0), layer)
-    # 살짝 어둡게 + 비네팅
-    vign = Image.new("L", (W, H), 0)
-    vd = ImageDraw.Draw(vign)
-    vd.ellipse([-W * 0.3, -H * 0.2, W * 1.3, H * 1.2], fill=255)
-    vign = vign.filter(ImageFilter.GaussianBlur(200))
-    dark = Image.new("RGB", (W, H), (0, 0, 0))
-    img = Image.composite(img, dark, vign.point(lambda v: 150 + v * 105 // 255))
-    path.parent.mkdir(parents=True, exist_ok=True)
-    img.save(path, "JPEG", quality=88)
+def make_background(path: Path, seed: int, style: str | None = None, accent: str | None = None) -> None:
+    card_styles.make_background(path, seed, style, accent)
 
 
 # ---------------------------------------------------------------------------
 # 카드 HTML 조립
 # ---------------------------------------------------------------------------
 
-def build_card_html(card: dict, index: int, total: int, bg_path: Path | None) -> str:
+def build_card_html(card: dict, index: int, total: int, bg_path: Path | None,
+                    style: str | None = None, accent: str | None = None) -> str:
     ctype = card.get("type", "body")
     tpl = TEMPLATE.read_text(encoding="utf-8")
 
@@ -100,7 +71,9 @@ def build_card_html(card: dict, index: int, total: int, bg_path: Path | None) ->
         bg_css = f'url("{bg_path.resolve().as_uri()}")'
         bg_class = "zoom"
     else:
-        bg_css = "linear-gradient(160deg, #1a2238 0%, #0b0c10 100%)"
+        bg_css = ("linear-gradient(160deg, #f7f5f0 0%, #eceae3 100%)"
+                  if card_styles.is_light(style)
+                  else "linear-gradient(160deg, #1a2238 0%, #0b0c10 100%)")
         bg_class = ""
 
     brand = f'<div class="brand">{html.escape(BRAND)}</div>'
@@ -150,6 +123,7 @@ def build_card_html(card: dict, index: int, total: int, bg_path: Path | None) ->
                .replace("%%BG%%", bg_css)
                .replace("%%BGCLASS%%", bg_class)
                .replace("%%CLASS%%", ctype)
+               .replace("%%THEME%%", card_styles.theme_css(style, accent))
                .replace("%%BODY%%", body))
 
 
@@ -157,7 +131,9 @@ def build_card_html(card: dict, index: int, total: int, bg_path: Path | None) ->
 # 렌더
 # ---------------------------------------------------------------------------
 
-def render_cards(cards: list[dict], out_dir: Path, seed: int = 0) -> list[Path]:
+def render_cards(cards: list[dict], out_dir: Path, seed: int = 0,
+                 style: str | None = None, accent: str | None = None,
+                 force_bg: bool = False) -> list[Path]:
     from playwright.sync_api import sync_playwright
 
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -176,10 +152,10 @@ def render_cards(cards: list[dict], out_dir: Path, seed: int = 0) -> list[Path]:
                     bg_path = cand
             if bg_path is None and card.get("type", "body") != "source":
                 bg_path = out_dir / f"bg{i:02d}.jpg"
-                if not bg_path.exists():
-                    make_background(bg_path, seed * 100 + i)
+                if force_bg or not bg_path.exists():
+                    make_background(bg_path, seed * 100 + i, style, accent)
 
-            html_str = build_card_html(card, i, total, bg_path)
+            html_str = build_card_html(card, i, total, bg_path, style, accent)
             with tempfile.NamedTemporaryFile("w", suffix=".html", dir=RENDER_DIR,
                                              delete=False, encoding="utf-8") as f:
                 f.write(html_str)
@@ -191,7 +167,11 @@ def render_cards(cards: list[dict], out_dir: Path, seed: int = 0) -> list[Path]:
                 out = out_dir / f"{i:02d}.jpg"
                 page.screenshot(path=str(out), type="jpeg", quality=92)
                 outputs.append(out)
-                print(f"  렌더 {i}/{total} → {out.relative_to(ROOT)}")
+                try:
+                    shown = out.relative_to(ROOT)
+                except ValueError:      # ROOT 밖으로 렌더할 때
+                    shown = out
+                print(f"  렌더 {i}/{total} → {shown}")
             finally:
                 tmp.unlink(missing_ok=True)
         browser.close()
@@ -226,11 +206,15 @@ def main() -> int:
     ap.add_argument("--no-write", action="store_true", help="queue JSON 의 images 필드를 갱신하지 않음")
     ap.add_argument("--auto", action="store_true",
                     help="queue/*.json 중 cards 는 있는데 이미지가 없거나 빠진 항목을 전부 렌더")
-    ap.add_argument("--force", action="store_true", help="이미지가 있어도 다시 렌더")
+    ap.add_argument("--force", action="store_true", help="이미지가 있어도 다시 렌더 (배경도 새로)")
+    ap.add_argument("--style", choices=card_styles.STYLE_NAMES, help="--demo 용 스타일")
+    ap.add_argument("--accent", choices=list(card_styles.ACCENTS), help="--demo 용 액센트 색")
     args = ap.parse_args()
 
     if args.demo:
-        outs = render_cards(DEMO_CARDS, ROOT / "images" / "demo", seed=7)
+        sub = f"demo-{args.style or card_styles.DEFAULT_STYLE}"
+        outs = render_cards(DEMO_CARDS, ROOT / "images" / sub, seed=7,
+                            style=args.style, accent=args.accent, force_bg=True)
         print(f"완료: {len(outs)}장")
         return 0
 
@@ -255,15 +239,15 @@ def main() -> int:
         rc = 0
         for d in targets:
             print(f"== {d}")
-            rc |= render_one(d, write=not args.no_write)
+            rc |= render_one(d, write=not args.no_write, force_bg=args.force)
         return rc
 
     if not args.date:
         ap.error("--date, --auto, --demo 중 하나가 필요합니다")
-    return render_one(args.date, write=not args.no_write)
+    return render_one(args.date, write=not args.no_write, force_bg=args.force)
 
 
-def render_one(date: str, write: bool = True) -> int:
+def render_one(date: str, write: bool = True, force_bg: bool = False) -> int:
     qpath = ROOT / "queue" / f"{date}.json"
     if not qpath.exists():
         print(f"큐 파일 없음: {qpath}")
@@ -276,7 +260,16 @@ def render_one(date: str, write: bool = True) -> int:
 
     # 큐 이름이 날짜가 아니라 순번(0001-airfryer)이라 문자열에서 안정적인 시드를 만든다
     seed = sum((i + 1) * ord(c) for i, c in enumerate(date)) % 100000
-    outs = render_cards(cards, ROOT / "images" / date, seed=seed)
+    if item.get("style") or item.get("accent"):
+        style = card_styles.resolve(item.get("style"))
+        accent = item.get("accent") or card_styles.DEFAULT_ACCENT
+        picked = "지정"
+    else:   # 옛 초안 — 주제/판정에서 자동으로 고른다
+        style, accent = card_styles.auto_pick(item)
+        picked = "자동"
+    print(f"  스타일: {style} / 액센트: {accent} ({picked})")
+    outs = render_cards(cards, ROOT / "images" / date, seed=seed,
+                        style=style, accent=accent, force_bg=force_bg)
 
     if write:
         item["images"] = [str(p.relative_to(ROOT)).replace("\\", "/") for p in outs]

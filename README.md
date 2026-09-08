@@ -78,12 +78,26 @@ Code.gs 를 고쳤으면 **배포 → 배포 관리 → 편집 → 버전: 새 �
 | `source` | `paper{title,journal,year,doi,authors}`, `cta`(선택), `disclaimer`(선택) | 마지막 장. 출처 + 팔로우 CTA |
 
 텍스트 마크업: `[[노란 형광]]`, `{{빨간 글자}}`, 줄바꿈 `\n`. 글이 길면 자동으로 글자 크기를 줄인다.
-`bg` 가 없거나 파일이 없으면 은은한 배경을 자동 생성해 `images/<date>/bgNN.jpg` 로 저장한다 (나중에 Gemini 생성 이미지로 대체 예정).
+`bg` 가 없거나 파일이 없으면 배경을 자동 생성해 `images/<주제>/bgNN.jpg` 로 저장한다.
+
+### 카드 스타일 (`style` / `accent`)
+
+큐 항목의 `style` 과 `accent` 로 글의 성격에 맞게 디자인을 바꾼다 (`bot/card_styles.py`).
+원고를 쓸 때 Claude 가 함께 골라 넣고, 값이 없는 옛 초안은 주제·verdict 로 자동 선택한다.
+
+| style | 언제 | 모습 |
+|---|---|---|
+| `geo` | 위험·오염·수치 폭로 (경고 톤) | 어두운 배경 + 격자·원호·사선 그래픽 |
+| `paper` | 괴담 반박·안전성 해명 (차분한 톤) | 밝은 종이 질감 + 검은 글씨 |
+| `soft` | 수면·피부·기분 등 몸 이야기 | 은은한 색번짐 |
+
+`accent`: `yellow`(기본) `blue` `green` `orange` `violet` `red` — 형광펜·포인트 색이 바뀐다.
 
 ```bash
-python bot/render_cards.py --demo                # images/demo/ 에 샘플 7장
-python bot/render_cards.py --date 2026-09-07     # queue/2026-09-07.json 렌더 → images/2026-09-07/, queue 의 images 갱신
-python bot/render_cards.py --auto                # 이미지 없는 큐 항목 전부
+python bot/render_cards.py --demo --style paper --accent green   # images/demo-paper/ 에 샘플 7장
+python bot/render_cards.py --date 2030-plastic_container         # 그 큐 항목 렌더 → images/<id>/, queue 의 images 갱신
+python bot/render_cards.py --auto                               # 이미지 없는 큐 항목 전부
+python bot/render_cards.py --auto --force                       # 배경까지 전부 다시 (스타일 바꾼 뒤)
 ```
 
 ## GitHub Secrets
