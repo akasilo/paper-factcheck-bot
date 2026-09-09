@@ -223,13 +223,25 @@ JUDGE_SYSTEM = """당신은 인스타그램 계정 @paper_factcheck 의 편집�
 
 판단 기준 (중요한 순서)
 1. 제품 직접성: 논문이 그 제품(또는 그 제품의 핵심 성분·사용 상황)을 직접 다루는가. 환경·하수·작물 같은 간접 경로만 다루면 탈락.
-2. 독자 유용성: 일반 소비자가 "그래서 뭘 바꾸면 되는데?"에 답할 수 있는 결론이 있는가.
-3. 근거 수준: 메타분석·체계적 문헌고찰·RCT·대규모 코호트 > 소규모·동물·세포 실험.
-4. 훅 가능성: 첫 장 한 줄로 궁금증을 만들 수 있는가.
+2. **결론 유무 (가장 자주 놓치는 항목)**: 초록에 결과의 *방향이나 수치가 실제로 적혀 있는가*.
+   "이런 질문들을 다뤘다 / 이런 주제를 검토했다" 처럼 목차만 나열하고 결론이 없는 초록이 있다.
+   그런 논문으로 카드뉴스를 만들면 훅에서 질문만 던지고 답을 못 하는 빈 껍데기가 된다.
+   단, 후보에 "전문:있음" 이라고 적힌 논문은 초록에 결론이 없어도 본문에서 결론을 가져올 수 있으니
+   이 항목 때문에 탈락시키지 말 것 ("전문:없음" 인데 초록에 결론도 없으면 반드시 탈락).
+3. 독자 유용성: 일반 소비자가 "그래서 뭘 바꾸면 되는데?"에 답할 수 있는가.
+4. 근거 수준: 메타분석·체계적 문헌고찰·RCT·대규모 코호트 > 소규모·동물·세포 실험.
+5. 훅 가능성: 첫 장 한 줄로 궁금증을 만들 수 있는가.
 
 출력은 JSON 하나만:
-{"pick": <후보 번호(1부터) 또는 0(적합한 게 없음)>, "fit": <0~10>, "angle": "<한 줄: 어떤 각도로 쓰면 좋은지>", "reason": "<한 줄 이유>"}
-fit 이 6 미만이면 pick 은 0 으로 하세요."""
+{"pick": <후보 번호(1부터) 또는 0(적합한 게 없음)>,
+ "fit": <0~10 종합 적합도>,
+ "conclusion": <0~10 결론을 확보할 수 있는가. 초록에 결과가 분명하면 높게. 초록엔 없지만 "전문:있음" 이면 7.
+               초록에도 없고 "전문:없음" 이면 0~2>,
+ "finding": "<초록에 적힌 핵심 결과를 한 줄로 옮겨 적기. 못 옮기겠으면 빈 문자열>",
+ "angle": "<한 줄: 어떤 각도로 쓰면 좋은지>",
+ "reason": "<한 줄 이유>"}
+fit 이 6 미만이거나 conclusion 이 5 미만이면 pick 은 0 으로 하세요.
+finding 을 한 줄로 옮겨 적을 수 없다면 그 논문은 conclusion 이 낮은 것입니다."""
 
 
 def llm_judge(cands: list[dict]) -> dict | None:
@@ -240,11 +252,18 @@ def llm_judge(cands: list[dict]) -> dict | None:
     except Exception as e:
         print(f"  judge 불가(import): {e}", file=sys.stderr)
         return None
+    try:
+        import fulltext
+    except Exception:
+        fulltext = None
     lines = []
     for i, c in enumerate(cands, 1):
         p = c["paper"]
         abstract = re.sub(r"\s+", " ", p["abstract"])[:900]
-        lines.append(f"[{i}] 주제: {c['topic']['ko']} / 유형: {', '.join(p['pubtypes'][:3])} / {p['year']}\n"
+        # 초록에 결론이 없어도 전문을 볼 수 있으면 쓸 수 있는 논문이다
+        ft = "있음" if (fulltext and fulltext.has_fulltext(p.get("pmid", ""))) else "없음"
+        c["fulltext"] = ft == "있음"
+        lines.append(f"[{i}] 주제: {c['topic']['ko']} / 유형: {', '.join(p['pubtypes'][:3])} / {p['year']} / 전문:{ft}\n"
                      f"제목: {p['title']}\n초록: {abstract}\n")
     prompt = "후보 논문 목록:\n\n" + "\n".join(lines) + "\n위 기준으로 JSON 을 작성하세요."
     try:
@@ -255,14 +274,27 @@ def llm_judge(cands: list[dict]) -> dict | None:
     try:
         pick = int(res.get("pick", 0))
         fit = float(res.get("fit", 0))
+        concl = float(res.get("conclusion", 10))   # 옛 응답 호환: 없으면 통과
     except (TypeError, ValueError):
         return None
-    print(f"  judge({model}): pick={pick} fit={fit} angle={res.get('angle', '')} — {res.get('reason', '')}")
-    if pick < 1 or pick > len(cands) or fit < 6:
+    finding = (res.get("finding") or "").strip()
+    print(f"  judge({model}): pick={pick} fit={fit} conclusion={concl} angle={res.get('angle', '')} — {res.get('reason', '')}")
+    if finding:
+        print(f"    초록의 결론: {finding}")
+    if pick < 1 or pick > len(cands):
         return {"pick": None, "fit": fit, "reason": res.get("reason", "")}
+    if fit < 6:
+        return {"pick": None, "fit": fit, "reason": f"적합도 부족({fit})"}
+    has_ft = bool(cands[pick - 1].get("fulltext"))
+    if concl < 5 and not has_ft:
+        # 초록에 결론이 없고 전문도 못 보는 논문 → 훅만 있고 답이 없는 카드뉴스가 된다
+        why = f"초록에 결론 없고 전문도 못 봄 (conclusion={concl})"
+        print(f"  탈락: {why}", file=sys.stderr)
+        return {"pick": None, "fit": fit, "reason": why}
     chosen = dict(cands[pick - 1])
     chosen["angle"] = res.get("angle", "")
     chosen["fit"] = fit
+    chosen["finding"] = finding
     return {"pick": chosen}
 
 

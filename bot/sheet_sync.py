@@ -11,6 +11,7 @@
               링크가 있으면      → approved: true + link 저장
               'skip' 이라고 쓰면 → skipped/ 로 옮김
   --status  게시/건너뜀 결과를 시트의 '상태' 칸에 반영한다
+  --refresh 이미 있는 행의 훅·근거·미리보기를 큐 기준으로 다시 쓴다 ('쿠팡 링크' 는 안 건드림)
 
 SHEET_URL 이 없으면 아무것도 하지 않고 정상 종료한다(= 시트를 안 쓰는 설정).
 """
@@ -109,15 +110,19 @@ def hook_of(item: dict) -> str:
     return plain(item.get("threads_text", ""))[:120]
 
 
-def paper_of(item: dict) -> str:
+def title_cell(item: dict) -> str:
+    """논문 제목만. 링크는 따로 '링크' 열에 둔다.
+
+    (HYPERLINK 수식은 시트 지역 설정에 따라 인자 구분자가 , 인지 ; 인지 달라져 깨질 수 있다.
+     그냥 URL 을 칸에 넣으면 구글시트가 알아서 누를 수 있게 만들어 준다.)
+    """
+    return ((item.get("paper") or {}).get("title") or "").strip()
+
+
+def journal_cell(item: dict) -> str:
     p = item.get("paper", {}) or {}
-    bits = [p.get("title", "")]
-    tail = " ".join(x for x in [p.get("journal", ""), f"({p.get('year', '')})"] if x).strip()
-    if tail:
-        bits.append(tail)
-    if p.get("url"):
-        bits.append(p["url"])
-    return "\n".join(b for b in bits if b)
+    j, y = (p.get("journal") or "").strip(), str(p.get("year") or "").strip()
+    return f"{j} ({y})" if j and y else (j or y)
 
 
 def preview_of(item: dict) -> str:
@@ -128,7 +133,23 @@ def preview_of(item: dict) -> str:
     return f"{base}/{imgs[0].lstrip('/')}" if base else imgs[0]
 
 
+# '근거' 칸에 적을 말 — 사람이 보고 "본문을 넣어줄까?" 를 판단하는 칸
+EVID_PMC = "PMC 전문"
+EVID_MANUAL = "직접 넣음"
+EVID_ABSTRACT = "초록만"
+
+
+def evidence_of(item: dict) -> str:
+    src = str(item.get("source_text", "") or "")
+    if src.startswith("PMC"):
+        return EVID_PMC
+    if "papers/" in src:
+        return EVID_MANUAL
+    return EVID_ABSTRACT
+
+
 def row_of(item: dict) -> dict:
+    paper = item.get("paper", {}) or {}
     return {
         "id": item.get("id", ""),
         "상태": STATUS_WAITING,
@@ -136,7 +157,12 @@ def row_of(item: dict) -> dict:
         "훅": hook_of(item),
         "추천 제품 조건": item.get("product_hint", ""),
         "쿠팡 링크": "",
-        "논문": paper_of(item),
+        "논문 제목": title_cell(item),
+        "저널·연도": journal_cell(item),
+        "PMID": paper.get("pmid", "") or "",
+        "DOI": paper.get("doi", "") or "",
+        "링크": paper.get("url", "") or "",
+        "근거": evidence_of(item),
         "카드 미리보기": preview_of(item),
         "만든날짜": (item.get("drafted_at") or "")[:10],
     }
@@ -155,6 +181,32 @@ def do_push(url: str, token: str) -> int:
         return 0
     res = sheet_post(url, token, {"action": "add", "rows": rows})
     print(f"시트에 {res.get('added', 0)}건 추가: {', '.join(r['id'] for r in rows)}")
+    return 0
+
+
+def do_refresh(url: str, token: str, ids: list[str] | None = None) -> int:
+    """이미 시트에 있는 행의 내용을 큐 기준으로 다시 써 넣는다 ('쿠팡 링크' 는 건드리지 않음).
+
+    본문을 받아 원고를 다시 쓴 뒤, 시트의 훅·근거·미리보기를 맞추는 데 쓴다.
+    """
+    have = {str(r.get("id", "")): r for r in sheet_get(url, token)}
+    want = set(ids or [])
+    n = 0
+    for _, item in queue_items():
+        iid = str(item.get("id", ""))
+        if not iid or iid not in have or (want and iid not in want):
+            continue
+        row = row_of(item)
+        fields = {k: v for k, v in row.items()
+                  if k not in ("id", "상태", "쿠팡 링크")}
+        cur = have[iid]
+        if all(str(cur.get(k, "")) == str(v) for k, v in fields.items()):
+            continue                      # 바뀐 게 없으면 건드리지 않는다
+        sheet_post(url, token, {"action": "update", "id": iid, "fields": fields})
+        print(f"시트 갱신: {iid} (근거={fields.get('근거')})")
+        n += 1
+    if not n:
+        print("시트에서 고칠 행 없음")
     return 0
 
 
@@ -230,6 +282,10 @@ def main() -> int:
     g.add_argument("--push", action="store_true", help="새 초안을 시트에 추가")
     g.add_argument("--pull", action="store_true", help="시트의 링크를 큐에 반영")
     g.add_argument("--status", action="store_true", help="게시/건너뜀 결과를 시트에 반영")
+    g.add_argument("--refresh", action="store_true",
+                   help="이미 있는 행의 훅·근거·미리보기를 큐 기준으로 다시 씀 (쿠팡 링크는 건드리지 않음)")
+    ap.add_argument("--id", action="append", default=[],
+                   help="--refresh 대상 id (여러 번 쓸 수 있음). 비우면 전부")
     args = ap.parse_args()
 
     conf = cfg()
@@ -242,6 +298,8 @@ def main() -> int:
         return do_push(url, token)
     if args.pull:
         return do_pull(url, token)
+    if args.refresh:
+        return do_refresh(url, token, args.id)
     return do_status(url, token)
 
 

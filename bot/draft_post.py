@@ -27,6 +27,7 @@ import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import card_styles
+import fulltext
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
@@ -40,7 +41,8 @@ SYSTEM_PROMPT = """당신은 인스타그램 계정 @paper_factcheck 의 편집�
 아래 논문 초록만을 근거로 카드뉴스 원고를 한국어로 씁니다.
 
 반드시 지킬 규칙
-1. 근거는 오직 주어진 초록. 초록에 없는 수치·기전·주장을 지어내지 마세요. 초록이 애매하면 애매하다고 쓰세요.
+1. 근거는 오직 주어진 [논문] 자료(초록, 그리고 있으면 [본문 발췌]). 거기에 없는 수치·기전·주장을 지어내지 마세요.
+   초록이 애매해도 본문 발췌에 답이 있으면 본문을 근거로 쓰세요. 둘 다 애매하면 애매하다고 쓰세요.
 2. 표현 수위: 논문 1편이므로 "한 리뷰 논문에 따르면", "~와 관련이 있다는 결과", "~할 수 있다" 로 씁니다.
    "증명됐다", "반드시", "무조건" 같은 단정은 금지. 동물·세포 실험이면 카드에 그 사실을 분명히 씁니다.
 3. 의학적 진단·치료·예방 효능 문구 금지 (예: "암을 예방한다" X → "위험과 관련이 있다는 보고" O).
@@ -54,6 +56,16 @@ SYSTEM_PROMPT = """당신은 인스타그램 계정 @paper_factcheck 의 편집�
 11. 논문이 제품을 직접 다루지 않고 성분·물질만 다루면, hook 은 물질 중심으로 잡고 제품은 "이 물질이 쓰이는 제품 예"로만 연결하세요. 제품 자체가 위험/안전하다고 단정 금지.
 12. 영어 학술 용어는 한국어로 풀어쓰세요 (umbrella review → 여러 메타분석을 종합한 리뷰, RCT → 무작위 대조 시험). 해시태그는 주제와 직접 관련된 것만.
 13. instagram_caption 은 첫 줄 훅 → 빈 줄로 나눈 짧은 문단 3~4개 → 오늘의 행동 → 출처 줄 → 해시태그 순서. threads_text 는 말하듯 가볍게, 마지막은 독자에게 묻는 한 문장.
+15. **훅에서 던진 질문에는 반드시 body 카드에서 답하세요.** 이게 이 계정의 존재 이유입니다.
+    "신장 망가진다, 진짜일까?" 로 시작했으면 어딘가에서 "이 논문에 따르면 ~ 였다" 로 답해야 합니다.
+    "이 논문이 그 주제를 다뤘다 / 검토했다 / 질문 목록에 있었다" 는 답이 아닙니다. 그건 목차입니다.
+    body 카드 중 최소 2장은 자료에 적힌 *구체적 결과*(방향·수치·비교)를 담아야 합니다.
+    그리고 `answer` 필드에 그 답을 한 문장으로 옮겨 적고, `answer_card` 에 그 답이 들어있는 카드 번호를 쓰세요.
+    `answer` 를 쓸 수 없다면 그건 답이 없다는 뜻이니 규칙 16 대로 abort 하세요.
+16. **결론이 없으면 억지로 쓰지 마세요.** 초록에도 본문 발췌에도 결과의 방향·수치가 하나도
+    없다면, 다른 필드 없이 `{"abort": true, "abort_reason": "<한 줄 이유>"}` 만 출력하세요.
+    편집자는 다른 논문으로 넘어갑니다. 빈 껍데기 카드뉴스를 내보내는 것보다 그게 낫습니다.
+
 14. 카드 디자인을 이 글의 성격에 맞게 고릅니다.
     style — "geo": 위험·오염·수치 폭로처럼 경고 톤이 강한 글 (어두운 배경 + 격자·원호 그래픽).
             "paper": 괴담 반박·안전성 해명·"의외로 괜찮다"처럼 차분히 정리하는 글 (밝은 종이 배경 + 검은 글씨).
@@ -75,6 +87,8 @@ SYSTEM_PROMPT = """당신은 인스타그램 계정 @paper_factcheck 의 편집�
     {"text": "...", "note": "※ 한계나 주의점 한 줄(선택)"}
   ],
   "action_card": "오늘 할 수 있는 실용적 행동 (110자 이내, [[강조]] 1개)",
+  "answer": "훅에서 던진 질문에 대한 답 한 문장. 논문에 적힌 결과를 그대로. '다뤘다/검토했다' 는 답이 아님",
+  "answer_card": <그 답이 들어있는 body_cards 번호 (1부터)>,
   "instagram_caption": "...",
   "threads_text": "...",
   "product_hint": "...",
@@ -175,6 +189,27 @@ def openai_compat_generate(prompt: str, system: str, model: str, api_key: str, b
     return json.loads(text)
 
 
+def _cli_error(proc) -> str:
+    """claude CLI 가 0 아닌 코드로 끝났을 때 사람이 읽을 수 있는 이유를 뽑는다.
+
+    CLI 는 실패해도 stdout 에 긴 JSON 을 뱉는데 진짜 사유는 result/error 필드에 있다.
+    통째로 자르면 usage 통계만 남고 사유가 잘려서 로그만 보고는 원인을 알 수 없다.
+    """
+    raw = (proc.stdout or "").strip()
+    try:
+        d = json.loads(raw)
+    except Exception:
+        return ((proc.stderr or raw).strip() or "(출력 없음)")[:400]
+    bits = []
+    for k in ("subtype", "result", "error", "message"):
+        v = d.get(k)
+        if isinstance(v, str) and v.strip():
+            bits.append(f"{k}={v.strip()[:300]}")
+    if (proc.stderr or "").strip():
+        bits.append(f"stderr={proc.stderr.strip()[:200]}")
+    return " | ".join(bits) or raw[:400]
+
+
 def claude_code_generate(prompt: str, system: str, model: str | None = None) -> dict:
     """Claude Code CLI 를 구독(OAuth 토큰)으로 호출. 환경변수 CLAUDE_CODE_OAUTH_TOKEN 필요."""
     import shutil
@@ -188,7 +223,7 @@ def claude_code_generate(prompt: str, system: str, model: str | None = None) -> 
         cmd += ["--model", model]
     proc = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
     if proc.returncode != 0:
-        raise RuntimeError(f"claude CLI 실패({proc.returncode}): {(proc.stderr or proc.stdout)[:500]}")
+        raise RuntimeError(f"claude CLI 실패({proc.returncode}): {_cli_error(proc)}")
     try:
         data = json.loads(proc.stdout)
     except json.JSONDecodeError:
@@ -214,6 +249,15 @@ PROVIDER_DEFAULTS = {
 }
 
 
+def _fallback_provider() -> str:
+    """Claude 구독을 못 쓸 때 대신 쓸 제공자. 키가 있는 것 중 하나."""
+    if os.environ.get("GEMINI_API_KEY", "").strip():
+        return "gemini"
+    if os.environ.get("LLM_API_KEY", "").strip():
+        return "groq"
+    return ""
+
+
 def generate(prompt: str, system: str) -> tuple[dict, str]:
     """환경변수에 따라 provider 선택. (결과, 사용한 모델명) 반환
 
@@ -227,10 +271,18 @@ def generate(prompt: str, system: str) -> tuple[dict, str]:
     if provider == "claude_code":
         if os.environ.get("CLAUDE_CODE_OAUTH_TOKEN", "").strip() or os.environ.get("ANTHROPIC_API_KEY", "").strip():
             model = os.environ.get("LLM_MODEL", "").strip() or None
-            return claude_code_generate(prompt, system, model), f"claude_code:{model or 'default'}"
-        if os.environ.get("LLM_API_KEY", "").strip():
-            print("CLAUDE_CODE_OAUTH_TOKEN 이 없어 groq 로 대체합니다.", file=sys.stderr)
-            provider = "groq"
+            try:
+                return claude_code_generate(prompt, system, model), f"claude_code:{model or 'default'}"
+            except Exception as e:
+                # 토큰 만료·사용량 한도 등으로 구독 호출이 죽어도 파이프라인은 굴러가게 한다.
+                fb = _fallback_provider()
+                if not fb:
+                    raise
+                print(f"!! Claude 구독 호출 실패 → {fb} 로 대체합니다: {e}", file=sys.stderr)
+                provider = fb
+        elif _fallback_provider():
+            provider = _fallback_provider()
+            print(f"CLAUDE_CODE_OAUTH_TOKEN 이 없어 {provider} 로 대체합니다.", file=sys.stderr)
         else:
             raise SystemExit("CLAUDE_CODE_OAUTH_TOKEN 이 없습니다 (claude setup-token 으로 발급).")
 
@@ -273,8 +325,59 @@ def generate(prompt: str, system: str) -> tuple[dict, str]:
     raise RuntimeError(f"사용 가능한 모델이 없습니다: {last_err}")
 
 
-def build_prompt(topic: dict, paper: dict, angle: str = "") -> str:
+def build_item(item_id: str, topic: dict, paper: dict, draft: dict,
+               used_model: str, body_src: str = "") -> dict:
+    """LLM 원고(draft) → 큐 항목 JSON. draft_post 와 redraft 가 같이 쓴다."""
+    cards = [{"type": "hook", "kicker": draft.get("kicker") or "논문 팩트체크", "text": draft["hook"]}]
+    for c in draft["body_cards"]:
+        card = {"type": "body", "text": c["text"]}
+        if c.get("note"):
+            card["note"] = c["note"]
+        cards.append(card)
+    cards.append({"type": "body", "text": draft["action_card"]})
+    cards.append({"type": "source", "paper": {
+        "title": paper["title"], "journal": paper["journal"], "year": paper["year"],
+        "doi": paper["doi"], "authors": paper["authors"],
+    }})
+
+    caption = draft["instagram_caption"].rstrip()
+    if "#paper_factcheck" not in caption:
+        caption += " #paper_factcheck"
+    caption += "\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다."
+
+    return {
+        "id": item_id,
+        "approved": False,
+        "link": "",
+        "topic": topic["id"],
+        "topic_ko": topic["ko"],
+        "verdict": draft["verdict"],
+        "evidence_level": draft.get("evidence_level", ""),
+        "source_text": body_src or "초록만",
+        "answer": draft.get("answer", ""),
+        "style": card_styles.resolve(draft.get("style")),
+        "accent": draft.get("accent") if draft.get("accent") in card_styles.ACCENTS
+                  else card_styles.DEFAULT_ACCENT,
+        "product_hint": draft.get("product_hint") or topic.get("hint", ""),
+        "caveats": draft.get("caveats", []),
+        "cards": cards,
+        "images": [],
+        "instagram_caption": caption,
+        "threads_text": draft["threads_text"],
+        "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n" + DISCLOSURE,
+        "paper": {
+            "title": paper["title"], "journal": paper["journal"], "year": paper["year"],
+            "doi": paper["doi"], "pmid": paper["pmid"], "authors": paper["authors"],
+            "url": paper["url"],
+        },
+        "drafted_at": datetime.now(KST).isoformat(),
+        "model": used_model,
+    }
+
+
+def build_prompt(topic: dict, paper: dict, angle: str = "", body: str = "") -> str:
     angle_line = f"\n[편집장이 정한 각도] {angle}\n" if angle else ""
+    body_block = f"\n\n[본문 발췌] (초록에 없는 내용도 여기 있으면 근거로 쓰세요)\n{body}" if body else ""
     return f"""[주제] {topic['ko']}  (대안 제품 힌트: {topic.get('hint', '')}){angle_line}
 
 [논문]
@@ -286,9 +389,80 @@ DOI: {paper['doi'] or '없음'}
 MeSH: {', '.join(paper['mesh'][:15])}
 
 [초록]
-{paper['abstract']}
+{paper['abstract']}{body_block}
 
-위 초록만 근거로 스키마에 맞는 JSON 을 작성하세요."""
+위 자료만 근거로 스키마에 맞는 JSON 을 작성하세요."""
+
+
+# 결과의 방향·수치가 담긴 문장에 나오는 말들
+_FINDING_WORDS = (
+    "높", "낮", "증가", "감소", "개선", "줄었", "늘었", "차이", "연관", "관련성",
+    "유의", "효과", "위험", "없었", "없다", "없는", "않았", "않는", "이었", "였다",
+    "나타났", "보고됐", "밝혀", "밝히", "확인됐", "원인", "증거", "결론은",
+    "배", "%", "오즈비", "위약", "대조", "비해", "반면",
+)
+# 결과 없이 '다뤘다'만 말하는 목차형 문장
+_TOC_WORDS = ("다뤘", "다룬", "검토했", "살펴봤", "포함돼", "포함됐", "정리했", "질문 목록", "언급됐", "소개돼")
+
+
+def is_toc_like(text: str) -> bool:
+    """'이런 주제를 다뤘다' 식 목차 문장인가.
+
+    문장의 서술어가 '다뤘다·검토했다·포함됐다' 류이면, 그 안에 숫자나 결과 단어가 섞여
+    있어도(예: "신장 손상, 체지방 증가 등 통념 11가지를 정리했어요") 답이 아니다.
+    """
+    t = (text or "").strip()
+    return any(w in t for w in _TOC_WORDS)
+
+
+def answer_problems(d: dict) -> list[str]:
+    """훅의 질문에 대한 답이 실제로 있는지 본다.
+
+    2026-09-09 단백질 보충제 건: 초록이 주제 목록뿐인 논문으로 원고가 나가 훅에서 질문만
+    던지고 7장 내내 '다뤘다·검토했다'만 반복한 게시물이 올라갔다. 그걸 막는 검사.
+    """
+    out = []
+    ans = (d.get("answer") or "").strip()
+    cards = d.get("body_cards") or []
+    if len(ans) < 15:
+        out.append("answer 가 비었거나 너무 짧음 (훅의 질문에 대한 답이 없음)")
+        return out
+    if is_toc_like(ans):
+        out.append(f"answer 가 목차형이라 답이 아님: {ans[:40]}")
+    if not any(w in ans for w in _FINDING_WORDS):
+        out.append(f"answer 에 결과의 방향·수치가 없음: {ans[:40]}")
+    try:
+        idx = int(d.get("answer_card", 0))
+    except (TypeError, ValueError):
+        idx = 0
+    if not 1 <= idx <= len(cards):
+        out.append(f"answer_card 번호 이상 ({d.get('answer_card')})")
+    else:
+        card = cards[idx - 1].get("text", "") or ""
+        if is_toc_like(card):
+            out.append(f"answer_card 로 지목한 카드가 목차형: {card[:40]}")
+        # 답이 정말 그 카드에 들어 있는지 — 두 글자 이상 어절이 2개 이상 겹치는지
+        wa = {w for w in re.findall(r"[가-힣A-Za-z0-9]{2,}", ans)}
+        wc = {w for w in re.findall(r"[가-힣A-Za-z0-9]{2,}", card)}
+        if len(wa & wc) < 2:
+            out.append("answer 가 answer_card 의 내용과 맞지 않음")
+    return out
+
+
+def has_findings(cards: list[dict], need: int = 1) -> bool:
+    """body 카드 중 '구체적 결과'를 담은 게 need 장 이상인가.
+
+    정밀 판정은 answer_problems() 가 한다. 이건 카드가 전부 목차 문장인 원고만 막는
+    거친 그물이라 기준을 느슨하게 둔다 (멀쩡한 원고를 헛되이 떨어뜨리면 그만큼 생성이 낭비된다).
+    """
+    hits = 0
+    for c in cards:
+        t = c.get("text", "") or ""
+        if is_toc_like(t):
+            continue                      # 목차 문장은 숫자가 있어도 결과가 아니다
+        if any(ch.isdigit() for ch in t) or any(w in t for w in _FINDING_WORDS):
+            hits += 1
+    return hits >= need
 
 
 def validate(d: dict) -> list[str]:
@@ -310,6 +484,9 @@ def validate(d: dict) -> list[str]:
         problems.append("instagram_caption 길이 이상")
     if len(d.get("threads_text", "")) > 500 or not d.get("threads_text"):
         problems.append("threads_text 길이 이상")
+    problems += answer_problems(d)
+    if not has_findings(cards):
+        problems.append("body_cards 가 전부 목차 문장 (구체적 결과가 한 장도 없음)")
     if d.get("style") and d["style"] not in card_styles.STYLE_NAMES:
         problems.append(f"style 값 이상 ({d['style']})")
     if d.get("accent") and d["accent"] not in card_styles.ACCENTS:
@@ -353,12 +530,24 @@ def main() -> int:
     draft = None
     used_model = ""
     problems: list[str] = []
+    # 초록에 결론이 없는 논문이 있다 → 볼 수 있으면 본문을 같이 준다
+    body_text, body_src = fulltext.get(paper.get("pmid", ""))
+    if body_text:
+        print(f"  본문 확보: {body_src} ({len(body_text)}자)")
+    else:
+        print("  본문 없음 — 초록만으로 작성")
+
     for attempt in range(1, 4):
         try:
-            draft, used_model = generate(build_prompt(topic, paper, cand.get("angle", "")), SYSTEM_PROMPT)
+            draft, used_model = generate(
+                build_prompt(topic, paper, cand.get("angle", ""), body_text), SYSTEM_PROMPT)
         except Exception as e:
             print(f"  시도 {attempt} 실패: {e}", file=sys.stderr)
             continue
+        if draft.get("abort"):
+            print(f"  이 논문으로는 쓸 수 없음: {draft.get('abort_reason', '(이유 없음)')}", file=sys.stderr)
+            print("원고 생성 중단 — 다른 논문으로", file=sys.stderr)
+            return 1
         problems = validate(draft)
         if not problems:
             break
@@ -368,50 +557,8 @@ def main() -> int:
         return 1
 
     # ---- 큐 JSON 조립 ---------------------------------------------------
-    cards = [{"type": "hook", "kicker": draft.get("kicker") or "논문 팩트체크", "text": draft["hook"]}]
-    for c in draft["body_cards"]:
-        card = {"type": "body", "text": c["text"]}
-        if c.get("note"):
-            card["note"] = c["note"]
-        cards.append(card)
-    cards.append({"type": "body", "text": draft["action_card"]})
-    cards.append({"type": "source", "paper": {
-        "title": paper["title"], "journal": paper["journal"], "year": paper["year"],
-        "doi": paper["doi"], "authors": paper["authors"],
-    }})
-
-    caption = draft["instagram_caption"].rstrip()
-    if "#paper_factcheck" not in caption:
-        caption += " #paper_factcheck"
-    caption += "\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다."
-
+    item = build_item(item_id, topic, paper, draft, used_model, body_src)
     today = datetime.now(KST).strftime("%Y-%m-%d")
-    item = {
-        "id": item_id,
-        "approved": False,
-        "link": "",
-        "topic": topic["id"],
-        "topic_ko": topic["ko"],
-        "verdict": draft["verdict"],
-        "evidence_level": draft.get("evidence_level", ""),
-        "style": card_styles.resolve(draft.get("style")),
-        "accent": draft.get("accent") if draft.get("accent") in card_styles.ACCENTS
-                  else card_styles.DEFAULT_ACCENT,
-        "product_hint": draft.get("product_hint") or topic.get("hint", ""),
-        "caveats": draft.get("caveats", []),
-        "cards": cards,
-        "images": [],
-        "instagram_caption": caption,
-        "threads_text": draft["threads_text"],
-        "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n" + DISCLOSURE,
-        "paper": {
-            "title": paper["title"], "journal": paper["journal"], "year": paper["year"],
-            "doi": paper["doi"], "pmid": paper["pmid"], "authors": paper["authors"],
-            "url": paper["url"],
-        },
-        "drafted_at": datetime.now(KST).isoformat(),
-        "model": used_model,
-    }
     qpath.write_text(json.dumps(item, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"큐 생성: {qpath.relative_to(ROOT)}  (카드 {len(cards)}장, verdict={draft['verdict']})")
 

@@ -26,6 +26,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import meta_api  # noqa: E402
+from gate import should_post  # noqa: E402  (하루 한 번 문지기 — gate.py 와 판단을 공유)
 
 ROOT = Path(__file__).resolve().parent.parent
 QUEUE_DIR = ROOT / "queue"
@@ -146,7 +147,18 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="API 호출 없이 검증만")
     ap.add_argument("--target", choices=["both", "instagram", "threads"], default="both")
     ap.add_argument("--allow-no-link", action="store_true", help="링크 없이도 게시 허용")
+    ap.add_argument("--after", default="",
+                    help="이 시각(KST, HH:MM) 이전이면 아무것도 안 하고 종료. 예약 실행이 언제 뜰지 몰라 쓰는 문지기")
+    ap.add_argument("--again", action="store_true",
+                    help="오늘 이미 올렸어도 한 번 더 올린다 (하루 1회 잠금 해제)")
     args = ap.parse_args()
+
+    # ---- 하루 한 번 문지기 (gate.py 와 같은 판단) --------------------------
+    if not args.again and not args.dry_run:
+        go, why = should_post(args.after, args.date)
+        if not go:
+            log.info("%s. 종료.", why)
+            return 0
 
     qpath = pick_queue_item(args.date)
     if not qpath:
