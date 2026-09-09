@@ -1,0 +1,80 @@
+{
+  "id": "2037-standing_desk",
+  "approved": false,
+  "link": "",
+  "topic": "standing_desk",
+  "topic_ko": "스탠딩 데스크",
+  "verdict": "mixed",
+  "evidence_level": "rct",
+  "source_text": "초록만",
+  "answer": "이 논문에 따르면 30분 앉고 15분 서는 고정 비율이, 서고 싶을 때 서는 개인화 방식보다 3개월 후 요통(특히 평균 통증)을 더 많이 줄였다.",
+  "style": "paper",
+  "accent": "blue",
+  "product_hint": "30분/15분처럼 원하는 비율로 타이머를 맞춰가며 쓸 수 있는 높이 조절(전동) 스탠딩 데스크",
+  "caveats": [
+    "참가자 56명으로 표본이 작음",
+    "3개월 단기 결과로 장기 효과는 확인되지 않음",
+    "통증은 앱을 통한 자가보고 수치"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "스탠딩 데스크\n[[내맘대로]] 쓰면\n요통엔 손해?"
+    },
+    {
+      "type": "body",
+      "text": "요통이 있는 사무직 56명을 [[30분 앉고 15분 서기]] 고정 그룹과, 불편할 때만 서는 '개인화' 그룹으로 나눠 3개월간 비교했어요."
+    },
+    {
+      "type": "body",
+      "text": "3개월 뒤, 고정 그룹은 최악의 요통이 10점 만점에 [[1.33점]] 줄고 평균 통증도 0.83점 줄었어요. 개인화 그룹은 최악의 통증만 0.69점 줄었죠."
+    },
+    {
+      "type": "body",
+      "text": "고정 그룹은 업무 스트레스, 집중력, 근무 중 컨디션(프리젠티즘)까지 좋아졌어요. 개인화 그룹은 앉아있는 시간만 줄었고요."
+    },
+    {
+      "type": "body",
+      "text": "두 방식 다 받아들이기는 비슷하게 쉬웠지만, [[꾸준히 지킨 사람]]은 고정 그룹에서 더 많았어요.",
+      "note": "※ 참가자 56명, 3개월 단기 결과로 {{장기 효과는 아직 확인되지 않았어요}}"
+    },
+    {
+      "type": "body",
+      "text": "오늘부터 스탠딩 데스크를 쓴다면 느낌대로 서지 말고, [[타이머]]로 30분 앉고 15분 서는 루틴을 시도해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Do fixed or personalised sit-stand desk ratios improve lower back pain? A randomised trial.",
+        "journal": "Applied ergonomics",
+        "year": "2026",
+        "doi": "10.1016/j.apergo.2025.104670",
+        "authors": "Brakenridge CL, Johnston V, Andrews NE et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2037-standing_desk/01.jpg",
+    "images/2037-standing_desk/02.jpg",
+    "images/2037-standing_desk/03.jpg",
+    "images/2037-standing_desk/04.jpg",
+    "images/2037-standing_desk/05.jpg",
+    "images/2037-standing_desk/06.jpg",
+    "images/2037-standing_desk/07.jpg"
+  ],
+  "instagram_caption": "스탠딩 데스크, 그냥 내 맘대로 서고 앉으면 될까요?\n\n호주 연구팀이 요통이 있는 사무직 56명을 두 그룹으로 나눠 실험했어요. 한쪽은 [[30분 앉고 15분 서기]]를 기계적으로 반복하는 '고정 그룹', 다른 쪽은 불편할 때만 자유롭게 서는 '개인화 그룹'이었죠.\n\n3개월 뒤, 고정 그룹은 최악의 요통이 10점 만점에 1.33점, 평균 통증도 0.83점 줄었어요. 개인화 그룹은 최악의 통증만 0.69점 줄었고요. 업무 스트레스와 집중력, 근무 중 컨디션도 고정 그룹에서 더 좋아졌어요.\n\n두 방식 다 받아들이기는 비슷하게 쉬웠지만, 꾸준히 지킨 사람은 고정 그룹이 더 많았습니다. 다만 참가자 56명, 3개월이라는 단기 결과라는 점은 참고해주세요.\n\n오늘 스탠딩 데스크를 쓴다면, [[타이머]]로 30분 앉고 15분 서는 루틴부터 시작해보세요.\n\n📄 출처: Brakenridge CL, Johnston V, Andrews NE et al., Applied Ergonomics (2026). DOI 10.1016/j.apergo.2025.104670\n\n#논문팩트체크 #paper_factcheck #스탠딩데스크 #요통 #허리건강 #사무직건강 #직장인건강 #자세교정 #인체공학 #앉았다일어났다 #재택근무 #건강루틴\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "스탠딩 데스크 살까 말까 고민하는 분들, 이거 하나만 기억하세요. 요통 있는 사무직 56명한테 '30분 앉고 15분 서기'를 기계적으로 시키니까, '불편하면 서기'보다 3개월 후 통증이 더 많이 줄었대요(최악 통증, 평균 통증 다 더 큰 폭으로 감소). 업무 스트레스, 집중력도 덩달아 좋아졌고요. 결국 내 맘대로 서는 것보다 타이머 맞춰놓고 억지로라도 지키는 게 나을 수도 있다는 얘기. 여러분은 스탠딩 데스크 쓸 때 규칙 정해놓고 쓰시나요, 아니면 그때그때 서시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Do fixed or personalised sit-stand desk ratios improve lower back pain? A randomised trial.",
+    "journal": "Applied ergonomics",
+    "year": "2026",
+    "doi": "10.1016/j.apergo.2025.104670",
+    "pmid": "41124790",
+    "authors": "Brakenridge CL, Johnston V, Andrews NE et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41124790/"
+  },
+  "drafted_at": "2026-09-09T23:09:28.723088+09:00",
+  "model": "claude_code:default"
+}
