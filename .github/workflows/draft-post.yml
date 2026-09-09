@@ -82,6 +82,11 @@ jobs:
       - name: Push to sheet
         run: python bot/sheet_sync.py --push
 
+      # 이미 있는 줄의 DOI·PMID·근거·미리보기를 큐 기준으로 맞춘다 ('쿠팡 링크' 는 안 건드림).
+      # 열을 새로 추가했을 때 예전 줄을 채워 넣는 것도 이 단계가 한다.
+      - name: Refresh sheet rows
+        run: python bot/sheet_sync.py --refresh
+
       - name: Open approval issue (시트를 안 쓸 때만)
         if: env.SHEET_URL == ''
         run: python bot/open_issue.py --date "$(date -d tomorrow +%Y-%m-%d)" || true

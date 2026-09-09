@@ -1,10 +1,14 @@
 name: daily-post
 
+# GitHub 의 예약 실행은 뜨는 시각이 들쭉날쭉하다 (07:37 로 걸어도 09:30 에 뜬 날이 이틀 연속 있었다).
+# 그래서 아침 시간대에 30분마다 여러 번 깨우고, 실제 게시는 bot/gate.py 가 하루 한 번으로 묶는다.
+#   - POST_AFTER (KST) 이전이면 그냥 종료
+#   - 오늘 이미 올렸으면 그냥 종료
+# 게시 시각을 바꾸려면 아래 POST_AFTER 만 고치면 된다. cron 은 '깨우는 창'일 뿐이다.
 on:
   schedule:
-    # 매일 07:37 KST 목표 (= 22:37 UTC 전날). GitHub 예약 실행은 정각에 몰려 20~40분 밀리므로
-    # 어중간한 분으로 잡아 실제로 08시 전후에 올라가게 한다. 시간 바꾸려면 여기만 수정.
-    - cron: "37 22 * * *"
+    - cron: "8,38 20-23 * * *"   # 05:08 ~ 08:38 KST 사이 30분 간격
+    - cron: "8,38 0 * * *"       # 09:08, 09:38 KST — 많이 밀린 날의 마지막 기회
   workflow_dispatch:
     inputs:
       date:
@@ -20,6 +24,10 @@ on:
         description: "검증만 하고 실제로 올리지 않기"
         type: boolean
         default: false
+      again:
+        description: "오늘 이미 올렸어도 한 번 더 올리기 (하루 1회 잠금 해제)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -27,6 +35,10 @@ permissions:
 concurrency:
   group: daily-post
   cancel-in-progress: false
+
+env:
+  # 이 시각(KST) 이후에 처음 깨어난 실행이 그날의 게시를 담당한다.
+  POST_AFTER: "08:00"
 
 jobs:
   post:
@@ -49,27 +61,43 @@ jobs:
         with:
           python-version: "3.12"
 
+      # 표준 라이브러리만 쓰므로 pip install 전에 돌린다.
+      # 예약 실행은 하루 10번 깨어나지만 9번은 여기서 15초 만에 끝난다.
+      - name: 오늘 올릴 차례인지 확인
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            python bot/gate.py --after "$POST_AFTER" | tee -a "$GITHUB_OUTPUT"
+          else
+            echo "go=yes" | tee -a "$GITHUB_OUTPUT"
+            echo "reason=수동 실행"
+          fi
+
       - name: Install deps
+        if: steps.gate.outputs.go == 'yes'
         run: pip install -r requirements.txt
 
       # 시트에 채워둔 쿠팡 링크를 큐에 반영한다 (링크 → 승인 / 'skip' → 건너뜀)
       - name: Pull links from sheet
+        if: steps.gate.outputs.go == 'yes'
         run: python bot/sheet_sync.py --pull
 
       - name: Publish
+        if: steps.gate.outputs.go == 'yes'
         run: |
           ARGS=""
           if [ -n "${{ github.event.inputs.date }}" ]; then ARGS="$ARGS --date ${{ github.event.inputs.date }}"; fi
           if [ -n "${{ github.event.inputs.target }}" ]; then ARGS="$ARGS --target ${{ github.event.inputs.target }}"; fi
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ "${{ github.event.inputs.again }}" = "true" ]; then ARGS="$ARGS --again"; fi
           python bot/publish.py $ARGS
 
       - name: Commit results
-        if: always()
+        if: always() && steps.gate.outputs.go == 'yes'
         run: |
           bash bot/commit_push.sh "post: $(date +%Y-%m-%d) [skip ci]" queue posted skipped
 
       # 게시완료 / 건너뜀 을 시트 '상태' 칸에 반영
       - name: Write status back to sheet
-        if: always()
+        if: always() && steps.gate.outputs.go == 'yes'
         run: python bot/sheet_sync.py --status
