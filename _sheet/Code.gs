@@ -21,7 +21,7 @@ const TOKEN = 'CHANGE_ME_아무_긴_문자열로_바꾸세요';
 const SHEET_NAME = '게시목록';
 
 const HEADERS = [
-  'id', '상태', '주제', '훅', '추천 제품 조건', '쿠팡 링크',
+  'id', '상태', '주제', '훅', '답', '추천 제품 조건', '쿠팡 링크',
   '논문 제목', '저널·연도', 'PMID', 'DOI', '링크', '근거', '카드 미리보기', '만든날짜'
 ];
 
@@ -32,6 +32,9 @@ const RENAMES = { '논문': '논문 제목' };
 //   PMC 전문   — 논문 전문을 자동으로 받아 원고를 썼다 (가장 든든)
 //   직접 넣음  — papers/<PMID>.txt 로 넣어준 본문을 썼다
 //   초록만     — 초록만 보고 썼다. 내용이 얕아 보이면 본문을 넣어주면 다시 쓴다
+//
+// '답' 칸 = 훅에서 던진 질문에 대한 답 한 문장. 이 칸이 비었거나 "다뤘습니다" 류면
+// 그 원고는 훅만 있고 답이 없는 것이니 본문을 넣어주는 게 좋다.
 
 /** 시트를 가져오고, 없으면 머리글까지 만들어 둔다. */
 function sheet_() {
@@ -46,10 +49,10 @@ function sheet_() {
       .setFontWeight('bold')
       .setBackground('#f0f0f0');
     // 보기 좋으라고 열 너비만 잡아둔다
-    const widths = [110, 80, 110, 320, 260, 300, 340, 150, 95, 190, 210, 110, 130, 100];
+    const widths = [110, 80, 110, 300, 340, 240, 300, 320, 150, 95, 190, 200, 110, 130, 100];
     widths.forEach((w, i) => sh.setColumnWidth(i + 1, w));
     sh.getRange(1, 1, sh.getMaxRows(), HEADERS.length).setVerticalAlignment('top');
-    sh.getRange(2, 4, sh.getMaxRows() - 1, 2).setWrap(true);  // 훅 / 추천 조건 줄바꿈
+    sh.getRange(2, 4, sh.getMaxRows() - 1, 3).setWrap(true);  // 훅 / 답 / 추천 조건 줄바꿈
   } else {
     ensureHeaders_(sh);
   }

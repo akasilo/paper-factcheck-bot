@@ -1,0 +1,79 @@
+{
+  "id": "2038-protein_powder",
+  "approved": false,
+  "link": "",
+  "topic": "protein_powder",
+  "topic_ko": "단백질 보충제",
+  "verdict": "good",
+  "evidence_level": "review",
+  "source_text": "papers/38626029.txt (직접 넣은 본문)",
+  "answer": "건강한 사람에서 단백질이 신장을 해친다는 근거는 없었고, 하루 2.6~5.8g/kg을 2년간 먹은 사례에서도 신장 기능 지표에 변화가 없었습니다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "1회 제공량당 단백질 함량이 명확히 표기되고 불필요한 첨가물이 적은 유청·식물성 단백질 보충제",
+  "caveats": [
+    "리뷰 논문 1편의 종합이며 신장질환자에게는 적용되지 않는다",
+    "인용된 연구 다수가 운동하는 건강한 성인 대상"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "매일 먹는\n[[단백질 보충제]]\n{{신장 망가진다}}\n괴담, 진짜일까?"
+    },
+    {
+      "type": "body",
+      "text": "저항운동을 하는 남성이 1년간 하루 체중 1kg당 [[2.5~3.3g]]의 고단백을 먹었지만, 신장 기능 지표(BUN·크레아티닌·사구체여과율)에 변화가 없었다는 결과예요."
+    },
+    {
+      "type": "body",
+      "text": "보디빌더를 2년간 지켜본 사례에서는 하루 [[2.6~5.8g/kg]]까지 먹고도 신장·간 기능 지표에 영향이 없었어요. 권장량(0.8g/kg)의 3~7배입니다."
+    },
+    {
+      "type": "body",
+      "text": "다만 {{이미 신장질환이 있는 사람}}은 다릅니다. 이 경우 붉은 고기 단백질은 위험을 높일 수 있고, 흰 살코기·유제품은 그렇지 않으며 과일·채소 단백질은 오히려 보호적일 수 있다고 정리했어요.",
+      "note": "※ 이 리뷰는 건강한 성인·운동인을 중심으로 한 결론입니다. 신장질환이 있다면 의사와 상의하세요."
+    },
+    {
+      "type": "body",
+      "text": "'남는 단백질은 살로 간다'는 통념도 갈렸어요. 한 실험에서 체지방을 늘린 건 [[칼로리]]였고 단백질은 {{근육량}} 쪽을 늘렸습니다. 저단백 그룹은 오히려 근육이 줄었고요."
+    },
+    {
+      "type": "body",
+      "text": "오늘은 보충제를 고르기 전에 [[하루 총 섭취량]]부터 세어보세요. 이 리뷰는 운동 직후 1시간보다 하루 총량이 더 중요하다고 결론냈습니다."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Common questions and misconceptions about protein supplementation: what does the scientific evidence really show?",
+        "journal": "Journal of the International Society of Sports Nutrition",
+        "year": "2024",
+        "doi": "10.1080/15502783.2024.2341903",
+        "authors": "Antonio J, Evans C, Ferrando AA et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2038-protein_powder/01.jpg",
+    "images/2038-protein_powder/02.jpg",
+    "images/2038-protein_powder/03.jpg",
+    "images/2038-protein_powder/04.jpg",
+    "images/2038-protein_powder/05.jpg",
+    "images/2038-protein_powder/06.jpg",
+    "images/2038-protein_powder/07.jpg"
+  ],
+  "instagram_caption": "헬스장에서 제일 자주 듣는 걱정, \"단백질 많이 먹으면 콩팥 나간다\".\n\n국제스포츠영양학회지(2024) 리뷰가 이 질문을 정면으로 다뤘습니다. 결론부터 말하면, 건강한 사람에서 단백질이 신장을 해친다는 근거는 없었습니다.\n\n저항운동을 하는 남성이 1년간 하루 체중 1kg당 2.5~3.3g을 먹었지만 BUN·크레아티닌·사구체여과율에 변화가 없었고, 보디빌더를 2년간 지켜본 사례에서는 2.6~5.8g/kg까지 먹고도 신장·간 기능 지표가 그대로였습니다. 권장량 0.8g/kg의 3~7배입니다.\n\n다만 이미 신장질환이 있는 사람은 얘기가 다릅니다. 그 경우엔 붉은 고기 단백질이 위험을 높일 수 있고, 흰 살코기·유제품은 그렇지 않으며, 과일·채소 단백질은 오히려 보호적일 수 있다고 정리했습니다.\n\n'남는 단백질은 체지방이 된다'는 말도 갈렸습니다. 한 실험에서 체지방을 늘린 건 칼로리였고, 단백질은 근육량 쪽을 늘렸습니다. 오히려 저단백 그룹에서 근육이 줄었고요.\n\n오늘의 행동 — 보충제 종류를 고민하기 전에 하루 총 섭취량부터 세어보세요. 같은 리뷰는 운동 직후 1시간 안에 먹는 것보다 하루 총량이 더 중요하다고 결론냈습니다.\n\n📄 출처: Antonio J et al., Journal of the International Society of Sports Nutrition (2024). DOI 10.1080/15502783.2024.2341903\n\n#논문팩트체크 #paper_factcheck #단백질보충제 #프로틴 #헬스 #운동영양 #단백질 #웨이트트레이닝 #보충제 #신장건강 #근성장 #식단관리 #홈트 #건강정보\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "\"단백질 많이 먹으면 콩팥 나간다\" — 헬스장 단골 걱정이죠.\n\n2024년 국제스포츠영양학회지 리뷰를 보면, 건강한 사람에선 그 근거가 없었습니다. 보디빌더가 하루 체중 1kg당 2.6~5.8g을 2년간 먹고도 신장 기능 지표가 그대로였어요. 권장량의 3~7배인데요.\n\n물론 이미 신장질환이 있다면 얘기가 다릅니다.\n\n여러분은 하루에 단백질 얼마나 드시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Common questions and misconceptions about protein supplementation: what does the scientific evidence really show?",
+    "journal": "Journal of the International Society of Sports Nutrition",
+    "year": "2024",
+    "doi": "10.1080/15502783.2024.2341903",
+    "pmid": "38626029",
+    "authors": "Antonio J, Evans C, Ferrando AA et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38626029/"
+  },
+  "drafted_at": "2026-09-09T23:31:23.171078+09:00",
+  "model": "claude(직접 논문 읽고 작성)"
+}

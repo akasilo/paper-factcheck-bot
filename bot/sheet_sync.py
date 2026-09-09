@@ -139,6 +139,18 @@ EVID_MANUAL = "직접 넣음"
 EVID_ABSTRACT = "초록만"
 
 
+def answer_of(item: dict) -> str:
+    """훅의 질문에 대한 답 한 문장. 이 칸을 보면 '답 없는 원고'가 바로 드러난다.
+
+    answer 필드는 2026-09-09 에 생겼다. 그 전에 만든 초안에는 없으므로
+    "빈 칸 = 답이 없다" 로 오해하지 않게 그 사실을 적어둔다.
+    """
+    a = (item.get("answer") or "").strip()
+    if a:
+        return a
+    return "— (답 검사 도입 전 원고. 카드 미리보기로 직접 확인 필요)"
+
+
 def evidence_of(item: dict) -> str:
     src = str(item.get("source_text", "") or "")
     if src.startswith("PMC"):
@@ -155,6 +167,7 @@ def row_of(item: dict) -> dict:
         "상태": STATUS_WAITING,
         "주제": item.get("topic_ko", ""),
         "훅": hook_of(item),
+        "답": answer_of(item),
         "추천 제품 조건": item.get("product_hint", ""),
         "쿠팡 링크": "",
         "논문 제목": title_cell(item),
