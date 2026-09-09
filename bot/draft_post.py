@@ -405,14 +405,30 @@ _FINDING_WORDS = (
 _TOC_WORDS = ("다뤘", "다룬", "검토했", "살펴봤", "포함돼", "포함됐", "정리했", "질문 목록", "언급됐", "소개돼")
 
 
-def is_toc_like(text: str) -> bool:
-    """'이런 주제를 다뤘다' 식 목차 문장인가.
+def last_clause(text: str, min_len: int = 8) -> str:
+    """문장에서 '무엇을 주장하는지' 가 드러나는 마지막 절.
 
-    문장의 서술어가 '다뤘다·검토했다·포함됐다' 류이면, 그 안에 숫자나 결과 단어가 섞여
-    있어도(예: "신장 손상, 체지방 증가 등 통념 11가지를 정리했어요") 답이 아니다.
+    한국어는 서술어가 끝에 오고, 절은 '~고,' '~며,' 로 이어진다.
+    쉼표·마침표로 끊어 마지막 조각을 본다 (너무 짧으면 앞 조각까지 붙인다).
     """
-    t = (text or "").strip()
-    return any(w in t for w in _TOC_WORDS)
+    parts = [p for p in re.split(r"[,.]\s*", (text or "").strip()) if p.strip()]
+    if not parts:
+        return ""
+    out = parts[-1]
+    if len(out) < min_len and len(parts) >= 2:
+        out = parts[-2] + " " + out
+    return out
+
+
+def is_toc_like(text: str) -> bool:
+    """'이런 주제를 다뤘다' 식 목차 문장인가 — 마지막 절의 서술어로 판단한다.
+
+      "…통념 11가지를 정리했어요"                  → 목차 (주장이 '정리했다')
+      "…정리했고, 심정지 9건이 확인됐다고 보고했어요"  → 목차 아님 (주장이 '확인됐다')
+    문장 전체에서 찾으면, 앞에 '정리했고' 가 붙었을 뿐 뒤에 진짜 결과가 있는
+    멀쩡한 카드까지 떨어뜨린다.
+    """
+    return any(w in last_clause(text) for w in _TOC_WORDS)
 
 
 def answer_problems(d: dict) -> list[str]:
@@ -560,7 +576,8 @@ def main() -> int:
     item = build_item(item_id, topic, paper, draft, used_model, body_src)
     today = datetime.now(KST).strftime("%Y-%m-%d")
     qpath.write_text(json.dumps(item, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"큐 생성: {qpath.relative_to(ROOT)}  (카드 {len(cards)}장, verdict={draft['verdict']})")
+    print(f"큐 생성: {qpath.relative_to(ROOT)}  (카드 {len(item['cards'])}장, "
+          f"verdict={item['verdict']}, 근거={item['source_text']})")
 
     # ---- 상태 갱신: 주제 사용일, 사용한 논문 ----------------------------
     state_p = DATA / "topic_state.json"
