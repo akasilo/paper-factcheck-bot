@@ -1,0 +1,76 @@
+name: redraft
+
+# papers/<PMID>.txt 를 올리면 그 논문으로 쓴 초안을 본문 근거로 다시 쓴다.
+#   초록만 보고 쓴 원고 → 본문을 읽고 다시 씀 → 카드 다시 렌더 → 시트의 훅·근거 갱신
+# 시트의 '근거' 칸이 `초록만` 인 줄을 보고, 그 줄의 PMID 로 파일 이름을 지으면 된다.
+on:
+  push:
+    paths:
+      - "papers/*.txt"
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "다시 쓸 큐 id (예: 2031-sunscreen). 비우면 본문이 새로 생긴 것 전부"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: redraft
+  cancel-in-progress: false
+
+jobs:
+  redraft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TZ: Asia/Seoul
+      LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'claude_code' }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      LLM_MODEL: ${{ vars.LLM_MODEL }}
+      LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.6-flash' }}
+      SHEET_URL: ${{ secrets.SHEET_URL }}
+      SHEET_TOKEN: ${{ secrets.SHEET_TOKEN }}
+      IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+          sudo apt-get install -y -q fonts-noto-color-emoji fonts-noto-cjk >/dev/null
+
+      - name: Install Claude Code CLI
+        if: env.CLAUDE_CODE_OAUTH_TOKEN != ''
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Redraft
+        id: redraft
+        run: |
+          ARGS="--auto"
+          if [ -n "${{ github.event.inputs.id }}" ]; then ARGS="--id ${{ github.event.inputs.id }}"; fi
+          python bot/redraft.py $ARGS
+
+      # 원고가 바뀌었으면 이미지가 비워지므로 --auto 가 알아서 다시 그린다
+      - name: Render cards
+        if: steps.redraft.outputs.redrafted != ''
+        run: python bot/render_cards.py --auto --force
+
+      - name: Commit
+        if: steps.redraft.outputs.redrafted != ''
+        run: |
+          bash bot/commit_push.sh "redraft: 본문 반영 $(date +%Y-%m-%d) [skip ci]" queue images
+
+      - name: Update sheet
+        if: steps.redraft.outputs.redrafted != ''
+        run: python bot/sheet_sync.py --refresh

@@ -1,0 +1,92 @@
+name: draft-post
+
+# 매일 저녁 8시 무렵(KST): 대기 초안이 목표 개수보다 적으면 그만큼 새로 만든다.
+#   논문 검색 → LLM 판정·원고 초안 → 카드 렌더 → 커밋 → 구글시트에 행 추가
+# 큐는 날짜가 아니라 순서(0001-, 0002- …)로 관리하므로 하루 걸러도 빈 날이 안 생긴다.
+on:
+  schedule:
+    - cron: "43 10 * * *"   # 19:43 KST (정각은 GitHub 예약 실행이 몰려 밀리므로 어중간한 분으로)
+  workflow_dispatch:
+    inputs:
+      target:
+        description: "대기 초안을 몇 개까지 채울지"
+        required: false
+        default: "10"
+      max_new:
+        description: "이번 실행에서 새로 만들 최대 개수"
+        required: false
+        default: "10"
+      topic:
+        description: "특정 주제 id (data/topics.json). 비우면 자동 선택"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  issues: write
+  models: read
+
+concurrency:
+  group: draft-post
+  cancel-in-progress: false
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      TZ: Asia/Seoul
+      # 원고 작성 LLM: 기본 Claude 구독(claude setup-token 토큰). 토큰이 없으면 Groq 로 자동 대체.
+      LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'claude_code' }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      LLM_MODEL: ${{ vars.LLM_MODEL }}
+      LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.6-flash' }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      SHEET_URL: ${{ secrets.SHEET_URL }}
+      SHEET_TOKEN: ${{ secrets.SHEET_TOKEN }}
+      IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+          sudo apt-get install -y -q fonts-noto-color-emoji fonts-noto-cjk >/dev/null
+
+      - name: Install Claude Code CLI
+        if: env.CLAUDE_CODE_OAUTH_TOKEN != ''
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Fill draft pool
+        run: |
+          ARGS="--target ${{ github.event.inputs.target || '10' }} --max-new ${{ github.event.inputs.max_new || '10' }}"
+          if [ -n "${{ github.event.inputs.topic }}" ]; then ARGS="$ARGS --topic ${{ github.event.inputs.topic }}"; fi
+          python bot/fill_pool.py $ARGS
+
+      - name: Render cards
+        run: python bot/render_cards.py --auto
+
+      - name: Commit drafts
+        # 다른 워크플로가 먼저 push 했으면 자동으로 다시 받아서 재시도 (bot/commit_push.sh)
+        run: |
+          bash bot/commit_push.sh "draft: 초안 보충 $(date +%Y-%m-%d) [skip ci]" queue images data
+
+      - name: Push to sheet
+        run: python bot/sheet_sync.py --push
+
+      # 이미 있는 줄의 DOI·PMID·근거·미리보기를 큐 기준으로 맞춘다 ('쿠팡 링크' 는 안 건드림).
+      # 열을 새로 추가했을 때 예전 줄을 채워 넣는 것도 이 단계가 한다.
+      - name: Refresh sheet rows
+        run: python bot/sheet_sync.py --refresh
+
+      - name: Open approval issue (시트를 안 쓸 때만)
+        if: env.SHEET_URL == ''
+        run: python bot/open_issue.py --date "$(date -d tomorrow +%Y-%m-%d)" || true
