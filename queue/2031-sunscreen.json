@@ -1,7 +1,7 @@
 {
   "id": "2031-sunscreen",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/gUnKjtU7d6",
   "topic": "sunscreen",
   "topic_ko": "선크림",
   "verdict": "mixed",
@@ -73,5 +73,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/38777185/"
   },
   "drafted_at": "2026-09-07T21:53:20.161182+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-10T00:02:52.961527+09:00"
 }

@@ -1,7 +1,7 @@
 {
   "id": "2030-plastic_container",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/gUnGkExwvQ",
   "topic": "plastic_container",
   "topic_ko": "플라스틱 용기",
   "verdict": "bad",
@@ -73,5 +73,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/40665485/"
   },
   "drafted_at": "2026-09-07T21:51:55.720731+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-10T00:02:52.961180+09:00"
 }
