@@ -261,7 +261,7 @@ def llm_judge(cands: list[dict]) -> dict | None:
         p = c["paper"]
         abstract = re.sub(r"\s+", " ", p["abstract"])[:900]
         # 초록에 결론이 없어도 전문을 볼 수 있으면 쓸 수 있는 논문이다
-        ft = "있음" if (fulltext and fulltext.has_fulltext(p.get("pmid", ""))) else "없음"
+        ft = "있음" if (fulltext and fulltext.has_fulltext(p.get("pmid", ""), p.get("doi", ""))) else "없음"
         c["fulltext"] = ft == "있음"
         lines.append(f"[{i}] 주제: {c['topic']['ko']} / 유형: {', '.join(p['pubtypes'][:3])} / {p['year']} / 전문:{ft}\n"
                      f"제목: {p['title']}\n초록: {abstract}\n")

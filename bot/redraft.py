@@ -44,15 +44,15 @@ def items() -> list[tuple[Path, dict]]:
 
 def needs_redraft(item: dict) -> str:
     """다시 써야 할 이유. 없으면 빈 문자열."""
-    pmid = str((item.get("paper") or {}).get("pmid", "") or "")
-    if not pmid:
-        return ""
-    if not (fulltext.MANUAL_DIR / f"{pmid}.txt").exists():
+    paper = item.get("paper") or {}
+    pmid, doi = str(paper.get("pmid", "") or ""), str(paper.get("doi", "") or "")
+    f = fulltext.manual_file(pmid, doi)
+    if f is None:
         return ""
     src = str(item.get("source_text", "") or "")
-    if "papers/" in src:
-        return ""                      # 이미 그 본문으로 쓴 원고
-    return f"papers/{pmid}.txt 가 새로 들어옴 (지금 근거: {src or '초록만'})"
+    if f"papers/{f.name}" in src:
+        return ""                      # 이미 그 파일로 쓴 원고
+    return f"papers/{f.name} 가 새로 들어옴 (지금 근거: {src or '초록만'})"
 
 
 def redraft_one(path: Path, item: dict, dry: bool = False) -> bool:
@@ -61,7 +61,7 @@ def redraft_one(path: Path, item: dict, dry: bool = False) -> bool:
     topic = {"id": item.get("topic", ""), "ko": item.get("topic_ko", ""),
              "hint": item.get("product_hint", "")}
 
-    body, src = fulltext.get(pmid)
+    body, src = fulltext.get(pmid, doi=paper.get("doi", ""))
     if not body:
         print(f"  {item['id']}: 본문을 못 읽었습니다 — 그대로 둡니다")
         return False

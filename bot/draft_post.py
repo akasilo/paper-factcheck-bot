@@ -547,7 +547,7 @@ def main() -> int:
     used_model = ""
     problems: list[str] = []
     # 초록에 결론이 없는 논문이 있다 → 볼 수 있으면 본문을 같이 준다
-    body_text, body_src = fulltext.get(paper.get("pmid", ""))
+    body_text, body_src = fulltext.get(paper.get("pmid", ""), doi=paper.get("doi", ""))
     if body_text:
         print(f"  본문 확보: {body_src} ({len(body_text)}자)")
     else:
