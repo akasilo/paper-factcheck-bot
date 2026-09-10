@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-10",
+  "queue": {
+    "id": "2029-sweetener",
+    "approved": true,
+    "link": "https://link.coupang.com/a/gQG5yFmTwO",
+    "topic": "sweetener",
+    "topic_ko": "인공감미료",
+    "verdict": "bad",
+    "evidence_level": "review",
+    "product_hint": "인공감미료 대신 무가당 탄산수나 스테비아 등 대안 감미료 성분 표시를 확인할 것",
+    "caveats": [
+      "리뷰 논문으로 여러 연구를 종합한 것이라 개별 연구 설계·질이 다르고 인과관계가 증명된 것은 아님",
+      "사카린-장내 미생물 관련 연구가 동물/세포/사람 중 어떤 대상인지 초록에 명시되지 않음",
+      "구체적인 섭취량, 섭취 기간, 감미료 종류별 위험도 차이에 대한 수치는 제시되지 않음"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "제로칼로리\n[[다이어트 음료]]\n정말 안전할까요?\n{{뇌졸중}} 위험은?"
+      },
+      {
+        "type": "body",
+        "text": "제로칼로리 감미료는 당뇨·비만 관리에 쓰이지만, 한 리뷰 논문은 많이 섭취할수록 [[대사질환]]·심혈관질환·특정 암 위험이 높아질 수 있다고 말합니다."
+      },
+      {
+        "type": "body",
+        "text": "미국 [[여성 건강 이니셔티브]] 코호트에서는 인공감미료 음료를 많이 마신 그룹에서 {{뇌졸중}}·관상동맥질환·사망 위험이 다른 요인과 무관하게 높았다는 결과가 나왔습니다."
+      },
+      {
+        "type": "body",
+        "text": "사카린 등 일부 감미료는 장내 미생물 균형을 흩뜨리고 장 투과성을 높여 [[염증성 장질환]]과의 연관성이 보고됐습니다. 이는 인슐린 저항성·전신 염증으로 이어질 수 있습니다."
+      },
+      {
+        "type": "body",
+        "text": "흥미롭게도 체중 감량 목적과 달리 오히려 [[체중 증가]]와의 연관성, 임신 중 부작용, 경련 역치가 낮은 사람에서의 위험 가능성도 함께 언급됐습니다.",
+        "note": "※ 이 논문은 여러 연구를 종합한 리뷰이며, 코호트 연구부터 세포·동물 실험까지 근거가 섞여 있어 인과관계는 아직 명확하지 않습니다."
+      },
+      {
+        "type": "body",
+        "text": "오늘은 무가당 [[탄산수]]나 스테비아 감미료 중 하나를 대신 마셔보고, 음료 성분표의 감미료 이름을 확인해보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Exploring the Long-Term Effect of Artificial Sweeteners on Metabolic Health.",
+          "journal": "Cureus",
+          "year": "2024",
+          "doi": "10.7759/cureus.70043",
+          "authors": "M M, Vellapandian C"
+        }
+      }
+    ],
+    "images": [
+      "images/2029-sweetener/01.jpg",
+      "images/2029-sweetener/02.jpg",
+      "images/2029-sweetener/03.jpg",
+      "images/2029-sweetener/04.jpg",
+      "images/2029-sweetener/05.jpg",
+      "images/2029-sweetener/06.jpg",
+      "images/2029-sweetener/07.jpg"
+    ],
+    "instagram_caption": "제로칼로리라서 다이어트 음료가 더 안전하다고 생각하셨나요?\n\n한 리뷰 논문(Cureus, 2024)에 따르면 인공감미료를 많이 섭취할수록 대사질환·심혈관질환·특정 암 위험 증가와 관련이 있다는 보고가 있습니다.\n\n특히 미국 여성 건강 이니셔티브 코호트 연구에서는 인공감미료가 든 음료를 마신 그룹에서 다른 위험요인과 무관하게 뇌졸중, 관상동맥질환, 사망 위험이 높았다는 결과가 나왔습니다.\n\n사카린 같은 일부 감미료는 장내 미생물 균형을 흩뜨리고 장 투과성을 높여 염증성 장질환과의 연관성도 보고됐습니다. 이는 인슐린 저항성과 전신 염증으로 이어질 수 있다고 합니다.\n\n흥미롭게도 체중 감량을 위해 쓰이는데도 오히려 체중 증가와의 연관성, 임신 중 부작용 가능성도 함께 언급됐습니다. 다만 이 논문은 여러 연구를 종합한 리뷰라 인과관계가 확정된 건 아닙니다.\n\n오늘은 무가당 탄산수나 스테비아 같은 대안을 하나 시도해보고, 마시는 음료의 감미료 성분표를 확인해보세요.\n\n📄 출처: M M, Vellapandian C, Cureus (2024). DOI 10.7759/cureus.70043\n\n#논문팩트체크 #paper_factcheck #인공감미료 #제로칼로리 #다이어트음료 #대사질환 #장건강 #건강정보 #식품첨가물 #스테비아 #당뇨 #뇌졸중\n*본 카드뉴스의 이미지는 AI를 이용하여 제작되었습니다.",
+    "threads_text": "제로칼로리 음료라서 마음 편히 드셨다면... 한 리뷰 논문에 따르면 인공감미료 많이 먹는 사람들이 오히려 뇌졸중·심장병·대사질환 위험이 높다는 보고가 있대요. 장내 미생물 균형을 깨서 인슐린 저항성으로 이어질 수도 있다고 하고요. 다이어트 하려고 마셨는데 체중 증가랑도 관련 있다는 게 아이러니하죠. 물론 리뷰 논문이라 인과관계까지 증명된 건 아니에요. 여러분은 다이어트 음료 하루에 몇 개나 드세요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Exploring the Long-Term Effect of Artificial Sweeteners on Metabolic Health.",
+      "journal": "Cureus",
+      "year": "2024",
+      "doi": "10.7759/cureus.70043",
+      "pmid": "39449954",
+      "authors": "M M, Vellapandian C",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39449954/"
+    },
+    "drafted_at": "2026-09-07T17:22:48.534124+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-09-08T11:35:02.484965+09:00"
+  },
+  "instagram_post_id": "18151199527541121",
+  "instagram_posted_at": "2026-09-10T09:33:06.370655+09:00",
+  "threads_post_id": "18138429943717260",
+  "threads_posted_at": "2026-09-10T09:33:39.544752+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DdFjt_CDYMc",
+  "threads_reply_id": "18094480544399399",
+  "completed_at": "2026-09-10T09:33:54.728040+09:00"
+}
