@@ -1,0 +1,80 @@
+{
+  "id": "2039-toothpaste",
+  "approved": false,
+  "link": "",
+  "topic": "toothpaste",
+  "topic_ko": "치약",
+  "verdict": "good",
+  "evidence_level": "rct",
+  "source_text": "PMC11976554 전문",
+  "answer": "이 논문에 따르면 수산화인회석+불소 치약을 쓴 아이들의 유치 법랑질 활성 충치 78개 중 74%(58개)가 2년 뒤 비활성화됐고, 이는 불소치약만 쓴 그룹보다 통계적으로 유의미하게 높은 비율이었다(P=.04).",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "불소와 수산화인회석(hydroxyapatite)이 함께 표시된 치약",
+  "caveats": [
+    "유치(primary teeth) 법랑질 결과 중심이며, 영구치·상아질 충치에서는 통계적으로 유의미한 차이가 보고되지 않음",
+    "수산화인회석 치약도 불소(1000~1450ppm)를 함유해 '무불소 대안'이 아니라 '불소+수산화인회석' 조합의 결과임",
+    "특정 두 종류의 치약 제품군 비교 결과로, 모든 수산화인회석 치약에 일반화하기는 어려움"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "아이 치약은\n[[불소]]만\n있으면 될까요?\n반전이 있어요"
+    },
+    {
+      "type": "body",
+      "text": "이탈리아에서 4~7세 아동 610명을 24개월간 추적한 무작위 대조 시험이었어요. [[불소치약]]과 [[수산화인회석+불소치약]]을 비교했죠."
+    },
+    {
+      "type": "body",
+      "text": "24개월 뒤, 유치 법랑질 충치는 [[수산화인회석+불소치약]] 그룹에서 더 많이 나아졌어요(P<.01). 활성 충치 78개 중 58개(74%)가 비활성으로 바뀌었죠."
+    },
+    {
+      "type": "body",
+      "text": "반면 불소치약만 쓴 그룹은 같은 활성 충치가 비활성으로 바뀐 비율이 훨씬 낮았어요. 더 깊은 상아질 충치는 두 그룹 차이가 크지 않았습니다."
+    },
+    {
+      "type": "body",
+      "text": "연구팀은 활성 충치가 있는 아이에게 [[수산화인회석+불소]] 치약이 더 나은 선택일 수 있다고 결론지었어요.",
+      "note": "※ 두 치약 모두 불소(1000~1450ppm) 함유, 무불소 대안 아님·추가 연구 필요"
+    },
+    {
+      "type": "body",
+      "text": "치약 뒷면 성분표에서 불소와 함께 [[수산화인회석(hydroxyapatite)]] 표시가 있는지 확인해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Hydroxyapatite-Fluoride Toothpastes on Caries Activity: A Triple-Blind Randomized Clinical Trial.",
+        "journal": "International dental journal",
+        "year": "2025",
+        "doi": "10.1016/j.identj.2024.09.037",
+        "authors": "Cocco F, Salerno C, Wierichs RJ et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2039-toothpaste/01.jpg",
+    "images/2039-toothpaste/02.jpg",
+    "images/2039-toothpaste/03.jpg",
+    "images/2039-toothpaste/04.jpg",
+    "images/2039-toothpaste/05.jpg",
+    "images/2039-toothpaste/06.jpg",
+    "images/2039-toothpaste/07.jpg"
+  ],
+  "instagram_caption": "아이 충치 예방엔 불소치약이 최선인 줄 알았는데, 반전이 있었어요.\n\n이탈리아 연구팀이 4~7세 아동 610명을 모아 2년간 추적한 무작위 대조 시험을 진행했어요. 한쪽은 일반 불소치약(불소 1000~1450ppm), 다른 한쪽은 수산화인회석+불소를 함께 넣은 치약을 쓰게 했죠.\n\n2년 뒤 결과, 유치 법랑질(치아 겉면)의 활성 충치 병소가 비활성 상태로 바뀐 비율이 수산화인회석+불소 그룹에서 더 높았어요. 활성 병소 78개 중 74%(58개)가 비활성화됐고, 통계적으로 유의미한 차이였습니다(P=.04). 다만 더 깊은 상아질 충치에서는 두 그룹 차이가 크지 않았어요.\n\n여기서 중요한 건, 수산화인회석 치약도 불소가 빠진 게 아니라는 점이에요. 불소를 대체한 게 아니라 '불소+수산화인회석' 조합이 더 좋은 결과를 보였다는 뜻이죠. 연구팀도 후속 연구가 더 필요하다고 밝혔어요.\n\n오늘 할 수 있는 일: 치약 뒷면 성분표를 보고 불소와 수산화인회석(hydroxyapatite)이 함께 들어있는지 확인해보세요.\n\n📄 출처: Cocco F, Salerno C, Wierichs RJ et al., International Dental Journal (2025). DOI 10.1016/j.identj.2024.09.037\n\n#논문팩트체크 #paper_factcheck #치약 #충치예방 #불소치약 #수산화인회석 #아이치약 #유치관리 #소아치과 #구강건강 #양치질 #임상시험\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "치과 갈 때마다 '불소치약 써라'는 말만 들었는데, 최근 논문 하나가 흥미로운 결과를 냈어요. 4~7세 아이 610명한테 2년간 치약을 다르게 쓰게 했더니, 불소만 든 치약보다 수산화인회석+불소를 같이 넣은 치약을 쓴 아이들 쪽에서 초기 충치(법랑질)가 활성에서 비활성으로 더 많이 바뀌었대요(74%나!). 물론 이것도 불소가 빠진 건 아니고 '불소+α' 조합이었다는 점은 기억해두세요. 여러분은 아이 치약 고를 때 성분표까지 확인해본 적 있나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Hydroxyapatite-Fluoride Toothpastes on Caries Activity: A Triple-Blind Randomized Clinical Trial.",
+    "journal": "International dental journal",
+    "year": "2025",
+    "doi": "10.1016/j.identj.2024.09.037",
+    "pmid": "39971658",
+    "authors": "Cocco F, Salerno C, Wierichs RJ et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39971658/"
+  },
+  "drafted_at": "2026-09-10T23:39:26.092136+09:00",
+  "model": "claude_code:default"
+}
