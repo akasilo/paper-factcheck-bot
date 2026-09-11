@@ -1,0 +1,88 @@
+{
+  "date": "2026-09-11",
+  "queue": {
+    "id": "2030-plastic_container",
+    "approved": true,
+    "link": "https://link.coupang.com/a/gUnGkExwvQ",
+    "topic": "plastic_container",
+    "topic_ko": "플라스틱 용기",
+    "verdict": "bad",
+    "evidence_level": "systematic review",
+    "product_hint": "뜨겁거나 기름진 음식을 담을 유리·스테인리스 재질의 밀폐용기",
+    "caveats": [
+      "PFAS 이행량은 관련 연구 수 부족으로 결론을 내리기 어렵다고 명시됨",
+      "제시된 섭취량 추정치는 서구식 식단 기준으로, 다른 식습관에는 그대로 적용되지 않을 수 있음",
+      "리뷰에 포함된 연구들은 관찰·실험 연구 종합으로, 구체적인 질병 발생과의 인과관계를 직접 증명한 것은 아님"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "뜨거운 음식을\n[[플라스틱]] 용기에?\n{{프탈레이트}}\n녹아든다는 논문"
+      },
+      {
+        "type": "body",
+        "text": "67개 연구·5,378개 식품 시료를 분석한 리뷰 논문. 플라스틱 포장에서 [[프탈레이트]]와 비스페놀이 음식으로 꾸준히 옮겨온다는 결과가 나왔어요."
+      },
+      {
+        "type": "body",
+        "text": "온도가 높거나 기름지고 산성인 음식일수록 이런 물질이 [[더 많이]] 녹아 나온다는 결과예요. 뜨거운 국물·배달 음식 포장이 해당될 수 있어요."
+      },
+      {
+        "type": "body",
+        "text": "서구식 식단 기준으로 계산하면, 이런 포장재를 통해 하루 최대 [[36,349µg]]의 프탈레이트류가 몸에 들어올 수 있다는 추정치가 나왔어요.",
+        "note": "※ 서구식 식단 기준 추정치로, 지중해식·채식 위주 식단엔 그대로 적용되지 않을 수 있어요."
+      },
+      {
+        "type": "body",
+        "text": "이런 물질은 [[내분비계]]에 영향을 줄 수 있다고 언급돼요. PFAS도 검출됐지만 아직 연구가 적어 결론 내리긴 이르다고 해요.",
+        "note": "※ 기존 연구를 모은 리뷰로, 특정 질병과의 인과관계를 증명한 건 아니에요."
+      },
+      {
+        "type": "body",
+        "text": "뜨겁거나 기름진 음식은 [[유리·스테인리스]] 용기에 옮겨 담고, 플라스틱 용기는 냉장 보관용으로만 써보는 건 어때요?"
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Phthalates, bisphenols and per-and polyfluoroalkyl substances migration from food packaging into food: a systematic review.",
+          "journal": "Reviews on environmental health",
+          "year": "2025",
+          "doi": "10.1515/reveh-2025-0027",
+          "authors": "Tanzer M, Boissiere-O'Neill T, Sly PD et al."
+        }
+      }
+    ],
+    "images": [
+      "images/2030-plastic_container/01.jpg",
+      "images/2030-plastic_container/02.jpg",
+      "images/2030-plastic_container/03.jpg",
+      "images/2030-plastic_container/04.jpg",
+      "images/2030-plastic_container/05.jpg",
+      "images/2030-plastic_container/06.jpg",
+      "images/2030-plastic_container/07.jpg"
+    ],
+    "instagram_caption": "뜨거운 배달 음식, 플라스틱 용기에 그대로 두고 계신가요?\n\n한 리뷰 논문이 67개 연구·5,378개 식품 시료를 분석했더니, 플라스틱 포장에서 프탈레이트와 비스페놀이 음식으로 꾸준히 옮겨온다는 결과가 나왔어요.\n\n특히 온도가 높거나 기름지고 산성인 음식일수록 이 물질들이 더 많이 녹아 나온다고 해요. 뜨거운 국물이나 기름진 배달 음식을 담은 플라스틱 포장이 여기에 해당할 수 있습니다.\n\n서구식 식단을 기준으로 하면 이런 포장재를 통해 하루 최대 약 36,349µg(마이크로그램)의 프탈레이트류를 먹게 될 수 있다는 추정치도 제시됐어요. 다만 이 수치는 식단에 따라 달라질 수 있고, PFAS는 아직 연구가 적어 결론 내리긴 이르다고 합니다.\n\n오늘부터 뜨겁거나 기름진 음식만이라도 유리·스테인리스 용기에 옮겨 담아보는 건 어떨까요?\n\n📄 출처: Tanzer M, Boissiere-O'Neill T, Sly PD 등, Reviews on Environmental Health (2025). DOI 10.1515/reveh-2025-0027\n\n#논문팩트체크 #paper_factcheck #플라스틱용기 #프탈레이트 #비스페놀 #환경호르몬 #내분비교란물질 #식품포장 #제로웨이스트 #배달음식 #유리용기 #스테인리스밀폐용기 #건강습관 #친환경생활\n*본 카드뉴스의 이미지는 AI를 이용하여 제작되었습니다.",
+    "threads_text": "플라스틱 배달 용기에 뜨거운 국물... 사실 좀 찝찝했는데, 최근 리뷰 논문 보니 이유가 있었더라고요.\n\n67개 연구를 모아보니 플라스틱 포장에서 프탈레이트·비스페놀이 음식으로 꾸준히 옮겨온다는 결과가 나왔대요. 특히 뜨겁고 기름지고 산성인 음식일수록 더 많이 녹아 나온다고요.\n\n서구식 식단 기준으로 하루 최대 36,349µg 정도 섭취될 수 있다는 추정치도 있었는데, PFAS는 아직 연구가 부족해서 결론은 못 냈대요.\n\n여러분은 배달 음식 그대로 플라스틱에 두고 드시나요, 아니면 옮겨 담으시나요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Phthalates, bisphenols and per-and polyfluoroalkyl substances migration from food packaging into food: a systematic review.",
+      "journal": "Reviews on environmental health",
+      "year": "2025",
+      "doi": "10.1515/reveh-2025-0027",
+      "pmid": "40665485",
+      "authors": "Tanzer M, Boissiere-O'Neill T, Sly PD et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40665485/"
+    },
+    "drafted_at": "2026-09-07T21:51:55.720731+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-09-10T00:02:52.961180+09:00"
+  },
+  "instagram_post_id": "17969369574141106",
+  "instagram_posted_at": "2026-09-11T13:33:01.482488+09:00",
+  "threads_post_id": "18114481303781818",
+  "threads_posted_at": "2026-09-11T13:33:34.870499+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DdIj-S2DiNH",
+  "threads_reply_id": "18094739957104151",
+  "completed_at": "2026-09-11T13:33:52.647197+09:00"
+}
