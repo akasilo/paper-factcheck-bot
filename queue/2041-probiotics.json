@@ -1,0 +1,80 @@
+{
+  "id": "2041-probiotics",
+  "approved": false,
+  "link": "",
+  "topic": "probiotics",
+  "topic_ko": "유산균",
+  "verdict": "mixed",
+  "evidence_level": "rct",
+  "source_text": "PMC10120550 전문",
+  "answer": "배변 빈도와 힘주는 정도는 유산균/식이섬유군과 위약군 간 유의한 차이가 없었고, 개선된 건 변의 굳기(브리스톨 스케일)뿐이었다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "차전자피·밀기울 등 식이섬유 또는 비피더스균·락토바실러스균 함유 유산균, 4주 이상 꾸준히 섭취해 변 굳기 변화로 효과를 확인",
+  "caveats": [
+    "단일 RCT, 개입 기간이 4주로 짧음",
+    "변비 유형(배변장애형 등)을 구분하지 않고 분석해 특정 환자군엔 결과가 다를 수 있음",
+    "세로토닌 변화는 다중비교 보정 후 유의성이 사라짐"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "유산균 먹으면\n[[변비]] 낫는다?\n{{배변 횟수}}는\n그대로였다"
+    },
+    {
+      "type": "body",
+      "text": "성인 250명, 4주간 이중맹검 무작위 위약대조 시험. 식이섬유 3종(폴리덱스트로스·차전자피·밀기울+차전자피)과 [[유산균]] 1종을 위약과 비교했어요."
+    },
+    {
+      "type": "body",
+      "text": "배변 [[빈도]]와 힘주는 정도는 유산균·식이섬유군과 위약군 사이에 유의한 차이가 없었어요. 광고만큼 '자주, 편하게' 본다는 근거는 약했던 셈이죠."
+    },
+    {
+      "type": "body",
+      "text": "다만 변의 굳기(브리스톨 대변 척도)는 달랐어요. 개입군은 4주간 0.95~1.05점 올랐지만 위약군은 유의한 변화가 없었죠(P=0.170)."
+    },
+    {
+      "type": "body",
+      "text": "유산균군(비피더스+락토바실러스)에서는 혈중 세로토닌이 소폭 줄어드는 경향도 보였지만, 통계 보정 후엔 유의성이 사라졌어요.",
+      "note": "※ 세로토닌 변화는 다중비교 보정 후 유의성 상실, 참고용 결과"
+    },
+    {
+      "type": "body",
+      "text": "변비엔 배변 횟수보다 '[[변 굳기]]' 개선이 핵심일 수 있어요. 식이섬유·유산균 제품은 최소 4주는 꾸준히 먹고 효과를 확인해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Effects of dietary fibers or probiotics on functional constipation symptoms and roles of gut microbiota: a double-blinded randomized placebo trial.",
+        "journal": "Gut microbes",
+        "year": "2023",
+        "doi": "10.1080/19490976.2023.2197837",
+        "authors": "Lai H, Li Y, He Y et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2041-probiotics/01.jpg",
+    "images/2041-probiotics/02.jpg",
+    "images/2041-probiotics/03.jpg",
+    "images/2041-probiotics/04.jpg",
+    "images/2041-probiotics/05.jpg",
+    "images/2041-probiotics/06.jpg",
+    "images/2041-probiotics/07.jpg"
+  ],
+  "instagram_caption": "유산균 먹으면 변비가 낫는다? 배변 횟수는 그대로였다는 논문이 있습니다.\n\n성인 250명을 대상으로 한 4주간 이중맹검 무작위 위약대조 시험이에요. 식이섬유 제품 3종(폴리덱스트로스, 차전자피, 밀기울+차전자피)과 비피더스균+락토바실러스균 유산균 1종을 위약(말토덱스트린)과 비교했습니다.\n\n결과는 예상과 달랐어요. 배변 빈도와 힘주는 정도(배변 곤란감)는 유산균·식이섬유군과 위약군 사이에 통계적으로 유의한 차이가 없었습니다. '더 자주, 더 편하게' 갈 수 있다는 광고만큼의 근거는 약했던 셈이죠.\n\n다만 변의 굳기(브리스톨 대변 척도)는 달랐습니다. 개입군은 4주 동안 이 점수가 0.95~1.05점 올랐지만, 위약군은 유의한 변화가 없었어요(P=0.170). '딱딱한 변'을 부드럽게 만드는 효과는 있었던 것으로 보입니다.\n\n유산균군에서는 혈중 세로토닌이 소폭 줄어드는 경향도 관찰됐지만, 통계 보정 후엔 유의성이 사라져 참고 수준으로만 봐야 해요.\n\n오늘의 행동: 변비 개선 제품을 고를 땐 '배변 횟수'보다 '변 굳기' 개선에 초점을 맞추고, 최소 4주는 꾸준히 섭취한 뒤 효과를 판단해보세요.\n\n📄 출처: Lai H, Li Y, He Y et al., Gut Microbes (2023). DOI 10.1080/19490976.2023.2197837\n\n#논문팩트체크 #paper_factcheck #유산균 #프로바이오틱스 #변비 #장건강 #식이섬유 #차전자피 #장내미생물 #건강정보 #무작위대조시험 #배변활동\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "변비에 좋다는 유산균, 진짜 배변 횟수까지 늘려줄까요? 성인 250명 4주 무작위 위약대조 시험을 보니 배변 빈도랑 힘주는 정도는 위약이랑 별 차이가 없었대요. 대신 변이 딱딱한 정도(굳기)는 확실히 부드러워졌다고 하네요. 즉 '자주' 가게 해주는 건 아니고 '편하게' 보게는 해줄 수도 있다는 거죠. 여러분은 유산균 먹고 어떤 변화를 느끼셨나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Effects of dietary fibers or probiotics on functional constipation symptoms and roles of gut microbiota: a double-blinded randomized placebo trial.",
+    "journal": "Gut microbes",
+    "year": "2023",
+    "doi": "10.1080/19490976.2023.2197837",
+    "pmid": "37078654",
+    "authors": "Lai H, Li Y, He Y et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37078654/"
+  },
+  "drafted_at": "2026-09-11T23:38:48.367484+09:00",
+  "model": "claude_code:default"
+}
