@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-12",
+  "slot": "evening",
+  "queue": {
+    "id": "2032-blue_light_glasses",
+    "approved": true,
+    "link": "https://link.coupang.com/a/gUnPH0ai96",
+    "topic": "blue_light_glasses",
+    "topic_ko": "블루라이트 안경",
+    "verdict": "mixed",
+    "evidence_level": "cross-sectional",
+    "product_hint": "화면 필터 앱보다, 다른 연구에서 멜라토닌 변화가 보고된 적 있는 렌즈형(물리적 차단) 제품인지 확인 — 이 논문이 직접 검증한 내용은 아님",
+    "caveats": [
+      "설문 기반 관찰연구라 인과관계를 입증한 것은 아님",
+      "물리적 렌즈 필터의 멜라토닌 효과는 이 논문이 직접 검증한 게 아니라 다른 연구를 인용한 배경 서술",
+      "31~40세 그룹의 연관성은 하위집단 분석 결과로 전체 결론과 다를 수 있음"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "매일 켜는\n[[야간모드]]\n정말 잠에\n도움될까요?"
+      },
+      {
+        "type": "body",
+        "text": "스마트폰 제조사들이 넣은 [[야간모드]]는 블루라이트를 줄여 수면에 도움을 준다고 알려져 있어요. 정말 그럴까요?"
+      },
+      {
+        "type": "body",
+        "text": "한 관찰연구가 성인 스마트폰 사용자들의 [[블루라이트 차단 앱]] 사용 패턴과 수면의 질(PSQI 설문)을 조사했어요."
+      },
+      {
+        "type": "body",
+        "text": "응답자의 80%는 차단 앱을 아예 안 썼고, 습관적으로 쓴 사람은 9.7%뿐. 참가자 54%는 수면의 질이 나쁜 편(PSQI 5점 초과)이었어요."
+      },
+      {
+        "type": "body",
+        "text": "통계 분석 결과 앱 사용 여부와 수면의 질 사이엔 {{뚜렷한 관련성이 없었다}}고 보고됐어요(p=0.925)."
+      },
+      {
+        "type": "body",
+        "text": "31~40세 그룹에선 습관적 수면효율과 약한 연관이 보였고, 렌즈 같은 물리적 차단 도구는 다른 연구에서 멜라토닌 변화가 보고된 적 있대요.",
+        "note": "※ 이 연구가 직접 검증한 내용은 아니며, 설문 기반 관찰연구라 인과관계 확인은 어려워요"
+      },
+      {
+        "type": "body",
+        "text": "오늘의 실천: 앱 설정보다 [[취침 전 화면 사용 줄이기]]처럼 노출 자체를 줄이는 습관을 먼저 시도해보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Do blue light filter applications improve sleep outcomes? A study of smartphone users' sleep quality in an observational setting.",
+          "journal": "Electromagnetic biology and medicine",
+          "year": "2024",
+          "doi": "10.1080/15368378.2024.2327432",
+          "authors": "Rabiei M, Masoumi SJ, Haghani M et al."
+        }
+      }
+    ],
+    "images": [
+      "images/2032-blue_light_glasses/01.jpg",
+      "images/2032-blue_light_glasses/02.jpg",
+      "images/2032-blue_light_glasses/03.jpg",
+      "images/2032-blue_light_glasses/04.jpg",
+      "images/2032-blue_light_glasses/05.jpg",
+      "images/2032-blue_light_glasses/06.jpg",
+      "images/2032-blue_light_glasses/07.jpg",
+      "images/2032-blue_light_glasses/08.jpg"
+    ],
+    "instagram_caption": "야간모드 켜면 잠 잘 온다는 말, 진짜일까요?\n\n스마트폰의 '블루라이트 차단 앱(야간모드)'은 화면에서 나오는 블루라이트를 줄여 멜라토닌 분비를 지키고, 결국 수면의 질을 높여준다고 알려져 있어요.\n\n한 관찰연구가 성인 스마트폰 사용자들의 사용 패턴과 수면의 질(PSQI 설문)을 조사했어요. 응답자의 80%는 차단 앱을 전혀 쓰지 않았고, 습관적으로 쓰는 사람은 9.7%뿐이었죠.\n\n통계 분석 결과, 앱 사용 여부와 전체 수면의 질 사이에는 뚜렷한 관련성이 나타나지 않았어요(p=0.925). 다만 31~40세 그룹에서는 습관적 수면효율과 약한 연관이 관찰됐고, 렌즈 같은 물리적 차단 도구는 다른 연구들에서 멜라토닌 변화가 보고된 적 있다고 언급돼요(이 연구가 직접 검증한 부분은 아니에요).\n\n오늘의 실천: 앱 설정보다 취침 전 화면 사용 줄이기처럼 노출 자체를 줄이는 습관을 먼저 시도해보세요.\n\n📄 출처: Rabiei M, Masoumi SJ, Haghani M et al., Electromagnetic Biology and Medicine (2024). DOI 10.1080/15368378.2024.2327432\n\n#논문팩트체크 #paper_factcheck #블루라이트 #야간모드 #수면의질 #수면건강 #스마트폰습관 #디지털디톡스 #관찰연구 #팩트체크 #건강정보 #멜라토닌\n*본 카드뉴스의 이미지는 AI를 이용하여 제작되었습니다.",
+    "threads_text": "스마트폰 '야간모드' 켜면 잠 잘 온다는 얘기, 다들 들어보셨죠? 성인 사용자들 대상 관찰연구에서 앱으로 블루라이트 차단한 사람이랑 안 한 사람 수면의 질(PSQI)을 통계로 비교했더니 유의미한 차이 없음(p=0.925)이라는 결과가 나왔어요. 응답자 80%는 애초에 앱을 안 쓰고 있었다는 것도 흥미롭고요. 31~40세에서는 약간의 연관성이 보이긴 했지만 전체적으로는 '앱만으로는' 큰 기대는 어렵다는 쪽. 여러분은 야간모드 켜고 주무시나요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Do blue light filter applications improve sleep outcomes? A study of smartphone users' sleep quality in an observational setting.",
+      "journal": "Electromagnetic biology and medicine",
+      "year": "2024",
+      "doi": "10.1080/15368378.2024.2327432",
+      "pmid": "38461462",
+      "authors": "Rabiei M, Masoumi SJ, Haghani M et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38461462/"
+    },
+    "drafted_at": "2026-09-07T21:54:41.790254+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-09-10T00:02:52.961818+09:00"
+  },
+  "instagram_post_id": "17882143356512511",
+  "instagram_posted_at": "2026-09-12T18:44:22.178482+09:00",
+  "threads_post_id": "17907767253309510",
+  "threads_posted_at": "2026-09-12T18:45:01.396960+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DdLsak5HNq-",
+  "threads_reply_id": "18241703521314537",
+  "completed_at": "2026-09-12T18:45:15.604346+09:00"
+}
