@@ -1,14 +1,19 @@
 name: daily-post
 
-# GitHub 의 예약 실행은 뜨는 시각이 들쭉날쭉하다 (07:37 로 걸어도 09:30 에 뜬 날이 이틀 연속 있었다).
-# 그래서 아침 시간대에 30분마다 여러 번 깨우고, 실제 게시는 bot/gate.py 가 하루 한 번으로 묶는다.
-#   - POST_AFTER (KST) 이전이면 그냥 종료
-#   - 오늘 이미 올렸으면 그냥 종료
-# 게시 시각을 바꾸려면 아래 POST_AFTER 만 고치면 된다. cron 은 '깨우는 창'일 뿐이다.
+# GitHub 예약 실행은 뜨는 시각이 들쭉날쭉하고, 상당수는 아예 안 뜬다.
+# 실제로 관찰한 것 (9/10~9/12, 하루 10번 걸어둔 것 중 실제로 뜬 건 2~3번):
+#     07:08 예약 → 07:27 에 뜸 (사흘 내리)   09:08 → 09:30 쯤   09:38 → 13:33 에 뜬 날도 있음
+# 그래서 하루 종일 30분마다 깨우고, 실제 게시는 bot/gate.py 가 **슬롯당 한 번**으로 묶는다.
+#
+# 슬롯(아침·점심·퇴근길)은 아래 SLOTS 한 줄로 정한다. 문지기는 깨어난 *시각*을 보고
+# 지금이 어느 슬롯인지 스스로 정하므로, 아침 예약이 밀려 점심때 떠도 점심 몫으로 쓰인다.
+# 이 구조 덕에 9/11 에 09:29 실행이 시트 오류로 실패했을 때 13:32 실행이 대신 올렸다.
+#
+# 게시 시각을 바꾸려면 SLOTS 만 고치면 된다. cron 은 '깨우는 창'일 뿐이다.
 on:
   schedule:
-    - cron: "8,38 20-23 * * *"   # 05:08 ~ 08:38 KST 사이 30분 간격
-    - cron: "8,38 0 * * *"       # 09:08, 09:38 KST — 많이 밀린 날의 마지막 기회
+    - cron: "8,38 22-23 * * *"   # 07:08 ~ 08:38 KST
+    - cron: "8,38 0-14 * * *"    # 09:08 ~ 23:38 KST
   workflow_dispatch:
     inputs:
       date:
@@ -25,7 +30,7 @@ on:
         type: boolean
         default: false
       again:
-        description: "오늘 이미 올렸어도 한 번 더 올리기 (하루 1회 잠금 해제)"
+        description: "그 슬롯을 이미 채웠어도 한 번 더 올리기 (잠금 해제)"
         type: boolean
         default: false
 
@@ -37,8 +42,9 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  # 이 시각(KST) 이후에 처음 깨어난 실행이 그날의 게시를 담당한다.
-  POST_AFTER: "08:00"
+  # 하루 세 번 — 각 시각(KST) 이후 처음 깨어난 실행이 그 슬롯 몫을 올린다.
+  # 07:00 인 이유: 사흘 내리 실제로 뜬 건 07:27 실행뿐이었다. 08:00 으로 두면 막혀서 09:30 까지 밀린다.
+  SLOTS: "morning=07:00,lunch=12:00,evening=18:00"
 
 jobs:
   post:
@@ -63,13 +69,14 @@ jobs:
 
       # 표준 라이브러리만 쓰므로 pip install 전에 돌린다.
       # 예약 실행은 하루 10번 깨어나지만 9번은 여기서 15초 만에 끝난다.
-      - name: 오늘 올릴 차례인지 확인
+      - name: 지금 올릴 슬롯이 있는지 확인
         id: gate
         run: |
           if [ "${{ github.event_name }}" = "schedule" ]; then
-            python bot/gate.py --after "$POST_AFTER" | tee -a "$GITHUB_OUTPUT"
+            python bot/gate.py --slots "$SLOTS" | tee -a "$GITHUB_OUTPUT"
           else
             echo "go=yes" | tee -a "$GITHUB_OUTPUT"
+            echo "slot=" >> "$GITHUB_OUTPUT"
             echo "reason=수동 실행"
           fi
 
@@ -90,7 +97,8 @@ jobs:
           if [ -n "${{ github.event.inputs.target }}" ]; then ARGS="$ARGS --target ${{ github.event.inputs.target }}"; fi
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           if [ "${{ github.event.inputs.again }}" = "true" ]; then ARGS="$ARGS --again"; fi
-          python bot/publish.py $ARGS
+          if [ -n "${{ steps.gate.outputs.slot }}" ]; then ARGS="$ARGS --slot ${{ steps.gate.outputs.slot }}"; fi
+          python bot/publish.py --slots "$SLOTS" $ARGS
 
       - name: Commit results
         if: always() && steps.gate.outputs.go == 'yes'
