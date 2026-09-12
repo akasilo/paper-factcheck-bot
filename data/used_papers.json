@@ -117,5 +117,47 @@
     "date": "2026-09-11",
     "topic": "probiotics",
     "title": "Effects of dietary fibers or probiotics on functional constipation symptoms and roles of gut microbiota: a double-blinded randomized placebo trial."
+  },
+  {
+    "pmid": "40368300",
+    "doi": "10.1016/j.tjnut.2025.05.004",
+    "date": "2026-09-12",
+    "topic": "coffee",
+    "title": "Coffee Consumption and Mortality among United States Adults: A Prospective Cohort Study."
+  },
+  {
+    "pmid": "39748104",
+    "doi": "10.1002/cpt.3547",
+    "date": "2026-09-12",
+    "topic": "green_tea",
+    "title": "Green Tea Catechins as Perpetrators of Drug Pharmacokinetic Interactions."
+  },
+  {
+    "pmid": "40048719",
+    "doi": "10.1001/jamainternmed.2025.0205",
+    "date": "2026-09-12",
+    "topic": "olive_oil",
+    "title": "Butter and Plant-Based Oils Intake and Mortality."
+  },
+  {
+    "pmid": "38931273",
+    "doi": "10.3390/nu16121919",
+    "date": "2026-09-12",
+    "topic": "dark_chocolate",
+    "title": "Effects of Cocoa Consumption on Cardiometabolic Risk Markers: Meta-Analysis of Randomized Controlled Trials."
+  },
+  {
+    "pmid": "37764707",
+    "doi": "10.3390/nu15183922",
+    "date": "2026-09-12",
+    "topic": "energy_drink",
+    "title": "The Dark Side of Energy Drinks: A Comprehensive Review of Their Impact on the Human Body."
+  },
+  {
+    "pmid": "37766519",
+    "doi": "10.1111/all.15891",
+    "date": "2026-09-12",
+    "topic": "fabric_softener",
+    "title": "Household laundry detergents disrupt barrier integrity and induce inflammation in mouse and human skin."
   }
 ]

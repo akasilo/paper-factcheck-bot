@@ -1,0 +1,80 @@
+{
+  "id": "2046-energy_drink",
+  "approved": false,
+  "link": "",
+  "topic": "energy_drink",
+  "topic_ko": "에너지드링크",
+  "verdict": "bad",
+  "evidence_level": "review",
+  "source_text": "PMC10535526 전문",
+  "answer": "이 논문은 에너지드링크 관련 심정지 사례 9건(그중 3건 사망)을 확인했고, 심장 문제를 겪은 사람 중 상당수는 원래 심장병이 없었다.",
+  "style": "geo",
+  "accent": "red",
+  "product_hint": "카페인 함량이 낮고 타우린·구아라나 같은 각성 성분이 적은 음료",
+  "caveats": [
+    "심정지·사망 사례는 인과관계가 증명된 통계가 아니라 세계 각지에서 보고된 사례 모음",
+    "대부분 젊고 건강한 사람 기준이라 전체 소비자의 위험 확률로 일반화하기 어려움",
+    "동물실험 결과도 근거에 포함되어 있어 인체 적용에는 제한이 있음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "매일 마시는\n[[에너지드링크]]\n한 캔에\n{{심장}}이 멈췄다?"
+    },
+    {
+      "type": "body",
+      "text": "이 리뷰 논문은 에너지드링크 부작용 사례 86건을 분석했는데, 그중 [[47.7%]]가 심장 관련 문제였어요."
+    },
+    {
+      "type": "body",
+      "text": "이 논문에 따르면 심정지 사례는 [[9건]], 그중 {{3건}}은 사망으로 이어졌어요. 평균 나이는 20~30대였습니다."
+    },
+    {
+      "type": "body",
+      "text": "더 놀라운 건, 심장 문제를 겪은 사람 중 [[68%]]는 원래 심장병이 없던 사람이었다는 점이에요."
+    },
+    {
+      "type": "body",
+      "text": "이런 사례들의 원인은 카페인의 심장 자극 작용으로 추정돼요. 다만 이건 인과관계를 증명한 실험이 아니라 사례 보고 모음이에요.",
+      "note": "※ 86건은 세계 각지 보고된 사례 모음으로, 전체 소비자 대비 위험 확률은 아님"
+    },
+    {
+      "type": "body",
+      "text": "오늘 에너지드링크를 마신다면 [[한 캔]]만, 하루 2캔을 넘기지 않는 게 좋아요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "The Dark Side of Energy Drinks: A Comprehensive Review of Their Impact on the Human Body.",
+        "journal": "Nutrients",
+        "year": "2023",
+        "doi": "10.3390/nu15183922",
+        "authors": "Costantino A, Maiese A, Lazzari J et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2046-energy_drink/01.jpg",
+    "images/2046-energy_drink/02.jpg",
+    "images/2046-energy_drink/03.jpg",
+    "images/2046-energy_drink/04.jpg",
+    "images/2046-energy_drink/05.jpg",
+    "images/2046-energy_drink/06.jpg",
+    "images/2046-energy_drink/07.jpg"
+  ],
+  "instagram_caption": "매일 마시는 에너지드링크 한 캔, 심장엔 정말 괜찮을까요?\n\n한 리뷰 논문이 에너지드링크 부작용 사례 86건을 분석했는데, 이 중 47.7%가 심장 관련 문제였어요.\n\n특히 눈에 띄는 건 심정지 사례 9건, 그중 3건은 사망으로 이어졌다는 점. 심장 문제를 겪은 환자들의 평균 나이는 27.7세로, 대부분 젊은 층이었어요.\n\n더 놀라운 건 심장 문제를 겪은 사람 중 약 68%는 원래 심장병이 없던 사람이었다는 것. 카페인의 강한 자극 작용이 원인으로 추정되지만, 이건 인과관계를 증명한 실험이 아니라 세계 각지에서 보고된 사례를 모은 리뷰라는 점은 감안해서 봐주세요.\n\n오늘 에너지드링크를 마신다면, 한 번에 한 캔만, 하루 2캔을 넘기지 않는 걸 추천해요.\n\n📄 출처: Costantino A, Maiese A, Lazzari J et al., Nutrients (2023). DOI 10.3390/nu15183922\n\n#논문팩트체크 #paper_factcheck #에너지드링크 #카페인 #심장건강 #건강정보 #건강습관 #영양학 #카페인섭취 #건강한선택 #팩트체크 #웰빙\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "에너지드링크 한 캔, 진짜 심장에 무리 갈까요? 최근 리뷰 논문을 보니 부작용 사례 86건 중 47.7%가 심장 관련이었고, 그중 심정지가 9건, 사망이 3건이나 있었대요. 놀라운 건 이 중 상당수가 원래 심장병이 없던 사람들이었다는 것. 카페인의 자극 작용이 원인으로 추정되긴 하지만 사례 보고 모음이라 인과관계까지 증명된 건 아니에요. 그래도 한 번에 한 캔, 하루 2캔 이하로 마시는 게 안전하겠죠? 여러분은 하루에 에너지드링크 몇 캔 마시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "The Dark Side of Energy Drinks: A Comprehensive Review of Their Impact on the Human Body.",
+    "journal": "Nutrients",
+    "year": "2023",
+    "doi": "10.3390/nu15183922",
+    "pmid": "37764707",
+    "authors": "Costantino A, Maiese A, Lazzari J et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37764707/"
+  },
+  "drafted_at": "2026-09-12T22:51:24.727540+09:00",
+  "model": "claude_code:default"
+}

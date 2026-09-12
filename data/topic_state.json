@@ -66,5 +66,29 @@
   "probiotics": {
     "last_used": "2026-09-11",
     "pmid": "37078654"
+  },
+  "coffee": {
+    "last_used": "2026-09-12",
+    "pmid": "40368300"
+  },
+  "green_tea": {
+    "last_used": "2026-09-12",
+    "pmid": "39748104"
+  },
+  "olive_oil": {
+    "last_used": "2026-09-12",
+    "pmid": "40048719"
+  },
+  "dark_chocolate": {
+    "last_used": "2026-09-12",
+    "pmid": "38931273"
+  },
+  "energy_drink": {
+    "last_used": "2026-09-12",
+    "pmid": "37764707"
+  },
+  "fabric_softener": {
+    "last_used": "2026-09-12",
+    "pmid": "37766519"
   }
 }

@@ -1,0 +1,80 @@
+{
+  "id": "2047-fabric_softener",
+  "approved": false,
+  "link": "",
+  "topic": "fabric_softener",
+  "topic_ko": "섬유유연제·세탁세제",
+  "verdict": "bad",
+  "evidence_level": "animal",
+  "source_text": "초록만",
+  "answer": "이 논문에 따르면 세제 처리한 마우스 피부는 전기 임피던스(피부장벽 세기 지표)가 뚜렷이 낮아지고 수분 손실이 늘었으며 농도가 진할수록 손상이 컸고, 사람 피부 조직에서도 세제와 주성분 SDS가 같은 장벽 저하를 일으켰습니다.",
+  "style": "geo",
+  "accent": "red",
+  "product_hint": "무향·저자극 세탁세제·섬유유연제, 헹굼이 잘 되고 잔류가 적은 제품 위주로 선택",
+  "caveats": [
+    "실제 사람이 세제를 사용한 상황이 아니라 마우스 피부와 적출한 사람 피부 조직을 이용한 실험 결과임",
+    "실험에 쓰인 세제 농도·노출 시간이 일상적인 세탁 상황과 정확히 같지 않을 수 있음",
+    "세제 노출과 아토피 피부염 발생의 직접적 인과관계가 증명된 것은 아니며 '기여할 수 있다'는 수준의 결과임"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "매일 입는 옷\n그 [[세탁세제]]\n내 피부엔\n{{괜찮을까?}}"
+    },
+    {
+      "type": "body",
+      "text": "연구진은 마우스 피부에 세탁세제를 여러 농도로 발라 [[피부장벽]] 기능을 살펴봤어요."
+    },
+    {
+      "type": "body",
+      "text": "결과: 세제 바른 피부는 [[전기 임피던스]](장벽 세기 지표)가 뚜렷이 낮아지고, 수분 손실은 늘었어요. 농도가 진할수록 손상이 더 컸어요."
+    },
+    {
+      "type": "body",
+      "text": "유전자를 들여다보니 세포끼리 붙잡아주는 [[밀착연접]] 단백질은 줄고, 염증물질인 인터루킨-6·인터루킨-1β는 늘었어요."
+    },
+    {
+      "type": "body",
+      "text": "사람 피부 조직(적출)에서도 같은 세제와 주성분인 {{SDS}}가 피부장벽 지표를 떨어뜨렸어요.",
+      "note": "※ 살아있는 사람이 아니라 마우스와 적출한 사람 피부 조직을 이용한 실험 결과예요."
+    },
+    {
+      "type": "body",
+      "text": "오늘은 세탁세제 양을 권장량보다 [[살짝 적게]] 넣고, 헹굼 횟수를 늘려 옷에 남는 세제를 줄여보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Household laundry detergents disrupt barrier integrity and induce inflammation in mouse and human skin.",
+        "journal": "Allergy",
+        "year": "2024",
+        "doi": "10.1111/all.15891",
+        "authors": "Rinaldi AO, Li M, Barletta E et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2047-fabric_softener/01.jpg",
+    "images/2047-fabric_softener/02.jpg",
+    "images/2047-fabric_softener/03.jpg",
+    "images/2047-fabric_softener/04.jpg",
+    "images/2047-fabric_softener/05.jpg",
+    "images/2047-fabric_softener/06.jpg",
+    "images/2047-fabric_softener/07.jpg"
+  ],
+  "instagram_caption": "매일 입는 옷, 그 옷을 빨아주는 세탁세제. 피부에는 정말 괜찮을까요?\n\n한 연구팀이 마우스 피부에 세탁세제를 여러 농도로 발라 피부장벽 기능을 측정했어요. 그 결과 세제를 바른 피부는 전기 임피던스(피부장벽이 얼마나 튼튼한지 보여주는 지표)가 뚜렷이 낮아지고, 수분이 빠져나가는 양(경피수분손실)은 늘었습니다. 게다가 농도가 진할수록 손상이 더 큰 용량-반응 관계도 나타났어요.\n\n유전자 수준에서도 변화가 있었어요. 피부 세포를 서로 붙잡아주는 밀착연접 단백질의 유전자 발현은 줄어들고, 염증을 일으키는 물질인 인터루킨-6와 인터루킨-1베타는 늘어났습니다. 세포끼리 붙는 걸 돕는 단백질(EpCAM, 콘탁틴-1)도 줄었고요.\n\n더 나아가 연구팀은 적출한 사람 피부 조직에도 같은 세제와 세제의 주성분인 SDS(황산도데실나트륨)를 처리해봤는데, 여기서도 피부장벽 지표가 떨어지는 결과가 나왔습니다. 연구팀은 매일 반복되는 세제 노출이 피부장벽을 무너뜨리고 아토피 같은 피부질환 발생에 영향을 줄 수 있다고 설명했어요.\n\n다만 이번 연구는 살아있는 사람이 아니라 마우스와 적출한 사람 피부 조직을 이용한 실험이라는 점은 감안해서 봐야 해요.\n\n오늘은 세탁세제 양을 권장량보다 살짝 적게 넣고, 헹굼 횟수를 늘려 옷에 남는 세제를 줄여보는 건 어떨까요?\n\n📄 출처: Rinaldi AO, Li M, Barletta E et al., Allergy (2024). DOI 10.1111/all.15891\n\n#논문팩트체크 #paper_factcheck #세탁세제 #피부장벽 #피부염증 #아토피 #세제 #피부건강 #생활화학 #홈케어 #세탁 #민감성피부\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "매일 쓰는 세탁세제, 피부엔 괜찮을까 싶어서 논문 하나 찾아봤어요. 마우스 피부에 세제를 여러 농도로 발랐더니 피부장벽 지표가 눈에 띄게 나빠지고 수분도 더 빠져나갔대요. 농도 진할수록 더 심했고요. 유전자 보면 피부세포 붙잡아주는 단백질은 줄고 염증물질(IL-6, IL-1β)은 늘었다고. 사람 피부 조직에서도 세제 주성분인 SDS가 똑같이 장벽을 낮췄다고 하네요. 물론 살아있는 사람 대상 실험은 아니지만, 세제 양 좀 줄이고 헹굼 한 번 더 하는 게 나쁘지 않겠죠? 여러분은 세제 양 꼼꼼히 재서 쓰시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Household laundry detergents disrupt barrier integrity and induce inflammation in mouse and human skin.",
+    "journal": "Allergy",
+    "year": "2024",
+    "doi": "10.1111/all.15891",
+    "pmid": "37766519",
+    "authors": "Rinaldi AO, Li M, Barletta E et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37766519/"
+  },
+  "drafted_at": "2026-09-12T22:53:35.927189+09:00",
+  "model": "claude_code:default"
+}

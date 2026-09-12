@@ -1,0 +1,80 @@
+{
+  "id": "2042-coffee",
+  "approved": false,
+  "link": "",
+  "topic": "coffee",
+  "topic_ko": "커피",
+  "verdict": "mixed",
+  "evidence_level": "cohort",
+  "source_text": "PMC12308089 전문",
+  "answer": "이 논문에 따르면 하루 1~3잔 커피는 사망 위험을 11~17% 낮추는 것과 관련 있었지만, 그 효과는 블랙커피 또는 설탕·포화지방을 적게 넣은 커피에서만 나타났다.",
+  "style": "paper",
+  "accent": "orange",
+  "product_hint": "설탕·크림 첨가 없이 마실 수 있는 원두·드립 커피",
+  "caveats": [
+    "관찰 연구라 커피와 사망률 감소 사이 인과관계는 확정할 수 없음",
+    "설탕·포화지방 '적음' 기준은 8온스당 각각 2.5g, 1g 미만으로 정의됨",
+    "디카페인 커피나 암·심혈관 사망 각각에 대한 세부 수치는 초록/발췌에 제시되지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "매일 마시는\n[[커피]]\n{{설탕}} 넣으면\n효과 사라질까?"
+    },
+    {
+      "type": "body",
+      "text": "미국 성인 [[46,222명]]을 최장 19년(1999~2018) 추적한 코호트 연구예요. 그동안 사망 7,074건이 발생했어요."
+    },
+    {
+      "type": "body",
+      "text": "하루 1~3잔 커피를 마신 사람은 안 마신 사람보다 사망 위험이 [[11~17%]] 낮았어요 (경향성 p=0.004)."
+    },
+    {
+      "type": "body",
+      "text": "그런데 이 효과는 {{블랙커피}}(위험 14% 낮음)나 설탕·포화지방을 적게 넣은 커피에서만 확인됐어요."
+    },
+    {
+      "type": "body",
+      "text": "설탕이나 크림을 많이 넣은 커피에서는 이런 사망률 감소 효과가 나타나지 않았어요.",
+      "note": "※ 관찰 연구라 인과관계는 확정할 수 없어요."
+    },
+    {
+      "type": "body",
+      "text": "오늘 한 잔은 설탕·크림 대신 [[블랙]]으로, 어렵다면 양이라도 조금씩 줄여보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Coffee Consumption and Mortality among United States Adults: A Prospective Cohort Study.",
+        "journal": "The Journal of nutrition",
+        "year": "2025",
+        "doi": "10.1016/j.tjnut.2025.05.004",
+        "authors": "Zhou B, Ruan M, Pan Y et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2042-coffee/01.jpg",
+    "images/2042-coffee/02.jpg",
+    "images/2042-coffee/03.jpg",
+    "images/2042-coffee/04.jpg",
+    "images/2042-coffee/05.jpg",
+    "images/2042-coffee/06.jpg",
+    "images/2042-coffee/07.jpg"
+  ],
+  "instagram_caption": "매일 마시는 커피,\n블랙으로 드시나요 설탕·크림 넣어 드시나요?\n\n미국 성인 46,222명을 최장 19년 추적한 코호트 연구 결과, 하루 1~3잔 커피를 마신 사람은 안 마신 사람보다 사망 위험이 11~17% 낮았어요.\n\n그런데 이 이득은 모든 커피에서 나타난 게 아니었어요. 블랙커피, 또는 설탕과 포화지방을 적게 넣은 커피를 마신 사람에서만 뚜렷했어요.\n\n설탕이나 크림을 많이 넣은 커피에서는 이런 사망률 감소 효과가 확인되지 않았어요. 관찰 연구라 원인과 결과를 단정할 수는 없지만, '어떻게 마시는지'가 중요하다는 신호예요.\n\n오늘 한 잔은 설탕·크림 대신 블랙으로, 또는 최소한 적게 넣어 마셔보는 건 어떨까요.\n\n📄 출처: Zhou B, Ruan M, Pan Y et al., The Journal of Nutrition (2025). DOI 10.1016/j.tjnut.2025.05.004\n\n#논문팩트체크 #paper_factcheck #커피 #블랙커피 #커피와건강 #설탕줄이기 #사망률 #코호트연구 #NHANES #건강습관 #원두커피 #드립커피 #식습관\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "커피 좋다는 거 다들 알죠. 근데 '어떻게' 마시는지는 생각 안 해보셨을걸요.\n\n미국 성인 4만6천명 넘게 최장 19년 추적한 연구에서, 하루 1~3잔 커피 마신 사람 사망 위험이 11~17% 낮았대요. 그런데 이 효과, 블랙커피랑 설탕·지방 적은 커피에서만 나왔어요. 설탕·크림 듬뿍 넣으면 그 이득이 안 보였다는 거죠.\n\n여러분은 커피에 뭘 넣어 드세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Coffee Consumption and Mortality among United States Adults: A Prospective Cohort Study.",
+    "journal": "The Journal of nutrition",
+    "year": "2025",
+    "doi": "10.1016/j.tjnut.2025.05.004",
+    "pmid": "40368300",
+    "authors": "Zhou B, Ruan M, Pan Y et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40368300/"
+  },
+  "drafted_at": "2026-09-12T22:45:45.153421+09:00",
+  "model": "claude_code:default"
+}

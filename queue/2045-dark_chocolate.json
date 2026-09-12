@@ -1,0 +1,80 @@
+{
+  "id": "2045-dark_chocolate",
+  "approved": false,
+  "link": "",
+  "topic": "dark_chocolate",
+  "topic_ko": "다크초콜릿",
+  "verdict": "mixed",
+  "evidence_level": "meta-analysis",
+  "source_text": "PMC11206597 전문",
+  "answer": "31개 무작위 대조 시험을 종합한 이 논문에 따르면 코코아 섭취는 체중·BMI·허리둘레엔 변화가 없었지만, 총콜레스테롤·LDL·공복혈당·혈압은 낮아지는 것과 관련이 있었다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "카카오 함량 70% 이상 다크초콜릿",
+  "caveats": [
+    "코코아 제품 형태(캡슐, 음료, 초콜릿바, 스낵)가 다양해 다크초콜릿만의 효과로 단정하기 어려움",
+    "체중 관련 결과는 3건의 RCT만 포함돼 표본이 작음",
+    "혈압·혈당 개선 효과는 폴리페놀 섭취량이 중앙값 이상일 때 더 뚜렷했음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "초콜릿 먹으면\n[[살 안 찐다]]는 말\n사실일까?"
+    },
+    {
+      "type": "body",
+      "text": "31개 무작위 대조 시험(총 1986명)을 모은 이 논문에 따르면, 코코아 섭취는 [[체중·BMI·허리둘레엔 아무 변화가 없었다]]는 결과였다."
+    },
+    {
+      "type": "body",
+      "text": "대신 총콜레스테롤 8.35mg/dL, LDL 9.47mg/dL이 줄어드는 것과 관련 있었다는 결과가 나왔다."
+    },
+    {
+      "type": "body",
+      "text": "공복혈당도 4.91mg/dL, 수축기·이완기 혈압도 각각 2.52·1.58mmHg 낮아지는 것과 관련 있었다는 보고다."
+    },
+    {
+      "type": "body",
+      "text": "이 효과는 [[폴리페놀 함량이 많을수록]] 더 크게 나타났다는 분석도 있었다.",
+      "note": "※ 초콜릿엔 설탕·유제품이 섞여 있어 그대로 적용되긴 어렵고, 연구 간 편차도 컸다."
+    },
+    {
+      "type": "body",
+      "text": "초콜릿 고를 땐 [[카카오 70% 이상]] 제품으로, 살 빼는 용도보다는 심혈관 건강 관리용으로 소량 즐겨보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Effects of Cocoa Consumption on Cardiometabolic Risk Markers: Meta-Analysis of Randomized Controlled Trials.",
+        "journal": "Nutrients",
+        "year": "2024",
+        "doi": "10.3390/nu16121919",
+        "authors": "Arisi TOP, da Silva DS, Stein E et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2045-dark_chocolate/01.jpg",
+    "images/2045-dark_chocolate/02.jpg",
+    "images/2045-dark_chocolate/03.jpg",
+    "images/2045-dark_chocolate/04.jpg",
+    "images/2045-dark_chocolate/05.jpg",
+    "images/2045-dark_chocolate/06.jpg",
+    "images/2045-dark_chocolate/07.jpg"
+  ],
+  "instagram_caption": "다크초콜릿 먹으면 살 안 찐다는 말, 진짜일까요?\n\n31개의 무작위 대조 시험, 총 1986명의 자료를 모은 한 메타분석에 따르면 결론은 절반만 맞았습니다.\n\n코코아(코코아 추출물 또는 카카오 70% 이상 다크초콜릿)를 4주 이상 섭취해도 체중, BMI, 허리둘레는 달라지지 않았습니다. 살 빼는 효과는 없었다는 뜻이에요.\n\n대신 총콜레스테롤(-8.35mg/dL), LDL(-9.47mg/dL), 공복혈당(-4.91mg/dL), 수축기·이완기 혈압(-2.52/-1.58mmHg)이 줄어드는 것과 관련이 있었다는 결과가 나왔습니다. 폴리페놀을 더 많이 섭취할수록 이 효과는 더 뚜렷했다고 해요.\n\n다만 이 결과는 카카오 캡슐·음료·초콜릿바 등 다양한 형태를 합친 것이라, 설탕과 유제품이 많이 섞인 일반 초콜릿까지 그대로 적용하긴 어렵습니다.\n\n오늘은 다이어트용이 아니라 심혈관 건강 관리용으로, 카카오 70% 이상 다크초콜릿을 소량 즐겨보는 건 어떨까요.\n\n📄 출처: Arisi TOP, da Silva DS, Stein E et al., Nutrients (2024). DOI 10.3390/nu16121919\n\n#논문팩트체크 #paper_factcheck #다크초콜릿 #코코아 #카카오 #콜레스테롤 #혈압관리 #혈당관리 #심혈관건강 #건강정보 #식습관 #영양학 #메타분석\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "다크초콜릿 먹으면 살 안 찐다는 말 다들 한 번쯤 들어보셨죠? 31개 임상시험을 모은 메타분석 결과, 체중·BMI·허리둘레는 진짜 안 바뀌었대요. 근데 대신 총콜레스테롤, LDL, 공복혈당, 혈압은 낮아지는 것과 관련 있었다는 결과가 나왔어요. 살은 안 빠져도 심혈관 지표는 좋아질 수 있다는 거죠. 카카오 70% 이상 제품 기준이었다는 점도 참고! 여러분은 초콜릿, 다이어트용으로 드세요 아니면 그냥 즐기려고 드세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Effects of Cocoa Consumption on Cardiometabolic Risk Markers: Meta-Analysis of Randomized Controlled Trials.",
+    "journal": "Nutrients",
+    "year": "2024",
+    "doi": "10.3390/nu16121919",
+    "pmid": "38931273",
+    "authors": "Arisi TOP, da Silva DS, Stein E et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38931273/"
+  },
+  "drafted_at": "2026-09-12T22:50:17.772845+09:00",
+  "model": "claude_code:default"
+}

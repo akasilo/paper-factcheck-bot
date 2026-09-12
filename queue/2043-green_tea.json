@@ -1,0 +1,80 @@
+{
+  "id": "2043-green_tea",
+  "approved": false,
+  "link": "",
+  "topic": "green_tea",
+  "topic_ko": "녹차",
+  "verdict": "bad",
+  "evidence_level": "review",
+  "source_text": "초록만",
+  "answer": "이 논문에 따르면 분석된 임상 사례의 72%에서 녹차와 함께 먹은 약의 체내 흡수량이 18~99%까지 줄어들었다.",
+  "style": "geo",
+  "accent": "red",
+  "product_hint": "카테킨 함량이나 섭취 시점을 조절해 복약 시간과 겹치지 않게 마실 수 있는 녹차 티백",
+  "caveats": [
+    "구체적인 안전 간격(예: 몇 시간 띄워야 하는지)은 논문에 제시되지 않음",
+    "감소·증가 폭은 약물·개인·녹차 섭취량에 따라 달라 모든 사람에게 동일하게 적용되지 않음",
+    "일부는 사례보고 수준으로, 대규모 무작위 대조 시험 결과는 아님"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "매일 마시는\n[[녹차]] 한 잔이\n먹는 약 효과를\n{{최대 99%}} 뚝?"
+    },
+    {
+      "type": "body",
+      "text": "이 논문이 정리한 임상 연구 중 [[72%]]에서, 녹차와 함께 먹은 약의 체내 흡수량이 18~99%까지 줄어든 것으로 나타났습니다."
+    },
+    {
+      "type": "body",
+      "text": "영향을 받은 약에는 스타틴(아토르바스타틴·로수바스타틴), 혈압약(리시노프릴·나돌롤·셀리프롤롤), 강심제 디곡신 등이 있었습니다."
+    },
+    {
+      "type": "body",
+      "text": "원인은 녹차 카테킨이 장의 약물 흡수 통로(OATP1A2)를 막거나, 배출 펌프를 더 활발하게 하거나, 약의 [[용해도]]를 낮추는 작용으로 설명됐습니다."
+    },
+    {
+      "type": "body",
+      "text": "반대로 22%는 별 변화가 없었고, 발기부전 치료제 실데나필은 오히려 흡수량이 {{50% 증가}}했다는 결과도 있었습니다.",
+      "note": "※ 반응은 약마다 다르며, 이 논문은 기존 임상연구들을 모은 리뷰라 개인별 차이는 더 확인이 필요합니다."
+    },
+    {
+      "type": "body",
+      "text": "매일 약을 먹는다면 복약 시간과 녹차 마시는 시간을 [[겹치지 않게]] 떨어뜨리고, 궁금하면 약사와 상의해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Green Tea Catechins as Perpetrators of Drug Pharmacokinetic Interactions.",
+        "journal": "Clinical pharmacology and therapeutics",
+        "year": "2025",
+        "doi": "10.1002/cpt.3547",
+        "authors": "Kyriacou NM, Gross AS, McLachlan AJ"
+      }
+    }
+  ],
+  "images": [
+    "images/2043-green_tea/01.jpg",
+    "images/2043-green_tea/02.jpg",
+    "images/2043-green_tea/03.jpg",
+    "images/2043-green_tea/04.jpg",
+    "images/2043-green_tea/05.jpg",
+    "images/2043-green_tea/06.jpg",
+    "images/2043-green_tea/07.jpg"
+  ],
+  "instagram_caption": "매일 마시는 녹차 한 잔, 먹는 약 효과를 최대 99%까지 떨어뜨릴 수도 있다고?\n\n한 리뷰 논문이 녹차에 든 폴리페놀 성분인 카테킨(예: EGCG)이 여러 약물의 흡수량에 영향을 준다는 임상 연구들을 정리했습니다.\n\n분석된 사례의 72%에서는 녹차와 함께 먹은 약의 체내 흡수량이 18~99%까지 줄어든 것으로 나타났습니다. 스타틴 계열(아토르바스타틴, 로수바스타틴), 혈압약(리시노프릴, 나돌롤, 셀리프롤롤), 강심제(디곡신) 등이 포함됩니다.\n\n원인으로는 카테킨이 장에서 약물이 흡수되는 통로(OATP1A2)를 막거나, 약을 몸 밖으로 내보내는 펌프(P-당단백질)를 더 활발하게 만들거나, 약의 용해도 자체를 낮추는 작용이 제시됐습니다.\n\n반대로 22%의 사례에서는 별다른 변화가 없었고(플루바스타틴, 슈도에페드린, 심바스타틴, 타목시펜), 발기부전 치료제인 실데나필은 오히려 혈중농도가 50% 늘었다는 결과도 있었습니다. 즉 약마다 반응이 다릅니다.\n\n일부 사례보고에서는 나돌롤이나 얼로티닙처럼 실제 약효·안전성 변화로 이어진 경우도 있었습니다. 다만 이 논문은 기존 연구를 정리한 리뷰이며, 저자들도 추가 연구와 임상 권고가 더 필요하다고 밝혔습니다.\n\n오늘의 행동: 매일 약을 먹는다면 복약 시간과 녹차 마시는 시간을 겹치지 않게 떨어뜨리고, 궁금하면 약사와 상의해보세요.\n\n📄 출처: Kyriacou NM, Gross AS, McLachlan AJ, Clinical Pharmacology and Therapeutics (2025). DOI 10.1002/cpt.3547\n\n#논문팩트체크 #paper_factcheck #녹차 #약물상호작용 #카테킨 #건강정보 #복약관리 #녹차효능 #약사상담 #생활건강 #팩트체크 #건강습관\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "녹차 마시면서 혈압약이나 스타틴 드시는 분 주목. 최근 리뷰 논문 보니 녹차 카테킨이 약 흡수를 방해해서 분석 사례 72%에서 약효가 18~99%까지 떨어졌다는 결과가 있더라고요. 반대로 실데나필처럼 오히려 50% 더 흡수된 경우도 있고, 22%는 별 영향 없었대요. 다 같은 반응은 아닌 거죠. 약 드시는 분이라면 녹차 마시는 시간 정도는 따로 떼놓는 게 나을 듯. 여러분은 약 먹을 때 녹차나 커피 신경 쓰시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Green Tea Catechins as Perpetrators of Drug Pharmacokinetic Interactions.",
+    "journal": "Clinical pharmacology and therapeutics",
+    "year": "2025",
+    "doi": "10.1002/cpt.3547",
+    "pmid": "39748104",
+    "authors": "Kyriacou NM, Gross AS, McLachlan AJ",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39748104/"
+  },
+  "drafted_at": "2026-09-12T22:47:18.308665+09:00",
+  "model": "claude_code:default"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "2044-olive_oil",
+  "approved": false,
+  "link": "",
+  "topic": "olive_oil",
+  "topic_ko": "올리브유",
+  "verdict": "good",
+  "evidence_level": "cohort",
+  "source_text": "PMC11886867 전문",
+  "answer": "이 논문에 따르면 버터를 가장 많이 먹은 그룹은 총 사망 위험이 15% 더 높았고, 식물성 기름을 가장 많이 먹은 그룹은 총 사망 위험이 16% 더 낮았다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "정제 과정을 덜 거친 엑스트라 버진 올리브유처럼 가공도가 낮은 식물성 기름",
+  "caveats": [
+    "관찰연구라 인과관계를 증명한 것은 아니며 연관성 수준의 결과",
+    "식단은 자가보고식 식품섭취빈도조사로 4년마다 측정",
+    "연구 대상이 대부분 미국 간호사·보건의료 전문직이라 일반 인구와 특성이 다를 수 있음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "버터 대신\n[[올리브유]]\n쓰면 정말\n수명이 늘어날까?"
+    },
+    {
+      "type": "body",
+      "text": "미국 간호사·보건전문직 등 [[22만 명]]을 최대 33년간 추적한 대규모 코호트 연구예요. 버터와 식물성 기름 섭취량에 따른 사망 위험을 비교했어요."
+    },
+    {
+      "type": "body",
+      "text": "버터를 가장 많이 먹은 그룹은 가장 적게 먹은 그룹보다 총 사망 위험이 {{15% 높았어요}}. 식물성 기름 최다 섭취군은 16% 낮았고요."
+    },
+    {
+      "type": "body",
+      "text": "특히 [[올리브유]]는 5g 늘 때마다 총 사망 위험이 8% 낮아지는 경향과 연결됐어요(카놀라유·콩기름도 비슷한 경향)."
+    },
+    {
+      "type": "body",
+      "text": "버터 10g을 식물성 기름 10g으로만 바꿔도 총 사망 위험 17%, 암 사망 위험 17% 낮아지는 것과 관련 있었어요.",
+      "note": "※ 관찰연구라 인과관계를 확정할 수는 없고, 식단은 설문 조사로 측정했어요."
+    },
+    {
+      "type": "body",
+      "text": "오늘 요리할 때 버터 한 스푼을 [[올리브유]]로 바꿔보는 것부터 시작해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Butter and Plant-Based Oils Intake and Mortality.",
+        "journal": "JAMA internal medicine",
+        "year": "2025",
+        "doi": "10.1001/jamainternmed.2025.0205",
+        "authors": "Zhang Y, Chadaideh KS, Li Y et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2044-olive_oil/01.jpg",
+    "images/2044-olive_oil/02.jpg",
+    "images/2044-olive_oil/03.jpg",
+    "images/2044-olive_oil/04.jpg",
+    "images/2044-olive_oil/05.jpg",
+    "images/2044-olive_oil/06.jpg",
+    "images/2044-olive_oil/07.jpg"
+  ],
+  "instagram_caption": "버터 대신 올리브유, 정말 수명에 도움이 될까요?\n\n미국 간호사·보건전문직 등 [[22만 명]]을 최대 33년간 추적한 대규모 코호트 연구가 나왔어요.\n\n버터를 가장 많이 먹은 그룹은 가장 적게 먹은 그룹보다 총 사망 위험이 {{15% 높았고}}, 식물성 기름을 가장 많이 먹은 그룹은 16% 낮았어요.\n\n올리브유·카놀라유·콩기름을 많이 먹을수록 사망 위험이 낮아지는 경향이 뚜렷했고, 버터를 식물성 기름으로만 바꿔도 총 사망·암 사망 위험이 각각 17%씩 낮아지는 것과 관련이 있었어요.\n\n관찰연구라 인과관계를 100% 증명한 건 아니지만, 오늘 요리할 때 버터 한 스푼을 [[올리브유]]로 바꿔보는 것부터 시작해봐도 좋겠어요.\n\n📄 출처: Zhang Y, Chadaideh KS, Li Y 등, JAMA Internal Medicine (2025). DOI 10.1001/jamainternmed.2025.0205\n\n#논문팩트체크 #paper_factcheck #올리브유 #버터 #식물성기름 #건강한식단 #코호트연구 #식습관 #장수 #요리기름 #엑스트라버진올리브유 #건강정보\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "버터 대신 올리브유 쓰면 진짜 오래 살까? 미국인 22만 명을 33년간 따라간 연구를 보니, 버터 많이 먹은 사람은 사망 위험이 15% 높았고 식물성 기름 많이 먹은 사람은 16% 낮았대요. 특히 올리브유·카놀라유가 두드러졌고, 버터를 기름으로 바꾸기만 해도 사망 위험이 17% 줄어드는 것과 관련 있었다고. 물론 관찰연구라 인과관계까지 단정할 순 없지만요. 여러분은 요리할 때 버터 쓰세요, 기름 쓰세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Butter and Plant-Based Oils Intake and Mortality.",
+    "journal": "JAMA internal medicine",
+    "year": "2025",
+    "doi": "10.1001/jamainternmed.2025.0205",
+    "pmid": "40048719",
+    "authors": "Zhang Y, Chadaideh KS, Li Y et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40048719/"
+  },
+  "drafted_at": "2026-09-12T22:48:30.705726+09:00",
+  "model": "claude_code:default"
+}
