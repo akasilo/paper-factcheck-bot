@@ -26,7 +26,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import meta_api  # noqa: E402
-from gate import should_post  # noqa: E402  (하루 한 번 문지기 — gate.py 와 판단을 공유)
+from gate import should_post, DEFAULT_SLOTS  # noqa: E402  (문지기 — gate.py 와 판단을 공유)
 
 ROOT = Path(__file__).resolve().parent.parent
 QUEUE_DIR = ROOT / "queue"
@@ -147,18 +147,26 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="API 호출 없이 검증만")
     ap.add_argument("--target", choices=["both", "instagram", "threads"], default="both")
     ap.add_argument("--allow-no-link", action="store_true", help="링크 없이도 게시 허용")
-    ap.add_argument("--after", default="",
-                    help="이 시각(KST, HH:MM) 이전이면 아무것도 안 하고 종료. 예약 실행이 언제 뜰지 몰라 쓰는 문지기")
+    ap.add_argument("--slots", default=DEFAULT_SLOTS,
+                    help='슬롯 정의 "이름=HH:MM,..." (KST). 깨어난 시각으로 어느 슬롯인지 정한다')
+    ap.add_argument("--slot", default="",
+                    help="이 슬롯 몫으로 기록한다 (비우면 현재 시각으로 판단)")
     ap.add_argument("--again", action="store_true",
-                    help="오늘 이미 올렸어도 한 번 더 올린다 (하루 1회 잠금 해제)")
+                    help="그 슬롯을 이미 채웠어도 한 번 더 올린다 (잠금 해제)")
     args = ap.parse_args()
 
-    # ---- 하루 한 번 문지기 (gate.py 와 같은 판단) --------------------------
+    # ---- 슬롯당 한 번 문지기 (gate.py 와 같은 판단) ------------------------
+    slot = args.slot
     if not args.again and not args.dry_run:
-        go, why = should_post(args.after, args.date)
+        go, cur, why = should_post(args.slots, args.date)
         if not go:
             log.info("%s. 종료.", why)
             return 0
+        slot = slot or cur
+    if not slot:
+        from gate import current_slot
+        slot = current_slot(args.slots) or "manual"
+    log.info("슬롯: %s", slot)          # 일찍 찍어둬야 중간에 끝나도 어느 몫이었는지 보인다
 
     qpath = pick_queue_item(args.date)
     if not qpath:
@@ -187,18 +195,20 @@ def main() -> int:
         log.info("dry-run: 여기까지. 실제 게시는 하지 않습니다.")
         return 0
 
-    # 같은 날짜로 이미 다른 글이 게시된 적 있으면(예: 앞당겨 수동 게시) 기록 파일 이름을 -2, -3 으로 바꿔
-    # 기존 기록 때문에 "이미 게시됨"으로 오인하지 않게 한다.
-    result_path = POSTED_DIR / f"{date}.json"
+    # 기록 파일은 <날짜>-<슬롯>.json. 슬롯 이름이 들어가야 문지기가 '이 슬롯은 이미 했다'를 안다.
+    # 같은 슬롯에 다른 글을 또 올리는 경우(수동 --again)만 -2, -3 을 붙인다.
+    result_path = POSTED_DIR / f"{date}-{slot}.json"
     n = 1
     while result_path.exists():
         prev = load_json(result_path)
         if same_item(prev.get("queue", {}), item):
             break
         n += 1
-        result_path = POSTED_DIR / f"{date}-{n}.json"
-    result = load_json(result_path) if result_path.exists() else {"date": date, "queue": item}
+        result_path = POSTED_DIR / f"{date}-{slot}-{n}.json"
+    result = load_json(result_path) if result_path.exists() else {"date": date, "slot": slot, "queue": item}
     result.setdefault("queue", item)
+    result["slot"] = slot
+    log.info("기록 파일: %s", result_path.name)
 
     do_ig = args.target in ("both", "instagram")
     do_th = args.target in ("both", "threads")
