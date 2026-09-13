@@ -1,0 +1,80 @@
+{
+  "id": "2049-smartphone_sleep",
+  "approved": false,
+  "link": "",
+  "topic": "smartphone_sleep",
+  "topic_ko": "스마트폰 밤 사용",
+  "verdict": "bad",
+  "evidence_level": "cross-sectional",
+  "source_text": "PMC11950897 전문",
+  "answer": "매일 밤 화면을 사용한 사람은 안 쓴 사람보다 한 주에 약 50분(평일 7.64분, 주말 5.04분) 잠을 더 적게 잤고, 수면의 질이 나쁘다는 응답도 33% 더 많았다.",
+  "style": "soft",
+  "accent": "blue",
+  "product_hint": "화면 대신 시간을 알려주는 취침용 알람시계나 수면 추적 웨어러블",
+  "caveats": [
+    "단면조사라 화면 사용과 수면 저하의 인과관계는 확정할 수 없음",
+    "화면 사용, 수면 시간·질 모두 자기보고 방식으로 측정됨",
+    "빛(블루라이트) 때문인지 콘텐츠 자체 때문인지는 이 연구로 구분 불가"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "자기 전 폰\n[[5분]]이\n수면을 얼마나\n{{깎아먹을까}}"
+    },
+    {
+      "type": "body",
+      "text": "미국 성인 [[12만 2058명]]을 조사한 코호트 연구예요. 잠들기 1시간 전 화면 사용 여부와 수면 시간·질을 비교했습니다."
+    },
+    {
+      "type": "body",
+      "text": "매일 밤 화면을 본 사람은 전혀 안 본 사람보다 평일 밤 [[7.64분]], 주말엔 5.04분 잠이 더 짧았어요. 한 주로 합치면 {{약 50분}}이 사라지는 셈이에요."
+    },
+    {
+      "type": "body",
+      "text": "수면의 질이 나쁘다는 응답도 [[33% 더 많았고]], 잠자리에 드는 시간도 평일 기준 약 19분 늦어졌어요."
+    },
+    {
+      "type": "body",
+      "text": "저녁형(올빼미형)일수록 타격이 컸어요. 아침형은 5.64분 줄었지만, 저녁형은 [[8.36분]]이나 덜 잤습니다.",
+      "note": "※ 단면조사라 원인·결과는 단정 못하고, 수치는 모두 자기보고 기준이에요"
+    },
+    {
+      "type": "body",
+      "text": "오늘 밤 [[취침 30분 전]] 알람을 맞추고, 폰 대신 알람시계를 침대맡에 놓아보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Electronic Screen Use and Sleep Duration and Timing in Adults.",
+        "journal": "JAMA network open",
+        "year": "2025",
+        "doi": "10.1001/jamanetworkopen.2025.2493",
+        "authors": "Zhong C, Masters M, Donzella SM et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2049-smartphone_sleep/01.jpg",
+    "images/2049-smartphone_sleep/02.jpg",
+    "images/2049-smartphone_sleep/03.jpg",
+    "images/2049-smartphone_sleep/04.jpg",
+    "images/2049-smartphone_sleep/05.jpg",
+    "images/2049-smartphone_sleep/06.jpg",
+    "images/2049-smartphone_sleep/07.jpg"
+  ],
+  "instagram_caption": "자기 전 폰 5분, 정말 괜찮을까요?\n\n미국 성인 12만 명 넘게 조사한 대규모 코호트 연구가 답을 내놨어요.\n\n잠들기 1시간 전 매일 화면을 본 사람은 전혀 안 본 사람보다 평일 밤 7.64분, 주말 밤 5.04분 잠이 짧았어요. 한 주로 합치면 약 50분이 사라지는 셈이에요.\n\n수면의 질이 나쁘다고 답할 확률도 33% 더 높았고, 잠자리에 드는 시간도 평일 기준 약 19분 늦어졌어요.\n\n특히 저녁형(올빼미형) 사람일수록 영향이 더 컸어요. 아침형은 5.64분, 저녁형은 8.36분 더 적게 잤다고 해요.\n\n이 연구는 단면조사라 원인과 결과를 단정할 순 없지만, 12만 명 넘는 데이터에서 일관된 패턴이 나왔다는 점은 눈여겨볼 만해요.\n\n오늘은 취침 30분 전, 폰 대신 알람시계를 침대맡에 놓아보는 건 어떨까요?\n\n📄 출처: Zhong C, Masters M, Donzella SM et al., JAMA Network Open (2025). DOI 10.1001/jamanetworkopen.2025.2493\n\n#논문팩트체크 #paper_factcheck #수면 #스크린타임 #수면의질 #디지털디톡스 #불면 #생활습관 #건강정보 #코호트연구 #수면부족 #자기전스마트폰\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "자기 전에 폰 좀 본다고 수면에 큰 지장 있겠어? 싶었는데, 12만 명 넘는 미국 성인 데이터를 보니 매일 밤 화면 보는 사람이 평일엔 7.64분, 주말엔 5.04분씩 덜 잤대요. 한 주로 치면 거의 50분. 수면의 질 나쁘다는 응답도 33% 더 많았고요. 특히 저녁형 인간일수록 타격이 크대요(8.36분 감소). 단면조사라 인과관계까진 몰라도 숫자는 꽤 선명하죠. 여러분은 자기 전 폰, 몇 분이나 보시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Electronic Screen Use and Sleep Duration and Timing in Adults.",
+    "journal": "JAMA network open",
+    "year": "2025",
+    "doi": "10.1001/jamanetworkopen.2025.2493",
+    "pmid": "40146105",
+    "authors": "Zhong C, Masters M, Donzella SM et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40146105/"
+  },
+  "drafted_at": "2026-09-13T23:42:08.921069+09:00",
+  "model": "claude_code:default"
+}
