@@ -75,6 +75,33 @@ def same_item(a: dict, b: dict) -> bool:
     return (a.get("instagram_caption") or "") == (b.get("instagram_caption") or "")
 
 
+def prior_posts(item_id: str, exclude: Path | None = None) -> dict:
+    """같은 글이 다른 기록 파일에서 이미 올라간 적 있는지 훑는다.
+
+    한쪽만 올라간 채 그 슬롯을 포기하면 그 글은 큐에 남아 다음 슬롯으로 넘어간다.
+    그때 기록 파일은 새로 생기므로, 이 함수가 없으면 이미 올라간 쪽에 또 올린다.
+    (2026-09-13 저녁: 인스타가 막혀 Threads 만 올라간 상태로 날이 바뀔 뻔했다.)
+    """
+    found: dict = {}
+    if not POSTED_DIR.exists():
+        return found
+    for pth in sorted(POSTED_DIR.glob("*.json")):
+        if exclude is not None and pth == exclude:
+            continue
+        try:
+            rec = load_json(pth)
+        except Exception:
+            continue
+        if str((rec.get("queue") or {}).get("id", "")) != str(item_id):
+            continue
+        for k in ("instagram_post_id", "instagram_posted_at",
+                  "threads_post_id", "threads_posted_at",
+                  "threads_permalink", "threads_reply_id"):
+            if rec.get(k):
+                found.setdefault(k, rec[k])
+    return found
+
+
 def pick_queue_item(date: str) -> Path | None:
     """대기 중인 초안 중 가장 오래된 '승인된' 것 하나.
 
@@ -208,6 +235,15 @@ def main() -> int:
     result = load_json(result_path) if result_path.exists() else {"date": date, "slot": slot, "queue": item}
     result.setdefault("queue", item)
     result["slot"] = slot
+    # 다른 날 기록에 이미 올라간 게 있으면 물려받는다 (같은 글을 두 번 올리지 않도록)
+    carried = {k: v for k, v in prior_posts(item.get("id", ""), exclude=result_path).items()
+               if not result.get(k)}
+    if carried:
+        result.update(carried)
+        result["carried_over"] = sorted(carried)
+        log.warning("이 글은 이미 일부가 올라가 있습니다 — 그쪽은 건너뜁니다: %s",
+                    ", ".join(sorted(carried)))
+
     # 몇 번째 시도인지 남긴다. 문지기가 이 값으로 '언제 포기할지'를 정한다.
     result["attempts"] = int(result.get("attempts") or 0) + 1
     save_json(result_path, result)
