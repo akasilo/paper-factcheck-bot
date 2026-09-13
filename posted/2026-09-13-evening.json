@@ -84,6 +84,14 @@
     },
     {
       "instagram": "POST https://graph.instagram.com/v23.0/17841439785273944/media_publish -> 403: {'error': {'message': 'Application request limit reached', 'type': 'OAuthException', 'is_transient': False, 'code': 4, 'error_subcode': 2207051, 'error_user_title': 'action is blocked', 'error_user_msg': 'We restrict certain activity to protect our community. Tell us if you think we made a mistake.', 'fbtrace_id': 'AmyHKMyztJ1nJ9yAoSsHDpH'}}"
+    },
+    {
+      "instagram": "POST https://graph.instagram.com/v23.0/17841439785273944/media_publish -> 403: {'error': {'message': 'Application request limit reached', 'type': 'OAuthException', 'is_transient': False, 'code': 4, 'error_subcode': 2207051, 'error_user_title': 'action is blocked', 'error_user_msg': 'We restrict certain activity to protect our community. Tell us if you think we made a mistake.', 'fbtrace_id': 'AoRJc5Z6QljzbU6bTykmUYM'}}"
     }
-  ]
+  ],
+  "attempts": 1,
+  "threads_post_id": "17902337073580672",
+  "threads_posted_at": "2026-09-13T23:17:07.245355+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DdOwUnaEdzC",
+  "threads_reply_id": "18123376459856943"
 }

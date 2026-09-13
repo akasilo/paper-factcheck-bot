@@ -1,7 +1,7 @@
 {
   "id": "2039-toothpaste",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/g0Rt4WjgGW",
   "topic": "toothpaste",
   "topic_ko": "치약",
   "verdict": "good",
@@ -76,5 +76,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/39971658/"
   },
   "drafted_at": "2026-09-10T23:39:26.092136+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-13T23:15:30.176446+09:00"
 }
