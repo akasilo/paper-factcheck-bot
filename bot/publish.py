@@ -208,10 +208,15 @@ def main() -> int:
     result = load_json(result_path) if result_path.exists() else {"date": date, "slot": slot, "queue": item}
     result.setdefault("queue", item)
     result["slot"] = slot
-    log.info("기록 파일: %s", result_path.name)
+    # 몇 번째 시도인지 남긴다. 문지기가 이 값으로 '언제 포기할지'를 정한다.
+    result["attempts"] = int(result.get("attempts") or 0) + 1
+    save_json(result_path, result)
+    log.info("기록 파일: %s (%d번째 시도)", result_path.name, result["attempts"])
 
     do_ig = args.target in ("both", "instagram")
     do_th = args.target in ("both", "threads")
+
+    failed: list[str] = []          # 이번 시도에서 실패한 곳 (하나가 막혀도 나머지는 올린다)
 
     # ---- Instagram -------------------------------------------------------
     if do_ig:
@@ -228,10 +233,11 @@ def main() -> int:
                 save_json(result_path, result)
                 log.info("인스타 게시 완료: %s", post_id)
             except meta_api.MetaApiError as e:
+                # 한쪽이 막혀도 다른 쪽은 올린다. 실패한 것은 기록만 남기고, 다음 깨어남이 이어서 재시도한다.
                 log.error("인스타 게시 실패: %s", e)
                 result.setdefault("errors", []).append({"instagram": str(e)})
                 save_json(result_path, result)
-                return 1
+                failed.append("instagram")
 
     # ---- Threads ---------------------------------------------------------
     if do_th:
@@ -252,9 +258,9 @@ def main() -> int:
                 log.error("Threads 게시 실패: %s", e)
                 result.setdefault("errors", []).append({"threads": str(e)})
                 save_json(result_path, result)
-                return 1
+                failed.append("threads")
 
-        if reply_text and not result.get("threads_reply_id"):
+        if reply_text and result.get("threads_post_id") and not result.get("threads_reply_id"):
             try:
                 reply_id = meta_api.th_publish_text(
                     th_user, th_token, reply_text, reply_to_id=result["threads_post_id"])
@@ -265,17 +271,27 @@ def main() -> int:
                 log.error("Threads 답글 실패: %s", e)
                 result.setdefault("errors", []).append({"threads_reply": str(e)})
                 save_json(result_path, result)
-                return 1
+                failed.append("threads_reply")
 
     # ---- 마무리: 큐에서 제거 ---------------------------------------------
     done_ig = (not do_ig) or bool(result.get("instagram_post_id"))
     done_th = (not do_th) or bool(result.get("threads_post_id"))
+    done_reply = (not reply_text) or (not do_th) or bool(result.get("threads_reply_id"))
     if done_ig and done_th and args.target == "both":
         qpath.unlink(missing_ok=True)
         log.info("큐 파일 제거: %s", qpath.name)
-    result["completed_at"] = datetime.now(KST).isoformat()
+
+    if done_ig and done_th and done_reply:
+        # completed_at 이 찍힌 기록만 문지기가 '이 슬롯 끝'으로 본다.
+        result["completed_at"] = datetime.now(KST).isoformat()
+        save_json(result_path, result)
+        return 0
+
     save_json(result_path, result)
-    return 0
+    left = ", ".join(failed) or "일부 단계"
+    log.error("아직 덜 올라감 (%s). 다음 실행이 이어서 재시도합니다 — %d번째 시도까지 함",
+              left, int(result.get("attempts") or 0))
+    return 1
 
 
 if __name__ == "__main__":

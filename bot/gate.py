@@ -32,6 +32,9 @@ KST = timezone(timedelta(hours=9))
 DEFAULT_SLOTS = "morning=07:00,lunch=12:00,evening=18:00"
 # 슬롯이 없던 시절의 기록(posted/2026-09-12.json)은 첫 슬롯을 쓴 것으로 본다
 LEGACY_SLOT = "morning"
+# 한 슬롯에서 게시를 시도할 최대 횟수. 인스타/Threads 가 일시적으로 막혀 실패해도
+# 다음 깨어남이 이어서 재시도하되, 이만큼 실패하면 그 슬롯은 포기하고 다음 슬롯으로 넘어간다.
+MAX_ATTEMPTS = 3
 
 
 def today_kst() -> str:
@@ -66,7 +69,11 @@ def current_slot(spec: str = "", now: datetime | None = None) -> str:
 
 
 def posted_slots(date: str, posted_dir: Path | None = None) -> dict[str, str]:
-    """오늘 이미 채운 슬롯 → 기록 파일 이름."""
+    """오늘 **끝까지 올린** 슬롯 → 기록 파일 이름.
+
+    중간에 실패한 기록(completed_at 없음)은 '아직 안 한 것'으로 본다. 그래야 다음 깨어남이
+    이어서 재시도한다. 다만 같은 슬롯을 하루 종일 두드리지 않도록 MAX_ATTEMPTS 번까지만.
+    """
     d = posted_dir or POSTED_DIR
     done: dict[str, str] = {}
     if not d.exists():
@@ -74,12 +81,15 @@ def posted_slots(date: str, posted_dir: Path | None = None) -> dict[str, str]:
     for pth in sorted(d.glob(f"{date}*.json")):
         if not (pth.stem == date or pth.stem.startswith(f"{date}-")):
             continue
-        slot = LEGACY_SLOT
         try:
-            slot = (json.loads(pth.read_text(encoding="utf-8")).get("slot") or LEGACY_SLOT)
+            rec = json.loads(pth.read_text(encoding="utf-8"))
         except Exception:
-            pass
-        done.setdefault(str(slot), pth.name)
+            rec = {}
+        slot = str(rec.get("slot") or LEGACY_SLOT)
+        finished = bool(rec.get("completed_at"))
+        gave_up = int(rec.get("attempts") or 0) >= MAX_ATTEMPTS
+        if finished or gave_up:
+            done.setdefault(slot, pth.name)
     return done
 
 
@@ -93,7 +103,7 @@ def should_post(spec: str = "", date: str | None = None,
         return False, "", f"아직 첫 슬롯({first[0]} {first[1][0]:02d}:{first[1][1]:02d}) 전"
     done = posted_slots(d)
     if slot in done:
-        return False, slot, f"{d} {slot} 몫은 이미 올림 — {done[slot]}"
+        return False, slot, f"{d} {slot} 몫은 끝났음 — {done[slot]}"
     return True, slot, f"{slot} 몫 올릴 차례"
 
 

@@ -191,11 +191,39 @@ def th_publish_carousel(th_user_id: str, token: str,
     th_wait_container(carousel["id"], token)
 
     log.info("Threads 게시 요청")
-    published = _post(f"{TH_GRAPH}/{th_user_id}/threads_publish", {
-        "creation_id": carousel["id"],
-        "access_token": token,
-    })
-    return published["id"]
+    return th_publish_container(th_user_id, token, carousel["id"])
+
+
+# 컨테이너가 FINISHED 로 뜬 직후 threads_publish 가 "Media Not Found"(code 24, subcode 4279009)
+# 를 돌려주는 일이 있다 (2026-09-13 점심 2034 콜라겐: 인스타는 올라가고 Threads 만 실패).
+# Threads 쪽 전파 지연으로 보이며, 잠시 뒤 다시 부르면 된다. 그래서 이 오류만 골라 몇 번 더 시도한다.
+PUBLISH_RETRIES = 5
+PUBLISH_RETRY_WAIT = 15         # 초
+
+
+def _is_media_not_found(err: Exception) -> bool:
+    s = str(err)
+    return "4279009" in s or "Media Not Found" in s or "cannot be found" in s
+
+
+def th_publish_container(th_user_id: str, token: str, creation_id: str) -> str:
+    """컨테이너를 게시한다. 'Media Not Found' 면 잠시 기다렸다 다시 시도."""
+    last: Exception | None = None
+    for attempt in range(1, PUBLISH_RETRIES + 1):
+        try:
+            published = _post(f"{TH_GRAPH}/{th_user_id}/threads_publish", {
+                "creation_id": creation_id,
+                "access_token": token,
+            })
+            return published["id"]
+        except MetaApiError as e:
+            if not _is_media_not_found(e) or attempt == PUBLISH_RETRIES:
+                raise
+            last = e
+            log.warning("Threads 게시 %d/%d 실패 (Media Not Found) — %d초 뒤 재시도",
+                        attempt, PUBLISH_RETRIES, PUBLISH_RETRY_WAIT)
+            time.sleep(PUBLISH_RETRY_WAIT)
+    raise MetaApiError(f"Threads 게시 실패: {last}")
 
 
 def th_publish_text(th_user_id: str, token: str, text: str,
@@ -211,11 +239,7 @@ def th_publish_text(th_user_id: str, token: str, text: str,
         data["link_attachment"] = link_attachment
     res = _post(f"{TH_GRAPH}/{th_user_id}/threads", data)
     th_wait_container(res["id"], token)
-    published = _post(f"{TH_GRAPH}/{th_user_id}/threads_publish", {
-        "creation_id": res["id"],
-        "access_token": token,
-    })
-    return published["id"]
+    return th_publish_container(th_user_id, token, res["id"])
 
 
 def th_refresh_token(token: str) -> dict:
