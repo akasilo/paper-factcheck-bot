@@ -84,5 +84,10 @@
     {
       "threads": "POST https://graph.threads.net/v1.0/28862078273385450/threads_publish -> 400: {'error': {'message': 'The requested resource does not exist', 'type': 'OAuthException', 'code': 24, 'error_subcode': 4279009, 'is_transient': False, 'error_user_title': 'Media Not Found', 'error_user_msg': 'The media with id 18095394179249842 cannot be found.', 'fbtrace_id': 'AkniEa2xqfOq2z7wEBtqSDG'}}"
     }
-  ]
+  ],
+  "threads_post_id": "17899566897375466",
+  "threads_posted_at": "2026-09-13T17:31:12.749411+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DdOIwebG966",
+  "threads_reply_id": "18102508565341661",
+  "completed_at": "2026-09-13T17:31:28.289190+09:00"
 }
