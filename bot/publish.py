@@ -20,6 +20,7 @@ import argparse
 import json
 import logging
 import os
+import time
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -73,6 +74,20 @@ def same_item(a: dict, b: dict) -> bool:
         if pa.get(k) and pb.get(k):
             return pa[k] == pb[k]
     return (a.get("instagram_caption") or "") == (b.get("instagram_caption") or "")
+
+
+# 게시 오류 뒤 '정말 안 올라갔는지' 확인하기 전에 기다리는 시간 (초).
+# 메타 쪽 반영이 몇 초 늦을 수 있어 곧바로 조회하면 없는 것처럼 보인다.
+VERIFY_WAIT = 25
+
+
+def look_up(fn, where: str):
+    """계정 조회 — 실패해도 게시를 막지 않는다 (조회 실패 != 글 없음)."""
+    try:
+        return fn()
+    except Exception as e:                     # noqa: BLE001
+        log.warning("%s 기존 글 확인 실패 (무시하고 진행): %s", where, e)
+        return None
 
 
 def prior_posts(item_id: str, exclude: Path | None = None) -> dict:
@@ -261,19 +276,35 @@ def main() -> int:
         else:
             ig_user = env("IG_USER_ID")
             ig_token = env("IG_TOKEN")
-            try:
-                post_id = meta_api.ig_publish_carousel(
-                    ig_user, ig_token, image_urls, item["instagram_caption"])
-                result["instagram_post_id"] = post_id
-                result["instagram_posted_at"] = datetime.now(KST).isoformat()
+            cap = item["instagram_caption"]
+            # ① 올리기 전에 계정을 본다 — 지난번 오류가 거짓이었을 수 있다
+            already = look_up(lambda: meta_api.ig_find_posted(ig_user, ig_token, cap), "인스타")
+            if already:
+                log.warning("같은 글이 이미 인스타에 있습니다 (%s) — 다시 올리지 않습니다", already)
+                result["instagram_post_id"] = already
+                result.setdefault("verified", []).append("instagram:이미 있음")
                 save_json(result_path, result)
-                log.info("인스타 게시 완료: %s", post_id)
-            except meta_api.MetaApiError as e:
-                # 한쪽이 막혀도 다른 쪽은 올린다. 실패한 것은 기록만 남기고, 다음 깨어남이 이어서 재시도한다.
-                log.error("인스타 게시 실패: %s", e)
-                result.setdefault("errors", []).append({"instagram": str(e)})
-                save_json(result_path, result)
-                failed.append("instagram")
+            else:
+                try:
+                    post_id = meta_api.ig_publish_carousel(ig_user, ig_token, image_urls, cap)
+                    result["instagram_post_id"] = post_id
+                    result["instagram_posted_at"] = datetime.now(KST).isoformat()
+                    save_json(result_path, result)
+                    log.info("인스타 게시 완료: %s", post_id)
+                except meta_api.MetaApiError as e:
+                    # ② 오류가 나도 실제로는 올라갔을 수 있다 (2026-09-13 사고)
+                    log.error("인스타 게시 실패: %s", e)
+                    time.sleep(VERIFY_WAIT)
+                    landed = look_up(lambda: meta_api.ig_find_posted(ig_user, ig_token, cap), "인스타")
+                    if landed:
+                        log.warning("오류가 났지만 실제로는 올라갔습니다 (%s) — 성공으로 기록합니다", landed)
+                        result["instagram_post_id"] = landed
+                        result["instagram_posted_at"] = datetime.now(KST).isoformat()
+                        result.setdefault("verified", []).append("instagram:오류였지만 올라감")
+                    else:
+                        result.setdefault("errors", []).append({"instagram": str(e)})
+                        failed.append("instagram")
+                    save_json(result_path, result)
 
     # ---- Threads ---------------------------------------------------------
     if do_th:
@@ -282,19 +313,34 @@ def main() -> int:
         if result.get("threads_post_id"):
             log.info("Threads 는 이미 게시됨 (%s) — 건너뜀", result["threads_post_id"])
         else:
-            try:
-                post_id = meta_api.th_publish_carousel(
-                    th_user, th_token, image_urls, item["threads_text"])
-                result["threads_post_id"] = post_id
-                result["threads_posted_at"] = datetime.now(KST).isoformat()
-                result["threads_permalink"] = meta_api.th_permalink(post_id, th_token)
+            txt = item["threads_text"]
+            found = look_up(lambda: meta_api.th_find_posted(th_user, th_token, txt), "Threads")
+            if found:
+                log.warning("같은 글이 이미 Threads 에 있습니다 (%s) — 다시 올리지 않습니다", found[0])
+                result["threads_post_id"], result["threads_permalink"] = found
+                result.setdefault("verified", []).append("threads:이미 있음")
                 save_json(result_path, result)
-                log.info("Threads 게시 완료: %s %s", post_id, result.get("threads_permalink"))
-            except meta_api.MetaApiError as e:
-                log.error("Threads 게시 실패: %s", e)
-                result.setdefault("errors", []).append({"threads": str(e)})
-                save_json(result_path, result)
-                failed.append("threads")
+            else:
+                try:
+                    post_id = meta_api.th_publish_carousel(th_user, th_token, image_urls, txt)
+                    result["threads_post_id"] = post_id
+                    result["threads_posted_at"] = datetime.now(KST).isoformat()
+                    result["threads_permalink"] = meta_api.th_permalink(post_id, th_token)
+                    save_json(result_path, result)
+                    log.info("Threads 게시 완료: %s %s", post_id, result.get("threads_permalink"))
+                except meta_api.MetaApiError as e:
+                    log.error("Threads 게시 실패: %s", e)
+                    time.sleep(VERIFY_WAIT)
+                    landed = look_up(lambda: meta_api.th_find_posted(th_user, th_token, txt), "Threads")
+                    if landed:
+                        log.warning("오류가 났지만 실제로는 올라갔습니다 (%s) — 성공으로 기록합니다", landed[0])
+                        result["threads_post_id"], result["threads_permalink"] = landed
+                        result["threads_posted_at"] = datetime.now(KST).isoformat()
+                        result.setdefault("verified", []).append("threads:오류였지만 올라감")
+                    else:
+                        result.setdefault("errors", []).append({"threads": str(e)})
+                        failed.append("threads")
+                    save_json(result_path, result)
 
         if reply_text and result.get("threads_post_id") and not result.get("threads_reply_id"):
             try:

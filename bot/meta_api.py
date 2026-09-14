@@ -124,6 +124,55 @@ def ig_publish_single_image(ig_user_id: str, token: str,
     return published["id"]
 
 
+# ---------------------------------------------------------------------------
+# "정말 올라갔나?" 확인 — 오류 응답을 그대로 믿지 않기 위한 장치
+#
+# 2026-09-13~14: media_publish 가 403 "action is blocked" 를 돌려주면서 실제로는
+# 게시를 해버렸다. 봇은 실패로 알고 재시도했고 같은 글이 인스타에 두 번 올라갔다.
+# 그래서 올리기 전에 '이미 있는지' 보고, 오류가 나도 '그래도 올라갔는지' 다시 본다.
+# ---------------------------------------------------------------------------
+
+def caption_key(text: str, n: int = 60) -> str:
+    """캡션 비교용 열쇠 — 공백을 접고 앞부분만 본다 (플랫폼이 뒤를 자를 수 있다)."""
+    return " ".join((text or "").split())[:n]
+
+
+def ig_recent_media(ig_user_id: str, token: str, limit: int = 12) -> list[dict]:
+    res = _get(f"{IG_GRAPH}/{ig_user_id}/media",
+               {"fields": "id,caption,timestamp", "limit": limit, "access_token": token})
+    return res.get("data", []) or []
+
+
+def ig_find_posted(ig_user_id: str, token: str, caption: str,
+                   limit: int = 12) -> str | None:
+    """같은 캡션의 글이 이미 계정에 있으면 그 id. 없으면 None."""
+    key = caption_key(caption)
+    if not key:
+        return None
+    for m in ig_recent_media(ig_user_id, token, limit):
+        if caption_key(m.get("caption", "")) == key:
+            return str(m.get("id"))
+    return None
+
+
+def th_recent_posts(th_user_id: str, token: str, limit: int = 12) -> list[dict]:
+    res = _get(f"{TH_GRAPH}/{th_user_id}/threads",
+               {"fields": "id,text,permalink,timestamp", "limit": limit, "access_token": token})
+    return res.get("data", []) or []
+
+
+def th_find_posted(th_user_id: str, token: str, text: str,
+                   limit: int = 12) -> tuple[str, str | None] | None:
+    """같은 본문의 글이 이미 있으면 (id, permalink). 없으면 None."""
+    key = caption_key(text)
+    if not key:
+        return None
+    for m in th_recent_posts(th_user_id, token, limit):
+        if caption_key(m.get("text", "")) == key:
+            return str(m.get("id")), m.get("permalink")
+    return None
+
+
 def ig_refresh_token(token: str) -> dict:
     """장기 토큰 갱신 (60일 연장). 반환: {access_token, token_type, expires_in}"""
     return _get(f"{IG_GRAPH.rsplit('/', 1)[0]}/refresh_access_token", {
