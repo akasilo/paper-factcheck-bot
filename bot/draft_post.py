@@ -55,7 +55,10 @@ SYSTEM_PROMPT = """당신은 인스타그램 계정 @paper_factcheck 의 편집�
 10. product_hint 는 독자가 대안으로 찾아볼 제품 조건을 한 줄로 (브랜드 없이). 논문이 제품 선택과 무관하면 빈 문자열.
 11. 논문이 제품을 직접 다루지 않고 성분·물질만 다루면, hook 은 물질 중심으로 잡고 제품은 "이 물질이 쓰이는 제품 예"로만 연결하세요. 제품 자체가 위험/안전하다고 단정 금지.
 12. 영어 학술 용어는 한국어로 풀어쓰세요 (umbrella review → 여러 메타분석을 종합한 리뷰, RCT → 무작위 대조 시험). 해시태그는 주제와 직접 관련된 것만.
-13. instagram_caption 은 첫 줄 훅 → 빈 줄로 나눈 짧은 문단 3~4개 → 오늘의 행동 → 출처 줄 → 해시태그 순서. threads_text 는 말하듯 가볍게, 마지막은 독자에게 묻는 한 문장.
+13. instagram_caption 은 첫 줄 훅 → 빈 줄로 나눈 짧은 문단 3~4개 → 오늘의 행동 → 출처 줄 → 해시태그 순서.
+    threads_text 는 **반드시 이 모양**: 첫 줄은 물음표로 끝나는 짧은 질문 한 문장(40자 이내, 훅과 같은 질문) →
+    빈 줄 하나 → 그다음부터 본문(말하듯 가볍게, 마지막은 독자에게 묻는 한 문장). 첫 줄에 질문 말고 다른 말을 붙이지 마세요.
+    예: "에너지드링크 한 캔에 심장이 멈출 수 있을까?\n\n최근 리뷰 논문을 보니 …"
 15. **훅에서 던진 질문에는 반드시 body 카드에서 답하세요.** 이게 이 계정의 존재 이유입니다.
     "신장 망가진다, 진짜일까?" 로 시작했으면 어딘가에서 "이 논문에 따르면 ~ 였다" 로 답해야 합니다.
     "이 논문이 그 주제를 다뤘다 / 검토했다 / 질문 목록에 있었다" 는 답이 아닙니다. 그건 목차입니다.
@@ -481,6 +484,67 @@ def has_findings(cards: list[dict], need: int = 1) -> bool:
     return hits >= need
 
 
+# ---------------------------------------------------------------------------
+# Threads 본문 모양: "질문 한 줄 ? / 빈 줄 / 본문"
+# ---------------------------------------------------------------------------
+
+_MARK = re.compile(r"\[\[|\]\]|\{\{|\}\}")
+
+
+def hook_question(hook: str) -> str:
+    """카드 훅 마크업을 벗기고 한 줄 질문으로 만든다. "매일 마시는\n[[생수]]\n…?" → "매일 마시는 생수 …?" """
+    t = _MARK.sub("", hook or "")
+    t = " ".join(t.replace("\n", " ").split())
+    if t and not t.endswith("?"):
+        t += "?"
+    return t
+
+
+def threads_shape_problems(text: str) -> list[str]:
+    """첫 줄이 물음표로 끝나는 질문이고, 둘째 줄이 비어 있고, 그 뒤에 본문이 있어야 한다."""
+    lines = (text or "").split("\n")
+    if len(lines) < 3:
+        return ["threads_text 가 '질문 한 줄 / 빈 줄 / 본문' 모양이 아님"]
+    q, blank, body = lines[0].strip(), lines[1].strip(), "\n".join(lines[2:]).strip()
+    out = []
+    if not q.endswith("?"):
+        out.append("threads_text 첫 줄이 물음표로 끝나지 않음")
+    if len(q) > 60:
+        out.append("threads_text 첫 줄이 60자 초과")
+    if blank:
+        out.append("threads_text 둘째 줄이 빈 줄이 아님")
+    if len(body) < 20:
+        out.append("threads_text 본문이 너무 짧음")
+    return out
+
+
+def shape_threads_text(text: str, hook: str = "") -> str:
+    """옛 원고도 게시 시점에 같은 모양으로 맞춘다.
+
+    이미 모양이 맞으면 그대로. 아니면 본문 앞머리의 첫 질문 문장을 떼어 첫 줄로 올리고,
+    그것도 없으면 카드 훅을 질문으로 만들어 앞에 붙인다.
+    """
+    text = (text or "").strip()
+    if not threads_shape_problems(text):
+        return text
+    flat = " ".join(text.split())
+    m = re.match(r"(.{6,70}?\?)\s+(.+)$", flat, re.S)
+    if m and len(m.group(2)) >= 20:
+        q, body = m.group(1).strip(), m.group(2).strip()
+    else:
+        q, body = hook_question(hook), flat
+    if not q:
+        return text
+    shaped = f"{q}\n\n{body}"
+    if len(shaped) > 500:                       # Threads 한도. 본문 끝을 문장 단위로 줄인다
+        body = body[: 500 - len(q) - 2]
+        cut = max(body.rfind("."), body.rfind("?"), body.rfind("!"), body.rfind("요"))
+        if cut > 100:
+            body = body[: cut + 1]
+        shaped = f"{q}\n\n{body}".rstrip()
+    return shaped
+
+
 def validate(d: dict) -> list[str]:
     problems = []
     if d.get("verdict") not in ("bad", "good", "mixed"):
@@ -500,6 +564,8 @@ def validate(d: dict) -> list[str]:
         problems.append("instagram_caption 길이 이상")
     if len(d.get("threads_text", "")) > 500 or not d.get("threads_text"):
         problems.append("threads_text 길이 이상")
+    else:
+        problems += threads_shape_problems(d["threads_text"])
     problems += answer_problems(d)
     if not has_findings(cards):
         problems.append("body_cards 가 전부 목차 문장 (구체적 결과가 한 장도 없음)")

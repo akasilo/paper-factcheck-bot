@@ -28,6 +28,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import meta_api  # noqa: E402
 from gate import should_post, DEFAULT_SLOTS  # noqa: E402  (문지기 — gate.py 와 판단을 공유)
+from draft_post import shape_threads_text  # noqa: E402  (Threads 본문 모양: 질문 한 줄 / 빈 줄 / 본문)
 
 ROOT = Path(__file__).resolve().parent.parent
 QUEUE_DIR = ROOT / "queue"
@@ -217,6 +218,14 @@ def main() -> int:
     item = load_json(qpath)
     date = args.date                     # 기록 파일은 '실제 올린 날짜'로 남긴다
     log.info("큐 항목: %s (%s)", qpath.name, item.get("topic_ko", ""))
+
+    # Threads 본문은 항상 "질문 한 줄 / 빈 줄 / 본문" 모양으로 나간다 (2026-09-14 요청).
+    # 새 원고는 프롬프트가 그렇게 쓰지만, 그 전에 만든 큐 항목도 여기서 같은 모양으로 맞춘다.
+    hook = next((c.get("text", "") for c in item.get("cards", []) if c.get("type") == "hook"), "")
+    shaped = shape_threads_text(item.get("threads_text", ""), hook)
+    if shaped != item.get("threads_text"):
+        log.info("Threads 본문 모양을 맞췄습니다: %r …", shaped.split("\n")[0][:40])
+        item["threads_text"] = shaped
 
     image_urls = resolve_image_urls(item)
     problems = validate(item, image_urls, allow_no_link=args.allow_no_link)
