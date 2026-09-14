@@ -1,7 +1,7 @@
 {
   "id": "2040-omega3",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/g1hEeZkFLU",
   "topic": "omega3",
   "topic_ko": "오메가3",
   "verdict": "mixed",
@@ -76,5 +76,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/36637075/"
   },
   "drafted_at": "2026-09-10T23:40:38.940579+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-14T09:08:42.217531+09:00"
 }
