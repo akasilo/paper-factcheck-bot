@@ -1,0 +1,80 @@
+{
+  "id": "2052-ultra_processed",
+  "approved": false,
+  "link": "",
+  "topic": "ultra_processed",
+  "topic_ko": "라면·가공식품",
+  "verdict": "bad",
+  "evidence_level": "review",
+  "source_text": "PMC10924027 전문",
+  "answer": "20명이 2주씩 두 식단을 바꿔 먹은 무작위 교차 시험에서, 초가공식품 식단을 먹었을 때 하루 500kcal를 더 먹고 0.9kg이 늘었고, 최소가공식품 식단에서는 오히려 0.9kg이 줄었습니다.",
+  "style": "geo",
+  "accent": "orange",
+  "product_hint": "원재료가 단순하고 나트륨이 낮은 라면·즉석식품",
+  "caveats": [
+    "관찰연구 근거는 대부분 횡단연구 비중이 높아 인과관계를 완전히 증명하지는 못함",
+    "아동·청소년 대상 연구는 성인보다 결과가 덜 일관됨",
+    "초가공식품이 체중에 영향을 주는 정확한 기전은 아직 결론이 나지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "라면·과자\n많이 먹으면\n[[진짜]] 살찔까\n최신 리뷰 답은?"
+    },
+    {
+      "type": "body",
+      "text": "라면·과자처럼 성분 5가지 넘는 '[[초가공식품]]'을 많이 먹는 사람일수록, 여러 관찰 연구에서 과체중·비만 위험이 함께 높았습니다."
+    },
+    {
+      "type": "body",
+      "text": "성인 대상 메타분석 4건에서, 초가공식품을 많이 먹는 그룹은 비만 위험이 최대 1.55배, 과체중 위험이 최대 1.36배 더 높았습니다."
+    },
+    {
+      "type": "body",
+      "text": "결정적 실험도 있습니다. 성인 20명이 2주씩 두 식단을 바꿔 먹은 시험에서, [[초가공식품 식단]] 땐 하루 500kcal 더 먹고 0.9kg 늘었고, 반대 식단에선 0.9kg {{빠졌습니다}}."
+    },
+    {
+      "type": "body",
+      "text": "두 식단은 열량·영양소를 맞췄는데도 결과가 갈렸습니다. 부드러운 식감과 높은 에너지 밀도가 자신도 모르게 더 먹게 만들었을 가능성이 있습니다.",
+      "note": "※ 근거 대부분은 관찰연구이며, 아동·청소년 대상 결과는 더 엇갈렸습니다."
+    },
+    {
+      "type": "body",
+      "text": "오늘 장 볼 때 라면·과자 성분표를 한 번 살펴보고, [[원재료가 단순한]] 제품을 하나 골라보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Ultra-processed Food and Obesity: What Is the Evidence?",
+        "journal": "Current nutrition reports",
+        "year": "2024",
+        "doi": "10.1007/s13668-024-00517-z",
+        "authors": "Dicken SJ, Batterham RL"
+      }
+    }
+  ],
+  "images": [
+    "images/2052-ultra_processed/01.jpg",
+    "images/2052-ultra_processed/02.jpg",
+    "images/2052-ultra_processed/03.jpg",
+    "images/2052-ultra_processed/04.jpg",
+    "images/2052-ultra_processed/05.jpg",
+    "images/2052-ultra_processed/06.jpg",
+    "images/2052-ultra_processed/07.jpg"
+  ],
+  "instagram_caption": "라면·과자 자주 먹으면 진짜 살찔까요?\n\n최근 발표된 리뷰 논문이 이 질문을 정면으로 다뤘습니다. 재료가 5가지 넘게 들어가고 공장에서 만들어지는 '초가공식품', 라면과 과자, 탄산음료가 대표적입니다.\n\n성인을 대상으로 한 메타분석 4건에서, 초가공식품을 많이 먹는 그룹은 비만 위험이 최대 1.55배, 과체중 위험이 최대 1.36배 더 높게 나타났습니다.\n\n더 강력한 증거도 있습니다. 성인 20명이 2주씩 서로 다른 식단을 먹은 실험에서, 초가공식품 식단을 먹었을 때는 하루 500kcal를 더 먹고 0.9kg이 늘었고, 최소가공식품 식단에서는 반대로 0.9kg이 줄었습니다. 두 식단의 열량과 영양소는 같게 맞췄는데도요.\n\n논문은 이 차이가 부드러운 식감과 높은 에너지 밀도 때문에 자신도 모르게 더 먹게 되기 때문일 수 있다고 설명합니다. 다만 아동·청소년 대상 연구는 결과가 더 엇갈렸고, 정확한 기전은 아직 결론이 나지 않았습니다.\n\n오늘은 라면·과자를 살 때 성분표를 한 번 확인해, 원재료가 단순한 제품을 하나 골라보는 것부터 시작해보세요.\n\n📄 출처: Dicken SJ, Batterham RL, Current Nutrition Reports (2024). DOI 10.1007/s13668-024-00517-z\n\n#논문팩트체크 #paper_factcheck #초가공식품 #라면 #가공식품 #비만 #체중관리 #식습관 #건강정보 #영양 #다이어트 #식품첨가물\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "라면이랑 과자 자주 먹으면 진짜 살찔까 궁금해서 논문을 찾아봤어요. 성인 대상 메타분석 4건에서 초가공식품 많이 먹는 사람은 비만 위험이 최대 1.55배 높았대요. 더 재밌는 건 실험 결과인데, 20명이 2주씩 식단을 바꿔 먹었더니 초가공식품 먹을 때는 하루 500kcal 더 먹고 0.9kg 쪘고, 반대 식단에선 0.9kg 빠졌대요. 열량이랑 영양소는 똑같이 맞췄는데도요. 여러분은 라면·과자 얼마나 자주 드시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Ultra-processed Food and Obesity: What Is the Evidence?",
+    "journal": "Current nutrition reports",
+    "year": "2024",
+    "doi": "10.1007/s13668-024-00517-z",
+    "pmid": "38294671",
+    "authors": "Dicken SJ, Batterham RL",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38294671/"
+  },
+  "drafted_at": "2026-09-15T01:39:49.134641+09:00",
+  "model": "claude_code:default"
+}
