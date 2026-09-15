@@ -1,0 +1,80 @@
+{
+  "id": "2056-compression_socks",
+  "approved": false,
+  "link": "",
+  "topic": "compression_socks",
+  "topic_ko": "압박 스타킹",
+  "verdict": "good",
+  "evidence_level": "meta-analysis",
+  "source_text": "PMC9885475 전문",
+  "answer": "이 메타리뷰에서 압박치료를 받은 그룹은 61%가 궤양이 나았지만 받지 않은 그룹은 39%만 나았다(위험비 1.55, 중간 확실성 근거).",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "정맥성 다리궤양·정맥질환으로 처방받은 의료용 압박 스타킹(적정 압력 등급 확인)",
+  "caveats": [
+    "대상은 이미 정맥성 다리궤양이 있는 환자군으로, 건강한 사람이 예방 목적으로 신는 압박스타킹과는 맥락이 다름",
+    "포함된 리뷰 12편 중 4편은 AMSTAR-2 기준 저품질로 평가됨",
+    "눈가림 어려움으로 근거 확실성이 '중간'으로 하향 조정됨"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "다리에 감는\n[[압박스타킹]]\n그냥 불편한 게\n아니었다고?"
+    },
+    {
+      "type": "body",
+      "text": "정맥성 다리궤양(정맥 순환 문제로 생기는 만성 다리 상처)은 낫는 데 오래 걸리기로 유명해요. 압박치료는 이 궤양 관리의 표준 치료법이에요."
+    },
+    {
+      "type": "body",
+      "text": "한 메타리뷰에 따르면 압박치료를 받은 그룹은 [[61%]]가 나았지만, 받지 않은 그룹은 39%만 나았어요 (위험비 1.55, 중간 수준 근거)."
+    },
+    {
+      "type": "body",
+      "text": "탄력 vs 비탄력 압박, 4겹 vs 더 적은 겹 붕대, 붕대 vs 스타킹 사이에는 치유율 차이가 뚜렷하지 않았대요. 방식보다 '제대로 꾸준히'가 핵심."
+    },
+    {
+      "type": "body",
+      "text": "이 결과는 상처 치료 특성상 참가자·평가자 눈가림이 어려워 근거 수준이 두 단계 낮춰진 {{중간 확실성}} 평가라는 점은 참고해야 해요.",
+      "note": "※ 눈가림 부족으로 압박치료 효과가 실제보다 과대평가됐을 가능성 있음"
+    },
+    {
+      "type": "body",
+      "text": "의료진이 압박치료(스타킹·붕대)를 권했다면 [[꾸준한 착용]]이 궤양 치유에 도움될 수 있다는 근거가 있어요. 임의로 중단하지 마세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "A meta-review of the impact of compression therapy on venous leg ulcer healing.",
+        "journal": "International wound journal",
+        "year": "2023",
+        "doi": "10.1111/iwj.13891",
+        "authors": "Patton D, Avsar P, Sayeh A et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2056-compression_socks/01.jpg",
+    "images/2056-compression_socks/02.jpg",
+    "images/2056-compression_socks/03.jpg",
+    "images/2056-compression_socks/04.jpg",
+    "images/2056-compression_socks/05.jpg",
+    "images/2056-compression_socks/06.jpg",
+    "images/2056-compression_socks/07.jpg"
+  ],
+  "instagram_caption": "다리에 감는 압박 스타킹, 그냥 불편하기만 한 걸까요?\n\n정맥성 다리궤양(정맥 순환 문제로 생기는 만성 다리 상처)은 낫는 데 오래 걸리기로 유명해요. 압박치료는 이 궤양 관리의 표준 치료로 오랫동안 쓰여왔어요.\n\n2023년 나온 한 메타리뷰(기존 체계적 문헌고찰 12편을 다시 종합 분석한 논문)에 따르면, 압박치료를 받은 그룹은 61%가 궤양이 나았지만 받지 않은 그룹은 39%만 나았어요. 위험비로 따지면 1.55배, 중간 수준의 확실성을 가진 근거로 평가됐어요.\n\n흥미로운 건 탄력 압박 vs 비탄력 압박, 4겹 vs 더 적은 겹의 붕대, 붕대 vs 스타킹 사이에는 치유율 차이가 뚜렷하지 않았다는 점이에요. 방식보다 '제대로, 꾸준히' 압박하는 게 핵심이라는 뜻이죠.\n\n다만 상처 치료 특성상 참가자와 평가자를 눈가림하기 어려워서 근거 수준이 '중간 확실성'으로 두 단계 낮춰졌다는 점도 함께 알아두면 좋아요.\n\n오늘의 행동: 다리 상처나 정맥질환으로 압박치료를 권유받았다면 임의로 중단하지 말고 꾸준히 착용해보세요.\n\n📄 출처: Patton D, Avsar P, Sayeh A et al., International Wound Journal (2023). DOI 10.1111/iwj.13891\n\n#논문팩트체크 #paper_factcheck #압박스타킹 #정맥궤양 #하지정맥 #상처치료 #압박치료 #메타분석 #건강정보 #다리건강 #정맥질환 #의료용스타킹\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "압박 스타킹, 그냥 불편하기만 할까요?\n\n메타리뷰 하나 보니 압박치료 받은 쪽은 61%가 나았고 안 받은 쪽은 39%만 나았대요(위험비 1.55). 탄력이든 비탄력이든, 붕대든 스타킹이든 방식 차이보다 '꾸준히 압박했는지'가 더 중요했다고 해요. 다만 눈가림이 어려운 연구라 근거 확실성은 '중간' 수준이라는 점도 참고하면 좋을 것 같아요. 혹시 압박 스타킹 신어본 적 있나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "A meta-review of the impact of compression therapy on venous leg ulcer healing.",
+    "journal": "International wound journal",
+    "year": "2023",
+    "doi": "10.1111/iwj.13891",
+    "pmid": "35855678",
+    "authors": "Patton D, Avsar P, Sayeh A et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35855678/"
+  },
+  "drafted_at": "2026-09-16T00:21:54.758033+09:00",
+  "model": "claude_code:default"
+}

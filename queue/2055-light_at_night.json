@@ -1,0 +1,80 @@
+{
+  "id": "2055-light_at_night",
+  "approved": false,
+  "link": "",
+  "topic": "light_at_night",
+  "topic_ko": "야간 조명·LED",
+  "verdict": "bad",
+  "evidence_level": "cohort",
+  "source_text": "PMC12550636 전문",
+  "answer": "가장 밝은 밤(상위 10%)에서 잔 사람은 가장 어두운 밤에서 잔 사람보다 심근경색 위험이 47%, 심부전 위험이 56%, 관상동맥질환·심방세동 위험이 32%, 뇌졸중 위험이 28% 더 높았다.",
+  "style": "geo",
+  "accent": "red",
+  "product_hint": "빛 밝기와 색온도를 낮출 수 있는 조명 또는 빛을 완전히 차단하는 암막 커튼",
+  "caveats": [
+    "관찰연구라 인과관계까지 증명한 것은 아님",
+    "UK Biobank 참가자는 백인·고학력·건강한 사람 비중이 높아 일반화에 제한",
+    "빛 노출은 1주일치 측정치로, 빛의 종류(예: 디지털 기기 불빛)는 구분하지 못함"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "침실 불 끄고\n자면\n[[심장병]] 위험\n{{줄어들까}}?"
+    },
+    {
+      "type": "body",
+      "text": "영국 바이오뱅크 참가자 88,905명 손목에 [[빛 센서]]를 채워 9.5년간 심장병 발생을 지켜본 대규모 코호트 연구예요."
+    },
+    {
+      "type": "body",
+      "text": "가장 밝은 밤(상위 10%)에 잔 사람은 가장 어두운 밤에 잔 사람보다 관상동맥질환 32%, 심근경색 47%, {{심부전 위험 56%}} 더 높았어요."
+    },
+    {
+      "type": "body",
+      "text": "심방세동 위험도 32%, 뇌졸중 위험도 28% 더 높았고, 밤이 밝아질수록 위험이 계단식으로 커지는 '용량-반응' 패턴도 나타났어요."
+    },
+    {
+      "type": "body",
+      "text": "운동·흡연·음주·수면시간·유전적 위험까지 통제해도 결과는 그대로였어요. 반대로 낮에 밝은 빛을 쬔 사람은 [[심장병 위험이 오히려 낮았어요]].",
+      "note": "※ 관찰연구라 인과관계까지 증명한 건 아니에요"
+    },
+    {
+      "type": "body",
+      "text": "오늘 밤엔 [[침실 조명]]을 다 끄거나 암막 커튼을 쳐보세요. 작은 습관이 심장 건강에 도움이 될 수 있어요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Light Exposure at Night and Cardiovascular Disease Incidence.",
+        "journal": "JAMA network open",
+        "year": "2025",
+        "doi": "10.1001/jamanetworkopen.2025.39031",
+        "authors": "Windred DP, Burns AC, Rutter MK et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2055-light_at_night/01.jpg",
+    "images/2055-light_at_night/02.jpg",
+    "images/2055-light_at_night/03.jpg",
+    "images/2055-light_at_night/04.jpg",
+    "images/2055-light_at_night/05.jpg",
+    "images/2055-light_at_night/06.jpg",
+    "images/2055-light_at_night/07.jpg"
+  ],
+  "instagram_caption": "침실이 밝을수록 심장병 위험이 커진다는 연구 결과가 나왔어요.\n\n영국 바이오뱅크 참가자 88,905명의 손목에 빛 센서를 채우고 9.5년간 심장병 발생을 추적한 대규모 코호트 연구예요.\n\n가장 밝은 밤(상위 10%)에 잔 사람은 가장 어두운 밤에 잔 사람보다 관상동맥질환 위험이 32%, 심근경색 위험이 47%, 심부전 위험이 56%, 심방세동 위험이 32%, 뇌졸중 위험이 28% 더 높았어요. 빛이 밝아질수록 위험도 계단식으로 커지는 패턴도 확인됐고요.\n\n운동량, 흡연, 음주, 수면시간, 사회경제적 지위, 유전적 위험까지 통제해도 이 결과는 크게 달라지지 않았어요. 특히 여성과 젊은 층에서 밤빛과 심부전·심방세동의 연관성이 더 크게 나타났대요. 다만 이 연구는 관찰연구라 인과관계까지 증명한 건 아니에요.\n\n흥미롭게도 낮 동안 밝은 빛을 쬔 사람은 오히려 관상동맥질환·심부전·뇌졸중 위험이 더 낮게 나타났어요. 밤엔 어둡게, 낮엔 밝게가 핵심인 셈이에요.\n\n오늘 밤엔 침실 조명을 다 끄거나 암막 커튼을 쳐보는 건 어떨까요? 작은 습관 하나가 도움이 될 수 있어요.\n\n📄 출처: Windred DP et al., JAMA Network Open (2025). DOI 10.1001/jamanetworkopen.2025.39031\n\n#논문팩트체크 #paper_factcheck #심장건강 #수면환경 #야간조명 #암막커튼 #심혈관질환 #빛공해 #서카디안리듬 #건강습관 #코호트연구 #영국바이오뱅크\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "침실 불 끄고 자면 심장병 위험이 줄어들까?\n\n최근 영국에서 88,905명을 9.5년간 추적한 연구를 보니, 잘 때 방이 가장 밝았던 사람은 가장 어두웠던 사람보다 심근경색 위험이 47%, 심부전 위험이 56%나 높았대요. 운동량이나 유전적 위험까지 다 고려해도 결과는 그대로였고요. 신기하게 낮에는 밝은 빛을 쬐는 게 오히려 심장에 좋았다는 결과도 있었어요. 다들 오늘 밤엔 방 조명 다 끄고 주무시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Light Exposure at Night and Cardiovascular Disease Incidence.",
+    "journal": "JAMA network open",
+    "year": "2025",
+    "doi": "10.1001/jamanetworkopen.2025.39031",
+    "pmid": "41129148",
+    "authors": "Windred DP, Burns AC, Rutter MK et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41129148/"
+  },
+  "drafted_at": "2026-09-16T00:20:31.812897+09:00",
+  "model": "claude_code:default"
+}

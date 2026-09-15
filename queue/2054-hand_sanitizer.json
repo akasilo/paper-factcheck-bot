@@ -1,0 +1,80 @@
+{
+  "id": "2054-hand_sanitizer",
+  "approved": false,
+  "link": "",
+  "topic": "hand_sanitizer",
+  "topic_ko": "손소독제·물티슈",
+  "verdict": "mixed",
+  "evidence_level": "rct",
+  "source_text": "PMC12223927 전문",
+  "answer": "손소독제 4종 모두 어느 정도 피부 자극을 일으켰지만 정도는 달랐고, 자극을 가른 건 인산이 아니라 1-프로판올 농도(18g 대 10g)였다.",
+  "style": "paper",
+  "accent": "violet",
+  "product_hint": "1-프로판올 함량이 낮고 글리세린 등 보습성분이 포함된 손소독제",
+  "caveats": [
+    "건강한 성인 48명 대상 3일 단기 실험으로 장기 사용 효과는 확인되지 않음",
+    "아토피 피부염 환자는 연구에서 제외되어 이들에게는 결과가 다를 수 있음",
+    "특정 상용 제품 4종에 한정된 결과라 모든 손소독제에 일반화하기 어려움"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "손소독제\n자주 쓰면\n피부 장벽\n{{망가질까}}?"
+    },
+    {
+      "type": "body",
+      "text": "독일 연구팀이 건강한 성인 48명 손에 시판 손소독제 4종을 3일간 발라보는 무작위 실험을 했어요. 2종은 에탄올 [[고농도]], 2종은 저농도+인산 조합이었죠."
+    },
+    {
+      "type": "body",
+      "text": "결과는 단순하지 않았어요. 4종 모두 어느 정도 자극이 있었고, 가장 심했던 제품은 경피수분손실이 6.43→8.76까지 늘었어요. 그 제품도 저농도+인산 쪽이었어요."
+    },
+    {
+      "type": "body",
+      "text": "진짜 변수는 인산이 아니라 [[1-프로판올 농도]]였어요. 자극이 컸던 제품은 100g당 18g, 덜했던 제품은 10g이 들어있었죠. 인산 자체는 물과 비슷한 수준으로 잘 견뎌졌어요."
+    },
+    {
+      "type": "body",
+      "text": "전체적으로 시판 제품 대부분은 순수 에탄올·이소프로판올 대조군보다 오히려 덜 자극적이었어요. 세제로 손 씻기보단 손소독제가 덜 해롭다는 기존 흐름과도 맞았어요.",
+      "note": "※ 건강한 성인 48명 대상 3일 단기 실험, 아토피 피부·장기사용 결과는 확인 안 됨"
+    },
+    {
+      "type": "body",
+      "text": "오늘은 손소독제 성분표를 확인해보세요. 인산보다 [[1-프로판올]] 함량이 낮은 제품을 고르고, 소독 후 핸드크림을 발라주면 좋아요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "The Effect of Alcohol-Based Virucidal Hand Sanitizers on Skin Barrier Function-A Randomised Experimental Study.",
+        "journal": "Contact dermatitis",
+        "year": "2025",
+        "doi": "10.1111/cod.14808",
+        "authors": "Gina M, Ofenloch R, Schwebke I et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2054-hand_sanitizer/01.jpg",
+    "images/2054-hand_sanitizer/02.jpg",
+    "images/2054-hand_sanitizer/03.jpg",
+    "images/2054-hand_sanitizer/04.jpg",
+    "images/2054-hand_sanitizer/05.jpg",
+    "images/2054-hand_sanitizer/06.jpg",
+    "images/2054-hand_sanitizer/07.jpg"
+  ],
+  "instagram_caption": "손소독제, 매일 쓰면 피부 장벽이 망가질까요?\n\n독일 연구팀이 건강한 성인 48명의 손에 시판 손소독제 4종을 3일간 발라보는 무작위 실험을 했어요. 2종은 에탄올을 고농도로, 2종은 에탄올·1-프로판올을 저농도로 쓰면서 인산을 더한 제품이었죠.\n\n결과는 단순하지 않았어요. 4종 모두 어느 정도 피부 자극(수분 손실 증가, 홍조)을 일으켰지만 정도는 제품마다 달랐어요. 가장 자극이 심했던 제품은 경피수분손실이 6.43에서 8.76까지 늘었는데, 흥미롭게도 그 제품도 저농도+인산 조합이었어요.\n\n원인을 따져보니 인산 자체는 문제가 아니었어요. 인산은 물과 비슷한 수준으로 잘 견뎌졌고, 오히려 적은 알코올로도 살균 효과를 유지하게 도왔어요. 자극을 가른 진짜 변수는 1-프로판올 농도였어요. 자극이 컸던 제품은 100g당 18g, 덜했던 제품은 10g이 들어있었죠.\n\n전체적으로 시판 제품 대부분은 순수 에탄올·이소프로판올보다는 오히려 덜 자극적이었어요. 손소독제가 손 씻기(세제)보다 피부에 덜 해롭다는 기존 연구 흐름과도 일치해요.\n\n오늘의 행동: 손소독제를 고를 때 인산 표기는 걱정하지 말고, 성분표에서 1-프로판올 함량이 낮은 제품을 찾아보고 소독 후 핸드크림을 발라주세요.\n\n📄 출처: Gina M et al., Contact Dermatitis (2025). DOI 10.1111/cod.14808\n\n#논문팩트체크 #paper_factcheck #손소독제 #피부장벽 #경피수분손실 #피부자극 #에탄올 #손소독 #피부보습 #핸드크림 #위생용품 #피부과학\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "손소독제 자주 쓰면 피부 장벽이 망가질까?\n\n최근 무작위 실험에서 손소독제 4종을 3일간 발라봤더니 다 어느 정도 자극은 있었대. 근데 진짜 문제는 인산이 아니라 1-프로판올 농도였다는 게 포인트. 농도 낮은 제품(10g/100g)은 자극도 적었고, 높은 제품(18g/100g)은 자극이 제일 컸어. 오히려 순수 에탄올보다는 시판 제품들이 덜 자극적이었다니 손소독제 자체를 겁낼 필요는 없을 듯. 너는 손소독제 쓰고 피부 땅긴 적 있어?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "The Effect of Alcohol-Based Virucidal Hand Sanitizers on Skin Barrier Function-A Randomised Experimental Study.",
+    "journal": "Contact dermatitis",
+    "year": "2025",
+    "doi": "10.1111/cod.14808",
+    "pmid": "40356051",
+    "authors": "Gina M, Ofenloch R, Schwebke I et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40356051/"
+  },
+  "drafted_at": "2026-09-16T00:19:15.039770+09:00",
+  "model": "claude_code:default"
+}
