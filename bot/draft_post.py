@@ -495,7 +495,9 @@ def hook_question(hook: str) -> str:
     """카드 훅 마크업을 벗기고 한 줄 질문으로 만든다. "매일 마시는\n[[생수]]\n…?" → "매일 마시는 생수 …?" """
     t = _MARK.sub("", hook or "")
     t = " ".join(t.replace("\n", " ").split())
-    if t and not t.endswith("?"):
+    if "?" in t:                      # 훅이 "질문? 답 한 줄" 꼴이면 질문까지만 쓴다
+        t = t[: t.index("?") + 1]
+    elif t:
         t += "?"
     return t
 
