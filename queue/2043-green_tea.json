@@ -1,7 +1,7 @@
 {
   "id": "2043-green_tea",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/g3dBxxGlLo",
   "topic": "green_tea",
   "topic_ko": "녹차",
   "verdict": "bad",
@@ -76,5 +76,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/39748104/"
   },
   "drafted_at": "2026-09-12T22:47:18.308665+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-15T09:02:19.685171+09:00"
 }

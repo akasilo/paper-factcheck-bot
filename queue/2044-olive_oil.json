@@ -1,7 +1,7 @@
 {
   "id": "2044-olive_oil",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/g3dC3v2NDE",
   "topic": "olive_oil",
   "topic_ko": "올리브유",
   "verdict": "good",
@@ -76,5 +76,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/40048719/"
   },
   "drafted_at": "2026-09-12T22:48:30.705726+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-15T09:02:19.685365+09:00"
 }

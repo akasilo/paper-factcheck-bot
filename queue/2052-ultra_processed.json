@@ -1,7 +1,7 @@
 {
   "id": "2052-ultra_processed",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/g3elzy4VO0",
   "topic": "ultra_processed",
   "topic_ko": "라면·가공식품",
   "verdict": "bad",
@@ -76,5 +76,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/38294671/"
   },
   "drafted_at": "2026-09-15T01:39:49.134641+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-15T09:02:19.686775+09:00"
 }
