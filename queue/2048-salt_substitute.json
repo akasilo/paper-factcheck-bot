@@ -1,7 +1,7 @@
 {
   "id": "2048-salt_substitute",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/g3lHsMxoo8",
   "topic": "salt_substitute",
   "topic_ko": "저염 소금",
   "verdict": "good",
@@ -76,5 +76,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/39908026/"
   },
   "drafted_at": "2026-09-13T23:40:56.782503+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-15T13:48:48.931153+09:00"
 }
