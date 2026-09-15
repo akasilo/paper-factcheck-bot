@@ -84,13 +84,12 @@
   },
   "attempts": 1,
   "instagram_post_id": "18123880100307054",
-  "instagram_posted_at": "2026-09-15T13:49:54.104562+09:00",
   "verified": [
-    "instagram:오류였지만 올라감"
+    "instagram:이미 있음",
+    "threads:이미 있음"
   ],
   "threads_post_id": "18443934241130089",
-  "threads_posted_at": "2026-09-15T13:50:31.084909+09:00",
   "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DdS5GWwEW68",
-  "threads_reply_id": "17909235207545449",
-  "completed_at": "2026-09-15T13:50:49.091028+09:00"
+  "threads_reply_id": "18124052251897192",
+  "completed_at": "2026-09-15T13:51:27.763317+09:00"
 }
