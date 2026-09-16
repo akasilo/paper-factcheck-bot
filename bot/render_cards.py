@@ -26,6 +26,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import card_styles
+import make_bg
 
 ROOT = Path(__file__).resolve().parent.parent
 RENDER_DIR = ROOT / "render"
@@ -133,7 +134,8 @@ def build_card_html(card: dict, index: int, total: int, bg_path: Path | None,
 
 def render_cards(cards: list[dict], out_dir: Path, seed: int = 0,
                  style: str | None = None, accent: str | None = None,
-                 force_bg: bool = False) -> list[Path]:
+                 force_bg: bool = False, bg_override: Path | None = None) -> list[Path]:
+    """bg_override 가 있으면(AI 배경) 출처 카드를 뺀 모든 카드에 그 한 장을 깐다."""
     from playwright.sync_api import sync_playwright
 
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -150,6 +152,8 @@ def render_cards(cards: list[dict], out_dir: Path, seed: int = 0,
                 cand = ROOT / card["bg"]
                 if cand.exists():
                     bg_path = cand
+            if bg_path is None and bg_override is not None and card.get("type", "body") != "source":
+                bg_path = bg_override
             if bg_path is None and card.get("type", "body") != "source":
                 bg_path = out_dir / f"bg{i:02d}.jpg"
                 if force_bg or not bg_path.exists():
@@ -268,8 +272,10 @@ def render_one(date: str, write: bool = True, force_bg: bool = False) -> int:
         style, accent = card_styles.auto_pick(item)
         picked = "자동"
     print(f"  스타일: {style} / 액센트: {accent} ({picked})")
+    item.setdefault("style", style); item.setdefault("accent", accent)
+    ai_bg = make_bg.ensure(item, ROOT / "images" / date, force=force_bg)
     outs = render_cards(cards, ROOT / "images" / date, seed=seed,
-                        style=style, accent=accent, force_bg=force_bg)
+                        style=style, accent=accent, force_bg=force_bg, bg_override=ai_bg)
 
     if write:
         item["images"] = [str(p.relative_to(ROOT)).replace("\\", "/") for p in outs]

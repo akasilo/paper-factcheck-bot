@@ -69,6 +69,11 @@ SYSTEM_PROMPT = """당신은 인스타그램 계정 @paper_factcheck 의 편집�
     없다면, 다른 필드 없이 `{"abort": true, "abort_reason": "<한 줄 이유>"}` 만 출력하세요.
     편집자는 다른 논문으로 넘어갑니다. 빈 껍데기 카드뉴스를 내보내는 것보다 그게 낫습니다.
 
+17. `image_prompt`: 카드 배경 사진을 만들 때 쓸 **영어 피사체 설명 한 문장(25단어 이내)**.
+    이 글의 제품(또는 물질이 쓰이는 대표 사물)을 브랜드 없이 일반적으로 묘사하세요. 분위기·조명·구도는
+    쓰지 말고 피사체만 (예: "a single matte black energy drink can with condensation on a dark table").
+    글자·로고·사람·손이 들어갈 만한 묘사는 피하세요.
+
 14. 카드 디자인을 이 글의 성격에 맞게 고릅니다.
     style — "geo": 위험·오염·수치 폭로처럼 경고 톤이 강한 글 (어두운 배경 + 격자·원호 그래픽).
             "paper": 괴담 반박·안전성 해명·"의외로 괜찮다"처럼 차분히 정리하는 글 (밝은 종이 배경 + 검은 글씨).
@@ -98,6 +103,7 @@ SYSTEM_PROMPT = """당신은 인스타그램 계정 @paper_factcheck 의 편집�
   "evidence_level": "meta-analysis|systematic review|review|rct|cohort|cross-sectional|experimental|animal|in-vitro|other",
   "style": "geo|paper|soft",
   "accent": "yellow|blue|green|orange|violet|red",
+  "image_prompt": "<영어 피사체 설명 한 문장>",
   "caveats": ["원고에 반영하지 못한 한계 1~3개"]
 }
 body_cards 는 3~5개."""
@@ -362,6 +368,7 @@ def build_item(item_id: str, topic: dict, paper: dict, draft: dict,
         "accent": draft.get("accent") if draft.get("accent") in card_styles.ACCENTS
                   else card_styles.DEFAULT_ACCENT,
         "product_hint": draft.get("product_hint") or topic.get("hint", ""),
+        "image_prompt": (draft.get("image_prompt") or "").strip(),
         "caveats": draft.get("caveats", []),
         "cards": cards,
         "images": [],
