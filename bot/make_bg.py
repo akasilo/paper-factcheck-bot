@@ -99,7 +99,7 @@ def _call_gemini(prompt: str, key: str, model: str) -> bytes:
     raise RuntimeError(f"응답에 이미지가 없음: {json.dumps(data)[:300]}")
 
 
-TRIM_BOTTOM = 0.08     # Gemini 앱이 오른쪽 아래에 찍는 워터마크(✦)를 잘라내는 비율
+TRIM_BOTTOM = 0.13     # Gemini 앱이 찍는 워터마크(✦, 높이 87~92% 지점·오른쪽)를 잘라내는 비율
 
 
 def _fit(raw: bytes) -> bytes:
