@@ -1,0 +1,80 @@
+{
+  "id": "2058-hair_dye",
+  "approved": false,
+  "link": "",
+  "topic": "hair_dye",
+  "topic_ko": "염색약",
+  "verdict": "bad",
+  "evidence_level": "other",
+  "source_text": "초록만",
+  "answer": "염색약을 쓴 사람은 PCD 위험이 보정 후 2.74배 높았고, 헤나 염색약은 7.02배까지 높아졌다는 결과였다.",
+  "style": "geo",
+  "accent": "violet",
+  "product_hint": "PPD·헤나 성분 무첨가, 저자극 표시가 있는 염색약",
+  "caveats": [
+    "후향적 환자-대조군 연구라 인과관계를 완전히 증명하지는 못함",
+    "염색약 성분별 세부 비교(PPD 등)는 제공되지 않음",
+    "자외선차단제 사용 차이는 없었으나 다른 혼란변수 가능성은 배제 못함"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "염색하고 나서\n목에 생긴 갈색 자국\n[[기미]]가 아니라\n{{피부염}}일 수도"
+    },
+    {
+      "type": "body",
+      "text": "목·얼굴에 갑자기 생기는 [[갈색·회색 얼룩]], 병명이 있어요. '색소성 접촉피부염(PCD)'이라는 드문 피부 질환이에요."
+    },
+    {
+      "type": "body",
+      "text": "한국 31개 대학병원, PCD 환자 1033명과 대조군 1366명을 비교했더니 염색약 쓴 사람의 위험이 더 높았어요. 보정 후 위험도 {{2.74배}}."
+    },
+    {
+      "type": "body",
+      "text": "헤나 염색약은 위험이 더 컸어요. 보정 후 위험도 [[7.02배]]. 접촉피부염을 앓았던 사람이 헤나를 쓰면 위험이 더 뚜렷했어요."
+    },
+    {
+      "type": "body",
+      "text": "PCD 환자 중 헤나 사용자의 접촉피부염 병력 비율은 17.23%, 다른 염색약 사용자는 11.55%였어요.",
+      "note": "※ 후향적 연구라 인과관계를 단정하긴 어려워요. 자외선차단제 사용엔 두 그룹 간 차이가 없었어요."
+    },
+    {
+      "type": "body",
+      "text": "염색 후 목·얼굴에 원인 모를 갈색 얼룩이 생기면 기미로 넘기지 말고 피부과에서 [[접촉피부염]] 여부를 확인해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Pigmented contact dermatitis and hair dyes: A retrospective case-control multicentre study in Korea.",
+        "journal": "Journal of the European Academy of Dermatology and Venereology : JEADV",
+        "year": "2023",
+        "doi": "10.1111/jdv.19395",
+        "authors": "Kim MS, Chung BY, Chang SE et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2058-hair_dye/01.jpg",
+    "images/2058-hair_dye/02.jpg",
+    "images/2058-hair_dye/03.jpg",
+    "images/2058-hair_dye/04.jpg",
+    "images/2058-hair_dye/05.jpg",
+    "images/2058-hair_dye/06.jpg",
+    "images/2058-hair_dye/07.jpg"
+  ],
+  "instagram_caption": "염색하고 나서 목에 생긴 갈색 얼룩, 기미인 줄 알았는데 사실은 피부염일 수도 있다는 연구 결과가 나왔어요.\n\n색소성 접촉피부염(PCD)은 목이나 얼굴에 갑자기 갈색·회색 색소가 생기는 드문 피부 질환이에요. 낮은 농도 알레르기 유발 물질에 반복 노출돼 생긴다는 가설이 있어요.\n\n한국 31개 대학병원에서 PCD 환자 1033명과 대조군 1366명을 비교한 연구에서, 염색약을 쓴 사람의 PCD 위험이 유의하게 높았어요. 여러 요인을 보정한 뒤에도 위험도는 2.74배였어요.\n\n특히 헤나 염색약은 위험이 더 컸어요. 보정 후 위험도가 7.02배에 달했고, 과거 접촉피부염을 앓은 적 있는 사람이 헤나를 쓰면 위험이 더 뚜렷하게 늘었어요(피부염 병력 비율 17.23% vs 11.55%).\n\n오늘의 행동: 염색 후 목이나 얼굴에 원인 모를 갈색 얼룩이 생겼다면 기미로 넘기지 말고 피부과에서 접촉피부염 여부를 확인해보세요. 헤나 염색약을 쓸 때, 특히 과거 피부염 병력이 있다면 더 신경 써서 관찰하는 게 좋아요.\n\n📄 출처: Kim MS, Chung BY, Chang SE et al., Journal of the European Academy of Dermatology and Venereology (2023). DOI 10.1111/jdv.19395\n\n#논문팩트체크 #paper_factcheck #염색약 #접촉피부염 #색소침착 #헤나염색 #피부건강 #피부트러블 #염색부작용 #헤나 #알레르기 #피부과 #기미 #피부질환\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "염색하고 나서 생긴 갈색 얼룩, 기미가 아니라 피부염일까?\n\n최근 한국 31개 대학병원에서 PCD 환자 1033명과 대조군 1366명을 비교한 연구가 나왔는데요, 염색약 쓴 사람이 피부염 위험이 2.74배 높았대요. 헤나는 더 심해서 7.02배였다고 해요. 예전에 피부염 앓았던 적 있으면 헤나 쓸 때 더 조심해야 할 것 같아요. 여러분은 염색 후 목에 얼룩 생긴 적 있나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Pigmented contact dermatitis and hair dyes: A retrospective case-control multicentre study in Korea.",
+    "journal": "Journal of the European Academy of Dermatology and Venereology : JEADV",
+    "year": "2023",
+    "doi": "10.1111/jdv.19395",
+    "pmid": "37528459",
+    "authors": "Kim MS, Chung BY, Chang SE et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37528459/"
+  },
+  "drafted_at": "2026-09-17T00:13:42.634379+09:00",
+  "model": "claude_code:default"
+}
