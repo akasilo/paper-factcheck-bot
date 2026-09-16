@@ -82,7 +82,7 @@
     "model": "claude_code:default",
     "approved_at": "2026-09-15T09:02:19.685558+09:00"
   },
-  "attempts": 1,
+  "attempts": 2,
   "errors": [
     {
       "instagram": "POST https://graph.instagram.com/v23.0/17841439785273944/media -> 400: {'error': {'message': 'Only photo or video can be accepted as media type.', 'type': 'OAuthException', 'code': 9004, 'error_subcode': 2207052, 'is_transient': False, 'error_user_title': \"Media download has failed. The media URI doesn't meet our requirements.\", 'error_user_msg': 'The media could not be fetched from this URI: https://raw.githubusercontent.com/akasilo/paper-factcheck-bot/main/images/2045-dark_chocolate/04.jpg.Please check the limitations section in our development document for more information: https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/media#creating', 'fbtrace_id': 'Az-8At0OrVSwQTyAnK8bhxR'}}"
@@ -91,5 +91,11 @@
   "threads_post_id": "18412890955153844",
   "threads_posted_at": "2026-09-17T08:03:14.796742+09:00",
   "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DdXa8Kglueq",
-  "threads_reply_id": "17935496571124021"
+  "threads_reply_id": "17935496571124021",
+  "instagram_post_id": "18125758849893488",
+  "instagram_posted_at": "2026-09-17T08:06:11.327152+09:00",
+  "verified": [
+    "instagram:오류였지만 올라감"
+  ],
+  "completed_at": "2026-09-17T08:06:11.328554+09:00"
 }
