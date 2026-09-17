@@ -8,7 +8,7 @@
 소리: Google Cloud Text-to-Speech (무료 등급: WaveNet/Neural2 월 100만 자).
   GOOGLE_TTS_API_KEY   필수 (없으면 --no-tts 처럼 무음으로 만든다)
   GOOGLE_TTS_VOICE     기본 ko-KR-Neural2-A  (여성 / -B 여성 / -C 남성, ko-KR-Wavenet-A~D 도 가능)
-  GOOGLE_TTS_RATE      기본 1.08 (말 빠르기)
+  GOOGLE_TTS_RATE      기본 1.15 (말 빠르기. 한국어는 1.2 까지 자연스럽다)
 
 화면: 카드(1080x1350)를 가운데 두고, 위아래 남는 띠는 같은 카드를 흐리게 키워서 깐다.
   각 카드는 그 카드 음성 길이 + PAD 초 만큼 머문다. 마지막 출처 카드는 짧게 한 줄만 읽는다.
@@ -41,7 +41,7 @@ FPS = 30
 PAD = 0.7            # 음성 끝나고 카드가 더 머무는 시간(초)
 SILENT_SEC = 4.0     # --no-tts 일 때 카드당 시간
 DEFAULT_VOICE = "ko-KR-Neural2-A"
-DEFAULT_RATE = "1.08"
+DEFAULT_RATE = "1.15"
 TTS_URL = "https://texttospeech.googleapis.com/v1/text:synthesize"
 
 
@@ -193,8 +193,14 @@ def is_current(item_id: str) -> bool:
         m = json.loads(meta.read_text(encoding="utf-8"))
     except Exception:
         return False
-    return m.get("cards") == _sha(imgs) and m.get("script") == _script_sha(script_for(item)) \
-        and bool(m.get("voice"))
+    want_voice = os.environ.get("GOOGLE_TTS_VOICE", "").strip() or DEFAULT_VOICE
+    want_rate = os.environ.get("GOOGLE_TTS_RATE", "").strip() or DEFAULT_RATE
+    return (m.get("cards") == _sha(imgs)
+            and m.get("script") == _script_sha(script_for(item))
+            and bool(m.get("voice"))
+            # 목소리·속도를 바꾸면 다시 만든다 (옛 기록엔 rate 가 없으니 있을 때만 비교)
+            and m.get("voice") == want_voice
+            and str(m.get("rate", want_rate)) == str(want_rate))
 
 
 def build(item_id: str, use_tts: bool = True, force: bool = False) -> Path | None:
@@ -252,7 +258,8 @@ def build(item_id: str, use_tts: bool = True, force: bool = False) -> Path | Non
             print(f"  카드 {i}/{len(imgs)} → {seconds:.1f}초")
         concat(parts, final)
     meta.write_text(json.dumps({"cards": _sha(imgs), "script": _script_sha(lines),
-                                "voice": voice if use_tts else "", "seconds": round(total, 1)},
+                                "voice": voice if use_tts else "", "rate": rate,
+                                "seconds": round(total, 1)},
                                ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"완성: {final.relative_to(ROOT)} ({total:.0f}초, {final.stat().st_size // 1024} KB)")
     return final
