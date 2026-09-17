@@ -73,8 +73,14 @@ def ig_wait_container(container_id: str, token: str, timeout: int = CONTAINER_PO
 
 
 def ig_publish_carousel(ig_user_id: str, token: str,
-                        image_urls: Iterable[str], caption: str) -> str:
-    """이미지 여러 장을 캐러셀로 게시하고 게시물 ID 를 돌려준다."""
+                        image_urls: Iterable[str], caption: str,
+                        is_ai_generated: bool = False) -> str:
+    """이미지 여러 장을 캐러셀로 게시하고 게시물 ID 를 돌려준다.
+
+    is_ai_generated=True 면 인스타의 'AI 정보' 라벨이 붙는다. 메타 문서상 이 값은
+    **캐러셀 컨테이너에만** 넣어야 하고 하위 아이템에 넣으면 오류가 난다.
+    게시 뒤에는 붙이거나 뗄 수 없다.
+    """
     image_urls = list(image_urls)
     if not 2 <= len(image_urls) <= 10:
         raise MetaApiError(f"인스타 캐러셀은 2~10장이어야 합니다 (현재 {len(image_urls)}장)")
@@ -93,12 +99,15 @@ def ig_publish_carousel(ig_user_id: str, token: str,
         ig_wait_container(cid, token)
 
     log.info("IG 캐러셀 컨테이너 생성 (children=%d)", len(children))
-    carousel = _post(f"{IG_GRAPH}/{ig_user_id}/media", {
+    carousel_data = {
         "media_type": "CAROUSEL",
         "children": ",".join(children),
         "caption": caption,
         "access_token": token,
-    })
+    }
+    if is_ai_generated:
+        carousel_data["is_ai_generated"] = "true"
+    carousel = _post(f"{IG_GRAPH}/{ig_user_id}/media", carousel_data)
     ig_wait_container(carousel["id"], token)
 
     log.info("IG 게시 요청")
@@ -110,21 +119,25 @@ def ig_publish_carousel(ig_user_id: str, token: str,
 
 
 def ig_publish_reel(ig_user_id: str, token: str, video_url: str, caption: str,
-                    share_to_feed: bool = False) -> str:
+                    share_to_feed: bool = False, is_ai_generated: bool = False) -> str:
     """세로 동영상을 릴스로 게시 → 게시물 ID.
 
     share_to_feed=False 면 프로필 그리드·홈 피드에는 안 뜨고 릴스 탭에만 뜬다
     (피드에는 같은 글의 카드 캐러셀이 따로 올라가므로 기본은 False).
     동영상은 공개 URL 의 MP4(H.264/AAC, 9:16) 여야 하고 서버 변환을 기다려야 한다.
+    is_ai_generated=True 면 인스타의 'AI 정보' 라벨이 붙는다 (게시 뒤에는 못 바꾼다).
     """
     log.info("IG 릴스 컨테이너 생성: %s", video_url)
-    res = _post(f"{IG_GRAPH}/{ig_user_id}/media", {
+    reel_data = {
         "media_type": "REELS",
         "video_url": video_url,
         "caption": caption,
         "share_to_feed": "true" if share_to_feed else "false",
         "access_token": token,
-    })
+    }
+    if is_ai_generated:
+        reel_data["is_ai_generated"] = "true"
+    res = _post(f"{IG_GRAPH}/{ig_user_id}/media", reel_data)
     ig_wait_container(res["id"], token, timeout=VIDEO_POLL_TIMEOUT)
     log.info("IG 릴스 게시 요청")
     published = _post(f"{IG_GRAPH}/{ig_user_id}/media_publish", {
@@ -135,13 +148,17 @@ def ig_publish_reel(ig_user_id: str, token: str, video_url: str, caption: str,
 
 
 def ig_publish_single_image(ig_user_id: str, token: str,
-                            image_url: str, caption: str) -> str:
+                            image_url: str, caption: str,
+                            is_ai_generated: bool = False) -> str:
     """이미지 한 장 게시 (테스트용)."""
-    res = _post(f"{IG_GRAPH}/{ig_user_id}/media", {
+    data = {
         "image_url": image_url,
         "caption": caption,
         "access_token": token,
-    })
+    }
+    if is_ai_generated:
+        data["is_ai_generated"] = "true"
+    res = _post(f"{IG_GRAPH}/{ig_user_id}/media", data)
     ig_wait_container(res["id"], token)
     published = _post(f"{IG_GRAPH}/{ig_user_id}/media_publish", {
         "creation_id": res["id"],

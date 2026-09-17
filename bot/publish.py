@@ -4,7 +4,7 @@
 동작 순서
   1. 오늘 날짜(KST) 큐 파일을 찾는다. 없으면 오늘 이전 날짜 중 가장 오래된 승인 항목을 쓴다.
   2. approved == true 이고 추천 링크가 있어야만 게시한다. (아니면 아무것도 안 하고 종료)
-  3. 인스타 캐러셀 게시 → (images/<id>/short.mp4 가 있으면) 인스타 릴스 게시
+  3. 인스타 캐러셀 게시(AI 정보 라벨 포함) → (images/<id>/short.mp4 가 있으면) 인스타 릴스 게시
      → Threads 캐러셀 게시(첫 장 = 그 동영상, 이어서 카드 사진) → Threads 게시물에 추천 링크 답글.
   4. 결과를 posted/YYYY-MM-DD.json 에 기록하고 큐 파일은 삭제한다.
      (단계마다 바로 기록하므로 중간에 실패해도 재실행 시 이미 올린 건 건너뛴다)
@@ -175,6 +175,13 @@ def reel_share_to_feed() -> bool:
     return os.environ.get("IG_REEL_SHARE_TO_FEED", "").strip().lower() in ("1", "true", "yes")
 
 
+def ai_label() -> bool:
+    """인스타 'AI 정보' 라벨을 붙일지. 기본 True — 카드·배경·원고가 AI 로 만들어지므로 자기 공개한다.
+    끄려면 IG_AI_LABEL 을 false/0/no 로 둔다. (게시 뒤에는 붙이거나 뗄 수 없다)
+    """
+    return os.environ.get("IG_AI_LABEL", "").strip().lower() not in ("0", "false", "no")
+
+
 def validate(item: dict, image_urls: list[str], *, allow_no_link: bool) -> list[str]:
     problems = []
     if item.get("approved") is not True:
@@ -279,7 +286,8 @@ def main() -> int:
     video_url = resolve_video_url(item)
 
     log.info("이미지 %d장: %s", len(image_urls), image_urls)
-    log.info("동영상: %s", video_url or "없음 (사진만)")
+    log.info("동영상: %s / 인스타 AI 라벨: %s", video_url or "없음 (사진만)",
+             "붙임" if ai_label() else "안 붙임")
     log.info("인스타 캡션 %d자 / Threads 본문 %d자 / 답글 %s",
              len(item["instagram_caption"]), len(item["threads_text"]),
              f"{len(reply_text)}자" if reply_text else "없음")
@@ -338,7 +346,8 @@ def main() -> int:
                 save_json(result_path, result)
             else:
                 try:
-                    post_id = meta_api.ig_publish_carousel(ig_user, ig_token, image_urls, cap)
+                    post_id = meta_api.ig_publish_carousel(ig_user, ig_token, image_urls, cap,
+                                                           is_ai_generated=ai_label())
                     result["instagram_post_id"] = post_id
                     result["instagram_posted_at"] = datetime.now(KST).isoformat()
                     save_json(result_path, result)
@@ -369,7 +378,8 @@ def main() -> int:
             else:
                 try:
                     reel_id = meta_api.ig_publish_reel(ig_user, ig_token, video_url, cap,
-                                                       share_to_feed=reel_share_to_feed())
+                                                       share_to_feed=reel_share_to_feed(),
+                                                       is_ai_generated=ai_label())
                     result["instagram_reel_id"] = reel_id
                     result["instagram_reel_posted_at"] = datetime.now(KST).isoformat()
                     save_json(result_path, result)
