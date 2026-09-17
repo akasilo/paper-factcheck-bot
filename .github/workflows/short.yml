@@ -1,0 +1,56 @@
+name: short
+
+# 카드뉴스 한 건을 세로 숏폼(1080x1920, TTS 낭독)으로 만들어 images/<id>/short.mp4 에 커밋한다.
+#  - Actions 탭에서 큐 id 를 넣어 수동 실행 (이미 게시돼 큐에서 지워진 글도 posted/ 기록으로 만든다)
+#  - 소리: Google Cloud Text-to-Speech (secrets.GOOGLE_TTS_API_KEY, 없으면 무음)
+#  - 목소리 바꾸기: 저장소 Variables 에 GOOGLE_TTS_VOICE (예: ko-KR-Neural2-C)
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "큐 id (예: 2046-energy_drink)"
+        required: true
+      force:
+        description: "이미 있어도 다시 만들기 (TTS 도 다시 → 글자 수 소모)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: short
+  cancel-in-progress: false
+
+jobs:
+  short:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: Asia/Seoul
+      GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+      GOOGLE_TTS_VOICE: ${{ vars.GOOGLE_TTS_VOICE }}
+      GOOGLE_TTS_RATE: ${{ vars.GOOGLE_TTS_RATE }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: |
+          pip install requests
+          ffmpeg -version | head -1
+
+      - name: Build short
+        run: |
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            python bot/make_short.py --id "${{ github.event.inputs.id }}" --force
+          else
+            python bot/make_short.py --id "${{ github.event.inputs.id }}"
+          fi
+
+      - name: Commit video
+        run: |
+          bash bot/commit_push.sh "short: ${{ github.event.inputs.id }} [skip ci]" images
