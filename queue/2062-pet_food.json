@@ -1,0 +1,81 @@
+{
+  "id": "2062-pet_food",
+  "approved": false,
+  "link": "",
+  "topic": "pet_food",
+  "topic_ko": "반려동물 사료",
+  "verdict": "mixed",
+  "evidence_level": "review",
+  "source_text": "PMC12291746 전문",
+  "answer": "미국 FDA가 2014~2019년 확인한 심장병(DCM) 524건 중 다수가 그레인프리 사료 섭취와 관련 있었고, 특히 콩류 비중이 높은 사료에서 그 연관 가능성이 이 리뷰에서 지적됐다.",
+  "style": "geo",
+  "accent": "red",
+  "product_hint": "곡물 유무보다 AAFCO/FEDIAF 영양 기준을 충족했다고 표시되고 콩류 비중이 과도하지 않은 사료",
+  "image_prompt": "a bowl of plain dry pet food kibble on a wooden floor with a blurred bag of pet food in the background",
+  "caveats": [
+    "여러 연구를 종합한 리뷰 논문으로, 그레인프리 식단과 DCM 사이의 직접적 인과관계를 증명한 것은 아님",
+    "상업용 그레인프리 사료의 영양 성분은 제조사·지역에 따라 편차가 커서 모든 제품에 일반화하기 어려움",
+    "DCM 연관성 논의는 주로 개(dog) 대상이며, 고양이에 대한 구체적 심장질환 수치는 제시되지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "그레인프리 사료\n[[건강식]]이라는\n믿음, {{심장병}}\n위험은 없을까?"
+    },
+    {
+      "type": "body",
+      "text": "그레인프리 사료는 밀·보리·쌀 같은 곡물을 빼고 콩류나 감자로 탄수화물을 채운 제품이에요. '더 자연스럽다'는 이미지로 인기를 끌어왔죠."
+    },
+    {
+      "type": "body",
+      "text": "이 리뷰에 따르면 그레인프리 사료는 [[혈당 조절]]에 도움되고 곰팡이독소 노출은 줄이며 기호성도 좋아질 수 있다는 보고가 있어요."
+    },
+    {
+      "type": "body",
+      "text": "미국 FDA는 2014~2019년 심장병(DCM) 524건을 확인했고 124마리가 숨졌어요. 이 리뷰는 [[콩류 많은]] 그레인프리 사료에서 {{DCM 연관 가능성}}을 지적해요."
+    },
+    {
+      "type": "body",
+      "text": "그레인프리라고 알레르기 위험이 줄어드는 것도 아니에요. 이 리뷰는 곡물 유무가 알레르기 예방과는 무관하다고 밝혔어요. 곡물·글루텐에 민감한 개체에게만 의미가 있어요.",
+      "note": "※ 리뷰 논문이라 그레인프리-심장병 인과관계는 아직 확정된 것은 아니에요."
+    },
+    {
+      "type": "body",
+      "text": "사료 봉지의 '그레인프리' 문구보다 [[AAFCO/FEDIAF 기준]] 충족 여부와 성분표를 먼저 확인해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Grain-Free Diets for Dogs and Cats: An Updated Review Focusing on Nutritional Effects and Health Considerations.",
+        "journal": "Animals : an open access journal from MDPI",
+        "year": "2025",
+        "doi": "10.3390/ani15142020",
+        "authors": "Zhang J, Ji Y, Yang Y et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2062-pet_food/01.jpg",
+    "images/2062-pet_food/02.jpg",
+    "images/2062-pet_food/03.jpg",
+    "images/2062-pet_food/04.jpg",
+    "images/2062-pet_food/05.jpg",
+    "images/2062-pet_food/06.jpg",
+    "images/2062-pet_food/07.jpg"
+  ],
+  "instagram_caption": "그레인프리 사료, 정말 더 건강할까요?\n\n곡물을 뺀 그레인프리 사료는 '더 자연스럽고 알레르기에 안전하다'는 이미지로 인기를 끌어왔어요. 최근 리뷰 논문이 이 통념을 다시 들여다봤습니다.\n\n실제로 그레인프리 사료는 혈당 조절에 도움되고 곰팡이독소 노출을 줄이며 기호성이 좋아질 수 있다는 보고가 있어요.\n\n하지만 미국 FDA가 2014~2019년 확인한 심장병(확장성 심근병증·DCM) 사례 524건 중 다수가 그레인프리 사료 섭취와 관련 있었고, 124마리가 숨졌습니다. 이 리뷰는 특히 콩류 비중이 높은 그레인프리 사료에서 DCM 연관 가능성을 짚었어요.\n\n또한 곡물이 없다고 알레르기 위험이 줄어드는 것도 아니었어요. 곡물·글루텐에 민감한 개체에게만 의미가 있는 선택이라고 해요.\n\n오늘은 사료 봉지의 '그레인프리' 문구보다 영양 기준(AAFCO/FEDIAF) 충족 여부와 성분표를 먼저 확인해보세요.\n\n📄 출처: Zhang J, Ji Y, Yang Y et al., Animals (2025). DOI 10.3390/ani15142020\n\n#논문팩트체크 #paper_factcheck #반려동물 #강아지사료 #그레인프리 #펫푸드 #심장질환 #DCM #반려견건강 #고양이사료 #사료성분표 #펫케어\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "그레인프리 사료, 심장병 위험 있을까?\n\n곡물 빼고 콩·감자로 채운 사료, 더 건강하다고 믿었는데... 최근 리뷰 논문을 보니 미국 FDA가 2014~2019년 심장병(DCM) 524건을 확인했고 그중 상당수가 그레인프리 사료와 관련 있었대요. 124마리는 목숨을 잃었고요. 다만 혈당 조절이나 곰팡이독소 노출 감소 같은 장점도 있다고 하네요. 알레르기 예방 효과는 곡물 유무와 상관없었고요. 여러분 댁 아이 사료, '그레인프리'만 보고 고르진 않으셨나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Grain-Free Diets for Dogs and Cats: An Updated Review Focusing on Nutritional Effects and Health Considerations.",
+    "journal": "Animals : an open access journal from MDPI",
+    "year": "2025",
+    "doi": "10.3390/ani15142020",
+    "pmid": "40723483",
+    "authors": "Zhang J, Ji Y, Yang Y et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40723483/"
+  },
+  "drafted_at": "2026-09-18T00:23:27.746395+09:00",
+  "model": "claude_code:default"
+}
