@@ -3,6 +3,7 @@
   python bot/make_short.py --id 2046-energy_drink            # images/<id>/short.mp4
   python bot/make_short.py --id 2046-energy_drink --no-tts   # 음성 없이(무음, 카드당 4초) 조립만 — 로컬 시험용
   python bot/make_short.py --id 2046-energy_drink --script   # 읽을 대본만 출력
+  python bot/make_short.py --auto                            # 큐 전체: 영상이 없거나 카드·대본이 바뀐 것만 (render 뒤 자동)
 
 소리: Google Cloud Text-to-Speech (무료 등급: WaveNet/Neural2 월 100만 자).
   GOOGLE_TTS_API_KEY   필수 (없으면 --no-tts 처럼 무음으로 만든다)
@@ -13,12 +14,15 @@
   각 카드는 그 카드 음성 길이 + PAD 초 만큼 머문다. 마지막 출처 카드는 짧게 한 줄만 읽는다.
   ffmpeg 가 PATH 에 있어야 한다 (GitHub 러너에는 기본 설치).
 
-만든 mp3 는 images/<id>/tts/NN.mp3 로 남겨 두고, 있으면 다시 만들지 않는다 (글자 수 아끼기).
+만든 mp3 는 images/<id>/tts/NN.mp3 (+ NN.txt: 문장·목소리 도장) 로 남겨 두고, 같은 문장이면 다시 만들지 않는다
+(글자 수 아끼기). images/<id>/short.json 에 카드·대본 해시를 적어 두어, 배경을 바꿔 다시 렌더하면 영상만 다시
+조립하고 TTS 는 그대로 쓴다. 게시(publish.py)는 이 short.mp4 를 인스타 릴스 + Threads 첫 장으로 올린다.
 """
 from __future__ import annotations
 
 import argparse
 import base64
+import hashlib
 import json
 import os
 import re
@@ -134,7 +138,7 @@ def segment(card: Path, audio: Path | None, seconds: float, out: Path) -> None:
     cmd += ["-filter_complex", vf + ";" + af, "-map", "[v]", "-map", "[a]",
             "-t", f"{seconds:.2f}", "-r", str(FPS),
             "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
-            "-c:a", "aac", "-b:a", "128k", "-ar", "24000", "-movflags", "+faststart", str(out)]
+            "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-movflags", "+faststart", str(out)]
     subprocess.run(cmd, check=True)
 
 
@@ -164,6 +168,35 @@ def load_item(item_id: str) -> dict | None:
     return None
 
 
+def _sha(paths: list[Path]) -> str:
+    h = hashlib.sha1()
+    for p in paths:
+        h.update(p.read_bytes())
+    return h.hexdigest()[:16]
+
+
+def _script_sha(lines: list[str]) -> str:
+    return hashlib.sha1("\n".join(lines).encode("utf-8")).hexdigest()[:16]
+
+
+def is_current(item_id: str) -> bool:
+    """short.mp4 가 있고, 만들 때의 카드·대본과 지금 것이 같으면 True."""
+    item = load_item(item_id)
+    if not item:
+        return False
+    imgs = [ROOT / p for p in (item.get("images") or [])]
+    out_dir = IMAGES / item_id
+    final, meta = out_dir / "short.mp4", out_dir / "short.json"
+    if not final.exists() or not meta.exists() or not imgs or any(not p.exists() for p in imgs):
+        return False
+    try:
+        m = json.loads(meta.read_text(encoding="utf-8"))
+    except Exception:
+        return False
+    return m.get("cards") == _sha(imgs) and m.get("script") == _script_sha(script_for(item)) \
+        and bool(m.get("voice"))
+
+
 def build(item_id: str, use_tts: bool = True, force: bool = False) -> Path | None:
     item = load_item(item_id)
     if not item:
@@ -179,9 +212,9 @@ def build(item_id: str, use_tts: bool = True, force: bool = False) -> Path | Non
         return None
 
     out_dir = IMAGES / item_id
-    final = out_dir / "short.mp4"
-    if final.exists() and not force:
-        print(f"이미 있음: {final.relative_to(ROOT)}")
+    final, meta = out_dir / "short.mp4", out_dir / "short.json"
+    if not force and is_current(item_id):
+        print(f"이미 최신: {final.relative_to(ROOT)}")
         return final
 
     key = os.environ.get("GOOGLE_TTS_API_KEY", "").strip()
@@ -202,8 +235,12 @@ def build(item_id: str, use_tts: bool = True, force: bool = False) -> Path | Non
             audio = None
             if use_tts:
                 audio = tts_dir / f"{i:02d}.mp3"
-                if not audio.exists() or force:
+                stamp = tts_dir / f"{i:02d}.txt"        # 이 mp3 가 어떤 문장·목소리로 만든 것인지
+                want = f"{voice}|{rate}|{line}"
+                have = stamp.read_text(encoding="utf-8") if stamp.exists() else ""
+                if not audio.exists() or have != want:
                     tts(line, audio, key, voice, rate)
+                    stamp.write_text(want, encoding="utf-8")
                     print(f"  TTS {i}/{len(lines)}: {len(line)}자")
                 seconds = duration_of(audio) + PAD
             else:
@@ -214,13 +251,39 @@ def build(item_id: str, use_tts: bool = True, force: bool = False) -> Path | Non
             total += seconds
             print(f"  카드 {i}/{len(imgs)} → {seconds:.1f}초")
         concat(parts, final)
+    meta.write_text(json.dumps({"cards": _sha(imgs), "script": _script_sha(lines),
+                                "voice": voice if use_tts else "", "seconds": round(total, 1)},
+                               ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"완성: {final.relative_to(ROOT)} ({total:.0f}초, {final.stat().st_size // 1024} KB)")
     return final
 
 
+def build_auto(use_tts: bool = True) -> int:
+    """큐의 모든 항목 중 카드는 있는데 영상이 없거나 낡은 것을 만든다 (render 뒤에 돌린다)."""
+    rc = 0
+    ids = sorted(p.stem for p in QUEUE.glob("*.json") if not p.name.startswith("_"))
+    todo = [i for i in ids if not is_current(i)]
+    if not todo:
+        print("만들 영상 없음 (전부 최신)")
+        return 0
+    for item_id in todo:
+        item = load_item(item_id) or {}
+        if not item.get("images"):
+            continue
+        print(f"== {item_id}")
+        try:
+            if not build(item_id, use_tts=use_tts):
+                rc = 1
+        except Exception as e:                    # noqa: BLE001 — 한 건이 죽어도 다음 건은 만든다
+            print(f"  실패: {str(e)[:200]}", file=sys.stderr)
+            rc = 1
+    return rc
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--id", required=True, help="큐 id (예: 2046-energy_drink)")
+    ap.add_argument("--id", help="큐 id (예: 2046-energy_drink)")
+    ap.add_argument("--auto", action="store_true", help="큐 전체에서 영상이 없거나 낡은 것만 만들기")
     ap.add_argument("--no-tts", action="store_true", help="음성 없이 조립만")
     ap.add_argument("--script", action="store_true", help="대본만 출력")
     ap.add_argument("--force", action="store_true", help="있어도 다시 만들기 (TTS 도 다시)")
@@ -236,6 +299,10 @@ def main() -> int:
     if not shutil.which("ffmpeg"):
         print("ffmpeg 가 없습니다", file=sys.stderr)
         return 1
+    if a.auto:
+        return build_auto(use_tts=not a.no_tts)
+    if not a.id:
+        ap.error("--id 또는 --auto 가 필요합니다")
     return 0 if build(a.id, use_tts=not a.no_tts, force=a.force) else 1
 
 

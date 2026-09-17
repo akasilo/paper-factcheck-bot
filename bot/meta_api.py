@@ -23,6 +23,7 @@ TH_GRAPH = "https://graph.threads.net/v1.0"
 # 컨테이너가 처리(이미지 다운로드·검증)되길 기다리는 시간
 CONTAINER_POLL_INTERVAL = 5     # 초
 CONTAINER_POLL_TIMEOUT = 180    # 초
+VIDEO_POLL_TIMEOUT = 600        # 초 — 동영상(릴스·Threads 비디오)은 서버 쪽 변환이 있어 더 오래 걸린다
 
 
 class MetaApiError(RuntimeError):
@@ -55,9 +56,9 @@ def _get(url: str, params: dict, *, timeout: int = 60) -> dict:
 # Instagram
 # ---------------------------------------------------------------------------
 
-def ig_wait_container(container_id: str, token: str) -> None:
-    """캐러셀/이미지 컨테이너가 FINISHED 될 때까지 대기."""
-    deadline = time.time() + CONTAINER_POLL_TIMEOUT
+def ig_wait_container(container_id: str, token: str, timeout: int = CONTAINER_POLL_TIMEOUT) -> None:
+    """캐러셀/이미지/릴스 컨테이너가 FINISHED 될 때까지 대기."""
+    deadline = time.time() + timeout
     while True:
         info = _get(f"{IG_GRAPH}/{container_id}",
                     {"fields": "status_code,status", "access_token": token})
@@ -108,6 +109,31 @@ def ig_publish_carousel(ig_user_id: str, token: str,
     return published["id"]
 
 
+def ig_publish_reel(ig_user_id: str, token: str, video_url: str, caption: str,
+                    share_to_feed: bool = False) -> str:
+    """세로 동영상을 릴스로 게시 → 게시물 ID.
+
+    share_to_feed=False 면 프로필 그리드·홈 피드에는 안 뜨고 릴스 탭에만 뜬다
+    (피드에는 같은 글의 카드 캐러셀이 따로 올라가므로 기본은 False).
+    동영상은 공개 URL 의 MP4(H.264/AAC, 9:16) 여야 하고 서버 변환을 기다려야 한다.
+    """
+    log.info("IG 릴스 컨테이너 생성: %s", video_url)
+    res = _post(f"{IG_GRAPH}/{ig_user_id}/media", {
+        "media_type": "REELS",
+        "video_url": video_url,
+        "caption": caption,
+        "share_to_feed": "true" if share_to_feed else "false",
+        "access_token": token,
+    })
+    ig_wait_container(res["id"], token, timeout=VIDEO_POLL_TIMEOUT)
+    log.info("IG 릴스 게시 요청")
+    published = _post(f"{IG_GRAPH}/{ig_user_id}/media_publish", {
+        "creation_id": res["id"],
+        "access_token": token,
+    })
+    return published["id"]
+
+
 def ig_publish_single_image(ig_user_id: str, token: str,
                             image_url: str, caption: str) -> str:
     """이미지 한 장 게시 (테스트용)."""
@@ -139,19 +165,30 @@ def caption_key(text: str, n: int = 60) -> str:
 
 def ig_recent_media(ig_user_id: str, token: str, limit: int = 12) -> list[dict]:
     res = _get(f"{IG_GRAPH}/{ig_user_id}/media",
-               {"fields": "id,caption,timestamp", "limit": limit, "access_token": token})
+               {"fields": "id,caption,timestamp,media_type,media_product_type",
+                "limit": limit, "access_token": token})
     return res.get("data", []) or []
 
 
 def ig_find_posted(ig_user_id: str, token: str, caption: str,
-                   limit: int = 12) -> str | None:
-    """같은 캡션의 글이 이미 계정에 있으면 그 id. 없으면 None."""
+                   limit: int = 12, kind: str | None = None) -> str | None:
+    """같은 캡션의 글이 이미 계정에 있으면 그 id. 없으면 None.
+
+    kind: "feed" → 캐러셀/사진(media_product_type FEED), "reel" → 릴스(REELS), None → 아무거나.
+    같은 글이 캐러셀과 릴스로 둘 다 올라가므로(캡션 동일) 어느 쪽을 찾는지 구분해야 한다.
+    """
     key = caption_key(caption)
     if not key:
         return None
     for m in ig_recent_media(ig_user_id, token, limit):
-        if caption_key(m.get("caption", "")) == key:
-            return str(m.get("id"))
+        if caption_key(m.get("caption", "")) != key:
+            continue
+        product = str(m.get("media_product_type") or "").upper()
+        if kind == "reel" and product != "REELS":
+            continue
+        if kind == "feed" and product == "REELS":
+            continue
+        return str(m.get("id"))
     return None
 
 
@@ -192,8 +229,8 @@ def ig_me(token: str) -> dict:
 # Threads
 # ---------------------------------------------------------------------------
 
-def th_wait_container(container_id: str, token: str) -> None:
-    deadline = time.time() + CONTAINER_POLL_TIMEOUT
+def th_wait_container(container_id: str, token: str, timeout: int = CONTAINER_POLL_TIMEOUT) -> None:
+    deadline = time.time() + timeout
     while True:
         info = _get(f"{TH_GRAPH}/{container_id}",
                     {"fields": "status,error_message", "access_token": token})
@@ -208,17 +245,37 @@ def th_wait_container(container_id: str, token: str) -> None:
 
 
 def th_publish_carousel(th_user_id: str, token: str,
-                        image_urls: Iterable[str], text: str) -> str:
-    """Threads 캐러셀 게시 → 게시물 ID."""
+                        image_urls: Iterable[str], text: str,
+                        lead_video_url: str | None = None) -> str:
+    """Threads 캐러셀 게시 → 게시물 ID.
+
+    lead_video_url 이 있으면 첫 장은 그 동영상, 이어서 사진들. 동영상 컨테이너가 변환에
+    실패하면(ERROR/시간 초과) 그 장만 빼고 사진 캐러셀로 올린다 — 게시 자체는 막지 않는다.
+    """
     image_urls = list(image_urls)
-    if not 2 <= len(image_urls) <= 20:
-        raise MetaApiError(f"Threads 캐러셀은 2~20장이어야 합니다 (현재 {len(image_urls)}장)")
+    total = len(image_urls) + (1 if lead_video_url else 0)
+    if not 2 <= total <= 20:
+        raise MetaApiError(f"Threads 캐러셀은 2~20장이어야 합니다 (현재 {total}장)")
     if len(text) > 500:
         raise MetaApiError(f"Threads 본문은 500자 이하여야 합니다 (현재 {len(text)}자)")
 
     children = []
+    video_cid = None
+    if lead_video_url:
+        log.info("Threads 동영상 아이템 컨테이너 생성 1/%d: %s", total, lead_video_url)
+        try:
+            res = _post(f"{TH_GRAPH}/{th_user_id}/threads", {
+                "media_type": "VIDEO",
+                "video_url": lead_video_url,
+                "is_carousel_item": "true",
+                "access_token": token,
+            })
+            video_cid = res["id"]
+        except MetaApiError as e:
+            log.warning("Threads 동영상 컨테이너 생성 실패 — 사진만 올립니다: %s", e)
+
     for i, url in enumerate(image_urls, 1):
-        log.info("Threads 아이템 컨테이너 생성 %d/%d: %s", i, len(image_urls), url)
+        log.info("Threads 아이템 컨테이너 생성 %d/%d: %s", i + (1 if video_cid else 0), total, url)
         res = _post(f"{TH_GRAPH}/{th_user_id}/threads", {
             "media_type": "IMAGE",
             "image_url": url,
@@ -229,6 +286,12 @@ def th_publish_carousel(th_user_id: str, token: str,
 
     for cid in children:
         th_wait_container(cid, token)
+    if video_cid:
+        try:
+            th_wait_container(video_cid, token, timeout=VIDEO_POLL_TIMEOUT)
+            children.insert(0, video_cid)
+        except MetaApiError as e:
+            log.warning("Threads 동영상 변환 실패 — 사진만 올립니다: %s", e)
 
     log.info("Threads 캐러셀 컨테이너 생성 (children=%d)", len(children))
     carousel = _post(f"{TH_GRAPH}/{th_user_id}/threads", {

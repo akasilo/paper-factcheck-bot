@@ -4,7 +4,8 @@
 동작 순서
   1. 오늘 날짜(KST) 큐 파일을 찾는다. 없으면 오늘 이전 날짜 중 가장 오래된 승인 항목을 쓴다.
   2. approved == true 이고 추천 링크가 있어야만 게시한다. (아니면 아무것도 안 하고 종료)
-  3. 인스타 캐러셀 게시 → Threads 캐러셀 게시 → Threads 게시물에 추천 링크 답글.
+  3. 인스타 캐러셀 게시 → (images/<id>/short.mp4 가 있으면) 인스타 릴스 게시
+     → Threads 캐러셀 게시(첫 장 = 그 동영상, 이어서 카드 사진) → Threads 게시물에 추천 링크 답글.
   4. 결과를 posted/YYYY-MM-DD.json 에 기록하고 큐 파일은 삭제한다.
      (단계마다 바로 기록하므로 중간에 실패해도 재실행 시 이미 올린 건 건너뛴다)
 
@@ -111,6 +112,7 @@ def prior_posts(item_id: str, exclude: Path | None = None) -> dict:
         if str((rec.get("queue") or {}).get("id", "")) != str(item_id):
             continue
         for k in ("instagram_post_id", "instagram_posted_at",
+                  "instagram_reel_id", "instagram_reel_posted_at",
                   "threads_post_id", "threads_posted_at",
                   "threads_permalink", "threads_reply_id"):
             if rec.get(k):
@@ -147,6 +149,30 @@ def resolve_image_urls(item: dict) -> list[str]:
         raise SystemExit("image_urls 가 없고 IMAGE_BASE_URL 도 설정되지 않았습니다.")
     base = base.rstrip("/") + "/"
     return [base + rel.lstrip("/") for rel in item.get("images", [])]
+
+
+SHORT_NAME = "short.mp4"      # make_short.py 가 만드는 세로 낭독 영상 (images/<id>/short.mp4)
+
+
+def resolve_video_url(item: dict) -> str | None:
+    """images/<id>/short.mp4 가 저장소에 있으면 그 공개 URL. 없으면 None (사진만 올린다)."""
+    if item.get("video_url"):
+        return str(item["video_url"])
+    imgs = item.get("images") or []
+    if not imgs:
+        return None
+    rel = str(Path(imgs[0]).parent / SHORT_NAME).replace("\\", "/")
+    if not (ROOT / rel).exists():
+        return None
+    base = env("IMAGE_BASE_URL", required=False) or item.get("image_base_url", "")
+    if not base:
+        return None
+    return base.rstrip("/") + "/" + rel.lstrip("/")
+
+
+def reel_share_to_feed() -> bool:
+    """릴스를 프로필 그리드·홈 피드에도 보일지. 기본 False (피드에는 카드 캐러셀이 따로 올라간다)."""
+    return os.environ.get("IG_REEL_SHARE_TO_FEED", "").strip().lower() in ("1", "true", "yes")
 
 
 def validate(item: dict, image_urls: list[str], *, allow_no_link: bool) -> list[str]:
@@ -211,13 +237,27 @@ def main() -> int:
         slot = current_slot(args.slots) or "manual"
     log.info("슬롯: %s", slot)          # 일찍 찍어둬야 중간에 끝나도 어느 몫이었는지 보인다
 
-    qpath = pick_queue_item(args.date)
-    if not qpath:
-        log.info("게시할 큐 항목이 없습니다 (date=%s). 종료.", args.date)
-        return 0
-    item = load_json(qpath)
     date = args.date                     # 기록 파일은 '실제 올린 날짜'로 남긴다
-    log.info("큐 항목: %s (%s)", qpath.name, item.get("topic_ko", ""))
+
+    # 이 슬롯에 덜 끝난 기록이 있으면 '그 글'을 이어서 올린다. 큐 파일은 캐러셀·Threads 가
+    # 끝난 시점에 이미 지워졌을 수 있어서, 새로 고르면 다음 글이 같은 슬롯에 또 나간다.
+    # (릴스·답글만 남은 재시도가 대표적. --again 은 일부러 새 글을 올리는 것이므로 제외)
+    item = None
+    qpath: Path | None = None
+    pending_path = POSTED_DIR / f"{date}-{slot}.json"
+    if not args.again and pending_path.exists():
+        prev = load_json(pending_path)
+        if not prev.get("completed_at") and prev.get("queue"):
+            item = prev["queue"]
+            qpath = QUEUE_DIR / f"{item.get('id', '')}.json"
+            log.info("덜 끝난 글을 이어서 올립니다: %s (%s)", item.get("id"), item.get("topic_ko", ""))
+    if item is None:
+        qpath = pick_queue_item(date)
+        if not qpath:
+            log.info("게시할 큐 항목이 없습니다 (date=%s). 종료.", date)
+            return 0
+        item = load_json(qpath)
+        log.info("큐 항목: %s (%s)", qpath.name, item.get("topic_ko", ""))
 
     # Threads 본문은 항상 "질문 한 줄 / 빈 줄 / 본문" 모양으로 나간다 (2026-09-14 요청).
     # 새 원고는 프롬프트가 그렇게 쓰지만, 그 전에 만든 큐 항목도 여기서 같은 모양으로 맞춘다.
@@ -236,8 +276,10 @@ def main() -> int:
         return 0 if item.get("approved") is not True else 1
 
     reply_text = build_reply(item)
+    video_url = resolve_video_url(item)
 
     log.info("이미지 %d장: %s", len(image_urls), image_urls)
+    log.info("동영상: %s", video_url or "없음 (사진만)")
     log.info("인스타 캡션 %d자 / Threads 본문 %d자 / 답글 %s",
              len(item["instagram_caption"]), len(item["threads_text"]),
              f"{len(reply_text)}자" if reply_text else "없음")
@@ -280,14 +322,15 @@ def main() -> int:
 
     # ---- Instagram -------------------------------------------------------
     if do_ig:
+        ig_user = env("IG_USER_ID")
+        ig_token = env("IG_TOKEN")
+        cap = item["instagram_caption"]
         if result.get("instagram_post_id"):
             log.info("인스타는 이미 게시됨 (%s) — 건너뜀", result["instagram_post_id"])
         else:
-            ig_user = env("IG_USER_ID")
-            ig_token = env("IG_TOKEN")
-            cap = item["instagram_caption"]
             # ① 올리기 전에 계정을 본다 — 지난번 오류가 거짓이었을 수 있다
-            already = look_up(lambda: meta_api.ig_find_posted(ig_user, ig_token, cap), "인스타")
+            #    (kind="feed": 같은 캡션의 릴스는 다른 글이므로 빼고 본다)
+            already = look_up(lambda: meta_api.ig_find_posted(ig_user, ig_token, cap, kind="feed"), "인스타")
             if already:
                 log.warning("같은 글이 이미 인스타에 있습니다 (%s) — 다시 올리지 않습니다", already)
                 result["instagram_post_id"] = already
@@ -304,7 +347,7 @@ def main() -> int:
                     # ② 오류가 나도 실제로는 올라갔을 수 있다 (2026-09-13 사고)
                     log.error("인스타 게시 실패: %s", e)
                     time.sleep(VERIFY_WAIT)
-                    landed = look_up(lambda: meta_api.ig_find_posted(ig_user, ig_token, cap), "인스타")
+                    landed = look_up(lambda: meta_api.ig_find_posted(ig_user, ig_token, cap, kind="feed"), "인스타")
                     if landed:
                         log.warning("오류가 났지만 실제로는 올라갔습니다 (%s) — 성공으로 기록합니다", landed)
                         result["instagram_post_id"] = landed
@@ -313,6 +356,36 @@ def main() -> int:
                     else:
                         result.setdefault("errors", []).append({"instagram": str(e)})
                         failed.append("instagram")
+                    save_json(result_path, result)
+
+        # ---- Instagram 릴스 (동영상이 있을 때만; 캐러셀이 올라간 뒤에) ----------
+        if video_url and result.get("instagram_post_id") and not result.get("instagram_reel_id"):
+            already = look_up(lambda: meta_api.ig_find_posted(ig_user, ig_token, cap, kind="reel"), "인스타 릴스")
+            if already:
+                log.warning("같은 릴스가 이미 인스타에 있습니다 (%s) — 다시 올리지 않습니다", already)
+                result["instagram_reel_id"] = already
+                result.setdefault("verified", []).append("instagram_reel:이미 있음")
+                save_json(result_path, result)
+            else:
+                try:
+                    reel_id = meta_api.ig_publish_reel(ig_user, ig_token, video_url, cap,
+                                                       share_to_feed=reel_share_to_feed())
+                    result["instagram_reel_id"] = reel_id
+                    result["instagram_reel_posted_at"] = datetime.now(KST).isoformat()
+                    save_json(result_path, result)
+                    log.info("인스타 릴스 게시 완료: %s", reel_id)
+                except meta_api.MetaApiError as e:
+                    log.error("인스타 릴스 게시 실패: %s", e)
+                    time.sleep(VERIFY_WAIT)
+                    landed = look_up(lambda: meta_api.ig_find_posted(ig_user, ig_token, cap, kind="reel"), "인스타 릴스")
+                    if landed:
+                        log.warning("오류가 났지만 릴스는 올라갔습니다 (%s) — 성공으로 기록합니다", landed)
+                        result["instagram_reel_id"] = landed
+                        result["instagram_reel_posted_at"] = datetime.now(KST).isoformat()
+                        result.setdefault("verified", []).append("instagram_reel:오류였지만 올라감")
+                    else:
+                        result.setdefault("errors", []).append({"instagram_reel": str(e)})
+                        failed.append("instagram_reel")
                     save_json(result_path, result)
 
     # ---- Threads ---------------------------------------------------------
@@ -331,7 +404,8 @@ def main() -> int:
                 save_json(result_path, result)
             else:
                 try:
-                    post_id = meta_api.th_publish_carousel(th_user, th_token, image_urls, txt)
+                    post_id = meta_api.th_publish_carousel(th_user, th_token, image_urls, txt,
+                                                           lead_video_url=video_url)
                     result["threads_post_id"] = post_id
                     result["threads_posted_at"] = datetime.now(KST).isoformat()
                     result["threads_permalink"] = meta_api.th_permalink(post_id, th_token)
@@ -366,13 +440,14 @@ def main() -> int:
 
     # ---- 마무리: 큐에서 제거 ---------------------------------------------
     done_ig = (not do_ig) or bool(result.get("instagram_post_id"))
+    done_reel = (not video_url) or (not do_ig) or bool(result.get("instagram_reel_id"))
     done_th = (not do_th) or bool(result.get("threads_post_id"))
     done_reply = (not reply_text) or (not do_th) or bool(result.get("threads_reply_id"))
-    if done_ig and done_th and args.target == "both":
+    if done_ig and done_th and args.target == "both" and qpath and qpath.exists():
         qpath.unlink(missing_ok=True)
         log.info("큐 파일 제거: %s", qpath.name)
 
-    if done_ig and done_th and done_reply:
+    if done_ig and done_reel and done_th and done_reply:
         # completed_at 이 찍힌 기록만 문지기가 '이 슬롯 끝'으로 본다.
         result["completed_at"] = datetime.now(KST).isoformat()
         save_json(result_path, result)
