@@ -1,7 +1,7 @@
 {
   "id": "2055-light_at_night",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/g8kqOhU8aq",
   "topic": "light_at_night",
   "topic_ko": "야간 조명·LED",
   "verdict": "bad",
@@ -76,5 +76,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/41129148/"
   },
   "drafted_at": "2026-09-16T00:20:31.812897+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-18T12:01:39.792796+09:00"
 }

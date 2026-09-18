@@ -1,7 +1,7 @@
 {
   "id": "2054-hand_sanitizer",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/g8klBm56Ki",
   "topic": "hand_sanitizer",
   "topic_ko": "손소독제·물티슈",
   "verdict": "mixed",
@@ -76,5 +76,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/40356051/"
   },
   "drafted_at": "2026-09-16T00:19:15.039770+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-18T12:01:39.792491+09:00"
 }

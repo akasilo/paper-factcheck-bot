@@ -1,7 +1,7 @@
 {
   "id": "2053-running_shoes",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/g8j9DWyK6e",
   "topic": "running_shoes",
   "topic_ko": "러닝화",
   "verdict": "good",
@@ -76,5 +76,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/41001734/"
   },
   "drafted_at": "2026-09-16T00:17:29.797435+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-18T12:01:39.714289+09:00"
 }
