@@ -28,8 +28,8 @@
     "pmid": "40665485"
   },
   "sunscreen": {
-    "last_used": "2026-09-07",
-    "pmid": "38777185"
+    "last_used": "2026-09-18",
+    "pmid": "40123348"
   },
   "blue_light_glasses": {
     "last_used": "2026-09-07",
@@ -150,5 +150,13 @@
   "pet_food": {
     "last_used": "2026-09-18",
     "pmid": "40723483"
+  },
+  "vitamin_d": {
+    "last_used": "2026-09-18",
+    "pmid": "42161415"
+  },
+  "magnesium": {
+    "last_used": "2026-09-18",
+    "pmid": "39534260"
   }
 }
