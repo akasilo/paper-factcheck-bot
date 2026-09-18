@@ -82,7 +82,7 @@
     "model": "claude_code:default",
     "approved_at": "2026-09-15T09:02:19.686440+09:00"
   },
-  "attempts": 1,
+  "attempts": 2,
   "instagram_post_id": "18132577456583512",
   "instagram_posted_at": "2026-09-18T19:09:10.280974+09:00",
   "verified": [
@@ -94,5 +94,10 @@
     {
       "threads": "POST https://graph.threads.net/v1.0/28862078273385450/threads -> 500: {'error': {'message': 'An unexpected error has occurred. Please retry your request later.', 'type': 'OAuthException', 'is_transient': True, 'code': 2, 'fbtrace_id': 'A6ud6TW67uRRbNGUBdEV7Gp'}}"
     }
-  ]
+  ],
+  "threads_post_id": "17912244843464577",
+  "threads_posted_at": "2026-09-18T19:13:29.731730+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DdbMcTLjKx9",
+  "threads_reply_id": "18113119418042744",
+  "completed_at": "2026-09-18T19:13:52.098983+09:00"
 }
