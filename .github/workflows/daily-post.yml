@@ -87,8 +87,11 @@ jobs:
         run: pip install -r requirements.txt
 
       # 시트에 채워둔 쿠팡 링크를 큐에 반영한다 (링크 → 승인 / 'skip' → 건너뜀)
+      # 시트가 죽어도(Apps Script 재배포로 URL 이 바뀌면 404) 게시를 막지 않는다 —
+      # 이미 승인된 큐 항목은 그대로 나가야 한다. 2026-09-18 저녁에 이것 때문에 한 슬롯을 놓쳤다.
       - name: Pull links from sheet
         if: steps.gate.outputs.go == 'yes'
+        continue-on-error: true
         run: python bot/sheet_sync.py --pull
 
       - name: Publish
@@ -107,7 +110,8 @@ jobs:
         run: |
           bash bot/commit_push.sh "post: $(date +%Y-%m-%d) [skip ci]" queue posted skipped
 
-      # 게시완료 / 건너뜀 을 시트 '상태' 칸에 반영
+      # 게시완료 / 건너뜀 을 시트 '상태' 칸에 반영 (시트가 죽어도 게시는 이미 끝났다)
       - name: Write status back to sheet
         if: always() && steps.gate.outputs.go == 'yes'
+        continue-on-error: true
         run: python bot/sheet_sync.py --status
