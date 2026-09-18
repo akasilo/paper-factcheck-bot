@@ -16,6 +16,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import json
 import random
@@ -29,6 +30,7 @@ import card_styles
 import make_bg
 
 ROOT = Path(__file__).resolve().parent.parent
+IMAGES = ROOT / "images"
 RENDER_DIR = ROOT / "render"
 TEMPLATE = RENDER_DIR / "card.html"
 FONT = RENDER_DIR / "fonts" / "PretendardVariable.woff2"
@@ -235,7 +237,7 @@ def main() -> int:
                 continue
             imgs = item.get("images") or []
             missing = (not imgs) or any(not (ROOT / p).exists() for p in imgs)
-            if missing or args.force:
+            if missing or args.force or bg_changed(qpath.stem):
                 targets.append(qpath.stem)
         if not targets:
             print("렌더할 항목 없음")
@@ -249,6 +251,46 @@ def main() -> int:
     if not args.date:
         ap.error("--date, --auto, --demo 중 하나가 필요합니다")
     return render_one(args.date, write=not args.no_write, force_bg=args.force)
+
+
+# 카드를 그릴 때 쓴 배경이 무엇이었는지 images/<id>/cards.json 에 적어 둔다.
+# 파일 수정시각으로는 알 수 없다 — git checkout 이 모든 파일 mtime 을 체크아웃 시각으로 맞춰 버려서
+# GitHub Actions 에서는 배경이 새로 들어왔는지 구분되지 않는다. 그래서 내용 해시로 비교한다.
+STAMP_NAME = "cards.json"
+
+
+def _bg_hash(item_id: str) -> str:
+    bg = IMAGES / item_id / make_bg.FILENAME
+    if not bg.exists():
+        return ""
+    return hashlib.sha1(bg.read_bytes()).hexdigest()[:16]
+
+
+def write_stamp(item_id: str) -> None:
+    """이번 렌더가 어떤 배경으로 그려졌는지 기록."""
+    out = IMAGES / item_id / STAMP_NAME
+    try:
+        out.write_text(json.dumps({"ai_bg": _bg_hash(item_id)}, indent=2) + "\n", encoding="utf-8")
+    except Exception as e:                       # noqa: BLE001 — 기록 실패가 렌더를 막으면 안 된다
+        print(f"  (배경 도장 기록 실패: {str(e)[:120]})", file=sys.stderr)
+
+
+def bg_changed(item_id: str) -> bool:
+    """지금 있는 ai_bg.jpg 가 카드를 그릴 때 쓴 것과 다르면 True → 다시 그려야 한다.
+
+    배경을 새로 올려도 카드 파일은 이미 있으므로 --auto 가 그냥 지나쳤다.
+    그래서 2026-09-18 저녁 2050 중량 이불 글이 배경 없이(옛 그래픽으로) 나갔다.
+    도장이 아예 없는 옛 항목은 배경이 있을 때만 다시 그린다 (없으면 예전과 똑같이 둔다).
+    """
+    now = _bg_hash(item_id)
+    stamp = IMAGES / item_id / STAMP_NAME
+    if not stamp.exists():
+        return bool(now)
+    try:
+        was = json.loads(stamp.read_text(encoding="utf-8")).get("ai_bg", "")
+    except Exception:                            # noqa: BLE001
+        return bool(now)
+    return now != was
 
 
 def render_one(date: str, write: bool = True, force_bg: bool = False) -> int:
@@ -277,6 +319,7 @@ def render_one(date: str, write: bool = True, force_bg: bool = False) -> int:
     outs = render_cards(cards, ROOT / "images" / date, seed=seed,
                         style=style, accent=accent, force_bg=force_bg, bg_override=ai_bg)
 
+    write_stamp(date)
     if write:
         item["images"] = [str(p.relative_to(ROOT)).replace("\\", "/") for p in outs]
         item.pop("image_urls", None)
