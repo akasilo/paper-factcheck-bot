@@ -1,0 +1,81 @@
+{
+  "id": "2066-tumbler",
+  "approved": false,
+  "link": "",
+  "topic": "tumbler",
+  "topic_ko": "텀블러·물병",
+  "verdict": "bad",
+  "evidence_level": "cohort",
+  "source_text": "초록만",
+  "answer": "아밀로이드 양성인 사람들에서 뇌척수액 폴리에틸렌 수치가 높을수록 인지기능(MMSE) 점수가 낮고, 1년간 인지기능 저하 속도도 더 빨랐다는 상관관계가 나타났다.",
+  "style": "geo",
+  "accent": "red",
+  "product_hint": "플라스틱 대신 유리나 스테인리스 재질의 물병·텀블러",
+  "image_prompt": "a clear plastic bottled water container with visible condensation droplets on a dark table",
+  "caveats": [
+    "총 43명(코호트1 32명, 코호트2 11명)의 소규모 관찰 연구로 인과관계를 증명하지 않음",
+    "생수 섭취와 미세플라스틱 노출 경로 외에 텀블러 재질 자체를 직접 비교한 연구는 아님",
+    "폴리스티렌·폴리프로필렌은 아밀로이드 양성·음성 간 유의미한 차이가 본문에 명시되지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "매일 마시는\n[[생수병]] 물\n미세플라스틱이\n{{뇌}}까지 간다?"
+    },
+    {
+      "type": "body",
+      "text": "연구팀이 사람 [[뇌척수액]]을 검사하자 폴리에틸렌·PVC 등 미세플라스틱 4종이 실제로 검출됐어요. 생수병에 흔히 쓰이는 재질이에요."
+    },
+    {
+      "type": "body",
+      "text": "생수 마시는 빈도가 높을수록 뇌척수액 속 미세플라스틱 양도 많았다는 상관관계가 나타났어요."
+    },
+    {
+      "type": "body",
+      "text": "[[아밀로이드 양성]] 그룹은 음성 그룹보다 폴리에틸렌·PVC 수치가 뚜렷이 높았고, 이 수치만으로 두 그룹을 80% 이상 정확도로 구분할 수 있었어요."
+    },
+    {
+      "type": "body",
+      "text": "아밀로이드 양성인 사람은 폴리에틸렌 수치가 높을수록 인지기능 점수(MMSE)가 낮고, 1년 뒤 {{저하 속도}}도 더 빨랐다는 결과가 나왔어요.",
+      "note": "※ 참가자 43명 규모의 관찰 연구로, 미세플라스틱이 직접 원인이라 단정하긴 이릅니다."
+    },
+    {
+      "type": "body",
+      "text": "오늘부터 생수 대신 [[스테인리스 진공 텀블러]]에 물을 담아 다니는 습관, 한 번 시도해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Association of microplastics in human cerebrospinal fluid with Alzheimer's disease-related changes.",
+        "journal": "Journal of hazardous materials",
+        "year": "2025",
+        "doi": "10.1016/j.jhazmat.2025.138748",
+        "authors": "He P, Wang F, Xi G et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2066-tumbler/01.jpg",
+    "images/2066-tumbler/02.jpg",
+    "images/2066-tumbler/03.jpg",
+    "images/2066-tumbler/04.jpg",
+    "images/2066-tumbler/05.jpg",
+    "images/2066-tumbler/06.jpg",
+    "images/2066-tumbler/07.jpg"
+  ],
+  "instagram_caption": "매일 마시는 생수, 그 속 미세플라스틱이 뇌까지 갈 수 있을까요?\n\n최근 Journal of Hazardous Materials에 실린 연구팀이 사람의 뇌척수액(CSF)을 직접 분석했어요. 그 결과 폴리프로필렌, PVC, 폴리에틸렌, 폴리스티렌 등 미세플라스틱 4종이 실제로 검출됐습니다.\n\n흥미로운 건 생수를 자주 마실수록 뇌척수액 속 미세플라스틱 양도 많았다는 상관관계가 나타났다는 점이에요.\n\n더 나아가 알츠하이머와 관련된 아밀로이드 양성 그룹에서는 폴리에틸렌·PVC 수치가 음성 그룹보다 뚜렷이 높았고, 이 두 수치만으로 두 그룹을 80% 이상 정확도로 구분할 수 있었어요. 특히 폴리에틸렌 수치가 높을수록 인지기능 점수(MMSE)가 낮고, 1년 뒤 인지기능 저하 속도도 더 빨랐다는 결과도 확인됐습니다.\n\n다만 이번 연구는 43명 규모의 상관관계 연구라, 미세플라스틱이 직접적인 원인이라고 단정할 순 없어요. 그래도 오늘부터는 생수병 대신 스테인리스 진공 텀블러에 물을 담아보는 건 어떨까요?\n\n📄 출처: He P, Wang F, Xi G et al., Journal of Hazardous Materials (2025). DOI 10.1016/j.jhazmat.2025.138748\n\n#논문팩트체크 #paper_factcheck #미세플라스틱 #알츠하이머 #뇌건강 #생수 #텀블러 #플라스틱프리 #인지기능 #뇌척수액 #건강습관 #환경호르몬 #제로웨이스트 #건강정보\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "생수병 속 미세플라스틱, 뇌까지 갈 수 있을까?\n\n최근 논문에서 사람 뇌척수액을 직접 검사했더니 폴리에틸렌 같은 미세플라스틱이 실제로 검출됐대요. 게다가 생수를 자주 마실수록 그 양도 많았다는 상관관계까지 나왔고요. 알츠하이머와 관련된 아밀로이드 양성인 사람들에서는 폴리에틸렌 수치가 높을수록 인지기능 점수도 낮고 1년 새 저하 속도도 더 빨랐다는 결과도 있었어요. 물론 43명 규모라 원인이라 단정하긴 이르지만, 여러분은 오늘 어떤 텀블러에 물 담아 다니시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Association of microplastics in human cerebrospinal fluid with Alzheimer's disease-related changes.",
+    "journal": "Journal of hazardous materials",
+    "year": "2025",
+    "doi": "10.1016/j.jhazmat.2025.138748",
+    "pmid": "40435616",
+    "authors": "He P, Wang F, Xi G et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40435616/"
+  },
+  "drafted_at": "2026-09-19T23:01:09.758956+09:00",
+  "model": "claude_code:default"
+}

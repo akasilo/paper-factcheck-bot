@@ -285,5 +285,26 @@
     "date": "2026-09-18",
     "topic": "sunscreen",
     "title": "A review of sunscreen in the prevention of skin cancer."
+  },
+  {
+    "pmid": "40435616",
+    "doi": "10.1016/j.jhazmat.2025.138748",
+    "date": "2026-09-19",
+    "topic": "tumbler",
+    "title": "Association of microplastics in human cerebrospinal fluid with Alzheimer's disease-related changes."
+  },
+  {
+    "pmid": "40812393",
+    "doi": "10.1016/j.envpol.2025.126985",
+    "date": "2026-09-19",
+    "topic": "plastic_container",
+    "title": "Take-out containers as nano- and microplastics reservoirs: Diet-driven gut dysbiosis in university students."
+  },
+  {
+    "pmid": "38376568",
+    "doi": "10.1007/s00424-024-02925-0",
+    "date": "2026-09-19",
+    "topic": "e_cigarette",
+    "title": "Electronic cigarettes and cardiovascular disease: epidemiological and biological links."
   }
 ]

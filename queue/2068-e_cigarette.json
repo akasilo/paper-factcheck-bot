@@ -1,0 +1,86 @@
+{
+  "id": "2068-e_cigarette",
+  "approved": false,
+  "link": "",
+  "topic": "e_cigarette",
+  "topic_ko": "전자담배",
+  "verdict": "bad",
+  "evidence_level": "review",
+  "source_text": "PMC11139732 전문",
+  "answer": "이 논문에 따르면 전자담배 사용자는 부정맥·고혈압·급성 관상동맥증후군·심부전의 발생률과 사망률이 비흡연자보다 소폭 늘었다고 보고됐다.",
+  "style": "geo",
+  "accent": "red",
+  "product_hint": "니코틴 패치처럼 임상적으로 효과와 안전성이 검증된 금연 보조제인지 확인해보기",
+  "image_prompt": "a modern pod-style electronic cigarette device resting on a dark table with faint vapor trailing upward",
+  "caveats": [
+    "미니리뷰(비체계적 리뷰)로 개별 연구의 질을 통합 평가한 메타분석은 아님",
+    "사람 역학 자료와 동물·세포 실험 결과가 혼재되어 있음",
+    "유해물질 농도는 기기 종류·전압·재사용 여부에 따라 크게 달라짐"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "전자담배,\n[[금연 대안]]\n이라는 말\n심장엔 {{독}}?"
+    },
+    {
+      "type": "body",
+      "text": "이 리뷰 논문에 따르면 전자담배는 담배보다 덜 해롭다고 알려졌지만, 심혈관 질환의 [[독립적인 위험 요인]]으로 지목됐어요."
+    },
+    {
+      "type": "body",
+      "text": "전자담배 사용자들 사이에서 부정맥·고혈압·급성 관상동맥증후군·심부전의 발생률과 사망률이 비흡연자보다 소폭 늘었다고 보고했습니다."
+    },
+    {
+      "type": "body",
+      "text": "니코틴은 교감신경을 자극해 심박수와 혈압을 높이고, 지속되면 심장 근육 리모델링으로 [[심부전 위험]]을 키울 수 있다고 설명해요."
+    },
+    {
+      "type": "body",
+      "text": "액상을 가열할 때 나오는 아크롤레인 농도가 세계보건기구 기준의 16배, 미국 환경청 기준의 320배에 달했다는 측정 결과도 있었어요."
+    },
+    {
+      "type": "body",
+      "text": "저자들은 담배보다는 전자담배가 상대적으로 안전할 수 있다면서도, 장기 비교 자료는 아직 부족하다고 밝혔습니다.",
+      "note": "※ 사람·동물 실험 자료를 종합한 리뷰이며, 기기·전압·액상에 따라 유해물질 농도 차이가 큽니다"
+    },
+    {
+      "type": "body",
+      "text": "전자담배를 금연 목적으로 쓰고 있다면, [[니코틴 패치]] 같은 검증된 금연 보조제와 효과·안전성을 비교해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Electronic cigarettes and cardiovascular disease: epidemiological and biological links.",
+        "journal": "Pflugers Archiv : European journal of physiology",
+        "year": "2024",
+        "doi": "10.1007/s00424-024-02925-0",
+        "authors": "Zong H, Hu Z, Li W et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2068-e_cigarette/01.jpg",
+    "images/2068-e_cigarette/02.jpg",
+    "images/2068-e_cigarette/03.jpg",
+    "images/2068-e_cigarette/04.jpg",
+    "images/2068-e_cigarette/05.jpg",
+    "images/2068-e_cigarette/06.jpg",
+    "images/2068-e_cigarette/07.jpg",
+    "images/2068-e_cigarette/08.jpg"
+  ],
+  "instagram_caption": "전자담배는 담배보다 안전한 금연 대안이라고들 하죠. 그런데 심장에게는 다른 이야기일 수 있습니다.\n\n한 리뷰 논문에 따르면, 전자담배 사용은 심혈관 질환의 독립적인 위험 요인으로 꼽혔어요. 사용자들 사이에서 부정맥, 고혈압, 급성 관상동맥증후군, 심부전의 발생률과 사망률이 비흡연자보다 소폭 늘었다는 보고가 있었습니다.\n\n원인으로는 니코틴이 교감신경을 자극해 심박수와 혈압을 높이고, 장기적으로는 심장 근육 리모델링을 유도할 수 있다는 점이 꼽혔어요. 액상을 가열할 때 나오는 아크롤레인 농도는 세계보건기구 기준의 16배, 미국 환경청 기준의 320배에 달했다는 조사도 있었습니다.\n\n물론 저자들은 담배보다는 상대적으로 안전할 수 있다고도 덧붙였지만, 장기적인 비교 자료는 아직 부족하다고 인정했습니다.\n\n전자담배를 금연 목적으로 쓰고 있다면, 니코틴 패치 같은 검증된 금연 보조제와 비교해보는 것도 방법입니다.\n\n📄 출처: Zong H, Hu Z, Li W et al., Pflugers Archiv (2024). DOI 10.1007/s00424-024-02925-0\n\n#논문팩트체크 #paper_factcheck #전자담배 #금연 #심혈관건강 #니코틴 #부정맥 #고혈압 #건강정보 #금연보조제 #베이핑 #흡연\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "전자담배, 심장엔 정말 안전할까?\n\n한 리뷰 논문을 보니 전자담배 사용자들 사이에서 부정맥, 고혈압, 급성 관상동맥증후군, 심부전 발생률과 사망률이 비흡연자보다 소폭 늘었다고 해요. 니코틴이 교감신경을 자극해서 심박수랑 혈압을 올리고, 액상 가열할 때 나오는 아크롤레인 농도는 기준치의 수백 배까지 나온 적도 있대요. 담배보다야 낫다지만 심장한텐 결코 만만한 게 아니었네요. 혹시 전자담배로 금연 중이라면, 다른 방법도 한번 알아볼래요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Electronic cigarettes and cardiovascular disease: epidemiological and biological links.",
+    "journal": "Pflugers Archiv : European journal of physiology",
+    "year": "2024",
+    "doi": "10.1007/s00424-024-02925-0",
+    "pmid": "38376568",
+    "authors": "Zong H, Hu Z, Li W et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38376568/"
+  },
+  "drafted_at": "2026-09-19T23:04:59.366221+09:00",
+  "model": "claude_code:default"
+}

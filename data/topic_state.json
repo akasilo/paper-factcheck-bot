@@ -24,8 +24,8 @@
     "pmid": "39449954"
   },
   "plastic_container": {
-    "last_used": "2026-09-07",
-    "pmid": "40665485"
+    "last_used": "2026-09-19",
+    "pmid": "40812393"
   },
   "sunscreen": {
     "last_used": "2026-09-18",
@@ -44,8 +44,8 @@
     "pmid": "37432180"
   },
   "tumbler": {
-    "last_used": "2026-09-07",
-    "pmid": "39200683"
+    "last_used": "2026-09-19",
+    "pmid": "40435616"
   },
   "electric_toothbrush": {
     "last_used": "2026-09-07",
@@ -158,5 +158,9 @@
   "magnesium": {
     "last_used": "2026-09-18",
     "pmid": "39534260"
+  },
+  "e_cigarette": {
+    "last_used": "2026-09-19",
+    "pmid": "38376568"
   }
 }
