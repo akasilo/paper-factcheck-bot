@@ -1,0 +1,98 @@
+{
+  "date": "2026-09-19",
+  "slot": "evening",
+  "queue": {
+    "id": "2053-running_shoes",
+    "approved": true,
+    "link": "https://link.coupang.com/a/g8j9DWyK6e",
+    "topic": "running_shoes",
+    "topic_ko": "러닝화",
+    "verdict": "good",
+    "evidence_level": "rct",
+    "source_text": "PMC12464892 전문",
+    "answer": "이 논문에 따르면 카본플레이트 러닝화의 러닝 이코노미 개선 효과(2~6%)는 80분 내내 줄어들지 않고 그대로 유지됐다.",
+    "style": "paper",
+    "accent": "orange",
+    "product_hint": "카본 플레이트와 반발력 좋은 쿠션 폼이 함께 들어간 러닝화",
+    "caveats": [
+      "남성 훈련 러너 10명 대상의 소규모 실험실(트레드밀) 연구로 일반 러너나 여성에게 그대로 적용하기는 어려움",
+      "특정 카본플레이트 모델 1종만 비교해 다른 브랜드·모델까지 일반화하기는 어려움",
+      "두 신발의 무게 차이(218g vs 297g)를 통제하지 않아 효과 일부가 무게 차이에서 왔을 가능성이 있음"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "카본화 러닝화\n오래 뛰면\n[[효과]] {{사라질까}}?"
+      },
+      {
+        "type": "body",
+        "text": "훈련된 남성 러너 10명이 [[카본플레이트+반발력 폼]] 러닝화와 일반 러닝화를 신고 80분씩 달리며 비교한 무작위 교차 실험이에요."
+      },
+      {
+        "type": "body",
+        "text": "이 논문에 따르면 80분 내내 러닝 이코노미가 [[2~6% 더 좋게]] 유지됐고, 시간이 지나도 그 차이는 줄어들지 않았어요."
+      },
+      {
+        "type": "body",
+        "text": "같은 속도로 달릴 때 카본화가 심박수·젖산·힘든 정도까지 더 낮췄고, 젖산역치 속도는 일반화보다 [[0.5~0.6km/h]] 더 빨랐어요."
+      },
+      {
+        "type": "body",
+        "text": "더 놀라운 건 두 신발 모두 80분 동안 러닝 이코노미가 나빠지지 않았다는 점—연구진도 예상 밖이라고 밝혔어요.",
+        "note": "※ 남성 훈련 러너 10명 대상의 트레드밀 실험실 연구라 일반화엔 주의가 필요해요."
+      },
+      {
+        "type": "body",
+        "text": "장거리 러닝을 준비 중이라면 [[카본플레이트+쿠션 폼]] 러닝화를 신어보는 것도 방법이에요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Persistent Improvements in Running Economy With Advanced Footwear Technology During Prolonged Running in Trained Male Runners.",
+          "journal": "Scandinavian journal of medicine & science in sports",
+          "year": "2025",
+          "doi": "10.1111/sms.70139",
+          "authors": "Madsen LL, Abel K, Hansen AA et al."
+        }
+      }
+    ],
+    "images": [
+      "images/2053-running_shoes/01.jpg",
+      "images/2053-running_shoes/02.jpg",
+      "images/2053-running_shoes/03.jpg",
+      "images/2053-running_shoes/04.jpg",
+      "images/2053-running_shoes/05.jpg",
+      "images/2053-running_shoes/06.jpg",
+      "images/2053-running_shoes/07.jpg"
+    ],
+    "instagram_caption": "좋은 러닝화 효과, 오래 뛰면 사라진다? 🏃\n\n최근 스칸디나비아 스포츠의학저널에 실린 무작위 교차 실험 논문을 봤어요. 훈련된 남성 러너 10명이 카본플레이트+반발력 좋은 폼이 들어간 러닝화(CP화)와 일반 러닝화(NCP화)를 신고 80분씩 달리며 몸 상태를 비교했어요.\n\n결과는 반전이었어요. CP화의 러닝 이코노미 개선 효과는 80분 내내 2~6% 수준으로 유지됐고, 시간이 지나도 그 차이가 줄어들지 않았어요. 같은 속도로 뛸 때 심박수, 젖산 농도, 힘든 정도까지 CP화 쪽이 더 낮았고, 젖산역치 속도는 일반화보다 0.5~0.6km/h 더 빨랐어요.\n\n더 흥미로운 점은, 두 신발 모두 80분 동안 러닝 이코노미가 나빠지지 않았다는 거예요. 연구진도 예상 밖의 결과라고 언급했어요. 다만 훈련된 남성 러너 10명을 대상으로 한 트레드밀 실험실 연구라는 점은 참고해야 해요.\n\n오늘의 행동: 장거리 러닝을 준비 중이라면 카본플레이트+쿠션 폼 러닝화를 한번 신어보는 것도 방법이에요.\n\n📄 출처: Madsen LL, Abel K, Hansen AA et al., Scandinavian Journal of Medicine & Science in Sports (2025). DOI 10.1111/sms.70139\n\n#논문팩트체크 #paper_factcheck #러닝화 #카본화 #러닝이코노미 #마라톤 #러닝 #운동생리학 #러너 #장거리러닝 #달리기 #무작위대조시험\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+    "threads_text": "카본화 효과, 오래 뛰면 사라질까?\n\n최근 논문을 보니 카본플레이트+반발력 폼 러닝화가 80분 달리기 내내 러닝 이코노미를 2~6% 더 좋게 유지했대요. 시간이 지나도 효과가 줄지 않았다는 게 핵심. 젖산역치 속도도 일반화보다 0.5~0.6km/h 더 빨랐고요. 신기하게 두 신발 다 80분 동안 이코노미가 나빠지지도 않았다네요(연구진도 놀랐대요). 물론 남성 러너 10명 소규모 실험실 연구라 참고만. 다음 장거리 러닝, 어떤 신발로 뛸 계획이세요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Persistent Improvements in Running Economy With Advanced Footwear Technology During Prolonged Running in Trained Male Runners.",
+      "journal": "Scandinavian journal of medicine & science in sports",
+      "year": "2025",
+      "doi": "10.1111/sms.70139",
+      "pmid": "41001734",
+      "authors": "Madsen LL, Abel K, Hansen AA et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41001734/"
+    },
+    "drafted_at": "2026-09-16T00:17:29.797435+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-09-18T12:01:39.714289+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "17981255478084683",
+  "instagram_posted_at": "2026-09-19T22:07:14.348974+09:00",
+  "verified": [
+    "instagram:오류였지만 올라감"
+  ],
+  "instagram_reel_id": "17945684736283196",
+  "instagram_reel_posted_at": "2026-09-19T22:08:10.162822+09:00",
+  "threads_post_id": "18105511619209320",
+  "threads_posted_at": "2026-09-19T22:09:27.694721+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DdeFWGfE5GZ",
+  "threads_reply_id": "18192122881403014",
+  "completed_at": "2026-09-19T22:09:48.986840+09:00"
+}
