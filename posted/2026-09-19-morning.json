@@ -1,0 +1,98 @@
+{
+  "date": "2026-09-19",
+  "slot": "morning",
+  "queue": {
+    "id": "2051-air_purifier",
+    "approved": true,
+    "link": "https://link.coupang.com/a/g3ec3Vkv3A",
+    "topic": "air_purifier",
+    "topic_ko": "공기청정기",
+    "verdict": "mixed",
+    "evidence_level": "rct",
+    "source_text": "PMC9548522 전문",
+    "answer": "이 논문에 따르면, 교실 곰팡이가 집보다 많았던 학생 94명 한정으로 HEPA 공기청정기가 곰팡이 지수를 낮추고 폐 기능(FEV1%)을 가짜 필터군보다 평균 4.22%포인트 더 개선시켰다.",
+    "style": "paper",
+    "accent": "blue",
+    "product_hint": "HEPA 필터 인증받은 공기청정기, 곰팡이·습기 많은 공간용",
+    "caveats": [
+      "전체 150명 기준으로는 교실 곰팡이 수치와 폐 기능 사이 상관관계가 없었고, 효과는 곰팡이가 집보다 많았던 하위집단(94명)에서만 나타남",
+      "사후 분석(post-hoc)으로 상관관계이지 인과관계 증명은 아니며, 원래 SICAS2 본연구에서는 학년 전체 증상 개선이 지속되지 않았다고 보고됨",
+      "외부에서 유입되는 Group2 곰팡이는 HEPA 필터로도 유의하게 줄지 않음"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "공기청정기,\n[[폐 기능]]까지\n좋아지게\n할까요?"
+      },
+      {
+        "type": "body",
+        "text": "미국 교실 천식 학생 150명 연구예요. 그중 '교실 곰팡이가 집보다 많았던' 학생 94명만 따로 분석했어요."
+      },
+      {
+        "type": "body",
+        "text": "이 94명은 교실 곰팡이(Group1) 수치가 높을수록 폐 기능(FEV1%)이 [[유의미하게 낮았다]]는 결과가 나왔어요."
+      },
+      {
+        "type": "body",
+        "text": "HEPA 공기청정기를 튼 교실은 곰팡이 지수가 더 많이 줄었고, 폐 기능도 [[평균 4.22%p]] 더 좋아졌어요(4.69% vs 0.47%)."
+      },
+      {
+        "type": "body",
+        "text": "다만 이 효과는 곰팡이가 유독 많았던 일부 학생 얘기예요. {{전체 학생}}의 증상이 좋아졌다는 결과는 아니었어요.",
+        "note": "※ 사후 분석(post-hoc)이라 인과관계 단정은 어렵고, 바깥 유래 곰팡이(Group2)는 HEPA로도 잘 안 줄었어요."
+      },
+      {
+        "type": "body",
+        "text": "곰팡이·집먼지 알레르기가 있다면 [[HEPA 필터]] 공기청정기를 곰팡이 잘 생기는 공간에 두고, 필터 교체 주기를 확인해보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "HEPA filtration intervention in classrooms may improve some students' asthma.",
+          "journal": "The Journal of asthma : official journal of the Association for the Care of Asthma",
+          "year": "2023",
+          "doi": "10.1080/02770903.2022.2059672",
+          "authors": "Vesper SJ, Wymer L, Coull BA et al."
+        }
+      }
+    ],
+    "images": [
+      "images/2051-air_purifier/01.jpg",
+      "images/2051-air_purifier/02.jpg",
+      "images/2051-air_purifier/03.jpg",
+      "images/2051-air_purifier/04.jpg",
+      "images/2051-air_purifier/05.jpg",
+      "images/2051-air_purifier/06.jpg",
+      "images/2051-air_purifier/07.jpg"
+    ],
+    "instagram_caption": "공기청정기, 우리 아이 천식에 진짜 도움이 될까요?\n\n미국의 한 연구팀이 천식이 있는 학생들의 교실에 HEPA 공기청정기를 설치하고, 곰팡이 수치와 폐 기능(FEV1%)을 함께 측정했어요.\n\n전체 150명 학생을 다 봤을 때는 교실 곰팡이 수치와 폐 기능 사이에 뚜렷한 관계가 없었어요. 하지만 '교실 곰팡이가 집보다 많았던' 94명만 따로 보니 얘기가 달랐습니다. 교실 곰팡이(Group1) 수치가 높을수록 폐 기능이 유의미하게 낮았어요.\n\n이 94명을 HEPA 교실과 가짜 필터(Sham) 교실로 나눠 비교했더니, HEPA 교실은 곰팡이 지수가 더 많이 줄었고 폐 기능도 평균 4.69% 좋아졌어요. 가짜 필터 교실은 0.47%에 그쳤죠. 차이는 약 4.22%포인트예요.\n\n다만 이 효과는 곰팡이가 유독 많았던 일부 학생 얘기이고, 연구팀도 사후 분석이라 인과관계까지 증명된 건 아니라고 밝혔어요. 바깥에서 들어오는 곰팡이(Group2)는 HEPA로도 잘 안 줄었고요.\n\n오늘의 행동: 곰팡이·집먼지 알레르기가 있다면 HEPA 필터 공기청정기를 곰팡이 잘 생기는 공간에 두고, 필터 교체 주기를 꼭 확인해보세요.\n\n📄 출처: Vesper SJ et al., The Journal of Asthma (2023). DOI 10.1080/02770903.2022.2059672\n\n#논문팩트체크 #paper_factcheck #공기청정기 #천식 #곰팡이 #집먼지알레르기 #실내공기질 #헤파필터 #폐기능 #알레르기 #아이건강 #생활건강 #건강정보 #곰팡이관리\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+    "threads_text": "공기청정기, 폐 기능까지 좋아지게 할까요?\n\n공기청정기 틀면 천식 있는 아이 폐 기능도 좋아질까 궁금했는데, 딱 이 질문을 다룬 연구를 찾았어요. 결론부터 말하면 '전체 학생'은 아니고, 교실 곰팡이가 집보다 유독 많았던 학생들(94명)만 봤을 때 얘기예요. 이 학생들은 HEPA 공기청정기 튼 교실에서 폐 기능(FEV1%)이 평균 4.22%p 더 좋아졌대요(4.69% vs 0.47%). 대신 바깥에서 들어오는 곰팡이는 공기청정기로도 잘 안 걸러졌고, 연구팀도 '인과관계까지 증명된 건 아니다'라고 선 그었어요. 여러분 집엔 곰팡이 잘 생기는 공간 있나요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "HEPA filtration intervention in classrooms may improve some students' asthma.",
+      "journal": "The Journal of asthma : official journal of the Association for the Care of Asthma",
+      "year": "2023",
+      "doi": "10.1080/02770903.2022.2059672",
+      "pmid": "35341426",
+      "authors": "Vesper SJ, Wymer L, Coull BA et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35341426/"
+    },
+    "drafted_at": "2026-09-15T01:37:36.366142+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-09-15T09:02:19.686610+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "17917991775241806",
+  "instagram_posted_at": "2026-09-19T09:15:10.738186+09:00",
+  "verified": [
+    "instagram:오류였지만 올라감"
+  ],
+  "instagram_reel_id": "17946320475314140",
+  "instagram_reel_posted_at": "2026-09-19T09:16:03.884603+09:00",
+  "threads_post_id": "18103617518202924",
+  "threads_posted_at": "2026-09-19T09:17:09.900472+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/Ddcs_CHDt9k",
+  "threads_reply_id": "18110081873174313",
+  "completed_at": "2026-09-19T09:17:37.299561+09:00"
+}
