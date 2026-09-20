@@ -1,0 +1,81 @@
+{
+  "id": "2069-mattress_pillow",
+  "approved": false,
+  "link": "",
+  "topic": "mattress_pillow",
+  "topic_ko": "매트리스·베개",
+  "verdict": "good",
+  "evidence_level": "rct",
+  "source_text": "초록만",
+  "answer": "인체공학 쐐기 베개를 쓴 그룹은 시술 다음날 목 통증 발생률이 19%로, 베개를 쓰지 않은 그룹(30%)보다 낮았다.",
+  "style": "soft",
+  "accent": "blue",
+  "product_hint": "목뼈 각도를 받쳐주는 경추형 베개 또는 중간 경도 매트리스",
+  "image_prompt": "a contoured cervical support pillow with a curved neck ridge resting on a plain bed sheet",
+  "caveats": [
+    "연구 대상은 수면이 아니라 내시경 시술 중 자세를 보조하는 베개였음",
+    "결과는 통증 발생률(%) 위주로 보고되어, 강도나 지속 시간 세부 데이터는 초록에 없음",
+    "같은 베개가 야간 수면용 목베개로도 동일한 효과를 낸다는 직접 증거는 아님"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "엎드려 잘 때\n목 아픈 거\n[[베개]] 하나로\n줄일 수 있을까?"
+    },
+    {
+      "type": "body",
+      "text": "내시경 역행 담췌관조영술(ERCP)은 환자가 [[엎드린 자세]]로 오래 버텨야 해서, 시술 후 목 통증을 호소하는 경우가 많았어요."
+    },
+    {
+      "type": "body",
+      "text": "무작위 대조 시험 결과, 인체공학 쐐기 베개를 쓴 그룹은 시술 다음날 목 통증 발생률이 19%로, 안 쓴 그룹 30%보다 낮았어요(p=0.040)."
+    },
+    {
+      "type": "body",
+      "text": "특히 중등도~중증 통증은 4% vs 11%로 차이가 더 컸고, 시술 중 어깨를 들어올려야 했던 비율도 9% vs 22%로 줄었어요."
+    },
+    {
+      "type": "body",
+      "text": "이 연구는 [[내시경 시술]] 중 자세를 잡아주는 특수 베개 실험이라, 잠잘 때 쓰는 목베개와 똑같다고 보긴 어려워요.",
+      "note": "※ 수면용 베개 효과를 직접 검증한 연구는 아니에요"
+    },
+    {
+      "type": "body",
+      "text": "목이 자주 뻐근하다면, 자는 자세에 맞춰 목뼈 각도를 받쳐주는 [[경추 베개]]를 한번 써보는 것도 방법이에요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Ergonomic wedge pillow to reduce neck pain after prone ERCP; a randomized, controlled study.",
+        "journal": "Surgical endoscopy",
+        "year": "2025",
+        "doi": "10.1007/s00464-024-11504-4",
+        "authors": "Angsuwatcharakon P, Plodaksorn A, Ponauthai Y et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2069-mattress_pillow/01.jpg",
+    "images/2069-mattress_pillow/02.jpg",
+    "images/2069-mattress_pillow/03.jpg",
+    "images/2069-mattress_pillow/04.jpg",
+    "images/2069-mattress_pillow/05.jpg",
+    "images/2069-mattress_pillow/06.jpg",
+    "images/2069-mattress_pillow/07.jpg"
+  ],
+  "instagram_caption": "엎드려 자면 목이 뻐근한 거, 베개로 줄일 수 있을까요?\n\n최근 한 무작위 대조 시험에서 답을 찾아봤어요. 대상은 엎드린 자세로 진행하는 내시경 시술(ERCP)을 받은 환자 256명이었어요.\n\n인체공학 쐐기 베개를 사용한 그룹은 시술 다음날 목 통증이 19%였고, 베개를 쓰지 않은 그룹은 30%였어요. 중등도~중증 통증만 보면 4% vs 11%로 차이가 더 뚜렷했죠.\n\n시술 중 어깨를 억지로 들어올려야 했던 비율도 베개를 쓴 그룹이 9%로, 안 쓴 그룹 22%보다 낮았어요.\n\n다만 이건 수면이 아니라 시술 중 자세를 보조하는 베개를 검증한 연구예요. 그래도 목뼈 각도를 받쳐주는 구조가 통증과 관련 있다는 점은 참고할 만해요.\n\n오늘의 행동: 아침에 목이 뻐근하다면, 자는 자세에 맞춰 목뼈를 받쳐주는 경추 베개를 한번 써보는 것도 방법이에요.\n\n📄 출처: Angsuwatcharakon P, et al., Surgical Endoscopy (2025). DOI 10.1007/s00464-024-11504-4\n\n#논문팩트체크 #paper_factcheck #목통증 #베개추천 #경추베개 #수면건강 #목뻐근함 #무작위대조시험 #건강정보 #라이프팁 #숙면 #통증관리\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "엎드려 자면 목 아픈 거, 베개로 줄일 수 있을까?\n\n최근 무작위 대조 시험 결과가 나왔어요. 엎드린 자세로 진행하는 내시경 시술 환자 256명을 대상으로 했는데, 인체공학 쐐기 베개를 쓴 그룹은 시술 다음날 목 통증이 19%, 안 쓴 그룹은 30%였대요. 심한 통증만 보면 4% vs 11%로 차이가 더 컸고요.\n\n물론 이건 수면용이 아니라 시술 중 자세를 받쳐주는 베개 실험이라 그대로 잠잘 때 적용하긴 조심스러워요. 그래도 목뼈를 받쳐주는 구조 자체가 통증과 관련 있다는 건 알 수 있죠.\n\n여러분은 목베개, 효과 있다고 느끼시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Ergonomic wedge pillow to reduce neck pain after prone ERCP; a randomized, controlled study.",
+    "journal": "Surgical endoscopy",
+    "year": "2025",
+    "doi": "10.1007/s00464-024-11504-4",
+    "pmid": "39762607",
+    "authors": "Angsuwatcharakon P, Plodaksorn A, Ponauthai Y et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39762607/"
+  },
+  "drafted_at": "2026-09-20T23:22:16.971877+09:00",
+  "model": "claude_code:default"
+}

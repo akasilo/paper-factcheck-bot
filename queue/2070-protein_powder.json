@@ -1,0 +1,81 @@
+{
+  "id": "2070-protein_powder",
+  "approved": false,
+  "link": "",
+  "topic": "protein_powder",
+  "topic_ko": "단백질 보충제",
+  "verdict": "mixed",
+  "evidence_level": "review",
+  "source_text": "PMC10761008 전문",
+  "answer": "이 논문에 따르면 웨이 단백질은 수축기 혈압만 낮추는 경향을 보였지만, 소이 단백질은 수축기·이완기 혈압을 모두 낮추고 콜레스테롤·중성지방·혈당까지 개선했다는 보고입니다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "혈압·콜레스테롤이 신경쓰이면 소이(식물성) 단백질 보충제 옵션도 확인해보기",
+  "image_prompt": "a scoop of protein powder beside a plastic shaker bottle on a plain kitchen counter, no text or logos visible",
+  "caveats": [
+    "초록·본문 모두 구체적 섭취량, 연구 기간, 대상자 수는 제시되지 않음",
+    "만성 신장질환 위험은 '과도한 섭취' 시로 한정되며 정상 섭취량 기준은 명시되지 않음",
+    "웨이와 소이를 직접 비교한 단일 임상시험 결과인지는 명확하지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "웨이 단백질과\n[[소이 단백질]]\n효과가 같을까요?"
+    },
+    {
+      "type": "body",
+      "text": "웨이 단백질을 꾸준히 먹은 사람은 [[수축기 혈압]]이 낮아졌다는 보고가 있어요."
+    },
+    {
+      "type": "body",
+      "text": "반면 소이 단백질은 수축기·이완기 혈압이 모두 낮아지고, LDL 콜레스테롤과 중성지방도 줄었다는 결과가 있었어요."
+    },
+    {
+      "type": "body",
+      "text": "당뇨가 있는 사람은 식후 혈당도 더 낮게 나타났는데, 소이 단백질의 낮은 혈당지수 때문일 수 있다고 봐요."
+    },
+    {
+      "type": "body",
+      "text": "다만 과하게 먹으면 콩팥 여과 부담과 소변 칼슘 배출이 늘어 {{만성 신장질환}} 위험과 관련될 수 있다는 경고도 있어요.",
+      "note": "※ 섭취량·기간 등 구체적 조건은 논문에 명시되지 않음"
+    },
+    {
+      "type": "body",
+      "text": "오늘은 보충제 성분표에서 [[웨이인지 소이인지]] 확인하고 적정량을 지켜보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Protein supplementation: the double-edged sword.",
+        "journal": "Proceedings (Baylor University. Medical Center)",
+        "year": "2024",
+        "doi": "10.1080/08998280.2023.2280417",
+        "authors": "Patel V, Aggarwal K, Dhawan A et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2070-protein_powder/01.jpg",
+    "images/2070-protein_powder/02.jpg",
+    "images/2070-protein_powder/03.jpg",
+    "images/2070-protein_powder/04.jpg",
+    "images/2070-protein_powder/05.jpg",
+    "images/2070-protein_powder/06.jpg",
+    "images/2070-protein_powder/07.jpg"
+  ],
+  "instagram_caption": "웨이 단백질과 소이 단백질, 효과가 같을까요?\n\n단백질 보충제는 근육 키우는 용도로만 알고 있었는데, 최근 리뷰 논문을 보니 종류에 따라 혈압·콜레스테롤·혈당까지 다르게 움직인다는 결과가 있었어요.\n\n웨이 단백질을 꾸준히 먹은 사람들은 수축기 혈압이 낮아지는 경향을 보였고, 소이 단백질을 먹은 사람들은 수축기·이완기 혈압이 모두 낮아지고 LDL 콜레스테롤과 중성지방까지 줄었다는 보고가 있었습니다.\n\n당뇨가 있는 경우 식후 혈당도 더 낮게 나타났는데, 이는 낮은 혈당지수 때문일 수 있다고 해요.\n\n다만 과하게 먹으면 콩팥 여과 부담과 소변 칼슘 배출이 늘어 신장 건강에 부담이 될 수 있다는 경고도 함께 있었습니다.\n\n오늘은 보충제 성분표에서 웨이인지 소이인지 확인해보고, 적정량을 지키는 습관부터 시작해보세요.\n\n📄 출처: Patel V, Aggarwal K, Dhawan A et al., Proceedings (Baylor University. Medical Center) (2024). DOI 10.1080/08998280.2023.2280417\n\n#논문팩트체크 #paper_factcheck #단백질보충제 #웨이단백질 #소이단백질 #식물성단백질 #혈압관리 #콜레스테롤 #혈당관리 #신장건강 #건강보충제 #헬스보충제\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "웨이 단백질과 소이 단백질, 효과가 같을까요?\n\n최근 리뷰 논문을 보니 웨이는 수축기 혈압을 낮추는 정도였는데, 소이는 수축기·이완기 혈압에 콜레스테롤·혈당까지 같이 낮아졌다는 보고가 있더라고요. 대신 너무 많이 먹으면 콩팥에 부담을 줄 수 있다는 경고도 있었어요. 여러분은 지금 드시는 보충제, 웨이인가요 소이인가요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Protein supplementation: the double-edged sword.",
+    "journal": "Proceedings (Baylor University. Medical Center)",
+    "year": "2024",
+    "doi": "10.1080/08998280.2023.2280417",
+    "pmid": "38174000",
+    "authors": "Patel V, Aggarwal K, Dhawan A et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38174000/"
+  },
+  "drafted_at": "2026-09-20T23:23:27.135028+09:00",
+  "model": "claude_code:default"
+}

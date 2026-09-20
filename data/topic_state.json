@@ -16,12 +16,12 @@
     "pmid": "37343248"
   },
   "protein_powder": {
-    "last_used": "2026-09-07",
-    "pmid": "38626029"
+    "last_used": "2026-09-20",
+    "pmid": "38174000"
   },
   "sweetener": {
-    "last_used": "2026-09-07",
-    "pmid": "39449954"
+    "last_used": "2026-09-20",
+    "pmid": "36870410"
   },
   "plastic_container": {
     "last_used": "2026-09-19",
@@ -162,5 +162,9 @@
   "e_cigarette": {
     "last_used": "2026-09-19",
     "pmid": "38376568"
+  },
+  "mattress_pillow": {
+    "last_used": "2026-09-20",
+    "pmid": "39762607"
   }
 }
