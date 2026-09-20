@@ -1,7 +1,7 @@
 {
   "id": "2058-hair_dye",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hcv8Pi91DU",
   "topic": "hair_dye",
   "topic_ko": "염색약",
   "verdict": "bad",
@@ -76,5 +76,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/37528459/"
   },
   "drafted_at": "2026-09-17T00:13:42.634379+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-20T21:51:59.508500+09:00"
 }

@@ -1,7 +1,7 @@
 {
   "id": "2062-pet_food",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hcwjaeMGnk",
   "topic": "pet_food",
   "topic_ko": "반려동물 사료",
   "verdict": "mixed",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/40723483/"
   },
   "drafted_at": "2026-09-18T00:23:27.746395+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-20T21:51:59.509065+09:00"
 }

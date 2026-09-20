@@ -1,7 +1,7 @@
 {
   "id": "2061-stainless_cookware",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hcweNebioK",
   "topic": "stainless_cookware",
   "topic_ko": "스테인리스·무쇠 조리기구",
   "verdict": "good",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42472591/"
   },
   "drafted_at": "2026-09-18T00:21:48.325527+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-20T21:51:59.508952+09:00"
 }

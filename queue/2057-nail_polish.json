@@ -1,7 +1,7 @@
 {
   "id": "2057-nail_polish",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hcv6QkmWbc",
   "topic": "nail_polish",
   "topic_ko": "네일·젤네일",
   "verdict": "mixed",
@@ -76,5 +76,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42222452/"
   },
   "drafted_at": "2026-09-17T00:11:08.401393+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-20T21:51:59.508361+09:00"
 }

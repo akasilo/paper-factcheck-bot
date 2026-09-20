@@ -1,7 +1,7 @@
 {
   "id": "2066-tumbler",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hcwsjC0PW8",
   "topic": "tumbler",
   "topic_ko": "텀블러·물병",
   "verdict": "bad",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/40435616/"
   },
   "drafted_at": "2026-09-19T23:01:09.758956+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-20T21:51:59.509490+09:00"
 }

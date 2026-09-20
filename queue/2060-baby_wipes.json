@@ -1,7 +1,7 @@
 {
   "id": "2060-baby_wipes",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hcwdfy8F40",
   "topic": "baby_wipes",
   "topic_ko": "아기 물티슈·기저귀",
   "verdict": "good",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/41014074/"
   },
   "drafted_at": "2026-09-18T00:20:01.114666+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-20T21:51:59.508839+09:00"
 }

@@ -1,7 +1,7 @@
 {
   "id": "2063-vitamin_d",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hcwlZTcFZk",
   "topic": "vitamin_d",
   "topic_ko": "비타민D",
   "verdict": "mixed",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/42161415/"
   },
   "drafted_at": "2026-09-18T23:40:29.088217+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-20T21:51:59.509167+09:00"
 }

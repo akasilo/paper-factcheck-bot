@@ -1,7 +1,7 @@
 {
   "id": "2059-mouthwash",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hcwbwjPhzo",
   "topic": "mouthwash",
   "topic_ko": "구강청결제",
   "verdict": "mixed",
@@ -76,5 +76,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/37867065/"
   },
   "drafted_at": "2026-09-17T00:17:41.841694+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-20T21:51:59.508613+09:00"
 }
