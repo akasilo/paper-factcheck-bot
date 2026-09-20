@@ -1,0 +1,95 @@
+{
+  "date": "2026-09-21",
+  "slot": "morning",
+  "queue": {
+    "id": "2057-nail_polish",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hcv6QkmWbc",
+    "topic": "nail_polish",
+    "topic_ko": "네일·젤네일",
+    "verdict": "mixed",
+    "evidence_level": "systematic review",
+    "source_text": "PMC13217139 전문",
+    "answer": "UV램프로 인한 피부암 위험은 낮다는 게 이 리뷰의 결론이며(노출량이 한낮 햇빛 3~5분과 비슷한 수준), 대신 손톱 갈라짐·무름과 아크릴레이트 알레르기가 실제로 흔한 부작용이었다.",
+    "style": "paper",
+    "accent": "violet",
+    "product_hint": "아크릴레이트 등 자극 성분을 뺀 3-free 네일 폴리시나, 손가락 부분이 뚫린 UV 차단 장갑",
+    "caveats": [
+      "인용된 개별 연구 상당수가 소규모 사례보고나 설문조사 수준이라 통계적 근거가 강하지 않음",
+      "UV램프의 DNA 손상 관련 연구는 사람 세포가 아닌 동물·세포주(시험관) 실험에 기반함",
+      "알레르기 반응 빈도는 사용 제품·시술자 숙련도·개인 체질에 따라 달라질 수 있음"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "매주 하는\n[[젤네일]]\n{{피부암}} 진짜?\n진짜 문제는 따로 있다"
+      },
+      {
+        "type": "body",
+        "text": "한 리뷰 논문에 따르면 젤네일 이용자 설문에서 [[84.5%]]가 부작용을 경험했다고 답했어요. 가장 흔한 건 손톱이 잘 갈라지고 잘 부서지는 증상이었습니다."
+      },
+      {
+        "type": "body",
+        "text": "논문에 인용된 연구에서 6개월간 하이브리드 네일을 쓴 뒤 손톱 두께가 0.50→0.46mm로 얇아지고, 케라틴을 만드는 시스테인은 22%, 메티오닌은 36%까지 줄었습니다."
+      },
+      {
+        "type": "body",
+        "text": "결론부터 답하면, UV램프로 인한 피부암 위험은 [[낮다]]는 게 이 리뷰의 결론입니다. 노출량은 한낮 햇빛 3~5분과 비슷했고, 편평세포암 사례는 극히 드물었습니다."
+      },
+      {
+        "type": "body",
+        "text": "반면 {{알레르기 접촉피부염}}은 실제로 흔해요. 저출력 램프를 쓰면 아크릴레이트 성분이 덜 굳어 알레르기를 일으키기 쉽고, 네일 아티스트는 평균 10.5개월 만에 증상이 나타났습니다.",
+        "note": "※ 28건의 기존 연구를 종합한 리뷰로, 상당수가 사례보고나 소규모 연구예요."
+      },
+      {
+        "type": "body",
+        "text": "젤네일 시술 전 손등에 [[자외선차단제(SPF50)]]를 바르거나 손가락 부분이 뚫린 UV 차단 장갑을 껴보세요. 논문에서 권장하는 방법이에요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Is hybrid and gel manicure safe? Current stage of knowledge.",
+          "journal": "Postepy dermatologii i alergologii",
+          "year": "2026",
+          "doi": "10.5114/ada.2026.160796",
+          "authors": "Kamińska J, Maciejewska M, Czuwara J et al."
+        }
+      }
+    ],
+    "images": [
+      "images/2057-nail_polish/01.jpg",
+      "images/2057-nail_polish/02.jpg",
+      "images/2057-nail_polish/03.jpg",
+      "images/2057-nail_polish/04.jpg",
+      "images/2057-nail_polish/05.jpg",
+      "images/2057-nail_polish/06.jpg",
+      "images/2057-nail_polish/07.jpg"
+    ],
+    "instagram_caption": "젤네일, UV램프 때문에 피부암 걸릴까 봐 걱정했다면 이 논문을 보세요.\n\n최근 리뷰 논문이 2011~2024년 발표된 28건의 연구를 종합했습니다. 결론부터 말하면 UV램프로 인한 피부암 위험은 낮다는 쪽에 무게가 실려요. 한 연구는 UV 네일램프 노출량이 한낮 햇빛을 3~5분 쬐는 정도와 비슷하다고 봤고, 편평세포암 사례는 극히 드물게만 보고됐습니다.\n\n문제는 따로 있었어요. 설문에 참여한 젤네일 이용자의 84.5%가 부작용을 경험했다고 답했는데, 가장 흔한 건 손톱이 잘 갈라지고 무르는 증상이었습니다. 6개월간 하이브리드 네일을 쓴 사람들은 손톱 두께가 0.50mm에서 0.46mm로 얇아졌고, 케라틴을 만드는 아미노산도 크게 줄었어요.\n\n아크릴레이트 성분에 의한 알레르기 접촉피부염도 실제로 흔한 부작용이었습니다. 특히 저출력 램프를 쓰면 성분이 덜 굳어 피부에 닿을 위험이 커지고, 네일 아티스트처럼 자주 시술받는 사람은 평균 10.5개월 만에 증상이 나타났다고 해요.\n\n오늘부터 젤네일 받을 때 손등에 자외선차단제를 바르거나 손가락 부분이 뚫린 UV 차단 장갑을 껴보세요. 손톱 상태도 한 번씩 체크해주고요.\n\n📄 출처: Kamińska J, Maciejewska M, Czuwara J et al., Postepy dermatologii i alergologii (2026). DOI 10.5114/ada.2026.160796\n\n#논문팩트체크 #paper_factcheck #젤네일 #하이브리드네일 #네일아트 #네일손상 #알레르기접촉피부염 #자외선차단제 #뷰티과학 #손톱건강 #UV램프 #네일살롱\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+    "threads_text": "젤네일 UV램프, 진짜 피부암 위험할까?\n\n최근 리뷰 논문을 보니 UV램프 피부암 위험은 생각보다 낮대요. 노출량이 한낮 햇빛 3~5분 정도라 편평세포암 사례도 극히 드물었고요.\n\n근데 진짜 흔한 부작용은 따로 있었어요. 젤네일 이용자 84.5%가 손톱 갈라짐 같은 부작용을 겪었고, 아크릴레이트 알레르기도 꽤 흔했대요.\n\n저는 이제 손등에 자외선차단제 바르고 젤네일 받으려고요. 여러분은 젤네일 하면서 손톱 상태 체크해본 적 있나요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Is hybrid and gel manicure safe? Current stage of knowledge.",
+      "journal": "Postepy dermatologii i alergologii",
+      "year": "2026",
+      "doi": "10.5114/ada.2026.160796",
+      "pmid": "42222452",
+      "authors": "Kamińska J, Maciejewska M, Czuwara J et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42222452/"
+    },
+    "drafted_at": "2026-09-17T00:11:08.401393+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-09-20T21:51:59.508361+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "18114799730059676",
+  "instagram_posted_at": "2026-09-21T08:07:06.264971+09:00",
+  "instagram_reel_id": "18102196526623284",
+  "instagram_reel_posted_at": "2026-09-21T08:08:05.989692+09:00",
+  "threads_post_id": "17918439603440772",
+  "threads_posted_at": "2026-09-21T08:09:05.714963+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DdhuzCAjNzt",
+  "threads_reply_id": "18126200920848439",
+  "completed_at": "2026-09-21T08:09:24.700737+09:00"
+}
