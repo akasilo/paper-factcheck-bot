@@ -1,0 +1,81 @@
+{
+  "id": "2073-multivitamin",
+  "approved": false,
+  "link": "",
+  "topic": "multivitamin",
+  "topic_ko": "종합비타민",
+  "verdict": "bad",
+  "evidence_level": "cohort",
+  "source_text": "PMC11208972 전문",
+  "answer": "이 논문에 따르면 매일 종합비타민을 먹은 사람은 안 먹은 사람보다 전체 사망 위험이 오히려 4% 더 높았다(HR 1.04, 95%CI 1.02-1.07).",
+  "style": "paper",
+  "accent": "yellow",
+  "product_hint": "장수 목적이라면 종합비타민보다 검사로 부족이 확인된 영양소만 개별로 챙기는 쪽이 이 연구 결론에 더 부합함",
+  "image_prompt": "assorted multivitamin tablets and capsules spilling out of an open pill bottle on a plain surface",
+  "caveats": [
+    "관찰연구로 인과관계 증명이 아니며, 역인과(아픈 사람이 비타민을 더 챙김) 가능성 배제 못함",
+    "두 번째 추적조사(FP2)에서는 신뢰구간이 1을 포함해 통계적으로 항상 유의하진 않았음",
+    "참가자 대부분이 백인 위주라 전체 인구로 일반화하기엔 한계가 있음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "매일 먹는\n[[종합비타민]]\n수명에 도움\n될까요?"
+    },
+    {
+      "type": "body",
+      "text": "미국에서 암·당뇨 등 만성질환이 없는 건강한 성인 39만 명을 최대 27년간 추적한 대규모 코호트 연구입니다."
+    },
+    {
+      "type": "body",
+      "text": "이 논문에 따르면 [[매일 복용자]]의 전체 사망 위험은 비복용자보다 {{4% 더 높았습니다}}(HR 1.04, 95%CI 1.02~1.07)."
+    },
+    {
+      "type": "body",
+      "text": "두 번째 추적조사(1998~2004)에서도 결과는 비슷했고, 심장병·암·뇌혈관질환 사망 위험도 복용 여부와 큰 차이가 없었습니다."
+    },
+    {
+      "type": "body",
+      "text": "즉 이번 연구에서는 [[종합비타민이 수명을 늘려준다는 근거]]를 찾지 못했습니다.",
+      "note": "※ 관찰연구라 인과관계 증명은 아니며, 아프거나 나이 든 사람이 비타민을 더 챙겼을 가능성(역인과)도 배제 못함"
+    },
+    {
+      "type": "body",
+      "text": "이미 먹고 있다면 계속 먹어도 되지만, '장수'가 목적이라면 [[식단과 운동]]에 우선순위를 두는 게 이 논문의 결론입니다."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Multivitamin Use and Mortality Risk in 3 Prospective US Cohorts.",
+        "journal": "JAMA network open",
+        "year": "2024",
+        "doi": "10.1001/jamanetworkopen.2024.18729",
+        "authors": "Loftfield E, O'Connell CP, Abnet CC et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2073-multivitamin/01.jpg",
+    "images/2073-multivitamin/02.jpg",
+    "images/2073-multivitamin/03.jpg",
+    "images/2073-multivitamin/04.jpg",
+    "images/2073-multivitamin/05.jpg",
+    "images/2073-multivitamin/06.jpg",
+    "images/2073-multivitamin/07.jpg"
+  ],
+  "instagram_caption": "매일 챙겨 먹는 종합비타민, 정말 오래 사는 데 도움이 될까요?\n\n미국 국립암연구소 등이 39만 명을 최대 27년간 추적한 대규모 코호트 연구 결과가 나왔습니다.\n\n매일 종합비타민을 먹은 사람은 안 먹은 사람보다 전체 사망 위험이 오히려 4% 더 높았습니다(HR 1.04). 두 번째 추적 조사에서도 비슷한 결과가 나왔습니다.\n\n심장병, 암, 뇌혈관질환으로 인한 사망 위험도 복용 여부와 큰 차이가 없었습니다. 즉 이번 연구에서는 종합비타민이 수명을 늘려준다는 근거를 찾지 못했습니다.\n\n다만 이는 관찰연구라 아프거나 나이 든 사람이 비타민을 더 챙겨 먹었을 가능성(역인과) 등 한계도 있습니다.\n\n오늘 할 수 있는 것: 이미 먹고 있다면 굳이 끊을 필요는 없지만, '장수'가 목적이라면 식단과 운동에 우선순위를 두는 게 이 논문의 결론에 가깝습니다.\n\n📄 출처: Loftfield E et al., JAMA Network Open (2024). DOI 10.1001/jamanetworkopen.2024.18729\n\n#논문팩트체크 #paper_factcheck #종합비타민 #비타민 #건강보조제 #영양제 #건강상식 #장수 #코호트연구 #식습관 #건강루틴 #팩트체크\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "매일 먹는 종합비타민, 진짜 오래 살게 해줄까?\n\n미국에서 39만 명을 27년 가까이 추적한 연구를 보니, 매일 종합비타민 먹은 사람이 안 먹은 사람보다 전체 사망 위험이 오히려 4% 더 높게 나왔어요(HR 1.04). 암, 심장병, 뇌혈관질환 사망 위험도 큰 차이 없었고요. '장수 보험'이라는 기대와 달리 이번 연구에서는 수명 연장 효과를 못 찾은 거죠. 물론 관찰연구라 완벽한 인과관계는 아니지만, 여러분은 그래도 계속 챙겨 드실 건가요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Multivitamin Use and Mortality Risk in 3 Prospective US Cohorts.",
+    "journal": "JAMA network open",
+    "year": "2024",
+    "doi": "10.1001/jamanetworkopen.2024.18729",
+    "pmid": "38922615",
+    "authors": "Loftfield E, O'Connell CP, Abnet CC et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38922615/"
+  },
+  "drafted_at": "2026-09-22T01:40:35.069919+09:00",
+  "model": "claude_code:default"
+}
