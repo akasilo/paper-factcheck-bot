@@ -1,7 +1,7 @@
 {
   "id": "2069-mattress_pillow",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hedAeIERtk",
   "topic": "mattress_pillow",
   "topic_ko": "매트리스·베개",
   "verdict": "good",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/39762607/"
   },
   "drafted_at": "2026-09-20T23:22:16.971877+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-22T08:02:27.582617+09:00"
 }
