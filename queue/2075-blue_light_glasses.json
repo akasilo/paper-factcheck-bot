@@ -1,0 +1,86 @@
+{
+  "id": "2075-blue_light_glasses",
+  "approved": false,
+  "link": "",
+  "topic": "blue_light_glasses",
+  "topic_ko": "블루라이트 안경",
+  "verdict": "bad",
+  "evidence_level": "systematic review",
+  "source_text": "PMC10436683 전문",
+  "answer": "코크란 리뷰에 따르면 블루라이트 차단 렌즈는 일반 렌즈와 비교해 눈의 피로감 점수에 유의미한 차이가 없었다(낮은 신뢰도 증거).",
+  "style": "paper",
+  "accent": "blue",
+  "product_hint": "눈 피로·수면 개선보다는 착용감과 정확한 시력 교정을 기준으로 안경(렌즈)을 고르기",
+  "image_prompt": "a single pair of clear anti-blue-light glasses lying on a wooden desk beside a laptop keyboard, no people or hands visible",
+  "caveats": [
+    "메타분석을 수행하지 않아 결과를 하나의 수치로 종합하지 못함 (연구 간 이질성 때문)",
+    "다수 연구에서 참가자·평가자 눈가림이 이뤄지지 않아 편향 위험이 높음",
+    "수면 관련 결과는 정신건강·수면장애 등 서로 다른 집단을 대상으로 해 일반화가 어려움"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "블루라이트 안경\n[[눈 피로]]\n정말 줄여줄까?"
+    },
+    {
+      "type": "body",
+      "text": "코크란 국제 리뷰가 17개 무작위 대조 시험을 모아봤더니, [[눈의 피로감]] 점수는 일반 렌즈와 차이가 없었어요. (낮은 신뢰도 증거)"
+    },
+    {
+      "type": "body",
+      "text": "반응속도를 재는 '깜빡임 민감도(CFF)' 검사에서도 두 렌즈 사이 의미 있는 차이는 없었습니다."
+    },
+    {
+      "type": "body",
+      "text": "시력(최대 교정시력)도 두 렌즈 간 차이가 거의 없었어요. 이번엔 중간 신뢰도 증거로 확인됐습니다."
+    },
+    {
+      "type": "body",
+      "text": "수면엔? 관련 연구 6건 중 3건은 '좋아졌다', 3건은 '차이 없다' - {{아직 결론 내리지 못했어요}}."
+    },
+    {
+      "type": "body",
+      "text": "황반 보호·멜라토닌 영향은 측정한 연구 자체가 없었고, 드물게 두통·불편감 같은 부작용도 보고됐습니다.",
+      "note": "※ 메타분석 없이 개별 연구 결과를 종합한 리뷰라 신뢰도는 낮음~중간 수준"
+    },
+    {
+      "type": "body",
+      "text": "블루라이트 안경을 살 계획이라면, [[눈 피로 감소 효과]]가 아직 임상적으로 확실히 입증되지 않았다는 점을 참고해서 결정해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Blue-light filtering spectacle lenses for visual performance, sleep, and macular health in adults.",
+        "journal": "The Cochrane database of systematic reviews",
+        "year": "2023",
+        "doi": "10.1002/14651858.CD013244.pub2",
+        "authors": "Singh S, Keller PR, Busija L et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2075-blue_light_glasses/01.jpg",
+    "images/2075-blue_light_glasses/02.jpg",
+    "images/2075-blue_light_glasses/03.jpg",
+    "images/2075-blue_light_glasses/04.jpg",
+    "images/2075-blue_light_glasses/05.jpg",
+    "images/2075-blue_light_glasses/06.jpg",
+    "images/2075-blue_light_glasses/07.jpg",
+    "images/2075-blue_light_glasses/08.jpg"
+  ],
+  "instagram_caption": "블루라이트 안경, 눈 피로·수면에 진짜 효과 있을까?\n\n[[블루라이트 차단 안경]]은 화면 보는 시간이 길어진 요즘 정말 흔한 아이템이 됐죠. 눈의 피로를 줄여주고 수면의 질도 높여준다는 이야기, 다들 한 번쯤 들어보셨을 거예요.\n\n코크란(국제 연구 검토 기구)이 17개의 무작위 대조 시험을 모아 확인한 결과, 블루라이트 차단 렌즈를 쓴 그룹과 일반 렌즈를 쓴 그룹 사이 눈의 피로감 점수에는 유의미한 차이가 없었어요(낮은 신뢰도 증거). 시력(최대 교정시력)도 거의 동일했고요(중간 신뢰도 증거).\n\n수면에 대한 효과는 더 애매했습니다. 관련 연구 6건 중 3건은 '수면이 좋아졌다'고 보고했지만, 나머지 3건은 '차이가 없다'고 보고해 {{결론을 내리지 못했어요}}. 황반 보호나 멜라토닌 수치에 미치는 영향은 아예 측정한 연구가 없어서 확인 자체가 불가능했고, 드물게 두통·불편감·우울감 같은 부작용을 보고한 연구도 있었습니다.\n\n오늘의 행동: 블루라이트 안경을 살 계획이라면, [[눈 피로 감소 효과]]가 아직 임상적으로 확실히 입증되지 않았다는 점을 참고해서 결정해보세요.\n\n📄 출처: Singh S, Keller PR, Busija L 등, Cochrane Database of Systematic Reviews (2023). DOI 10.1002/14651858.CD013244.pub2\n\n#블루라이트안경 #블루라이트차단렌즈 #눈피로 #디지털아이스트레인 #수면건강 #코크란리뷰 #안경선택 #시력관리 #눈건강 #과학적근거 #논문팩트체크 #paper_factcheck\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "블루라이트 안경, 눈 피로에 진짜 효과 있을까?\n\n코크란(국제 연구 검토 기구)이 17개 무작위 대조 시험을 모아봤는데, 블루라이트 차단 렌즈를 썼다고 눈 피로감이나 시력이 딱히 좋아지진 않았대요. 수면 효과도 애매해서, 관련 연구 6건 중 3건은 '좋아졌다', 3건은 '차이 없다'로 갈렸고요. 황반 보호나 멜라토닌 영향은 아예 측정한 연구가 없어서 확인 불가였어요. 혹시 드물게 두통이나 우울감 같은 부작용을 보고한 연구도 있었다는 거, 알고 계셨나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Blue-light filtering spectacle lenses for visual performance, sleep, and macular health in adults.",
+    "journal": "The Cochrane database of systematic reviews",
+    "year": "2023",
+    "doi": "10.1002/14651858.CD013244.pub2",
+    "pmid": "37593770",
+    "authors": "Singh S, Keller PR, Busija L et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37593770/"
+  },
+  "drafted_at": "2026-09-23T00:12:40.910869+09:00",
+  "model": "claude_code:default"
+}

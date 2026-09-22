@@ -1,0 +1,81 @@
+{
+  "id": "2077-coffee",
+  "approved": false,
+  "link": "",
+  "topic": "coffee",
+  "topic_ko": "커피",
+  "verdict": "good",
+  "evidence_level": "cohort",
+  "source_text": "PMC11657746 전문",
+  "answer": "이 논문에 따르면 매일 커피를 마신 심방세동 환자는 안 마신 환자보다 심혈관 사건 위험이 23% 낮았고(위험비 0.77), 특히 하루 2~3잔에서 위험비가 0.74로 가장 낮았다.",
+  "style": "paper",
+  "accent": "orange",
+  "product_hint": "하루 2~3잔 정도로 즐기는 원두·드립 커피",
+  "image_prompt": "a single ceramic cup of black coffee with steam, next to a small pile of whole coffee beans, on a plain wooden table",
+  "caveats": [
+    "관찰연구라 인과관계 증명 불가",
+    "뇌졸중·심근경색·심장사는 개별적으로 통계적 유의성 없음",
+    "스위스 유럽인 중심 코호트라 다른 인종·지역으로 일반화에는 한계"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "부정맥 있으면\n[[커피]]\n끊어야 할까요?"
+    },
+    {
+      "type": "body",
+      "text": "스위스에서 심방세동 환자 3835명을 4.7년간 추적한 대규모 관찰연구가 있어요."
+    },
+    {
+      "type": "body",
+      "text": "매일 커피 마신 환자는 안 마신 환자보다 심혈관 사건(MACE) 위험이 [[23% 낮았어요]] (위험비 0.77)."
+    },
+    {
+      "type": "body",
+      "text": "특히 하루 2~3잔 마신 그룹이 위험비 0.74로 가장 낮았고, 급성 심부전 입원 위험도 29% 낮았어요."
+    },
+    {
+      "type": "body",
+      "text": "뇌졸중·심근경색·심장사 각각은 통계적으로 뚜렷한 차이가 없었고, 관찰연구라 인과관계까지 증명하진 못해요.",
+      "note": "※ 관찰연구라 인과관계 단정은 어려워요"
+    },
+    {
+      "type": "body",
+      "text": "커피를 끊을 필요는 없어요. 부정맥이 있다면 주치의와 상의해 [[하루 2~3잔]] 정도로 즐겨보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Coffee consumption and adverse cardiovascular events in patients with atrial fibrillation.",
+        "journal": "BMC medicine",
+        "year": "2024",
+        "doi": "10.1186/s12916-024-03817-x",
+        "authors": "Iten V, Herber E, Coslovsky M et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2077-coffee/01.jpg",
+    "images/2077-coffee/02.jpg",
+    "images/2077-coffee/03.jpg",
+    "images/2077-coffee/04.jpg",
+    "images/2077-coffee/05.jpg",
+    "images/2077-coffee/06.jpg",
+    "images/2077-coffee/07.jpg"
+  ],
+  "instagram_caption": "부정맥(심방세동)이 있으면 커피부터 끊어야 한다고 생각하기 쉽죠.\n\n스위스에서 심방세동 환자 3835명을 평균 4.7년간 추적한 대규모 관찰연구를 봤어요.\n\n매일 커피를 마신 환자는 안 마신 환자보다 심혈관 사건(뇌졸중·심근경색·심부전·심장사 종합) 위험이 23% 낮았어요(위험비 0.77). 특히 하루 2~3잔 마신 그룹의 위험비가 0.74로 가장 낮았고, 급성 심부전으로 입원할 위험도 29% 낮았습니다.\n\n다만 뇌졸중·심근경색·심장사를 각각 따로 보면 통계적으로 뚜렷한 차이는 아니었어요. 그리고 이건 인과관계를 증명한 실험이 아니라 관찰연구라, \"커피가 심장을 지켜준다\"고 단정할 수는 없습니다.\n\n그래도 분명한 건, 이 연구에서는 부정맥 환자가 매일 커피를 마신다고 해서 상태가 나빠진다는 근거는 없었다는 점이에요.\n\n오늘의 행동: 부정맥이 있다고 커피를 억지로 끊기보다, 하루 2~3잔 선에서 주치의와 상의해보세요.\n\n📄 출처: Iten V et al., BMC Medicine (2024). DOI 10.1186/s12916-024-03817-x\n\n#논문팩트체크 #paper_factcheck #심방세동 #부정맥 #커피 #카페인 #심혈관건강 #관찰연구 #건강정보 #심장건강 #드립커피 #원두커피\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "부정맥 있으면 커피 끊어야 할까?\n\n스위스에서 심방세동 환자 3835명을 4.7년 추적한 연구를 보니, 매일 커피 마신 사람이 안 마신 사람보다 심혈관 사건 위험이 23% 낮았대요(위험비 0.77). 특히 하루 2~3잔 마신 그룹이 제일 위험비 낮았고(0.74), 심부전 입원 위험도 29% 낮았고요. 물론 관찰연구라 인과관계까진 못 밝혔고, 뇌졸중·심근경색은 통계적으로 확실치 않았어요. 그래도 매일 마신다고 나빠졌다는 증거는 없었대요. 여러분은 부정맥 있으면 커피 끊으시겠어요, 계속 드시겠어요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Coffee consumption and adverse cardiovascular events in patients with atrial fibrillation.",
+    "journal": "BMC medicine",
+    "year": "2024",
+    "doi": "10.1186/s12916-024-03817-x",
+    "pmid": "39696255",
+    "authors": "Iten V, Herber E, Coslovsky M et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39696255/"
+  },
+  "drafted_at": "2026-09-23T00:15:04.220325+09:00",
+  "model": "claude_code:default"
+}

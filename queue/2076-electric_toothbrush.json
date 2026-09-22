@@ -1,0 +1,81 @@
+{
+  "id": "2076-electric_toothbrush",
+  "approved": false,
+  "link": "",
+  "topic": "electric_toothbrush",
+  "topic_ko": "전동칫솔",
+  "verdict": "mixed",
+  "evidence_level": "systematic review",
+  "source_text": "초록만",
+  "answer": "16편의 연구를 종합한 결과, 장애가 있는 사람의 치석 제거와 잇몸 건강에서 전동칫솔과 수동칫솔 사이에 유의미한 차이가 없었다.",
+  "style": "paper",
+  "accent": "blue",
+  "product_hint": "가격이나 전동 여부보다 손에 잘 맞고 구석구석 닿기 편한 칫솔모 크기·손잡이인지가 더 중요함",
+  "image_prompt": "a manual toothbrush and an electric toothbrush placed side by side on a plain bathroom counter",
+  "caveats": [
+    "장애가 있는 사람을 대상으로 한 연구로 비장애인에게 그대로 적용하기는 어려움",
+    "원래 계획한 메타분석 대신 서술적 분석으로 대체됨",
+    "포함된 연구들의 편향 위험 수준이 저·중·고로 다양했음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "전동칫솔이\n수동칫솔보다\n[[정말]] 나을까?"
+    },
+    {
+      "type": "body",
+      "text": "이 논문은 장애가 있는 사람들에게 전동칫솔이 수동칫솔보다 나은지 살펴본 [[체계적 문헌고찰]]이에요. 관련 연구 16편을 모아 분석했어요."
+    },
+    {
+      "type": "body",
+      "text": "결과는 뜻밖이었어요. 치석 제거나 잇몸 건강 모두에서 전동칫솔과 수동칫솔 사이에 {{유의미한 차이가 없었다}}고 해요."
+    },
+    {
+      "type": "body",
+      "text": "본인이 직접 닦을 때도, 보호자가 대신 닦아줄 때도 마찬가지였고, 신체 장애·지적 장애 그룹 모두에서 같은 결과가 나왔어요."
+    },
+    {
+      "type": "body",
+      "text": "다만 수치 데이터가 충분치 않아 원래 계획했던 메타분석 대신 서술적 분석으로 정리된 결과라는 점은 참고할 부분이에요.",
+      "note": "※ 장애인 대상 연구로, 일반인에게 그대로 적용하기는 조심스러워요."
+    },
+    {
+      "type": "body",
+      "text": "칫솔 종류보다 [[꼼꼼히 닦는 시간과 방법]]이 더 중요할 수 있어요. 오늘은 2분 타이머 맞추고 닦아보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Powered or manual toothbrushes for people with disabilities - which is better?",
+        "journal": "Evidence-based dentistry",
+        "year": "2024",
+        "doi": "10.1038/s41432-024-00981-0",
+        "authors": "Conway F"
+      }
+    }
+  ],
+  "images": [
+    "images/2076-electric_toothbrush/01.jpg",
+    "images/2076-electric_toothbrush/02.jpg",
+    "images/2076-electric_toothbrush/03.jpg",
+    "images/2076-electric_toothbrush/04.jpg",
+    "images/2076-electric_toothbrush/05.jpg",
+    "images/2076-electric_toothbrush/06.jpg",
+    "images/2076-electric_toothbrush/07.jpg"
+  ],
+  "instagram_caption": "전동칫솔이 수동칫솔보다 정말 나을까요?\n\n한 체계적 문헌고찰이 장애가 있는 사람들을 대상으로 이 질문을 파고들었어요. 관련 연구 16편을 모아 분석한 결과예요.\n\n결과는 예상 밖이었어요. 치석 제거와 잇몸 건강 모두에서 전동칫솔과 수동칫솔 사이에 유의미한 차이가 없었다고 해요.\n\n본인이 직접 닦을 때도, 보호자가 대신 닦아줄 때도 마찬가지였고, 신체 장애·지적 장애 그룹 모두에서 같은 결과가 나왔어요.\n\n다만 수치 데이터가 부족해 원래 계획했던 메타분석 대신 서술적 분석으로 정리됐고, 장애인을 대상으로 한 연구라 일반인에게 그대로 적용하긴 조심스러워요.\n\n오늘은 칫솔 종류를 고민하기보다, 2분 타이머를 맞추고 구석구석 꼼꼼히 닦는 습관부터 챙겨보는 건 어떨까요?\n\n📄 출처: Conway F, Evidence-based dentistry (2024). DOI 10.1038/s41432-024-00981-0\n\n#논문팩트체크 #paper_factcheck #전동칫솔 #수동칫솔 #구강건강 #치아관리 #칫솔질 #치석제거 #잇몸건강 #장애인구강건강 #체계적문헌고찰 #생활팁\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "전동칫솔이 수동칫솔보다 정말 나을까?\n\n최근 체계적 문헌고찰을 보니 장애가 있는 분들을 대상으로 한 연구 16편을 모아봤더니, 치석 제거나 잇몸 건강에서 전동칫솔과 수동칫솔 사이에 유의미한 차이가 없었대요. 직접 닦든 보호자가 닦아주든 결과는 같았고요. 장애인 대상 연구라 그대로 일반화하긴 조심스럽지만, 비싼 전동칫솔이 무조건 정답은 아닐 수도 있겠어요. 여러분은 칫솔 고를 때 뭘 가장 중요하게 보나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Powered or manual toothbrushes for people with disabilities - which is better?",
+    "journal": "Evidence-based dentistry",
+    "year": "2024",
+    "doi": "10.1038/s41432-024-00981-0",
+    "pmid": "38443442",
+    "authors": "Conway F",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38443442/"
+  },
+  "drafted_at": "2026-09-23T00:13:47.575837+09:00",
+  "model": "claude_code:default"
+}
