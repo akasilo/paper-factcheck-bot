@@ -369,5 +369,26 @@
     "date": "2026-09-23",
     "topic": "coffee",
     "title": "Coffee consumption and adverse cardiovascular events in patients with atrial fibrillation."
+  },
+  {
+    "pmid": "39201362",
+    "doi": "10.3390/ijms25168675",
+    "date": "2026-09-24",
+    "topic": "omega3",
+    "title": "Omega-3 Polyunsaturated Fatty Acids in Depression."
+  },
+  {
+    "pmid": "37533523",
+    "doi": "10.3389/fpubh.2023.1199728",
+    "date": "2026-09-24",
+    "topic": "toothpaste",
+    "title": "Caries-preventing effect of a hydroxyapatite-toothpaste in adults: a 18-month double-blinded randomized clinical trial."
+  },
+  {
+    "pmid": "42676140",
+    "doi": "10.4037/ajcc2026793",
+    "date": "2026-09-24",
+    "topic": "weighted_blanket",
+    "title": "Weighted Blankets to Reduce Anxiety in Hospitalized Patients."
   }
 ]

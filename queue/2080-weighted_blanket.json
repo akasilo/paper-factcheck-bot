@@ -1,0 +1,81 @@
+{
+  "id": "2080-weighted_blanket",
+  "approved": false,
+  "link": "",
+  "topic": "weighted_blanket",
+  "topic_ko": "중량 이불",
+  "verdict": "good",
+  "evidence_level": "rct",
+  "source_text": "초록만",
+  "answer": "첫 치료 시간 동안 중량 이불을 덮은 환자군의 평균 불안 점수가 일반 치료군보다 3.6점 낮았다(95% CI -4.7~-2.5).",
+  "style": "paper",
+  "accent": "blue",
+  "product_hint": "체중의 약 10% 안팎 무게에 부드러운 소재로 몸을 감싸는 중량(웨이티드) 이불",
+  "image_prompt": "a neatly folded heavy quilted weighted blanket resting on a plain hospital bed sheet",
+  "caveats": [
+    "급성질환 입원환자 대상 첫 연구로 표본이 54명, 단일 병원에 한정됨",
+    "효과는 20분의 단기 개입 결과이며 장기적 효과는 확인되지 않음",
+    "교차설계 특성상 처치 순서에 따른 부수효과 가능성이 있음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "무거운 이불이\n[[불안]]을\n줄여준다고?\n{{진짜일까}}"
+    },
+    {
+      "type": "body",
+      "text": "미국 한 대학병원에서 입원환자 54명에게 6.75kg [[중량 이불]]을 20분씩 덮게 하고, 평소 치료와 비교하는 무작위 교차 연구를 진행했어요."
+    },
+    {
+      "type": "body",
+      "text": "결과는 뚜렷했어요. 첫 치료 시간 동안 중량 이불을 덮은 그룹은 평소 치료만 받은 그룹보다 평균 불안 점수가 [[3.6점]] 더 낮았습니다(95% 신뢰구간 -4.7~-2.5)."
+    },
+    {
+      "type": "body",
+      "text": "이불을 벗은 뒤 60분이 지나서도 불안이 줄어든 효과는 계속 남아 있었다고 연구팀은 밝혔습니다."
+    },
+    {
+      "type": "body",
+      "text": "연구팀은 이 결과를 두고 입원환자의 불안을 줄이는 [[비약물 치료법]]으로 효과적이라고 결론지었습니다.",
+      "note": "※ 급성질환 입원환자 대상 첫 연구, 표본 54명·한 병원 한정이라 일반화엔 주의가 필요해요."
+    },
+    {
+      "type": "body",
+      "text": "오늘 밤 불안하거나 잠들기 힘들다면 [[묵직한 이불]]을 20분만 덮어보고 몸의 반응을 살펴보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Weighted Blankets to Reduce Anxiety in Hospitalized Patients.",
+        "journal": "American journal of critical care : an official publication, American Association of Critical-Care Nurses",
+        "year": "2026",
+        "doi": "10.4037/ajcc2026793",
+        "authors": "Rico C, Bhadu K, Callahan B et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2080-weighted_blanket/01.jpg",
+    "images/2080-weighted_blanket/02.jpg",
+    "images/2080-weighted_blanket/03.jpg",
+    "images/2080-weighted_blanket/04.jpg",
+    "images/2080-weighted_blanket/05.jpg",
+    "images/2080-weighted_blanket/06.jpg",
+    "images/2080-weighted_blanket/07.jpg"
+  ],
+  "instagram_caption": "무거운 이불을 덮으면 정말 불안이 줄어들까요?\n\n최근 미국 한 대학병원에서 진행한 무작위 교차 임상시험이 이 질문에 답을 내놨어요. 입원환자 54명에게 6.75kg(15파운드) 무게의 이불을 20분간 덮게 하고, 평소와 같은 치료만 받은 시간과 비교했습니다.\n\n결과는 꽤 뚜렷했습니다. 무거운 이불을 덮은 시간 동안 환자들의 평균 불안 점수는 평소 치료만 받았을 때보다 3.6점이나 낮았어요(95% 신뢰구간 -4.7~-2.5). 게다가 이불을 벗은 뒤 60분이 지나서도 이 효과는 계속 남아 있었습니다.\n\n연구팀은 무거운 이불이 약을 쓰지 않고도 입원환자의 불안을 줄이는 데 효과적인 방법이 될 수 있다고 결론지었어요. 다만 이번 연구는 한 병원, 54명을 대상으로 한 첫 시도라 더 많은 연구로 확인이 필요합니다.\n\n오늘 밤 유독 불안하거나 잠이 안 온다면, 묵직한 이불 하나 덮고 20분만 가만히 있어보는 것도 시도해볼 만해요.\n\n📄 출처: Rico C, Bhadu K, Callahan B et al., American Journal of Critical Care (2026). DOI 10.4037/ajcc2026793\n\n#논문팩트체크 #paper_factcheck #중량이불 #웨이티드블랭킷 #불안 #수면 #스트레스 #입원환자 #무작위대조시험 #비약물치료 #멘탈헬스 #심리안정 #건강정보 #과학뉴스\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "무거운 이불 덮으면 불안이 줄어들까?\n\n최근 미국 병원에서 입원환자 54명한테 6.75kg 무거운 이불을 20분 덮여보고 평소 치료랑 비교한 무작위 교차 연구가 나왔어요. 결과는 무거운 이불 쪽이 평균 불안 점수 3.6점이나 낮았고(95% CI -4.7~-2.5), 이불 벗은 뒤 60분 지나도 효과가 남아있었대요. 물론 병원 한 곳, 54명 대상 연구라 더 지켜봐야 하지만 꽤 인상적이죠. 여러분은 잠 안 올 때 뭘로 마음을 가라앉히나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Weighted Blankets to Reduce Anxiety in Hospitalized Patients.",
+    "journal": "American journal of critical care : an official publication, American Association of Critical-Care Nurses",
+    "year": "2026",
+    "doi": "10.4037/ajcc2026793",
+    "pmid": "42676140",
+    "authors": "Rico C, Bhadu K, Callahan B et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42676140/"
+  },
+  "drafted_at": "2026-09-24T00:16:27.689599+09:00",
+  "model": "claude_code:default"
+}

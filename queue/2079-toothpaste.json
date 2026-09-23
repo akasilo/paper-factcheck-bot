@@ -1,0 +1,81 @@
+{
+  "id": "2079-toothpaste",
+  "approved": false,
+  "link": "",
+  "topic": "toothpaste",
+  "topic_ko": "치약",
+  "verdict": "good",
+  "evidence_level": "rct",
+  "source_text": "PMC10393266 전문",
+  "answer": "이 논문에 따르면 18개월 후 충치가 늘지 않은 비율이 하이드록시아파타이트 치약 89.3%, 불소치약 87.4%로 통계적으로 차이가 없었고, 충치지수 증가폭은 오히려 하이드록시아파타이트 쪽이 더 낮았다(0.02 vs 0.31).",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "무불소 하이드록시아파타이트 성분 치약",
+  "image_prompt": "a tube of toothpaste with a small dollop squeezed onto toothbrush bristles resting on a plain bathroom countertop",
+  "caveats": [
+    "연구 대상이 구강 문제가 적은 비교적 건강한 젊은 성인 위주라 일반화에 제한이 있음",
+    "윤리적 이유로 위약(무성분) 대조군 없이 진행돼 절대적 예방 효과 자체는 확인 불가",
+    "18개월 관찰 결과이며, 이보다 긴 기간의 효과는 추가 연구가 필요함"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "불소 없는\n[[치약]]\n충치 막을 수\n있을까?"
+    },
+    {
+      "type": "body",
+      "text": "성인 189명을 18개월간 지켜본 이중맹검 무작위 대조 시험이에요. [[하이드록시아파타이트]] 치약과 불소치약(1450ppm)의 충치 예방 효과를 비교했어요."
+    },
+    {
+      "type": "body",
+      "text": "18개월 후 충치가 늘지 않은 사람 비율은 [[하이드록시아파타이트]] 89.3%, 불소치약 87.4%로 통계적으로 차이가 없었어요."
+    },
+    {
+      "type": "body",
+      "text": "충치지수(DMFS) 증가폭 평균은 하이드록시아파타이트군 0.02, 불소치약군 0.31로 [[더 낮았어요]]."
+    },
+    {
+      "type": "body",
+      "text": "치태지수(PCR)도 [[하이드록시아파타이트]] 사용군에서 줄어드는 경향이 나타났어요, 불소치약군에는 없던 변화예요.",
+      "note": "※ 참가자는 구강 문제가 적고 비교적 건강한 젊은 성인 위주였어요"
+    },
+    {
+      "type": "body",
+      "text": "불소가 부담스럽다면 치약 성분표에서 [[하이드록시아파타이트]]를 확인해보고, 지금 치약이 안 맞으면 치과에 상담해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Caries-preventing effect of a hydroxyapatite-toothpaste in adults: a 18-month double-blinded randomized clinical trial.",
+        "journal": "Frontiers in public health",
+        "year": "2023",
+        "doi": "10.3389/fpubh.2023.1199728",
+        "authors": "Paszynska E, Pawinska M, Enax J et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2079-toothpaste/01.jpg",
+    "images/2079-toothpaste/02.jpg",
+    "images/2079-toothpaste/03.jpg",
+    "images/2079-toothpaste/04.jpg",
+    "images/2079-toothpaste/05.jpg",
+    "images/2079-toothpaste/06.jpg",
+    "images/2079-toothpaste/07.jpg"
+  ],
+  "instagram_caption": "불소 없는 치약, 충치 막을 수 있을까요?\n\n요즘 '불소 프리' 치약을 찾는 분들 많죠. 그런데 정말 충치를 막아줄까 걱정되기도 해요.\n\n최근 논문에 따르면 성인 189명을 18개월간 추적한 이중맹검 무작위 대조 시험에서, 불소 없는 하이드록시아파타이트 치약과 불소치약(1450ppm)의 충치 예방 효과를 비교했어요.\n\n그 결과, 충치가 늘지 않은 사람 비율이 하이드록시아파타이트 치약 89.3%, 불소치약 87.4%로 통계적으로 차이가 없었대요. 오히려 충치지수(DMFS) 증가폭 평균은 하이드록시아파타이트군이 0.02로, 불소치약군 0.31보다 더 낮았고요.\n\n치태(플라크) 지수도 하이드록시아파타이트 사용군에서 줄어드는 경향이 나타났어요. 다만 이번 연구 참가자는 구강 문제가 적은 비교적 건강한 젊은 성인 위주였다는 점은 참고해주세요.\n\n오늘 할 수 있는 것: 불소가 부담스럽다면 치약 성분표에서 하이드록시아파타이트를 확인해보고, 지금 쓰는 치약이 잘 맞는지 치과에서 상담받아보세요.\n\n📄 출처: Paszynska E, Pawinska M, Enax J et al., Frontiers in Public Health (2023). DOI 10.3389/fpubh.2023.1199728\n\n#논문팩트체크 #paper_factcheck #치약 #불소프리 #하이드록시아파타이트 #충치예방 #구강건강 #치아건강 #무작위대조시험 #치과상식 #생활건강 #과학팩트체크\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "불소 없는 치약도 충치를 막을 수 있을까?\n\n최근 18개월짜리 무작위 대조 시험을 보니, 불소 없는 하이드록시아파타이트 치약을 쓴 성인 89.3%가 충치가 늘지 않았대요. 불소치약 쓴 그룹은 87.4%로 거의 비슷했고, 충치지수 증가폭은 오히려 하이드록시아파타이트 쪽이 더 작았어요(0.02 vs 0.31). 다만 참가자가 구강 문제 적은 건강한 성인 위주였다는 점은 감안해야 해요. 여러분은 불소치약과 불소프리 치약 중 뭘 쓰고 계신가요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Caries-preventing effect of a hydroxyapatite-toothpaste in adults: a 18-month double-blinded randomized clinical trial.",
+    "journal": "Frontiers in public health",
+    "year": "2023",
+    "doi": "10.3389/fpubh.2023.1199728",
+    "pmid": "37533523",
+    "authors": "Paszynska E, Pawinska M, Enax J et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37533523/"
+  },
+  "drafted_at": "2026-09-24T00:15:02.668890+09:00",
+  "model": "claude_code:default"
+}
