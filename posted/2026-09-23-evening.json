@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-23",
+  "slot": "evening",
+  "queue": {
+    "id": "2065-sunscreen",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hcwqba9sWG",
+    "topic": "sunscreen",
+    "topic_ko": "선크림",
+    "verdict": "mixed",
+    "evidence_level": "review",
+    "source_text": "초록만",
+    "answer": "이 리뷰에 따르면 선크림은 흑색종·편평세포암 발생률은 줄이는 경향이 뚜렷했지만, 기저세포암에는 효과가 상대적으로 약했다.",
+    "style": "paper",
+    "accent": "orange",
+    "product_hint": "벤조페논·옥토크릴렌 등 특정 자외선 차단 성분이 빠진 징크옥사이드·티타늄디옥사이드 무기자차 선크림",
+    "image_prompt": "a plain white sunscreen tube with a dollop of white cream squeezed onto a flat glass surface in sunlight",
+    "caveats": [
+      "리뷰 논문이라 개별 원 연구의 정량적 위험감소율(%)은 제시되지 않음",
+      "자외선차단 성분의 발암 가능성은 '일부 지적' 수준으로만 언급되고 구체적 근거는 없음",
+      "선크림 종류·사용빈도별 세부 비교 데이터는 초록에 없음"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "매일 바르는\n[[선크림]]\n피부암 다\n막아줄까?"
+      },
+      {
+        "type": "body",
+        "text": "여러 관찰연구와 무작위 대조 시험을 종합해보니, 선크림을 쓴 사람들에게서 피부암 발생이 줄어드는 경향이 확인됐다고 해요."
+      },
+      {
+        "type": "body",
+        "text": "특히 [[흑색종]]과 편평세포암은 선크림 사용과 함께 발생률이 줄어드는 결과가 비교적 뚜렷하게 나타났어요."
+      },
+      {
+        "type": "body",
+        "text": "반면 기저세포암에서는 선크림의 예방 효과가 {{상대적으로 약하게}} 나타났다는 게 이 리뷰의 결론이에요."
+      },
+      {
+        "type": "body",
+        "text": "효과 크기는 선크림 종류와 권장 사용법(양·빈도) 준수 여부에 달려 있었고, 흔한 부작용은 피부자극·발진 정도였어요.",
+        "note": "※ 일부 자외선 차단 성분엔 발암 가능성이 있다는 지적도 있으나 구체적 근거는 제시되지 않음"
+      },
+      {
+        "type": "body",
+        "text": "SPF 수치만 보지 말고 [[성분표]]도 확인하면서, 권장량을 자주 덧바르는 습관부터 챙겨보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "A review of sunscreen in the prevention of skin cancer.",
+          "journal": "Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners",
+          "year": "2025",
+          "doi": "10.1177/10781552251327596",
+          "authors": "Micha JP, Bohart RD, Goldstein BH"
+        }
+      }
+    ],
+    "images": [
+      "images/2065-sunscreen/01.jpg",
+      "images/2065-sunscreen/02.jpg",
+      "images/2065-sunscreen/03.jpg",
+      "images/2065-sunscreen/04.jpg",
+      "images/2065-sunscreen/05.jpg",
+      "images/2065-sunscreen/06.jpg",
+      "images/2065-sunscreen/07.jpg"
+    ],
+    "instagram_caption": "선크림, 바르기만 하면 모든 피부암을 다 막아줄까요?\n\n최근 저널에 실린 리뷰 논문에 따르면, 여러 관찰연구와 무작위 대조 시험을 종합했을 때 선크림을 쓴 사람들에게서 [[흑색종]]과 편평세포암 발생률이 줄어드는 경향이 나타났다고 해요.\n\n그런데 모든 피부암에 똑같이 잘 듣는 건 아니었어요. 기저세포암에 대해서는 선크림의 예방 효과가 상대적으로 약하게 나타났다는 게 이 리뷰의 결론이에요.\n\n효과가 얼마나 나느냐는 선크림 종류와 권장량·사용빈도를 얼마나 지켰는지에 달려 있었고, 흔한 부작용은 피부 자극과 발진 정도였어요. 다만 일부 자외선 차단 성분엔 발암 가능성이 있다는 지적도 있어 성분을 확인해보는 게 좋다고 해요.\n\n오늘의 행동: SPF 수치만 보지 말고, 성분표도 한 번 확인하고 [[자주 덧바르는]] 습관을 들여보세요.\n\n📄 출처: Micha JP, Bohart RD, Goldstein BH, Journal of Oncology Pharmacy Practice (2025). DOI 10.1177/10781552251327596\n\n#논문팩트체크 #paper_factcheck #선크림 #자외선차단제 #피부암 #흑색종 #편평세포암 #기저세포암 #자외선 #피부건강 #스킨케어 #자외선차단\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+    "threads_text": "선크림 바르면 피부암 다 막아줄까?\n\n최근 리뷰 논문을 보니, 선크림이 흑색종이랑 편평세포암 발생률은 줄여주는 경향이 있었대요. 근데 기저세포암엔 효과가 상대적으로 약했다고 하네요. 결국 선크림 종류나 얼마나 자주·충분히 바르는지에 따라 결과가 갈린다는 거죠. 여러분은 선크림 고를 때 성분표까지 확인하시나요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "A review of sunscreen in the prevention of skin cancer.",
+      "journal": "Journal of oncology pharmacy practice : official publication of the International Society of Oncology Pharmacy Practitioners",
+      "year": "2025",
+      "doi": "10.1177/10781552251327596",
+      "pmid": "40123348",
+      "authors": "Micha JP, Bohart RD, Goldstein BH",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40123348/"
+    },
+    "drafted_at": "2026-09-18T23:43:08.354422+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-09-20T21:51:59.509395+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "18114274739097981",
+  "instagram_posted_at": "2026-09-23T19:02:49.131584+09:00",
+  "instagram_reel_id": "18025398362863615",
+  "instagram_reel_posted_at": "2026-09-23T19:03:37.385476+09:00",
+  "threads_post_id": "18086549603311839",
+  "threads_posted_at": "2026-09-23T19:04:27.276685+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DdoDXpLAjPO",
+  "threads_reply_id": "18121139347897967",
+  "completed_at": "2026-09-23T19:04:42.689060+09:00"
+}
