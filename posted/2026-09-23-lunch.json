@@ -1,0 +1,96 @@
+{
+  "date": "2026-09-23",
+  "slot": "lunch",
+  "queue": {
+    "id": "2064-magnesium",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hcwob7wIq4",
+    "topic": "magnesium",
+    "topic_ko": "마그네슘",
+    "verdict": "good",
+    "evidence_level": "rct",
+    "source_text": "PMC11554482 전문",
+    "answer": "이 연구에서 마그네슘(및 칼륨) 복용군은 위약군과 달리 수면호르몬(멜라토닌·코르티솔)이 유의하게 변화했고, 중등도·중증 불면증 환자 비율도 줄었다.",
+    "style": "paper",
+    "accent": "violet",
+    "product_hint": "흡수율이 높고 위장 부담이 적다고 알려진 형태(글리시네이트 등)의 마그네슘 보충제",
+    "image_prompt": "a plain unlabeled amber supplement bottle with white magnesium tablets scattered beside it on a dark nightstand",
+    "caveats": [
+      "단일맹검 연구라 연구자 편향 가능성을 배제하기 어려움",
+      "2개월(8주)짜리 단기 시험으로 장기 효과는 확인되지 않음",
+      "마그네슘·칼륨 각각의 효과 크기를 직접 비교한 수치는 논문에 제시되지 않음"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "당뇨 있으면\n[[마그네슘]]\n진짜 잠에\n도움될까?"
+      },
+      {
+        "type": "body",
+        "text": "당뇨병 환자는 [[마그네슘]]이 부족해지기 쉽고, 불면증도 더 자주 겪는다고 알려져 있어요. 이 관계를 실제로 검증한 무작위 대조 시험이 있습니다."
+      },
+      {
+        "type": "body",
+        "text": "당뇨 환자 290명을 위약·마그네슘·칼륨·마그네슘+칼륨 4그룹으로 나눠 250mg 정제를 2개월간 먹인 뒤 불면증 점수와 수면호르몬을 쟀어요."
+      },
+      {
+        "type": "body",
+        "text": "결과: 마그네슘군은 위약군과 달리 [[멜라토닌·코르티솔]] 수치가 복용 전후로 유의하게 변했고, 중등도·중증 불면증 비율도 줄었어요."
+      },
+      {
+        "type": "body",
+        "text": "위약군도 불면증 점수는 다소 좋아졌지만, 수면호르몬 변화는 유의하지 않았어요. {{플라시보 효과}}일 가능성도 있다는 뜻이에요.",
+        "note": "※ 단일맹검·2개월 단기 연구라 장기 효과나 인과관계는 확정하기 어려워요"
+      },
+      {
+        "type": "body",
+        "text": "불면증이 걱정된다면 병원에서 혈중 마그네슘 수치부터 확인하고, 임의로 고용량 보충제보다는 [[식이 마그네슘]] 섭취부터 늘려보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Effects of magnesium and potassium supplementation on insomnia and sleep hormones in patients with diabetes mellitus.",
+          "journal": "Frontiers in endocrinology",
+          "year": "2024",
+          "doi": "10.3389/fendo.2024.1370733",
+          "authors": "Khalid S, Bashir S, Mehboob R et al."
+        }
+      }
+    ],
+    "images": [
+      "images/2064-magnesium/01.jpg",
+      "images/2064-magnesium/02.jpg",
+      "images/2064-magnesium/03.jpg",
+      "images/2064-magnesium/04.jpg",
+      "images/2064-magnesium/05.jpg",
+      "images/2064-magnesium/06.jpg",
+      "images/2064-magnesium/07.jpg"
+    ],
+    "instagram_caption": "당뇨병 환자에게 마그네슘이 정말 잠에 도움이 될까요?\n\n당뇨병 환자는 마그네슘이 부족해지기 쉽고, 그로 인해 불면증도 더 자주 겪는다고 알려져 있습니다. 그런데 마그네슘을 챙겨 먹으면 실제로 달라질까요? 이걸 직접 확인한 무작위 대조 시험이 있습니다.\n\n연구진은 불면증이 있는 당뇨병 환자 290명을 위약·마그네슘·칼륨·마그네슘+칼륨 네 그룹으로 나눠, 각 250mg 정제를 2개월간 복용하게 한 뒤 불면증 심각도(ISI)와 수면호르몬(멜라토닌·코르티솔)을 비교했습니다.\n\n결과는 뚜렷했습니다. 마그네슘·칼륨·마그네슘+칼륨을 먹은 그룹은 복용 전후로 멜라토닌과 코르티솔 수치가 유의하게 달라졌고, 중등도·중증 불면증을 겪던 사람의 비율도 줄었습니다. 반면 위약 그룹은 불면증 점수가 약간 좋아지긴 했지만, 수면호르몬 변화는 유의하지 않았습니다.\n\n다만 이 연구는 2개월짜리 단기 시험이고, 연구자가 그룹을 알 수 있는 단일맹검 방식이라는 한계가 있습니다. 마그네슘만의 효과인지 다른 요인이 함께 작용했는지는 이 논문만으로 확실히 가르기 어렵습니다.\n\n오늘 할 수 있는 것: 불면증이 있다면 무작정 고용량 보충제를 사기보다, 병원에서 혈중 마그네슘 수치를 먼저 확인해보세요.\n\n📄 출처: Khalid S, Bashir S, Mehboob R et al., Frontiers in Endocrinology (2024). DOI 10.3389/fendo.2024.1370733\n\n#논문팩트체크 #paper_factcheck #마그네슘 #불면증 #당뇨병 #수면건강 #멜라토닌 #코르티솔 #수면호르몬 #영양제 #건강정보 #당뇨관리\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+    "threads_text": "당뇨 있으면 마그네슘 먹어야 잠이 올까?\n\n당뇨병 환자 290명한테 위약이랑 마그네슘·칼륨·마그네슘+칼륨을 2개월 먹여본 연구가 있어요. 마그네슘 먹은 그룹은 위약군과 달리 멜라토닌·코르티솔 수치가 유의하게 바뀌었고, 심한 불면증 겪던 사람 비율도 줄었대요. 위약군은 호르몬 변화는 없었는데 점수만 살짝 좋아졌고요. 2개월짜리 짧은 연구라 장기 효과까진 몰라요. 여러분은 잠 안 올 때 뭐부터 바꾸시나요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Effects of magnesium and potassium supplementation on insomnia and sleep hormones in patients with diabetes mellitus.",
+      "journal": "Frontiers in endocrinology",
+      "year": "2024",
+      "doi": "10.3389/fendo.2024.1370733",
+      "pmid": "39534260",
+      "authors": "Khalid S, Bashir S, Mehboob R et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39534260/"
+    },
+    "drafted_at": "2026-09-18T23:42:06.548831+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-09-20T21:51:59.509288+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "18069351059768699",
+  "instagram_posted_at": "2026-09-23T12:02:15.010345+09:00",
+  "instagram_reel_id": "17958277587214359",
+  "instagram_reel_posted_at": "2026-09-23T12:03:14.142800+09:00",
+  "threads_post_id": "17952327498035699",
+  "threads_posted_at": "2026-09-23T12:04:12.732344+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DdnTSzrjX-s",
+  "threads_reply_id": "18116627029975401",
+  "completed_at": "2026-09-23T12:04:22.798020+09:00"
+}
