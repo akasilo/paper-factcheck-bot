@@ -1,0 +1,81 @@
+{
+  "id": "2081-standing_desk",
+  "approved": false,
+  "link": "",
+  "topic": "standing_desk",
+  "topic_ko": "스탠딩 데스크",
+  "verdict": "mixed",
+  "evidence_level": "rct",
+  "source_text": "PMC11635982 전문",
+  "answer": "네, 통계적으로 유의하진 않지만 스탠딩 데스크 사용 그룹에서 퇴근 후 여가시간 좌식시간이 평균 23.07분 늘어나는 보상 경향이 관찰됐어요.",
+  "style": "soft",
+  "accent": "orange",
+  "product_hint": "근무 중 좌식시간을 실제로 줄여주는, 높이 조절 폭이 충분한 스탠딩 데스크",
+  "image_prompt": "A minimalist height-adjustable standing desk with a laptop and an empty office chair beside it, plain wall background",
+  "caveats": [
+    "표본이 38명으로 작고 여성이 76%로 편중되어 일반화에 한계가 있음",
+    "여가시간 좌식시간 증가(23.07분)는 통계적으로 유의하지 않음",
+    "6개월 관찰 연구라 보상 행동의 장기 지속 여부는 확인되지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "스탠딩 데스크로\n회사에선 [[덜 앉아도]]\n퇴근하면\n{{더 앉는다}}?"
+    },
+    {
+      "type": "body",
+      "text": "사무직 38명에게 6개월간 높이조절 책상을 주고, 회사·집에서의 좌식시간을 함께 추적한 무작위 대조 시험이 있어요."
+    },
+    {
+      "type": "body",
+      "text": "근무 중 결과는 확실했어요. 앉은 시간이 하루 [[32.97분]] 줄고, 선 시간은 27.88분 늘었어요(p<.05)."
+    },
+    {
+      "type": "body",
+      "text": "그런데 퇴근 후 여가시간엔 앉은 시간이 평균 23.07분 늘었어요. 유의하진 않지만 연구진도 {{보상 행동}}으로 짚었어요."
+    },
+    {
+      "type": "body",
+      "text": "대조군도 여가 중 12.43분 더 앉았고, 회사-여가 좌식시간 사이엔 뚜렷한 상호작용 효과가 없었어요.",
+      "note": "※ 표본 38명, 여성 76%로 편중, 6개월 관찰이라 장기 지속성은 불명"
+    },
+    {
+      "type": "body",
+      "text": "오늘은 책상 높이만 바꾸지 말고, 퇴근 후에도 짧게 [[서서 쉬는 시간]]을 의식적으로 넣어보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Are there compensatory behaviors in response to a sit-stand desk intervention?",
+        "journal": "Journal of occupational health",
+        "year": "2024",
+        "doi": "10.1093/joccuh/uiae067",
+        "authors": "Silva H, Teno SC, Júdice PB"
+      }
+    }
+  ],
+  "images": [
+    "images/2081-standing_desk/01.jpg",
+    "images/2081-standing_desk/02.jpg",
+    "images/2081-standing_desk/03.jpg",
+    "images/2081-standing_desk/04.jpg",
+    "images/2081-standing_desk/05.jpg",
+    "images/2081-standing_desk/06.jpg",
+    "images/2081-standing_desk/07.jpg"
+  ],
+  "instagram_caption": "스탠딩 데스크 쓰면 회사에서는 덜 앉지만, 퇴근하면 오히려 더 앉게 될 수도 있다는 거 알고 계셨나요?\n\n한 무작위 대조 시험에서 사무직 38명에게 6개월간 높이조절 책상을 주고 좌식시간을 추적했어요.\n\n결과는 두 얼굴이었어요. 근무 중 앉은 시간은 하루 32.97분 줄고, 선 시간은 27.88분 늘었죠(p<.05). 여기까지는 확실한 효과예요.\n\n그런데 퇴근 후 여가시간엔 앉은 시간이 평균 23.07분 늘어났어요. 통계적으로 유의하진 않았지만, 연구진은 이걸 보상 행동 가능성으로 짚었어요. 대조군도 여가 중 12.43분 더 앉았고, 두 그룹 다 회사-여가 좌식시간 사이에 뚜렷한 상호작용은 없었어요.\n\n오늘은 책상 높이만 바꾸지 말고, 퇴근 후에도 짧게 서서 쉬는 시간을 의식적으로 넣어보세요.\n\n📄 출처: Silva H, Teno SC, Júdice PB, Journal of Occupational Health (2024). DOI 10.1093/joccuh/uiae067\n\n#논문팩트체크 #paper_factcheck #스탠딩데스크 #좌식생활 #사무직건강 #앉아서일하기 #건강습관 #보상행동 #재택근무 #오피스건강 #운동부족 #움직임 #습관개선 #웰빙\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "스탠딩 데스크 쓰면 퇴근 후엔 오히려 더 앉게 될까?\n\n최근 논문 하나를 봤는데, 사무직 38명한테 6개월간 높이조절 책상을 줬더니 회사에서 앉는 시간은 하루 33분 가까이 줄고 서는 시간은 28분 늘었대요. 여기까진 좋죠.\n\n근데 퇴근하고 나서는 앉는 시간이 평균 23분 늘었어요. 통계적으로 확실한 건 아니지만 연구진도 보상 행동일 수 있다고 봤어요. 회사에서 덜 앉은 만큼 집에서 더 앉는 거죠.\n\n여러분은 퇴근하고 나서 얼마나 앉아 있나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Are there compensatory behaviors in response to a sit-stand desk intervention?",
+    "journal": "Journal of occupational health",
+    "year": "2024",
+    "doi": "10.1093/joccuh/uiae067",
+    "pmid": "39479932",
+    "authors": "Silva H, Teno SC, Júdice PB",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39479932/"
+  },
+  "drafted_at": "2026-09-25T00:32:12.266702+09:00",
+  "model": "claude_code:default"
+}

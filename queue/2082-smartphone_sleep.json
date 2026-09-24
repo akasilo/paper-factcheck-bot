@@ -1,0 +1,81 @@
+{
+  "id": "2082-smartphone_sleep",
+  "approved": false,
+  "link": "",
+  "topic": "smartphone_sleep",
+  "topic_ko": "스마트폰 밤 사용",
+  "verdict": "mixed",
+  "evidence_level": "cross-sectional",
+  "source_text": "PMC12662671 전문",
+  "answer": "이 논문에서는 객관적으로 측정한 스마트폰 사용시간이 수면 시간·질·규칙성이나 불안·우울 어떤 지표와도 유의미한 연관을 보이지 않았다.",
+  "style": "paper",
+  "accent": "blue",
+  "product_hint": "화면 대신 아침 컨디션이나 낮 졸림 같은 실제 수면 패턴을 기록해주는 수면 추적 기기나 취침 알람",
+  "image_prompt": "a smartphone and a wrist actigraphy tracker resting side by side on a bedside table",
+  "caveats": [
+    "저녁 시간대 사용 여부와 콘텐츠 종류는 측정하지 못해 '폰이 완전히 무해하다'고 단정할 수 없음",
+    "스스로 잠이 안 좋다고 느낀 사람들만 모집한 표본이라 일반 청년 전체로 확대 해석하기 어려움",
+    "여성 참가자 비율이 70.7%로 높아 성별에 따른 차이는 추가 확인 필요"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "내가 잰\n폰 사용시간\n[[실제 기록]]과\n{{같을까요}}?"
+    },
+    {
+      "type": "body",
+      "text": "잠 못 자는 청년 99명이 참여했어요. 2주간 손목에 액티그래프를, 스마트폰엔 사용시간 기록 앱을 달아 진짜 데이터를 모았습니다."
+    },
+    {
+      "type": "body",
+      "text": "결과는 예상 밖이었어요. [[객관적으로 잰]] 폰 사용시간은 수면 시간·질·규칙성, 불안·우울 그 무엇과도 유의미한 연관이 없었습니다."
+    },
+    {
+      "type": "body",
+      "text": "대신 정신건강과 강하게 엮인 건 폰 사용량이 아니라 낮에 느끼는 {{수면 손상감}}이었어요. 밤에 못 잔 시간보다 이게 더 컸습니다."
+    },
+    {
+      "type": "body",
+      "text": "자기보고 연구들은 폰과 불안·우울의 연관을 보고해왔지만, 이 논문은 객관 측정 시 그 연관이 약해진 선행 사례들도 함께 짚었어요.",
+      "note": "※ 저녁 시간대 사용이나 콘텐츠 종류는 이 연구에서 따로 측정하지 않았습니다."
+    },
+    {
+      "type": "body",
+      "text": "오늘은 폰 사용 '시간' 대신 아침에 얼마나 개운한지 체크해보세요. [[수면 추적 앱]]을 쓰면 진짜 패턴이 보입니다."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Effects of Smartphone Use on Sleep and Mental Health in Young Adults: Going Beyond Self-Report.",
+        "journal": "Depression and anxiety",
+        "year": "2025",
+        "doi": "10.1155/da/3249012",
+        "authors": "Bild E, Rossa KR, Edmed SL et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2082-smartphone_sleep/01.jpg",
+    "images/2082-smartphone_sleep/02.jpg",
+    "images/2082-smartphone_sleep/03.jpg",
+    "images/2082-smartphone_sleep/04.jpg",
+    "images/2082-smartphone_sleep/05.jpg",
+    "images/2082-smartphone_sleep/06.jpg",
+    "images/2082-smartphone_sleep/07.jpg"
+  ],
+  "instagram_caption": "밤마다 폰 보다 잠 못 든다는 말, 정말 사실일까요?\n\n한 연구팀이 잠이 부족한 청년 99명에게 2주간 손목 액티그래프를 채우고, 스마트폰 앱으로 1주일치 실제 사용시간을 기록하게 했어요. '내가 폰을 얼마나 썼다고 느끼는지'가 아니라 진짜 데이터로요.\n\n결과는 의외였습니다. 이렇게 객관적으로 잰 폰 사용시간은 수면 시간, 수면의 질, 수면 규칙성, 불안, 우울 그 어떤 것과도 유의미한 연관이 없었어요. 오히려 정신건강과 강하게 엮인 건 사용시간이 아니라 낮에 얼마나 몸이 처지고 힘든지였습니다.\n\n다만 이 연구는 저녁에 폰을 썼는지, 낮에 업무용으로 썼는지까지는 구분하지 못했어요. 그래서 '폰은 무죄'라고 단정하긴 이릅니다. 자기보고 기반 이전 연구들은 폰과 정신건강의 연관을 꾸준히 보고해왔거든요.\n\n오늘은 폰 사용 시간을 재는 대신, 아침에 얼마나 개운한지를 며칠 체크해보세요. 수면 추적 앱이나 취침 알람을 써보면 패턴이 더 잘 보입니다.\n\n📄 출처: Bild E, Rossa KR, Edmed SL et al., Depression and Anxiety (2025). DOI 10.1155/da/3249012\n\n#논문팩트체크 #paper_factcheck #스마트폰 #수면 #수면의질 #불안 #우울 #액티그래프 #자기보고 #청년건강 #디지털디톡스 #수면추적 #정신건강\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "폰 사용시간, 내가 느끼는 거랑 진짜 기록이 같을까?\n\n최근 연구에서 잠 못 자는 청년 99명한테 2주간 액티그래프 채우고 앱으로 진짜 폰 사용시간까지 재봤는데, 놀랍게도 객관적으로 잰 사용시간은 수면이나 불안·우울 어느 것과도 딱히 관련이 없었대. 대신 낮에 얼마나 몸이 처지는지가 더 크게 연관됐다고. 저녁에 썼는지는 따로 안 갈랐다는 한계는 있지만. 여러분은 폰 때문이라고 느낀 적 있나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Effects of Smartphone Use on Sleep and Mental Health in Young Adults: Going Beyond Self-Report.",
+    "journal": "Depression and anxiety",
+    "year": "2025",
+    "doi": "10.1155/da/3249012",
+    "pmid": "41321479",
+    "authors": "Bild E, Rossa KR, Edmed SL et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41321479/"
+  },
+  "drafted_at": "2026-09-25T00:38:32.771067+09:00",
+  "model": "claude_code:default"
+}
