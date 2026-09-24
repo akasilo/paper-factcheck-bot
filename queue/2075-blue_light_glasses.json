@@ -1,7 +1,7 @@
 {
   "id": "2075-blue_light_glasses",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hiQte1x324",
   "topic": "blue_light_glasses",
   "topic_ko": "블루라이트 안경",
   "verdict": "bad",
@@ -82,5 +82,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/37593770/"
   },
   "drafted_at": "2026-09-23T00:12:40.910869+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-24T19:02:37.965441+09:00"
 }

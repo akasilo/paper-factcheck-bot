@@ -1,7 +1,7 @@
 {
   "id": "2074-collagen",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hiQqL53kk0",
   "topic": "collagen",
   "topic_ko": "콜라겐",
   "verdict": "good",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/39212129/"
   },
   "drafted_at": "2026-09-22T01:41:39.663355+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-24T19:02:37.965111+09:00"
 }

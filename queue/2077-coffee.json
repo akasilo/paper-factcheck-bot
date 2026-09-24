@@ -1,7 +1,7 @@
 {
   "id": "2077-coffee",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hiQxNMz0tE",
   "topic": "coffee",
   "topic_ko": "커피",
   "verdict": "good",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/39696255/"
   },
   "drafted_at": "2026-09-23T00:15:04.220325+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-24T19:02:37.965903+09:00"
 }

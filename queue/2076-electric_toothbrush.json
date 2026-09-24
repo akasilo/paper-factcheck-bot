@@ -1,7 +1,7 @@
 {
   "id": "2076-electric_toothbrush",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hiQvsFqEq4",
   "topic": "electric_toothbrush",
   "topic_ko": "전동칫솔",
   "verdict": "mixed",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/38443442/"
   },
   "drafted_at": "2026-09-23T00:13:47.575837+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-24T19:02:37.965666+09:00"
 }
