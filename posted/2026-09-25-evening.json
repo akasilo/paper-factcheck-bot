@@ -84,12 +84,14 @@
   },
   "attempts": 1,
   "instagram_post_id": "17914300455452826",
-  "instagram_posted_at": "2026-09-25T19:09:20.141998+09:00",
+  "verified": [
+    "instagram:이미 있음",
+    "instagram_reel:이미 있음",
+    "threads:이미 있음"
+  ],
   "instagram_reel_id": "18115218149111028",
-  "instagram_reel_posted_at": "2026-09-25T19:10:47.465041+09:00",
   "threads_post_id": "18106230824235876",
-  "threads_posted_at": "2026-09-25T19:11:54.048193+09:00",
   "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DdtN0XeEpfC",
-  "threads_reply_id": "18095725880421469",
-  "completed_at": "2026-09-25T19:12:12.032820+09:00"
+  "threads_reply_id": "18169951192458436",
+  "completed_at": "2026-09-25T19:13:11.073819+09:00"
 }
