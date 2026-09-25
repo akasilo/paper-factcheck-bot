@@ -1,0 +1,81 @@
+{
+  "id": "2085-energy_drink",
+  "approved": false,
+  "link": "",
+  "topic": "energy_drink",
+  "topic_ko": "에너지드링크",
+  "verdict": "mixed",
+  "evidence_level": "review",
+  "source_text": "PMC9987737 전문",
+  "answer": "카페인이 체중 kg당 3mg(약 200mg) 이상 든 에너지드링크는 유산소 운동 능력을 높일 수 있다는 것이 이 논문의 결론이다.",
+  "style": "paper",
+  "accent": "orange",
+  "product_hint": "카페인 함량이 라벨에 명확히 표시된, 체중 1kg당 3~6mg 이하 저카페인 음료",
+  "image_prompt": "a plain unbranded energy drink can beside a stopwatch and water bottle on a gym floor",
+  "caveats": [
+    "ISSN 포지션 스탠드는 여러 연구를 종합한 학회 공식 입장문으로, 개별 무작위 대조 시험 수치가 아님",
+    "효과는 주로 카페인 용량에 좌우되며, 타우린 등 다른 성분의 추가 효과는 근거 불충분",
+    "체중 kg당 섭취량 계산 없이 '한 캔' 단위로만 마시면 개인차가 클 수 있음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "운동 전에\n[[에너지드링크]]\n마시면 진짜\n퍼포먼스 오를까?"
+    },
+    {
+      "type": "body",
+      "text": "국제스포츠영양학회(ISSN)가 13가지 항목으로 공식 입장을 냈어요. 에너지드링크에서 진짜 효과를 내는 성분은 [[카페인]]과 당분이고, 나머지는 근거가 부족하다고 해요."
+    },
+    {
+      "type": "body",
+      "text": "이 논문에 따르면 카페인이 200mg 이상(체중 kg당 3mg 이상) 든 음료는 유산소 운동 능력을 높일 수 있다는 결과가 나왔어요."
+    },
+    {
+      "type": "body",
+      "text": "운동 10~60분 전에 마시면 집중력·순발력·지구력이 좋아지고, 팀스포츠의 반복 스프린트 능력에도 도움이 된다는 보고예요."
+    },
+    {
+      "type": "body",
+      "text": "타우린·비타민 등 나머지 성분의 추가 효과는 아직 불확실해요. 청소년·임신부·카페인 민감자는 {{과다 섭취}} 주의가 필요하다고 해요.",
+      "note": "※ 사람 대상 문헌을 종합한 학회 공식 입장문으로, 개별 무작위 대조 시험 수치는 아님"
+    },
+    {
+      "type": "body",
+      "text": "오늘은 라벨에서 [[카페인 함량]]부터 확인해보세요. 체중 1kg당 3~6mg 안팎이면 충분하고, 그 이상은 부작용 위험만 커질 수 있어요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "International society of sports nutrition position stand: energy drinks and energy shots.",
+        "journal": "Journal of the International Society of Sports Nutrition",
+        "year": "2023",
+        "doi": "10.1080/15502783.2023.2171314",
+        "authors": "Jagim AR, Harty PS, Tinsley GM et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2085-energy_drink/01.jpg",
+    "images/2085-energy_drink/02.jpg",
+    "images/2085-energy_drink/03.jpg",
+    "images/2085-energy_drink/04.jpg",
+    "images/2085-energy_drink/05.jpg",
+    "images/2085-energy_drink/06.jpg",
+    "images/2085-energy_drink/07.jpg"
+  ],
+  "instagram_caption": "운동 전에 마시는 에너지드링크, 진짜 효과가 있을까요?\n\n국제스포츠영양학회(ISSN)가 13가지 항목으로 정리한 공식 입장문을 냈어요. 결론부터 말하면, 카페인이 충분히 들어있다면 실제로 효과가 있다는 결과예요.\n\n이 리뷰에 따르면 카페인 200mg 이상(체중 kg당 3mg 이상)이 든 음료는 유산소 운동 능력을 끌어올릴 수 있다고 해요. 운동 10~60분 전에 마시면 집중력, 순발력, 지구력까지 좋아지고 팀스포츠의 반복 스프린트에도 도움이 된다는 보고가 있었어요.\n\n다만 타우린, 비타민, 인삼 같은 나머지 성분들의 추가 효과는 아직 근거가 부족하다고 해요. 즉 효과의 대부분은 카페인 하나에서 나온다는 뜻이에요. 그리고 청소년, 임신·수유 중인 사람, 카페인에 민감한 사람은 과다 섭취를 특히 조심해야 한다고 짚었어요.\n\n오늘은 마시기 전에 라벨의 카페인 함량부터 확인해보세요. 체중 1kg당 3~6mg 정도면 충분하고, 그 이상은 부작용 위험만 커질 수 있어요.\n\n📄 출처: Jagim AR, Harty PS, Tinsley GM et al., Journal of the International Society of Sports Nutrition (2023). DOI 10.1080/15502783.2023.2171314\n\n#논문팩트체크 #paper_factcheck #에너지드링크 #카페인 #운동영양 #스포츠영양학 #운동전음료 #카페인섭취량 #건강정보 #운동루틴 #퍼포먼스 #헬스정보\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "에너지드링크 마시면 운동 능력이 진짜 오를까?\n\n국제스포츠영양학회가 13가지 공식 입장을 냈는데, 카페인이 체중 kg당 3mg 이상(대략 200mg) 들어있으면 유산소 능력이 오르고 순발력·지구력에도 도움이 된다는 결과가 있었대요. 근데 타우린이나 비타민 같은 나머지 성분들 효과는 아직 근거가 부족하다고. 결국 핵심은 카페인 하나인 셈. 여러분은 운동 전에 뭘 마시고 운동하나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "International society of sports nutrition position stand: energy drinks and energy shots.",
+    "journal": "Journal of the International Society of Sports Nutrition",
+    "year": "2023",
+    "doi": "10.1080/15502783.2023.2171314",
+    "pmid": "36862943",
+    "authors": "Jagim AR, Harty PS, Tinsley GM et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36862943/"
+  },
+  "drafted_at": "2026-09-26T00:37:40.315671+09:00",
+  "model": "claude_code:default"
+}

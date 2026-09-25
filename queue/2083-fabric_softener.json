@@ -1,0 +1,81 @@
+{
+  "id": "2083-fabric_softener",
+  "approved": false,
+  "link": "",
+  "topic": "fabric_softener",
+  "topic_ko": "섬유유연제·세탁세제",
+  "verdict": "good",
+  "evidence_level": "review",
+  "source_text": "초록만",
+  "answer": "한 논문에 따르면 세탁세제가 원인인 알레르기 접촉피부염의 유병률은 상당히 낮다는 연구 결과가 있다.",
+  "style": "paper",
+  "accent": "blue",
+  "product_hint": "무향·저자극 섬유유연제·세탁세제",
+  "image_prompt": "A plain white laundry detergent bottle and neatly folded clean towels on a shelf near a washing machine.",
+  "caveats": [
+    "초록에 구체적인 유병률 수치나 알레르겐 성분명이 제시되지 않음",
+    "원저 실험이 아닌 근거를 정리한 리뷰형 논문",
+    "섬유유연제와 세탁세제를 별도로 구분한 내용은 초록만으로 확인 불가"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "피부 트러블,\n[[세탁세제]] 탓일까?\n논문이 답을 냈다"
+    },
+    {
+      "type": "body",
+      "text": "피부에 뭔가 나면 많은 사람과 의료진이 가장 먼저 세탁세제를 의심합니다. 그만큼 흔한 용의자로 꼽히는 거죠."
+    },
+    {
+      "type": "body",
+      "text": "하지만 한 논문에 따르면, 세탁세제가 원인인 알레르기 접촉피부염(ACD)의 [[유병률은 낮다]]는 연구 결과가 있습니다."
+    },
+    {
+      "type": "body",
+      "text": "즉 많은 사람의 의심과 달리, 세탁세제 자체가 피부 트러블의 흔한 원인은 아닐 수 있다는 뜻입니다."
+    },
+    {
+      "type": "body",
+      "text": "이 논문은 세탁세제 속 알레르기 유발 성분, 세탁 방식의 영향, 그리고 세탁세제 알레르기와 헷갈리기 쉬운 다른 피부질환(감별진단)까지 함께 정리했습니다.",
+      "note": "※ 구체적 성분명이나 정확한 유병률 수치까지는 이 초록에 제시되지 않음"
+    },
+    {
+      "type": "body",
+      "text": "트러블이 반복된다면 세제만 탓하지 말고, [[무향·저자극 제품]]으로 바꿔보고 다른 원인도 함께 살펴보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Is Laundry Detergent a Common Cause of Allergic Contact Dermatitis?",
+        "journal": "Cutis",
+        "year": "2023",
+        "doi": "10.12788/cutis.0748",
+        "authors": "Norman T, Johnson H, Yu J et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2083-fabric_softener/01.jpg",
+    "images/2083-fabric_softener/02.jpg",
+    "images/2083-fabric_softener/03.jpg",
+    "images/2083-fabric_softener/04.jpg",
+    "images/2083-fabric_softener/05.jpg",
+    "images/2083-fabric_softener/06.jpg",
+    "images/2083-fabric_softener/07.jpg"
+  ],
+  "instagram_caption": "세탁세제 때문에 피부가 뒤집어진다는 이야기, 한 번쯤 들어보셨을 거예요.\n\n그런데 한 논문에 따르면, 세탁세제가 원인인 알레르기 접촉피부염(ACD)의 유병률은 생각보다 낮다는 연구 결과가 있습니다. 많은 사람과 의료진이 흔히 의심하는 것과는 다른 결과죠.\n\n논문은 세탁세제에 포함된 알레르기 유발 가능 성분, 기계 세탁 과정의 영향, 그리고 세탁세제 알레르기로 오인되기 쉬운 다른 피부질환(감별진단)까지 함께 정리했습니다. 다만 구체적인 성분명이나 수치까지는 이 자료만으로 알 수 없었어요.\n\n즉 피부 트러블이 생겼다고 세탁세제부터 범인으로 몰기보다, 다른 원인도 함께 살펴볼 필요가 있다는 뜻입니다.\n\n오늘 할 수 있는 것: 트러블이 반복된다면 세제만 탓하지 말고 무향·저자극 제품으로 바꿔보고, 그래도 계속되면 성분표를 자세히 확인해보세요.\n\n📄 출처: Norman T, Johnson H, Yu J et al., Cutis (2023). DOI 10.12788/cutis.0748\n\n#논문팩트체크 #paper_factcheck #세탁세제 #피부트러블 #접촉피부염 #알레르기 #피부과학 #생활건강 #민감성피부 #무향세제 #팩트체크 #피부알레르기\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "피부 트러블, 진짜 세탁세제 때문일까?\n\n많은 사람들이 피부에 뭔가 나면 제일 먼저 세탁세제를 의심하잖아요. 근데 한 논문을 보니, 세탁세제가 진짜 원인인 알레르기 접촉피부염은 생각보다 흔치 않다고 해요. 오히려 세탁세제로 오인되는 다른 피부질환도 많다는 얘기도 있고요. 여러분은 트러블 생기면 뭐부터 의심하시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Is Laundry Detergent a Common Cause of Allergic Contact Dermatitis?",
+    "journal": "Cutis",
+    "year": "2023",
+    "doi": "10.12788/cutis.0748",
+    "pmid": "37289694",
+    "authors": "Norman T, Johnson H, Yu J et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37289694/"
+  },
+  "drafted_at": "2026-09-26T00:34:08.938085+09:00",
+  "model": "claude_code:default"
+}

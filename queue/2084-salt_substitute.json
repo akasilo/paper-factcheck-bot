@@ -1,0 +1,86 @@
+{
+  "id": "2084-salt_substitute",
+  "approved": false,
+  "link": "",
+  "topic": "salt_substitute",
+  "topic_ko": "저염 소금",
+  "verdict": "good",
+  "evidence_level": "rct",
+  "source_text": "초록만",
+  "answer": "이 논문에 따르면 정상 혈압인 고령자도 저염소금으로 바꾸자 고혈압 발생률이 24.3명에서 11.7명으로 낮아졌고, 저혈압 위험은 늘지 않았다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "나트륨 대신 칼륨이 일부 들어간 저염 소금 제품",
+  "image_prompt": "a glass jar filled with coarse white salt crystals sitting on a plain wooden kitchen counter",
+  "caveats": [
+    "중국 요양시설에 거주하는 고령자 대상 연구로, 다른 연령대나 국가에는 그대로 적용하기 어려움",
+    "저염소금 성분(나트륨 62.5%, 칼륨 25%, 향료 12.5%)은 이 연구에 쓰인 특정 배합이며 모든 저염소금 제품과 같지 않음",
+    "신장질환자 등 칼륨 섭취에 주의가 필요한 사람에 대한 안전성은 이 논문에서 다루지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "혈압 정상인데\n[[저염소금]] 바꾸면\n뭐가 달라질까요?"
+    },
+    {
+      "type": "body",
+      "text": "중국 요양시설 노인 611명을 대상으로 한 2년짜리 무작위 대조 시험이에요. 시작할 때 모두 혈압은 정상이었어요."
+    },
+    {
+      "type": "body",
+      "text": "저염소금(나트륨 62.5%+칼륨 25%)을 쓴 그룹은 고혈압 발생률이 연 [[11.7명]], 일반 소금 그룹은 24.3명이었어요."
+    },
+    {
+      "type": "body",
+      "text": "그럼 저혈압 위험은 늘었을까요? 저염소금 그룹 9.0명 vs 일반소금 9.7명으로, 통계적으로 차이가 없었어요."
+    },
+    {
+      "type": "body",
+      "text": "2년간 수축기 혈압은 일반소금 그룹만 평균 7.0mmHg 올랐고, 저염소금 그룹은 거의 그대로였어요. 그룹 간 차이는 [[-8.0mmHg]]였어요."
+    },
+    {
+      "type": "body",
+      "text": "이 결과는 중국 요양시설에 사는 고령자 대상 연구예요. 다른 연령대나 환경에 그대로 적용하긴 어려워요.",
+      "note": "※ 저염소금 성분·비율은 제품마다 다를 수 있어요"
+    },
+    {
+      "type": "body",
+      "text": "장 볼 때 나트륨 대신 [[칼륨]]이 든 저염 소금을 확인해보세요. 신장 질환이 있다면 미리 의료진과 상의하면 더 안전해요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Effect of a Salt Substitute on Incidence of Hypertension and Hypotension Among Normotensive Adults.",
+        "journal": "Journal of the American College of Cardiology",
+        "year": "2024",
+        "doi": "10.1016/j.jacc.2023.12.013",
+        "authors": "Zhang X, Yuan Y, Li C et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2084-salt_substitute/01.jpg",
+    "images/2084-salt_substitute/02.jpg",
+    "images/2084-salt_substitute/03.jpg",
+    "images/2084-salt_substitute/04.jpg",
+    "images/2084-salt_substitute/05.jpg",
+    "images/2084-salt_substitute/06.jpg",
+    "images/2084-salt_substitute/07.jpg",
+    "images/2084-salt_substitute/08.jpg"
+  ],
+  "instagram_caption": "혈압이 정상이어도 저염소금을 쓰면 뭔가 달라질까요?\n\n중국 요양시설에 사는 혈압 정상인 고령자 611명을 대상으로 한 무작위 대조 시험 결과가 나왔어요. 한쪽은 평소 쓰던 소금을, 다른 쪽은 나트륨 62.5%+칼륨 25%로 만든 저염소금을 2년간 사용했죠.\n\n결과는 꽤 인상적이었어요. 저염소금을 쓴 그룹의 고혈압 발생률은 연간 100명당 11.7명, 일반 소금 그룹은 24.3명. 저염소금 그룹의 위험이 낮았다는 분석이 나왔어요(보정 위험비 0.60).\n\n그럼 반대로 혈압이 너무 떨어지는 저혈압 위험은 늘었을까요? 결과는 '아니오'였어요. 저혈압 발생률은 두 그룹이 9.0명 vs 9.7명으로 거의 같았어요.\n\n2년 사이 수축기 혈압은 일반 소금 그룹에서만 평균 7.0mmHg 올랐고, 저염소금 그룹은 거의 변화가 없었어요.\n\n오늘의 행동: 장 볼 때 나트륨 대신 칼륨이 들어간 저염 소금을 한번 확인해보세요. 단, 신장 관련 지병이 있다면 먼저 의료진과 상의하는 게 안전해요.\n\n📄 출처: Zhang X, Yuan Y, Li C, et al., Journal of the American College of Cardiology (2024). DOI 10.1016/j.jacc.2023.12.013\n\n#논문팩트체크 #paper_factcheck #저염소금 #고혈압 #혈압관리 #나트륨 #칼륨 #건강한식습관 #심혈관건강 #무작위대조시험 #고령자건강 #식습관개선\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "혈압 정상인데 저염소금 바꾸면 뭐가 달라질까?\n\n중국 요양시설 노인 611명을 2년간 지켜본 무작위 대조 시험이 있어요. 저염소금(나트륨+칼륨)을 쓴 그룹은 고혈압 발생률이 연 11.7명, 일반 소금 그룹은 24.3명이었대요. 반대로 저혈압 위험은 9.0명 vs 9.7명으로 거의 차이가 없었고요. 정상 혈압이어도 저염소금이 도움이 될 수 있다는 결과네요. 여러분은 집에 있는 소금, 성분표 본 적 있나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Effect of a Salt Substitute on Incidence of Hypertension and Hypotension Among Normotensive Adults.",
+    "journal": "Journal of the American College of Cardiology",
+    "year": "2024",
+    "doi": "10.1016/j.jacc.2023.12.013",
+    "pmid": "38355240",
+    "authors": "Zhang X, Yuan Y, Li C et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38355240/"
+  },
+  "drafted_at": "2026-09-26T00:36:32.971386+09:00",
+  "model": "claude_code:default"
+}
