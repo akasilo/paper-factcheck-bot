@@ -88,7 +88,7 @@
     "model": "claude_code:default",
     "approved_at": "2026-09-24T19:02:37.965441+09:00"
   },
-  "attempts": 1,
+  "attempts": 2,
   "errors": [
     {
       "instagram": "IG container 18095445104326176 failed: {'status_code': 'ERROR', 'status': 'ERROR', 'id': '18095445104326176'}"
@@ -97,5 +97,10 @@
   "threads_post_id": "18142708717587022",
   "threads_posted_at": "2026-09-27T08:05:08.508952+09:00",
   "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DdxLHDVEtHX",
-  "threads_reply_id": "18128462545747336"
+  "threads_reply_id": "18128462545747336",
+  "instagram_post_id": "18005663924990888",
+  "instagram_posted_at": "2026-09-27T08:11:30.654192+09:00",
+  "instagram_reel_id": "18017828357938636",
+  "instagram_reel_posted_at": "2026-09-27T08:12:28.255224+09:00",
+  "completed_at": "2026-09-27T08:12:28.256311+09:00"
 }
