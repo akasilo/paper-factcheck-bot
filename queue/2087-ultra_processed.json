@@ -1,0 +1,81 @@
+{
+  "id": "2087-ultra_processed",
+  "approved": false,
+  "link": "",
+  "topic": "ultra_processed",
+  "topic_ko": "라면·가공식품",
+  "verdict": "bad",
+  "evidence_level": "systematic review",
+  "source_text": "PMC10899807 전문",
+  "answer": "이 논문에 따르면 초가공식품을 많이 먹을수록 심혈관질환 사망(위험비 1.50배), 불안·우울 등 정신건강 문제(위험비 약 1.5배), 제2형 당뇨(용량-반응 관계)에서 가장 확실한 등급(class I)의 근거가 나왔다.",
+  "style": "geo",
+  "accent": "red",
+  "product_hint": "나트륨과 첨가물이 적고 원재료 목록이 짧은 라면 제품",
+  "image_prompt": "an unbranded bowl of instant ramen noodles beside a plain packet of processed snack chips on a wooden table",
+  "caveats": [
+    "대부분 관찰연구 기반이라 인과관계를 증명한 결과는 아님",
+    "대장암, 천식 등 일부 항목은 근거 등급이 낮거나 근거 없음(class III~V)",
+    "GRADE 품질평가상 22건이 low, 19건이 very low로 전반적 근거 질이 높지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "라면 매일\n먹으면 정말\n[[이만큼]]\n위험할까?"
+    },
+    {
+      "type": "body",
+      "text": "이 논문은 라면·과자 같은 초가공식품 관련 메타분석 45건(참가자 989만 명)을 모아, 위험도를 [[근거등급]]까지 매긴 첫 종합리뷰입니다."
+    },
+    {
+      "type": "body",
+      "text": "근거가 가장 확실한(class I) 항목: 초가공식품 많이 먹을수록 [[심혈관질환 사망]] 위험 1.5배, 불안·정신건강 문제 위험도 약 1.5배 높았습니다."
+    },
+    {
+      "type": "body",
+      "text": "이보다 한 단계 낮은(class II) 근거로는 전체 사망률 1.21배, 심장병 사망 1.66배, [[비만 위험]] 1.55배, 우울·수면문제 증가가 있었습니다."
+    },
+    {
+      "type": "body",
+      "text": "반면 대장암이나 과체중·비만, 천식·궤양성대장염 같은 항목은 [[아직 근거가 약하거나 부족]]했습니다.",
+      "note": "※ 대부분 관찰연구 기반이라 인과관계를 증명한 것은 아닙니다."
+    },
+    {
+      "type": "body",
+      "text": "라면·과자를 매일 먹진 않았는지 체크하고, 이번 주 한 끼는 [[덜 가공된]] 재료로 직접 만든 식사로 바꿔보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Ultra-processed food exposure and adverse health outcomes: umbrella review of epidemiological meta-analyses.",
+        "journal": "BMJ (Clinical research ed.)",
+        "year": "2024",
+        "doi": "10.1136/bmj-2023-077310",
+        "authors": "Lane MM, Gamage E, Du S et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2087-ultra_processed/01.jpg",
+    "images/2087-ultra_processed/02.jpg",
+    "images/2087-ultra_processed/03.jpg",
+    "images/2087-ultra_processed/04.jpg",
+    "images/2087-ultra_processed/05.jpg",
+    "images/2087-ultra_processed/06.jpg",
+    "images/2087-ultra_processed/07.jpg"
+  ],
+  "instagram_caption": "라면 매일 먹으면 정말 이만큼 위험할까요?\n\n2024년 BMJ에 실린 한 리뷰 논문이, 라면·과자·탄산음료 같은 초가공식품을 다룬 기존 메타분석 45건(참가자 989만 명)을 모아 위험도를 근거 등급까지 매긴 최초의 종합 리뷰를 내놨습니다.\n\n가장 확실한 근거(class I)로 꼽힌 항목은 심혈관질환 사망(위험 약 1.5배), 불안·우울 등 정신건강 문제(위험 약 1.5배), 제2형 당뇨(먹는 양이 늘수록 위험도 증가)였습니다.\n\n한 단계 아래인 '매우 시사적' 근거(class II)에서는 전체 사망률 1.21배, 심장병 사망 1.66배, 비만 1.55배 등도 함께 나타났습니다.\n\n반면 대장암이나 천식, 궤양성대장염처럼 아직 근거가 약하거나 부족한 항목도 있었습니다. 대부분 관찰연구를 종합한 결과라 인과관계가 증명된 것은 아니라는 점도 참고할 부분입니다.\n\n오늘은 라면·과자 대신 덜 가공된 재료로 만든 한 끼를 시도해보는 건 어떨까요.\n\n📄 출처: Lane MM, Gamage E, Du S et al., BMJ (2024). DOI 10.1136/bmj-2023-077310\n\n#논문팩트체크 #paper_factcheck #초가공식품 #라면 #가공식품 #식습관 #건강정보 #심혈관건강 #당뇨 #정신건강 #식품과학 #저나트륨라면 #건강한식사 #팩트체크\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "라면 매일 먹으면 정말 이만큼 위험할까?\n\n최근 BMJ에 실린 리뷰 논문이 기존 메타분석 45건을 모아 초가공식품 위험도에 등급을 매겼는데, 심혈관질환 사망 위험이 약 1.5배, 불안·우울 같은 정신건강 문제도 약 1.5배 높게 나왔대요. 전체 사망률(1.21배)이나 비만(1.55배)도 꽤 확실한 근거로 꼽혔고요. 반대로 대장암이나 천식 같은 항목은 아직 근거가 약하다고 하네요. 다 관찰연구 기반이라 인과관계까지 증명된 건 아니지만, 여러분은 라면·과자 얼마나 자주 드세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Ultra-processed food exposure and adverse health outcomes: umbrella review of epidemiological meta-analyses.",
+    "journal": "BMJ (Clinical research ed.)",
+    "year": "2024",
+    "doi": "10.1136/bmj-2023-077310",
+    "pmid": "38418082",
+    "authors": "Lane MM, Gamage E, Du S et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38418082/"
+  },
+  "drafted_at": "2026-09-26T23:50:17.200536+09:00",
+  "model": "claude_code:default"
+}

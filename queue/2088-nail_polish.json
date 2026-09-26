@@ -1,0 +1,81 @@
+{
+  "id": "2088-nail_polish",
+  "approved": false,
+  "link": "",
+  "topic": "nail_polish",
+  "topic_ko": "네일·젤네일",
+  "verdict": "mixed",
+  "evidence_level": "review",
+  "source_text": "초록만",
+  "answer": "이 논문에 따르면 편평세포암 5건과 세포실험 1건의 위험 증가 보고가 있었지만, 암 등록자료엔 흑색종 사례가 없었고 위험 계산 모델 7건 중 6건이 위험이 미미하거나 없다고 나와, 발암 가능성을 뒷받침할 뚜렷한 증거는 부족하다는 결론이었다.",
+  "style": "paper",
+  "accent": "violet",
+  "product_hint": "자외선 차단 성분이 든 핸드크림이나 손등을 가리는 UV 차단 장갑",
+  "image_prompt": "a UV LED gel nail polish curing lamp glowing on a salon manicure table with nail polish bottles nearby",
+  "caveats": [
+    "리뷰에 포함된 원 연구들 설계(사례보고·세포실험·수학모델)가 서로 달라 직접 비교가 어려움",
+    "편평세포암 5건은 인과관계 입증이 아니라 사용 이력이 있었다는 보고일 뿐",
+    "세포실험 2건의 결과가 서로 엇갈려 명확한 결론을 내리기 어려움"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "젤네일 말릴 때\n손 넣는 [[UV램프]]\n{{피부암}} 위험\n신호 있을까?"
+    },
+    {
+      "type": "body",
+      "text": "이 논문은 2023년까지 나온 UV 네일 램프와 피부암 관련 연구 [[14편]]을 모아 안전성을 다시 검토했어요."
+    },
+    {
+      "type": "body",
+      "text": "네일 램프를 쓴 이력이 있는 사람 중 {{편평세포암}} 사례가 5명 보고됐어요. 세포실험 2건 중 1건은 위험 증가, 1건은 별 차이 없었대요."
+    },
+    {
+      "type": "body",
+      "text": "미국 국가 암 등록자료엔 네일 램프 관련 흑색종 사례가 [[없었고]], 위험을 계산한 모델 7개 중 6개가 '위험 미미~없음'으로 나왔어요."
+    },
+    {
+      "type": "body",
+      "text": "저자들은 발암 가능성을 뒷받침할 뚜렷한 증거는 부족하다고 결론지었어요. 다만 장기간 쓸 사람에겐 자외선 차단을 권했어요.",
+      "note": "※ 리뷰에 포함된 연구들은 사례보고·세포실험·수치모델 등 방법이 제각각이라 직접 비교는 어려워요."
+    },
+    {
+      "type": "body",
+      "text": "장시간 젤네일을 자주 할 계획이라면 램프에 손 넣기 전 손등에 [[자외선 차단제]]를 발라보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Revisiting Cutaneous Carcinogenic Risk From Ultraviolet Nail Polish Dryer Lamp Exposure.",
+        "journal": "Photodermatology, photoimmunology & photomedicine",
+        "year": "2025",
+        "doi": "10.1111/phpp.70060",
+        "authors": "Duong JQ, Ceresnie MS, Kohli I et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2088-nail_polish/01.jpg",
+    "images/2088-nail_polish/02.jpg",
+    "images/2088-nail_polish/03.jpg",
+    "images/2088-nail_polish/04.jpg",
+    "images/2088-nail_polish/05.jpg",
+    "images/2088-nail_polish/06.jpg",
+    "images/2088-nail_polish/07.jpg"
+  ],
+  "instagram_caption": "젤네일 말릴 때 손을 넣는 UV 램프, 피부암 위험 신호가 있다는 이야기 들어보셨나요?\n\n최근 논문이 2023년까지 나온 관련 연구 14편을 모아 UV 네일 램프와 피부암의 관계를 다시 살펴봤어요.\n\n네일 램프를 쓴 이력이 있는 사람 중 편평세포암 사례가 5명 보고된 적은 있어요. 세포실험 2건 중 1건에서는 위험이 늘었다는 결과가, 다른 1건에서는 별 차이가 없다는 결과가 나왔고요.\n\n반면 미국 국가 암 등록자료에는 네일 램프와 관련된 흑색종 사례가 없었고, 위험을 계산한 수학 모델 7개 중 6개가 '위험은 미미하거나 거의 없다'고 결론 내렸어요. 그래서 저자들은 발암 가능성을 뒷받침할 뚜렷한 증거는 부족하다고 봤어요.\n\n다만 장기간 반복해서 쓸 사람에게는 자외선 차단을 권했어요. 오늘은 네일숍 가기 전 손등에 자외선 차단제를 발라보는 것부터 시작해보면 어떨까요.\n\n📄 출처: Duong JQ et al., Photodermatology, Photoimmunology & Photomedicine (2025). DOI 10.1111/phpp.70060\n\n#논문팩트체크 #paper_factcheck #젤네일 #네일아트 #UV램프 #피부암 #자외선차단 #피부건강 #네일케어 #뷰티팁 #건강정보 #과학팩트체크\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "젤네일 램프, 피부암 위험 신호 있을까?\n\n최근 논문을 보니 UV 네일 램프 쓴 사람 중 편평세포암 5건이 보고된 적 있대. 근데 세포실험도 결과가 갈리고, 암 등록자료엔 흑색종 사례가 없었고, 위험 계산 모델 7개 중 6개는 '위험 거의 없음'으로 나왔대. 그래서 논문도 '뚜렷한 증거는 없다'는 결론. 그래도 장기간 쓸 거면 자외선 차단은 하라고 권하더라. 다들 네일 램프 쓸 때 손등 케어하시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Revisiting Cutaneous Carcinogenic Risk From Ultraviolet Nail Polish Dryer Lamp Exposure.",
+    "journal": "Photodermatology, photoimmunology & photomedicine",
+    "year": "2025",
+    "doi": "10.1111/phpp.70060",
+    "pmid": "41094685",
+    "authors": "Duong JQ, Ceresnie MS, Kohli I et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41094685/"
+  },
+  "drafted_at": "2026-09-26T23:52:55.434961+09:00",
+  "model": "claude_code:default"
+}

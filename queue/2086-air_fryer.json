@@ -1,0 +1,81 @@
+{
+  "id": "2086-air_fryer",
+  "approved": false,
+  "link": "",
+  "topic": "air_fryer",
+  "topic_ko": "에어프라이어",
+  "verdict": "mixed",
+  "evidence_level": "experimental",
+  "source_text": "초록만",
+  "answer": "이 논문에 따르면 키토산을 0.5~1% 넣어 밑간하면 HA는 최대 55%, AGE는 최대 47%까지 줄어들면서 맛에는 큰 영향이 없었다.",
+  "style": "paper",
+  "accent": "orange",
+  "product_hint": "온도 조절 가능한 에어프라이어",
+  "image_prompt": "a raw seasoned beef patty on a cutting board next to an air fryer basket, no people or hands visible",
+  "caveats": [
+    "소고기 패티 한 종류로만 검증됐고 다른 고기·부위는 실험되지 않음",
+    "사람 대상 임상시험이 아닌 식품 화학적 실험(HA·AGE 함량 측정) 결과",
+    "키토산 등 하이드로콜로이드는 가정에서 흔히 구하기 쉬운 재료는 아닐 수 있음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "에어프라이어 고기\n구우면 {{발암물질}}?\n[[밑간 한스푼]]으로\n거의 절반 줄인다"
+    },
+    {
+      "type": "body",
+      "text": "에어프라이어는 기름을 줄여주지만, 고기를 고온에서 구우면 [[헤테로사이클릭아민(HAs)]]과 최종당화산물(AGEs)이 그대로 생깁니다. 각각 발암 추정 물질, 노화 관련 물질로 알려져 있어요."
+    },
+    {
+      "type": "body",
+      "text": "한 논문(Food Chemistry, 2025)이 소고기 패티에 하이드로콜로이드 10종을 밑간했더니, HA는 26~55%, AGE는 21~51% 줄었다는 실험 결과를 냈습니다."
+    },
+    {
+      "type": "body",
+      "text": "그중 [[키토산]] 0.5~1%가 가장 효과적이었어요. HA는 48.8~55%, AGE는 42.4~47.2%까지 줄이면서 맛(향미 성분)은 거의 그대로 유지됐습니다."
+    },
+    {
+      "type": "body",
+      "text": "밑간 재료가 막을 만들어 고기를 보호하고, 활성산소를 없애고, 반응 중간물질과 결합하는 방식이라고 연구팀은 설명합니다.",
+      "note": "※ 사람 대상 임상시험이 아닌 식품 실험(소고기 패티) 결과입니다."
+    },
+    {
+      "type": "body",
+      "text": "오늘 고기 밑간에 식품용 [[키토산]] 가루를 한 스푼 넣어 재웠다가 에어프라이어에 구워보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Synergistic inhibition of Maillard reaction hazards: Multifunctional hydrocolloids enable healthier air-fried beef patties with reduced heterocyclic amines and AGEs.",
+        "journal": "Food chemistry",
+        "year": "2025",
+        "doi": "10.1016/j.foodchem.2025.144766",
+        "authors": "Du H, Zhang H, Zhang Z et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2086-air_fryer/01.jpg",
+    "images/2086-air_fryer/02.jpg",
+    "images/2086-air_fryer/03.jpg",
+    "images/2086-air_fryer/04.jpg",
+    "images/2086-air_fryer/05.jpg",
+    "images/2086-air_fryer/06.jpg",
+    "images/2086-air_fryer/07.jpg"
+  ],
+  "instagram_caption": "에어프라이어로 고기 구우면 {{발암물질}}이 생긴다는데, [[밑간 한 스푼]]으로 줄일 수 있을까요?\n\n에어프라이어는 기름은 줄여주지만, 고기를 고온에서 구우면 헤테로사이클릭아민(HAs)과 최종당화산물(AGEs)이 그대로 만들어집니다. 각각 발암 추정 물질, 노화 관련 물질로 알려진 성분이에요.\n\n최근 한 식품화학 논문(Food Chemistry, 2025)이 소고기 패티를 대상으로 실험했습니다. 하이드로콜로이드(점성을 내는 식품 성분) 10종으로 밑간했더니, HA는 26~55%, AGE는 21~51%까지 줄었다는 결과가 나왔어요.\n\n그중에서도 [[키토산]] 0.5~1%가 가장 효과적이었습니다. HA는 최대 55%, AGE는 최대 47%까지 줄이면서도 고기 본연의 향미 성분에는 큰 영향을 주지 않았다고 합니다. 연구팀은 밑간 재료가 보호막을 만들고 활성산소를 없애면서 반응 중간물질과 결합하기 때문이라고 설명했어요.\n\n다만 이번 실험은 소고기 패티로 진행된 식품 실험 결과이며, 사람을 대상으로 한 임상시험은 아니라는 점은 참고해주세요.\n\n오늘 저녁 고기 밑간할 때, 식품용 키토산 가루를 한 스푼 더해서 에어프라이어에 구워보는 건 어떨까요.\n\n📄 출처: Du H, Zhang H, Zhang Z et al., Food Chemistry (2025). DOI 10.1016/j.foodchem.2025.144766\n\n#논문팩트체크 #paper_factcheck #에어프라이어 #건강정보 #식품과학 #소고기패티 #헤테로사이클릭아민 #최종당화산물 #키토산 #밑간꿀팁 #조리법 #식품첨가물\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "에어프라이어 고기, 발암물질 줄일 수 있을까?\n\n최근 논문 보니까 소고기 패티를 키토산 같은 재료로 밑간하면 발암 추정 물질(HA)이 최대 55%, 노화 관련 물질(AGE)도 최대 47%까지 줄었다는 실험 결과가 있더라고요. 맛에는 거의 영향 없었다고 하고요. 물론 사람 대상 임상시험은 아니고 소고기 패티로 한 식품 실험이긴 한데, 밑간 한 스푼이면 되는 거니 오늘 저녁에 한번 시도해볼래요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Synergistic inhibition of Maillard reaction hazards: Multifunctional hydrocolloids enable healthier air-fried beef patties with reduced heterocyclic amines and AGEs.",
+    "journal": "Food chemistry",
+    "year": "2025",
+    "doi": "10.1016/j.foodchem.2025.144766",
+    "pmid": "40393229",
+    "authors": "Du H, Zhang H, Zhang Z et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40393229/"
+  },
+  "drafted_at": "2026-09-26T23:45:53.859422+09:00",
+  "model": "claude_code:default"
+}
