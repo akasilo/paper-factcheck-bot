@@ -288,6 +288,12 @@ def main() -> int:
         log.info("Threads 본문 모양을 맞췄습니다: %r …", shaped.split("\n")[0][:40])
         item["threads_text"] = shaped
 
+    # 인스타 캡션에는 링크가 안 걸리므로 "프로필 링크(링크 모음 페이지)로" 한 줄을 끝에 붙인다 (CAPTION_FOOTER).
+    # 이미 들어 있으면(재시도·옛 초안) 다시 붙이지 않는다. 중복 확인은 캡션 앞 60자만 보므로 영향 없다.
+    footer = os.environ.get("CAPTION_FOOTER", "").strip()
+    if footer and footer not in (item.get("instagram_caption") or ""):
+        item["instagram_caption"] = (item.get("instagram_caption") or "").rstrip() + "\n\n" + footer
+
     image_urls = resolve_image_urls(item)
     problems = validate(item, image_urls, allow_no_link=args.allow_no_link)
     if problems:
