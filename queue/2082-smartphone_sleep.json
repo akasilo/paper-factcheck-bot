@@ -1,7 +1,7 @@
 {
   "id": "2082-smartphone_sleep",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hozoOkxsSO",
   "topic": "smartphone_sleep",
   "topic_ko": "스마트폰 밤 사용",
   "verdict": "mixed",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/41321479/"
   },
   "drafted_at": "2026-09-25T00:38:32.771067+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-28T08:03:28.750564+09:00"
 }

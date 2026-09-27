@@ -1,7 +1,7 @@
 {
   "id": "2083-fabric_softener",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hozqZpsGqG",
   "topic": "fabric_softener",
   "topic_ko": "섬유유연제·세탁세제",
   "verdict": "good",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/37289694/"
   },
   "drafted_at": "2026-09-26T00:34:08.938085+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-28T08:03:28.750830+09:00"
 }

@@ -1,7 +1,7 @@
 {
   "id": "2085-energy_drink",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hozvKSYvMi",
   "topic": "energy_drink",
   "topic_ko": "에너지드링크",
   "verdict": "mixed",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/36862943/"
   },
   "drafted_at": "2026-09-26T00:37:40.315671+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-28T08:03:28.751338+09:00"
 }

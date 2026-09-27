@@ -1,7 +1,7 @@
 {
   "id": "2081-standing_desk",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hozmgq3W2K",
   "topic": "standing_desk",
   "topic_ko": "스탠딩 데스크",
   "verdict": "mixed",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/39479932/"
   },
   "drafted_at": "2026-09-25T00:32:12.266702+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-09-28T08:03:28.750322+09:00"
 }
