@@ -1,0 +1,81 @@
+{
+  "id": "2091-receipt",
+  "approved": false,
+  "link": "",
+  "topic": "receipt",
+  "topic_ko": "영수증",
+  "verdict": "bad",
+  "evidence_level": "cross-sectional",
+  "source_text": "PMC12913405 전문",
+  "answer": "'BPA-free' 라벨이 붙은 영수증 15장 중 대부분에서 BPA 대신 BPS가 776~1,520 μg/g 검출됐고, BPS 역시 내분비교란 물질로 분류돼 있어 완전히 안심할 수는 없었다.",
+  "style": "geo",
+  "accent": "red",
+  "product_hint": "영수증 대신 전자영수증을 제공하거나 감열지 사용을 줄인 매장·서비스",
+  "image_prompt": "a roll of blank white thermal paper receipt tape on a plain neutral surface, without visible print",
+  "caveats": [
+    "2015년 한국에서 수거한 영수증 표본이라 이후 규제(EU 2020년, 한국 2024년 시행)로 현재 시판 제품 상황은 달라졌을 수 있음",
+    "피부 노출량은 추정치로, 실제 체내 흡수량과 차이가 있을 수 있음",
+    "'BPA-free' 표시 영수증 표본 수가 15장으로 많지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "매일 만지는\n[[영수증]]\n'BPA-free'도\n{{안심}} 못한다?"
+    },
+    {
+      "type": "body",
+      "text": "이 논문은 한국 영수증 120장을 조사했어요. 'BPA-free'라고 적힌 영수증 15장 중 대부분에서 [[BPS]]가 776~1,520 μg/g 검출됐어요."
+    },
+    {
+      "type": "body",
+      "text": "그 영수증들 속 BPA는 13~71 μg/g만 남아 있었어요. 즉 BPA를 빼낸 자리를 BPS가 그대로 채운 셈이에요."
+    },
+    {
+      "type": "body",
+      "text": "BPS는 BPA와 구조가 비슷해 {{내분비계 교란}} 활성이 보고됐고, EU에서는 '고위험 우려물질'로 분류돼 있어요."
+    },
+    {
+      "type": "body",
+      "text": "영수증을 자주 만지는 계산원 등 직업군의 노출량은 일반인보다 훨씬 높았고, 추정 BPA 섭취량은 유럽식품안전청 기준치를 넘었어요.",
+      "note": "※ 2015년 한국에서 수거한 영수증 기준이며, 이후 규제 변화가 있었어요."
+    },
+    {
+      "type": "body",
+      "text": "영수증 받은 뒤엔 음식 만지기 전에 [[손 씻기]], 가능하면 전자영수증으로 바꿔보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Occurrence and human exposure assessment of bisphenol analogues in various paper products from Korea.",
+        "journal": "Frontiers in public health",
+        "year": "2026",
+        "doi": "10.3389/fpubh.2026.1748104",
+        "authors": "Shin M, Lim JE, Mok S et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2091-receipt/01.jpg",
+    "images/2091-receipt/02.jpg",
+    "images/2091-receipt/03.jpg",
+    "images/2091-receipt/04.jpg",
+    "images/2091-receipt/05.jpg",
+    "images/2091-receipt/06.jpg",
+    "images/2091-receipt/07.jpg"
+  ],
+  "instagram_caption": "'BPA-free' 영수증이라고 다 안심되는 건 아니었습니다.\n\n한국에서 수거한 영수증 120장을 분석한 논문에 따르면, 'BPA-free'라고 표시된 영수증 15장 중 대부분에서 BPA 대신 BPS라는 물질이 776~1,520 μg/g 수준으로 검출됐습니다. 반면 BPA는 13~71 μg/g만 남아 있었죠.\n\nBPA를 빼고 BPS로 바꾼 것뿐, 완전히 없앤 게 아니었던 거예요. BPS는 BPA와 화학구조가 비슷해 내분비계를 교란할 수 있는 물질로 보고됐고, EU에서는 '고위험 우려물질'로 분류돼 있습니다.\n\n특히 영수증을 자주 만지는 계산원 등 직업군의 노출량은 일반인보다 훨씬 높았고, 이 논문이 추정한 BPA 섭취량은 유럽식품안전청(EFSA)이 정한 하루 허용량을 넘어섰습니다.\n\n오늘부터는 영수증을 받은 뒤 음식을 만지기 전에 손을 씻고, 가능하면 전자영수증을 선택해보세요.\n\n📄 출처: Shin M, Lim JE, Mok S et al., Frontiers in Public Health (2026). DOI 10.3389/fpubh.2026.1748104\n\n#논문팩트체크 #paper_factcheck #영수증 #BPA #BPS #내분비교란물질 #환경호르몬 #전자영수증 #생활화학 #건강정보 #일상속화학물질 #감열지\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "'BPA-free' 영수증도 안심 못한다고?\n\n최근 논문을 보니 한국 영수증 중 'BPA-free' 라벨 붙은 것들도 대부분 BPS라는 대체물질이 잔뜩 검출됐대요. BPA만 뺀 거지, 화학구조 비슷한 BPS로 바뀐 거였죠. BPS도 내분비교란 가능성이 보고돼서 EU에서는 고위험 물질로 분류돼 있고요. 계산원처럼 영수증 자주 만지는 직업군은 노출량이 일반인보다 훨씬 높았대요. 여러분은 영수증 받으면 바로 손 씻으시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Occurrence and human exposure assessment of bisphenol analogues in various paper products from Korea.",
+    "journal": "Frontiers in public health",
+    "year": "2026",
+    "doi": "10.3389/fpubh.2026.1748104",
+    "pmid": "41717621",
+    "authors": "Shin M, Lim JE, Mok S et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41717621/"
+  },
+  "drafted_at": "2026-09-28T00:26:13.641043+09:00",
+  "model": "claude_code:default"
+}

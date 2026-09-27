@@ -4,8 +4,8 @@
     "pmid": "39181731"
   },
   "scented_candle": {
-    "last_used": "2026-09-08",
-    "pmid": "38036128"
+    "last_used": "2026-09-28",
+    "pmid": "38754484"
   },
   "air_fryer": {
     "last_used": "2026-09-26",
@@ -120,8 +120,8 @@
     "pmid": "40356051"
   },
   "light_at_night": {
-    "last_used": "2026-09-16",
-    "pmid": "41129148"
+    "last_used": "2026-09-28",
+    "pmid": "41769088"
   },
   "compression_socks": {
     "last_used": "2026-09-16",
@@ -166,5 +166,13 @@
   "mattress_pillow": {
     "last_used": "2026-09-20",
     "pmid": "39762607"
+  },
+  "earphones": {
+    "last_used": "2026-09-28",
+    "pmid": "42085116"
+  },
+  "receipt": {
+    "last_used": "2026-09-28",
+    "pmid": "41717621"
   }
 }

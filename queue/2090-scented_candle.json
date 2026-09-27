@@ -1,0 +1,81 @@
+{
+  "id": "2090-scented_candle",
+  "approved": false,
+  "link": "",
+  "topic": "scented_candle",
+  "topic_ko": "향초·디퓨저",
+  "verdict": "bad",
+  "evidence_level": "experimental",
+  "source_text": "초록만",
+  "answer": "이 논문에 따르면 원룸에서 향을 태우자 실내 벤젠 농도가 평균 1.4에서 최대 100μg/m³까지 급증했고, 주된 원인은 향 속 나무심(우드코어)이었다.",
+  "style": "geo",
+  "accent": "red",
+  "product_hint": "나무심 없는 향 제품이나 무향 소이 캔들, 환기와 함께 쓰는 공기청정기",
+  "image_prompt": "a single lit incense stick releasing thin smoke from a small ceramic holder on a plain dark table",
+  "caveats": [
+    "이 논문은 향(인센스)과 전기가열식 향초만 측정했고, 리드형 디퓨저는 직접 다루지 않았다",
+    "벤젠·모노테르펜 증가폭은 브랜드, 개수, 태우는 시간, 환기 여부에 따라 달라질 수 있다",
+    "장기 건강 영향(질병 발생 위험)은 이 논문에서 직접 측정하지 않았다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "힐링용으로\n피우는 [[향]]\n실내 {{벤젠}}\n확 뛴다고?"
+    },
+    {
+      "type": "body",
+      "text": "한 논문이 원룸에서 향을 태우는 실험을 했더니, 실내 [[벤젠]] 농도가 평균 1.4에서 최대 100μg/m³까지 치솟았어요."
+    },
+    {
+      "type": "body",
+      "text": "벤젠이 급증한 가장 큰 원인은 향 속 [[나무심(우드코어)]]이었대요. 브랜드·개수·태우는 시간·환기 여부도 영향을 줬다고 해요."
+    },
+    {
+      "type": "body",
+      "text": "전기로 데우는 향초는 벤젠보다 [[모노테르펜]]이 문제였어요. 평균 16~30배까지 늘었다는 결과가 나왔어요."
+    },
+    {
+      "type": "body",
+      "text": "이 실험은 실제 원룸에 사는 자원자들을 대상으로 측정한 값이에요. 제품·사용법에 따라 편차가 커서 모든 제품이 같지는 않아요.",
+      "note": "※ 실험 조건(브랜드·개수·환기)에 따라 수치는 달라질 수 있어요"
+    },
+    {
+      "type": "body",
+      "text": "오늘부터 향·향초 고를 때는 [[나무심 없는 제품]]을 살피고, 태우는 동안 창문을 열어 환기해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Increase of the indoor concentration of volatile organic compounds after the use of incense and scented candle in studio apartments determined using passive sampling.",
+        "journal": "Chemosphere",
+        "year": "2024",
+        "doi": "10.1016/j.chemosphere.2024.142344",
+        "authors": "Kim PG, Lee A, Shin J et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2090-scented_candle/01.jpg",
+    "images/2090-scented_candle/02.jpg",
+    "images/2090-scented_candle/03.jpg",
+    "images/2090-scented_candle/04.jpg",
+    "images/2090-scented_candle/05.jpg",
+    "images/2090-scented_candle/06.jpg",
+    "images/2090-scented_candle/07.jpg"
+  ],
+  "instagram_caption": "힐링 아이템으로 인기인 향, 태우면 실내 공기는 괜찮을까요?\n\n한 논문이 원룸에서 실제로 향을 태우는 실험을 했어요. 그 결과 실내 벤젠 농도가 평균 1.4에서 최대 100μg/m³까지 치솟았다고 해요.\n\n가장 큰 원인은 향 속에 들어있는 나무심(우드코어)이었어요. 브랜드, 태우는 개수와 시간, 환기 여부도 함께 영향을 줬대요.\n\n전기로 데우는 향초는 조금 달랐어요. 벤젠보다는 모노테르펜이라는 성분이 평균 16~30배까지 늘어났다는 결과가 나왔어요.\n\n오늘부터는 나무심 없는 향 제품을 고르고, 태우는 동안 창문을 열어 환기하는 습관을 들여보는 건 어떨까요?\n\n📄 출처: Kim PG, Lee A, Shin J et al., Chemosphere (2024). DOI 10.1016/j.chemosphere.2024.142344\n\n#논문팩트체크 #paper_factcheck #실내공기질 #향초 #인센스 #디퓨저 #벤젠 #휘발성유기화합물 #환기 #생활화학 #실내환경 #공기질관리\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "향 피우면 실내 벤젠이 진짜 확 뛸까?\n\n한 논문이 원룸에서 실제로 향을 태워봤는데, 벤젠 농도가 평균 1.4에서 최대 100μg/m³까지 치솟았대요. 원인은 향 속 나무심(우드코어)이었고, 브랜드·개수·태우는 시간·환기 여부도 영향을 줬대요. 전기로 데우는 향초는 벤젠 대신 모노테르펜이 16~30배 늘었다는 결과도 있었어요. 여러분은 향초·인센스 쓸 때 환기 챙기시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Increase of the indoor concentration of volatile organic compounds after the use of incense and scented candle in studio apartments determined using passive sampling.",
+    "journal": "Chemosphere",
+    "year": "2024",
+    "doi": "10.1016/j.chemosphere.2024.142344",
+    "pmid": "38754484",
+    "authors": "Kim PG, Lee A, Shin J et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38754484/"
+  },
+  "drafted_at": "2026-09-28T00:23:35.642197+09:00",
+  "model": "claude_code:default"
+}
