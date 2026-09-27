@@ -14,6 +14,10 @@ jobs:
       IG_TOKEN: ${{ secrets.IG_TOKEN }}
       THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
       THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      YT_PRIVACY: ${{ vars.YT_PRIVACY || 'private' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
