@@ -12,6 +12,10 @@
               'skip' 이라고 쓰면 → skipped/ 로 옮김
   --status  게시/건너뜀 결과를 시트의 '상태' 칸에 반영한다
   --refresh 이미 있는 행의 훅·근거·미리보기를 큐 기준으로 다시 쓴다 ('쿠팡 링크' 는 안 건드림)
+  --dm      'DM 답장' 칸을 채운다 — "어디서 사요?" 류 DM 에 붙여 보낼 답장 멘트.
+              시트 행의 훅·답·추천 조건·쿠팡 링크로 만들므로, 사람이 링크를 붙여 넣으면
+              다음 실행에서 멘트에 그 링크가 들어간다. 바뀐 행만 다시 쓴다.
+              (시트에 'DM 답장' 열이 없으면 — Code.gs 를 새 버전으로 배포하기 전 — 조용히 건너뛴다)
 
 SHEET_URL 이 없으면 아무것도 하지 않고 정상 종료한다(= 시트를 안 쓰는 설정).
 """
@@ -35,6 +39,17 @@ KST = timezone(timedelta(hours=9))
 STATUS_WAITING = "대기"
 STATUS_POSTED = "게시완료"
 STATUS_SKIPPED = "건너뜀"
+
+LINK_COL = "쿠팡 링크"      # 사람이 채우는 칸 — 봇은 절대 쓰지 않는다
+DM_COL = "DM 답장"          # 봇이 채우는 칸 — DM 이 오면 사람이 복사해 붙인다
+
+# DM 멘트에 들어가는 고정 문구
+BRAND = os.environ.get("DM_BRAND", "").strip() or "paper_factcheck"
+LINKS_PAGE_URL = (os.environ.get("LINKS_PAGE_URL", "").strip()
+                  or "https://akasilo.github.io/paper-factcheck-bot/")
+DM_DISCLOSURE = ("※ 위 쿠팡 링크는 쿠팡 파트너스 활동의 일환으로, 구매 시 일정 수수료를 받습니다. "
+                 "구매 가격은 달라지지 않아요.")
+DM_MAX = 950                # 인스타 DM 한 통 1000자 제한보다 조금 아래
 
 
 # ---------------------------------------------------------------------------
@@ -160,7 +175,61 @@ def evidence_of(item: dict) -> str:
     return EVID_ABSTRACT
 
 
+def link_of_row(row: dict) -> str:
+    """시트 행의 '쿠팡 링크' 칸 — http 로 시작하는 진짜 링크만. 'skip' 등은 빈 값."""
+    cell = str(row.get(LINK_COL, "") or "").strip()
+    return cell if cell.lower().startswith("http") else ""
+
+
+def dm_ment(row: dict) -> str:
+    """'DM 답장' 칸에 넣을 멘트. 시트 행(주제·훅·답·추천 제품 조건·쿠팡 링크)만 보고 만든다.
+
+    사람이 DM 을 받으면 이 칸을 복사해 붙이면 끝나게 — 인사, 그 글의 핵심(훅+답),
+    제품을 고를 때 볼 조건, 링크(있으면), 링크 모음 페이지, 파트너스 고지 순서.
+    링크가 아직 없으면 '준비 중' 이라고 쓰고 링크 모음 페이지로 안내한다.
+    """
+    hook = plain(str(row.get("훅", "") or "")).strip()
+    answer = plain(str(row.get("답", "") or "")).strip()
+    if answer.startswith("—") or not answer:      # 답 검사 도입 전 원고의 자리표시 문구
+        answer = ""
+    cond = plain(str(row.get("추천 제품 조건", "") or "")).strip()
+    link = link_of_row(row)
+
+    skipped = str(row.get(LINK_COL, "") or "").strip().lower() in ("skip", "건너뜀", "패스", "x")
+    lines = [f"안녕하세요, {BRAND} 입니다 🙂 관심 가져 주셔서 감사해요!", ""]
+    if hook:
+        lines.append(f"📌 {hook}")
+    if answer:
+        lines.append(f"👉 {answer}")
+    if hook or answer:
+        lines.append("")
+    if link:
+        if cond:
+            lines.append(f"제품 고를 때 볼 조건: {cond}")
+        lines.append(f"{'이 조건에 맞는 ' if cond else ''}제품 예시예요 → {link}")
+        lines.append("")
+        lines.append(f"다른 글의 제품 링크는 프로필 링크(링크 모음)에 최신순으로 정리돼 있어요 → {LINKS_PAGE_URL}")
+        lines.append("")
+        lines.append(DM_DISCLOSURE)
+    elif cond and not skipped:
+        lines.append(f"제품 고를 때 볼 조건: {cond}")
+        lines.append(f"이 조건에 맞는 제품 링크는 아직 준비 중이에요. 준비되면 프로필 링크(링크 모음)에 올라가요 → {LINKS_PAGE_URL}")
+    else:
+        lines.append(f"이 글은 따로 추천하는 제품이 없어요. 다른 글의 제품 링크는 프로필 링크(링크 모음)에 최신순으로 정리돼 있어요 → {LINKS_PAGE_URL}")
+
+    text = "\n".join(lines).strip()
+    if len(text) > DM_MAX and answer:            # 너무 길면 답 줄부터 뺀다 (훅만으로도 무슨 글인지 안다)
+        return dm_ment({**row, "답": ""})
+    return text
+
+
 def row_of(item: dict) -> dict:
+    row = _row_of(item)
+    row[DM_COL] = dm_ment(row)                   # 새 행은 링크가 없으니 '준비 중' 멘트로 시작
+    return row
+
+
+def _row_of(item: dict) -> dict:
     paper = item.get("paper", {}) or {}
     return {
         "id": item.get("id", ""),
@@ -169,7 +238,7 @@ def row_of(item: dict) -> dict:
         "훅": hook_of(item),
         "답": answer_of(item),
         "추천 제품 조건": item.get("product_hint", ""),
-        "쿠팡 링크": "",
+        LINK_COL: "",
         "논문 제목": title_cell(item),
         "저널·연도": journal_cell(item),
         "PMID": paper.get("pmid", "") or "",
@@ -211,7 +280,7 @@ def do_refresh(url: str, token: str, ids: list[str] | None = None) -> int:
             continue
         row = row_of(item)
         fields = {k: v for k, v in row.items()
-                  if k not in ("id", "상태", "쿠팡 링크")}
+                  if k not in ("id", "상태", LINK_COL, DM_COL)}   # DM 답장은 --dm 이 링크까지 보고 맞춘다
         cur = have[iid]
         if all(str(cur.get(k, "")) == str(v) for k, v in fields.items()):
             continue                      # 바뀐 게 없으면 건드리지 않는다
@@ -230,7 +299,7 @@ def do_pull(url: str, token: str) -> int:
         row = by_id.get(str(item.get("id", "")))
         if not row:
             continue
-        cell = str(row.get("쿠팡 링크", "") or "").strip()
+        cell = str(row.get(LINK_COL, "") or "").strip()
         if not cell:
             continue
         if cell.lower() in ("skip", "건너뜀", "패스", "x"):
@@ -289,6 +358,37 @@ def do_status(url: str, token: str) -> int:
     return 0
 
 
+def do_dm(url: str, token: str, ids: list[str] | None = None) -> int:
+    """시트 모든 행의 'DM 답장' 칸을 최신 멘트로 맞춘다 (바뀐 행만 씀, 여러 번 돌려도 안전).
+
+    큐 파일이 아니라 시트 행을 기준으로 만들므로 게시완료·건너뜀 행도 멘트가 있다
+    (지난 글에 대한 DM 도 온다). 사람이 '쿠팡 링크' 를 채우면 다음 실행에서 멘트에 링크가 들어간다.
+    """
+    rows = sheet_get(url, token)
+    if not rows:
+        print("시트에 행이 없음")
+        return 0
+    if DM_COL not in rows[0]:
+        print(f"시트에 '{DM_COL}' 열이 없어 건너뜀 — _sheet/Code.gs 의 HEADERS 에 '{DM_COL}' 을 넣고 "
+              "새 버전으로 배포하면 열이 자동으로 생깁니다.")
+        return 0
+    want = set(ids or [])
+    n = skipped = 0
+    for r in rows:
+        iid = str(r.get("id", "") or "").strip()
+        if not iid or (want and iid not in want):
+            continue
+        text = dm_ment(r)
+        if str(r.get(DM_COL, "") or "").strip() == text:
+            skipped += 1
+            continue
+        sheet_post(url, token, {"action": "update", "id": iid, "fields": {DM_COL: text}})
+        print(f"DM 답장 갱신: {iid} ({'링크 있음' if link_of_row(r) else '링크 없음'})")
+        n += 1
+    print(f"DM 답장: {n}건 갱신 / {skipped}건 그대로")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     g = ap.add_mutually_exclusive_group(required=True)
@@ -297,8 +397,10 @@ def main() -> int:
     g.add_argument("--status", action="store_true", help="게시/건너뜀 결과를 시트에 반영")
     g.add_argument("--refresh", action="store_true",
                    help="이미 있는 행의 훅·근거·미리보기를 큐 기준으로 다시 씀 (쿠팡 링크는 건드리지 않음)")
+    g.add_argument("--dm", action="store_true",
+                   help="'DM 답장' 칸을 시트 행(훅·답·조건·쿠팡 링크) 기준으로 채움 (바뀐 행만)")
     ap.add_argument("--id", action="append", default=[],
-                   help="--refresh 대상 id (여러 번 쓸 수 있음). 비우면 전부")
+                   help="--refresh / --dm 대상 id (여러 번 쓸 수 있음). 비우면 전부")
     args = ap.parse_args()
 
     conf = cfg()
@@ -313,6 +415,8 @@ def main() -> int:
         return do_pull(url, token)
     if args.refresh:
         return do_refresh(url, token, args.id)
+    if args.dm:
+        return do_dm(url, token, args.id)
     return do_status(url, token)
 
 
