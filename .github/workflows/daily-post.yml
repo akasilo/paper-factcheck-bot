@@ -66,6 +66,8 @@ jobs:
       YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
       YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
       YT_PRIVACY: ${{ vars.YT_PRIVACY || 'private' }}
+      # 인스타 캡션 끝에 붙는 한 줄 (비우면 안 붙음). 링크 모음 페이지는 프로필 링크에 걸어 둔다.
+      CAPTION_FOOTER: ${{ vars.CAPTION_FOOTER || '🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요' }}
       # 이미지 공개 URL 기준 경로. 저장소가 public 이면 raw URL 로 바로 쓸 수 있다.
       IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/main/
       SHEET_URL: ${{ secrets.SHEET_URL }}
@@ -113,10 +115,16 @@ jobs:
           if [ -n "${{ steps.gate.outputs.slot }}" ]; then ARGS="$ARGS --slot ${{ steps.gate.outputs.slot }}"; fi
           python bot/publish.py --slots "$SLOTS" $ARGS
 
+      # 프로필 링크용 "링크 모음" 페이지(docs/index.html, GitHub Pages) 갱신 — 게시가 실패해도 지난 글은 그대로 보인다
+      - name: Build links page
+        if: always() && steps.gate.outputs.go == 'yes'
+        continue-on-error: true
+        run: python bot/build_links_page.py
+
       - name: Commit results
         if: always() && steps.gate.outputs.go == 'yes'
         run: |
-          bash bot/commit_push.sh "post: $(date +%Y-%m-%d) [skip ci]" queue posted skipped
+          bash bot/commit_push.sh "post: $(date +%Y-%m-%d) [skip ci]" queue posted skipped docs
 
       # 게시완료 / 건너뜀 을 시트 '상태' 칸에 반영 (시트가 죽어도 게시는 이미 끝났다)
       - name: Write status back to sheet
