@@ -5,7 +5,8 @@
   1. 오늘 날짜(KST) 큐 파일을 찾는다. 없으면 오늘 이전 날짜 중 가장 오래된 승인 항목을 쓴다.
   2. approved == true 이고 추천 링크가 있어야만 게시한다. (아니면 아무것도 안 하고 종료)
   3. 인스타 캐러셀 게시(AI 정보 라벨 포함) → (images/<id>/short.mp4 가 있으면) 인스타 릴스 게시
-     → Threads 캐러셀 게시(첫 장 = 그 동영상, 이어서 카드 사진) → Threads 게시물에 추천 링크 답글.
+     → Threads 캐러셀 게시(첫 장 = 그 동영상, 이어서 카드 사진) → Threads 게시물에 추천 링크 답글
+     → (YT_* 시크릿이 있으면) 같은 short.mp4 를 유튜브 Shorts 로 업로드.
   4. 결과를 posted/YYYY-MM-DD.json 에 기록하고 큐 파일은 삭제한다.
      (단계마다 바로 기록하므로 중간에 실패해도 재실행 시 이미 올린 건 건너뛴다)
 
@@ -14,6 +15,7 @@
   python bot/publish.py --date 2026-09-07
   python bot/publish.py --dry-run       # API 호출 없이 검증만
   python bot/publish.py --target threads
+  python bot/publish.py --target youtube   # 유튜브만 (이미 올라간 글의 기록을 이어서)
 """
 from __future__ import annotations
 
@@ -28,6 +30,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import meta_api  # noqa: E402
+import youtube_api  # noqa: E402  (유튜브 Shorts — YT_* 시크릿이 있을 때만 켜진다)
 from gate import should_post, DEFAULT_SLOTS  # noqa: E402  (문지기 — gate.py 와 판단을 공유)
 from draft_post import shape_threads_text  # noqa: E402  (Threads 본문 모양: 질문 한 줄 / 빈 줄 / 본문)
 
@@ -114,7 +117,8 @@ def prior_posts(item_id: str, exclude: Path | None = None) -> dict:
         for k in ("instagram_post_id", "instagram_posted_at",
                   "instagram_reel_id", "instagram_reel_posted_at",
                   "threads_post_id", "threads_posted_at",
-                  "threads_permalink", "threads_reply_id"):
+                  "threads_permalink", "threads_reply_id",
+                  "youtube_video_id", "youtube_url", "youtube_posted_at"):
             if rec.get(k):
                 found.setdefault(k, rec[k])
     return found
@@ -170,6 +174,15 @@ def resolve_video_url(item: dict) -> str | None:
     return base.rstrip("/") + "/" + rel.lstrip("/")
 
 
+def resolve_video_path(item: dict) -> Path | None:
+    """images/<id>/short.mp4 의 로컬 경로 (유튜브는 URL 이 아니라 파일 본문을 올린다)."""
+    imgs = item.get("images") or []
+    if not imgs:
+        return None
+    p = ROOT / Path(imgs[0]).parent / SHORT_NAME
+    return p if p.exists() else None
+
+
 def reel_share_to_feed() -> bool:
     """릴스를 프로필 그리드·홈 피드에도 보일지. 기본 False (피드에는 카드 캐러셀이 따로 올라간다)."""
     return os.environ.get("IG_REEL_SHARE_TO_FEED", "").strip().lower() in ("1", "true", "yes")
@@ -221,7 +234,8 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=today_kst(), help="큐 날짜 YYYY-MM-DD (기본: 오늘 KST)")
     ap.add_argument("--dry-run", action="store_true", help="API 호출 없이 검증만")
-    ap.add_argument("--target", choices=["both", "instagram", "threads"], default="both")
+    ap.add_argument("--target", choices=["both", "instagram", "threads", "youtube"], default="both",
+                    help="both = 인스타+Threads(+유튜브, 시크릿이 있으면)")
     ap.add_argument("--allow-no-link", action="store_true", help="링크 없이도 게시 허용")
     ap.add_argument("--slots", default=DEFAULT_SLOTS,
                     help='슬롯 정의 "이름=HH:MM,..." (KST). 깨어난 시각으로 어느 슬롯인지 정한다')
@@ -286,8 +300,12 @@ def main() -> int:
     video_url = resolve_video_url(item)
 
     log.info("이미지 %d장: %s", len(image_urls), image_urls)
-    log.info("동영상: %s / 인스타 AI 라벨: %s", video_url or "없음 (사진만)",
-             "붙임" if ai_label() else "안 붙임")
+    video_path = resolve_video_path(item)
+    yt_on = youtube_api.configured()
+    log.info("동영상: %s / 인스타 AI 라벨: %s / 유튜브: %s", video_url or "없음 (사진만)",
+             "붙임" if ai_label() else "안 붙임",
+             ("켬 (%s)" % (os.environ.get("YT_PRIVACY", "").strip() or "private")) if yt_on
+             else "끔 (YT_* 시크릿 없음)")
     log.info("인스타 캡션 %d자 / Threads 본문 %d자 / 답글 %s",
              len(item["instagram_caption"]), len(item["threads_text"]),
              f"{len(reply_text)}자" if reply_text else "없음")
@@ -325,6 +343,11 @@ def main() -> int:
 
     do_ig = args.target in ("both", "instagram")
     do_th = args.target in ("both", "threads")
+    # 유튜브는 시크릿이 있을 때만. --target youtube 로 콕 집으면 시크릿이 없을 때 바로 알려준다.
+    do_yt = args.target == "youtube" or (args.target == "both" and yt_on)
+    if args.target == "youtube" and not yt_on:
+        raise SystemExit("YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN 이 비어 있습니다. "
+                         "bot/yt_auth.py 로 받아서 GitHub Secrets 에 넣으세요.")
 
     failed: list[str] = []          # 이번 시도에서 실패한 곳 (하나가 막혀도 나머지는 올린다)
 
@@ -448,17 +471,55 @@ def main() -> int:
                 save_json(result_path, result)
                 failed.append("threads_reply")
 
+    # ---- YouTube Shorts --------------------------------------------------
+    # 인스타 릴스·Threads 첫 장에 쓴 short.mp4 를 그대로 올린다. 세로 3분 이하면 유튜브가 Shorts 로 분류.
+    # 심사 전 프로젝트는 유튜브가 강제 비공개로 두므로 YT_PRIVACY 기본값이 private 이다.
+    if do_yt:
+        if not video_path:
+            log.info("유튜브: short.mp4 가 없어 건너뜀 (render-cards 가 만든다)")
+        elif result.get("youtube_video_id"):
+            log.info("유튜브는 이미 올라감 (%s) — 건너뜀", result["youtube_video_id"])
+        else:
+            yt_title = youtube_api.build_title(item)
+            yt_desc = youtube_api.build_description(item, ai_label=ai_label())
+            try:
+                yt_token = youtube_api.access_token()
+                found = look_up(lambda: youtube_api.find_posted(yt_token, yt_title), "유튜브")
+                if found:
+                    log.warning("같은 제목의 영상이 이미 유튜브에 있습니다 (%s) — 다시 올리지 않습니다", found)
+                    result["youtube_video_id"] = found
+                    result["youtube_url"] = youtube_api.short_url(found)
+                    result.setdefault("verified", []).append("youtube:이미 있음")
+                else:
+                    vid = youtube_api.upload_short(
+                        yt_token, video_path, yt_title, yt_desc,
+                        tags=youtube_api.build_tags(item), ai_label=ai_label())
+                    result["youtube_video_id"] = vid
+                    result["youtube_url"] = youtube_api.short_url(vid)
+                    result["youtube_posted_at"] = datetime.now(KST).isoformat()
+                    result["youtube_privacy"] = (os.environ.get("YT_PRIVACY", "").strip().lower()
+                                                 or "private")
+                    log.info("유튜브 업로드 완료: %s", result["youtube_url"])
+                save_json(result_path, result)
+            except youtube_api.YouTubeApiError as e:
+                log.error("유튜브 업로드 실패: %s", e)
+                result.setdefault("errors", []).append({"youtube": str(e)})
+                save_json(result_path, result)
+                failed.append("youtube")
+
     # ---- 마무리: 큐에서 제거 ---------------------------------------------
     done_ig = (not do_ig) or bool(result.get("instagram_post_id"))
     done_reel = (not video_url) or (not do_ig) or bool(result.get("instagram_reel_id"))
     done_th = (not do_th) or bool(result.get("threads_post_id"))
     done_reply = (not reply_text) or (not do_th) or bool(result.get("threads_reply_id"))
+    done_yt = (not do_yt) or (not video_path) or bool(result.get("youtube_video_id"))
     if done_ig and done_th and args.target == "both" and qpath and qpath.exists():
         qpath.unlink(missing_ok=True)
         log.info("큐 파일 제거: %s", qpath.name)
 
-    if done_ig and done_reel and done_th and done_reply:
+    if done_ig and done_reel and done_th and done_reply and done_yt:
         # completed_at 이 찍힌 기록만 문지기가 '이 슬롯 끝'으로 본다.
+        # (유튜브가 계속 실패해도 gate.MAX_ATTEMPTS 번 뒤에는 슬롯을 닫는다 — 인스타·Threads 는 이미 나갔다)
         result["completed_at"] = datetime.now(KST).isoformat()
         save_json(result_path, result)
         return 0
