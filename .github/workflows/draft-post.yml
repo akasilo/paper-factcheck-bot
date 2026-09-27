@@ -88,6 +88,11 @@ jobs:
       - name: Refresh sheet rows
         run: python bot/sheet_sync.py --refresh
 
+      # 'DM 답장' 칸 — 새 행은 --push 가 '준비 중' 멘트로 넣고, 링크가 채워진 행은 여기서 링크 든 멘트로 바꾼다
+      - name: Refresh DM replies in sheet
+        continue-on-error: true
+        run: python bot/sheet_sync.py --dm
+
       - name: Open approval issue (시트를 안 쓸 때만)
         if: env.SHEET_URL == ''
         run: python bot/open_issue.py --date "$(date -d tomorrow +%Y-%m-%d)" || true

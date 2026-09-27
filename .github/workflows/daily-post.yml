@@ -131,3 +131,9 @@ jobs:
         if: always() && steps.gate.outputs.go == 'yes'
         continue-on-error: true
         run: python bot/sheet_sync.py --status
+
+      # 'DM 답장' 칸 갱신 — 사람이 채운 쿠팡 링크가 들어간 답장 멘트 (바뀐 행만 씀)
+      - name: Refresh DM replies in sheet
+        if: always() && steps.gate.outputs.go == 'yes'
+        continue-on-error: true
+        run: python bot/sheet_sync.py --dm

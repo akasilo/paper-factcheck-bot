@@ -1,0 +1,33 @@
+name: sheet-dm
+
+# 구글시트 'DM 답장' 칸을 지금 바로 채운다 (게시 안 함).
+# 평소에는 daily-post(슬롯마다) 와 draft-post(밤) 가 알아서 돌리므로, 이건
+#   - Code.gs 에 'DM 답장' 열을 넣고 새 버전으로 배포한 직후 예전 행을 한 번에 채울 때
+#   - 쿠팡 링크를 여러 개 붙여 넣고 멘트에 바로 반영하고 싶을 때
+# Actions 탭 → sheet-dm → Run workflow.
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "특정 원고 id 만 (예: 2081-standing_desk). 비우면 전부"
+        required: false
+        default: ""
+
+jobs:
+  dm:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      SHEET_URL: ${{ secrets.SHEET_URL }}
+      SHEET_TOKEN: ${{ secrets.SHEET_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Fill DM replies
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.id }}" ]; then ARGS="--id ${{ github.event.inputs.id }}"; fi
+          python bot/sheet_sync.py --dm $ARGS
