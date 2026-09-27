@@ -21,9 +21,13 @@ const TOKEN = 'CHANGE_ME_아무_긴_문자열로_바꾸세요';
 const SHEET_NAME = '게시목록';
 
 const HEADERS = [
-  'id', '상태', '주제', '훅', '답', '추천 제품 조건', '쿠팡 링크',
+  'id', '상태', '주제', '훅', '답', '추천 제품 조건', '쿠팡 링크', 'DM 답장',
   '논문 제목', '저널·연도', 'PMID', 'DOI', '링크', '근거', '카드 미리보기', '만든날짜'
 ];
+
+// 'DM 답장' 칸 = "어디서 사요?" 류 DM 이 오면 그대로 복사해 붙일 답장 멘트. 봇(sheet_sync.py --dm)이 채운다.
+//   훅·답·추천 조건·쿠팡 링크로 만들므로 '쿠팡 링크' 를 채우면 다음 실행 때 멘트에 링크가 들어간다.
+//   (이 열은 사람이 고쳐도 봇이 다음에 다시 덮어쓴다 — 고정 문구를 바꾸려면 sheet_sync.py 의 dm_ment 를 고칠 것)
 
 // 예전 열 이름 → 새 이름 (이미 쓰던 시트를 자동으로 맞춰준다)
 const RENAMES = { '논문': '논문 제목' };
@@ -49,10 +53,11 @@ function sheet_() {
       .setFontWeight('bold')
       .setBackground('#f0f0f0');
     // 보기 좋으라고 열 너비만 잡아둔다
-    const widths = [110, 80, 110, 300, 340, 240, 300, 320, 150, 95, 190, 200, 110, 130, 100];
+    const widths = [110, 80, 110, 300, 340, 240, 300, 360, 320, 150, 95, 190, 200, 110, 130, 100];
     widths.forEach((w, i) => sh.setColumnWidth(i + 1, w));
     sh.getRange(1, 1, sh.getMaxRows(), HEADERS.length).setVerticalAlignment('top');
     sh.getRange(2, 4, sh.getMaxRows() - 1, 3).setWrap(true);  // 훅 / 답 / 추천 조건 줄바꿈
+    sh.getRange(2, 8, sh.getMaxRows() - 1, 1).setWrap(true);  // DM 답장 줄바꿈
   } else {
     ensureHeaders_(sh);
   }
@@ -83,6 +88,10 @@ function ensureHeaders_(sh) {
     if (cur.indexOf(HEADERS[i]) !== -1) continue;   // 어딘가 있으면 순서만 다른 것 — 건드리지 않는다
     sh.insertColumnBefore(i + 1);
     sh.getRange(1, i + 1).setValue(HEADERS[i]).setFontWeight('bold').setBackground('#f0f0f0');
+    if (HEADERS[i] === 'DM 답장') {   // 긴 글이 들어가는 칸이라 줄바꿈·너비를 잡아 둔다
+      sh.setColumnWidth(i + 1, 360);
+      sh.getRange(2, i + 1, Math.max(sh.getMaxRows() - 1, 1), 1).setWrap(true);
+    }
     cur.splice(i, 0, HEADERS[i]);
     inserted++;
   }
