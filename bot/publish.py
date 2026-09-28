@@ -86,6 +86,13 @@ def same_item(a: dict, b: dict) -> bool:
 VERIFY_WAIT = 25
 
 
+def is_auth_error(e: Exception) -> bool:
+    """메타 API 의 토큰 무효 오류인가 (OAuthException / code 190 / 'Error validating access token')."""
+    t = str(e)
+    return ("OAuthException" in t or "'code': 190" in t or '"code": 190' in t
+            or "validating access token" in t.lower() or "invalid oauth access token" in t.lower())
+
+
 def look_up(fn, where: str):
     """계정 조회 — 실패해도 게시를 막지 않는다 (조회 실패 != 글 없음)."""
     try:
@@ -342,11 +349,6 @@ def main() -> int:
         log.warning("이 글은 이미 일부가 올라가 있습니다 — 그쪽은 건너뜁니다: %s",
                     ", ".join(sorted(carried)))
 
-    # 몇 번째 시도인지 남긴다. 문지기가 이 값으로 '언제 포기할지'를 정한다.
-    result["attempts"] = int(result.get("attempts") or 0) + 1
-    save_json(result_path, result)
-    log.info("기록 파일: %s (%d번째 시도)", result_path.name, result["attempts"])
-
     do_ig = args.target in ("both", "instagram")
     do_th = args.target in ("both", "threads")
     # 유튜브는 시크릿이 있을 때만. --target youtube 로 콕 집으면 시크릿이 없을 때 바로 알려준다.
@@ -354,6 +356,30 @@ def main() -> int:
     if args.target == "youtube" and not yt_on:
         raise SystemExit("YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN 이 비어 있습니다. "
                          "bot/yt_auth.py 로 받아서 GitHub Secrets 에 넣으세요.")
+
+    # ---- 게시 전 인스타 토큰 점검 (2026-09-29) ------------------------------------
+    # 토큰이 무효(OAuthException 190: 비밀번호 변경·보안 세션 만료)면 아무것도 올리지 않고 나간다.
+    # 인스타만 빠진 채 Threads·유튜브가 나가면 세 곳이 어긋나고, 시도 횟수만 차서 슬롯이 닫혀 버린다.
+    # 시도 횟수도 세지 않으므로 문지기가 30분마다 다시 깨우고, 새 토큰이 들어오면 그때 이어서 올린다.
+    if do_ig and not result.get("instagram_post_id") and not args.dry_run:
+        try:
+            meta_api.ig_me(env("IG_TOKEN"))
+        except meta_api.MetaApiError as e:
+            if is_auth_error(e):
+                log.error("인스타 토큰이 무효입니다 — 새 IG_TOKEN 이 들어올 때까지 게시를 보류합니다 (시도 횟수 안 셈): %s",
+                          str(e)[:200])
+                if result_path.exists():
+                    errs = result.setdefault("errors", [])
+                    if not (errs and "instagram_token" in errs[-1]):
+                        errs.append({"instagram_token": str(e)[:300]})
+                        save_json(result_path, result)
+                return 1
+            log.warning("인스타 /me 확인 실패 (토큰 문제는 아님) — 그대로 진행합니다: %s", str(e)[:150])
+
+    # 몇 번째 시도인지 남긴다. 문지기가 이 값으로 '언제 포기할지'를 정한다.
+    result["attempts"] = int(result.get("attempts") or 0) + 1
+    save_json(result_path, result)
+    log.info("기록 파일: %s (%d번째 시도)", result_path.name, result["attempts"])
 
     failed: list[str] = []          # 이번 시도에서 실패한 곳 (하나가 막혀도 나머지는 올린다)
 
