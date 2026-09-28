@@ -3,5 +3,8 @@
   "script": "e3d2a112c4ec4da5",
   "voice": "ko-KR-Neural2-A",
   "rate": "1.15",
+  "music": "surface_of_the_moon.mp3@0.350",
+  "music_title": "Surface of the Moon",
+  "music_credit": "",
   "seconds": 65.0
 }

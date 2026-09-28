@@ -3,5 +3,8 @@
   "script": "1d31334895892751",
   "voice": "ko-KR-Neural2-A",
   "rate": "1.15",
+  "music": "from_here_on_in.mp3@0.350",
+  "music_title": "From Here on In",
+  "music_credit": "",
   "seconds": 71.1
 }

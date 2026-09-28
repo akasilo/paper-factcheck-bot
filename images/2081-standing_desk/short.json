@@ -3,5 +3,8 @@
   "script": "354612c44dfd124a",
   "voice": "ko-KR-Neural2-A",
   "rate": "1.15",
+  "music": "laniakea.mp3@0.350",
+  "music_title": "Laniakea",
+  "music_credit": "",
   "seconds": 62.1
 }

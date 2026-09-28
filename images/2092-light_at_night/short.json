@@ -3,5 +3,8 @@
   "script": "c5698dcea83a5716",
   "voice": "ko-KR-Neural2-A",
   "rate": "1.15",
+  "music": "lake_jupiter.mp3@0.350",
+  "music_title": "Lake Jupiter",
+  "music_credit": "",
   "seconds": 70.7
 }
