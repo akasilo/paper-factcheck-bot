@@ -1,0 +1,86 @@
+{
+  "id": "2094-air_purifier",
+  "approved": false,
+  "link": "",
+  "topic": "air_purifier",
+  "topic_ko": "공기청정기",
+  "verdict": "mixed",
+  "evidence_level": "review",
+  "source_text": "초록만",
+  "answer": "이 논문에 따르면 공기청정기의 청정능력(CADR) 수치는 실제 미세먼지 감소 효과와 통계적으로 유의미한 상관관계가 없었다.",
+  "style": "geo",
+  "accent": "blue",
+  "product_hint": "방 크기에 맞는 CADR과 밀폐된 공간(침실 등) 사용을 함께 고려한 HEPA 공기청정기",
+  "image_prompt": "a portable air purifier with a visible filter grille standing in the corner of a bedroom near a closed window",
+  "caveats": [
+    "가정 내 무작위 실험만 포함되어 사무실 등 다른 실내 환경은 다루지 않았을 수 있음",
+    "연구마다 맥락 요인 보고 방식이 달라 모든 요인이 일관되게 검토되지 않음",
+    "가동 속도·방 부피에 대한 설명은 저자들의 추정이며 직접 측정으로 검증된 것은 아님"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "공기청정기\n[[CADR]] 수치\n높으면 끝?\n{{아니었다}}"
+    },
+    {
+      "type": "body",
+      "text": "공기청정기 고를 때 다들 [[CADR]](청정공기공급률) 수치부터 비교합니다. 숫자가 크면 진짜 더 효과적일까요?"
+    },
+    {
+      "type": "body",
+      "text": "이 리뷰는 가정에서 진행된 무작위 실험 41건(논문 64편)을 분석했습니다. 실내 미세먼지 감소율은 6.3~82.7%로 논문마다 크게 갈렸습니다."
+    },
+    {
+      "type": "body",
+      "text": "핵심 결과: [[CADR]] 수치는 실제 미세먼지 감소 효과와 통계적으로 뚜렷한 상관관계가 {{없었습니다}}. 스펙표 숫자만으로는 효과를 예측할 수 없다는 뜻입니다."
+    },
+    {
+      "type": "body",
+      "text": "왜 편차가 컸을까요? 실제 [[가동 속도]]가 표시값보다 낮았거나, 방 크기가 공기가 실제로 섞이는 부피를 과소평가했을 가능성이 있다고 저자들은 설명합니다."
+    },
+    {
+      "type": "body",
+      "text": "게다가 창문을 닫고, [[침실]]에서 썼을 때 효과가 더 컸습니다. 실외 미세먼지가 심할수록 줄어드는 절대량은 컸지만 편차도 컸습니다.",
+      "note": "※ 41건의 가정 내 실험을 종합한 리뷰로, 연구마다 보고 방식이 달라 모든 요인이 일관되게 검토되진 않았습니다."
+    },
+    {
+      "type": "body",
+      "text": "공기청정기 고를 땐 CADR 숫자보다 [[내 방 크기·창문 상태]]를 먼저 따져보고, 침실처럼 밀폐된 공간에 두세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Contextual Factors That Impact the Performance of Portable Air Cleaners: A Critical Review.",
+        "journal": "Environmental science & technology",
+        "year": "2026",
+        "doi": "10.1021/acs.est.5c12929",
+        "authors": "Mendell AY, Lee S, Siegel JA"
+      }
+    }
+  ],
+  "images": [
+    "images/2094-air_purifier/01.jpg",
+    "images/2094-air_purifier/02.jpg",
+    "images/2094-air_purifier/03.jpg",
+    "images/2094-air_purifier/04.jpg",
+    "images/2094-air_purifier/05.jpg",
+    "images/2094-air_purifier/06.jpg",
+    "images/2094-air_purifier/07.jpg",
+    "images/2094-air_purifier/08.jpg"
+  ],
+  "instagram_caption": "공기청정기 고를 때 다들 CADR(청정공기공급률) 수치부터 비교하죠. 숫자가 크면 무조건 효과도 좋을 거라 생각하기 쉽습니다.\n\n최근 한 리뷰 논문이 가정에서 진행된 무작위 실험 41건(논문 64편)을 모아 분석했습니다. 같은 공기청정기라도 실내 미세먼지 감소율은 6.3%에서 82.7%까지, 연구마다 크게 갈렸습니다.\n\n그런데 흥미로운 결과가 나왔습니다. 공기청정기의 청정능력(CADR) 수치는 실제 미세먼지 감소 효과와 통계적으로 뚜렷한 상관관계가 없었다는 겁니다. 스펙표 숫자만으로는 효과를 예측하기 어렵다는 뜻이죠.\n\n연구진은 실제 감소 효과가 기대보다 낮았던 이유로, 사람들이 표시된 것보다 낮은 세기로 가동했거나 방 크기가 실제 공기 순환 범위를 과소평가했을 가능성을 꼽았습니다. 반면 창문을 닫고 침실처럼 좁은 공간에서 사용했을 때는 효과가 더 컸습니다.\n\n오늘부터는 CADR 숫자보다 내 방 크기와 창문 상태, 놓는 위치를 먼저 점검해보세요.\n\n📄 출처: Mendell AY, Lee S, Siegel JA, Environmental Science & Technology (2026). DOI 10.1021/acs.est.5c12929\n\n#논문팩트체크 #paper_factcheck #공기청정기 #미세먼지 #실내공기질 #CADR #헤파필터 #공기질관리 #생활건강 #환경과학 #실내환경 #건강팁\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "공기청정기, CADR 높으면 끝 아니었어?\n\n최근 리뷰 논문이 가정용 공기청정기 무작위 실험 41건을 모아봤는데, 미세먼지 감소율이 6.3~82.7%로 논문마다 완전 딴판이었대.\n\n더 흥미로운 건, 스펙표에 적힌 CADR(청정능력) 수치가 실제 효과랑 통계적으로 별 상관이 없었다는 거야. 숫자만 믿고 사면 안 되는 이유.\n\n대신 창문 닫고 침실처럼 좁은 공간에서 쓸 때 효과가 더 컸다고 하니, 이게 더 중요한 변수 아닐까?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Contextual Factors That Impact the Performance of Portable Air Cleaners: A Critical Review.",
+    "journal": "Environmental science & technology",
+    "year": "2026",
+    "doi": "10.1021/acs.est.5c12929",
+    "pmid": "41934390",
+    "authors": "Mendell AY, Lee S, Siegel JA",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41934390/"
+  },
+  "drafted_at": "2026-09-28T21:05:07.425702+09:00",
+  "model": "claude_code:default"
+}

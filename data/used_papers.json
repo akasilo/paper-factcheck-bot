@@ -474,5 +474,26 @@
     "date": "2026-09-28",
     "topic": "light_at_night",
     "title": "Light pollution and risk of diabetes: a systematic review and meta-analysis of observational studies."
+  },
+  {
+    "pmid": "40832703",
+    "doi": "10.1161/HYPERTENSIONAHA.125.25209",
+    "date": "2026-09-28",
+    "topic": "dark_chocolate",
+    "title": "Long-Term Effect of Cocoa Extract Supplementation on Incident Hypertension."
+  },
+  {
+    "pmid": "41934390",
+    "doi": "10.1021/acs.est.5c12929",
+    "date": "2026-09-28",
+    "topic": "air_purifier",
+    "title": "Contextual Factors That Impact the Performance of Portable Air Cleaners: A Critical Review."
+  },
+  {
+    "pmid": "40988566",
+    "doi": "10.1111/dom.70158",
+    "date": "2026-09-28",
+    "topic": "probiotics",
+    "title": "Probiotics and dietary fibre fermented milk supplementation initiated in the first trimester to prevent gestational diabetes mellitus in overweight and obese pregnant women: A randomized controlled trial."
   }
 ]

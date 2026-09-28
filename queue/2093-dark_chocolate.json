@@ -1,0 +1,81 @@
+{
+  "id": "2093-dark_chocolate",
+  "approved": false,
+  "link": "",
+  "topic": "dark_chocolate",
+  "topic_ko": "다크초콜릿",
+  "verdict": "mixed",
+  "evidence_level": "rct",
+  "source_text": "PMC12541352 전문",
+  "answer": "코코아 추출물은 전체적으론 고혈압 예방 효과가 없었지만(HR 0.96), 시작 전 수축기 혈압이 120 미만으로 정상이던 사람은 위험이 24% 낮아졌다(HR 0.76).",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "카카오 70% 이상 다크초콜릿",
+  "image_prompt": "a few broken pieces of dark chocolate bar next to whole raw cacao beans on a plain wooden surface",
+  "caveats": [
+    "고혈압 진단은 자가보고 기반이며, 직접 측정한 혈압 수치는 사용되지 않았음",
+    "실험에 쓴 것은 다크초콜릿이 아니라 정제된 코코아추출물 캡슐(플라바놀 500mg, 에피카테킨 80mg/일)",
+    "코코아-멀티비타민 상호작용은 사전 계획된 가설이 아니며 다중비교 보정 후 유의성이 사라짐"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "매일 먹는\n[[다크초콜릿]]\n혈압에\n진짜 도움될까?"
+    },
+    {
+      "type": "body",
+      "text": "그동안 짧은 임상시험에서는 코코아 속 [[플라바놀]] 성분이 혈압을 낮추는 경향이 있었지만, 대규모·장기 연구는 없었어요."
+    },
+    {
+      "type": "body",
+      "text": "미국 COSMOS 연구팀은 고령자 8905명에게 코코아추출물(플라바놀 500mg, 에피카테킨 80mg/일)이나 위약을 주고 3.4년간 고혈압 발생을 추적했어요."
+    },
+    {
+      "type": "body",
+      "text": "결과: 전체적으로는 코코아군과 위약군의 고혈압 발생률이 거의 같았어요(100인년당 7.1명 vs 7.4명, [[유의미한 차이 없음]])."
+    },
+    {
+      "type": "body",
+      "text": "다만 시작 전 [[수축기 혈압이 120 미만]]이던 사람은 고혈압 위험이 24% 낮아졌어요(2년째부터 효과가 뚜렷해짐).",
+      "note": "※ 진단은 자가보고 기준이며, 실험엔 초콜릿이 아닌 코코아추출물 캡슐이 쓰였어요."
+    },
+    {
+      "type": "body",
+      "text": "오늘은 [[내 수축기 혈압]]부터 확인해보세요. 120 미만이라면 카카오 70% 이상 다크초콜릿을 즐기는 것도 나쁘지 않은 선택일 수 있어요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Long-Term Effect of Cocoa Extract Supplementation on Incident Hypertension.",
+        "journal": "Hypertension (Dallas, Tex. : 1979)",
+        "year": "2025",
+        "doi": "10.1161/HYPERTENSIONAHA.125.25209",
+        "authors": "Hamaya R, Li S, Lau J et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2093-dark_chocolate/01.jpg",
+    "images/2093-dark_chocolate/02.jpg",
+    "images/2093-dark_chocolate/03.jpg",
+    "images/2093-dark_chocolate/04.jpg",
+    "images/2093-dark_chocolate/05.jpg",
+    "images/2093-dark_chocolate/06.jpg",
+    "images/2093-dark_chocolate/07.jpg"
+  ],
+  "instagram_caption": "다크초콜릿 좋아하는 분들, 코코아가 혈압까지 낮춰준다는 말 들어보셨나요?\n\n짧은 임상시험들에서는 코코아 속 플라바놀이 혈압을 낮추는 경향을 보였어요. 하지만 몇 주짜리 소규모 연구가 대부분이라, 오래 먹으면 정말 고혈압을 예방하는지는 확인된 적이 없었죠.\n\n그래서 미국 COSMOS 연구팀이 65세 이상 여성·60세 이상 남성 8905명에게 코코아추출물(플라바놀 500mg, 에피카테킨 80mg/일) 또는 위약을 주고 3.4년간 고혈압 발생을 추적했어요.\n\n결과는 반반이었어요. 전체적으로는 코코아군과 위약군의 고혈압 발생률이 거의 같았고(100인년당 7.1명 vs 7.4명), 통계적으로 의미 있는 차이가 없었어요. 그런데 시작 전 수축기 혈압이 120 미만으로 '정상'이던 사람만 따로 보니, 고혈압 위험이 24% 낮았어요(2년째부터 효과가 뚜렷해짐).\n\n오늘의 행동: 최근 혈압을 확인해보세요. 수축기 120 미만이라면 카카오 70% 이상 다크초콜릿을 즐기는 것도 나쁘지 않은 선택일 수 있어요. 단, 이 연구는 초콜릿이 아니라 정제된 코코아추출물 캡슐로 진행됐다는 점은 참고하세요.\n\n📄 출처: Hamaya R, Li S, Lau J et al., Hypertension (2025). DOI 10.1161/HYPERTENSIONAHA.125.25209\n\n#논문팩트체크 #paper_factcheck #다크초콜릿 #코코아 #혈압관리 #고혈압예방 #플라바놀 #건강습관 #식습관 #임상시험 #혈압 #카카오 #항산화 #웰빙\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "코코아 보충제가 혈압을 낮춰준다는 말, 진짜일까?\n\n최근 COSMOS라는 대규모 논문을 보니, 고령자 8905명에게 코코아추출물(플라바놀 500mg, 에피카테킨 80mg/일)이나 위약을 3.4년간 먹였더라고요. 전체적으로는 고혈압 발생률이 거의 같았어요(100인년당 7.1명 vs 7.4명). 그런데 시작 전 수축기 혈압이 120 미만으로 정상이던 사람만 보면 고혈압 위험이 24% 낮아졌대요(2년째부터 효과 뚜렷). 만능 예방약은 아니고, '이미 정상인 혈압을 지키는' 쪽에 가까운 셈이죠. 여러분은 최근에 혈압 재보신 적 있나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Long-Term Effect of Cocoa Extract Supplementation on Incident Hypertension.",
+    "journal": "Hypertension (Dallas, Tex. : 1979)",
+    "year": "2025",
+    "doi": "10.1161/HYPERTENSIONAHA.125.25209",
+    "pmid": "40832703",
+    "authors": "Hamaya R, Li S, Lau J et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40832703/"
+  },
+  "drafted_at": "2026-09-28T21:03:12.561513+09:00",
+  "model": "claude_code:default"
+}
