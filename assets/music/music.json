@@ -1,0 +1,72 @@
+{
+  "_readme": [
+    "숏폼(short.mp4) 배경음 목록. 전부 YouTube 오디오 보관함(studio.youtube.com → 오디오 보관함)에서 받은 곡으로,",
+    "라이선스 유형 '저작자 표시 필요 없음'(YouTube Audio Library License) 만 골랐다. 2026-09-28 Claude 가 선정.",
+    "loudnorm(I=-20 LUFS) 로 음량을 맞추고 112kbps 로 줄여서 넣었다. bot/make_short.py 가 스타일(geo/paper/soft)별로",
+    "하나를 골라 TTS 목소리 밑에 깐다 (id 해시로 고정 → 같은 글은 항상 같은 곡).",
+    "곡을 바꾸거나 추가하면 short.json 의 music 값이 달라져 다음 render-cards 때 영상만 다시 조립된다.",
+    "attribution 이 true 인 곡은 유튜브 설명에 크레딧 줄이 자동으로 붙는다 (지금은 전부 false)."
+  ],
+  "tracks": [
+    {
+      "file": "laniakea.mp3",
+      "title": "Laniakea",
+      "artist": "The Grey Room / Density & Time",
+      "genre": "Ambient",
+      "mood": "Calm",
+      "seconds": 240,
+      "styles": ["paper", "soft"],
+      "license": "YouTube Audio Library License",
+      "attribution": false,
+      "source": "https://www.youtube.com/audiolibrary"
+    },
+    {
+      "file": "rain_over_kyoto_station.mp3",
+      "title": "Rain Over Kyoto Station",
+      "artist": "The Mini Vandals",
+      "genre": "Ambient",
+      "mood": "Calm",
+      "seconds": 164,
+      "styles": ["paper", "soft"],
+      "license": "YouTube Audio Library License",
+      "attribution": false,
+      "source": "https://www.youtube.com/audiolibrary"
+    },
+    {
+      "file": "from_here_on_in.mp3",
+      "title": "From Here on In",
+      "artist": "Everet Almond",
+      "genre": "Cinematic",
+      "mood": "Calm",
+      "seconds": 188,
+      "styles": ["soft", "paper"],
+      "license": "YouTube Audio Library License",
+      "attribution": false,
+      "source": "https://www.youtube.com/audiolibrary"
+    },
+    {
+      "file": "lake_jupiter.mp3",
+      "title": "Lake Jupiter",
+      "artist": "John Patitucci",
+      "genre": "Ambient",
+      "mood": "Dark",
+      "seconds": 217,
+      "styles": ["geo"],
+      "license": "YouTube Audio Library License",
+      "attribution": false,
+      "source": "https://www.youtube.com/audiolibrary"
+    },
+    {
+      "file": "surface_of_the_moon.mp3",
+      "title": "Surface of the Moon",
+      "artist": "John Patitucci",
+      "genre": "Cinematic",
+      "mood": "Dark",
+      "seconds": 205,
+      "styles": ["geo"],
+      "license": "YouTube Audio Library License",
+      "attribution": false,
+      "source": "https://www.youtube.com/audiolibrary"
+    }
+  ]
+}
