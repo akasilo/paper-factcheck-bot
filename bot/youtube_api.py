@@ -129,9 +129,15 @@ def _hook(item: dict) -> str:
     return _strip_markup(first)
 
 
+def _yt_safe(text: str) -> str:
+    """유튜브는 제목·설명에 '<' '>' 가 있으면 invalidTitle/invalidDescription 으로 거부한다
+    (09-29 아침 2081 의 "(p<.05)" 로 확인). 전각 부등호로 바꿔 뜻은 살린다."""
+    return text.replace("<", "＜").replace(">", "＞")
+
+
 def build_title(item: dict) -> str:
     """훅 한 줄 + #Shorts. 100자 안으로. (#Shorts 는 필수는 아니지만 분류를 확실히 해 준다)"""
-    hook = _hook(item) or str(item.get("topic_ko") or item.get("id") or "논문 팩트체크")
+    hook = _yt_safe(_hook(item) or str(item.get("topic_ko") or item.get("id") or "논문 팩트체크"))
     tag = " #Shorts"
     room = TITLE_MAX - len(tag)
     if len(hook) > room:
@@ -194,7 +200,7 @@ def build_description(item: dict, *, ai_label: bool = True) -> str:
         tags.insert(1, "#" + re.sub(r"\s+", "", topic))
     blocks.append(" ".join(tags))
 
-    desc = "\n\n".join(b for b in blocks if b)
+    desc = _yt_safe("\n\n".join(b for b in blocks if b))
     if len(desc) > DESC_MAX:
         desc = desc[: DESC_MAX - 1].rstrip() + "…"
     return desc
