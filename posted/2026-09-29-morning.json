@@ -83,17 +83,24 @@
     "model": "claude_code:default",
     "approved_at": "2026-09-28T08:03:28.750322+09:00"
   },
-  "attempts": 1,
+  "attempts": 2,
   "errors": [
     {
       "instagram": "POST https://graph.instagram.com/v23.0/17841439785273944/media -> 400: {'error': {'message': 'Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 0, 'fbtrace_id': 'Aom_0kiIZBc-jjkby9By5n-'}}"
     },
     {
       "youtube": "업로드 세션 열기 실패 400: {'error': {'code': 400, 'message': 'The request metadata specifies an invalid video description.', 'errors': [{'message': 'The request metadata specifies an invalid video description.', 'domain': 'youtube.video', 'reason': 'invalidDescription', 'location': 'body.snippet.description', 'locationType': 'other'}]}}"
+    },
+    {
+      "instagram": "POST https://graph.instagram.com/v23.0/17841439785273944/media -> 400: {'error': {'message': 'Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 0, 'fbtrace_id': 'AvCJiJBzy2fxA1tFGutfCuT'}}"
     }
   ],
   "threads_post_id": "17875535001576448",
   "threads_posted_at": "2026-09-29T08:03:40.489345+09:00",
   "threads_permalink": "https://www.threads.com/@paper_factcheck/post/Dd2UhdSEZzk",
-  "threads_reply_id": "18126062821873682"
+  "threads_reply_id": "18126062821873682",
+  "youtube_video_id": "l1GlxRahbs8",
+  "youtube_url": "https://youtube.com/shorts/l1GlxRahbs8",
+  "youtube_posted_at": "2026-09-29T08:08:57.217374+09:00",
+  "youtube_privacy": "public"
 }
