@@ -31,6 +31,9 @@ jobs:
       GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
       GOOGLE_TTS_VOICE: ${{ vars.GOOGLE_TTS_VOICE }}
       GOOGLE_TTS_RATE: ${{ vars.GOOGLE_TTS_RATE }}
+      # 배경음 (assets/music). SHORT_MUSIC=off 로 끄고, SHORT_MUSIC_VOLUME(0~1, 기본 0.35) 로 음량 조절
+      SHORT_MUSIC: ${{ vars.SHORT_MUSIC }}
+      SHORT_MUSIC_VOLUME: ${{ vars.SHORT_MUSIC_VOLUME }}
     steps:
       - uses: actions/checkout@v4
 
