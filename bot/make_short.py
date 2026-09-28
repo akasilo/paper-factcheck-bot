@@ -10,6 +10,13 @@
   GOOGLE_TTS_VOICE     기본 ko-KR-Neural2-A  (여성 / -B 여성 / -C 남성, ko-KR-Wavenet-A~D 도 가능)
   GOOGLE_TTS_RATE      기본 1.15 (말 빠르기. 한국어는 1.2 까지 자연스럽다)
 
+배경음 (2026-09-28): assets/music/*.mp3 + music.json (YouTube 오디오 보관함, 저작자 표시 불필요 곡만).
+  글의 스타일(geo/paper/soft)에 맞는 곡을 id 해시로 하나 골라 목소리 밑에 깐다. 목소리가 나올 땐
+  사이드체인 컴프레서로 음악을 더 낮추고(더킹), 시작·끝은 페이드. 유튜브 API 로는 오디오 보관함 곡을
+  붙일 수 없어서 영상에 미리 섞는다 — 인스타 릴스·Threads 에도 같은 영상이 나간다.
+  SHORT_MUSIC=off       배경음 끄기 (--no-music 도 같음)
+  SHORT_MUSIC_VOLUME    배경음 음량 0~1, 기본 0.35 (목소리 대비 약 -15dB; 말할 땐 더킹으로 5dB 더 내려감)
+
 화면: 카드(1080x1350)를 가운데 두고, 위아래 남는 띠는 같은 카드를 흐리게 키워서 깐다.
   각 카드는 그 카드 음성 길이 + PAD 초 만큼 머문다. 마지막 출처 카드는 짧게 한 줄만 읽는다.
   ffmpeg 가 PATH 에 있어야 한다 (GitHub 러너에는 기본 설치).
@@ -43,6 +50,11 @@ SILENT_SEC = 4.0     # --no-tts 일 때 카드당 시간
 DEFAULT_VOICE = "ko-KR-Neural2-A"
 DEFAULT_RATE = "1.15"
 TTS_URL = "https://texttospeech.googleapis.com/v1/text:synthesize"
+
+MUSIC_DIR = ROOT / "assets" / "music"
+MUSIC_META = MUSIC_DIR / "music.json"
+DEFAULT_MUSIC_VOLUME = "0.35"   # 배경음 음량 (0~1). 목소리(-18dB)보다 12~17dB 낮게 깔린다
+MUSIC_FADE_IN, MUSIC_FADE_OUT = 1.5, 2.5
 
 
 # ---------- 대본 ----------
@@ -150,6 +162,87 @@ def concat(parts: list[Path], out: Path) -> None:
     lst.unlink(missing_ok=True)
 
 
+# ---------- 배경음 ----------
+
+def music_enabled() -> bool:
+    return os.environ.get("SHORT_MUSIC", "").strip().lower() not in ("off", "0", "false", "no")
+
+
+def music_volume() -> str:
+    v = os.environ.get("SHORT_MUSIC_VOLUME", "").strip() or DEFAULT_MUSIC_VOLUME
+    try:
+        return f"{max(0.0, min(1.0, float(v))):.3f}"
+    except ValueError:
+        return DEFAULT_MUSIC_VOLUME
+
+
+def music_tracks() -> list[dict]:
+    """assets/music/music.json 의 곡 목록 (파일이 실제로 있는 것만)."""
+    if not MUSIC_META.exists():
+        return []
+    try:
+        data = json.loads(MUSIC_META.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    out = []
+    for t in data.get("tracks") or []:
+        f = str(t.get("file") or "")
+        if f and (MUSIC_DIR / f).exists():
+            out.append(t)
+    return out
+
+
+def style_of(item: dict) -> str:
+    """카드 스타일(geo/paper/soft). render_cards 와 같은 규칙 — 없으면 card_styles.auto_pick."""
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import card_styles  # noqa: PLC0415
+        if item.get("style"):
+            return card_styles.resolve(item.get("style"))
+        return card_styles.auto_pick(item)[0]
+    except Exception:
+        return str(item.get("style") or "geo")
+
+
+def pick_music(item: dict) -> dict | None:
+    """스타일에 맞는 곡 중 id 해시로 하나. 없으면 None (= 음악 없이)."""
+    if not music_enabled():
+        return None
+    tracks = music_tracks()
+    if not tracks:
+        return None
+    style = style_of(item)
+    cands = [t for t in tracks if style in (t.get("styles") or [])] or tracks
+    key = str(item.get("id") or "")
+    idx = int(hashlib.sha1(key.encode("utf-8")).hexdigest(), 16) % len(cands)
+    return cands[idx]
+
+
+def music_credit(track: dict | None) -> str:
+    """저작자 표시가 필요한 곡이면 설명에 붙일 한 줄. (지금 넣어 둔 곡은 전부 불필요)"""
+    if not track or not track.get("attribution"):
+        return ""
+    return f"Music: {track.get('title', '')} — {track.get('artist', '')} ({track.get('license') or 'YouTube Audio Library'})"
+
+
+def mix_music(video: Path, music: Path, out: Path, seconds: float, volume: str) -> None:
+    """목소리 영상 + 배경음 → 배경음을 낮게 깔고(더킹) 페이드 넣어 다시 muxing (영상은 그대로 copy)."""
+    t = max(seconds, 1.0)
+    fade_out_at = max(t - MUSIC_FADE_OUT, 0.0)
+    fc = (
+        f"[1:a]aformat=sample_rates=44100:channel_layouts=stereo,atrim=0:{t:.2f},asetpts=N/SR/TB,"
+        f"volume={volume},afade=t=in:st=0:d={MUSIC_FADE_IN},afade=t=out:st={fade_out_at:.2f}:d={MUSIC_FADE_OUT}[m];"
+        # 목소리(모노)는 양쪽 채널에 그대로 복사한다 (기본 업믹스는 -3dB 깎인다)
+        f"[0:a]aformat=sample_rates=44100:channel_layouts=mono,pan=stereo|c0=c0|c1=c0,asplit=2[v1][v2];"
+        f"[m][v2]sidechaincompress=threshold=0.05:ratio=3:attack=40:release=400:level_sc=1[md];"
+        f"[v1][md]amix=inputs=2:duration=first:dropout_transition=0:normalize=0[a]"
+    )
+    cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-stream_loop", "-1", "-i", str(music),
+           "-filter_complex", fc, "-map", "0:v", "-map", "[a]", "-t", f"{t:.2f}",
+           "-c:v", "copy", "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-movflags", "+faststart", str(out)]
+    subprocess.run(cmd, check=True)
+
+
 # ---------- 조립 ----------
 
 def load_item(item_id: str) -> dict | None:
@@ -195,15 +288,19 @@ def is_current(item_id: str) -> bool:
         return False
     want_voice = os.environ.get("GOOGLE_TTS_VOICE", "").strip() or DEFAULT_VOICE
     want_rate = os.environ.get("GOOGLE_TTS_RATE", "").strip() or DEFAULT_RATE
+    track = pick_music(item)
+    want_music = f"{track['file']}@{music_volume()}" if track else ""
     return (m.get("cards") == _sha(imgs)
             and m.get("script") == _script_sha(script_for(item))
             and bool(m.get("voice"))
             # 목소리·속도를 바꾸면 다시 만든다 (옛 기록엔 rate 가 없으니 있을 때만 비교)
             and m.get("voice") == want_voice
-            and str(m.get("rate", want_rate)) == str(want_rate))
+            and str(m.get("rate", want_rate)) == str(want_rate)
+            # 배경음(곡·음량)이 바뀌어도 다시 조립한다 (옛 기록엔 music 이 없음 → "" 와 비교)
+            and str(m.get("music", "")) == want_music)
 
 
-def build(item_id: str, use_tts: bool = True, force: bool = False) -> Path | None:
+def build(item_id: str, use_tts: bool = True, force: bool = False, use_music: bool = True) -> Path | None:
     item = load_item(item_id)
     if not item:
         print(f"큐/게시 기록에 {item_id} 가 없음", file=sys.stderr)
@@ -256,9 +353,24 @@ def build(item_id: str, use_tts: bool = True, force: bool = False) -> Path | Non
             parts.append(part)
             total += seconds
             print(f"  카드 {i}/{len(imgs)} → {seconds:.1f}초")
-        concat(parts, final)
+        track = pick_music(item) if use_music else None
+        if track:
+            voice_only = Path(td) / "voice_only.mp4"
+            concat(parts, voice_only)
+            try:
+                mix_music(voice_only, MUSIC_DIR / track["file"], final, total, music_volume())
+                print(f"  배경음: {track.get('title')} — {track.get('artist')} (음량 {music_volume()})")
+            except subprocess.CalledProcessError as e:      # 배경음이 실패해도 영상은 나가야 한다
+                print(f"  배경음 섞기 실패 → 목소리만: {str(e)[:200]}", file=sys.stderr)
+                shutil.copyfile(voice_only, final)
+                track = None
+        else:
+            concat(parts, final)
+    music_tag = f"{track['file']}@{music_volume()}" if track else ""
     meta.write_text(json.dumps({"cards": _sha(imgs), "script": _script_sha(lines),
                                 "voice": voice if use_tts else "", "rate": rate,
+                                "music": music_tag, "music_title": (track or {}).get("title", ""),
+                                "music_credit": music_credit(track),
                                 "seconds": round(total, 1)},
                                ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"완성: {final.relative_to(ROOT)} ({total:.0f}초, {final.stat().st_size // 1024} KB)")
@@ -294,7 +406,10 @@ def main() -> int:
     ap.add_argument("--no-tts", action="store_true", help="음성 없이 조립만")
     ap.add_argument("--script", action="store_true", help="대본만 출력")
     ap.add_argument("--force", action="store_true", help="있어도 다시 만들기 (TTS 도 다시)")
+    ap.add_argument("--no-music", action="store_true", help="배경음 없이 (SHORT_MUSIC=off 와 같음)")
     a = ap.parse_args()
+    if a.no_music:
+        os.environ["SHORT_MUSIC"] = "off"
     if a.script:
         item = load_item(a.id)
         if not item:

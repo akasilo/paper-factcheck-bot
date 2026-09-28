@@ -43,6 +43,7 @@ DESC_MAX = 5000          # 유튜브 설명 한도
 DEFAULT_CATEGORY = "28"  # Science & Technology
 DISCLOSURE = "이 영상은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."
 AI_NOTE = "* 본 영상은 AI의 도움을 받아 제작되었습니다."
+ROOT = Path(__file__).resolve().parent.parent
 
 
 class YouTubeApiError(RuntimeError):
@@ -183,6 +184,10 @@ def build_description(item: dict, *, ai_label: bool = True) -> str:
     if ai_label:
         blocks.append(AI_NOTE)
 
+    credit = music_credit(item)          # 저작자 표시가 필요한 배경음일 때만 한 줄 (make_short.py 가 short.json 에 적어 둔다)
+    if credit:
+        blocks.append(credit)
+
     tags = ["#논문팩트체크", "#paper_factcheck", "#Shorts"]
     topic = str(item.get("topic_ko") or "").strip()
     if topic:
@@ -193,6 +198,19 @@ def build_description(item: dict, *, ai_label: bool = True) -> str:
     if len(desc) > DESC_MAX:
         desc = desc[: DESC_MAX - 1].rstrip() + "…"
     return desc
+
+
+def music_credit(item: dict) -> str:
+    """images/<id>/short.json 의 music_credit (배경음이 저작자 표시를 요구할 때만 값이 있다)."""
+    iid = str(item.get("id") or "").strip()
+    if not iid:
+        return ""
+    p = ROOT / "images" / iid / "short.json"
+    try:
+        import json  # noqa: PLC0415
+        return str(json.loads(p.read_text(encoding="utf-8")).get("music_credit") or "").strip()
+    except Exception:
+        return ""
 
 
 def build_tags(item: dict) -> list[str]:
