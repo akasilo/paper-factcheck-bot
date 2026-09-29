@@ -1,1 +1,1 @@
-gemini:gemini-3.8-flash-tts:Leda|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|장 볼 때 나트륨 대신 칼륨이 든 저염 소금을 확인해보세요. 신장 질환이 있다면 미리 의료진과 상의하면 더 안전해요.
+gemini:gemini-3.8-flash-tts:Charon|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|장 볼 때 나트륨 대신 칼륨이 든 저염 소금을 확인해보세요. 신장 질환이 있다면 미리 의료진과 상의하면 더 안전해요.
