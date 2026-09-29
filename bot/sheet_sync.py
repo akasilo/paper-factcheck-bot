@@ -25,6 +25,7 @@ import argparse
 import json
 import os
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -66,22 +67,49 @@ def cfg() -> tuple[str, str] | None:
     return url, token
 
 
+# Apps Script 웹앱은 가끔 흔들린다 — 302 로 넘어간 googleusercontent 주소가 404 를 주거나,
+# 리다이렉트 과정에서 본문이 사라져 스크립트가 'bad token' 을 돌려주기도 한다 (09-29 관측).
+# 그래서 GET/POST 모두 몇 번 다시 시도한다. 진짜 토큰 불일치라면 결국 같은 오류로 끝난다.
+RETRIES = 4
+RETRY_WAIT = (5, 10, 20)
+
+
+def _call(method: str, url: str, token: str, body: dict | None = None) -> dict:
+    last = "?"
+    for attempt in range(RETRIES):
+        try:
+            if method == "GET":
+                r = requests.get(url, params={"token": token}, timeout=60)
+            else:
+                # Apps Script 는 302 로 googleusercontent 로 넘기므로 리다이렉트를 따라가야 한다
+                r = requests.post(url, data=json.dumps({**(body or {}), "token": token}),
+                                  headers={"Content-Type": "application/json"},
+                                  timeout=60, allow_redirects=True)
+            r.raise_for_status()
+            data = r.json()
+            if not isinstance(data, dict):
+                raise ValueError(f"응답이 JSON 객체가 아님: {str(data)[:80]}")
+            if data.get("error") == "bad token":
+                raise ValueError("bad token")
+            return data
+        except (requests.RequestException, ValueError) as e:
+            last = str(e)[:200]
+            if attempt < RETRIES - 1:
+                wait = RETRY_WAIT[min(attempt, len(RETRY_WAIT) - 1)]
+                print(f"시트 호출 실패({attempt + 1}/{RETRIES}): {last} → {wait}초 뒤 재시도", file=sys.stderr)
+                time.sleep(wait)
+    raise SystemExit(f"시트 오류: {last} (SHEET_TOKEN 이 Code.gs 의 TOKEN 과 같은지, 배포 URL 이 맞는지 확인)")
+
+
 def sheet_get(url: str, token: str) -> list[dict]:
-    r = requests.get(url, params={"token": token}, timeout=60)
-    r.raise_for_status()
-    data = r.json()
+    data = _call("GET", url, token)
     if data.get("error"):
         raise SystemExit(f"시트 오류: {data['error']} (SHEET_TOKEN 이 Code.gs 의 TOKEN 과 같은지 확인)")
     return data.get("rows", [])
 
 
 def sheet_post(url: str, token: str, body: dict) -> dict:
-    # Apps Script 는 302 로 googleusercontent 로 넘기므로 리다이렉트를 따라가야 한다
-    r = requests.post(url, data=json.dumps({**body, "token": token}),
-                      headers={"Content-Type": "application/json"},
-                      timeout=60, allow_redirects=True)
-    r.raise_for_status()
-    data = r.json()
+    data = _call("POST", url, token, body)
     if data.get("error"):
         raise SystemExit(f"시트 오류: {data['error']}")
     return data
