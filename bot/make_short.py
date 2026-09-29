@@ -131,9 +131,10 @@ def script_for(item: dict) -> list[str]:
 
 # ---------- 소리 ----------
 
-def tts_config() -> dict:
-    """환경변수에서 TTS 설정을 읽는다. provider 는 gemini / google / none(무음)."""
-    want = (os.environ.get("SHORT_TTS", "") or "gemini").strip().lower()
+def tts_config(provider: str | None = None) -> dict:
+    """환경변수에서 TTS 설정을 읽는다. provider 는 gemini / google / none(무음).
+    provider 를 주면 그걸로 강제 (gemini 가 막혔을 때 google 로 넘어갈 때 씀)."""
+    want = provider or (os.environ.get("SHORT_TTS", "") or "gemini").strip().lower()
     gkey = os.environ.get("GEMINI_API_KEY", "").strip()
     ckey = os.environ.get("GOOGLE_TTS_API_KEY", "").strip()
     provider = want
@@ -209,8 +210,13 @@ def _find_audio(obj) -> str | None:
     return None
 
 
+class TtsUnavailable(RuntimeError):
+    """이 설정으로는 지금 TTS 를 못 쓴다 (선불 크레딧 소진 402, 키 문제 401/403 등). 다른 제공자로 넘어갈 신호."""
+
+
 def tts_gemini(text: str, out: Path, cfg: dict) -> None:
-    """Gemini TTS (interactions API) → WAV(24kHz mono) → mp3. 429/5xx 는 잠깐 쉬고 다시."""
+    """Gemini TTS (interactions API) → WAV(24kHz mono) → mp3. 429/5xx 는 잠깐 쉬고 다시,
+    402(선불 크레딧 소진)·401·403 은 TtsUnavailable 로 바로 올린다."""
     import time
 
     import requests
@@ -243,6 +249,8 @@ def tts_gemini(text: str, out: Path, cfg: dict) -> None:
                 last = f"응답에 audio 없음: {r.text[:300]}"
             elif r.status_code in (429, 500, 502, 503, 504):
                 last = f"HTTP {r.status_code}: {r.text[:200]}"
+            elif r.status_code in (401, 402, 403):
+                raise TtsUnavailable(f"Gemini TTS HTTP {r.status_code}: {r.text[:300]}")
             else:
                 raise RuntimeError(f"Gemini TTS HTTP {r.status_code}: {r.text[:300]}")
         if attempt < GEMINI_TTS_RETRIES - 1:
@@ -250,7 +258,7 @@ def tts_gemini(text: str, out: Path, cfg: dict) -> None:
             print(f"  Gemini TTS 재시도 {attempt + 1}/{GEMINI_TTS_RETRIES} ({last}) → {wait}초", file=sys.stderr)
             time.sleep(wait)
     if not data:
-        raise RuntimeError(f"Gemini TTS 실패: {last}")
+        raise TtsUnavailable(f"Gemini TTS 실패: {last}")
     wav = out.with_suffix(".wav")
     wav.write_bytes(base64.b64decode(data))
     rate = float(cfg.get("rate") or 1.0)
@@ -422,6 +430,24 @@ def is_current(item_id: str) -> bool:
     except Exception:
         return False
     cfg = tts_config()
+    if _meta_matches(m, item, imgs, cfg):
+        return True
+    # gemini 가 막혀(크레딧 소진 등) google 로 만든 기록: 같은 날엔 다시 두드리지 않는다.
+    # 날이 바뀌면 하루 한 번 gemini 를 다시 시도하고, 여전히 안 되면 영상은 그대로 두고 메모 날짜만 갱신한다.
+    fb = m.get("tts_fallback") or {}
+    if (cfg["provider"] == "gemini" and fb.get("wanted") == cfg["tag"] and fb.get("date") == _today()
+            and _meta_matches(m, item, imgs, tts_config("google"))):
+        return True
+    return False
+
+
+def _today() -> str:
+    from datetime import datetime
+    return datetime.now().strftime("%Y-%m-%d")
+
+
+def _meta_matches(m: dict, item: dict, imgs: list[Path], cfg: dict) -> bool:
+    """short.json 기록이 지금 카드·대본·TTS 설정·배경음과 같은가."""
     want_voice, want_rate = cfg["tag"], cfg["rate"]
     track = pick_music(item)
     want_music = f"{track['file']}@{music_volume()}" if track else ""
@@ -458,12 +484,13 @@ def build(item_id: str, use_tts: bool = True, force: bool = False, use_music: bo
         return final
 
     cfg = tts_config()
-    voice, rate = cfg["tag"], cfg["rate"]
     if use_tts and cfg["provider"] == "none":
         print("TTS 키 없음 (GEMINI_API_KEY / GOOGLE_TTS_API_KEY) → 무음으로 만듭니다", file=sys.stderr)
         use_tts = False
     if use_tts:
-        print(f"  TTS: {cfg['provider']} {cfg['model']} {cfg['voice']} (속도 {rate})")
+        print(f"  TTS: {cfg['provider']} {cfg['model']} {cfg['voice']} (속도 {cfg['rate']})")
+    wanted_tag = cfg["tag"]          # 원래 쓰려던 설정 (gemini 가 막혀 google 로 넘어가면 메모에 남긴다)
+    fallback: dict | None = None
 
     tts_dir = out_dir / "tts"
     if use_tts:
@@ -472,7 +499,11 @@ def build(item_id: str, use_tts: bool = True, force: bool = False, use_music: bo
     with tempfile.TemporaryDirectory() as td:
         parts: list[Path] = []
         total = 0.0
-        for i, (img, line) in enumerate(zip(imgs, lines), 1):
+        made = 0                     # 이번 실행에서 새로 만든 TTS 수 (제공자를 바꿔도 되는지 판단)
+        i = 0
+        while i < len(imgs):
+            i += 1
+            img, line = imgs[i - 1], lines[i - 1]
             audio = None
             if use_tts:
                 audio = tts_dir / f"{i:02d}.mp3"
@@ -480,7 +511,29 @@ def build(item_id: str, use_tts: bool = True, force: bool = False, use_music: bo
                 want = tts_stamp(cfg, line)
                 have = stamp.read_text(encoding="utf-8") if stamp.exists() else ""
                 if force or not audio.exists() or have != want:
-                    tts(line, audio, cfg)
+                    try:
+                        tts(line, audio, cfg)
+                    except TtsUnavailable as e:
+                        alt = tts_config("google") if cfg["provider"] == "gemini" else None
+                        if made or not alt or alt["provider"] != "google":
+                            raise
+                        # 아직 이 실행에서 만든 목소리가 없으니 통째로 google 로 바꿔 다시 시작 (섞이지 않게)
+                        print(f"  {str(e)[:160]}\n  → Google Cloud TTS 로 대신 만듭니다 ({alt['voice']})", file=sys.stderr)
+                        fallback = {"wanted": wanted_tag, "date": _today()}
+                        cfg = alt
+                        if not force and meta.exists():
+                            try:
+                                old = json.loads(meta.read_text(encoding="utf-8"))
+                            except Exception:
+                                old = {}
+                            if _meta_matches(old, item, imgs, cfg) and final.exists():
+                                old["tts_fallback"] = fallback      # 영상은 그대로, 메모 날짜만 갱신
+                                meta.write_text(json.dumps(old, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+                                print(f"  google 로 만든 영상이 이미 최신 → 그대로 둠: {final.relative_to(ROOT)}")
+                                return final
+                        parts, total, i = [], 0.0, 0
+                        continue
+                    made += 1
                     stamp.write_text(want, encoding="utf-8")
                     print(f"  TTS {i}/{len(lines)}: {len(line)}자")
                 seconds = duration_of(audio) + PAD
@@ -505,13 +558,15 @@ def build(item_id: str, use_tts: bool = True, force: bool = False, use_music: bo
         else:
             concat(parts, final)
     music_tag = f"{track['file']}@{music_volume()}" if track else ""
-    meta.write_text(json.dumps({"cards": _sha(imgs), "script": _script_sha(lines),
-                                "voice": voice if use_tts else "", "rate": rate,
-                                "style": cfg["style"] if use_tts else "",
-                                "music": music_tag, "music_title": (track or {}).get("title", ""),
-                                "music_credit": music_credit(track),
-                                "seconds": round(total, 1)},
-                               ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    record = {"cards": _sha(imgs), "script": _script_sha(lines),
+              "voice": cfg["tag"] if use_tts else "", "rate": cfg["rate"],
+              "style": cfg["style"] if use_tts else "",
+              "music": music_tag, "music_title": (track or {}).get("title", ""),
+              "music_credit": music_credit(track),
+              "seconds": round(total, 1)}
+    if fallback:
+        record["tts_fallback"] = fallback
+    meta.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"완성: {final.relative_to(ROOT)} ({total:.0f}초, {final.stat().st_size // 1024} KB)")
     return final
 
