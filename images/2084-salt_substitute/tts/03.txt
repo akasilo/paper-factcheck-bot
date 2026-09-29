@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|저염소금(나트륨 62.5퍼센트+칼륨 25퍼센트)을 쓴 그룹은 고혈압 발생률이 연 11.7명, 일반 소금 그룹은 24.3명이었어요.
+gemini:gemini-3.8-flash-tts:Kore|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|저염소금(나트륨 62.5퍼센트+칼륨 25퍼센트)을 쓴 그룹은 고혈압 발생률이 연 11.7명, 일반 소금 그룹은 24.3명이었어요.
