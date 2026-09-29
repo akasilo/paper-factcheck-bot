@@ -10,7 +10,7 @@
   [gemini]  Gemini 3.8 Flash TTS — 무료 등급 있음, 유료여도 오디오 100만 토큰(≈11시간)에 $9 (25토큰/초).
   GEMINI_API_KEY       필수
   GEMINI_TTS_MODEL     기본 gemini-3.8-flash-tts  (싸고 빠른 gemini-3.8-flash-lite-tts 도 가능)
-  GEMINI_TTS_VOICE     기본 Kore  (30개 프리셋: Kore·Leda·Zephyr·Aoede·Puck·Charon·Orus·… 전부 한국어 됨)
+  GEMINI_TTS_VOICE     기본 Aoede (30개 프리셋: Kore·Leda·Zephyr·Aoede·Puck·Charon·Orus·… 전부 한국어 됨)
   GEMINI_TTS_STYLE     말투 지시문 (기본: 차분하고 또렷한 설명 톤, 약간 빠르게). 영어·한국어 아무거나.
   GEMINI_TTS_RATE      기본 1.0 — 1보다 크면 ffmpeg atempo 로 빠르게 (Gemini 는 speakingRate 가 없어서 후처리)
   [google]  Google Cloud Text-to-Speech (무료 등급: WaveNet/Neural2 월 100만 자).
@@ -62,7 +62,7 @@ TTS_URL = "https://texttospeech.googleapis.com/v1/text:synthesize"
 
 GEMINI_TTS_URL = "https://generativelanguage.googleapis.com/v1beta/interactions"
 GEMINI_DEFAULT_MODEL = "gemini-3.8-flash-tts"
-GEMINI_DEFAULT_VOICE = "Kore"
+GEMINI_DEFAULT_VOICE = "Aoede"        # 2026-09-30 사용자 선택 (여성 14개 비교 샘플 중 4번)
 GEMINI_DEFAULT_RATE = "1.0"
 GEMINI_DEFAULT_STYLE = ("calm, clear and trustworthy Korean narration for a short explainer video, "
                         "like a friendly science reporter; natural but slightly brisk pace")
@@ -99,12 +99,102 @@ def _soften(s: str) -> str:
     return s + "." if s and not s.endswith((".", "!", "?")) else s
 
 
+# ---------- 숫자·단위 읽기 (2026-09-30 사용자 요청: "611 → 육백십일, vs → 대, mg → 밀리그램") ----------
+# Gemini TTS 는 아라비아 숫자를 "6백열하나" 처럼 한자어·고유어를 섞어 읽을 때가 있어서, 대본에서 미리 한글로 바꿔 준다.
+# 규칙: 고유어 수사(한·두·세…)를 붙이는 단위(명·개·잔·시간·개월·배·번…)는 1~99 까지 고유어, 그 밖엔 전부 한자어(일이삼…).
+
+_SINO = "영일이삼사오육칠팔구"
+_NATIVE_ONES = {1: "한", 2: "두", 3: "세", 4: "네", 5: "다섯", 6: "여섯", 7: "일곱", 8: "여덟", 9: "아홉"}
+_NATIVE_TENS = {1: "열", 2: "스물", 3: "서른", 4: "마흔", 5: "쉰", 6: "예순", 7: "일흔", 8: "여든", 9: "아흔"}
+# 고유어 수사와 어울리는 단위 (긴 것부터 — '시간' 이 '시' 보다 먼저 맞아야 한다)
+_NATIVE_COUNTERS = ("개월", "시간", "사람", "가지", "군데", "봉지", "숟가락", "스푼", "그릇", "조각", "방울", "켤레",
+                    "마리", "명", "개", "잔", "살", "시", "번", "배", "병", "알", "캔", "컵", "장", "곳", "달", "줄",
+                    "권", "벌", "쌍", "통", "송이", "척", "채")
+# 숫자 뒤에 붙는 단위 → 읽는 말 (긴 것부터). 앞에 숫자가 있을 때만 바꾼다.
+_UNITS = (("mg/dL", "밀리그램 퍼 데시리터"), ("mg/dl", "밀리그램 퍼 데시리터"), ("mmHg", "밀리미터 수은주"),
+          ("mmol/L", "밀리몰 퍼 리터"), ("ng/mL", "나노그램 퍼 밀리리터"), ("ng/ml", "나노그램 퍼 밀리리터"),
+          ("μg/dL", "마이크로그램 퍼 데시리터"), ("µg/dL", "마이크로그램 퍼 데시리터"),
+          ("kg/m²", "킬로그램 퍼 제곱미터"), ("kg/m2", "킬로그램 퍼 제곱미터"),
+          ("kcal", "킬로칼로리"), ("mcg", "마이크로그램"), ("μg", "마이크로그램"), ("µg", "마이크로그램"), ("㎍", "마이크로그램"),
+          ("mg", "밀리그램"), ("kg", "킬로그램"), ("mL", "밀리리터"), ("ml", "밀리리터"), ("㎖", "밀리리터"),
+          ("cm", "센티미터"), ("mm", "밀리미터"), ("km", "킬로미터"), ("nm", "나노미터"),
+          ("ppm", "피피엠"), ("ppb", "피피비"), ("dB", "데시벨"), ("Hz", "헤르츠"), ("IU", "아이유"),
+          ("°C", "도"), ("℃", "도"), ("g", "그램"), ("L", "리터"), ("m", "미터"))
+
+
+def _sino(n: int) -> str:
+    """611 → 육백십일, 10000 → 만, 2023 → 이천이십삼."""
+    if n == 0:
+        return "영"
+    small, big = ("", "십", "백", "천"), ("", "만", "억", "조")
+    chunks: list[str] = []
+    grp = 0
+    while n > 0:
+        part, n = n % 10000, n // 10000
+        s = ""
+        for i in range(4):
+            d, part = part % 10, part // 10
+            if d:
+                s = ("" if d == 1 and i > 0 else _SINO[d]) + small[i] + s
+        if s:
+            if grp == 1 and s == "일":
+                s = ""                       # 일만 → 만
+            chunks.insert(0, s + big[grp])
+        grp += 1
+    return "".join(chunks)
+
+
+def _native(n: int) -> str:
+    """1~99 를 단위 앞에 오는 고유어로: 1 → 한, 20 → 스무, 24 → 스물네."""
+    tens, ones = divmod(n, 10)
+    if tens == 0:
+        return _NATIVE_ONES[ones]
+    if n == 20:
+        return "스무"
+    return _NATIVE_TENS[tens] + (_NATIVE_ONES[ones] if ones else "")
+
+
+def _num_words(text: str, counter: str = "") -> str:
+    """숫자 문자열(정수·소수) → 한글. counter 가 고유어 단위이고 1~99 정수면 고유어."""
+    if "." in text:
+        a, b = text.split(".", 1)
+        return (_sino(int(a)) if a else "") + "점" + "".join(_SINO[int(c)] for c in b if c.isdigit())
+    n = int(text)
+    if counter and 1 <= n <= 99:
+        return _native(n)
+    return _sino(n)
+
+
 def _spoken_numbers(s: str) -> str:
-    """TTS 가 잘못 읽기 쉬운 표기만 손본다."""
-    s = s.replace("mg/dL", "밀리그램 퍼 데시리터").replace("mmHg", "밀리미터 수은주")
+    """TTS 가 잘못 읽기 쉬운 표기를 읽는 말로 바꾼다."""
     s = s.replace("·", ", ")
-    s = re.sub(r"(\d)~(\d)", r"\1에서 \2", s)
-    s = s.replace("%", "퍼센트")
+    s = re.sub(r"(?i)\b(?:vs\.?|v\.)\s*(?=\S)", "대 ", s)           # 젤 vs 스프레이 → 젤 대 스프레이
+    s = re.sub(r"(?<=\d),(?=\d{3})", "", s)                             # 1,200 → 1200
+    for u, spoken in _UNITS:                                              # 150mg → 150 밀리그램
+        s = re.sub(rf"(?<=\d)\s*{re.escape(u)}(?![A-Za-z°℃])", f" {spoken}", s)
+    s = s.replace("%", " 퍼센트")
+    counters = "|".join(_NATIVE_COUNTERS)
+    # 단위 뒤에 조사·'째'·'간' 등이 오거나 끝나야 단위로 본다 ('3살균', '2개국' 같은 건 안 건드린다)
+    after = r"(?=$|[^가-힣]|(?:들|이|은|을|에|의|으로|로|도|만|이나|이상|이하|씩|당|마다|쯤|정도|간|째|가|과|와|까지|부터|보다|밖에|인|짜리))"
+    s = re.sub(r"\bp\s*<\s*(\.?\d+(?:\.\d+)?)", lambda m: f"p값 {_num_words('0' + m[1] if m[1].startswith('.') else m[1])} 미만", s)
+    s = re.sub(r"\bp\s*=\s*(\.?\d+(?:\.\d+)?)", lambda m: f"p값 {_num_words('0' + m[1] if m[1].startswith('.') else m[1])}", s)
+    s = re.sub(r"(?<![\w가-힣])[-−–](?=\.?\d)", "마이너스 ", s)                # -8.0 → 마이너스 8.0
+    s = re.sub(r"(?<=[\d%가-힣)])\s*\+\s*(?=[\d가-힣(])", " 플러스 ", s)      # 62.5%+칼륨 → 62.5% 플러스 칼륨
+    s = re.sub(r"(?<![\d.])\.(\d+)", lambda m: "영점" + "".join(_SINO[int(c)] for c in m[1]), s)   # .05 → 영점영오
+    # 1~2잔 → 한 잔에서 두 잔 / 3~5회 → 삼 회에서 오 회
+    s = re.sub(rf"(\d+(?:\.\d+)?)\s*[~\-–]\s*(\d+(?:\.\d+)?)\s*({counters}){after}",
+               lambda m: f"{_num_words(m[1], m[3])} {m[3]}에서 {_num_words(m[2], m[3])} {m[3]}", s)
+    sino_units = "|".join(sorted(("회", "번째", "일", "주", "년", "분", "초", "퍼센트", "도", "위", "등급", "단계")
+                                 + tuple(u for _, u in _UNITS), key=len, reverse=True))
+    s = re.sub(rf"(\d+(?:\.\d+)?)\s*[~\-–]\s*(\d+(?:\.\d+)?)\s*({sino_units})(?![가-힣])",
+               lambda m: f"{_num_words(m[1])} {m[3]}에서 {_num_words(m[2])} {m[3]}", s)
+    s = re.sub(r"(\d+(?:\.\d+)?)\s*[~\-–]\s*(\d+(?:\.\d+)?)", lambda m: f"{_num_words(m[1])}에서 {_num_words(m[2])}", s)
+    # 611명 → 육백십일 명, 2잔 → 두 잔, 3개월 → 세 개월
+    s = re.sub(rf"(\d+(?:\.\d+)?)\s*({counters}){after}", lambda m: f"{_num_words(m[1], m[2])} {m[2]}", s)
+    # 남은 숫자는 전부 한자어 (2023년 → 이천이십삼년, 30 퍼센트 → 삼십 퍼센트, 1.5배 는 위에서 처리됨)
+    s = re.sub(r"(\d+(?:\.\d+)?)(?=[가-힣])", lambda m: _num_words(m[1]) + " ", s)   # 2023년 → 이천이십삼 년
+    s = re.sub(r"\d+(?:\.\d+)?", lambda m: _num_words(m[0]), s)
+    s = re.sub(r"[ ]{2,}", " ", s)
     return s
 
 
@@ -118,7 +208,7 @@ def script_for(item: dict) -> list[str]:
             year = str(p.get("year") or "").strip()
             journal = str(p.get("journal") or "").strip()
             src = f"{year}년 {journal}에 실린 논문" if year and journal else "화면에 적힌 논문"
-            lines.append(f"이 내용은 {src}을 근거로 정리했어요. 자세한 출처는 화면을 확인해 주세요.")
+            lines.append(_spoken_numbers(f"이 내용은 {src}을 근거로 정리했어요. 자세한 출처는 화면을 확인해 주세요."))
             continue
         text = _plain(card.get("text") or "")
         note = _soften(_plain(card.get("note") or "").lstrip("※ ").strip())
