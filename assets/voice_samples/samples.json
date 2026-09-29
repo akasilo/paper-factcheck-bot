@@ -1,0 +1,77 @@
+{
+  "text": "안녕하세요, 논문 팩트체크입니다. 혈압이 정상인데 저염 소금으로 바꾸면 뭐가 달라질까요? 한 논문에 따르면, 효과는 생각보다 작았습니다.",
+  "style": "calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace",
+  "model": "gemini-3.8-flash-tts",
+  "samples": {
+    "Achernar": {
+      "file": "Achernar.mp3",
+      "seconds": 11.7,
+      "gender": "female"
+    },
+    "Aoede": {
+      "file": "Aoede.mp3",
+      "seconds": 11.1,
+      "gender": "female"
+    },
+    "Autonoe": {
+      "file": "Autonoe.mp3",
+      "seconds": 11.4,
+      "gender": "female"
+    },
+    "Callirrhoe": {
+      "file": "Callirrhoe.mp3",
+      "seconds": 10.8,
+      "gender": "female"
+    },
+    "Despina": {
+      "file": "Despina.mp3",
+      "seconds": 11.1,
+      "gender": "female"
+    },
+    "Erinome": {
+      "file": "Erinome.mp3",
+      "seconds": 11.7,
+      "gender": "female"
+    },
+    "Gacrux": {
+      "file": "Gacrux.mp3",
+      "seconds": 12.6,
+      "gender": "female"
+    },
+    "Kore": {
+      "file": "Kore.mp3",
+      "seconds": 11.1,
+      "gender": "female"
+    },
+    "Laomedeia": {
+      "file": "Laomedeia.mp3",
+      "seconds": 11.5,
+      "gender": "female"
+    },
+    "Leda": {
+      "file": "Leda.mp3",
+      "seconds": 12.0,
+      "gender": "female"
+    },
+    "Pulcherrima": {
+      "file": "Pulcherrima.mp3",
+      "seconds": 11.8,
+      "gender": "female"
+    },
+    "Sulafat": {
+      "file": "Sulafat.mp3",
+      "seconds": 11.0,
+      "gender": "female"
+    },
+    "Vindemiatrix": {
+      "file": "Vindemiatrix.mp3",
+      "seconds": 11.5,
+      "gender": "female"
+    },
+    "Zephyr": {
+      "file": "Zephyr.mp3",
+      "seconds": 11.4,
+      "gender": "female"
+    }
+  }
+}
