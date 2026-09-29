@@ -1,1 +1,1 @@
-gemini:gemini-3.8-flash-tts:Charon|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|혈압 정상인데 저염소금 바꾸면 뭐가 달라질까요?
+ko-KR-Neural2-A|1.15|혈압 정상인데 저염소금 바꾸면 뭐가 달라질까요?

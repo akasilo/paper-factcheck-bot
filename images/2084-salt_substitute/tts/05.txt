@@ -1,1 +1,1 @@
-gemini:gemini-3.8-flash-tts:Charon|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|2년간 수축기 혈압은 일반소금 그룹만 평균 7.0밀리미터 수은주 올랐고, 저염소금 그룹은 거의 그대로였어요. 그룹 간 차이는 -8.0밀리미터 수은주였어요.
+ko-KR-Neural2-A|1.15|이 년간 수축기 혈압은 일반소금 그룹만 평균 칠점영 밀리미터 수은주 올랐고, 저염소금 그룹은 거의 그대로였어요. 그룹 간 차이는 마이너스 팔점영 밀리미터 수은주였어요.

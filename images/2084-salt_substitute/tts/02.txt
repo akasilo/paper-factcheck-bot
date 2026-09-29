@@ -1,1 +1,1 @@
-gemini:gemini-3.8-flash-tts:Charon|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|중국 요양시설 노인 611명을 대상으로 한 2년짜리 무작위 대조 시험이에요. 시작할 때 모두 혈압은 정상이었어요.
+ko-KR-Neural2-A|1.15|중국 요양시설 노인 육백십일 명을 대상으로 한 이 년짜리 무작위 대조 시험이에요. 시작할 때 모두 혈압은 정상이었어요.
