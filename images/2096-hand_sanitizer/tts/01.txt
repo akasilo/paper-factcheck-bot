@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|손소독제 젤 vs 스프레이 피부 장벽 누가 더 약할까?
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|손소독제 젤 대 스프레이 피부 장벽 누가 더 약할까?

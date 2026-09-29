@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|하지만 피부 장벽 지표인 수분 손실량(TEWL)은 달랐습니다. 스프레이는 3일째, 젤은 21일째에 처음보다 유의하게 늘었습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|하지만 피부 장벽 지표인 수분 손실량(TEWL)은 달랐습니다. 스프레이는 삼 일째, 젤은 이십일 일째에 처음보다 유의하게 늘었습니다.

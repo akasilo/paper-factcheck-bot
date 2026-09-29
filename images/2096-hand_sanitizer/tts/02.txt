@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|성인 38명이 알코올 손소독제 젤과 스프레이를 각각 21일간 쓰고 피부 반응을 비교한 무작위 교차 시험입니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|성인 서른여덟 명이 알코올 손소독제 젤과 스프레이를 각각 이십일 일간 쓰고 피부 반응을 비교한 무작위 교차 시험입니다.

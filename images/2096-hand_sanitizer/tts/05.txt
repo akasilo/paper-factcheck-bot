@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|두 제형 사이의 통계적 차이는 없었습니다(p=0.46). 저자들은 일상 사용은 안전하며 문제는 가벼운 피부 자극 정도라고 봤습니다. 참고로, 38명, 21일 연구입니다. 민감성 피부에 젤이 낫다는 것은 저자의 제안입니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|두 제형 사이의 통계적 차이는 없었습니다(p값 영점사육). 저자들은 일상 사용은 안전하며 문제는 가벼운 피부 자극 정도라고 봤습니다. 참고로, 서른여덟 명, 이십일 일 연구입니다. 민감성 피부에 젤이 낫다는 것은 저자의 제안입니다.
