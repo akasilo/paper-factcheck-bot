@@ -18,6 +18,8 @@
   GOOGLE_TTS_VOICE     기본 ko-KR-Neural2-A  (여성 / -B 여성 / -C 남성, ko-KR-Wavenet-A~D 도 가능)
   GOOGLE_TTS_RATE      기본 1.15 (말 빠르기. 한국어는 1.2 까지 자연스럽다)
   목소리·모델·말투를 바꾸면 short.json 의 voice 도장이 달라져 다음 render-cards 때 TTS 부터 다시 만든다.
+  ※ Tier 1 은 gemini-3.8-flash-tts 가 **하루 100 요청** (글 하나 = 카드 수만큼, 보통 7~8회 → 하루 12편쯤).
+    한도에 걸리면 그 실행의 남은 글은 Google Cloud TTS 로 만들고(short.json 에 tts_fallback 메모), 다음 날 다시 Gemini 로 만든다.
 
 배경음 (2026-09-28): assets/music/*.mp3 + music.json (YouTube 오디오 보관함, 저작자 표시 불필요 곡만).
   글의 스타일(geo/paper/soft)에 맞는 곡을 id 해시로 하나 골라 목소리 밑에 깐다. 목소리가 나올 땐
@@ -301,7 +303,16 @@ def _find_audio(obj) -> str | None:
 
 
 class TtsUnavailable(RuntimeError):
-    """이 설정으로는 지금 TTS 를 못 쓴다 (선불 크레딧 소진 402, 키 문제 401/403 등). 다른 제공자로 넘어갈 신호."""
+    """이 설정으로는 지금 TTS 를 못 쓴다 (선불 크레딧 소진 402, 키 문제 401/403, 하루 요청 한도 등). 다른 제공자로 넘어갈 신호."""
+
+
+_GEMINI_DOWN: str = ""      # 이 프로세스 안에서 Gemini 가 막힌 이유 (하루 한도·크레딧). 남은 글은 두드리지 않고 바로 대체.
+
+
+def _daily_limit(text: str) -> bool:
+    """429 본문이 '하루 한도'(per day / PerDay / RPD) 초과인지. 분당 한도면 기다리면 되지만 하루 한도는 기다려도 소용없다."""
+    t = text.lower()
+    return "per day" in t or "perday" in t or "requests per day" in t or "daily" in t
 
 
 def tts_gemini(text: str, out: Path, cfg: dict) -> None:
@@ -320,6 +331,9 @@ def tts_gemini(text: str, out: Path, cfg: dict) -> None:
         "generation_config": {"speech_config": [{"voice": cfg["voice"]}]},
     }
     headers = {"x-goog-api-key": cfg["key"], "Content-Type": "application/json"}
+    global _GEMINI_DOWN
+    if _GEMINI_DOWN:
+        raise TtsUnavailable(f"Gemini TTS 막힘 (이번 실행에서 이미 확인): {_GEMINI_DOWN}")
     last = ""
     data = None
     for attempt in range(GEMINI_TTS_RETRIES):
@@ -337,9 +351,14 @@ def tts_gemini(text: str, out: Path, cfg: dict) -> None:
                 if data:
                     break
                 last = f"응답에 audio 없음: {r.text[:300]}"
+            elif r.status_code == 429 and _daily_limit(r.text):
+                # Tier 1 은 gemini-3.8-flash-tts 하루 100회 (2026-09-30 확인). 기다려도 안 풀리니 바로 대체.
+                _GEMINI_DOWN = f"하루 요청 한도: {r.text[:160]}"
+                raise TtsUnavailable(f"Gemini TTS HTTP 429 (하루 한도): {r.text[:300]}")
             elif r.status_code in (429, 500, 502, 503, 504):
                 last = f"HTTP {r.status_code}: {r.text[:200]}"
             elif r.status_code in (401, 402, 403):
+                _GEMINI_DOWN = f"HTTP {r.status_code}: {r.text[:160]}"
                 raise TtsUnavailable(f"Gemini TTS HTTP {r.status_code}: {r.text[:300]}")
             else:
                 raise RuntimeError(f"Gemini TTS HTTP {r.status_code}: {r.text[:300]}")
