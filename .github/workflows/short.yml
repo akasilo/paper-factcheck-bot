@@ -2,8 +2,9 @@ name: short
 
 # 카드뉴스 한 건을 세로 숏폼(1080x1920, TTS 낭독)으로 만들어 images/<id>/short.mp4 에 커밋한다.
 #  - Actions 탭에서 큐 id 를 넣어 수동 실행 (이미 게시돼 큐에서 지워진 글도 posted/ 기록으로 만든다)
-#  - 소리: Google Cloud Text-to-Speech (secrets.GOOGLE_TTS_API_KEY, 없으면 무음)
-#  - 목소리 바꾸기: 저장소 Variables 에 GOOGLE_TTS_VOICE (예: ko-KR-Neural2-C)
+#  - 소리: 기본 Gemini 3.8 Flash TTS (secrets.GEMINI_API_KEY). Variables SHORT_TTS=google 이면 Cloud TTS. 둘 다 없으면 무음
+#  - 목소리 바꾸기: 저장소 Variables 에 GEMINI_TTS_VOICE (예: Leda) / GEMINI_TTS_STYLE (말투 지시문)
+#  - 목소리 비교용: 아래 voice / style 입력을 채우면 그 실행에서만 그 값을 쓴다 (Variables 보다 우선)
 on:
   workflow_dispatch:
     inputs:
@@ -14,6 +15,14 @@ on:
         description: "이미 있어도 다시 만들기 (TTS 도 다시 → 글자 수 소모)"
         type: boolean
         default: false
+      voice:
+        description: "(선택) 이번만 쓸 Gemini 목소리 (예: Kore, Leda, Zephyr, Charon)"
+        required: false
+        default: ""
+      style:
+        description: "(선택) 이번만 쓸 말투 지시문"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -28,6 +37,12 @@ jobs:
     timeout-minutes: 15
     env:
       TZ: Asia/Seoul
+      SHORT_TTS: ${{ vars.SHORT_TTS }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_TTS_MODEL: ${{ vars.GEMINI_TTS_MODEL }}
+      GEMINI_TTS_VOICE: ${{ github.event.inputs.voice || vars.GEMINI_TTS_VOICE }}
+      GEMINI_TTS_STYLE: ${{ github.event.inputs.style || vars.GEMINI_TTS_STYLE }}
+      GEMINI_TTS_RATE: ${{ vars.GEMINI_TTS_RATE }}
       GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
       GOOGLE_TTS_VOICE: ${{ vars.GOOGLE_TTS_VOICE }}
       GOOGLE_TTS_RATE: ${{ vars.GOOGLE_TTS_RATE }}

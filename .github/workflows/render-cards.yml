@@ -33,7 +33,13 @@ jobs:
     timeout-minutes: 45
     env:
       TZ: Asia/Seoul
-      # 숏폼 낭독(make_short.py). Google Cloud Text-to-Speech, 무료 등급 안에서 쓴다.
+      # 숏폼 낭독(make_short.py). 기본은 Gemini 3.8 Flash TTS (SHORT_TTS=google 로 Cloud TTS 로 되돌림).
+      SHORT_TTS: ${{ vars.SHORT_TTS }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_TTS_MODEL: ${{ vars.GEMINI_TTS_MODEL }}
+      GEMINI_TTS_VOICE: ${{ vars.GEMINI_TTS_VOICE }}
+      GEMINI_TTS_STYLE: ${{ vars.GEMINI_TTS_STYLE }}
+      GEMINI_TTS_RATE: ${{ vars.GEMINI_TTS_RATE }}
       GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
       GOOGLE_TTS_VOICE: ${{ vars.GOOGLE_TTS_VOICE }}
       GOOGLE_TTS_RATE: ${{ vars.GOOGLE_TTS_RATE }}
