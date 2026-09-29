@@ -1,0 +1,77 @@
+name: tts-samples
+
+# Gemini TTS 목소리 비교 샘플 — 같은 문장을 여러 목소리로 읽혀 assets/voice_samples/ 에 커밋한다.
+# 비용: 6초짜리 하나 ≈ 150 오디오 토큰 ≈ $0.0014. 30개 다 해도 $0.05 안팎.
+on:
+  workflow_dispatch:
+    inputs:
+      voices:
+        description: "쉼표로 구분한 목소리 (예: Kore,Leda,Zephyr). 비우면 group 대로"
+        required: false
+        default: ""
+      group:
+        description: "female / male / all (voices 가 비었을 때)"
+        required: false
+        default: "female"
+      text:
+        description: "(선택) 읽힐 문장. 비우면 기본 문장"
+        required: false
+        default: ""
+      force:
+        description: "이미 있어도 다시 만들기"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tts-samples
+  cancel-in-progress: false
+
+jobs:
+  samples:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: Asia/Seoul
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GEMINI_TTS_MODEL: ${{ vars.GEMINI_TTS_MODEL }}
+      GEMINI_TTS_STYLE: ${{ vars.GEMINI_TTS_STYLE }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: |
+          pip install requests
+          if ! command -v ffmpeg >/dev/null; then
+            sudo apt-get update -q >/dev/null
+            sudo apt-get install -y -q ffmpeg >/dev/null
+          fi
+
+      - name: Make samples
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.voices }}" ]; then
+            ARGS="$ARGS --voices ${{ github.event.inputs.voices }}"
+          else
+            case "${{ github.event.inputs.group }}" in
+              male) ARGS="$ARGS --male" ;;
+              all) ARGS="$ARGS --all" ;;
+              *) ARGS="$ARGS --female" ;;
+            esac
+          fi
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          if [ -n "${{ github.event.inputs.text }}" ]; then
+            python bot/tts_samples.py $ARGS --text "${{ github.event.inputs.text }}"
+          else
+            python bot/tts_samples.py $ARGS
+          fi
+
+      - name: Commit samples
+        run: |
+          bash bot/commit_push.sh "tts-samples: 목소리 비교 샘플 [skip ci]" assets/voice_samples
