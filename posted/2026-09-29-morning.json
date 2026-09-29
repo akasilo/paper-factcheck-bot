@@ -83,7 +83,7 @@
     "model": "claude_code:default",
     "approved_at": "2026-09-28T08:03:28.750322+09:00"
   },
-  "attempts": 2,
+  "attempts": 3,
   "errors": [
     {
       "instagram": "POST https://graph.instagram.com/v23.0/17841439785273944/media -> 400: {'error': {'message': 'Error validating access token: The session has been invalidated because the user changed their password or Facebook has changed the session for security reasons.', 'type': 'OAuthException', 'code': 190, 'error_subcode': 0, 'fbtrace_id': 'Aom_0kiIZBc-jjkby9By5n-'}}"
@@ -102,5 +102,10 @@
   "youtube_video_id": "l1GlxRahbs8",
   "youtube_url": "https://youtube.com/shorts/l1GlxRahbs8",
   "youtube_posted_at": "2026-09-29T08:08:57.217374+09:00",
-  "youtube_privacy": "public"
+  "youtube_privacy": "public",
+  "instagram_post_id": "17964180108190436",
+  "instagram_posted_at": "2026-09-29T10:30:29.753540+09:00",
+  "instagram_reel_id": "18150572374538900",
+  "instagram_reel_posted_at": "2026-09-29T10:31:25.487428+09:00",
+  "completed_at": "2026-09-29T10:31:25.489519+09:00"
 }
