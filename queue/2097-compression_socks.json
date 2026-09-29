@@ -1,0 +1,81 @@
+{
+  "id": "2097-compression_socks",
+  "approved": false,
+  "link": "",
+  "topic": "compression_socks",
+  "topic_ko": "압박 스타킹",
+  "verdict": "mixed",
+  "evidence_level": "meta-analysis",
+  "source_text": "PMC11944185 전문",
+  "answer": "한 리뷰 논문에서 압박 의류는 운동 후 근력·순발력 감소를 작게(효과 크기 0.2~0.3 안팎) 줄였고, 근력은 운동 후 1~48시간 뒤 측정에서 효과가 있었다.",
+  "style": "paper",
+  "accent": "blue",
+  "product_hint": "운동 후 착용할 수 있는, 체형에 맞는 사이즈의 의료용 압박 스타킹",
+  "image_prompt": "a pair of beige knee-high compression stockings folded neatly on a plain wooden bench",
+  "caveats": [
+    "초록(근력 g=-0.21)과 본문(g=-0.28)의 수치가 달라 '0.2~0.3 안팎'으로 표기했습니다.",
+    "'시점'은 운동 후 측정까지의 간격이지 착용 시기를 비교한 것이 아니며, 포함 연구는 운동 후 2시간 안에 착용한 경우로 제한됩니다.",
+    "포함 연구 대부분이 하체·훈련 경험자 대상이고 연구 간 이질성이 높습니다(I² 약 80%)."
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "운동 후\n[[압박 스타킹]]\n언제 입어야\n{{효과}} 있을까?"
+    },
+    {
+      "type": "body",
+      "text": "연구 27~28개를 합친 한 리뷰 논문에서 압박 의류를 입은 쪽이 운동 후 [[근력·순발력 감소폭]]이 더 작았습니다."
+    },
+    {
+      "type": "body",
+      "text": "다만 효과 크기는 0.2~0.3 안팎이었습니다. 논문 기준으로 0.4 미만은 '작은' 수준이라 극적인 변화를 기대하긴 어렵습니다."
+    },
+    {
+      "type": "body",
+      "text": "근력은 운동 후 [[1~48시간]] 뒤 측정에서 유의한 효과가 있었고, 직후(0시간)와 49~72시간 뒤에는 유의하지 않았습니다. 순발력은 1~24시간 뒤에만 효과가 있었습니다."
+    },
+    {
+      "type": "body",
+      "text": "72시간이 지난 뒤 측정에서는 근력 효과가 -0.76으로 더 컸습니다. 다만 연구마다 결과 차이가 커서(I² 80% 안팎) 들쭉날쭉할 수 있습니다.",
+      "note": "※ 대부분 하체 착용·훈련 경험자 연구이고, 대조군은 아무 회복 조치도 하지 않았습니다."
+    },
+    {
+      "type": "body",
+      "text": "운동 후 [[2시간 안에]] 입어 보되, 큰 효과를 기대하기보다 수면·식사 같은 기본 회복과 함께 쓰는 보조 수단으로 생각하세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Effects of Compression Garments on Muscle Strength and Power Recovery Post-Exercise: A Systematic Review and Meta-Analysis.",
+        "journal": "Life (Basel, Switzerland)",
+        "year": "2025",
+        "doi": "10.3390/life15030438",
+        "authors": "Li X, Su H, Du L et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2097-compression_socks/01.jpg",
+    "images/2097-compression_socks/02.jpg",
+    "images/2097-compression_socks/03.jpg",
+    "images/2097-compression_socks/04.jpg",
+    "images/2097-compression_socks/05.jpg",
+    "images/2097-compression_socks/06.jpg",
+    "images/2097-compression_socks/07.jpg"
+  ],
+  "instagram_caption": "운동 후 압박 스타킹, 언제 입어야 효과 있을까?\n\n운동 뒤 근육 피로를 줄이려고 압박 의류를 찾는 분들이 많습니다. 한 리뷰 논문이 무작위 대조 시험 27~28개를 합쳐서 살펴봤습니다.\n\n결과는 '효과는 있지만 작다'였습니다. 압박 의류를 입은 쪽이 운동 후 근력과 순발력이 덜 떨어졌고, 효과 크기는 0.2~0.3 안팎으로 논문 기준 '작은' 수준(0.4 미만)이었습니다.\n\n측정 시점에 따라서도 달랐습니다. 근력은 운동 후 1~48시간 뒤에 유의한 효과가 있었고, 직후(0시간)와 49~72시간 뒤에는 유의하지 않았습니다. 순발력은 1~24시간 뒤에만 효과가 있었습니다. 훈련 경험자에게서 효과가 더 두드러졌다고 합니다.\n\n다만 연구마다 결과 차이가 컸고, 대부분 하체 착용·훈련 경험자 연구였습니다. 압박 강도나 체형에 따라 달라질 수 있다고 논문도 밝힙니다.\n\n✅ 오늘의 행동: 운동 후 2시간 안에 입어 보되, 수면·식사 같은 기본 회복과 함께 보조 수단으로만 쓰세요.\n\n📄 출처: Li X, Su H, Du L 외, Life (Basel) (2025). DOI 10.3390/life15030438\n\n#논문팩트체크 #paper_factcheck #압박스타킹 #압박의류 #운동후회복 #근육피로 #근력회복 #러닝 #헬스 #운동꿀팁 #회복루틴 #스포츠과학\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "운동 후 압박 스타킹, 언제 입어야 효과 있을까?\n\n연구 27~28개를 합친 리뷰 논문을 봤어요. 압박 의류를 입으면 운동 후 근력·순발력이 덜 떨어지는 쪽이긴 했는데, 효과 크기는 0.2~0.3 안팎으로 '작은' 수준이었어요. 근력은 운동 후 1~48시간 뒤 측정에서 효과가 있었고, 직후나 49~72시간 뒤엔 유의하지 않았대요. 대부분 하체 착용·훈련 경험자 연구라는 점은 감안해야 해요. 운동 후에 압박 의류 입어보셨나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Effects of Compression Garments on Muscle Strength and Power Recovery Post-Exercise: A Systematic Review and Meta-Analysis.",
+    "journal": "Life (Basel, Switzerland)",
+    "year": "2025",
+    "doi": "10.3390/life15030438",
+    "pmid": "40141783",
+    "authors": "Li X, Su H, Du L et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40141783/"
+  },
+  "drafted_at": "2026-09-29T20:37:54.092785+09:00",
+  "model": "claude_code:default"
+}
