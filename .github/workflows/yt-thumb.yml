@@ -1,0 +1,52 @@
+name: yt-thumb
+
+# 유튜브 Shorts 썸네일을 첫 카드 이미지로 (수동). daily-post 는 올릴 때 자동으로 넣는다 —
+# 이 워크플로는 옛 영상에 소급하거나, 전화번호 인증 뒤 다시 넣을 때 쓴다.
+on:
+  workflow_dispatch:
+    inputs:
+      posted:
+        description: "게시 기록 파일 (공백 구분, 예: posted/2026-09-30-morning.json posted/2026-09-30-lunch.json). 비우면 오늘(KST) 기록 전부"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: yt-thumb
+  cancel-in-progress: false
+
+jobs:
+  thumb:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      TZ: Asia/Seoul
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install requests Pillow
+
+      - name: Set thumbnails
+        run: |
+          FILES="${{ github.event.inputs.posted }}"
+          if [ -z "$FILES" ]; then
+            FILES=$(ls posted/$(date +%Y-%m-%d)*.json 2>/dev/null | tr '\n' ' ')
+          fi
+          if [ -z "$FILES" ]; then echo "대상 기록이 없습니다"; exit 0; fi
+          echo "대상: $FILES"
+          python bot/youtube_api.py --set-thumbnail-posted $FILES
+
+      - name: Commit records
+        if: always()
+        run: |
+          bash bot/commit_push.sh "yt-thumb: 썸네일 기록 [skip ci]" posted
