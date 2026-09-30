@@ -73,9 +73,17 @@ jobs:
           fi
 
       - name: Build shorts
+        id: shorts
+        continue-on-error: true            # 한 편이 실패해도 만들어진 나머지는 커밋한다 (09-30: 한도 실패 하나로 12편이 날아갔었다)
         run: |
           python bot/make_short.py --auto
 
       - name: Commit images
         run: |
           bash bot/commit_push.sh "render: cards $(date +%Y-%m-%d) [skip ci]" images queue
+
+      - name: Fail if a short failed
+        if: steps.shorts.outcome == 'failure'
+        run: |
+          echo "::error::일부 숏폼 영상이 실패했습니다 (위 Build shorts 로그 참고). 성공한 것은 커밋됐습니다."
+          exit 1
