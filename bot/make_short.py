@@ -19,7 +19,8 @@
   GOOGLE_TTS_RATE      기본 1.15 (말 빠르기. 한국어는 1.2 까지 자연스럽다)
   목소리·모델·말투를 바꾸면 short.json 의 voice 도장이 달라져 다음 render-cards 때 TTS 부터 다시 만든다.
   ※ Tier 1 은 gemini-3.8-flash-tts 가 **하루 100 요청** (글 하나 = 카드 수만큼, 보통 7~8회 → 하루 12편쯤).
-    한도에 걸리면 그 실행의 남은 글은 Google Cloud TTS 로 만들고(short.json 에 tts_fallback 메모), 다음 날 다시 Gemini 로 만든다.
+    하루 한도는 **태평양 시간 자정(한국 16:00, 겨울엔 17:00)** 에 리셋된다 — 429 본문의 "retry in" 은 UTC 자정 기준이라 믿지 말 것.
+    한도에 걸리면 그 글부터 Google Cloud TTS 로 만들고(short.json 에 tts_fallback 메모), 다음 날 다시 Gemini 로 만든다.
 
 배경음 (2026-09-28): assets/music/*.mp3 + music.json (YouTube 오디오 보관함, 저작자 표시 불필요 곡만).
   글의 스타일(geo/paper/soft)에 맞는 곡을 id 해시로 하나 골라 목소리 밑에 깐다. 목소리가 나올 땐
@@ -624,10 +625,14 @@ def build(item_id: str, use_tts: bool = True, force: bool = False, use_music: bo
                         tts(line, audio, cfg)
                     except TtsUnavailable as e:
                         alt = tts_config("google") if cfg["provider"] == "gemini" else None
-                        if made or not alt or alt["provider"] != "google":
+                        if not alt or alt["provider"] != "google":
                             raise
-                        # 아직 이 실행에서 만든 목소리가 없으니 통째로 google 로 바꿔 다시 시작 (섞이지 않게)
-                        print(f"  {str(e)[:160]}\n  → Google Cloud TTS 로 대신 만듭니다 ({alt['voice']})", file=sys.stderr)
+                        # 통째로 google 로 바꿔 처음부터 다시 만든다 — 이미 만든 gemini 카드가 있어도 도장이 달라
+                        # 전부 다시 만드니 목소리가 섞이지 않는다 (09-30: 2장 만들고 하루 한도에 걸려 실패했던 것)
+                        if made:
+                            print(f"  {str(e)[:160]}\n  → 카드 {made}장 만든 뒤 막힘. 통째로 Google Cloud TTS 로 다시 만듭니다 ({alt['voice']})", file=sys.stderr)
+                        else:
+                            print(f"  {str(e)[:160]}\n  → Google Cloud TTS 로 대신 만듭니다 ({alt['voice']})", file=sys.stderr)
                         fallback = {"wanted": wanted_tag, "date": _today()}
                         cfg = alt
                         if not force and meta.exists():
@@ -640,7 +645,7 @@ def build(item_id: str, use_tts: bool = True, force: bool = False, use_music: bo
                                 meta.write_text(json.dumps(old, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
                                 print(f"  google 로 만든 영상이 이미 최신 → 그대로 둠: {final.relative_to(ROOT)}")
                                 return final
-                        parts, total, i = [], 0.0, 0
+                        parts, total, i, made = [], 0.0, 0, 0
                         continue
                     made += 1
                     stamp.write_text(want, encoding="utf-8")
