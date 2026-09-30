@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|특히 실내조명 노출은 위험을 66퍼센트까지 끌어올렸고, 실외 빛공해는 10퍼센트 증가에 그쳐 실내 조명이 더 큰 변수였습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|특히 실내조명 노출은 위험을 육십육 퍼센트까지 끌어올렸고, 실외 빛공해는 십 퍼센트 증가에 그쳐 실내 조명이 더 큰 변수였습니다.

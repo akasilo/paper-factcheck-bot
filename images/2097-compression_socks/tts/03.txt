@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|다만 효과 크기는 0.2에서 0.3 안팎이었습니다. 논문 기준으로 0.4 미만은 '작은' 수준이라 극적인 변화를 기대하긴 어렵습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|다만 효과 크기는 영점이에서 영점삼 안팎이었습니다. 논문 기준으로 영점사 미만은 '작은' 수준이라 극적인 변화를 기대하긴 어렵습니다.

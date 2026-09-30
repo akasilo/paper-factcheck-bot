@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|BPS는 BPA와 구조가 비슷해 내분비계 교란 활성이 보고됐고, EU에서는 '고위험 우려물질'로 분류돼 있어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|BPS는 BPA와 구조가 비슷해 내분비계 교란 활성이 보고됐고, EU에서는 '고위험 우려물질'로 분류돼 있어요.

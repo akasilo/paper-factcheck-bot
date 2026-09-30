@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|미국 COSMOS 연구팀은 고령자 8905명에게 코코아추출물(플라바놀 500mg, 에피카테킨 80mg/일)이나 위약을 주고 3.4년간 고혈압 발생을 추적했어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|미국 COSMOS 연구팀은 고령자 팔천구백오 명에게 코코아추출물(플라바놀 오백 밀리그램, 에피카테킨 팔십 밀리그램/일)이나 위약을 주고 삼점사 년간 고혈압 발생을 추적했어요.

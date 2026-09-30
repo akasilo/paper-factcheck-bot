@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|장시간 젤네일을 자주 할 계획이라면 램프에 손 넣기 전 손등에 자외선 차단제를 발라보세요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|장시간 젤네일을 자주 할 계획이라면 램프에 손 넣기 전 손등에 자외선 차단제를 발라보세요.

@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|17개 무작위 교차 시험, 참가자 281명을 종합한 메타분석이에요. 첨단 기술 러닝화와 일반 러닝화를 비교했어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|열일곱 개 무작위 교차 시험, 참가자 이백팔십일 명을 종합한 메타분석이에요. 첨단 기술 러닝화와 일반 러닝화를 비교했어요.

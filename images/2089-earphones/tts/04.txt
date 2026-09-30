@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|고사용 그룹만 1kHz에서 미세한 소리 차이를 구별하는 능력이 유의하게 나빠졌고, 더 낮은 주파수에서는 그룹 간 차이가 없었어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|고사용 그룹만 일kHz에서 미세한 소리 차이를 구별하는 능력이 유의하게 나빠졌고, 더 낮은 주파수에서는 그룹 간 차이가 없었어요.

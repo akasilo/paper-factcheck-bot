@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|오늘은 내 수축기 혈압부터 확인해보세요. 120 미만이라면 카카오 70퍼센트 이상 다크초콜릿을 즐기는 것도 나쁘지 않은 선택일 수 있어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘은 내 수축기 혈압부터 확인해보세요. 백이십 미만이라면 카카오 칠십 퍼센트 이상 다크초콜릿을 즐기는 것도 나쁘지 않은 선택일 수 있어요.

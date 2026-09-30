@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|첨단 러닝화는 달릴 때 산소 소비를 줄였어요(효과 크기 -0.44). 에너지 비용(-0.35), 이동 비용(-0.39)도 함께 줄었어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|첨단 러닝화는 달릴 때 산소 소비를 줄였어요(효과 크기 마이너스 영점사사). 에너지 비용(마이너스 영점삼오), 이동 비용(마이너스 영점삼구)도 함께 줄었어요.

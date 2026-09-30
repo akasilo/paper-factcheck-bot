@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|이 메타분석은 관찰연구 6편, 참가자 총 64만5천여 명의 자료를 모아 빛공해와 당뇨병의 관계를 분석했습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이 메타분석은 관찰연구 육 편, 참가자 총 육십사 만오 천여 명의 자료를 모아 빛공해와 당뇨병의 관계를 분석했습니다.

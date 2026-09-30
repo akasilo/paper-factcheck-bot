@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|공기청정기 고를 땐 CADR 숫자보다 내 방 크기, 창문 상태를 먼저 따져보고, 침실처럼 밀폐된 공간에 두세요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|공기청정기 고를 땐 CADR 숫자보다 내 방 크기, 창문 상태를 먼저 따져보고, 침실처럼 밀폐된 공간에 두세요.

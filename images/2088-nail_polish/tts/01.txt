@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|젤네일 말릴 때 손 넣는 UV램프 피부암 위험 신호 있을까?
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|젤네일 말릴 때 손 넣는 UV램프 피부암 위험 신호 있을까?

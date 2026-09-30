@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|이 논문은 라면, 과자 같은 초가공식품 관련 메타분석 45건(참가자 989만 명)을 모아, 위험도를 근거등급까지 매긴 첫 종합리뷰입니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이 논문은 라면, 과자 같은 초가공식품 관련 메타분석 사십오 건(참가자 구백팔십구 만 명)을 모아, 위험도를 근거등급까지 매긴 첫 종합리뷰입니다.

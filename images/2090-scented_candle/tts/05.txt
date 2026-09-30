@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|이 실험은 실제 원룸에 사는 자원자들을 대상으로 측정한 값이에요. 제품, 사용법에 따라 편차가 커서 모든 제품이 같지는 않아요. 참고로, 실험 조건(브랜드, 개수, 환기)에 따라 수치는 달라질 수 있어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이 실험은 실제 원룸에 사는 자원자들을 대상으로 측정한 값이에요. 제품, 사용법에 따라 편차가 커서 모든 제품이 같지는 않아요. 참고로, 실험 조건(브랜드, 개수, 환기)에 따라 수치는 달라질 수 있어요.

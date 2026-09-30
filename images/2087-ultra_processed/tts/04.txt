@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|이보다 한 단계 낮은(class II) 근거로는 전체 사망률 1.21배, 심장병 사망 1.66배, 비만 위험 1.55배, 우울, 수면문제 증가가 있었습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이보다 한 단계 낮은(class II) 근거로는 전체 사망률 일점이일 배, 심장병 사망 일점육육 배, 비만 위험 일점오오 배, 우울, 수면문제 증가가 있었습니다.

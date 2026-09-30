@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|전기로 데우는 향초는 벤젠보다 모노테르펜이 문제였어요. 평균 16에서 30배까지 늘었다는 결과가 나왔어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|전기로 데우는 향초는 벤젠보다 모노테르펜이 문제였어요. 평균 열여섯 배에서 서른 배까지 늘었다는 결과가 나왔어요.

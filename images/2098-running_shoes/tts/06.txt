@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|기록이 목표라면 첨단 러닝화를 시착해 보고, 내 발과 달리기 속도에 맞는지 먼저 확인해 보세요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|기록이 목표라면 첨단 러닝화를 시착해 보고, 내 발과 달리기 속도에 맞는지 먼저 확인해 보세요.

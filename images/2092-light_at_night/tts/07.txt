@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|잠들기 전 방 조명을 끄거나 색온도 낮은 조명으로 바꿔 어둡게 자보세요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|잠들기 전 방 조명을 끄거나 색온도 낮은 조명으로 바꿔 어둡게 자보세요.

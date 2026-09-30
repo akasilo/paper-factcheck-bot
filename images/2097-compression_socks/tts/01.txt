@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|운동 후 압박 스타킹 언제 입어야 효과 있을까?
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|운동 후 압박 스타킹 언제 입어야 효과 있을까?

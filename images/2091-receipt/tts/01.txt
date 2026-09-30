@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|매일 만지는 영수증 'BPA-free'도 안심 못한다?
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|매일 만지는 영수증 'BPA-free'도 안심 못한다?

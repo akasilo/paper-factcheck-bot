@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|한 논문(Food Chemistry, 2025)이 소고기 패티에 하이드로콜로이드 10종을 밑간했더니, HA는 26에서 55퍼센트, AGE는 21에서 51퍼센트 줄었다는 실험 결과를 냈습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 논문(Food Chemistry, 이천이십오)이 소고기 패티에 하이드로콜로이드 십 종을 밑간했더니, HA는 이십육 퍼센트에서 오십오 퍼센트, AGE는 이십일 퍼센트에서 오십일 퍼센트 줄었다는 실험 결과를 냈습니다.

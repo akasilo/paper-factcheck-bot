@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|이 논문은 한국 영수증 120장을 조사했어요. 'BPA-free'라고 적힌 영수증 15장 중 대부분에서 BPS가 776에서 1,520 μg/g 검출됐어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이 논문은 한국 영수증 백이십 장을 조사했어요. 'BPA-free'라고 적힌 영수증 열다섯 장 중 대부분에서 BPS가 칠백칠십육 마이크로그램에서 천오백이십 마이크로그램/g 검출됐어요.

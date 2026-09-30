@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|결과: 발효유 그룹의 임신성 당뇨 발생률은 18.42퍼센트, 표준 관리 그룹은 33.33퍼센트. 위험도는 55퍼센트 낮았습니다(오즈비 0.45, 95퍼센트CI 0.25에서 0.83).
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|결과: 발효유 그룹의 임신성 당뇨 발생률은 십팔점사이 퍼센트, 표준 관리 그룹은 삼십삼점삼삼 퍼센트. 위험도는 오십오 퍼센트 낮았습니다(오즈비 영점사오, 구십오 퍼센트CI 영점이오에서 영점팔삼).

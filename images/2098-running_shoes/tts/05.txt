@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|속도가 빠를수록 개선이 더 컸다는 경향이 있었어요. 다만 통계적으로 뚜렷하진 않았어요(p=0.200, 0.436). 참고로, 초록만으로는 카본 플레이트만 따로 분석했는지 알 수 없어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|속도가 빠를수록 개선이 더 컸다는 경향이 있었어요. 다만 통계적으로 뚜렷하진 않았어요(p값 영점이영영, 영점사삼육). 참고로, 초록만으로는 카본 플레이트만 따로 분석했는지 알 수 없어요.

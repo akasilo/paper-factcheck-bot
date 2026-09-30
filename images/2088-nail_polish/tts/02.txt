@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|이 논문은 2023년까지 나온 UV 네일 램프와 피부암 관련 연구 14편을 모아 안전성을 다시 검토했어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이 논문은 이천이십삼 년까지 나온 UV 네일 램프와 피부암 관련 연구 십사 편을 모아 안전성을 다시 검토했어요.

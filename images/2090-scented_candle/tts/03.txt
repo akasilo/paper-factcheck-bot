@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|벤젠이 급증한 가장 큰 원인은 향 속 나무심(우드코어)이었대요. 브랜드, 개수, 태우는 시간, 환기 여부도 영향을 줬다고 해요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|벤젠이 급증한 가장 큰 원인은 향 속 나무심(우드코어)이었대요. 브랜드, 개수, 태우는 시간, 환기 여부도 영향을 줬다고 해요.

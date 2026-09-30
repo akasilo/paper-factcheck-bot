@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|과체중, 비만 임산부 478명 대상 무작위 대조 시험. 임신 6에서 12주차부터 유산균+식이섬유 발효유를 먹는 그룹을 만들어 비교했습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|과체중, 비만 임산부 사백칠십팔 명 대상 무작위 대조 시험. 임신 육에서 십이주차부터 유산균 플러스 식이섬유 발효유를 먹는 그룹을 만들어 비교했습니다.

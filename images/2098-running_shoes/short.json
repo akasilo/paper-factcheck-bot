@@ -1,10 +1,11 @@
 {
   "cards": "3ea092b917d34598",
-  "script": "d17947ac206b77b1",
-  "voice": "ko-KR-Neural2-A",
-  "rate": "1.15",
+  "script": "e0d6c73a1636800a",
+  "voice": "gemini:gemini-3.8-flash-tts:Aoede",
+  "rate": "1.0",
+  "style": "calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace",
   "music": "rain_over_kyoto_station.mp3@0.350",
   "music_title": "Rain Over Kyoto Station",
   "music_credit": "",
-  "seconds": 64.8
+  "seconds": 70.8
 }

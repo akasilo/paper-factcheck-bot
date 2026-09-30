@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|오늘 고기 밑간에 식품용 키토산 가루를 한 스푼 넣어 재웠다가 에어프라이어에 구워보세요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘 고기 밑간에 식품용 키토산 가루를 한 스푼 넣어 재웠다가 에어프라이어에 구워보세요.

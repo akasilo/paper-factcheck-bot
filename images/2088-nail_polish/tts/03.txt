@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|네일 램프를 쓴 이력이 있는 사람 중 편평세포암 사례가 5명 보고됐어요. 세포실험 2건 중 1건은 위험 증가, 1건은 별 차이 없었대요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|네일 램프를 쓴 이력이 있는 사람 중 편평세포암 사례가 다섯 명 보고됐어요. 세포실험 이 건 중 일 건은 위험 증가, 일 건은 별 차이 없었대요.

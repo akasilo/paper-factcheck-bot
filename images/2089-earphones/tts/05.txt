@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|이어폰을 더 오래, 더 크게 쓸수록 두 검사 성적이 함께 나빠지는 경향과도 연관이 있었어요. 참고로, 75명 규모 단면 비교 연구라 인과관계까지 확정하긴 어렵고, 실제 귀 속 음량은 기기로 직접 측정해 검증했어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이어폰을 더 오래, 더 크게 쓸수록 두 검사 성적이 함께 나빠지는 경향과도 연관이 있었어요. 참고로, 일흔다섯 명 규모 단면 비교 연구라 인과관계까지 확정하긴 어렵고, 실제 귀 속 음량은 기기로 직접 측정해 검증했어요.

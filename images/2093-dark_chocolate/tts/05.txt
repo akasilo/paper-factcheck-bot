@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|다만 시작 전 수축기 혈압이 120 미만이던 사람은 고혈압 위험이 24퍼센트 낮아졌어요(2년째부터 효과가 뚜렷해짐). 참고로, 진단은 자가보고 기준이며, 실험엔 초콜릿이 아닌 코코아추출물 캡슐이 쓰였어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|다만 시작 전 수축기 혈압이 백이십 미만이던 사람은 고혈압 위험이 이십사 퍼센트 낮아졌어요(이 년째부터 효과가 뚜렷해짐). 참고로, 진단은 자가보고 기준이며, 실험엔 초콜릿이 아닌 코코아추출물 캡슐이 쓰였어요.

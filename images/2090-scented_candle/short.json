@@ -1,10 +1,11 @@
 {
   "cards": "7b52c883d542ece8",
-  "script": "f111af2368a24145",
-  "voice": "ko-KR-Neural2-A",
-  "rate": "1.15",
+  "script": "a903a64ff4cc9c3f",
+  "voice": "gemini:gemini-3.8-flash-tts:Aoede",
+  "rate": "1.0",
+  "style": "calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace",
   "music": "lake_jupiter.mp3@0.350",
   "music_title": "Lake Jupiter",
   "music_credit": "",
-  "seconds": 61.9
+  "seconds": 70.1
 }

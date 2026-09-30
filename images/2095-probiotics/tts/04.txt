@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|식단, 생활습관 집중 관리 그룹은 체중 증가는 가장 적었지만(4.00kg), 당뇨 발생률(25.60퍼센트)은 표준 관리군과 유의한 차이가 없었습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|식단, 생활습관 집중 관리 그룹은 체중 증가는 가장 적었지만(사점영영 킬로그램), 당뇨 발생률(이십오점육영 퍼센트)은 표준 관리군과 유의한 차이가 없었습니다.

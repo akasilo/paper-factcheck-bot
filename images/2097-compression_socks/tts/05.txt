@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|72시간이 지난 뒤 측정에서는 근력 효과가 -0.76으로 더 컸습니다. 다만 연구마다 결과 차이가 커서(I² 80퍼센트 안팎) 들쭉날쭉할 수 있습니다. 참고로, 대부분 하체 착용, 훈련 경험자 연구이고, 대조군은 아무 회복 조치도 하지 않았습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|일흔두 시간이 지난 뒤 측정에서는 근력 효과가 마이너스 영점칠육 으로 더 컸습니다. 다만 연구마다 결과 차이가 커서(I² 팔십 퍼센트 안팎) 들쭉날쭉할 수 있습니다. 참고로, 대부분 하체 착용, 훈련 경험자 연구이고, 대조군은 아무 회복 조치도 하지 않았습니다.

@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|기록을 재는 시간 측정 달리기에서도 더 빨랐어요(효과 크기 -0.23). 저자들은 달리기 효율에서 '중간 정도의 이점'이라고 봤어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|기록을 재는 시간 측정 달리기에서도 더 빨랐어요(효과 크기 마이너스 영점이삼). 저자들은 달리기 효율에서 '중간 정도의 이점'이라고 봤어요.

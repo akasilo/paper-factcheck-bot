@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|빛공해가 심할수록 위험도 컸습니다(심한 경우 OR 1.19, 약한 경우도 OR 1.10) — 노출량과 비례하는 경향이 보였습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|빛공해가 심할수록 위험도 컸습니다(심한 경우 OR 일점일구, 약한 경우도 OR 일점일영) — 노출량과 비례하는 경향이 보였습니다.

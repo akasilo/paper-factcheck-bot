@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|이 결과는 관찰연구를 모은 것이라 인과관계까진 확정할 수 없고, 후속 전향적 연구가 더 필요합니다. 참고로, 포함 연구 6편, 노출 측정 방식(손목기기, 설문, 위성자료)도 제각각이라 해석에 주의가 필요합니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이 결과는 관찰연구를 모은 것이라 인과관계까진 확정할 수 없고, 후속 전향적 연구가 더 필요합니다. 참고로, 포함 연구 육 편, 노출 측정 방식(손목기기, 설문, 위성자료)도 제각각이라 해석에 주의가 필요합니다.

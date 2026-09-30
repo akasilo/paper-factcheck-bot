@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|결과는 분명했습니다. 야간 빛공해에 노출된 사람은 당뇨병 위험이 대조군보다 31퍼센트 더 높았습니다(OR 1.31).
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|결과는 분명했습니다. 야간 빛공해에 노출된 사람은 당뇨병 위험이 대조군보다 삼십일 퍼센트 더 높았습니다(OR 일점삼일).
