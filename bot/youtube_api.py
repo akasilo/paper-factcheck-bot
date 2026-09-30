@@ -20,9 +20,11 @@ YouTube Shorts 업로드용 얇은 API 래퍼 (YouTube Data API v3).
 """
 from __future__ import annotations
 
+import json
 import logging
 import os
 import re
+import sys
 from pathlib import Path
 
 import requests
@@ -311,6 +313,61 @@ def short_url(video_id: str) -> str:
     return f"https://youtube.com/shorts/{video_id}"
 
 
+# 썸네일
+# ---------------------------------------------------------------------------
+
+THUMB_URL = "https://www.googleapis.com/upload/youtube/v3/thumbnails/set"
+THUMB_MAX_BYTES = 2 * 1024 * 1024      # 유튜브 맞춤 썸네일 한도 2MB
+
+
+def _thumb_bytes(image_path: Path) -> tuple[bytes, str]:
+    """썸네일로 보낼 바이트와 MIME. 2MB 를 넘으면 Pillow 로 JPEG 품질을 낮춰 다시 만든다."""
+    data = image_path.read_bytes()
+    mime = "image/png" if image_path.suffix.lower() == ".png" else "image/jpeg"
+    if len(data) <= THUMB_MAX_BYTES:
+        return data, mime
+    try:
+        from io import BytesIO
+        from PIL import Image
+    except ImportError as e:                       # Pillow 없으면 그냥 포기
+        raise YouTubeApiError(f"썸네일이 2MB 를 넘는데 줄일 수 없습니다 ({len(data)} B): {e}")
+    im = Image.open(image_path).convert("RGB")
+    for q in (88, 80, 72, 64):
+        buf = BytesIO()
+        im.save(buf, "JPEG", quality=q, optimize=True)
+        if buf.tell() <= THUMB_MAX_BYTES:
+            return buf.getvalue(), "image/jpeg"
+    raise YouTubeApiError(f"썸네일을 2MB 아래로 못 줄였습니다: {image_path.name}")
+
+
+def set_thumbnail(token: str, video_id: str, image_path: str | Path, timeout: int = 60) -> str:
+    """영상의 맞춤 썸네일을 이미지 파일로 바꾼다 (2026-09-30 사용자 요청: 첫 카드 이미지로).
+
+    Shorts 도 2026-07 부터 맞춤 썸네일을 받는다. 검색·채널 페이지·구독 피드에 보이고, 스와이프 피드 안에서는
+    안 보인다. 채널에 전화번호 인증이 안 돼 있으면 403 이 온다 → 호출한 쪽이 경고만 남기고 넘어간다.
+    scope 는 youtube.upload 로 충분하다. 돌려주는 값은 유튜브가 만든 썸네일 URL(확인용).
+    """
+    image_path = Path(image_path)
+    if not image_path.exists():
+        raise YouTubeApiError(f"썸네일 이미지가 없습니다: {image_path}")
+    data, mime = _thumb_bytes(image_path)
+    r = _req("POST", THUMB_URL,
+             params={"videoId": video_id, "uploadType": "media"},
+             headers={**_hdr(token), "Content-Type": mime, "Content-Length": str(len(data))},
+             data=data, timeout=timeout)
+    body = _check(r, "썸네일 설정")
+    items = body.get("items") or []
+    url = ""
+    if items:
+        thumbs = items[0] if isinstance(items[0], dict) else {}
+        for key in ("maxres", "high", "medium", "default"):
+            if thumbs.get(key, {}).get("url"):
+                url = thumbs[key]["url"]
+                break
+    log.info("유튜브 썸네일 설정: %s ← %s (%.0f KB)", video_id, image_path.name, len(data) / 1024)
+    return url
+
+
 # ---------------------------------------------------------------------------
 # 중복 방지 — 내 채널 최근 업로드에서 같은 제목 찾기 (readonly 스코프, 약 3 단위)
 # ---------------------------------------------------------------------------
@@ -359,3 +416,52 @@ def me(token: str) -> dict:
     if not items:
         return {}
     return {"id": items[0].get("id"), "title": (items[0].get("snippet") or {}).get("title")}
+
+
+# ---------------------------------------------------------------------------
+# 손으로 쓸 때: python bot/youtube_api.py --set-thumbnail <video_id> <image>   (yt-thumb 워크플로가 부른다)
+#              python bot/youtube_api.py --set-thumbnail-posted <posted/…json>  (기록의 video id + 첫 카드)
+# ---------------------------------------------------------------------------
+
+def _main() -> int:
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--set-thumbnail", nargs=2, metavar=("VIDEO_ID", "IMAGE"))
+    ap.add_argument("--set-thumbnail-posted", nargs="+", metavar="POSTED_JSON",
+                    help="게시 기록 파일들 — youtube_video_id 와 images[0] 로 썸네일을 넣고 기록에 적는다")
+    a = ap.parse_args()
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+    if not configured():
+        print("YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN 이 필요합니다", file=sys.stderr)
+        return 2
+    token = access_token()
+    rc = 0
+    if a.set_thumbnail:
+        vid, img = a.set_thumbnail
+        print(set_thumbnail(token, vid, img) or "(ok)")
+    for pth in a.set_thumbnail_posted or []:
+        p = Path(pth)
+        rec = json.loads(p.read_text(encoding="utf-8"))
+        vid = rec.get("youtube_video_id")
+        imgs = rec.get("images") or (rec.get("queue") or {}).get("images") or []     # 기록엔 queue 안에 원고가 통째로 있다
+        if not vid or not imgs:
+            print(f"{p.name}: youtube_video_id 나 images 가 없음 — 건너뜀", file=sys.stderr)
+            continue
+        first = ROOT / str(imgs[0]).lstrip("/")
+        try:
+            url = set_thumbnail(token, vid, first)
+            rec["youtube_thumbnail"] = first.name
+            if url:
+                rec["youtube_thumbnail_url"] = url
+            rec.pop("youtube_thumbnail_error", None)
+            print(f"{p.name}: {vid} ← {first}")
+        except YouTubeApiError as e:
+            rec["youtube_thumbnail_error"] = str(e)[:300]
+            print(f"{p.name}: 실패 — {e}", file=sys.stderr)
+            rc = 1
+        p.write_text(json.dumps(rec, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return rc
+
+
+if __name__ == "__main__":
+    sys.exit(_main())

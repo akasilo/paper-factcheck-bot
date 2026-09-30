@@ -237,6 +237,32 @@ def build_reply(item: dict) -> str | None:
     return text
 
 
+def set_youtube_thumbnail(result: dict, item: dict, result_path: Path) -> None:
+    """유튜브 썸네일을 **첫 카드 이미지**(인스타 첫 장과 같은 images[0])로 바꾼다.
+
+    2026-09-30 사용자 요청. 실패해도 게시 실패로 치지 않는다 — 기록의 youtube_thumbnail 에 사유만 남기고,
+    다음 실행이 '이미 올라감' 분기에서 다시 시도한다. (채널 전화번호 인증이 없으면 403 — 그건 사람이 풀어야 한다.)
+    """
+    vid = result.get("youtube_video_id")
+    imgs = item.get("images") or []
+    if not vid or not imgs:
+        return
+    first = ROOT / str(imgs[0]).lstrip("/")
+    try:
+        url = youtube_api.set_thumbnail(youtube_api.access_token(), vid, first)
+        result["youtube_thumbnail"] = first.name
+        if url:
+            result["youtube_thumbnail_url"] = url
+        log.info("유튜브 썸네일: %s ← %s", vid, first.name)
+    except youtube_api.YouTubeApiError as e:
+        log.warning("유튜브 썸네일 실패(게시는 정상): %s", e)
+        result["youtube_thumbnail_error"] = str(e)[:300]
+    except Exception as e:                                   # noqa: BLE001 — 썸네일 때문에 게시를 죽이지 않는다
+        log.warning("유튜브 썸네일 실패(게시는 정상): %s", e)
+        result["youtube_thumbnail_error"] = str(e)[:300]
+    save_json(result_path, result)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=today_kst(), help="큐 날짜 YYYY-MM-DD (기본: 오늘 KST)")
@@ -511,6 +537,8 @@ def main() -> int:
             log.info("유튜브: short.mp4 가 없어 건너뜀 (render-cards 가 만든다)")
         elif result.get("youtube_video_id"):
             log.info("유튜브는 이미 올라감 (%s) — 건너뜀", result["youtube_video_id"])
+            if not result.get("youtube_thumbnail"):          # 전에 올렸는데 썸네일만 못 넣었으면 이어서
+                set_youtube_thumbnail(result, item, result_path)
         else:
             yt_title = youtube_api.build_title(item)
             yt_desc = youtube_api.build_description(item, ai_label=ai_label())
@@ -533,6 +561,7 @@ def main() -> int:
                                                  or "private")
                     log.info("유튜브 업로드 완료: %s", result["youtube_url"])
                 save_json(result_path, result)
+                set_youtube_thumbnail(result, item, result_path)
             except youtube_api.YouTubeApiError as e:
                 log.error("유튜브 업로드 실패: %s", e)
                 result.setdefault("errors", []).append({"youtube": str(e)})
