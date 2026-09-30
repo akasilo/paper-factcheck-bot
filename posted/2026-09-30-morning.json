@@ -101,5 +101,7 @@
   "youtube_url": "https://youtube.com/shorts/B2iyAf0fa_E",
   "youtube_posted_at": "2026-09-30T10:19:15.721289+09:00",
   "youtube_privacy": "public",
-  "completed_at": "2026-09-30T10:19:15.722311+09:00"
+  "completed_at": "2026-09-30T10:19:15.722311+09:00",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/B2iyAf0fa_E/maxresdefault.jpg"
 }
