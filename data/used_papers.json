@@ -537,5 +537,19 @@
     "date": "2026-10-01",
     "topic": "hair_dye",
     "title": "Hair Dyes in Pregnancy: A Systematic Review and Meta-Analysis."
+  },
+  {
+    "pmid": "40199888",
+    "doi": "10.1038/s41467-025-58721-6",
+    "date": "2026-10-02",
+    "topic": "vitamin_d",
+    "title": "Vitamin D supplementation vs. placebo and incident type 2 diabetes in an ancillary study of the randomized Vitamin D and Omega-3 Trial."
+  },
+  {
+    "pmid": "41000008",
+    "doi": "10.1161/HYPERTENSIONAHA.125.25129",
+    "date": "2026-10-02",
+    "topic": "magnesium",
+    "title": "Magnesium Supplementation and Blood Pressure: A Systematic Review and Meta-Analysis of Randomized Controlled Trials."
   }
 ]
