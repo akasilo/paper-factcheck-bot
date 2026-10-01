@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|임신 전 염색한 여성은 저체중 출산(이천오백 그램 미만)과 관련이 있었어요. 두 연구를 합치면 이점삼영 배(구십오 퍼센트 CI 일점이사에서 사점이오) 였어요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|사료를 곡물 포함으로 바꾼 DCM 개 칠 마리는 모두 호전을 보였고, 리뷰는 되돌릴 수 있을 가능성을 언급했어요. 참고로, 심장약 치료를 병행했고, 기전은 불명확해 추가 연구가 필요해요.

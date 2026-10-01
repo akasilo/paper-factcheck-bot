@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘 사료 포장의 원재료 순서를 확인해 보세요. 콩류, 감자가 앞쪽에 있다면 수의사와 사료 선택을 상담해 보세요.

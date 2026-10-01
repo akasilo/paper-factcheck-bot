@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|난연제는 의도적 첨가보다 재활용 소재나 포장 오염에서 왔을 가능성이 있다고 해요. 성장기인 청소년은 특히 민감할 수 있다고 언급했습니다. 참고로, 인공 피부막, 세포 실험 기반이라 실제 사람 피부 결과는 아니에요.

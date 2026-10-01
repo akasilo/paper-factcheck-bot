@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|골든 리트리버 연구에서 콩류 든 비전통 사료 그룹은 심장 수축 지표(EF, FS)가 낮고 심실 안지름이 더 컸어요.

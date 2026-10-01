@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 연구가 메이크업 스펀지 팔십육 개를 분석했더니 칠십오점육 퍼센트에서 유기인계 난연제가 검출됐어요. 최대 농도는 일 그램당 구천육백이십사ng이었습니다.

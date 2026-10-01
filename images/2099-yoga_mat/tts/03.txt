@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|인공 피부막 실험에서 난연제는 마른 스펀지와 젖은 스펀지 모두에서 옮겨갔고, 젖은 스펀지에서 더 많이, 지속적으로 옮겨갔습니다.

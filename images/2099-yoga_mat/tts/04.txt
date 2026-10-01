@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|노출량으로 계산한 위험 지수(HQ)는 기준 이하였어요. 다만 세포(L-구백이십구) 독성 실험에서는 잠재적 독성을 무시할 수 없다고 봤습니다.

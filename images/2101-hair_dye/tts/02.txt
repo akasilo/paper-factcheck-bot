@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|임신 전후 염색약 사용과 아이, 산모 결과를 본 관찰연구 이십 편을 모은 리뷰예요. 결론은 "위험이 없다고 보기엔 조심스럽다"였어요.

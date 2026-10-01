@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|자녀의 신경모세포종은 일점칠구 배, 윌름스 종양은 육점영영 배 관련이 있다고 보고됐어요. 다만 윌름스 종양은 신뢰구간이 일점이이에서 이십구점사육으로 매우 넓어요.

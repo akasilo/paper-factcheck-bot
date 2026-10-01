@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 리뷰 논문이 콩류(완두, 렌틸콩)나 감자가 많이 든 그레인프리 사료와 개 확장성 심근병증(DCM)의 관계를 정리했어요.
