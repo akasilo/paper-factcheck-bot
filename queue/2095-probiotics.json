@@ -1,7 +1,7 @@
 {
   "id": "2095-probiotics",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hpL0pXH9MW",
   "topic": "probiotics",
   "topic_ko": "유산균",
   "verdict": "good",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/40988566/"
   },
   "drafted_at": "2026-09-28T21:06:18.282040+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-10-02T08:12:43.097409+09:00"
 }

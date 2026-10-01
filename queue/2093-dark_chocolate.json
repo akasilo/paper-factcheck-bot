@@ -1,7 +1,7 @@
 {
   "id": "2093-dark_chocolate",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hpLWplCunA",
   "topic": "dark_chocolate",
   "topic_ko": "다크초콜릿",
   "verdict": "mixed",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/40832703/"
   },
   "drafted_at": "2026-09-28T21:03:12.561513+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-10-02T08:12:43.096899+09:00"
 }
