@@ -1,0 +1,81 @@
+{
+  "id": "2104-green_tea",
+  "approved": false,
+  "link": "",
+  "topic": "green_tea",
+  "topic_ko": "녹차",
+  "verdict": "mixed",
+  "evidence_level": "meta-analysis",
+  "source_text": "PMC11445908 전문",
+  "answer": "이 메타분석에서 운동에 녹차 카테킨을 더하면 체중·BMI·체지방이 운동만 한 경우보다 조금 더 줄었지만 효과는 작았고, 혈중 지질에는 추가 효과가 없었다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "카페인·카테킨 함량이 표시된 무가당 녹차 티백",
+  "image_prompt": "a clear glass cup of green tea with a paper tea bag string resting on a light wooden table",
+  "caveats": [
+    "카테킨 보충제 용량이 99~1500mg으로 다양해 일반 녹차 한 잔에 그대로 적용하기 어렵다",
+    "포함된 시험 수가 적고 이상치 연구 1건을 제외한 뒤 분석했다",
+    "지질 결과는 소수 연구에 근거해 추가 연구가 필요하다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "녹차 마시면\n운동 효과\n[[더 커질까]]?\n{{10개 RCT}} 확인"
+    },
+    {
+      "type": "body",
+      "text": "운동만 한 사람과 운동+[[녹차 카테킨]]을 함께 한 사람을 비교한 무작위 대조 시험 10개를 모은 메타분석입니다. 대상은 과체중·비만 성인입니다."
+    },
+    {
+      "type": "body",
+      "text": "체중은 녹차 쪽이 조금 더 줄었습니다. 효과 크기(SMD)는 체중 -0.30, BMI -0.33, 체지방 -0.29로 모두 '작은 효과'였습니다."
+    },
+    {
+      "type": "body",
+      "text": "혈중 지질(중성지방·LDL·HDL·총콜레스테롤)은 {{추가 개선이 없었다}}고 합니다. 운동만 한 쪽과 뚜렷한 차이가 확인되지 않았습니다."
+    },
+    {
+      "type": "body",
+      "text": "저자들은 녹차의 추가 효과를 '꽤 미미하다'고 결론 냈습니다. 앞선 연구에서 의미 있는 감량 기준은 약 2.5kg인데, 녹차 단독 효과는 약 1kg 수준이었다고 소개합니다.",
+      "note": "※ 보충제 형태(카테킨) 연구가 중심이고, 시험 수가 적어 추가 연구가 필요하다고 합니다."
+    },
+    {
+      "type": "body",
+      "text": "녹차는 [[보조 정도]]로만 기대하고, 체중 변화의 중심은 꾸준한 운동에 두세요. 오늘은 차 한 잔 마시고 20분 걷기부터 해보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Does green tea catechin enhance weight-loss effect of exercise training in overweight and obese individuals? a systematic review and meta-analysis of randomized trials.",
+        "journal": "Journal of the International Society of Sports Nutrition",
+        "year": "2024",
+        "doi": "10.1080/15502783.2024.2411029",
+        "authors": "Gholami F, Antonio J, Iranpour M et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2104-green_tea/01.jpg",
+    "images/2104-green_tea/02.jpg",
+    "images/2104-green_tea/03.jpg",
+    "images/2104-green_tea/04.jpg",
+    "images/2104-green_tea/05.jpg",
+    "images/2104-green_tea/06.jpg",
+    "images/2104-green_tea/07.jpg"
+  ],
+  "instagram_caption": "녹차를 마시면 운동 효과가 더 커질까요?\n\n과체중·비만 성인을 대상으로 한 무작위 대조 시험 10개를 모은 메타분석이 있습니다. 운동만 한 그룹과, 운동에 녹차 카테킨을 더한 그룹을 비교했습니다.\n\n결과는 체중(SMD -0.30), BMI(-0.33), 체지방(-0.29) 모두 녹차 쪽이 조금 더 줄었지만 '작은 효과' 수준이었습니다. 반면 중성지방·LDL·HDL·총콜레스테롤 같은 혈중 지질은 추가 개선이 확인되지 않았습니다.\n\n저자들은 녹차의 추가 효과가 '꽤 미미하다'고 정리했습니다. 연구 수가 적고 보충제 중심이라, 앞으로 더 잘 설계된 연구가 필요하다고 합니다.\n\n✅ 오늘의 행동: 녹차는 보조 정도로만 기대하고, 차 한 잔과 함께 20분 걷기부터 시작해 보세요.\n\n📄 출처: Gholami F, Antonio J, Iranpour M et al., Journal of the International Society of Sports Nutrition (2024). DOI 10.1080/15502783.2024.2411029\n\n#논문팩트체크 #paper_factcheck #녹차 #카테킨 #다이어트 #체중감량 #운동 #체지방 #메타분석 #과체중 #콜레스테롤 #건강정보\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "녹차를 마시면 운동 효과가 더 커질까?\n\n과체중·비만 성인 대상 무작위 대조 시험 10개를 모은 메타분석을 봤어요. 운동에 녹차 카테킨을 더하면 체중·BMI·체지방이 조금 더 줄긴 했는데, 효과 크기는 '작은 편'이었어요. 혈중 지질은 추가 개선이 없었고요. 저자들도 추가 효과가 꽤 미미하다고 봤습니다. 녹차, 여러분은 운동할 때 챙겨 드시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Does green tea catechin enhance weight-loss effect of exercise training in overweight and obese individuals? a systematic review and meta-analysis of randomized trials.",
+    "journal": "Journal of the International Society of Sports Nutrition",
+    "year": "2024",
+    "doi": "10.1080/15502783.2024.2411029",
+    "pmid": "39350601",
+    "authors": "Gholami F, Antonio J, Iranpour M et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39350601/"
+  },
+  "drafted_at": "2026-10-03T01:22:59.064306+09:00",
+  "model": "claude_code:default"
+}
