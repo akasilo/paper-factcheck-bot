@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|당뇨 예방이 목적이라면 보충제에 기대기 전에 식단, 체중, 운동부터 챙기고, 복용이 궁금하면 혈중 수치를 확인해 의사, 약사와 상의해 보세요.

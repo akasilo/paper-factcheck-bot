@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|천 명당 일 년 발생은 비타민D군 삼점구팔 명, 위약군 사점삼칠 명이었어요. 위험비는 영점구일(신뢰구간 영점칠육에서 일점영구)로 통계적으로 유의하지 않았어요.

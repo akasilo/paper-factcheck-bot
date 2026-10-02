@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|다만 연구진도 임상적으로는 '크지 않은 효과'라고 했어요. 숫자로 보면 작은 변화예요.

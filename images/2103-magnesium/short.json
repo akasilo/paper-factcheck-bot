@@ -1,0 +1,11 @@
+{
+  "cards": "6020870e32dc382d",
+  "script": "ae521b971bffcbaf",
+  "voice": "gemini:gemini-3.8-flash-tts:Aoede",
+  "rate": "1.0",
+  "style": "calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace",
+  "music": "from_here_on_in.mp3@0.350",
+  "music_title": "From Here on In",
+  "music_credit": "",
+  "seconds": 85.9
+}

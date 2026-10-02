@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|영양제를 사기 전에 건강검진 결과를 확인하고, 혈압약을 먹고 있다면 병원, 약국과 먼저 상의하세요.

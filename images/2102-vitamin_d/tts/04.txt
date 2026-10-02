@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이 시험을 포함한 네 개 시험을 합친 메타분석에서는 위험이 십일 퍼센트 낮았어요(위험비 영점팔구). 다만 개별 시험은 모두 유의하지 않았고, 비만(BMI 삼십 이상)에서는 효과가 없었어요.

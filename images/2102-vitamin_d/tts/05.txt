@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이 년 뒤 HbA일c, 인슐린 저항성 같은 혈당 관련 지표도 두 군 사이에 유의한 차이가 없었어요. 저자들은 일반 고령 성인의 당뇨 예방 목적 복용은 뒷받침되지 않는다고 결론냈어요. 참고로, 참가자 대부분은 혈중 비타민D가 이미 충분했고, 당뇨 발생도 예상보다 적었어요.

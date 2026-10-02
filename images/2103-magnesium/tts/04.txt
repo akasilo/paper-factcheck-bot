@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|차이는 사람마다 달랐어요. 혈압약을 먹는 고혈압 환자는 수축기 마이너스 칠점육팔, 혈중 마그네슘이 낮은 사람은 마이너스 오점구칠 밀리미터 수은주 낮아졌어요. 정상 혈압 그룹은 통계적으로 유의하지 않았어요.

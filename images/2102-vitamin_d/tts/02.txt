@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|미국 고령 성인 약 이 만 이 천 명을 대상으로 한 무작위 대조 시험에서 비타민D삼 이천 아이유를 매일 오점삼 년간 먹었더니, 제이 형 당뇨 발생은 위약군과 뚜렷한 차이가 없었어요.
