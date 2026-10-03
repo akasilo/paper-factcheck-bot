@@ -1,0 +1,82 @@
+{
+  "id": "2106-olive_oil",
+  "approved": false,
+  "link": "",
+  "topic": "olive_oil",
+  "topic_ko": "올리브유",
+  "verdict": "mixed",
+  "evidence_level": "meta-analysis",
+  "source_text": "PMC11374968 전문",
+  "answer": "카놀라유·버진 올리브유·미강유는 총콜레스테롤과 LDL을 낮추는 쪽, 코코넛유·팜유는 높이는 경향이 있었지만 근거 확실성은 대체로 낮았다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "엑스트라 버진 올리브유 (버진 등급, 첨가물 없는 단일 원료 제품)",
+  "image_prompt": "a clear glass bottle of golden-green olive oil beside a small ceramic dish of oil on a wooden table",
+  "caveats": [
+    "포함된 메타분석 206건 중 67.5%가 매우 낮은 근거 확실성, 21.8%가 낮은 확실성이었다",
+    "대상 집단(고지혈증·당뇨 등)이 섞여 있고 기름 섭취량과 식단 구성을 알 수 없어 직접 비교가 어렵다",
+    "개별 원 연구를 직접 평가하지 않았고 장기 연구가 더 필요하다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "식용유마다\n[[건강 효과]]가\n정말\n다를까요?"
+    },
+    {
+      "type": "body",
+      "text": "여러 메타분석 48편을 종합한 리뷰에서, 카놀라유·버진 올리브유·미강유는 총콜레스테롤과 LDL 수치를 [[낮추는 쪽]]이었어요."
+    },
+    {
+      "type": "body",
+      "text": "반대로 코코넛유·팜유처럼 포화지방이 많은 기름은 총콜레스테롤과 LDL을 {{높이는 경향}}이 있었고, HDL도 함께 올랐어요.",
+      "note": "※ 근거 확실성은 낮음~매우 낮음 수준"
+    },
+    {
+      "type": "body",
+      "text": "올리브유는 혈당 조절 개선, 일부 암 위험 감소와 관련이 있다는 결과도 있었어요. 다만 근거 확실성은 [[낮음~매우 낮음]]이었어요."
+    },
+    {
+      "type": "body",
+      "text": "분석 206건 중 통계적으로 유의한 건 47건(22.8%)뿐이었고, 대부분 근거 확실성이 낮거나 매우 낮았어요.",
+      "note": "※ 대상 집단이 제각각이라 기름끼리 직접 비교하기는 어려워요."
+    },
+    {
+      "type": "body",
+      "text": "기름은 적당량만! 오늘 요리엔 포화지방 많은 기름 대신 [[버진 올리브유]] 한 숟갈로 바꿔 써 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Health Effects of Various Edible Vegetable Oil: An Umbrella Review.",
+        "journal": "Advances in nutrition (Bethesda, Md.)",
+        "year": "2024",
+        "doi": "10.1016/j.advnut.2024.100276",
+        "authors": "Voon PT, Ng CM, Ng YT et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2106-olive_oil/01.jpg",
+    "images/2106-olive_oil/02.jpg",
+    "images/2106-olive_oil/03.jpg",
+    "images/2106-olive_oil/04.jpg",
+    "images/2106-olive_oil/05.jpg",
+    "images/2106-olive_oil/06.jpg",
+    "images/2106-olive_oil/07.jpg"
+  ],
+  "instagram_caption": "식용유마다 건강 효과가 정말 다를까요? 🫒\n\n식용유 종류별 건강 효과를 비교한 한 우산 리뷰(여러 메타분석을 종합한 리뷰)가 있었어요. 메타분석 206건, 연구 48편을 살펴봤어요.\n\n카놀라유·버진 올리브유·미강유는 총콜레스테롤과 LDL을 낮추는 쪽이었어요. 반대로 코코넛유와 팜유처럼 포화지방이 많은 기름은 총콜레스테롤과 LDL이 올라가는 경향이 있었고, HDL도 함께 올랐어요.\n\n올리브유는 혈당 조절 개선, 일부 암 위험 감소와도 관련이 있다는 결과가 있었어요. 다만 이런 결과 대부분은 근거 확실성이 낮음~매우 낮음 수준이었고, 통계적으로 유의한 분석은 206건 중 47건(22.8%)이었어요. 연구 대상도 제각각이라 기름끼리 직접 비교하기는 어려워요.\n\n✅ 오늘의 행동: 기름은 적당량만 쓰고, 오늘 요리엔 버진 올리브유 한 숟갈로 바꿔 보세요.\n\n📄 출처: Voon PT 외, Advances in nutrition (2024). DOI 10.1016/j.advnut.2024.100276\n\n#논문팩트체크 #paper_factcheck #올리브유 #식용유 #카놀라유 #코코넛유 #팜유 #콜레스테롤 #LDL #식단관리 #건강한식습관 #요리팁 #장보기\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "식용유마다 건강에 정말 차이가 있을까?\n\n여러 메타분석을 종합한 리뷰를 보니, 카놀라유·버진 올리브유·미강유는 총콜레스테롤과 LDL을 낮추는 쪽이었대요. 반대로 코코넛유·팜유는 총콜레스테롤과 LDL이 올라가는 경향이 있었고요(HDL도 같이 올랐어요). 올리브유는 혈당 조절과도 관련이 있다는 결과가 있었어요. 다만 대부분 근거 확실성이 낮거나 매우 낮은 수준이에요. 여러분은 어떤 기름을 쓰세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Health Effects of Various Edible Vegetable Oil: An Umbrella Review.",
+    "journal": "Advances in nutrition (Bethesda, Md.)",
+    "year": "2024",
+    "doi": "10.1016/j.advnut.2024.100276",
+    "pmid": "39053603",
+    "authors": "Voon PT, Ng CM, Ng YT et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39053603/"
+  },
+  "drafted_at": "2026-10-03T23:54:41.666479+09:00",
+  "model": "claude_code:default"
+}
