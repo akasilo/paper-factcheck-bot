@@ -593,5 +593,26 @@
     "date": "2026-10-03",
     "topic": "coffee",
     "title": "Coffee's Impact on Health and Well-Being."
+  },
+  {
+    "pmid": "37867062",
+    "doi": "10.1016/j.identj.2023.08.013",
+    "date": "2026-10-05",
+    "topic": "mouthwash",
+    "title": "Mouthwashes: Implications for Practice."
+  },
+  {
+    "pmid": "38633930",
+    "doi": "10.7759/cureus.56369",
+    "date": "2026-10-05",
+    "topic": "sunscreen",
+    "title": "Sunscreen Safety and Efficacy for the Prevention of Cutaneous Neoplasm."
+  },
+  {
+    "pmid": "37630817",
+    "doi": "10.3390/nu15163627",
+    "date": "2026-10-05",
+    "topic": "sweetener",
+    "title": "Aspartame Safety as a Food Sweetener and Related Health Hazards."
   }
 ]

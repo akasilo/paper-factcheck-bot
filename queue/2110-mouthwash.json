@@ -1,0 +1,81 @@
+{
+  "id": "2110-mouthwash",
+  "approved": false,
+  "link": "",
+  "topic": "mouthwash",
+  "topic_ko": "구강청결제",
+  "verdict": "mixed",
+  "evidence_level": "review",
+  "source_text": "PMC10690539 전문",
+  "answer": "이 리뷰에 따르면 구강청결제는 칫솔질 등 기계적 관리에 더하는 보조 수단으로만 근거가 있고, 단독으로 잇몸질환에 효과가 확인된 제품은 없었다.",
+  "style": "paper",
+  "accent": "blue",
+  "product_hint": "목적(충치/잇몸)에 맞는 성분을 확인하고, 알코올이 없는 구강청결제",
+  "image_prompt": "a clear plastic bottle of blue mouthwash with a small measuring cap placed beside it on a white bathroom shelf",
+  "caveats": [
+    "저자 의견이 많이 포함된 리뷰이며, 임상시험 근거가 부족한 영역이 많다",
+    "구강청결제의 구체적인 사용 빈도·기간은 개인 상태에 따라 달라 치과 상담이 필요하다",
+    "구강 세균 균형 변화와 전신 건강의 관계는 아직 초기 단계의 근거다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "가글만 하면\n[[칫솔질]]\n안 해도\n{{괜찮을까?}}"
+    },
+    {
+      "type": "body",
+      "text": "한 리뷰 논문에 따르면 구강청결제의 근거는 모두 [[보조]]로 쓸 때만 해당합니다. 칫솔질 같은 기계적 관리와 함께 쓸 때만요."
+    },
+    {
+      "type": "body",
+      "text": "치주질환(잇몸질환)은 구강청결제 단독으로 효과가 확인된 제품이 없었습니다. 일부 성분은 칫솔질·치과 치료와 함께 쓸 때 작은 이점이 있을 수 있다는 정도입니다."
+    },
+    {
+      "type": "body",
+      "text": "충치엔 [[불소]] 가글이 중간 수준의 근거로 권고됩니다. 잇몸엔 클로르헥시딘·필수오일 제품의 근거가 가장 많았지만 '최고'를 꼽을 수는 없다고 합니다."
+    },
+    {
+      "type": "body",
+      "text": "저자들은 잇몸이 건강하고 충치 위험이 낮다면 이점보다 {{위험}}이 클 수 있다고 봅니다. 알레르기, 구강 세균 균형 변화, 내성균 우려 때문입니다. '천연' 제품은 효과 근거가 부족했습니다.",
+      "note": "※ 저자 의견이 포함되며, 임상시험 연구가 더 필요하다고 합니다."
+    },
+    {
+      "type": "body",
+      "text": "가글은 칫솔질을 [[대신하지 못합니다]]. 오늘 양치를 먼저 꼼꼼히 하고, 가글이 필요한지는 치과에서 목적에 맞게 물어보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Mouthwashes: Implications for Practice.",
+        "journal": "International dental journal",
+        "year": "2023",
+        "doi": "10.1016/j.identj.2023.08.013",
+        "authors": "Brookes ZLS, McCullough M, Kumar P et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2110-mouthwash/01.jpg",
+    "images/2110-mouthwash/02.jpg",
+    "images/2110-mouthwash/03.jpg",
+    "images/2110-mouthwash/04.jpg",
+    "images/2110-mouthwash/05.jpg",
+    "images/2110-mouthwash/06.jpg",
+    "images/2110-mouthwash/07.jpg"
+  ],
+  "instagram_caption": "가글만 하면 칫솔질 안 해도 괜찮을까요?\n\n한 리뷰 논문(국제 치과 가이드라인 정리)에 따르면, 구강청결제의 근거는 모두 칫솔질 같은 기계적 관리에 '더하는' 보조 수단으로 쓸 때만 해당했습니다. 잇몸질환에서 단독으로 효과가 확인된 구강청결제는 없었습니다.\n\n목적에 따라 성분도 달랐습니다. 충치엔 불소 가글이 중간 수준의 근거로 권고되고, 잇몸엔 클로르헥시딘이나 필수오일 성분 제품의 근거가 가장 많았습니다. 다만 저자들은 연구가 더 필요해서 '가장 좋은 제품'을 꼽을 수는 없다고 했습니다.\n\n또 저자들은 잇몸이 건강하고 충치 위험이 낮은 사람에게는 알레르기, 구강 세균 균형 변화, 내성균, 환경 영향 같은 위험이 이점보다 클 수 있다고 봤습니다. 이른바 '천연' 구강청결제는 해로움이 확인된 건 아니지만 효과를 뒷받침하는 근거도 부족했습니다. 클로르헥시딘 성분은 착색이나 맛 변화 때문에 단기간만 쓰도록 권고됩니다.\n\n✅ 오늘의 행동: 양치를 먼저 꼼꼼히 하세요. 가글이 필요한지는 치과에서 내 목적(충치/잇몸)에 맞게 물어보세요.\n\n📄 출처: Brookes ZLS, McCullough M, Kumar P et al., International dental journal (2023). DOI 10.1016/j.identj.2023.08.013\n\n#논문팩트체크 #paper_factcheck #구강청결제 #가글 #칫솔질 #구강관리 #잇몸건강 #충치 #불소 #치아관리 #양치 #생활상식 #구강건강\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "구강청결제, 칫솔질 대신 해도 될까?\n\n한 리뷰 논문을 보니 구강청결제의 근거는 전부 칫솔질 같은 관리에 '더하는' 경우였어요. 단독으로 잇몸질환에 효과가 확인된 제품은 없었고요. 충치엔 불소 가글이 중간 수준의 근거가 있었고, 잇몸엔 클로르헥시딘·필수오일 제품의 근거가 가장 많았습니다. 반면 저자들은 잇몸이 건강하고 충치 위험이 낮다면 이점보다 위험이 클 수 있다고 봤고, '천연' 제품은 효과 근거가 부족하다고 했어요. 여러분은 양치 후에 가글까지 꼭 하세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Mouthwashes: Implications for Practice.",
+    "journal": "International dental journal",
+    "year": "2023",
+    "doi": "10.1016/j.identj.2023.08.013",
+    "pmid": "37867062",
+    "authors": "Brookes ZLS, McCullough M, Kumar P et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37867062/"
+  },
+  "drafted_at": "2026-10-05T00:31:08.241834+09:00",
+  "model": "claude_code:default"
+}
