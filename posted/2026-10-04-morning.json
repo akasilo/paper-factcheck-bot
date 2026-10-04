@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-04",
+  "slot": "morning",
+  "queue": {
+    "id": "2096-hand_sanitizer",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hvaM8jYL7I",
+    "topic": "hand_sanitizer",
+    "topic_ko": "손소독제·물티슈",
+    "verdict": "mixed",
+    "evidence_level": "rct",
+    "source_text": "초록만",
+    "answer": "두 제형 모두 피부 수분 손실량(TEWL)이 처음보다 유의하게 늘었고(스프레이 3일째, 젤 21일째), 제형 간 차이는 유의하지 않았다.",
+    "style": "paper",
+    "accent": "blue",
+    "product_hint": "무향 저자극 물티슈, 젤 타입 손소독제, 무향 보습제",
+    "image_prompt": "a clear pump bottle of hand sanitizer gel beside a small spray bottle on a plain white surface",
+    "caveats": [
+      "참가자 38명, 21일이라는 작은 규모의 연구입니다.",
+      "TEWL 증가가 실제 피부 질환으로 이어지는지는 초록에 나와 있지 않습니다.",
+      "물티슈는 이 논문이 다루지 않았습니다."
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "손소독제\n[[젤 vs 스프레이]]\n{{피부 장벽}}\n누가 더 약할까?"
+      },
+      {
+        "type": "body",
+        "text": "성인 38명이 알코올 손소독제 [[젤]]과 스프레이를 각각 21일간 쓰고 피부 반응을 비교한 무작위 교차 시험입니다."
+      },
+      {
+        "type": "body",
+        "text": "눈으로 평가한 피부 점수와 피부 수분 측정값은 두 제형 모두 유의한 변화가 없었습니다."
+      },
+      {
+        "type": "body",
+        "text": "하지만 피부 장벽 지표인 수분 손실량(TEWL)은 달랐습니다. {{스프레이는 3일째, 젤은 21일째}}에 처음보다 유의하게 늘었습니다."
+      },
+      {
+        "type": "body",
+        "text": "두 제형 사이의 통계적 차이는 없었습니다(p=0.46). 저자들은 일상 사용은 안전하며 문제는 가벼운 [[피부 자극]] 정도라고 봤습니다.",
+        "note": "※ 38명·21일 연구입니다. 민감성 피부에 젤이 낫다는 것은 저자의 제안입니다."
+      },
+      {
+        "type": "body",
+        "text": "피부가 민감하다면 [[젤 타입]]을 고르고, 손이 당기면 무향 보습제를 덧발라 보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "A comparative study on the effect of alcohol-based hand sanitizers in spray and gel formulation on the skin: A prospective, randomised, crossover trial.",
+          "journal": "Contact dermatitis",
+          "year": "2024",
+          "doi": "10.1111/cod.14476",
+          "authors": "Suwanchai C, Udompataikul M, Kamanamool N et al."
+        }
+      }
+    ],
+    "images": [
+      "images/2096-hand_sanitizer/01.jpg",
+      "images/2096-hand_sanitizer/02.jpg",
+      "images/2096-hand_sanitizer/03.jpg",
+      "images/2096-hand_sanitizer/04.jpg",
+      "images/2096-hand_sanitizer/05.jpg",
+      "images/2096-hand_sanitizer/06.jpg",
+      "images/2096-hand_sanitizer/07.jpg"
+    ],
+    "instagram_caption": "손소독제, 젤이든 스프레이든 피부 장벽엔 똑같이 영향을 줄까요?\n\n피부과 연구팀이 성인 38명을 대상으로 알코올 손소독제 젤과 스프레이를 각각 21일간 쓰게 하는 무작위 교차 시험을 했습니다.\n\n눈으로 평가한 피부 점수와 피부 수분 측정값은 두 제형 모두 유의한 변화가 없었습니다. 겉으로는 멀쩡해 보였다는 뜻입니다.\n\n그런데 피부 장벽 지표인 수분 손실량(TEWL)은 스프레이는 3일째, 젤은 21일째에 처음보다 유의하게 늘었습니다. 다만 두 제형 사이의 차이는 통계적으로 유의하지 않았습니다(p=0.46).\n\n저자들은 정기적 사용은 안전하고 문제는 가벼운 피부 자극 정도이며, 피부가 민감하다면 젤이 낫다고 제안했습니다. 38명, 21일이라는 작은 규모의 연구라는 점은 감안해 주세요.\n\n✅ 오늘의 행동: 피부가 민감하다면 젤 타입을 고르고, 손이 당기면 무향 보습제를 덧발라 보세요.\n\n📄 출처: Suwanchai C, Udompataikul M, Kamanamool N 외, Contact Dermatitis (2024). DOI 10.1111/cod.14476\n\n#논문팩트체크 #paper_factcheck #손소독제 #손소독젤 #스프레이손소독제 #피부장벽 #손건조 #손습진 #민감성피부 #피부자극 #핸드케어 #생활속과학\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.\n\n🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요",
+    "threads_text": "손소독제 젤 vs 스프레이, 피부엔 뭐가 나을까?\n\n성인 38명이 두 제형을 21일씩 써 본 무작위 교차 시험을 봤어요. 눈으로 본 피부 점수는 둘 다 변화가 없었는데, 피부 수분 손실량(TEWL)은 스프레이는 3일째, 젤은 21일째에 유의하게 늘었대요. 두 제형 차이는 통계적으로 유의하지 않았고, 저자들은 일상 사용은 안전하지만 민감한 피부엔 젤을 권했어요. 작은 연구라는 점은 참고하세요. 여러분은 어떤 타입 쓰세요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "A comparative study on the effect of alcohol-based hand sanitizers in spray and gel formulation on the skin: A prospective, randomised, crossover trial.",
+      "journal": "Contact dermatitis",
+      "year": "2024",
+      "doi": "10.1111/cod.14476",
+      "pmid": "38086328",
+      "authors": "Suwanchai C, Udompataikul M, Kamanamool N et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38086328/"
+    },
+    "drafted_at": "2026-09-29T20:37:14.578485+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-10-02T08:12:43.097650+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "18356623723171846",
+  "instagram_posted_at": "2026-10-04T09:33:24.149368+09:00",
+  "instagram_reel_id": "17891566404682944",
+  "instagram_reel_posted_at": "2026-10-04T09:34:28.070393+09:00",
+  "threads_post_id": "17882284638527052",
+  "threads_posted_at": "2026-10-04T09:35:38.386263+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DeDXBCmDrIx",
+  "threads_reply_id": "17996800635041361",
+  "youtube_video_id": "_lZWZeNMNEo",
+  "youtube_url": "https://youtube.com/shorts/_lZWZeNMNEo",
+  "youtube_posted_at": "2026-10-04T09:36:02.991883+09:00",
+  "youtube_privacy": "public",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/_lZWZeNMNEo/maxresdefault.jpg",
+  "completed_at": "2026-10-04T09:36:05.040942+09:00"
+}
