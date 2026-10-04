@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 리뷰 논문에 따르면 유기 차단제 중 옥시벤존은 신경, 내분비계에 해로울 수 있어 피해야 한다고 결론냈어요. 다만 근거는 세포, 실험 연구 중심이에요. 참고로, 사람 대상 결과가 아닌 실험 연구 기반.

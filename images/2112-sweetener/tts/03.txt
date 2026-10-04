@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|하지만 같은 리뷰는 허용 섭취량 이하로 매일 고용량을 먹었을 때 미묘한 기분, 행동 변화가 나타난 연구도 있다고 전합니다.

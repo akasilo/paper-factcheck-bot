@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|사람 관찰연구 이십일 편 중 십일 편에서 소변 BPA가 높을수록 난포 수나 채취 난자 수가 적은 것과 관련이 있었어요. 참고로, 관찰연구라 원인을 확정할 수 없고, 대체 물질의 사람 결과는 초록에 없어요.

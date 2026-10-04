@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|심혈관 질환 위험은 세 잔에서 다섯 잔 마시는 사람에서 약 십오 퍼센트 낮았고, 제이 형 당뇨는 이십구 퍼센트 낮은 것과 관련이 있었어요.

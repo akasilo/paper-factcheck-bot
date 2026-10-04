@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|반대로 코코넛유, 팜유처럼 포화지방이 많은 기름은 총콜레스테롤과 LDL을 높이는 경향이 있었고, HDL도 함께 올랐어요. 참고로, 근거 확실성은 낮음~매우 낮음 수준.

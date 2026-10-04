@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|저자들은 잇몸이 건강하고 충치 위험이 낮다면 이점보다 위험이 클 수 있다고 봅니다. 알레르기, 구강 세균 균형 변화, 내성균 우려 때문입니다. '천연' 제품은 효과 근거가 부족했습니다. 참고로, 저자 의견이 포함되며, 임상시험 연구가 더 필요하다고 합니다.

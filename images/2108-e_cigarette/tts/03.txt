@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이천십구 년 미국에서 입원 환자 이천팔백칠 명, 사망 예순 명이 확인됐고, 환자 중앙 나이는 이십사 세로 젊은 층에 많았어요.

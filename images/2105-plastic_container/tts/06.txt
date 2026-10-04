@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|열에 약한 플라스틱 용기에 뜨거운 음식을 담아 데우는 대신, 오늘 하나만이라도 유리 용기로 바꿔 보세요.

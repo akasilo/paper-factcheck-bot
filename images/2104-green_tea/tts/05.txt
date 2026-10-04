@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|저자들은 녹차의 추가 효과를 '꽤 미미하다'고 결론 냈습니다. 앞선 연구에서 의미 있는 감량 기준은 약 이점오 킬로그램인데, 녹차 단독 효과는 약 일 킬로그램 수준이었다고 소개합니다. 참고로, 보충제 형태(카테킨) 연구가 중심이고, 시험 수가 적어 추가 연구가 필요하다고 합니다.

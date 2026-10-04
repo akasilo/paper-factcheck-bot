@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 리뷰 논문에 따르면 구강청결제의 근거는 모두 보조로 쓸 때만 해당합니다. 칫솔질 같은 기계적 관리와 함께 쓸 때만요.

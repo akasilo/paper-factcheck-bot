@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|징크옥사이드, 이산화티타늄 같은 무기 차단제는 부작용이 가장 적고 잘 견디는 편이에요. 특히 이산화티타늄이 든 제품이 자외선A 차단과 표시 SPF 유지에 더 나았어요. 참고로, 스프레이형은 흡입 우려가 보고돼요.

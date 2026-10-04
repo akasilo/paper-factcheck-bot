@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|여러 메타분석 사십팔 편을 종합한 리뷰에서, 카놀라유, 버진 올리브유, 미강유는 총콜레스테롤과 LDL 수치를 낮추는 쪽이었어요.

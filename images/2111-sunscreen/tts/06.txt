@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘 선크림 성분표에서 옥시벤존 유무를 확인하고, 외출 중엔 충분한 양을 다시 덧발라 보세요.

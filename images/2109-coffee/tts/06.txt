@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘 커피는 설탕, 크림을 빼고 블랙으로 한 잔 마셔 보세요. 잠이 안 오거나 불안하면 양을 줄이세요.

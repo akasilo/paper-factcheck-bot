@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 리뷰 논문에 따르면 전자담배, 베이핑 제품 사용과 관련된 급성 폐손상(EVALI)은 치명적일 수 있는 질환으로 보고됐어요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|결론은 '성분만큼 덧바르기'예요. 권장량보다 적게 바르면 표시된 SPF보다 낮게 보호될 수 있고, 꾸준히 쓰게 만드는 사용감과 재도포가 제품만큼 중요하다고 해요. 참고로, 리뷰 이십삼 편 기반, 추가 연구 필요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|온도와 음식 종류가 미세플라스틱 방출을 높이는 핵심 요인이었어요. 뜨겁고 기름진 음식일수록 더 많이 나올 수 있다는 결과예요. 참고로, 실험실 조건의 수치예요. 입자의 십이에서 육십삼 퍼센트는 너무 작아 확인되지 못했고, 건강 영향은 이 자료만으론 알 수 없어요.

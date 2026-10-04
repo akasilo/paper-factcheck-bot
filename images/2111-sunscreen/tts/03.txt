@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|반면 아보벤존, 옥토크릴렌은 내분비 교란 징후가 보이지 않았고, 둘을 함께 쓰면 옥토크릴렌이 아보벤존을 안정화한다고 해요.

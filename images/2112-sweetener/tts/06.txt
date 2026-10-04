@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘 마시는 음료 성분표에서 아스파탐(E구백오십일) 표기가 있는지 확인하고, 하루 한 잔만 무가당 탄산수로 바꿔 보세요.

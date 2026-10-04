@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|분석 이백육 건 중 통계적으로 유의한 건 사십칠 건(이십이점팔 퍼센트)뿐이었고, 대부분 근거 확실성이 낮거나 매우 낮았어요. 참고로, 대상 집단이 제각각이라 기름끼리 직접 비교하기는 어려워요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘 남은 음식은 플라스틱 용기째 돌리지 말고, 전자레인지용 유리 용기에 옮겨 데워 보세요.

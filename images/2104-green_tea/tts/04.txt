@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|혈중 지질(중성지방, LDL, HDL, 총콜레스테롤)은 추가 개선이 없었다고 합니다. 운동만 한 쪽과 뚜렷한 차이가 확인되지 않았습니다.

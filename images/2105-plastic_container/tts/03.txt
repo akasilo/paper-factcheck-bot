@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|세포 실험에서 난자에 해로운 영향이 하나 이상 보고된 비율은 BPA 구십육점삼 퍼센트(이십육/이십칠), 대체 물질 구십사점일 퍼센트(십육/십칠)였어요. 참고로, 세포를 이용한 실험 결과예요.

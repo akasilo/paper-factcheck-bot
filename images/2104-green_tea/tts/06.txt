@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|녹차는 보조 정도로만 기대하고, 체중 변화의 중심은 꾸준한 운동에 두세요. 오늘은 차 한 잔 마시고 이십 분 걷기부터 해보세요.

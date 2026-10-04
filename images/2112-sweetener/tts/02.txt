@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 리뷰 논문에 따르면 유럽 식품안전청 전문가들은 현재 섭취 수준에서 아스파탐과 분해 산물이 안전하다고 결론 냈습니다.

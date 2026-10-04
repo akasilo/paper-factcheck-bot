@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|체중은 녹차 쪽이 조금 더 줄었습니다. 효과 크기(SMD)는 체중 마이너스 영점삼영, BMI 마이너스 영점삼삼, 체지방 마이너스 영점이구 로 모두 '작은 효과'였습니다.

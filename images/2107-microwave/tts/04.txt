@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|전자레인지로 직접 가열하니 리터당 오십삼만사천백구 개, 미국 FDA 권고 방식으로 시험한 값은 십오만오천오백칠십이 개였어요. 직접 가열 쪽이 유의하게 더 많았어요.

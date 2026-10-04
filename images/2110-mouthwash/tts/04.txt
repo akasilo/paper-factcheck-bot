@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|충치엔 불소 가글이 중간 수준의 근거로 권고됩니다. 잇몸엔 클로르헥시딘, 필수오일 제품의 근거가 가장 많았지만 '최고'를 꼽을 수는 없다고 합니다.

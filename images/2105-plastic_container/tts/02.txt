@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|난자 건강을 다룬 한 리뷰 논문이 연구 백칠 편을 종합했어요. BPA와 'BPA-free' 제품에 쓰이는 대체 비스페놀(BPS, BPF 등)이 대상이에요.

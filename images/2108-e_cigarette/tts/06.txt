@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|베이핑 후 기침, 숨 가쁨, 가슴 통증이 있다면 바로 사용을 멈추고 진료를 받아 보세요.

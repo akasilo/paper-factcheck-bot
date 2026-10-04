@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|다만 설탕과 크림을 넣으면 커피의 좋은 효과가 줄어들 수 있다고 해요. 임신 중엔 카페인 하루 이백 밀리그램 이하를 권해요. 참고로, 대부분 관찰 연구라 인과관계는 단정할 수 없고, 첨가물 효과는 아직 세밀한 분석이 부족해요.

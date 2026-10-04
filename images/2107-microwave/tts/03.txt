@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|나온 입자의 칠십칠에서 구십이 퍼센트는 오µm보다 작았어요. 가장 많이 나온 조건은 PP 식품 용기에 오십 퍼센트 에탄올을 넣고 백삼십 도로 십오 분 가열한 경우(기름진 음식을 전자레인지로 데우는 상황에 해당)였어요.

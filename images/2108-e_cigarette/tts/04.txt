@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|주요 원인 물질로는 대마(THC) 베이핑 액에 섞인 비타민E 아세테이트가 지목됐어요. 가열하면 폐 조직을 해칠 수 있는 물질로 분해된다고 해요. 참고로, 주로 불법 경로로 유통된 제품이었어요.

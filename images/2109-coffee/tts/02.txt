@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 리뷰 논문에 따르면 하루 세 잔에서 다섯 잔 정도의 적당한 커피는 해보다 득이 크다는 것이 전반적인 결론이었어요.

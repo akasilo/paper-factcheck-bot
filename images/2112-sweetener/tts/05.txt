@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|쥐 실험에서는 허용량에 가까운 하루 사 밀리그램에서 이십 밀리그램/kg에서도 악성 종양이 늘었다는 보고가 있습니다. 동물 결과를 사람에게 그대로 적용할 수는 없습니다. 참고로, 발암 위험 논쟁은 진행 중이며 인과는 확정되지 않았습니다.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|가글은 칫솔질을 대신하지 못합니다. 오늘 양치를 먼저 꼼꼼히 하고, 가글이 필요한지는 치과에서 목적에 맞게 물어보세요.

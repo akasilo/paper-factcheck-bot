@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|마흔 개 연구, 삼백팔십 만 명을 합친 이천십구 년 메타분석에서 사망 위험은 하루 삼점오 잔에서 가장 낮았어요 (상대위험 영점팔오).

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|증상은 기침, 숨 가쁨, 가슴 통증이고 메스꺼움, 구토, 복통도 나타났어요. 호흡부전 환자 중 최대 삼 분의 일 은 인공호흡기가 필요했어요. 참고로, 비판 평가 없이 서술한 리뷰예요. 발생은 이후 크게 줄었지만 산발적 사례는 계속 보고돼요.
