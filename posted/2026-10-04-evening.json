@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-04",
+  "slot": "evening",
+  "queue": {
+    "id": "2098-running_shoes",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hva0iZHp8u",
+    "topic": "running_shoes",
+    "topic_ko": "러닝화",
+    "verdict": "good",
+    "evidence_level": "meta-analysis",
+    "source_text": "초록만",
+    "answer": "첨단 기술 러닝화는 일반 러닝화보다 산소 소비를 줄였고(효과 크기 -0.44) 시간 측정 달리기 기록도 단축했다(효과 크기 -0.23).",
+    "style": "paper",
+    "accent": "orange",
+    "product_hint": "쿠셔닝이 좋은 러닝화 (시착해서 발에 맞는 것)",
+    "image_prompt": "a single pair of modern running shoes with thick cushioned midsoles placed on a plain floor",
+    "caveats": [
+      "초록만으로는 카본 플레이트만 따로 분석했는지 알 수 없다",
+      "속도와 개선 폭의 관계는 통계적으로 유의하지 않았다",
+      "제조사·모델별 차이나 일반 러너에게의 효과는 초록에 나와 있지 않다"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "카본 러닝화\n[[정말]] 효과\n있을까요?"
+      },
+      {
+        "type": "body",
+        "text": "17개 무작위 교차 시험, 참가자 281명을 종합한 [[메타분석]]이에요.\n첨단 기술 러닝화와 일반 러닝화를 비교했어요."
+      },
+      {
+        "type": "body",
+        "text": "첨단 러닝화는 달릴 때 [[산소 소비]]를 줄였어요(효과 크기 -0.44).\n에너지 비용(-0.35), 이동 비용(-0.39)도 함께 줄었어요."
+      },
+      {
+        "type": "body",
+        "text": "기록을 재는 시간 측정 달리기에서도 더 빨랐어요(효과 크기 -0.23).\n저자들은 달리기 효율에서 '중간 정도의 이점'이라고 봤어요."
+      },
+      {
+        "type": "body",
+        "text": "속도가 빠를수록 개선이 더 컸다는 경향이 있었어요.\n다만 통계적으로 뚜렷하진 않았어요(p=0.200, 0.436).",
+        "note": "※ 초록만으로는 카본 플레이트만 따로 분석했는지 알 수 없어요."
+      },
+      {
+        "type": "body",
+        "text": "기록이 목표라면 첨단 러닝화를 [[시착]]해 보고, 내 발과 달리기 속도에 맞는지 먼저 확인해 보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Effects of Advanced Footwear Technology on Running Economy and Endurance Performance: A Meta-Analysis.",
+          "journal": "International journal of sports medicine",
+          "year": "2026",
+          "doi": "10.1055/a-2637-7283",
+          "authors": "Xiao Y, Hu X, Tian D et al."
+        }
+      }
+    ],
+    "images": [
+      "images/2098-running_shoes/01.jpg",
+      "images/2098-running_shoes/02.jpg",
+      "images/2098-running_shoes/03.jpg",
+      "images/2098-running_shoes/04.jpg",
+      "images/2098-running_shoes/05.jpg",
+      "images/2098-running_shoes/06.jpg",
+      "images/2098-running_shoes/07.jpg"
+    ],
+    "instagram_caption": "카본 러닝화, 진짜 효과가 있을까요?\n\n한 메타분석 논문이 17개의 무작위 교차 시험(참가자 281명)을 종합했어요. 첨단 기술 러닝화와 일반 러닝화를 비교한 결과예요.\n\n첨단 러닝화를 신었을 때 산소 소비(효과 크기 -0.44), 에너지 비용(-0.35), 이동 비용(-0.39)이 모두 줄었어요. 시간 측정 달리기 기록도 더 빨랐고요(-0.23). 저자들은 달리기 효율에서 중간 정도의 이점이 있다고 결론냈어요.\n\n속도가 빠를수록 개선이 더 컸다는 경향이 나타났지만, 통계적으로 뚜렷하지는 않았어요(p=0.200, 0.436). 또 초록만으로는 카본 플레이트만 따로 분석했는지는 알 수 없어요.\n\n✅ 오늘의 행동: 기록이 목표라면 첨단 러닝화를 시착해 보고, 내 발과 달리기 속도에 맞는지 먼저 확인해 보세요.\n\n📄 출처: Xiao Y, Hu X, Tian D 외, International journal of sports medicine (2026). DOI 10.1055/a-2637-7283\n\n#논문팩트체크 #paper_factcheck #러닝화 #카본러닝화 #러닝 #마라톤 #달리기 #러닝화추천 #러닝팁 #달리기효율 #러닝초보 #메타분석\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.\n\n🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요",
+    "threads_text": "카본 러닝화, 진짜 효과가 있을까?\n\n한 메타분석 논문이 17개 무작위 교차 시험(참가자 281명)을 종합했어요. 첨단 기술 러닝화를 신으면 일반 러닝화보다 산소 소비가 줄었고(효과 크기 -0.44), 시간 측정 달리기 기록도 더 빨랐대요(-0.23). 저자들은 '중간 정도의 이점'이라고 봤어요. 속도가 빠를수록 효과가 컸다는 경향은 있었지만 통계적으로 뚜렷하진 않았어요. 여러분은 첨단 러닝화, 신어보셨나요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Effects of Advanced Footwear Technology on Running Economy and Endurance Performance: A Meta-Analysis.",
+      "journal": "International journal of sports medicine",
+      "year": "2026",
+      "doi": "10.1055/a-2637-7283",
+      "pmid": "40527489",
+      "authors": "Xiao Y, Hu X, Tian D et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40527489/"
+    },
+    "drafted_at": "2026-09-29T20:38:25.517724+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-10-02T08:12:43.098118+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "18134876537504174",
+  "instagram_posted_at": "2026-10-04T21:17:04.920041+09:00",
+  "instagram_reel_id": "17895292011414030",
+  "instagram_reel_posted_at": "2026-10-04T21:18:00.952922+09:00",
+  "threads_post_id": "17993814411049512",
+  "threads_posted_at": "2026-10-04T21:19:07.017615+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DeEnh4nDb2i",
+  "threads_reply_id": "18105860213608827",
+  "youtube_video_id": "MH0qz6d17KI",
+  "youtube_url": "https://youtube.com/shorts/MH0qz6d17KI",
+  "youtube_posted_at": "2026-10-04T21:19:21.505518+09:00",
+  "youtube_privacy": "public",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/MH0qz6d17KI/maxresdefault.jpg",
+  "completed_at": "2026-10-04T21:19:26.521135+09:00"
+}
