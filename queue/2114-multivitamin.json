@@ -1,0 +1,81 @@
+{
+  "id": "2114-multivitamin",
+  "approved": false,
+  "link": "",
+  "topic": "multivitamin",
+  "topic_ko": "종합비타민",
+  "verdict": "mixed",
+  "evidence_level": "meta-analysis",
+  "source_text": "PMC11103094 전문",
+  "answer": "60세 이상 대상 무작위 시험에서 종합비타민을 먹은 쪽이 2년간 기억력 변화가 더 좋았고, 하위 연구를 합친 분석에서도 작지만 일관된 이득이 보고됐다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "종합비타민",
+  "image_prompt": "an open white supplement bottle with several colorful multivitamin tablets spilled beside it on a plain surface",
+  "caveats": [
+    "대상이 60세 이상 미국 성인이라 다른 연령에 적용하기 어렵다",
+    "효과 크기가 작고 클리닉 집단의 전반 인지기능은 신뢰구간이 0을 포함한다",
+    "초록 결론은 예방 효과를 시사하지만 의학적 효능 문구는 제외했다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "종합비타민\n[[매일 먹으면]]\n{{기억력}}에\n도움 될까?"
+    },
+    {
+      "type": "body",
+      "text": "60세 이상 미국 성인 21,442명이 참여한 무작위 대조 시험(COSMOS)에서 종합비타민과 가짜약을 비교했어요."
+    },
+    {
+      "type": "body",
+      "text": "클리닉 하위 집단(573명)에서는 2년간 [[기억력]](일화 기억) 변화가 가짜약보다 더 좋았어요. 차이는 0.12 표준편차 단위였어요."
+    },
+    {
+      "type": "body",
+      "text": "같은 집단에서 전반 인지기능(0.06)은 신뢰구간이 0을 포함해 뚜렷하지 않았고, 집행 기능·주의력도 차이가 없었어요."
+    },
+    {
+      "type": "body",
+      "text": "하위 연구 3건(약 5,200명)을 합친 분석에서는 전반 인지기능 0.07, 기억력 0.06 개선이 보였어요. 저자들은 인지 노화 2년 정도에 해당하는 크기라고 해석했어요.",
+      "note": "※ 효과 크기는 작고, 60세 이상 대상 결과예요."
+    },
+    {
+      "type": "body",
+      "text": "먹는 영양제가 많다면 [[성분표]]부터 확인하고, 복용 여부는 의사나 약사와 상의해 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Effect of multivitamin-mineral supplementation versus placebo on cognitive function: results from the clinic subcohort of the COcoa Supplement and Multivitamin Outcomes Study (COSMOS) randomized clinical trial and meta-analysis of 3 cognitive studies within COSMOS.",
+        "journal": "The American journal of clinical nutrition",
+        "year": "2024",
+        "doi": "10.1016/j.ajcnut.2023.12.011",
+        "authors": "Vyas CM, Manson JE, Sesso HD et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2114-multivitamin/01.jpg",
+    "images/2114-multivitamin/02.jpg",
+    "images/2114-multivitamin/03.jpg",
+    "images/2114-multivitamin/04.jpg",
+    "images/2114-multivitamin/05.jpg",
+    "images/2114-multivitamin/06.jpg",
+    "images/2114-multivitamin/07.jpg"
+  ],
+  "instagram_caption": "종합비타민을 매일 먹으면 기억력에 도움이 될까요?\n\n미국 60세 이상 성인 21,442명이 참여한 무작위 대조 시험(COSMOS)의 인지기능 하위 연구를 분석한 논문이에요. 종합비타민과 가짜약을 비교했어요.\n\n클리닉 하위 집단(573명)에서는 2년간 기억력(일화 기억) 변화가 가짜약보다 더 좋았어요(0.12 표준편차 단위). 반면 전반 인지기능은 뚜렷한 차이가 없었고(0.06, 신뢰구간 −0.003~0.13), 집행 기능·주의력도 차이가 없었어요.\n\n하위 연구 3건(약 5,200명)을 합친 분석에서는 전반 인지기능 0.07, 기억력 0.06 개선이 보였어요. 저자들은 전반 인지기능의 효과 크기가 인지 노화 2년 정도에 해당한다고 해석했어요. 다만 크기는 작고, 60세 이상 대상 결과라는 점은 기억해 주세요.\n\n✅ 오늘의 행동: 먹는 영양제가 많다면 성분표부터 확인하고, 복용 여부는 의사나 약사와 상의해 보세요.\n\n📄 출처: Vyas CM, Manson JE, Sesso HD et al., The American journal of clinical nutrition (2024). DOI 10.1016/j.ajcnut.2023.12.011\n\n#논문팩트체크 #paper_factcheck #종합비타민 #영양제 #멀티비타민 #기억력 #인지기능 #노년건강 #건강정보 #영양제추천 #무작위대조시험 #팩트체크\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "종합비타민, 매일 먹으면 기억력에 도움 될까?\n\n60세 이상 2만 명 넘게 참여한 무작위 대조 시험(COSMOS)의 인지기능 하위 연구를 보니, 클리닉 집단(573명)에서 2년간 기억력 변화가 가짜약보다 더 좋았대요. 전반 인지기능은 뚜렷한 차이가 없었고요. 하위 연구 3건을 합치면 전반 인지기능 0.07, 기억력 0.06 개선이 보였지만 크기는 작아요. 여러분은 종합비타민 챙겨 드시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Effect of multivitamin-mineral supplementation versus placebo on cognitive function: results from the clinic subcohort of the COcoa Supplement and Multivitamin Outcomes Study (COSMOS) randomized clinical trial and meta-analysis of 3 cognitive studies within COSMOS.",
+    "journal": "The American journal of clinical nutrition",
+    "year": "2024",
+    "doi": "10.1016/j.ajcnut.2023.12.011",
+    "pmid": "38244989",
+    "authors": "Vyas CM, Manson JE, Sesso HD et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38244989/"
+  },
+  "drafted_at": "2026-10-06T04:27:22.369710+09:00",
+  "model": "claude_code:default"
+}
