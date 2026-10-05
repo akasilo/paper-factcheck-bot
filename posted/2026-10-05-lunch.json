@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-05",
+  "slot": "lunch",
+  "queue": {
+    "id": "2100-pet_food",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hva6eKRVEy",
+    "topic": "pet_food",
+    "topic_ko": "반려동물 사료",
+    "verdict": "bad",
+    "evidence_level": "review",
+    "source_text": "PMC12656978 전문",
+    "answer": "네, 리뷰는 콩류 많은 그레인프리 사료와 개 DCM 사이에 강한 연관이 있다고 결론 내렸고, 이런 사료를 먹은 개들에서 심실이 더 크고 수축 기능이 낮은 결과가 나왔다.",
+    "style": "geo",
+    "accent": "orange",
+    "product_hint": "AAFCO 기준을 충족한 곡물 포함 사료 (원재료 앞쪽에 콩류·감자가 많지 않은 것)",
+    "image_prompt": "a ceramic pet bowl filled with dry kibble pieces mixed with whole peas and lentils on a wooden floor",
+    "caveats": [
+      "서술형 리뷰 1편이라 체계적 종합이 아니며 연관성 결과입니다",
+      "정확한 기전(콩류·장내 미생물·담즙산 등)은 불명확합니다",
+      "사료를 바꾼 개들은 대부분 심장약 치료를 병행해 사료만의 효과를 구분하기 어렵습니다"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "그레인프리\n[[사료]]가\n개 {{심장}}에\n나쁠까요?"
+      },
+      {
+        "type": "body",
+        "text": "한 리뷰 논문이 콩류(완두·렌틸콩)나 감자가 많이 든 [[그레인프리 사료]]와 개 확장성 심근병증(DCM)의 관계를 정리했어요."
+      },
+      {
+        "type": "body",
+        "text": "골든 리트리버 연구에서 콩류 든 비전통 사료 그룹은 심장 수축 지표(EF·FS)가 [[낮고]] 심실 안지름이 {{더 컸어요}}."
+      },
+      {
+        "type": "body",
+        "text": "건강한 개 46마리 비교에서도 콩류 위주 사료 그룹은 평균 박출률이 낮고 수축기 심실 용적 지표가 높았어요."
+      },
+      {
+        "type": "body",
+        "text": "사료를 곡물 포함으로 바꾼 DCM 개 7마리는 모두 호전을 보였고, 리뷰는 [[되돌릴 수 있을 가능성]]을 언급했어요.",
+        "note": "※ 심장약 치료를 병행했고, 기전은 불명확해 추가 연구가 필요해요."
+      },
+      {
+        "type": "body",
+        "text": "오늘 사료 포장의 [[원재료 순서]]를 확인해 보세요. 콩류·감자가 앞쪽에 있다면 수의사와 사료 선택을 상담해 보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Role of Diet as a Predisposing Factor for Dilated Cardiomyopathy in Dogs: A Narrative Review.",
+          "journal": "Veterinary sciences",
+          "year": "2025",
+          "doi": "10.3390/vetsci12111106",
+          "authors": "Mornard L, Brasileiro ACM, Marcondes-Santos M"
+        }
+      }
+    ],
+    "images": [
+      "images/2100-pet_food/01.jpg",
+      "images/2100-pet_food/02.jpg",
+      "images/2100-pet_food/03.jpg",
+      "images/2100-pet_food/04.jpg",
+      "images/2100-pet_food/05.jpg",
+      "images/2100-pet_food/06.jpg",
+      "images/2100-pet_food/07.jpg"
+    ],
+    "instagram_caption": "그레인프리 사료, 우리 개 심장에 안 좋을 수 있을까요? 🐶\n\n2018년 미국 FDA가 조사를 시작한 뒤, 콩류나 감자가 많이 든 그레인프리 사료와 개 확장성 심근병증(DCM)의 관계가 주목받았어요. 한 리뷰 논문이 이 연구들을 정리했습니다.\n\n골든 리트리버 86마리 연구에서는 콩류가 든 비전통 사료 그룹이 심장 수축 지표가 낮고 심실 안지름이 더 컸어요. 건강한 개 46마리 비교에서도 비슷하게 박출률이 낮고 수축기 심실 용적 지표가 높았습니다.\n\n사료를 곡물 포함 사료로 바꾼 DCM 개 7마리는 모두 호전을 보였어요. 다만 대부분 심장약 치료를 함께 받았고, 정확한 기전은 아직 밝혀지지 않았어요. 이 결과는 연관성이며 추가 연구가 필요하다고 리뷰도 밝혔습니다.\n\n✅ 오늘의 행동: 사료 포장의 원재료 순서를 확인하고, 콩류·감자가 앞쪽에 있다면 수의사와 상담해 보세요.\n\n📄 출처: Mornard L, Brasileiro ACM, Marcondes-Santos M, Veterinary sciences (2025). DOI 10.3390/vetsci12111106\n\n#논문팩트체크 #paper_factcheck #그레인프리사료 #강아지사료 #반려견건강 #강아지심장 #확장성심근병증 #반려동물 #사료고르기 #골든리트리버 #수의학 #펫푸드\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.\n\n🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요",
+    "threads_text": "그레인프리 사료, 개 심장에 안 좋을 수 있을까?\n\n한 리뷰 논문을 보니 콩류가 많이 든 그레인프리 사료를 먹은 개들에서 심실이 더 크고 심장 수축 지표가 낮은 결과가 보고됐대요. 사료를 곡물 포함 사료로 바꾼 DCM 개 7마리는 모두 호전을 보였고요. 다만 심장약 치료를 병행했고 기전은 아직 불명확해서, 연관성 수준의 결과예요. 여러분은 사료 원재료 순서 확인해 보셨나요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Role of Diet as a Predisposing Factor for Dilated Cardiomyopathy in Dogs: A Narrative Review.",
+      "journal": "Veterinary sciences",
+      "year": "2025",
+      "doi": "10.3390/vetsci12111106",
+      "pmid": "41295744",
+      "authors": "Mornard L, Brasileiro ACM, Marcondes-Santos M",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41295744/"
+    },
+    "drafted_at": "2026-10-01T01:32:18.736707+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-10-02T08:12:43.098610+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "18088984286694241",
+  "instagram_posted_at": "2026-10-05T12:13:03.860350+09:00",
+  "instagram_reel_id": "18128957074796925",
+  "instagram_reel_posted_at": "2026-10-05T12:13:54.173072+09:00",
+  "threads_post_id": "18110915033124644",
+  "threads_posted_at": "2026-10-05T12:14:51.848545+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DeGODKmkgq8",
+  "threads_reply_id": "18104081024371791",
+  "youtube_video_id": "sbKYUaJQhvY",
+  "youtube_url": "https://youtube.com/shorts/sbKYUaJQhvY",
+  "youtube_posted_at": "2026-10-05T12:15:10.721328+09:00",
+  "youtube_privacy": "public",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/sbKYUaJQhvY/maxresdefault.jpg",
+  "completed_at": "2026-10-05T12:15:13.299382+09:00"
+}
