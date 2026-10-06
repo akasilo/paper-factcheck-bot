@@ -1,0 +1,82 @@
+{
+  "id": "2115-electric_toothbrush",
+  "approved": false,
+  "link": "",
+  "topic": "electric_toothbrush",
+  "topic_ko": "전동칫솔",
+  "verdict": "good",
+  "evidence_level": "meta-analysis",
+  "source_text": "PMC10829363 전문",
+  "answer": "이 메타분석에서 회전진동형 전동칫솔은 수동칫솔보다 잇몸 출혈 부위를 52%, 플라그를 19% 더 줄였고, 잇몸염이 건강 상태로 돌아간 비율도 72% 대 21%로 높았다.",
+  "style": "paper",
+  "accent": "blue",
+  "product_hint": "타이머나 압력 감지 기능이 있는 회전진동형 전동칫솔",
+  "image_prompt": "a white electric toothbrush with a small round brush head standing upright on a clean bathroom counter",
+  "caveats": [
+    "모든 시험이 한 칫솔 제조사 보관소 자료이고 연구비도 그 회사가 지원함",
+    "이용자 눈가림이 불가능했고 체계적 문헌고찰 없이 진행됨",
+    "6개월 이내 단기 결과라 장기 효과는 알 수 없음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "전동칫솔,\n[[값어치]]\n있을까?\n잇몸에 답이"
+    },
+    {
+      "type": "body",
+      "text": "잇몸염이 있던 사람 중 건강 상태로 돌아간 비율은\n회전진동형 전동칫솔 [[72%]]\n음파형 54%, 수동칫솔 21%였어요.",
+      "note": "※ 6개월 이내 무작위 대조 시험 21편 종합"
+    },
+    {
+      "type": "body",
+      "text": "출혈 부위는 수동칫솔보다 [[52%]], 음파형보다 29% 더 줄었어요.\n플라그는 각각 19%, 5% 더 적었어요."
+    },
+    {
+      "type": "body",
+      "text": "음파형도 수동칫솔보다는 낫습니다.\n출혈 32%, 플라그 13% 감소였어요.\n다만 회전진동형과의 차이는 플라그에서 작았어요."
+    },
+    {
+      "type": "body",
+      "text": "{{연구비를 칫솔 제조사가 지원}}했고, 자료도 그 회사 보관소 연구만 모았어요.\n그래서 해석은 조심해서 봐야 해요.",
+      "note": "※ 모든 시험이 검사자 눈가림, 칫솔 종류는 숨기지 못함"
+    },
+    {
+      "type": "body",
+      "text": "칫솔을 바꾸기 전에, 오늘은 [[2분 이상, 하루 두 번]] 꼼꼼히 닦는지부터 점검해 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "A Meta-analysis Comparing Toothbrush Technologies on Gingivitis and Plaque.",
+        "journal": "International dental journal",
+        "year": "2024",
+        "doi": "10.1016/j.identj.2023.06.009",
+        "authors": "Zou Y, Grender J, Adam R et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2115-electric_toothbrush/01.jpg",
+    "images/2115-electric_toothbrush/02.jpg",
+    "images/2115-electric_toothbrush/03.jpg",
+    "images/2115-electric_toothbrush/04.jpg",
+    "images/2115-electric_toothbrush/05.jpg",
+    "images/2115-electric_toothbrush/06.jpg",
+    "images/2115-electric_toothbrush/07.jpg"
+  ],
+  "instagram_caption": "전동칫솔, 정말 값어치가 있을까?\n\n한 메타분석(여러 시험을 합친 분석)에 따르면, 6개월 이내 무작위 대조 시험을 종합했을 때 회전진동형 전동칫솔 사용자 중 잇몸염에서 건강 상태로 돌아간 비율은 72%였어요. 음파형은 54%, 수동칫솔은 21%였습니다.\n\n잇몸 출혈 부위는 수동칫솔보다 52%, 음파형보다 29% 더 줄었고, 플라그는 각각 19%, 5% 더 적었어요. 음파형도 수동칫솔보다는 출혈 32%, 플라그 13% 더 줄었습니다.\n\n주의할 점도 있어요. 분석에 쓰인 시험은 모두 한 칫솔 제조사 보관소의 연구였고, 연구비도 그 회사가 지원했어요. 칫솔 종류는 숨길 수 없어 이용자 눈가림도 안 됐습니다.\n\n논문도 숙련된 사람은 수동칫솔로도 꼼꼼히 닦을 수 있다고 봤어요. 다만 실제로는 쉽지 않다고 해요.\n\n✅ 오늘의 행동: 하루 두 번, 2분 이상 꼼꼼히 닦고 있는지 먼저 점검해 보세요.\n\n📄 출처: Zou Y, Grender J, Adam R 외, International Dental Journal (2024). DOI 10.1016/j.identj.2023.06.009\n\n#논문팩트체크 #paper_factcheck #전동칫솔 #수동칫솔 #칫솔추천 #잇몸건강 #잇몸염 #플라그 #양치습관 #구강관리 #치아관리 #메타분석\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "전동칫솔, 정말 값어치가 있을까?\n\n한 메타분석을 보니 회전진동형 전동칫솔은 수동칫솔보다 잇몸 출혈 부위를 52%, 플라그를 19% 더 줄였어요. 잇몸염이 건강 상태로 돌아간 비율도 72% 대 21%였고, 음파형은 54%였습니다. 다만 연구비를 칫솔 제조사가 지원했고 자료도 그 회사 보관소 연구라 조심해서 봐야 해요. 여러분은 전동칫솔 쓰고 계세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "A Meta-analysis Comparing Toothbrush Technologies on Gingivitis and Plaque.",
+    "journal": "International dental journal",
+    "year": "2024",
+    "doi": "10.1016/j.identj.2023.06.009",
+    "pmid": "37481415",
+    "authors": "Zou Y, Grender J, Adam R et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37481415/"
+  },
+  "drafted_at": "2026-10-07T01:56:56.441972+09:00",
+  "model": "claude_code:default"
+}

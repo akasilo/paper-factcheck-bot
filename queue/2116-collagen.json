@@ -1,0 +1,81 @@
+{
+  "id": "2116-collagen",
+  "approved": false,
+  "link": "",
+  "topic": "collagen",
+  "topic_ko": "콜라겐",
+  "verdict": "good",
+  "evidence_level": "meta-analysis",
+  "source_text": "PMC11561013 전문",
+  "answer": "한 리뷰 논문에 따르면 운동과 함께 콜라겐 펩타이드를 8주 이상 먹으면 위약보다 제지방량(효과 크기 0.48)과 최대 근력(0.19)이 조금 더 늘었지만, 근거 확실성은 낮음~중간 수준이었다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "저분자 콜라겐 펩타이드 (1회 15g 안팎 섭취량 확인)",
+  "image_prompt": "a small bowl of white collagen peptide powder with a measuring scoop on a light wooden table",
+  "caveats": [
+    "근거 확실성이 대부분 낮거나 매우 낮음",
+    "힘줄 단면적 결과는 연구 1편을 제외하면 유의성이 사라짐",
+    "참가자 대부분이 남성(613/768명)이고 체성분은 간이 측정(BIA)이 많았음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "콜라겐 먹으면\n[[근육]]에도\n도움이 될까?\n운동과 함께라면"
+    },
+    {
+      "type": "body",
+      "text": "운동하는 성인 768명, 무작위 대조 시험 19편을 종합한 리뷰입니다. 콜라겐 펩타이드를 운동과 함께 먹은 쪽이 [[제지방량]]이 더 늘었다는 결과가 나왔어요. (효과 크기 0.48)"
+    },
+    {
+      "type": "body",
+      "text": "근육 구조(두께·부피 등)와 힘줄 단면적도 위약보다 더 늘었다는 결과였습니다. 다만 힘줄은 연구 1편을 빼면 통계적 유의성이 사라졌어요."
+    },
+    {
+      "type": "body",
+      "text": "최대 근력은 위약보다 {{조금}} 높았습니다. 효과 크기 0.19로 작은 편이에요. 근육 손상 운동 48시간 뒤 점프 회복도 나았지만, 근육통 변화는 없었습니다."
+    },
+    {
+      "type": "body",
+      "text": "근거 확실성은 제지방량이 [[중간]], 나머지는 낮음~매우 낮음입니다. 힘줄의 기계적 성질(탄성·뻣뻣함)은 차이가 없었고, 유청단백질 비교 연구에선 유청이 근육 증가에 더 낫다고 보고됐어요.",
+      "note": "※ 대부분 남성 참가자였고 체성분 측정은 간이 방식이 많았어요."
+    },
+    {
+      "type": "body",
+      "text": "먹는다면 논문에서 쓰인 [[하루 15g 안팎, 8주 이상]]이 기준이에요. 보충제보다 운동과 단백질 섭취가 먼저인 점도 기억하세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Impact of Collagen Peptide Supplementation in Combination with Long-Term Physical Training on Strength, Musculotendinous Remodeling, Functional Recovery, and Body Composition in Healthy Adults: A Systematic Review with Meta-analysis.",
+        "journal": "Sports medicine (Auckland, N.Z.)",
+        "year": "2024",
+        "doi": "10.1007/s40279-024-02079-0",
+        "authors": "Bischof K, Moitzi AM, Stafilidis S et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2116-collagen/01.jpg",
+    "images/2116-collagen/02.jpg",
+    "images/2116-collagen/03.jpg",
+    "images/2116-collagen/04.jpg",
+    "images/2116-collagen/05.jpg",
+    "images/2116-collagen/06.jpg",
+    "images/2116-collagen/07.jpg"
+  ],
+  "instagram_caption": "콜라겐 먹으면 근육에도 도움이 될까? 운동과 함께라면요.\n\n운동하는 건강한 성인 768명이 참여한 무작위 대조 시험 19편을 종합한 리뷰 논문을 봤어요. 콜라겐 펩타이드를 운동과 함께 먹은 쪽이 위약보다 제지방량이 더 늘었다는 결과(효과 크기 0.48)가 나왔고, 이 항목의 근거 확실성은 '중간'이었어요.\n\n근육 구조와 힘줄 단면적도 더 늘었고, 최대 근력도 조금 높았습니다(효과 크기 0.19). 근육 손상 운동 48시간 뒤 점프 회복에서도 나은 결과가 있었어요. 반면 힘줄의 기계적 성질과 근육통에서는 차이가 없었습니다.\n\n주의할 점도 있어요. 힘줄 관련 결과는 근거 확실성이 매우 낮았고, 나머지도 대체로 낮았습니다. 또 다른 연구에서는 유청단백질이 근육 증가에 더 효과적이라고 보고됐어요.\n\n👉 오늘의 행동: 먹는다면 논문에서 쓰인 하루 15g 안팎, 8주 이상이 기준이에요. 보충제보다 운동과 충분한 단백질 섭취가 먼저입니다.\n\n📄 출처: Bischof K, Moitzi AM, Stafilidis S 외, Sports Medicine (2024). DOI 10.1007/s40279-024-02079-0\n\n#논문팩트체크 #paper_factcheck #콜라겐 #콜라겐펩타이드 #근력운동 #근육 #제지방량 #힘줄 #운동보충제 #단백질 #헬스 #운동영양 #건강정보 #메타분석\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "콜라겐 먹으면 근육에도 도움이 될까?\n\n운동하는 성인 768명을 종합한 리뷰 논문을 보니, 콜라겐 펩타이드를 운동과 함께 먹은 쪽이 제지방량이 더 늘었다는 결과가 나왔어요(효과 크기 0.48, 확실성 중간). 최대 근력은 작게 높았고(0.19), 근육통은 차이가 없었습니다. 힘줄 결과는 근거 확실성이 매우 낮았고, 유청단백질이 근육 증가에는 더 낫다는 연구도 있었어요. 여러분은 콜라겐 챙겨 드시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Impact of Collagen Peptide Supplementation in Combination with Long-Term Physical Training on Strength, Musculotendinous Remodeling, Functional Recovery, and Body Composition in Healthy Adults: A Systematic Review with Meta-analysis.",
+    "journal": "Sports medicine (Auckland, N.Z.)",
+    "year": "2024",
+    "doi": "10.1007/s40279-024-02079-0",
+    "pmid": "39060741",
+    "authors": "Bischof K, Moitzi AM, Stafilidis S et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39060741/"
+  },
+  "drafted_at": "2026-10-07T01:57:24.413585+09:00",
+  "model": "claude_code:default"
+}
