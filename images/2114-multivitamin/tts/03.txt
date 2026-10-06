@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|클리닉 하위 집단(오백칠십삼 명)에서는 이 년간 기억력(일화 기억) 변화가 가짜약보다 더 좋았어요. 차이는 영점일이 표준편차 단위였어요.

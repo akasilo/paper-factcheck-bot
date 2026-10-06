@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|암 치료 중이라면 임의로 시작하지 말고, 치료팀, 영양 전문가와 내 단백질 섭취량부터 상의해 보세요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|심각한 부작용은 보고되지 않았습니다. 근육량 개선은 십삼 편 중 십일 편에서 보였지만 대부분 측정 방식 때문에 비뚤림 위험이 높았습니다. 참고로, 삶의 질 연구는 모두 비뚤림 위험이 높았고, 연구 규모도 충분하지 않았다고 합니다.

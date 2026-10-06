@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|보충제를 먹은 환자는 대조군보다 체중이 평균 일점사오 킬로그램 덜 빠졌습니다(구십오 퍼센트 신뢰구간 영점사이 킬로그램에서 이점사팔 킬로그램). 다만 연구마다 결과 차이가 컸습니다.

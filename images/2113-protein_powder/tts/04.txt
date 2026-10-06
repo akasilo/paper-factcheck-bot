@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|삶의 질은 차이가 관찰되지 않았습니다. 반면 질 높은 연구만 보면 근력은 오 편 모두, 입원율은 사 편 중 삼 편에서 좋은 방향이었습니다.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|암 치료 중 고단백 보충제가 도움이 될까? 무작위 대조 시험 삼십오 편(환자 삼천칠백일 명)을 종합한 리뷰의 답은 '체중 감소가 덜했다'입니다.
