@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-06",
+  "slot": "evening",
+  "queue": {
+    "id": "2102-vitamin_d",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hCXKWuBFtc",
+    "topic": "vitamin_d",
+    "topic_ko": "비타민D",
+    "verdict": "mixed",
+    "evidence_level": "rct",
+    "source_text": "PMC11978796 전문",
+    "answer": "비타민D3 2000IU를 5.3년간 매일 먹어도 일반 고령 성인의 제2형 당뇨 발생은 위약군과 유의한 차이가 없었다(위험비 0.91). 다만 4개 시험 메타분석에서는 11% 낮았다.",
+    "style": "paper",
+    "accent": "green",
+    "product_hint": "비타민D 보충제",
+    "image_prompt": "a small amber glass bottle of yellow softgel vitamin capsules spilled beside it on a plain light surface",
+    "caveats": [
+      "참가자 대부분이 이미 혈중 비타민D가 충분한 수준이어서 결핍자에게 적용할 수 있는지는 알 수 없음",
+      "당뇨 발생이 예상보다 적어 통계적 힘이 낮았고, 메타분석 4개 시험 중 2개는 당뇨 전단계 환자 대상이었음",
+      "비만 여부에 따른 차이는 메타분석의 하위집단 분석 결과이며 확정된 결론이 아님"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "매일 먹는\n[[비타민D]]\n{{당뇨 위험}}\n줄어들까요?"
+      },
+      {
+        "type": "body",
+        "text": "미국 고령 성인 약 2만 2천 명을 대상으로 한 무작위 대조 시험에서 비타민D3 2000IU를 매일 5.3년간 먹었더니, [[제2형 당뇨 발생]]은 위약군과 뚜렷한 차이가 없었어요."
+      },
+      {
+        "type": "body",
+        "text": "1000명당 1년 발생은 비타민D군 3.98명, 위약군 4.37명이었어요. 위험비는 0.91(신뢰구간 0.76~1.09)로 통계적으로 유의하지 않았어요."
+      },
+      {
+        "type": "body",
+        "text": "이 시험을 포함한 4개 시험을 합친 메타분석에서는 위험이 11% 낮았어요(위험비 0.89). 다만 개별 시험은 모두 유의하지 않았고, 비만(BMI 30 이상)에서는 효과가 없었어요."
+      },
+      {
+        "type": "body",
+        "text": "2년 뒤 HbA1c, 인슐린 저항성 같은 혈당 관련 지표도 두 군 사이에 유의한 차이가 없었어요. 저자들은 일반 고령 성인의 당뇨 예방 목적 복용은 뒷받침되지 않는다고 결론냈어요.",
+        "note": "※ 참가자 대부분은 혈중 비타민D가 이미 충분했고, 당뇨 발생도 예상보다 적었어요."
+      },
+      {
+        "type": "body",
+        "text": "당뇨 예방이 목적이라면 [[보충제에 기대기 전에]] 식단·체중·운동부터 챙기고, 복용이 궁금하면 혈중 수치를 확인해 의사·약사와 상의해 보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Vitamin D supplementation vs. placebo and incident type 2 diabetes in an ancillary study of the randomized Vitamin D and Omega-3 Trial.",
+          "journal": "Nature communications",
+          "year": "2025",
+          "doi": "10.1038/s41467-025-58721-6",
+          "authors": "Tobias DK, Pradhan AD, Duran EK et al."
+        }
+      }
+    ],
+    "images": [
+      "images/2102-vitamin_d/01.jpg",
+      "images/2102-vitamin_d/02.jpg",
+      "images/2102-vitamin_d/03.jpg",
+      "images/2102-vitamin_d/04.jpg",
+      "images/2102-vitamin_d/05.jpg",
+      "images/2102-vitamin_d/06.jpg",
+      "images/2102-vitamin_d/07.jpg"
+    ],
+    "instagram_caption": "비타민D 매일 먹으면 당뇨 위험이 줄어들까요? 💊\n\n미국 고령 성인 22,220명을 대상으로 한 무작위 대조 시험(VITAL)의 부수 분석에서, 비타민D3 2000IU를 매일 약 5.3년간 먹은 그룹과 위약 그룹의 제2형 당뇨 발생을 비교했어요. 1000명당 1년 발생은 3.98명 vs 4.37명, 위험비 0.91(신뢰구간 0.76~1.09)로 통계적으로 유의한 차이는 없었어요.\n\n같은 연구팀이 비슷한 용량의 시험 4개를 합쳐 메타분석을 했더니 위험이 11% 낮았어요(위험비 0.89). 그런데 개별 시험은 하나도 유의하지 않았고, 비만(BMI 30 이상)인 사람에서는 효과가 보이지 않았어요.\n\n2년 뒤 HbA1c, 인슐린 저항성 등 혈당 관련 지표도 두 그룹 사이에 유의한 차이가 없었어요. 저자들은 일반 고령 성인에게 당뇨 예방 목적의 일상적 복용은 뒷받침되지 않는다고 결론냈어요.\n\n※ 참가자 대부분은 혈중 비타민D가 이미 충분했고, 당뇨 발생이 예상보다 적어 통계적 힘이 다소 낮았어요. 다른 연령대에 그대로 적용할 수 있는지도 알 수 없어요.\n\n✅ 오늘의 행동: 당뇨 예방이 목적이라면 보충제에 기대기 전에 식단·체중·운동부터 챙기세요. 복용이 궁금하면 혈중 수치를 확인해 의사·약사와 상의해 보세요.\n\n📄 출처: Tobias DK, Pradhan AD, Duran EK 외, Nature Communications (2025). DOI 10.1038/s41467-025-58721-6\n\n#논문팩트체크 #paper_factcheck #비타민D #비타민D보충제 #제2형당뇨 #당뇨예방 #혈당관리 #영양제 #영양제팩트체크 #건강정보 #무작위대조시험 #메타분석 #고령건강\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.\n\n🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요",
+    "threads_text": "비타민D 먹으면 당뇨 위험이 줄어들까?\n\n미국 고령 성인 2만 2천 명이 비타민D3 2000IU를 5.3년간 매일 먹은 시험을 보니, 당뇨 발생은 위약군과 유의한 차이가 없었어요(위험비 0.91). 다만 4개 시험을 합친 메타분석에서는 11% 낮았는데, 개별 시험은 모두 유의하지 않았고 비만인 경우엔 효과가 없었어요. 저자들은 일반 고령 성인의 당뇨 예방용 복용은 뒷받침되지 않는다고 봤어요. 여러분은 비타민D 챙겨 드세요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Vitamin D supplementation vs. placebo and incident type 2 diabetes in an ancillary study of the randomized Vitamin D and Omega-3 Trial.",
+      "journal": "Nature communications",
+      "year": "2025",
+      "doi": "10.1038/s41467-025-58721-6",
+      "pmid": "40199888",
+      "authors": "Tobias DK, Pradhan AD, Duran EK et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40199888/"
+    },
+    "drafted_at": "2026-10-02T02:19:56.951837+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-10-06T21:04:41.261412+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "18128523349889356",
+  "instagram_posted_at": "2026-10-06T21:05:25.855025+09:00",
+  "instagram_reel_id": "17881578369534005",
+  "instagram_reel_posted_at": "2026-10-06T21:06:14.865309+09:00",
+  "threads_post_id": "18093673199674974",
+  "threads_posted_at": "2026-10-06T21:07:28.847574+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DeJvyCViNBy",
+  "threads_reply_id": "17907825381557369",
+  "youtube_video_id": "MyRuxavnSg8",
+  "youtube_url": "https://youtube.com/shorts/MyRuxavnSg8",
+  "youtube_posted_at": "2026-10-06T21:07:46.090784+09:00",
+  "youtube_privacy": "public",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/MyRuxavnSg8/maxresdefault.jpg",
+  "completed_at": "2026-10-06T21:07:49.243225+09:00"
+}

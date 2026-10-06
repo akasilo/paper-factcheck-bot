@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/40427906/"
   },
   "drafted_at": "2026-10-03T23:55:48.045222+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "skipped": true
 }

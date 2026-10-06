@@ -1,7 +1,7 @@
 {
   "id": "2112-sweetener",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hCX8DD6Wse",
   "topic": "sweetener",
   "topic_ko": "인공감미료",
   "verdict": "mixed",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/37630817/"
   },
   "drafted_at": "2026-10-05T00:32:18.783980+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-10-06T21:04:41.263373+09:00"
 }
