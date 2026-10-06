@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-07",
+  "slot": "morning",
+  "queue": {
+    "id": "2103-magnesium",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hCXMz6q2i4",
+    "topic": "magnesium",
+    "topic_ko": "마그네슘",
+    "verdict": "mixed",
+    "evidence_level": "meta-analysis",
+    "source_text": "PMC12529988 전문",
+    "answer": "한 리뷰 논문에서 마그네슘 보충은 위약보다 수축기 약 -2.8, 이완기 약 -2.1 mmHg 낮았지만 효과는 작았고, 혈압약 복용 고혈압 환자와 혈중 마그네슘이 낮은 사람에게서 더 컸으며 정상 혈압군에서는 유의하지 않았다.",
+    "style": "paper",
+    "accent": "green",
+    "product_hint": "마그네슘 글리시네이트 등 성분과 함량(원소 마그네슘 기준)이 명확히 표시된 제품",
+    "image_prompt": "a small glass jar of white magnesium supplement capsules on a plain light wooden table",
+    "caveats": [
+      "연구 간 이질성이 커서 결과 해석에 주의가 필요함",
+      "용량-반응 관계를 확인하지 못했고 마그네슘 제형별 비교는 소수 연구에 기반함",
+      "혈중 마그네슘 수치는 체내 저장량을 정확히 반영하지 못할 수 있음"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "마그네슘\n[[영양제]]로\n{{혈압}}이\n내려갈까요?"
+      },
+      {
+        "type": "body",
+        "text": "무작위 대조 시험 38건(2,709명)을 종합한 리뷰에서 마그네슘을 먹은 쪽은 위약보다 수축기 혈압이 [[약 -2.8 mmHg]], 이완기 혈압이 약 -2.1 mmHg 낮았어요.",
+        "note": "중간 용량 365mg, 중간 기간 12주"
+      },
+      {
+        "type": "body",
+        "text": "다만 연구진도 임상적으로는 '크지 않은 효과'라고 했어요. 숫자로 보면 작은 변화예요."
+      },
+      {
+        "type": "body",
+        "text": "차이는 사람마다 달랐어요. 혈압약을 먹는 고혈압 환자는 수축기 -7.68, 혈중 마그네슘이 낮은 사람은 -5.97 mmHg 낮아졌어요. 정상 혈압 그룹은 통계적으로 유의하지 않았어요."
+      },
+      {
+        "type": "body",
+        "text": "용량이 많을수록 더 내려가는 관계는 확인되지 않았고, 연구마다 결과 편차(이질성)가 커서 해석에 주의가 필요해요.",
+        "note": "※ 혈중 수치는 몸속 저장량을 과소평가할 수 있어요"
+      },
+      {
+        "type": "body",
+        "text": "영양제를 사기 전에 [[건강검진 결과]]를 확인하고, 혈압약을 먹고 있다면 병원·약국과 먼저 상의하세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Magnesium Supplementation and Blood Pressure: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+          "journal": "Hypertension (Dallas, Tex. : 1979)",
+          "year": "2025",
+          "doi": "10.1161/HYPERTENSIONAHA.125.25129",
+          "authors": "Argeros Z, Xu X, Bhandari B et al."
+        }
+      }
+    ],
+    "images": [
+      "images/2103-magnesium/01.jpg",
+      "images/2103-magnesium/02.jpg",
+      "images/2103-magnesium/03.jpg",
+      "images/2103-magnesium/04.jpg",
+      "images/2103-magnesium/05.jpg",
+      "images/2103-magnesium/06.jpg",
+      "images/2103-magnesium/07.jpg"
+    ],
+    "instagram_caption": "마그네슘 영양제, 혈압을 정말 낮춰줄까?\n\n무작위 대조 시험 38건(2,709명)을 종합한 리뷰 논문을 살펴봤어요. 마그네슘을 먹은 쪽은 위약보다 수축기 혈압이 약 -2.8 mmHg, 이완기 혈압이 약 -2.1 mmHg 낮았어요. 연구진은 임상적으로 효과가 크지 않다고 평가했어요.\n\n흥미로운 건 대상에 따른 차이예요. 혈압약을 복용하는 고혈압 환자는 수축기 -7.68 mmHg, 혈중 마그네슘이 낮은 사람은 -5.97 mmHg 낮아졌다는 결과였어요. 반면 정상 혈압 그룹에서는 통계적으로 유의한 차이가 없었어요.\n\n용량이 많을수록 더 내려가는 관계는 확인되지 않았고, 연구마다 결과 차이가 커서 조심스럽게 해석해야 해요. 혈중 마그네슘 수치는 몸속 저장량을 정확히 반영하지 못할 수 있다는 한계도 있어요.\n\n오늘의 행동: 영양제를 고르기 전에 건강검진 결과를 확인하고, 혈압약을 복용 중이라면 병원이나 약국과 먼저 상의해 보세요.\n\n📄 출처: Argeros Z, Xu X, Bhandari B et al., Hypertension (2025). DOI 10.1161/HYPERTENSIONAHA.125.25129\n\n#논문팩트체크 #paper_factcheck #마그네슘 #마그네슘영양제 #혈압 #고혈압 #영양제 #건강정보 #메타분석 #무작위대조시험 #건강습관 #영양제추천\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.\n\n🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요",
+    "threads_text": "마그네슘 영양제, 혈압을 정말 낮춰줄까?\n\n무작위 대조 시험 38건을 종합한 리뷰를 보니 위약보다 수축기 약 -2.8, 이완기 약 -2.1 mmHg 낮았어요. 연구진도 효과는 크지 않다고 했어요. 혈압약을 먹는 고혈압 환자나 혈중 마그네슘이 낮은 사람에게서는 더 컸고, 정상 혈압군은 유의하지 않았어요. 연구마다 편차도 컸고요. 여러분은 마그네슘 챙겨 드시나요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Magnesium Supplementation and Blood Pressure: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+      "journal": "Hypertension (Dallas, Tex. : 1979)",
+      "year": "2025",
+      "doi": "10.1161/HYPERTENSIONAHA.125.25129",
+      "pmid": "41000008",
+      "authors": "Argeros Z, Xu X, Bhandari B et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41000008/"
+    },
+    "drafted_at": "2026-10-02T02:20:32.691188+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-10-06T21:04:41.261798+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "18345221701254829",
+  "instagram_posted_at": "2026-10-07T08:13:27.413004+09:00",
+  "instagram_reel_id": "18097455170344460",
+  "instagram_reel_posted_at": "2026-10-07T08:14:06.738432+09:00",
+  "threads_post_id": "17878859271554762",
+  "threads_posted_at": "2026-10-07T08:15:12.035560+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DeK8NAJjV3J",
+  "threads_reply_id": "17994198063024826",
+  "youtube_video_id": "ePVEsLZwn0E",
+  "youtube_url": "https://youtube.com/shorts/ePVEsLZwn0E",
+  "youtube_posted_at": "2026-10-07T08:15:30.126641+09:00",
+  "youtube_privacy": "public",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/ePVEsLZwn0E/maxresdefault.jpg",
+  "completed_at": "2026-10-07T08:15:32.736540+09:00"
+}
