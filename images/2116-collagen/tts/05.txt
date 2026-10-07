@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|근거 확실성은 제지방량이 중간, 나머지는 낮음~매우 낮음입니다. 힘줄의 기계적 성질(탄성, 뻣뻣함)은 차이가 없었고, 유청단백질 비교 연구에선 유청이 근육 증가에 더 낫다고 보고됐어요. 참고로, 대부분 남성 참가자였고 체성분 측정은 간이 방식이 많았어요.

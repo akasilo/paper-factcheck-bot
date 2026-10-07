@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|먹는다면 논문에서 쓰인 하루 십오 그램 안팎, 팔 주 이상이 기준이에요. 보충제보다 운동과 단백질 섭취가 먼저인 점도 기억하세요.

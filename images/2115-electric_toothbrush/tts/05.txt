@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|연구비를 칫솔 제조사가 지원했고, 자료도 그 회사 보관소 연구만 모았어요. 그래서 해석은 조심해서 봐야 해요. 참고로, 모든 시험이 검사자 눈가림, 칫솔 종류는 숨기지 못해요.

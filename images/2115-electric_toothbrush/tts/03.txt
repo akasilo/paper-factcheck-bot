@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|출혈 부위는 수동칫솔보다 오십이 퍼센트, 음파형보다 이십구 퍼센트 더 줄었어요. 플라그는 각각 십구 퍼센트, 오 퍼센트 더 적었어요.

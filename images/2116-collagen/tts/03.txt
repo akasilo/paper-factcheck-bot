@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|근육 구조(두께, 부피 등)와 힘줄 단면적도 위약보다 더 늘었다는 결과였습니다. 다만 힘줄은 연구 일 편을 빼면 통계적 유의성이 사라졌어요.

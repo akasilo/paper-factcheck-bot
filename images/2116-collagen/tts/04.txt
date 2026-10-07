@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|최대 근력은 위약보다 조금 높았습니다. 효과 크기 영점일구 로 작은 편이에요. 근육 손상 운동 마흔여덟 시간 뒤 점프 회복도 나았지만, 근육통 변화는 없었습니다.
