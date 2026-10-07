@@ -1,0 +1,81 @@
+{
+  "id": "2117-fabric_softener",
+  "approved": false,
+  "link": "",
+  "topic": "fabric_softener",
+  "topic_ko": "섬유유연제·세탁세제",
+  "verdict": "mixed",
+  "evidence_level": "experimental",
+  "source_text": "PMC11809074 전문",
+  "answer": "저온 세탁에서는 세균이 줄지 않고 오히려 늘었고, 덥고 습한 조건(31.8℃, 습도 80%)에서 말리면 빨래 냄새가 크게 심해졌다.",
+  "style": "soft",
+  "accent": "blue",
+  "product_hint": "무향·저자극 섬유유연제",
+  "image_prompt": "a plain white cotton t-shirt hanging on a wooden drying rack beside a front-loading washing machine",
+  "caveats": [
+    "온도와 습도 중 어느 쪽이 악취 증가의 원인인지 분리해 검증하지 않음",
+    "합성섬유 티셔츠 대상 실험이라 다른 소재에 그대로 적용하기 어려움",
+    "세균의 생존·대사 활성은 추가 확인이 필요하다고 논문이 밝힘"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "저온 세탁\n[[빨래]] {{냄새}}\n왜 더 날까?"
+    },
+    {
+      "type": "body",
+      "text": "한 연구에서 합성섬유 티셔츠를 입고·빨고·말리며 냄새와 세균을 비교했어요. 세탁하면 땀 냄새 성분은 줄었지만, 막이 온전한 [[세균은 오히려 늘었습니다]]."
+    },
+    {
+      "type": "body",
+      "text": "피부에 사는 세균은 줄고, 세탁기와 물에서 온 세균이 옷으로 옮겨왔어요. 이때 바이오필름(세균 막) 형성에 관여하는 유전자도 많아졌다고 해요."
+    },
+    {
+      "type": "body",
+      "text": "건조 조건에 따라 차이가 컸어요. 24.5℃·습도 50%에서는 냄새 강도가 줄었지만, 31.8℃·습도 80%에서는 {{악취가 크게 늘었습니다}}."
+    },
+    {
+      "type": "body",
+      "text": "입은 옷이든 안 입은 옷이든 습한 건조에서 냄새 강도가 올라갔어요. 세탁으로 사라졌던 쉰내 성분(메틸부탄산)도 다시 나타났습니다.",
+      "note": "※ 온도와 습도 중 무엇이 원인인지는 따로 검증하지 않았어요."
+    },
+    {
+      "type": "body",
+      "text": "빨래는 세탁이 끝나면 바로 꺼내 [[바람 잘 통하고 건조한 곳]]에서 빨리 말려 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Unravelling the hidden side of laundry: malodour, microbiome and pathogenome.",
+        "journal": "BMC biology",
+        "year": "2025",
+        "doi": "10.1186/s12915-025-02147-5",
+        "authors": "Díez López C, Van Herreweghen F, De Pessemier B et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2117-fabric_softener/01.jpg",
+    "images/2117-fabric_softener/02.jpg",
+    "images/2117-fabric_softener/03.jpg",
+    "images/2117-fabric_softener/04.jpg",
+    "images/2117-fabric_softener/05.jpg",
+    "images/2117-fabric_softener/06.jpg",
+    "images/2117-fabric_softener/07.jpg"
+  ],
+  "instagram_caption": "저온 세탁하면 빨래 냄새가 더 날까요?\n\n최근 BMC Biology에 실린 연구가 합성섬유 티셔츠로 입기·세탁·건조 전 과정을 살펴봤어요. 세탁하면 땀 냄새 성분은 줄었지만, 막이 온전한 세균의 양은 오히려 늘었습니다.\n\n피부에 사는 세균이 줄어든 자리에는 세탁기와 물에서 온 세균이 들어왔고, 바이오필름 형성에 관여하는 유전자도 많아졌다고 해요.\n\n건조 환경의 영향도 컸어요. 24.5℃·습도 50%에서는 냄새 강도가 줄었지만, 31.8℃·습도 80%에서는 악취가 크게 늘었습니다. 다만 온도와 습도 중 무엇이 원인인지는 따로 확인하지 않았고, 이 결과는 논문 1편의 결과예요.\n\n✅ 오늘의 행동: 세탁이 끝나면 바로 꺼내 바람 잘 통하고 건조한 곳에서 빨리 말려 보세요.\n\n📄 출처: Díez López C 외, BMC Biology (2025). DOI 10.1186/s12915-025-02147-5\n\n#논문팩트체크 #paper_factcheck #빨래냄새 #세탁꿀팁 #빨래건조 #실내건조 #세탁기 #세탁습관 #쉰내 #생활상식 #살림꿀팁 #미생물\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "저온 세탁하면 빨래 냄새가 더 날까?\n\n한 연구에서 티셔츠를 입고·빨고·말리며 비교했어요. 세탁하면 땀 냄새 성분은 줄었는데, 막이 온전한 세균은 오히려 늘었대요. 특히 31.8℃·습도 80%에서 말리자 악취가 크게 늘었고, 24.5℃·습도 50%에서는 냄새 강도가 줄었습니다. 논문 1편의 결과이고, 온도와 습도 중 원인은 따로 가리지 못했어요. 여러분은 빨래를 어디서 말리세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Unravelling the hidden side of laundry: malodour, microbiome and pathogenome.",
+    "journal": "BMC biology",
+    "year": "2025",
+    "doi": "10.1186/s12915-025-02147-5",
+    "pmid": "39924526",
+    "authors": "Díez López C, Van Herreweghen F, De Pessemier B et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39924526/"
+  },
+  "drafted_at": "2026-10-08T02:33:44.439923+09:00",
+  "model": "claude_code:default"
+}

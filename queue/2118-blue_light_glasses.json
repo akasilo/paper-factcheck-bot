@@ -1,0 +1,81 @@
+{
+  "id": "2118-blue_light_glasses",
+  "approved": false,
+  "link": "",
+  "topic": "blue_light_glasses",
+  "topic_ko": "블루라이트 안경",
+  "verdict": "mixed",
+  "evidence_level": "other",
+  "source_text": "PMC12827953 전문",
+  "answer": "이 논문의 계산에 따르면 웜화이트 LED는 쿨화이트 LED보다 저녁 멜라토닌 억제 추정치가 약 3.4배 낮았고(3.6% vs 12.3%), 백열등은 1.5%였다.",
+  "style": "soft",
+  "accent": "blue",
+  "product_hint": "색온도 3000K 이하의 웜화이트 전구 또는 색온도 조절 가능한 LED 조명",
+  "image_prompt": "a single warm white LED light bulb standing on a plain wooden table",
+  "caveats": [
+    "수치는 실제 인체 측정이 아닌 컴퓨터 계산(in silico) 추정치",
+    "건강한 18~35세 평균 반응을 가정했고 개인차는 반영되지 않음",
+    "갈색 틴트 렌즈의 실제 수면 개선 효과는 이 논문에서 직접 확인되지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "저녁 [[전구]] 색만\n바꿔도\n{{멜라토닌 억제}}\n줄어들까요?"
+    },
+    {
+      "type": "body",
+      "text": "한 논문이 전구 52개의 빛을 측정해 계산했어요.\n저녁 멜라토닌 억제 추정치는 {{쿨화이트}} LED 12.3%, 웜화이트 LED 3.6%였어요."
+    },
+    {
+      "type": "body",
+      "text": "쿨화이트 형광등(CFL)은 12.1%, 웜화이트 CFL은 2.6%, 백열등은 1.5%였어요.\n[[웜 LED는 쿨 LED보다 약 3.4배 낮게]] 추정됐어요."
+    },
+    {
+      "type": "body",
+      "text": "색온도를 바꿀 수 있는 LED 4개는 5700K(쿨)에서 10%, 2100K(웜)에서 0.1%로 추정 억제가 [[크게 줄었어요]]."
+    },
+    {
+      "type": "body",
+      "text": "블루라이트 안경 8종 중 6종은 효과가 보통 수준이었고, 일반 투명 렌즈 대비 이점이 작았어요.\n[[갈색 틴트]] 2종만 0.3% 미만으로 추정됐어요.",
+      "note": "※ 실제 측정이 아닌 컴퓨터 계산 추정치예요(30~90분 노출, 건강한 18~35세 가정)."
+    },
+    {
+      "type": "body",
+      "text": "오늘 저녁엔 거실 전구를 [[웜화이트]](노란빛) 쪽으로 바꾸거나, 색온도 조절이 되면 따뜻한 색으로 낮춰 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Home lighting, blue-light filtering, and their effects on melatonin suppression.",
+        "journal": "Scientific reports",
+        "year": "2026",
+        "doi": "10.1038/s41598-025-29882-7",
+        "authors": "Terán E, Yee-Rendon CM, Sosa-Arámbula HJ et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2118-blue_light_glasses/01.jpg",
+    "images/2118-blue_light_glasses/02.jpg",
+    "images/2118-blue_light_glasses/03.jpg",
+    "images/2118-blue_light_glasses/04.jpg",
+    "images/2118-blue_light_glasses/05.jpg",
+    "images/2118-blue_light_glasses/06.jpg",
+    "images/2118-blue_light_glasses/07.jpg"
+  ],
+  "instagram_caption": "저녁 전구 색만 바꿔도 멜라토닌 억제가 줄어들까요? 💡\n\n한 연구팀이 시중 전구 52개(LED, 형광등, 백열등)의 빛을 측정하고, 저녁 30~90분 노출을 가정해 멜라토닌 억제 정도를 계산했어요.\n\n그 결과 쿨화이트 LED는 12.3%, 쿨화이트 형광등은 12.1%로 추정됐고, 웜화이트 LED 3.6%, 웜화이트 형광등 2.6%, 백열등 1.5%보다 높았어요. 웜 LED는 쿨 LED보다 약 3.4배 낮은 값이에요.\n\n색온도 조절 LED는 쿨(5700K) 10%에서 웜(2100K) 0.1%로 내려갔어요. 블루라이트 차단 렌즈 8종 중에서는 갈색 틴트 2종만 0.3% 미만이었고, 나머지 6종은 효과가 보통이거나 일반 투명 렌즈와 큰 차이가 없었어요.\n\n다만 이 수치는 실제 사람을 측정한 게 아니라 컴퓨터로 계산한 추정치이고, 건강한 18~35세 평균 반응을 가정했어요. 개인차는 반영되지 않았어요.\n\n✅ 오늘의 행동: 저녁엔 웜화이트(노란빛) 전구를 쓰거나, 조절이 되는 조명은 따뜻한 색으로 낮춰 보세요.\n\n📄 출처: Terán E 외, Scientific Reports (2026). DOI 10.1038/s41598-025-29882-7\n\n#논문팩트체크 #paper_factcheck #블루라이트 #블루라이트차단안경 #멜라토닌 #수면 #수면환경 #조명 #LED조명 #전구색 #웜화이트 #색온도 #생체리듬\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "전구 색만 바꿔도 멜라토닌 억제가 줄어들까?\n\n한 논문이 전구 52개의 빛을 측정해 계산해 봤대요. 저녁 멜라토닌 억제 추정치가 쿨화이트 LED는 12.3%, 웜화이트 LED는 3.6%, 백열등은 1.5%였어요. 웜 LED가 약 3.4배 낮은 셈이죠. 블루라이트 안경은 8종 중 갈색 틴트 2종만 눈에 띄는 효과가 있었고요. 다만 실측이 아닌 계산 추정치예요. 여러분 집 거실 전구는 어떤 색인가요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Home lighting, blue-light filtering, and their effects on melatonin suppression.",
+    "journal": "Scientific reports",
+    "year": "2026",
+    "doi": "10.1038/s41598-025-29882-7",
+    "pmid": "41565717",
+    "authors": "Terán E, Yee-Rendon CM, Sosa-Arámbula HJ et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41565717/"
+  },
+  "drafted_at": "2026-10-08T02:34:19.497862+09:00",
+  "model": "claude_code:default"
+}

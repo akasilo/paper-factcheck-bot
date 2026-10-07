@@ -1,0 +1,82 @@
+{
+  "id": "2119-tumbler",
+  "approved": false,
+  "link": "",
+  "topic": "tumbler",
+  "topic_ko": "텀블러·물병",
+  "verdict": "bad",
+  "evidence_level": "experimental",
+  "source_text": "PMC11096351 전문",
+  "answer": "이 논문에서 1.5L PET 생수에는 1L당 평균 1.61µg의 미세플라스틱이 있었고 수돗물보다 훨씬 많았지만, 추정 섭취량은 건강에 무시할 만한 위험 수준으로 평가됐다.",
+  "style": "geo",
+  "accent": "yellow",
+  "product_hint": "스테인리스 진공 텀블러",
+  "image_prompt": "a single clear plastic water bottle with a white cap and condensation on a plain table",
+  "caveats": [
+    "스페인 5개 브랜드의 1.5L PET병만 분석했다",
+    "수돗물 수치는 연구진의 이전 연구 값이다",
+    "텀블러 자체의 미세플라스틱은 이 논문에서 다루지 않았다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "생수 1.5L\n[[PET병]] 한 병에\n{{미세플라스틱}}\n얼마나 나올까?"
+    },
+    {
+      "type": "body",
+      "text": "스페인 인기 생수 5개 브랜드의 1.5L PET병을 분석한 한 연구에서 [[미세플라스틱]]은 1L당 평균 1.61µg, 개수로는 중앙값 0.73개가 나왔어요."
+    },
+    {
+      "type": "body",
+      "text": "입자는 대부분 흰색·투명한 폴리에스터와 폴리에틸렌이었고, 중앙값 크기는 약 93µm였어요. 병과 뚜껑 재질과 맞는 입자가 많았다고 해요."
+    },
+    {
+      "type": "body",
+      "text": "같은 연구실이 같은 방법으로 잰 수돗물은 1L당 약 45.5ng이었어요. 생수는 수돗물보다 {{2~3자릿수 높은}} 수준이었어요.",
+      "note": "※ 수돗물 수치는 연구진의 이전 연구 기준"
+    },
+    {
+      "type": "body",
+      "text": "다만 하루 섭취 추정량은 체중 1kg당 4~18ng으로, 연구진은 건강 위험은 아마 무시할 만한 수준이라고 봤어요.",
+      "note": "※ 생수 5개 브랜드 대상, 하루 2L를 마시면 추정량이 약 10배로 늘어요"
+    },
+    {
+      "type": "body",
+      "text": "오늘은 생수 대신 [[수돗물이나 정수한 물]]을 텀블러에 담아 보세요. 연구진도 수돗물 쪽에 손을 들어줬어요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Microplastics and non-natural cellulosic particles in Spanish bottled drinking water.",
+        "journal": "Scientific reports",
+        "year": "2024",
+        "doi": "10.1038/s41598-024-62075-2",
+        "authors": "Gálvez-Blanca V, Edo C, González-Pleiter M et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2119-tumbler/01.jpg",
+    "images/2119-tumbler/02.jpg",
+    "images/2119-tumbler/03.jpg",
+    "images/2119-tumbler/04.jpg",
+    "images/2119-tumbler/05.jpg",
+    "images/2119-tumbler/06.jpg",
+    "images/2119-tumbler/07.jpg"
+  ],
+  "instagram_caption": "생수 1.5L PET병 한 병에 미세플라스틱이 얼마나 들어 있을까요?\n\n스페인에서 가장 많이 팔리는 생수 5개 브랜드를 분석한 논문이 있어요. 미세플라스틱은 1L당 평균 1.61µg이 나왔고, 개수로는 중앙값 0.73개였어요. 대부분 흰색·투명한 폴리에스터와 폴리에틸렌 입자였고, 병과 뚜껑 재질과 맞는 것이 많았어요.\n\n같은 연구실에서 같은 방법으로 잰 수돗물은 1L당 약 45.5ng이었어요. 연구진은 생수가 수돗물보다 2~3자릿수 높다고 밝혔어요.\n\n그렇다고 겁먹을 필요는 없어요. 하루 섭취 추정량은 체중 1kg당 4~18ng으로, 연구진은 건강 위험이 아마 무시할 만한 수준이라고 평가했어요. 다만 이 연구는 스페인 5개 브랜드만 다뤘고, 하루 2L를 마시면 추정량이 약 10배로 늘어요.\n\n👉 오늘의 행동: 생수 대신 수돗물이나 정수한 물을 텀블러에 담아 보세요.\n\n📄 출처: Gálvez-Blanca V, Edo C, González-Pleiter M 외, Scientific Reports (2024). DOI 10.1038/s41598-024-62075-2\n\n#논문팩트체크 #paper_factcheck #미세플라스틱 #생수 #페트병 #수돗물 #텀블러 #스테인리스텀블러 #정수 #플라스틱줄이기 #생활상식 #팩트체크\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "생수 한 병에 미세플라스틱이 얼마나 나올까?\n\n스페인 인기 생수 5개 브랜드의 1.5L PET병을 분석한 논문을 봤어요. 1L당 평균 1.61µg의 미세플라스틱이 나왔고, 같은 연구실에서 잰 수돗물보다 2~3자릿수 높았대요. 그래도 연구진은 하루 섭취 추정량으로 보면 건강 위험은 아마 무시할 만하다고 했어요. 다만 5개 브랜드만 본 연구예요. 여러분은 수돗물이랑 생수 중 뭘 더 자주 마시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Microplastics and non-natural cellulosic particles in Spanish bottled drinking water.",
+    "journal": "Scientific reports",
+    "year": "2024",
+    "doi": "10.1038/s41598-024-62075-2",
+    "pmid": "38750101",
+    "authors": "Gálvez-Blanca V, Edo C, González-Pleiter M et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38750101/"
+  },
+  "drafted_at": "2026-10-08T02:36:17.938261+09:00",
+  "model": "claude_code:default"
+}
