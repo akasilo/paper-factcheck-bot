@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-08",
+  "slot": "evening",
+  "queue": {
+    "id": "2109-coffee",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hCX3d7ooN2",
+    "topic": "coffee",
+    "topic_ko": "커피",
+    "verdict": "good",
+    "evidence_level": "review",
+    "source_text": "PMC12348139 전문",
+    "answer": "한 리뷰 논문에 따르면 하루 3~5잔의 커피는 사망 위험 감소와 관련이 있었지만, 설탕과 크림을 넣으면 그 이점이 줄어들 수 있다.",
+    "style": "paper",
+    "accent": "orange",
+    "product_hint": "설탕·시럽을 넣지 않은 원두·드립 커피",
+    "image_prompt": "a white ceramic cup of black drip coffee on a wooden table next to scattered roasted coffee beans",
+    "caveats": [
+      "대부분 관찰 연구라 인과관계를 단정할 수 없음",
+      "설탕·크림의 구체적 영향 크기는 자료에 제시되지 않음",
+      "임신, 불안, 수면 문제가 있는 사람은 양을 조절해야 함"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "하루 3~5잔\n[[커피]]\n{{설탕·크림}}\n넣어도 될까?"
+      },
+      {
+        "type": "body",
+        "text": "한 리뷰 논문에 따르면 하루 [[3~5잔]] 정도의 적당한 커피는 해보다 득이 크다는 것이 전반적인 결론이었어요."
+      },
+      {
+        "type": "body",
+        "text": "40개 연구, 380만 명을 합친 2019년 메타분석에서 사망 위험은 하루 3.5잔에서 가장 낮았어요 (상대위험 0.85)."
+      },
+      {
+        "type": "body",
+        "text": "심혈관 질환 위험은 3~5잔 마시는 사람에서 약 15% 낮았고, 제2형 당뇨는 29% 낮은 것과 관련이 있었어요."
+      },
+      {
+        "type": "body",
+        "text": "다만 설탕과 크림을 넣으면 커피의 좋은 효과가 {{줄어들 수 있다}}고 해요. 임신 중엔 카페인 하루 200mg 이하를 권해요.",
+        "note": "※ 대부분 관찰 연구라 인과관계는 단정할 수 없고, 첨가물 효과는 아직 세밀한 분석이 부족해요."
+      },
+      {
+        "type": "body",
+        "text": "오늘 커피는 설탕·크림을 빼고 [[블랙으로 한 잔]] 마셔 보세요. 잠이 안 오거나 불안하면 양을 줄이세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Coffee's Impact on Health and Well-Being.",
+          "journal": "Nutrients",
+          "year": "2025",
+          "doi": "10.3390/nu17152558",
+          "authors": "Emadi RC, Kamangar F"
+        }
+      }
+    ],
+    "images": [
+      "images/2109-coffee/01.jpg",
+      "images/2109-coffee/02.jpg",
+      "images/2109-coffee/03.jpg",
+      "images/2109-coffee/04.jpg",
+      "images/2109-coffee/05.jpg",
+      "images/2109-coffee/06.jpg",
+      "images/2109-coffee/07.jpg"
+    ],
+    "instagram_caption": "하루 3~5잔 커피, 설탕·크림 넣어도 괜찮을까요?\n\n2025년 리뷰 논문은 커피를 적당히 마시는 것이 해보다 득이 크다고 정리했어요. 하루 3~5잔 정도가 기준이었어요.\n\n40개 연구, 380만 명을 합친 메타분석에서 사망 위험은 하루 3.5잔에서 가장 낮았어요(상대위험 0.85). 심혈관 질환 위험은 약 15%, 제2형 당뇨 위험은 29% 낮은 것과 관련이 있었어요. 카페인이 없는 커피에서도 비슷한 경향이 보고됐어요.\n\n하지만 설탕과 크림을 넣으면 커피의 이점이 줄어들 수 있다고 해요. 또 임신 중에는 카페인을 하루 200mg 이하로, 과하게 마시면 불안이나 수면 문제가 생길 수 있어요. 대부분 관찰 연구라 인과관계는 단정할 수 없어요.\n\n✅ 오늘의 행동: 커피에 넣는 설탕·크림부터 줄여 보세요.\n\n📄 출처: Emadi RC, Kamangar F, Nutrients (2025). DOI 10.3390/nu17152558\n\n#논문팩트체크 #paper_factcheck #커피 #커피효능 #드립커피 #원두커피 #블랙커피 #카페인 #설탕 #건강습관 #식습관 #생활건강 #카페\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.\n\n🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요",
+    "threads_text": "하루 커피 3~5잔, 설탕·크림 넣어도 될까?\n\n최근 리뷰 논문을 보니 적당한 커피는 해보다 득이 크다고 해요. 메타분석에서 사망 위험은 하루 3.5잔에서 가장 낮았고, 심혈관 질환 위험도 약 15% 낮았어요. 다만 설탕과 크림을 넣으면 이점이 줄어들 수 있대요. 대부분 관찰 연구라 인과는 단정할 수 없어요. 여러분은 커피 어떻게 드세요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Coffee's Impact on Health and Well-Being.",
+      "journal": "Nutrients",
+      "year": "2025",
+      "doi": "10.3390/nu17152558",
+      "pmid": "40806142",
+      "authors": "Emadi RC, Kamangar F",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40806142/"
+    },
+    "drafted_at": "2026-10-03T23:56:27.454786+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-10-06T21:04:41.262914+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "18118570846751424",
+  "instagram_posted_at": "2026-10-08T19:12:09.337228+09:00",
+  "instagram_reel_id": "18108236117233445",
+  "instagram_reel_posted_at": "2026-10-08T19:13:01.840163+09:00",
+  "threads_post_id": "18112465874112839",
+  "threads_posted_at": "2026-10-08T19:14:02.029350+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DeOsZapmWwd",
+  "threads_reply_id": "17968789560190712",
+  "youtube_video_id": "iMH7Gu40Qhs",
+  "youtube_url": "https://youtube.com/shorts/iMH7Gu40Qhs",
+  "youtube_posted_at": "2026-10-08T19:14:20.567582+09:00",
+  "youtube_privacy": "public",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/iMH7Gu40Qhs/maxresdefault.jpg",
+  "completed_at": "2026-10-08T19:14:23.050045+09:00"
+}
