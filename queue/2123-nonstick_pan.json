@@ -1,0 +1,81 @@
+{
+  "id": "2123-nonstick_pan",
+  "approved": false,
+  "link": "",
+  "topic": "nonstick_pan",
+  "topic_ko": "코팅 프라이팬",
+  "verdict": "mixed",
+  "evidence_level": "meta-analysis",
+  "source_text": "PMC10159273 전문",
+  "answer": "한 메타분석에서 혈중 PFOA·PFOS가 높을수록 총콜레스테롤과 LDL 콜레스테롤이 소폭 높게 나타나는 관련성이 있었다.",
+  "style": "geo",
+  "accent": "yellow",
+  "product_hint": "PFAS-free 세라믹 코팅 또는 스테인리스·무쇠 프라이팬",
+  "image_prompt": "a single dark non-stick frying pan with a slightly scratched coating on a plain kitchen counter",
+  "caveats": [
+    "대부분 단면 연구라 인과관계를 알 수 없음",
+    "연구 간 이질성이 크고 일부 PFAS는 연구가 적음",
+    "프라이팬 사용과 혈중 PFAS의 연결은 논문에서 직접 다루지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "프라이팬 코팅\n계열 성분 [[PFAS]]\n{{콜레스테롤}}과\n관련 있을까?"
+    },
+    {
+      "type": "body",
+      "text": "29편의 연구를 종합한 메타분석에서, 혈중 [[PFOA]]가 사분위 범위만큼 높을수록 총콜레스테롤이 평균 2.1mg/dL 높게 나타났어요."
+    },
+    {
+      "type": "body",
+      "text": "PFOA는 LDL 콜레스테롤 1.4mg/dL, 중성지방 1.3mg/dL 상승과도 관련이 있었어요. PFOS는 총콜레스테롤 2.6, LDL 1.9mg/dL 상승과 관련이 있었고요."
+    },
+    {
+      "type": "body",
+      "text": "HDL(좋은 콜레스테롤)은 PFOA·PFOS와 뚜렷한 관련이 없었어요. 다른 PFAS는 종류에 따라 HDL 상승이나 중성지방 감소와 연결돼 방향이 엇갈렸어요."
+    },
+    {
+      "type": "body",
+      "text": "다만 수치 변화는 크지 않고, 연구 대부분이 한 시점만 본 단면 연구라 인과는 알 수 없어요. 심혈관 질환 위험으로 이어지는지는 추가 연구가 필요하다고 해요.",
+      "note": "※ 연구 간 결과 차이(이질성)가 컸고, 이 논문은 프라이팬 자체를 측정하지 않았어요."
+    },
+    {
+      "type": "body",
+      "text": "코팅이 [[긁히거나 벗겨진]] 프라이팬은 교체를 고려하고, 금속 도구 대신 나무·실리콘 도구를 써보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Associations between Per- and Polyfluoroalkyl Substances Exposures and Blood Lipid Levels among Adults-A Meta-Analysis.",
+        "journal": "Environmental health perspectives",
+        "year": "2023",
+        "doi": "10.1289/EHP11840",
+        "authors": "Liu B, Zhu L, Wang M et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2123-nonstick_pan/01.jpg",
+    "images/2123-nonstick_pan/02.jpg",
+    "images/2123-nonstick_pan/03.jpg",
+    "images/2123-nonstick_pan/04.jpg",
+    "images/2123-nonstick_pan/05.jpg",
+    "images/2123-nonstick_pan/06.jpg",
+    "images/2123-nonstick_pan/07.jpg"
+  ],
+  "instagram_caption": "프라이팬 코팅 계열 성분 PFAS, 콜레스테롤과 관련이 있을까요?\n\n29편의 연구를 종합한 메타분석에서는 혈중 PFOA가 사분위 범위만큼 높을수록 총콜레스테롤이 평균 2.1mg/dL, LDL 콜레스테롤이 1.4mg/dL, 중성지방이 1.3mg/dL 높게 나타났어요. PFOS도 총콜레스테롤(2.6)과 LDL(1.9)의 상승과 관련이 있었습니다.\n\n반면 HDL은 PFOA·PFOS와 뚜렷한 관련이 없었고, PFHxS나 PFDA 같은 다른 PFAS는 HDL 상승, PFDA·PFNA는 중성지방 감소와 연결돼 방향이 엇갈렸어요.\n\n연구 대부분이 단면 연구이고 연구 간 차이도 커서 원인과 결과라고 말할 수는 없어요. 이 논문은 프라이팬 자체를 다룬 것이 아니라 혈중 PFAS 수치를 본 것이고, 심혈관 질환 위험으로 이어지는지는 추가 연구가 필요하다고 합니다.\n\n✅ 오늘의 행동: 코팅이 긁히거나 벗겨진 프라이팬은 교체를 고려하고, 나무·실리콘 도구를 써보세요.\n\n📄 출처: Liu B, Zhu L, Wang M et al., Environmental health perspectives (2023). DOI 10.1289/EHP11840\n\n#논문팩트체크 #paper_factcheck #PFAS #프라이팬 #코팅프라이팬 #콜레스테롤 #LDL #중성지방 #주방용품 #생활상식 #메타분석 #건강정보\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "프라이팬 코팅 성분이 콜레스테롤과 관련 있을까?\n\n29편의 연구를 종합한 메타분석을 보니, 혈중 PFOA·PFOS가 높을수록 총콜레스테롤과 LDL이 소폭 높게 나타났어요. 예를 들어 PFOA는 총콜레스테롤 2.1mg/dL 상승과 관련이 있었죠. 다만 대부분 단면 연구라 인과는 알 수 없고, 프라이팬 사용과 직접 연결한 연구도 아니에요. 코팅이 벗겨진 팬은 바꿔볼 만하겠죠? 여러분은 프라이팬 얼마나 오래 쓰세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Associations between Per- and Polyfluoroalkyl Substances Exposures and Blood Lipid Levels among Adults-A Meta-Analysis.",
+    "journal": "Environmental health perspectives",
+    "year": "2023",
+    "doi": "10.1289/EHP11840",
+    "pmid": "37141244",
+    "authors": "Liu B, Zhu L, Wang M et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37141244/"
+  },
+  "drafted_at": "2026-10-09T02:44:10.086956+09:00",
+  "model": "claude_code:default"
+}

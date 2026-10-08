@@ -1,0 +1,81 @@
+{
+  "id": "2122-smartphone_sleep",
+  "approved": false,
+  "link": "",
+  "topic": "smartphone_sleep",
+  "topic_ko": "스마트폰 밤 사용",
+  "verdict": "mixed",
+  "evidence_level": "cohort",
+  "source_text": "PMC11372655 전문",
+  "answer": "한 코호트 연구에서 잠들기 전 2시간의 화면 사용은 그날 밤 수면 대부분 지표와 연관이 없었지만, 침대에 누운 뒤 화면 사용(특히 게임·멀티태스킹)은 수면 시간 감소와 관련이 있었다.",
+  "style": "paper",
+  "accent": "blue",
+  "product_hint": "취침 알람이나 수면 추적 기능이 있어 폰을 침대 밖에 두고 쓸 수 있는 기기",
+  "image_prompt": "a smartphone lying face up on a bedside table next to a small alarm clock",
+  "caveats": [
+    "참가자가 11~14세 79명으로 소규모이고 성인에게 그대로 적용하기 어렵다",
+    "관찰 연구라 화면 사용이 수면을 바꿨는지 인과관계는 알 수 없다",
+    "측정이 4일 밤에 한정되어 있다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "자기 전 2시간\n[[스마트폰]]\n{{수면}}을 망칠까?"
+    },
+    {
+      "type": "body",
+      "text": "뉴질랜드 11~14세 79명을 대상으로 한 코호트 연구예요. 잠들기 2시간 전 화면 사용을 [[카메라로 직접 촬영]]해 측정했어요."
+    },
+    {
+      "type": "body",
+      "text": "그 결과 취침 전 2시간의 화면 사용은 그날 밤 수면 지표 대부분과 [[연관이 없었어요]]. 화면 10분 추가당 총 수면 시간 차이는 0분이었어요."
+    },
+    {
+      "type": "body",
+      "text": "다만 침대에 누운 뒤 화면을 쓰면 달랐어요. 10분 더 볼 때마다 총 수면이 약 3분 짧아졌고, 잠드는 시간도 늦어지는 경향이 있었어요."
+    },
+    {
+      "type": "body",
+      "text": "특히 게임은 10분당 17분, 멀티태스킹을 한 날은 안 한 날보다 35분 {{수면 시간이 짧았어요}}.",
+      "note": "※ 관찰 연구라 인과는 알 수 없고, 참가자 79명의 소규모 연구예요."
+    },
+    {
+      "type": "body",
+      "text": "오늘은 [[침대에 누운 뒤]] 게임·멀티태스킹을 멈추고, 폰은 침대 밖에 두세요. 아침 알람은 따로 맞춰 두면 편해요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Screen Use at Bedtime and Sleep Duration and Quality Among Youths.",
+        "journal": "JAMA pediatrics",
+        "year": "2024",
+        "doi": "10.1001/jamapediatrics.2024.2914",
+        "authors": "Brosnan B, Haszard JJ, Meredith-Jones KA et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2122-smartphone_sleep/01.jpg",
+    "images/2122-smartphone_sleep/02.jpg",
+    "images/2122-smartphone_sleep/03.jpg",
+    "images/2122-smartphone_sleep/04.jpg",
+    "images/2122-smartphone_sleep/05.jpg",
+    "images/2122-smartphone_sleep/06.jpg",
+    "images/2122-smartphone_sleep/07.jpg"
+  ],
+  "instagram_caption": "자기 전 폰, 정말 수면을 망칠까요? 📱\n\n뉴질랜드 11~14세 79명을 대상으로 한 코호트 연구가 있어요. 설문 대신 잠들기 2시간 전 화면 사용을 카메라로 직접 측정하고, 수면은 손목 가속도계로 쟀어요.\n\n결과는 의외였어요. 취침 전 2시간의 화면 사용은 그날 밤 수면 대부분 지표와 연관이 없었어요. 화면 10분 추가당 총 수면 시간 차이는 0분이었어요.\n\n하지만 침대에 누운 뒤 화면을 쓰면 달랐어요. 10분 더 볼 때마다 총 수면이 약 3분 짧아졌고, 게임은 10분당 17분, 멀티태스킹을 한 날은 35분 수면이 짧았어요. 모든 화면 사용이 잠드는 시간을 늦추는 것과 관련 있었고, 상호작용이 많은 화면일수록 더 컸어요.\n\n※ 관찰 연구이고 참가자가 79명이라 인과관계는 알 수 없어요.\n\n✅ 오늘의 행동: 침대에 누운 뒤에는 게임·멀티태스킹을 멈추고, 폰은 침대 밖에 두세요.\n\n📄 출처: Brosnan B 외, JAMA Pediatrics (2024). DOI 10.1001/jamapediatrics.2024.2914\n\n#논문팩트체크 #paper_factcheck #스마트폰 #수면 #수면습관 #취침전스마트폰 #숙면 #청소년수면 #게임 #스크린타임 #수면시간 #생활습관\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "자기 전 폰, 정말 수면을 망칠까?\n\n뉴질랜드 청소년 79명을 카메라로 직접 관찰한 연구가 있어요. 잠들기 2시간 전 화면 사용은 그날 밤 수면 대부분 지표와 연관이 없었대요. 다만 침대에 누운 뒤 화면을 쓰면 10분마다 총 수면이 약 3분 짧아졌고, 게임이나 멀티태스킹은 더 컸어요. 소규모 관찰 연구라 인과는 알 수 없지만요. 여러분은 누운 뒤에도 폰 보시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Screen Use at Bedtime and Sleep Duration and Quality Among Youths.",
+    "journal": "JAMA pediatrics",
+    "year": "2024",
+    "doi": "10.1001/jamapediatrics.2024.2914",
+    "pmid": "39226046",
+    "authors": "Brosnan B, Haszard JJ, Meredith-Jones KA et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39226046/"
+  },
+  "drafted_at": "2026-10-09T02:43:19.056764+09:00",
+  "model": "claude_code:default"
+}

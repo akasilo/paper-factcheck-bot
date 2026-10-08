@@ -1,0 +1,81 @@
+{
+  "id": "2120-weighted_blanket",
+  "approved": false,
+  "link": "",
+  "topic": "weighted_blanket",
+  "topic_ko": "중량 이불",
+  "verdict": "mixed",
+  "evidence_level": "rct",
+  "source_text": "PMC11539645 전문",
+  "answer": "불면증 성인에서 1개월간 중량 이불을 쓴 쪽이 일반 이불보다 수면의 질 점수(PSQI)가 더 크게 좋아졌지만(-4.1 vs -2.0), 불면 중증도 점수(ISI)는 차이가 없었다.",
+  "style": "soft",
+  "accent": "blue",
+  "product_hint": "체중에 맞는 무게의 중량 이불 (가볍게 시작, 통기성 좋은 소재)",
+  "image_prompt": "a folded gray weighted blanket with quilted pockets on a neatly made bed",
+  "caveats": [
+    "참가자 102명의 소규모 예비 시험이고 사후 등록된 연구예요.",
+    "기간이 1개월이라 장기 효과는 알 수 없어요.",
+    "일부 평가자는 배정을 알고 있었고, 참가자도 자신이 어느 쪽인지 눈치챌 수 있었어요."
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "무거운 [[이불]]\n덮으면\n{{불면}}이\n나아질까?"
+    },
+    {
+      "type": "body",
+      "text": "불면증 진단을 받은 성인 102명을 [[중량 이불]]과 일반 이불로 나눠 1개월간 비교한 무작위 대조 시험이에요."
+    },
+    {
+      "type": "body",
+      "text": "수면의 질 점수(PSQI, 낮을수록 좋음)는 중량 이불 쪽이 평균 [[4.1점]], 일반 이불 쪽이 2.0점 낮아졌어요. 이 차이는 통계적으로 의미가 있었어요."
+    },
+    {
+      "type": "body",
+      "text": "낮 졸림·스트레스·불안·피로·몸의 통증도 중량 이불 쪽에서 더 좋아졌어요.\n{{다만 불면 중증도 점수(ISI)는 두 그룹 차이가 없었어요.}}"
+    },
+    {
+      "type": "body",
+      "text": "수면 측정 기기로 잰 밤중에 깨는 횟수는 차이가 확실하지 않았어요. 심각한 부작용은 없었고, 춥거나 불편하다는 사람이 3명 있었어요.",
+      "note": "※ 참가자 102명의 소규모 예비 시험이고 기간은 1개월이에요."
+    },
+    {
+      "type": "body",
+      "text": "써 보고 싶다면 [[가벼운 무게부터]] 시작하고, 얼굴 위로 덮이지 않게 쓰세요. 아이·고령자는 의료진과 먼저 상담하세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Effect of weighted blankets on sleep quality among adults with insomnia: a pilot randomized controlled trial.",
+        "journal": "BMC psychiatry",
+        "year": "2024",
+        "doi": "10.1186/s12888-024-06218-9",
+        "authors": "Yu J, Du J, Yang Z et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2120-weighted_blanket/01.jpg",
+    "images/2120-weighted_blanket/02.jpg",
+    "images/2120-weighted_blanket/03.jpg",
+    "images/2120-weighted_blanket/04.jpg",
+    "images/2120-weighted_blanket/05.jpg",
+    "images/2120-weighted_blanket/06.jpg",
+    "images/2120-weighted_blanket/07.jpg"
+  ],
+  "instagram_caption": "무거운 이불을 덮으면 불면이 나아질까요? 🛌\n\n중국 병원 3곳에서 불면증 진단을 받은 성인 102명을 중량 이불 또는 일반 이불에 무작위로 배정해 1개월간 비교한 시험이에요.\n\n수면의 질 점수(PSQI, 낮을수록 좋음)는 중량 이불 쪽이 평균 4.1점, 일반 이불 쪽이 2.0점 낮아졌어요. 낮 졸림, 스트레스, 불안, 피로, 몸의 통증도 중량 이불 쪽에서 더 좋아졌다는 결과였어요.\n\n다만 불면 중증도 점수는 두 그룹 차이가 없었고, 수면 측정 기기로 잰 깨는 횟수도 차이가 확실하지 않았어요. 참가자 수가 적은 예비 시험이라 더 큰 연구가 필요하다고 연구진도 밝혔어요. 심각한 부작용은 없었지만 춥거나 불편하다는 사람이 3명 있었어요.\n\n👉 오늘의 행동: 써 보고 싶다면 가벼운 무게부터 시작하고, 얼굴 위로 덮이지 않게 쓰세요. 아이나 거동이 불편한 고령자는 의료진과 먼저 상담하세요.\n\n📄 출처: Yu J, Du J, Yang Z et al., BMC Psychiatry (2024). DOI 10.1186/s12888-024-06218-9\n\n#논문팩트체크 #paper_factcheck #중량이불 #무게이불 #불면증 #수면의질 #숙면 #수면습관 #잠잘자는법 #수면팁 #이불추천 #생활팩트체크\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "무거운 이불을 덮으면 불면이 나아질까?\n\n불면증 진단을 받은 성인 102명을 중량 이불과 일반 이불로 나눠 1개월 비교한 시험이 있어요. 수면의 질 점수는 중량 이불 쪽이 4.1점, 일반 이불 쪽이 2.0점 낮아졌고 차이는 의미 있었어요. 낮 졸림, 스트레스, 불안도 더 좋아졌고요. 다만 불면 중증도 점수는 차이가 없었고, 기기로 잰 깨는 횟수도 확실하지 않았어요. 소규모 예비 시험이라 더 큰 연구가 필요해요. 여러분은 무거운 이불 덮고 자 본 적 있나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Effect of weighted blankets on sleep quality among adults with insomnia: a pilot randomized controlled trial.",
+    "journal": "BMC psychiatry",
+    "year": "2024",
+    "doi": "10.1186/s12888-024-06218-9",
+    "pmid": "39501163",
+    "authors": "Yu J, Du J, Yang Z et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39501163/"
+  },
+  "drafted_at": "2026-10-09T02:42:07.463032+09:00",
+  "model": "claude_code:default"
+}

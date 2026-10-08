@@ -1,0 +1,82 @@
+{
+  "id": "2121-omega3",
+  "approved": false,
+  "link": "",
+  "topic": "omega3",
+  "topic_ko": "오메가3",
+  "verdict": "good",
+  "evidence_level": "review",
+  "source_text": "PMC11737053 전문",
+  "answer": "학회 입장문에 따르면 오메가3 보충은 지구력과 심혈관 기능 개선, 근력 향상 가능성과 관련이 있었지만, 젊은 성인의 근비대 이점은 없을 수 있고 기록 향상은 결과가 엇갈렸다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "EPA·DHA 함량이 표시된 오메가3(rTG) 보충제",
+  "image_prompt": "a clear glass bottle of golden omega-3 fish oil softgel capsules on a plain light surface",
+  "caveats": [
+    "학회 입장문(리뷰)이라 개별 연구의 대상·용량이 서로 다름",
+    "지구력 운동 기록 향상은 결과가 일관되지 않음",
+    "장 건강 등 일부 항목은 선수 대상 연구가 부족함"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "운동하는 사람에게\n[[오메가3]]\n{{영양제}}\n도움이 될까?"
+    },
+    {
+      "type": "body",
+      "text": "국제스포츠영양학회 입장문에 따르면 [[운동선수]]는 오메가3 부족 위험이 더 높을 수 있어요. 미국 대학 풋볼 선수 404명의 평균 오메가3 지수는 4.4%였어요.",
+      "note": "※ 논문이 낮은 위험 기준으로 든 값은 8%"
+    },
+    {
+      "type": "body",
+      "text": "지구력 운동에서는 보충제가 달리기 효율, 최대산소섭취량, 심박 회복 개선과 관련이 있다는 연구들이 있어요. 다만 실제 [[운동 기록]] 향상은 결과가 엇갈렸어요."
+    },
+    {
+      "type": "body",
+      "text": "근육이 커지는 효과는 젊은 성인에서 없을 수 있어요. 근력은 용량과 기간에 따라 좋아질 수 있고, 운동 후 근육통을 덜 느낄 수 있다고 정리했어요."
+    },
+    {
+      "type": "body",
+      "text": "수면의 질 개선과 관련이 있다고 했고, 머리 충격이 잦은 선수의 뇌 보호 가능성도 언급됐어요. 장 건강은 선수 대상 연구가 아직 부족해요.",
+      "note": "※ 학회 입장문이며 연구마다 용량과 조건이 달라요"
+    },
+    {
+      "type": "body",
+      "text": "이번 주 [[기름진 생선]] 식사를 한 번 늘려 보세요. 보충제를 고른다면 제품 속 EPA·DHA 함량부터 확인해 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "International Society of Sports Nutrition Position Stand: Long-Chain Omega-3 Polyunsaturated Fatty Acids.",
+        "journal": "Journal of the International Society of Sports Nutrition",
+        "year": "2025",
+        "doi": "10.1080/15502783.2024.2441775",
+        "authors": "Jäger R, Heileson JL, Abou Sawan S et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2121-omega3/01.jpg",
+    "images/2121-omega3/02.jpg",
+    "images/2121-omega3/03.jpg",
+    "images/2121-omega3/04.jpg",
+    "images/2121-omega3/05.jpg",
+    "images/2121-omega3/06.jpg",
+    "images/2121-omega3/07.jpg"
+  ],
+  "instagram_caption": "오메가3 영양제, 운동하는 사람에게 정말 도움이 될까요?\n\n국제스포츠영양학회(ISSN)가 관련 문헌을 검토해 입장문을 냈어요. 먼저 운동선수는 오메가3가 부족할 위험이 더 높을 수 있다고 해요. 미국 대학 풋볼 선수 404명의 평균 오메가3 지수는 4.4%였고, 낮은 심혈관 위험과 관련된 기준인 8%를 넘은 선수는 없었어요.\n\n지구력 운동에서는 보충제가 달리기 효율, 최대산소섭취량, 심박 회복 개선과 관련이 있다는 연구들이 소개됐어요. 다만 실제 운동 기록 향상은 연구마다 결과가 엇갈렸어요.\n\n근육 쪽은 조금 달라요. 젊은 성인에서 근육이 커지는 이점은 없을 수 있고, 근력은 용량과 기간에 따라 좋아질 수 있다고 해요. 운동 후 근육통을 덜 느낄 수 있다는 내용도 있었어요. 수면의 질 개선과 관련이 있다고도 했어요.\n\n✅ 오늘의 행동: 이번 주 기름진 생선 식사를 한 번 늘려 보세요. 보충제를 고른다면 EPA·DHA 함량부터 확인해 보세요.\n\n📄 출처: Jäger R 외, Journal of the International Society of Sports Nutrition (2025). DOI 10.1080/15502783.2024.2441775\n\n#논문팩트체크 #paper_factcheck #오메가3 #오메가3효능 #영양제 #운동영양 #러닝 #근력운동 #EPA #DHA #스포츠영양 #운동후회복 #수면\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "오메가3 영양제, 운동하는 사람에게 도움이 될까?\n\n국제스포츠영양학회 입장문을 봤어요. 운동선수는 오메가3가 부족할 위험이 더 높을 수 있대요. 대학 풋볼 선수 404명의 평균 오메가3 지수는 4.4%였어요. 지구력 운동에서는 달리기 효율이나 심박 회복과 관련이 있다는 연구가 있었지만, 기록 향상은 엇갈렸어요. 젊은 성인의 근육 키우기에는 이점이 없을 수 있고요. 여러분은 오메가3 챙겨 드세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "International Society of Sports Nutrition Position Stand: Long-Chain Omega-3 Polyunsaturated Fatty Acids.",
+    "journal": "Journal of the International Society of Sports Nutrition",
+    "year": "2025",
+    "doi": "10.1080/15502783.2024.2441775",
+    "pmid": "39810703",
+    "authors": "Jäger R, Heileson JL, Abou Sawan S et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39810703/"
+  },
+  "drafted_at": "2026-10-09T02:42:41.884952+09:00",
+  "model": "claude_code:default"
+}
