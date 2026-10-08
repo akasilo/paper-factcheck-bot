@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|건조 조건에 따라 차이가 컸어요. 이십사점오 도, 습도 오십 퍼센트에서는 냄새 강도가 줄었지만, 삼십일점팔 도, 습도 팔십 퍼센트에서는 악취가 크게 늘었습니다.

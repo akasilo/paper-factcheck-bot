@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|쿨화이트 형광등(CFL)은 십이점일 퍼센트, 웜화이트 CFL은 이점육 퍼센트, 백열등은 일점오 퍼센트였어요. 웜 LED는 쿨 LED보다 약 삼점사 배 낮게 추정됐어요.

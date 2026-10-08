@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|스페인 인기 생수 다섯 개 브랜드의 일점오 리터 PET병을 분석한 한 연구에서 미세플라스틱은 일 리터당 평균 일점육일 마이크로그램, 개수로는 중앙값 영점칠삼 개가 나왔어요.

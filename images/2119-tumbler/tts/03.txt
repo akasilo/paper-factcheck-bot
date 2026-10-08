@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|입자는 대부분 흰색, 투명한 폴리에스터와 폴리에틸렌이었고, 중앙값 크기는 약 구십삼µm였어요. 병과 뚜껑 재질과 맞는 입자가 많았다고 해요.

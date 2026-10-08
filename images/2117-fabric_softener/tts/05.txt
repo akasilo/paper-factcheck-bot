@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|입은 옷이든 안 입은 옷이든 습한 건조에서 냄새 강도가 올라갔어요. 세탁으로 사라졌던 쉰내 성분(메틸부탄산)도 다시 나타났습니다. 참고로, 온도와 습도 중 무엇이 원인인지는 따로 검증하지 않았어요.

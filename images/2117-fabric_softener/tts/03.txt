@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|피부에 사는 세균은 줄고, 세탁기와 물에서 온 세균이 옷으로 옮겨왔어요. 이때 바이오필름(세균 막) 형성에 관여하는 유전자도 많아졌다고 해요.

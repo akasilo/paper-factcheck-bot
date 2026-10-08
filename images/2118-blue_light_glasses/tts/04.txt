@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|색온도를 바꿀 수 있는 LED 사 개는 오천칠백K(쿨)에서 십 퍼센트, 이천백K(웜)에서 영점일 퍼센트로 추정 억제가 크게 줄었어요.

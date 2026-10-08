@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 논문이 전구 쉰두 개의 빛을 측정해 계산했어요. 저녁 멜라토닌 억제 추정치는 쿨화이트 LED 십이점삼 퍼센트, 웜화이트 LED 삼점육 퍼센트였어요.

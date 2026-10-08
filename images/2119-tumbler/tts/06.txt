@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘은 생수 대신 수돗물이나 정수한 물을 텀블러에 담아 보세요. 연구진도 수돗물 쪽에 손을 들어줬어요.

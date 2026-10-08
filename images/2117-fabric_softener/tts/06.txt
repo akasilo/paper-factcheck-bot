@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|빨래는 세탁이 끝나면 바로 꺼내 바람 잘 통하고 건조한 곳에서 빨리 말려 보세요.

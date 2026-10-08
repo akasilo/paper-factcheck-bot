@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|블루라이트 안경 팔 종 중 육 종은 효과가 보통 수준이었고, 일반 투명 렌즈 대비 이점이 작았어요. 갈색 틴트 이 종만 영점삼 퍼센트 미만으로 추정됐어요. 참고로, 실제 측정이 아닌 컴퓨터 계산 추정치예요(삼십 분에서 구십 분 노출, 건강한 십팔에서 삼십오세 가정).

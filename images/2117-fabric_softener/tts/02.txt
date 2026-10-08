@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 연구에서 합성섬유 티셔츠를 입고, 빨고, 말리며 냄새와 세균을 비교했어요. 세탁하면 땀 냄새 성분은 줄었지만, 막이 온전한 세균은 오히려 늘었습니다.

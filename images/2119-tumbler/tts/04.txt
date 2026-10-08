@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|같은 연구실이 같은 방법으로 잰 수돗물은 일 리터당 약 사십오점오ng이었어요. 생수는 수돗물보다 이에서 삼자릿수 높은 수준이었어요. 참고로, 수돗물 수치는 연구진의 이전 연구 기준.
