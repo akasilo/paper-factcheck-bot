@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|그 결과 취침 전 두 시간의 화면 사용은 그날 밤 수면 지표 대부분과 연관이 없었어요. 화면 십 분 추가당 총 수면 시간 차이는 영 분이었어요.

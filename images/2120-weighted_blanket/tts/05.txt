@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|수면 측정 기기로 잰 밤중에 깨는 횟수는 차이가 확실하지 않았어요. 심각한 부작용은 없었고, 춥거나 불편하다는 사람이 세 명 있었어요. 참고로, 참가자 백이 명의 소규모 예비 시험이고 기간은 한 개월이에요.

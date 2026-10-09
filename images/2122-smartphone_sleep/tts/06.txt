@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘은 침대에 누운 뒤 게임, 멀티태스킹을 멈추고, 폰은 침대 밖에 두세요. 아침 알람은 따로 맞춰 두면 편해요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|수면의 질 개선과 관련이 있다고 했고, 머리 충격이 잦은 선수의 뇌 보호 가능성도 언급됐어요. 장 건강은 선수 대상 연구가 아직 부족해요. 참고로, 학회 입장문이며 연구마다 용량과 조건이 달라요.

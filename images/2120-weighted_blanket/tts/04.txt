@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|낮 졸림, 스트레스, 불안, 피로, 몸의 통증도 중량 이불 쪽에서 더 좋아졌어요. 다만 불면 중증도 점수(ISI)는 두 그룹 차이가 없었어요.

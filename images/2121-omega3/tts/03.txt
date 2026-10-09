@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|지구력 운동에서는 보충제가 달리기 효율, 최대산소섭취량, 심박 회복 개선과 관련이 있다는 연구들이 있어요. 다만 실제 운동 기록 향상은 결과가 엇갈렸어요.

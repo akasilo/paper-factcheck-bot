@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|근육이 커지는 효과는 젊은 성인에서 없을 수 있어요. 근력은 용량과 기간에 따라 좋아질 수 있고, 운동 후 근육통을 덜 느낄 수 있다고 정리했어요.

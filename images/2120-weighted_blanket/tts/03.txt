@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|수면의 질 점수(PSQI, 낮을수록 좋음)는 중량 이불 쪽이 평균 사점일 점, 일반 이불 쪽이 이점영 점 낮아졌어요. 이 차이는 통계적으로 의미가 있었어요.

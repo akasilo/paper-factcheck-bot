@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|써 보고 싶다면 가벼운 무게부터 시작하고, 얼굴 위로 덮이지 않게 쓰세요. 아이, 고령자는 의료진과 먼저 상담하세요.

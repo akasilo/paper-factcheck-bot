@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|국제스포츠영양학회 입장문에 따르면 운동선수는 오메가삼 부족 위험이 더 높을 수 있어요. 미국 대학 풋볼 선수 사백사 명의 평균 오메가삼 지수는 사점사 퍼센트였어요. 참고로, 논문이 낮은 위험 기준으로 든 값은 팔 퍼센트.

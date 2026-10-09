@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|HDL(좋은 콜레스테롤)은 PFOA, PFOS와 뚜렷한 관련이 없었어요. 다른 PFAS는 종류에 따라 HDL 상승이나 중성지방 감소와 연결돼 방향이 엇갈렸어요.

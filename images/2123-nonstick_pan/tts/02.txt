@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이십구 편의 연구를 종합한 메타분석에서, 혈중 PFOA가 사분위 범위만큼 높을수록 총콜레스테롤이 평균 이점일 밀리그램 퍼 데시리터 높게 나타났어요.

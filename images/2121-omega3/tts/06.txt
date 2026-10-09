@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이번 주 기름진 생선 식사를 한 번 늘려 보세요. 보충제를 고른다면 제품 속 EPA, DHA 함량부터 확인해 보세요.

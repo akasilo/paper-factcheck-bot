@@ -1,0 +1,11 @@
+{
+  "cards": "79c1c3931d3f8efb",
+  "script": "1941656fd7c33fc8",
+  "voice": "gemini:gemini-3.8-flash-tts:Aoede",
+  "rate": "1.0",
+  "style": "calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace",
+  "music": "surface_of_the_moon.mp3@0.350",
+  "music_title": "Surface of the Moon",
+  "music_credit": "",
+  "seconds": 93.0
+}
