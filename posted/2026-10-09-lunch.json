@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-09",
+  "slot": "lunch",
+  "queue": {
+    "id": "2111-sunscreen",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hCX68Hp7C0",
+    "topic": "sunscreen",
+    "topic_ko": "선크림",
+    "verdict": "mixed",
+    "evidence_level": "review",
+    "source_text": "PMC11022667 전문",
+    "answer": "이 리뷰에 따르면 옥시벤존은 신경·내분비 영향 우려로 피해야 하고, 무기 차단제와 아보벤존·옥토크릴렌은 부작용이 적은 편이었다.",
+    "style": "paper",
+    "accent": "yellow",
+    "product_hint": "옥시벤존 무첨가, 이산화티타늄이 든 무기자차(징크옥사이드·티타늄디옥사이드) 선크림",
+    "image_prompt": "a single white sunscreen tube lying on a light sandy surface next to a small seashell",
+    "caveats": [
+      "문헌 23편만 검토한 리뷰로 체계적 평가가 아님",
+      "옥시벤존 관련 근거는 주로 세포·실험 연구",
+      "피부암 예방 효과는 시험마다 엇갈려 다루지 않음"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "선크림\n[[성분표]]\n{{이 성분}}은\n피하라고?"
+      },
+      {
+        "type": "body",
+        "text": "한 리뷰 논문에 따르면 유기 차단제 중 [[옥시벤존]]은 신경·내분비계에 해로울 수 있어 피해야 한다고 결론냈어요.\n다만 근거는 세포·실험 연구 중심이에요.",
+        "note": "※ 사람 대상 결과가 아닌 실험 연구 기반"
+      },
+      {
+        "type": "body",
+        "text": "반면 아보벤존·옥토크릴렌은 내분비 교란 징후가 보이지 않았고, 둘을 함께 쓰면 옥토크릴렌이 아보벤존을 안정화한다고 해요."
+      },
+      {
+        "type": "body",
+        "text": "징크옥사이드·이산화티타늄 같은 무기 차단제는 부작용이 가장 적고 잘 견디는 편이에요. 특히 {{이산화티타늄}}이 든 제품이 자외선A 차단과 표시 SPF 유지에 더 나았어요.",
+        "note": "※ 스프레이형은 흡입 우려가 보고됨"
+      },
+      {
+        "type": "body",
+        "text": "결론은 '성분만큼 덧바르기'예요. 권장량보다 적게 바르면 표시된 SPF보다 낮게 보호될 수 있고, 꾸준히 쓰게 만드는 사용감과 재도포가 제품만큼 중요하다고 해요.",
+        "note": "※ 리뷰 23편 기반, 추가 연구 필요"
+      },
+      {
+        "type": "body",
+        "text": "오늘 선크림 성분표에서 [[옥시벤존]] 유무를 확인하고, 외출 중엔 충분한 양을 다시 덧발라 보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Sunscreen Safety and Efficacy for the Prevention of Cutaneous Neoplasm.",
+          "journal": "Cureus",
+          "year": "2024",
+          "doi": "10.7759/cureus.56369",
+          "authors": "Raymond-Lezman JR, Riskin SI"
+        }
+      }
+    ],
+    "images": [
+      "images/2111-sunscreen/01.jpg",
+      "images/2111-sunscreen/02.jpg",
+      "images/2111-sunscreen/03.jpg",
+      "images/2111-sunscreen/04.jpg",
+      "images/2111-sunscreen/05.jpg",
+      "images/2111-sunscreen/06.jpg",
+      "images/2111-sunscreen/07.jpg"
+    ],
+    "instagram_caption": "선크림 성분표, 어떤 성분을 피해야 할까요? 🧴\n\n한 리뷰 논문(관련 문헌 23편 검토)은 유기 차단제 중 옥시벤존을 신경·내분비계에 해로울 수 있어 피해야 한다고 정리했어요. 다만 근거는 주로 세포·실험 연구예요.\n\n반면 아보벤존과 옥토크릴렌은 내분비 교란 징후가 보이지 않았고, 함께 쓰면 안정성이 높아진다고 해요. 징크옥사이드·이산화티타늄 같은 무기 차단제는 부작용이 가장 적었지만 하얗게 뜨는 단점이 있어요. 스프레이형 이산화티타늄은 흡입 우려도 보고됐어요.\n\n또 표시 SPF가 실제 측정값보다 높은 제품이 많았고, 권장량보다 적게 바르면 보호 효과가 낮아질 수 있어요. 논문은 제품만큼 꾸준한 사용과 덧바르기가 중요하다고 말해요.\n\n✅ 오늘의 행동: 성분표에서 옥시벤존이 있는지 확인하고, 외출 중엔 충분한 양을 덧발라 보세요.\n\n📄 출처: Raymond-Lezman JR, Riskin SI, Cureus (2024). DOI 10.7759/cureus.56369\n\n#논문팩트체크 #paper_factcheck #선크림 #자외선차단제 #무기자차 #유기자차 #성분표 #옥시벤존 #징크옥사이드 #이산화티타늄 #선크림덧바르기 #자외선 #피부건강\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.\n\n🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요",
+    "threads_text": "선크림 성분표, 뭘 피해야 할까?\n\n한 리뷰 논문을 보니 옥시벤존은 신경·내분비 영향 우려로 피하라고 했어요(주로 실험 연구 기반). 아보벤존·옥토크릴렌과 무기 차단제는 부작용이 적은 편이었고요. 그런데 표시 SPF보다 실제가 낮은 제품도 많고, 적게 바르면 효과도 떨어질 수 있대요. 여러분은 선크림 얼마나 자주 덧바르세요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Sunscreen Safety and Efficacy for the Prevention of Cutaneous Neoplasm.",
+      "journal": "Cureus",
+      "year": "2024",
+      "doi": "10.7759/cureus.56369",
+      "pmid": "38633930",
+      "authors": "Raymond-Lezman JR, Riskin SI",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38633930/"
+    },
+    "drafted_at": "2026-10-05T00:31:38.793824+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-10-06T21:04:41.263217+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "18118942327752378",
+  "instagram_posted_at": "2026-10-09T15:03:26.515189+09:00",
+  "instagram_reel_id": "18073636616481666",
+  "instagram_reel_posted_at": "2026-10-09T15:04:20.965022+09:00",
+  "threads_post_id": "18147350749520452",
+  "threads_posted_at": "2026-10-09T15:05:19.711283+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DeQ0vL1jb8O",
+  "threads_reply_id": "18111832253144486",
+  "youtube_video_id": "D8TtieWJfMU",
+  "youtube_url": "https://youtube.com/shorts/D8TtieWJfMU",
+  "youtube_posted_at": "2026-10-09T15:05:38.712701+09:00",
+  "youtube_privacy": "public",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/D8TtieWJfMU/maxresdefault.jpg",
+  "completed_at": "2026-10-09T15:05:42.411290+09:00"
+}
