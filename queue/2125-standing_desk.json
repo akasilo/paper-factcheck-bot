@@ -1,0 +1,81 @@
+{
+  "id": "2125-standing_desk",
+  "approved": false,
+  "link": "",
+  "topic": "standing_desk",
+  "topic_ko": "스탠딩 데스크",
+  "verdict": "good",
+  "evidence_level": "cohort",
+  "source_text": "초록만",
+  "answer": "사무직 10명을 추적한 이 연구에서 높이 조절 책상 사용자는 18~24개월 뒤에도 근무 중 앉는 시간이 약 78~84분 줄어든 상태를 유지했지만, 여가 시간에는 변화가 없었다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "높이 조절이 쉬운 스탠딩 데스크 (앉기와 서기를 쉽게 바꿀 수 있는 것)",
+  "image_prompt": "a height-adjustable standing desk with an empty tabletop raised to standing height in an office",
+  "caveats": [
+    "참여자가 10명뿐이고 두 그룹이 5명씩이라 일반화하기 어렵다",
+    "초록에 대조군 언급이 없고 사용 전후 비교만 제시되어 책상 효과만 따로 볼 수 없다",
+    "건강 결과를 직접 측정한 연구가 아니라 앉는 시간 같은 행동 변화만 측정했다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "[[스탠딩 데스크]]\n사고 나서\n{{2년}} 뒤에도\n계속 설까요?"
+    },
+    {
+      "type": "body",
+      "text": "사무직 10명을 추적한 연구에서, 높이 조절 책상을 쓴 뒤 근무 중 앉는 시간이 18개월 뒤 [[약 78분]], 24개월 뒤 약 84분 줄었어요."
+    },
+    {
+      "type": "body",
+      "text": "18개월 그룹 5명, 24개월 그룹 5명을 나눠 활동 측정기로 앉기·서기·걷기·일어서기 횟수를 객관적으로 쟀어요."
+    },
+    {
+      "type": "body",
+      "text": "두 그룹 모두 근무 중 서 있는 시간과 걷는 시간이 늘었어요. 줄어든 앉은 시간이 서기와 걷기로 옮겨간 셈이에요."
+    },
+    {
+      "type": "body",
+      "text": "다만 {{여가 시간에는 변화가 없었어요}}. 퇴근 후 앉는 시간은 책상이 바꿔주지 못했다는 뜻이에요.",
+      "note": "※ 참여자 10명의 소규모 연구라 더 큰 연구가 필요해요."
+    },
+    {
+      "type": "body",
+      "text": "오늘 [[한 시간에 한 번]] 일어서서 통화나 회의를 해보세요. 퇴근 후 앉아 있는 시간도 함께 점검해 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "What if You Let Them Stand? A 2-Year Follow-up on Sit-Stand Desk.",
+        "journal": "Journal of occupational and environmental medicine",
+        "year": "2025",
+        "doi": "10.1097/JOM.0000000000003438",
+        "authors": "Silva H, Teno SC, Júdice PB"
+      }
+    }
+  ],
+  "images": [
+    "images/2125-standing_desk/01.jpg",
+    "images/2125-standing_desk/02.jpg",
+    "images/2125-standing_desk/03.jpg",
+    "images/2125-standing_desk/04.jpg",
+    "images/2125-standing_desk/05.jpg",
+    "images/2125-standing_desk/06.jpg",
+    "images/2125-standing_desk/07.jpg"
+  ],
+  "instagram_caption": "스탠딩 데스크, 사놓고 2년 뒤에도 계속 서 있을까요?\n\n사무직 10명을 대상으로 한 연구가 있어요. 높이 조절 책상을 쓰기 전과 후의 행동을 활동 측정기로 객관적으로 쟀습니다.\n\n결과는 이랬어요. 근무 중 앉는 시간이 18개월 그룹에서 약 78분, 24개월 그룹에서 약 84분 줄었어요. 두 그룹 모두 서 있는 시간과 걷는 시간도 늘었습니다.\n\n하지만 여가 시간에는 변화가 없었어요. 책상이 바뀌어도 퇴근 후의 앉는 습관은 그대로였다는 뜻이에요.\n\n※ 참여자가 10명뿐인 소규모 연구라, 저자들도 더 큰 규모의 연구가 필요하다고 밝혔어요.\n\n✅ 오늘의 행동: 한 시간에 한 번 일어서서 통화나 회의를 해보세요. 퇴근 후 앉아 있는 시간도 한번 점검해 보세요.\n\n📄 출처: Silva H, Teno SC, Júdice PB, Journal of occupational and environmental medicine (2025). DOI 10.1097/JOM.0000000000003438\n\n#논문팩트체크 #paper_factcheck #스탠딩데스크 #높이조절책상 #사무직건강 #오래앉기 #좌식생활 #직장인건강 #사무실꿀팁 #재택근무 #업무환경 #생활습관\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "스탠딩 데스크, 2년 뒤에도 계속 쓸까?\n\n사무직 10명을 추적한 연구를 봤어요. 높이 조절 책상을 쓰고 18~24개월이 지나도 근무 중 앉는 시간이 약 78~84분 줄어든 채였대요. 서 있는 시간과 걷는 시간도 늘었고요. 그런데 여가 시간에는 변화가 없었어요. 참여자가 10명뿐이라 더 큰 연구가 필요하다는 점도 기억해 주세요. 여러분은 책상에서 얼마나 서 있나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "What if You Let Them Stand? A 2-Year Follow-up on Sit-Stand Desk.",
+    "journal": "Journal of occupational and environmental medicine",
+    "year": "2025",
+    "doi": "10.1097/JOM.0000000000003438",
+    "pmid": "40335444",
+    "authors": "Silva H, Teno SC, Júdice PB",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40335444/"
+  },
+  "drafted_at": "2026-10-10T02:12:20.831180+09:00",
+  "model": "claude_code:default"
+}

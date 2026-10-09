@@ -1,0 +1,82 @@
+{
+  "id": "2124-energy_drink",
+  "approved": false,
+  "link": "",
+  "topic": "energy_drink",
+  "topic_ko": "에너지드링크",
+  "verdict": "bad",
+  "evidence_level": "systematic review",
+  "source_text": "PMC12618331 전문",
+  "answer": "한 체계적 문헌고찰에서 에너지드링크 섭취 후 심박수(60.9%)·수축기 혈압(53.8%)·이완기 혈압(61.5%)이 오르고 QTc가 길어졌다는 연구가 많았다.",
+  "style": "geo",
+  "accent": "orange",
+  "product_hint": "저카페인 음료 (카페인 함량이 표기된 것)",
+  "image_prompt": "a single matte energy drink can with condensation on a dark table",
+  "caveats": [
+    "하루 안전 섭취량(몇 캔까지)은 논문에 제시되지 않음",
+    "대부분 건강한 젊은 성인 대상이라 심장 질환자·장기 섭취 결과는 알 수 없음",
+    "포함 연구의 질 편차가 크고 선택적 보고 우려가 있음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "에너지드링크\n[[한 캔]]에\n{{심장}}은\n괜찮을까요?"
+    },
+    {
+      "type": "body",
+      "text": "한 체계적 문헌고찰이 에너지드링크 연구 37편(참가자 1,597명, 평균 22.6세)을 종합했어요. 대부분 건강한 젊은 성인 대상이었어요."
+    },
+    {
+      "type": "body",
+      "text": "마신 뒤 [[심박수]]가 늘었다는 연구가 60.9%, 수축기 혈압은 53.8%, 이완기 혈압은 61.5%였어요.",
+      "note": "※ 각 지표를 측정한 연구 중 통계적으로 유의하게 증가한 연구의 비율"
+    },
+    {
+      "type": "body",
+      "text": "심전도 지표 QTc를 본 12편 중 8편(66.7%)이 {{유의한 QTc 길어짐}}을 보고했어요. PR 간격·T파 변화 등도 57.9%에서 관찰됐어요."
+    },
+    {
+      "type": "body",
+      "text": "한 캔에 카페인 200~300mg이 들어 커피 2~3잔보다 많을 수 있어요. 다만 '하루 몇 캔까지 괜찮은지'는 이 논문에 나오지 않아요.",
+      "note": "※ 연구 질 편차가 크고, 장기 영향·심장 질환자 자료는 부족해요"
+    },
+    {
+      "type": "body",
+      "text": "오늘은 한 캔 마시기 전에 [[카페인 함량]] 표기를 확인하고, 졸릴 땐 저카페인 음료로 바꿔보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "The Effects of Energy Drinks on the Cardiovascular System: A Systematic Review.",
+        "journal": "Current cardiology reports",
+        "year": "2025",
+        "doi": "10.1007/s11886-025-02293-w",
+        "authors": "Mandato J, Kola R, Tyson T et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2124-energy_drink/01.jpg",
+    "images/2124-energy_drink/02.jpg",
+    "images/2124-energy_drink/03.jpg",
+    "images/2124-energy_drink/04.jpg",
+    "images/2124-energy_drink/05.jpg",
+    "images/2124-energy_drink/06.jpg",
+    "images/2124-energy_drink/07.jpg"
+  ],
+  "instagram_caption": "에너지드링크 한 캔, 심장은 괜찮을까요?\n\n한 체계적 문헌고찰이 에너지드링크와 심혈관 지표를 본 연구 37편(참가자 1,597명, 평균 22.6세)을 종합했어요.\n\n결과를 보면 심박수가 늘었다는 연구가 60.9%, 수축기 혈압 53.8%, 이완기 혈압 61.5%였어요. 심전도 지표인 QTc를 본 12편 중 8편은 유의하게 길어졌다고 보고했어요.\n\n한 캔에 카페인 200~300mg이 들어 커피 2~3잔보다 많을 수 있다고 해요. 다만 '하루 몇 캔까지 괜찮은지'는 이 논문에 나오지 않았어요.\n\n한계도 있어요. 연구 질이 들쭉날쭉했고, 대부분 건강한 젊은 성인이라 심장 질환자나 장기 섭취의 영향은 알기 어려워요. 마신 직후의 단기 변화를 본 결과라는 점도 기억해 주세요.\n\n✅ 오늘의 행동: 한 캔 마시기 전에 카페인 함량 표기를 확인하고, 졸릴 땐 저카페인 음료로 바꿔보세요.\n\n📄 출처: Mandato J, Kola R, Tyson T 외, Current cardiology reports (2025). DOI 10.1007/s11886-025-02293-w\n\n#논문팩트체크 #paper_factcheck #에너지드링크 #카페인 #심박수 #혈압 #부정맥 #QTc #체계적문헌고찰 #저카페인 #건강정보 #음료성분\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "에너지드링크, 심장에 괜찮을까?\n\n최근 체계적 문헌고찰을 보니, 에너지드링크를 마신 뒤 심박수가 늘었다는 연구가 60.9%, 수축기 혈압은 53.8%였대요. 심전도 지표 QTc를 본 12편 중 8편은 유의하게 길어졌다고 해요. 다만 '하루 몇 캔까지 괜찮은지'는 논문에 안 나와 있고, 대부분 건강한 젊은 성인 대상이라 장기 영향은 아직 몰라요. 여러분은 하루에 몇 캔쯤 마시세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "The Effects of Energy Drinks on the Cardiovascular System: A Systematic Review.",
+    "journal": "Current cardiology reports",
+    "year": "2025",
+    "doi": "10.1007/s11886-025-02293-w",
+    "pmid": "41236610",
+    "authors": "Mandato J, Kola R, Tyson T et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41236610/"
+  },
+  "drafted_at": "2026-10-10T02:11:46.705360+09:00",
+  "model": "claude_code:default"
+}

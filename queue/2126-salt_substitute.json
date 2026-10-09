@@ -1,0 +1,81 @@
+{
+  "id": "2126-salt_substitute",
+  "approved": false,
+  "link": "",
+  "topic": "salt_substitute",
+  "topic_ko": "저염 소금",
+  "verdict": "good",
+  "evidence_level": "rct",
+  "source_text": "PMC12711297 전문",
+  "answer": "처음 4주에 반응이 있던 집단과 없던 집단은 12개월 뒤 칼륨 강화 소금의 혈압 효과에 차이가 없었고(-2.2 vs -7.2mmHg, P=0.068), 큰 개인차는 측정 변동 때문일 가능성이 크다고 해석됐다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "염화칼륨이 일부 들어간 칼륨 강화 저염 소금 (성분표 확인)",
+  "image_prompt": "a small white ceramic bowl of coarse salt with a wooden spoon on a plain light kitchen counter",
+  "caveats": [
+    "혈압 위험이 높고 소금을 많이 먹는 중국 농촌 성인 한 집단만 대상이라 다른 집단에 적용하기 어렵다",
+    "나트륨 감소와 칼륨 보충의 효과를 따로 나눠 볼 수 없었고, 개인차가 작거나 중간 정도로 있을 가능성은 배제되지 않는다",
+    "운동·스트레스·음주 등 혈압 변동 요인은 측정하지 않았다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "칼륨 저염 소금\n[[반응]]이 사람마다\n다르다는데\n진짜일까?"
+    },
+    {
+      "type": "body",
+      "text": "4주간 칼륨 강화 소금을 쓴 뒤 수축기 혈압이 평균 [[13.7mmHg]] 내려갔지만, 사람별 편차는 -80에서 +56.5까지 극단적이었어요."
+    },
+    {
+      "type": "body",
+      "text": "처음 4주로 '반응함' 477명과 '반응 없음' 131명을 나눠 12개월 추적했더니, 일반 소금 대비 혈압 차이는 각각 -2.2, -7.2mmHg였고 두 집단 간 [[차이는 없다]]고 보고됐어요."
+    },
+    {
+      "type": "body",
+      "text": "연구진은 이 큰 개인차가 체질보다, 같은 사람도 날마다 달라지는 혈압 [[측정 변동]](표준편차 약 14mmHg) 때문일 수 있다고 해석했어요."
+    },
+    {
+      "type": "body",
+      "text": "12개월 동안 평균 효과는 약 3.7mmHg 낮은 수준이었고, 연구진은 대부분의 사람에게 비슷하게 작용할 수 있다고 봤어요.",
+      "note": "※ 혈압 위험이 높은 중국 농촌 성인 대상. 개인차가 전혀 없다는 뜻은 아니에요."
+    },
+    {
+      "type": "body",
+      "text": "오늘 집 소금의 [[성분표]]에서 염화칼륨 함유 여부를 확인해 보세요. 신장 질환 등 칼륨 제한이 있다면 의사와 먼저 상의하세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Consistency of Blood Pressure Response to Potassium-Enriched Salt in the China Salt Substitute Study.",
+        "journal": "Hypertension (Dallas, Tex. : 1979)",
+        "year": "2026",
+        "doi": "10.1161/HYPERTENSIONAHA.125.24723",
+        "authors": "Kissock K, Neal B, Yuan Y et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2126-salt_substitute/01.jpg",
+    "images/2126-salt_substitute/02.jpg",
+    "images/2126-salt_substitute/03.jpg",
+    "images/2126-salt_substitute/04.jpg",
+    "images/2126-salt_substitute/05.jpg",
+    "images/2126-salt_substitute/06.jpg",
+    "images/2126-salt_substitute/07.jpg"
+  ],
+  "instagram_caption": "칼륨 저염 소금, 나한테는 효과가 있을까요? 사람마다 반응이 크게 다르다는 말, 진짜일까요?\n\n중국 농촌의 혈압 위험이 높은 성인 608명을 대상으로 한 무작위 대조 시험을 다시 분석한 논문이에요. 모두 4주간 칼륨 강화 소금을 썼더니 혈압 변화가 -80에서 +56.5mmHg까지 사람마다 극단적으로 달랐어요.\n\n그래서 처음 반응에 따라 '반응함' 477명, '반응 없음' 131명으로 나눠 12개월을 더 추적했어요. 일반 소금과 비교한 혈압 차이는 각각 -2.2, -7.2mmHg였고, 두 집단 사이에 차이는 없다고 보고됐어요(P=0.068).\n\n연구진은 처음 보였던 큰 개인차가 실제 체질 차이라기보다, 같은 사람도 날마다 달라지는 혈압 측정 변동(표준편차 약 14mmHg) 때문일 수 있다고 해석했어요. 12개월 평균 효과는 약 3.7mmHg 낮은 수준이었어요.\n\n※ 혈압 위험이 높고 소금 섭취가 많은 중국 농촌 성인 대상이라 다른 집단에 그대로 적용하긴 어려워요. 개인차가 전혀 없다는 뜻도 아니에요.\n\n✅ 오늘의 행동: 집 소금의 성분표에서 염화칼륨 함유 여부를 확인해 보세요. 신장 질환 등 칼륨 제한이 있다면 의사와 먼저 상의하세요.\n\n📄 출처: Kissock K, Neal B, Yuan Y et al., Hypertension (2026). DOI 10.1161/HYPERTENSIONAHA.125.24723\n\n#논문팩트체크 #paper_factcheck #저염소금 #칼륨소금 #소금대체 #염화칼륨 #나트륨줄이기 #혈압관리 #저염식 #건강상식 #식습관 #팩트체크\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "저염 소금, 효과가 사람마다 다를까?\n\n중국에서 608명을 12개월 추적한 무작위 대조 시험을 다시 분석한 논문이 있어요. 처음 4주에 혈압이 내린 사람과 아닌 사람을 나눠 이어서 봤더니, 두 집단의 효과 차이는 없다고 보고됐어요. 연구진은 처음의 큰 개인차를 혈압 측정 변동 때문일 수 있다고 해석했고, 평균 효과는 약 3.7mmHg 낮은 수준이었어요. 다만 혈압 위험이 높은 중국 농촌 성인 대상이에요. 여러분은 소금 바꿔보신 적 있나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Consistency of Blood Pressure Response to Potassium-Enriched Salt in the China Salt Substitute Study.",
+    "journal": "Hypertension (Dallas, Tex. : 1979)",
+    "year": "2026",
+    "doi": "10.1161/HYPERTENSIONAHA.125.24723",
+    "pmid": "41263071",
+    "authors": "Kissock K, Neal B, Yuan Y et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41263071/"
+  },
+  "drafted_at": "2026-10-10T02:13:28.087491+09:00",
+  "model": "claude_code:default"
+}
