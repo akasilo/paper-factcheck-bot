@@ -1,0 +1,83 @@
+{
+  "id": "2127-probiotics",
+  "approved": false,
+  "link": "",
+  "topic": "probiotics",
+  "topic_ko": "유산균",
+  "verdict": "mixed",
+  "evidence_level": "meta-analysis",
+  "source_text": "PMC11243554 전문",
+  "answer": "한 리뷰에 따르면 IBS 증상에서 유산균은 위약보다 증상을 개선했고 특히 비피도박테리움·락토바실러스 계열이 그랬지만, 모든 균이 같은 결과는 아니었고 가장 좋은 균주는 불분명하다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "라벨에 균의 속·종·균주 번호가 적힌 유산균(프로바이오틱스)",
+  "image_prompt": "a small clear glass jar of probiotic capsules on a plain light wooden table",
+  "caveats": [
+    "시험 간 이질성이 크고 출판 편향 가능성이 있다",
+    "가장 효과적인 균주나 조합은 불분명하다",
+    "일부 시험은 편향 위험이 불분명하거나 높다",
+    "결과는 IBS 환자 대상이며 일반인에게 그대로 적용하기 어렵다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "유산균,\n[[아무거나]]\n먹어도\n{{될까요?}}"
+    },
+    {
+      "type": "body",
+      "text": "과민성 장 증후군(IBS) 성인 대상 무작위 대조 시험을 종합한 한 리뷰에 따르면, 유산균은 위약보다 전반적 증상을 [[더 개선]]했습니다.",
+      "note": "※ 유산균 시험 54편, 참가자 약 6,700명"
+    },
+    {
+      "type": "body",
+      "text": "균 종류별로 보면 비피도박테리움과 락토바실러스 계열 모두 증상 개선 결과를 보였습니다. 복통은 두 계열, 복부 팽만은 비피도박테리움이 가장 좋았습니다."
+    },
+    {
+      "type": "body",
+      "text": "하지만 모든 균이 같지는 않았습니다. 대장균 계열 1편은 유의한 개선이 없었고, 균 조합 2건도 유의한 이득이 없었습니다. {{균에 따라 결과가 갈렸습니다}}"
+    },
+    {
+      "type": "body",
+      "text": "유산균의 먹이인 프리바이오틱스, 그리고 유산균과 먹이를 섞은 신바이오틱스는 유의한 개선이 없었습니다.",
+      "note": "※ 가장 효과적인 균주·조합은 아직 불분명하고, 출판 편향 가능성도 있습니다."
+    },
+    {
+      "type": "body",
+      "text": "오늘은 유산균 라벨에서 [[균 이름(속·종·균주 번호)]]을 확인해 보세요. 증상이 계속되면 병원 상담이 먼저입니다."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "The Efficacy of Probiotics, Prebiotics, Synbiotics, and Fecal Microbiota Transplantation in Irritable Bowel Syndrome: A Systematic Review and Network Meta-Analysis.",
+        "journal": "Nutrients",
+        "year": "2024",
+        "doi": "10.3390/nu16132114",
+        "authors": "Wu Y, Li Y, Zheng Q et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2127-probiotics/01.jpg",
+    "images/2127-probiotics/02.jpg",
+    "images/2127-probiotics/03.jpg",
+    "images/2127-probiotics/04.jpg",
+    "images/2127-probiotics/05.jpg",
+    "images/2127-probiotics/06.jpg",
+    "images/2127-probiotics/07.jpg"
+  ],
+  "instagram_caption": "유산균, 아무거나 먹어도 될까요?\n\n과민성 장 증후군(IBS) 성인 환자를 대상으로 한 무작위 대조 시험을 종합한 리뷰 논문이 나왔습니다. 유산균 시험 54편, 참가자는 약 6,700명이었습니다.\n\n결과를 보면 유산균은 위약보다 전반적인 증상을 더 개선했습니다. 특히 비피도박테리움과 락토바실러스 계열에서 개선 결과가 나왔고, 복통은 두 계열, 복부 팽만은 비피도박테리움이 가장 좋았습니다.\n\n다만 모든 균이 같지는 않았습니다. 대장균 계열 1편은 유의한 개선이 없었고, 균 조합 2건도 유의한 이득이 없었습니다. 유산균의 먹이인 프리바이오틱스와 신바이오틱스(유산균+먹이)도 유의한 개선이 없었습니다.\n\n한계도 있습니다. 시험마다 결과 차이가 컸고 출판 편향 가능성이 있으며, 어떤 균주나 조합이 가장 좋은지는 아직 불분명합니다.\n\n👉 오늘의 행동: 유산균 라벨에서 균 이름(속·종·균주 번호)을 확인해 보세요. 증상이 계속되면 병원 상담이 먼저입니다.\n\n📄 출처: Wu Y 외, Nutrients (2024). DOI 10.3390/nu16132114\n\n#논문팩트체크 #paper_factcheck #유산균 #프로바이오틱스 #과민성장증후군 #장건강 #비피도박테리움 #락토바실러스 #프리바이오틱스 #신바이오틱스 #복부팽만 #생활건강\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "유산균, 아무거나 먹어도 될까?\n\n과민성 장 증후군 환자 대상 시험 54편을 종합한 리뷰를 봤어요. 유산균은 위약보다 증상을 더 개선했고, 특히 비피도박테리움·락토바실러스 계열에서 그랬습니다. 반면 대장균 계열 1편과 일부 균 조합은 유의한 이득이 없었고, 프리바이오틱스와 신바이오틱스도 마찬가지였어요. 어떤 균주가 가장 좋은지는 아직 불분명합니다. 여러분은 유산균 고를 때 균 이름 확인하세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "The Efficacy of Probiotics, Prebiotics, Synbiotics, and Fecal Microbiota Transplantation in Irritable Bowel Syndrome: A Systematic Review and Network Meta-Analysis.",
+    "journal": "Nutrients",
+    "year": "2024",
+    "doi": "10.3390/nu16132114",
+    "pmid": "38999862",
+    "authors": "Wu Y, Li Y, Zheng Q et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38999862/"
+  },
+  "drafted_at": "2026-10-11T00:58:26.377790+09:00",
+  "model": "claude_code:default"
+}

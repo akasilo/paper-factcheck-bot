@@ -1,0 +1,81 @@
+{
+  "id": "2128-air_purifier",
+  "approved": false,
+  "link": "",
+  "topic": "air_purifier",
+  "topic_ko": "공기청정기",
+  "verdict": "mixed",
+  "evidence_level": "rct",
+  "source_text": "PMC13140469 전문",
+  "answer": "고속도로 인근 거주 성인 중 수축기 혈압이 120 이상인 사람은 HEPA 청정기 사용 시 가짜 장치보다 평균 3.0mmHg 낮았지만, 120 미만인 사람과 이완기 혈압에서는 유의한 효과가 없었다.",
+  "style": "paper",
+  "accent": "blue",
+  "product_hint": "침실·거실 면적에 맞는 HEPA 필터 공기청정기 (활성탄 없이 미세먼지 제거 중심)",
+  "image_prompt": "a freestanding white HEPA air purifier unit standing in a bright empty living room corner",
+  "caveats": [
+    "수축기 혈압 120 이상인 하위집단에서만 효과가 나타났고 이완기 혈압은 유의하지 않았다",
+    "참가자가 평균 41세, 비교적 높은 사회경제적 수준, 혈압약 복용자 제외라 일반화에 한계가 있다",
+    "아침에만 혈압을 쟀고 여름철 효과는 알 수 없다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "고속도로 옆 집,\n[[공기청정기]]가\n{{혈압}}까지\n낮춰줄까?"
+    },
+    {
+      "type": "body",
+      "text": "고속도로 200m 이내에 사는 성인 154명을 대상으로 한 [[무작위 대조 시험]]이에요. HEPA 필터와 필터를 뺀 가짜 장치를 한 달씩 번갈아 썼어요."
+    },
+    {
+      "type": "body",
+      "text": "수축기 혈압이 120 이상이던 사람은 HEPA 사용 후 평균 2.8mmHg 내려갔고, 가짜 장치에서는 0.2 올랐어요. 둘의 차이는 [[3.0mmHg]]였어요."
+    },
+    {
+      "type": "body",
+      "text": "반면 수축기 혈압이 120 미만인 사람과 이완기 혈압(아래 숫자)에서는 {{유의한 효과가 없었다}}고 해요."
+    },
+    {
+      "type": "body",
+      "text": "초미세먼지(PM2.5)는 하루 평균 실내 가짜 장치 5.2, HEPA 2.5㎍/㎥로 [[낮아졌어요]]. 외부 공기는 3.9였어요.",
+      "note": "※ 평균 41세, 혈압약 복용자 제외, 여름철 효과는 미확인"
+    },
+    {
+      "type": "body",
+      "text": "고속도로나 큰 도로 가까이 산다면 [[내 수축기 혈압]]부터 재 보세요. 120 이상이면 침실에 HEPA 청정기를 두는 것을 고려해 볼 만해요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Effect of HEPA Filtration Air Purifiers on Blood Pressure: A Pragmatic Randomized Crossover Trial.",
+        "journal": "Journal of the American College of Cardiology",
+        "year": "2025",
+        "doi": "10.1016/j.jacc.2025.06.037",
+        "authors": "Brugge D, Eliasziw M, Thanikachalam M et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2128-air_purifier/01.jpg",
+    "images/2128-air_purifier/02.jpg",
+    "images/2128-air_purifier/03.jpg",
+    "images/2128-air_purifier/04.jpg",
+    "images/2128-air_purifier/05.jpg",
+    "images/2128-air_purifier/06.jpg",
+    "images/2128-air_purifier/07.jpg"
+  ],
+  "instagram_caption": "고속도로 옆 집에서 공기청정기를 틀면 혈압이 정말 내려갈까요?\n\n미국 매사추세츠 고속도로 200m 이내에 사는 성인 154명을 대상으로 한 무작위 대조 시험이에요. 진짜 HEPA 필터와 필터를 뺀 가짜 장치를 한 달씩 번갈아 사용하고, 혈압을 네 번 쟀어요. 참가자는 어느 쪽인지 모르게 설계됐어요.\n\n결과는 혈압 수준에 따라 달랐어요. 수축기 혈압이 120mmHg 이상이던 사람은 HEPA 사용 후 평균 2.8mmHg 내려갔고, 가짜 장치에서는 0.2 올라 둘의 차이가 3.0mmHg였어요. 하지만 수축기 혈압이 120 미만인 사람과 이완기 혈압에서는 유의한 효과가 없었어요.\n\n한계도 있어요. 참가자는 평균 41세에 비교적 소득이 높은 편이었고, 혈압약 복용자는 빠졌어요. 여름철 효과도 알 수 없어요. 연구진도 어떤 사람에게 도움이 되는지 더 확인이 필요하다고 했어요.\n\n✅ 오늘의 행동: 큰 도로 가까이 산다면 내 수축기 혈압부터 재 보세요. 120 이상이면 침실에 HEPA 청정기를 두는 것을 고려해 볼 만해요.\n\n📄 출처: Brugge D 외, Journal of the American College of Cardiology (2025). DOI 10.1016/j.jacc.2025.06.037\n\n#논문팩트체크 #paper_factcheck #공기청정기 #HEPA필터 #혈압 #수축기혈압 #초미세먼지 #미세먼지 #고속도로 #실내공기 #생활건강 #건강상식\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "공기청정기를 틀면 혈압이 정말 내려갈까?\n\n고속도로 200m 이내에 사는 성인 154명으로 한 무작위 대조 시험이 있어요. HEPA 필터와 필터 뺀 가짜 장치를 한 달씩 번갈아 썼대요. 수축기 혈압이 120 이상이던 사람은 가짜 장치보다 평균 3.0mmHg 낮았는데, 120 미만인 사람과 이완기 혈압에서는 유의한 효과가 없었어요. 참가자는 평균 41세이고 혈압약 복용자는 빠졌다는 한계도 있어요. 여러분은 집 혈압 재 보신 적 있나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Effect of HEPA Filtration Air Purifiers on Blood Pressure: A Pragmatic Randomized Crossover Trial.",
+    "journal": "Journal of the American College of Cardiology",
+    "year": "2025",
+    "doi": "10.1016/j.jacc.2025.06.037",
+    "pmid": "40767818",
+    "authors": "Brugge D, Eliasziw M, Thanikachalam M et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40767818/"
+  },
+  "drafted_at": "2026-10-11T00:59:08.655872+09:00",
+  "model": "claude_code:default"
+}
