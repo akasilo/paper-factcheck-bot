@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|사 주간 칼륨 강화 소금을 쓴 뒤 수축기 혈압이 평균 십삼점칠 밀리미터 수은주 내려갔지만, 사람별 편차는 마이너스 팔십 에서 플러스 오십육점오 까지 극단적이었어요.

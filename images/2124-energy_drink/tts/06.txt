@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘은 한 캔 마시기 전에 카페인 함량 표기를 확인하고, 졸릴 땐 저카페인 음료로 바꿔보세요.

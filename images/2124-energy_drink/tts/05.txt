@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 캔에 카페인 이백에서 삼백 밀리그램이 들어 커피 두 잔에서 세 잔보다 많을 수 있어요. 다만 '하루 몇 캔까지 괜찮은지'는 이 논문에 나오지 않아요. 참고로, 연구 질 편차가 크고, 장기 영향, 심장 질환자 자료는 부족해요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|두 그룹 모두 근무 중 서 있는 시간과 걷는 시간이 늘었어요. 줄어든 앉은 시간이 서기와 걷기로 옮겨간 셈이에요.

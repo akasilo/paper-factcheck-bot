@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|마신 뒤 심박수가 늘었다는 연구가 육십점구 퍼센트, 수축기 혈압은 오십삼점팔 퍼센트, 이완기 혈압은 육십일점오 퍼센트였어요. 참고로, 각 지표를 측정한 연구 중 통계적으로 유의하게 증가한 연구의 비율.

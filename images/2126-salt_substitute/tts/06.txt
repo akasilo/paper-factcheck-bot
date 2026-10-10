@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘 집 소금의 성분표에서 염화칼륨 함유 여부를 확인해 보세요. 신장 질환 등 칼륨 제한이 있다면 의사와 먼저 상의하세요.

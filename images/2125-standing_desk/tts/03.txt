@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|열여덟 개월 그룹 다섯 명, 스물네 개월 그룹 다섯 명을 나눠 활동 측정기로 앉기, 서기, 걷기, 일어서기 횟수를 객관적으로 쟀어요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|심전도 지표 QTc를 본 십이 편 중 팔 편(육십육점칠 퍼센트)이 유의한 QTc 길어짐을 보고했어요. PR 간격, T파 변화 등도 오십칠점구 퍼센트에서 관찰됐어요.

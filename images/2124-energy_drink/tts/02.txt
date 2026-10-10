@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 체계적 문헌고찰이 에너지드링크 연구 삼십칠 편(참가자 천오백구십칠 명, 평균 이십이점육 세)을 종합했어요. 대부분 건강한 젊은 성인 대상이었어요.

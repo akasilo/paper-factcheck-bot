@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|사무직 열 명을 추적한 연구에서, 높이 조절 책상을 쓴 뒤 근무 중 앉는 시간이 열여덟 개월 뒤 약 칠십팔 분, 스물네 개월 뒤 약 팔십사 분 줄었어요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘 한 시간에 한 번 일어서서 통화나 회의를 해보세요. 퇴근 후 앉아 있는 시간도 함께 점검해 보세요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|열두 개월 동안 평균 효과는 약 삼점칠 밀리미터 수은주 낮은 수준이었고, 연구진은 대부분의 사람에게 비슷하게 작용할 수 있다고 봤어요. 참고로, 혈압 위험이 높은 중국 농촌 성인 대상. 개인차가 전혀 없다는 뜻은 아니에요.

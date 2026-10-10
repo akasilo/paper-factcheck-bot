@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|처음 사 주로 '반응함' 사백칠십칠 명과 '반응 없음' 백삼십일 명을 나눠 열두 개월 추적했더니, 일반 소금 대비 혈압 차이는 각각 마이너스 이점이, 마이너스 칠점이 밀리미터 수은주였고 두 집단 간 차이는 없다고 보고됐어요.

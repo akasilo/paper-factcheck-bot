@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|다만 여가 시간에는 변화가 없었어요. 퇴근 후 앉는 시간은 책상이 바꿔주지 못했다는 뜻이에요. 참고로, 참여자 열 명의 소규모 연구라 더 큰 연구가 필요해요.
