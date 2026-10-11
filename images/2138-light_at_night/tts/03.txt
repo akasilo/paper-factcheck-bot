@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|공기오염, 녹지 등을 반영한 뒤에도 야외 불빛이 센 지역일수록 유방암 위험이 약간 높은 것과 관련 있었어요. 불빛 범위 한 단계 증가당 일점일일 배(구십오 퍼센트 신뢰구간 일점영이에서 일점이영)였어요.

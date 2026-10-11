@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|연관은 칠십 세 미만에서 더 뚜렷했고 코호트마다 결과 차이도 있었습니다. 최근 대규모 시험에서 카카오 플라바놀 보충제는 당뇨 위험에 영향이 없었어요. 참고로, 관찰연구라 인과관계는 확인되지 않았고, 저자들도 무작위 대조 시험이 필요하다고 밝혔습니다.

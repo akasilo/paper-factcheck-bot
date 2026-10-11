@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|향초를 켤 땐 사용 시간을 짧게 줄이고, 끈 뒤에는 창문을 열어 환기해 주세요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|저자들은 이 성분을 단독으로 쓸 때 삼켜도 안전한 것으로 보고, 어린이용 제품에도 쓸 수 있다고 봤어요. 참고로, 초록에는 불소와의 효과 차이를 보여주는 수치가 없어요.

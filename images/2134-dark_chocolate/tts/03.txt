@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|다크초콜릿을 주 오 회 이상 먹은 사람은 거의 안 먹는 사람보다 당뇨 위험이 이십일 퍼센트 낮았습니다(구십오 퍼센트 CI 오 퍼센트에서 삼십사 퍼센트). 한 번 더 먹을 때마다 약 삼 퍼센트씩 낮아지는 직선 관계였어요.

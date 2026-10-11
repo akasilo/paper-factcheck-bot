@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|연구진은 연소 부산물 때문에 기존 세균이 자라거나 죽으면서 소포가 늘었을 것으로 추정해요. 다만 건강에 미치는 영향은 아직 연구가 필요하다고 해요. 참고로, 외부 공기 유입을 완전히 막진 못했어요.

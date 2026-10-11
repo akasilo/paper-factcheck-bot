@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|예순일곱 명 중 예순다섯 명(구십칠 퍼센트)이 HEMA라는 아크릴계 성분에 대한 첩포 검사(피부에 붙여 보는 알레르기 검사)에서 양성이었어요. 증상은 손가락(칠십구 퍼센트), 손(사십 퍼센트), 머리, 목에도 나타났어요.

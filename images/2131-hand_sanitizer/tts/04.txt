@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|논문에 따르면 EU와 사우디 규정에서 물티슈 같은 남아 있는 제품에는 MIT와 CMIT 사용이 금지돼 있어요. 씻어내는 제품에만 제한적으로 허용돼요.

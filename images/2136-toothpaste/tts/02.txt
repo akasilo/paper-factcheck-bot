@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|하이드록시아파타이트 제품을 다룬 연구 십팔 편을 모아 검토했어요. 그중 무작위 대조 시험 오 편, 입안 환경 모사 시험 팔 편이 메타분석에 포함됐어요.

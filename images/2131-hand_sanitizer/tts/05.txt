@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|MIT와 CMIT는 알레르기성 접촉피부염을 일으키는 것으로 알려진 방부제예요. 알레르기 사례가 계속 늘고 있다고 논문은 소개해요. 참고로, 시료 여덟 개, 무작위 선정 아님, 사우디 제품 한정이라 전체 제품으로 일반화는 어려워요.

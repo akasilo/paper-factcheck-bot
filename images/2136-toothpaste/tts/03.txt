@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|결론은 이래요. 불소가 없어도 하이드록시아파타이트 제품이 충치를 줄이는 데 효과적이라는 근거가 이전보다 늘었다고 해요.

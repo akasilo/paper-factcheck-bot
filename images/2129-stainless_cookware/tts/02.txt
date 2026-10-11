@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|미국 온라인몰에서 산 알루미늄 이십팔 점, 황동 오 점의 납 함량을 검사했습니다. 알루미늄 제품 중 다수가 납 백 피피엠을 넘었습니다.

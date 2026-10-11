@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|골밀도는 골반 부위만 소폭 좋아졌습니다(SMD 영점이영). 허리뼈, 대퇴경부, 고관절 전체에서는 유의한 변화가 없었어요.

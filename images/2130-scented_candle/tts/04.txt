@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|공기 중 세균 구성도 달라졌어요. 켜기 전엔 없던 수준의 Phyllobacterium myrsinacearum 유래 나노 크기 세균 소포가 크게 늘었고, 실내 공기에서 처음 확인됐다고 해요.

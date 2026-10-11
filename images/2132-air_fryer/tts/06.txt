@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|에어프라이어로 구울 땐 백육십 도에서 백팔십 도, 이 분에서 육 분 범위에서 짧게 시작해 색과 향을 보며 시간을 조절해 보세요.

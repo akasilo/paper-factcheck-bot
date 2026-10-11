@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|잘 훈련된 러닝 선수 열네 명이 러닝머신에서 폼만 다른 두 신발을 신고 달렸어요. 그 결과 고반발 폼 신발에서 산소 소비량이 평균 일점이 퍼센트 낮았습니다.

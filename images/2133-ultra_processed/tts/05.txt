@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|상파울루 청소년의 육십사 퍼센트가 초가공식품을 매일 먹었어요. 아침을 거르는 것도 비만, 과체중과 관련 있다는 결과가 연구 이 편에서 나왔어요. 참고로, 관찰 연구라 원인과 결과는 알 수 없고, 저자도 이 연령대 연구가 부족하다고 밝혔어요.

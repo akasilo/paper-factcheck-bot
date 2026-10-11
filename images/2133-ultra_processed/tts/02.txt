@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 리뷰 논문이 어린이, 청소년 대상 관찰 연구 십구 편(약 삼십 만 명)을 살펴봤어요. 결론은 초가공식품 섭취가 과체중, 비만 등과 관련이 있다는 거예요.

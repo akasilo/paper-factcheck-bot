@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|검출된 농도는 약 영점일 피피엠에서 삼 피피엠 범위였어요. 아주 적은 양이지만, 규정상 쓰면 안 되는 제품군에서 나왔다는 점이 문제예요.

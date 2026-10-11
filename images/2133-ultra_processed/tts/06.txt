@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘 아침 한 끼를 챙기고, 간식 하나를 과일처럼 가공이 덜한 것으로 바꿔 보세요.

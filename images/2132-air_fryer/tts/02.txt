@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|건조 김(참김류)을 팬(이백오십 도에서 삼백오십 도, 오 초에서 십오 초)과 에어프라이어(백육십 도에서 백팔십 도, 이 분에서 육 분)로 구워 비교한 실험 연구예요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|심박수도 조금 낮았고(백사십오 대 백사십육bpm), 힘들다는 느낌(RPE)은 십점팔 대 십일점영 으로 더 낮았어요. 달리는 즐거움 점수는 이점팔 대 이점오 로 더 긍정적이었습니다.

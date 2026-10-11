@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|경사별로 보면 평지 이점일 퍼센트, 오르막 일점영 퍼센트가 나왔고 내리막은 영점이 퍼센트에 그쳤어요. 다만 경사와 신발의 상호작용은 통계적으로 유의하지 않았고(p값 영점영오영), 이 경사별 비교는 추가로 해본 탐색적 분석이에요.

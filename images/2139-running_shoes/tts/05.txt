@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|내리막은 러닝머신 환경이 낯설고 긴장되어 결과가 불분명했어요. 참가자는 남성 십사 명뿐이고 신발 색 차이로 눈가림도 안 됐습니다. 참고로, 실제 산길 기록 단축은 확인되지 않았어요.

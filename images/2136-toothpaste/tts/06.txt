@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|충치가 걱정이라면 지금 쓰는 치약의 주요 성분 표시를 확인하고, 치과에서 내 구강 상태에 맞는 치약을 상담해 보세요.

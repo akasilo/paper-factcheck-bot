@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|신발을 고를 때 무게만 보지 말고 말랑하면서 반발력 있는 중창인지도 비교해 보세요. 직접 신고 뛰어 보는 게 가장 정확해요.

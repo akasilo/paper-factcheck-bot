@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|비교 대상은 위약, 무처치, 불소 함유 대조군이었고, 치약뿐 아니라 가글과 젤도 포함됐어요.

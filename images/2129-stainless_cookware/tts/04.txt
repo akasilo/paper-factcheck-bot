@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|인도산 알루미늄 프라이팬은 어린이 한도의 천사백 배, 인도산 황동 냄비는 천이백 배 넘게 납이 나왔습니다. 스물네 시간 보관 기준입니다.

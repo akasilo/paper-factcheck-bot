@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|비만 가능성은 이점칠사 배, 과체중은 일점오이 배로 나왔어요. 다만 신뢰구간이 넓어(비만 영점칠팔에서 구점육영) 확실하다고 보기는 어려운 수치예요.

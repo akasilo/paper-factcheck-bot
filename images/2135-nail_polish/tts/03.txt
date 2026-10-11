@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이 중 마흔아홉 명(칠십삼 퍼센트)이 시술자가 아닌 일반 소비자였고, 네일 전문가는 열여덟 명(이십칠 퍼센트)이었어요. 답은 '네, 소비자도 걸릴 수 있다'입니다.

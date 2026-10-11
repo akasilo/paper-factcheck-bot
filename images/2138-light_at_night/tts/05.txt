@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|도시 안에서는 녹지가 적은 곳에서만 연관이 보였고, 녹지가 많은 곳에서는 뚜렷한 연관이 없었어요. 연구진은 녹지가 영향을 줄일 수 있는지 더 연구해야 한다고 했어요. 참고로, 실내 조명, 전자기기 빛은 측정하지 않았어요.

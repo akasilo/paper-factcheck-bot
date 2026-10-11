@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|다만 연관은 '약한' 수준이에요. 가장 센 구간 대 가장 약한 구간 비교는 일점영칠 배로 통계적으로 뚜렷하지 않았어요(신뢰구간 영점팔구에서 일점이구). 참고로, 원인을 입증한 게 아니라 관련성을 본 연구예요.

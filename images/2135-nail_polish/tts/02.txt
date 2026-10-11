@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|네덜란드 암스테르담 대학병원에서 팔 년여(이천십오 년에서 이천이십삼 년) 진료 기록을 돌아본 연구예요. 네일 제품에 의한 알레르기 접촉피부염 환자는 예순일곱 명, 전원 여성이었어요.

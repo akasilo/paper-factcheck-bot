@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘 밤 침실에 암막커튼을 쳐서 창밖 불빛을 줄이고, 잘 때는 조명을 꺼 보세요.

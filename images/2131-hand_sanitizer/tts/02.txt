@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|사우디 리야드 매장에서 산 아기 물티슈 팔 종을 분석한 연구예요. 결과는 여섯 개에서 CMIT, 세 개에서 MIT 방부제가 검출됐어요.

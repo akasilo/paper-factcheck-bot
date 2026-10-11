@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|폐경 후 골다공증 여성 대상 무작위 대조 시험 십일 편(총 사만삼천팔백육십구 명)을 종합한 리뷰가 있습니다. 칼슘 플러스 비타민D 병용을 위약, 일반 관리와 비교했어요.

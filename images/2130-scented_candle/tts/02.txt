@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|향초 근처에서 PM십 은 불을 붙이고 오 분 뒤 기준치(켜기 전)의 일점오이 배로 최고치를 보였어요. 이후 삼십 분쯤 지나 켜기 전 수준 아래로 내려갔어요. 참고로, 주택 세 곳에서 측정한 한 편의 연구.

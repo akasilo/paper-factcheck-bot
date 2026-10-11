@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|혈중 비타민D 수치는 좋아졌고, 특히 처음에 부족했던 사람에서 두드러졌어요. 저자들은 영양제를 뼈 치료의 단독 해법이 아닌 보조 수단으로 봐야 한다고 썼습니다. 참고로, 골다공증 진단 여성 대상 결과이며, 일부 시험은 하루 사백 아이유 정도의 낮은 용량이었어요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|밀크초콜릿은 당뇨 위험과 유의한 관련이 없었고, 오히려 장기간 체중 증가와 관련이 있었습니다. 다크초콜릿은 체중 증가와 관련이 없었어요.

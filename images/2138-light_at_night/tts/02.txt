@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|프랑스 여성 약 일 만 명(유방암 오천이백이십이 명, 비교군 오천이백이십이 명)을 비교한 대규모 연구예요. 위성 사진으로 집 주변 야외 밤 불빛 세기를 추정했어요.

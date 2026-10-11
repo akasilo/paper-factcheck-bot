@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|두 방법 모두 온도가 높고 오래 구울수록 항산화 활성이 유의하게 올라갔고, 색소 함량은 줄었어요.

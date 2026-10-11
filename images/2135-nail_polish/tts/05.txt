@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|아크릴 함유 제품과의 접촉을 피하자 환자의 팔십 퍼센트에서 피부염이 완전히 가라앉았어요. 참고로, 피부과 검사를 받은 환자 대상 연구라 일반 인구의 발생률은 아니에요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|미국 세 개 대규모 코호트, 약 십구 만 명을 최대 삼십 여 년 추적한 BMJ 논문입니다. 초콜릿을 종류별로 나눠 제이 형 당뇨 위험을 비교했어요.

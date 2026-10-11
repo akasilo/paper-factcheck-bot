@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|다만 맛 평가 최고점은 팬 삼백 도 십오 초였어요. 구수한 향 관련 성분(옥텐올류)은 두 방법 모두 구울수록 줄었어요. 참고로, 초록에는 두 방법의 항산화 활성을 직접 비교한 수치가 없어요.

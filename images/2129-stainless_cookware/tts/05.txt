@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|반면 스테인리스 십칠 점은 납이 훨씬 적게 녹았습니다. 연구팀은 알루미늄, 황동보다 스테인리스가 더 안전한 대안이라고 봤습니다. 참고로, 온라인 구매 일부 제품만 검사했고, 판매자 정보는 검증하지 않았습니다. 모든 제품을 대표하진 않습니다.

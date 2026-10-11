@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|더 작은 입자는 멀리 퍼졌어요. 삼 미터 거리에서 PM이점오 는 일점육이 배, PM일 은 일점구칠 배까지 올랐고, 육 미터에서도 켜는 동안 높게 유지됐어요.
