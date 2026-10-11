@@ -1,0 +1,82 @@
+{
+  "id": "2144-magnesium",
+  "approved": false,
+  "link": "",
+  "topic": "magnesium",
+  "topic_ko": "마그네슘",
+  "verdict": "mixed",
+  "evidence_level": "systematic review",
+  "source_text": "PMC11136869 전문",
+  "answer": "사람 대상 시험 15편 중 수면은 8편 중 5편, 불안은 7편 중 5편에서 개선이 보고됐지만, 규모가 작고 제각각이라 확정하기는 어렵다.",
+  "style": "paper",
+  "accent": "blue",
+  "product_hint": "라벨에 원소 마그네슘 함량이 명확히 적힌 제품 (형태별 우열은 이 논문에서 확인되지 않음)",
+  "image_prompt": "a small glass jar of white magnesium supplement capsules next to a few loose capsules on a plain table",
+  "caveats": [
+    "연구 대부분이 규모가 작고 용량·형태·기간이 제각각이라 결과를 단순 비교하기 어렵다",
+    "일부 연구는 비타민 B6 등 다른 활성 성분을 함께 사용했다",
+    "대부분 산화마그네슘을 사용해 글리시네이트 등 다른 형태의 우열은 알 수 없다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "불안·불면에\n[[마그네슘]]\n정말 효과\n있을까?"
+    },
+    {
+      "type": "body",
+      "text": "한 체계적 문헌고찰이 사람 대상 시험 15편을 모아 살펴봤어요.\n수면 결과를 본 연구가 8편, 불안 결과를 본 연구가 7편이었어요."
+    },
+    {
+      "type": "body",
+      "text": "수면 연구 8편 중 [[5편]]에서 수면 지표가 좋아졌어요.\n2편은 개선이 없었고, 1편은 결과가 엇갈렸어요.",
+      "note": "※ 대부분 설문(수면 질 지수)으로 잰 주관적 수면이에요."
+    },
+    {
+      "type": "body",
+      "text": "불안 연구 7편 중 [[5편]]에서 자가 보고 불안이 줄었어요.\n효과가 없던 2편은 월경 전 증상 여성, 출산 후 여성 대상이었어요."
+    },
+    {
+      "type": "body",
+      "text": "다만 연구가 작고 용량·형태·기간이 제각각이라 {{확정은 어렵다}}고 해요.\n효과 없던 연구는 모두 용량이 낮았고, 흔한 부작용은 묽은 변이었어요.",
+      "note": "※ 대부분 산화마그네슘을 썼고 최대 하루 729mg이었어요. 더 큰 무작위 대조 시험이 필요해요."
+    },
+    {
+      "type": "body",
+      "text": "보충제를 사기 전에 라벨에서 [[원소 마그네슘 함량과 형태]]를 확인하세요. 복용 중인 약이 있다면 전문가와 먼저 상의하세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Examining the Effects of Supplemental Magnesium on Self-Reported Anxiety and Sleep Quality: A Systematic Review.",
+        "journal": "Cureus",
+        "year": "2024",
+        "doi": "10.7759/cureus.59317",
+        "authors": "Rawji A, Peltier MR, Mourtzanakis K et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2144-magnesium/01.jpg",
+    "images/2144-magnesium/02.jpg",
+    "images/2144-magnesium/03.jpg",
+    "images/2144-magnesium/04.jpg",
+    "images/2144-magnesium/05.jpg",
+    "images/2144-magnesium/06.jpg",
+    "images/2144-magnesium/07.jpg"
+  ],
+  "instagram_caption": "불안·불면에 마그네슘이 좋다는 말, 실제 임상 근거가 있을까요?\n\nSNS에서는 마그네슘이 불안과 불면에 좋다는 영상이 수십만~수백만 조회를 기록해요. 그래서 한 연구팀이 이 주장을 체계적 문헌고찰로 확인했어요. 사람 대상 중재 시험 15편(수면 8편, 불안 7편)을 모아 살펴봤어요.\n\n결과는 대체로 긍정적이었어요. 수면 연구 8편 중 5편에서 수면 지표가 개선됐고, 2편은 개선이 없었으며 1편은 엇갈렸어요. 불안 연구 7편 중 5편에서 자가 보고 불안이 줄었어요. 효과가 없던 불안 연구 2편은 월경 전 증상 여성, 출산 후 여성 대상이었어요.\n\n하지만 한계도 분명해요. 대부분 연구가 작았고, 용량·형태·기간이 제각각이었으며, 일부는 다른 활성 성분도 함께 썼어요. 저자들은 음성 결과를 보인 연구들이 모두 상대적으로 낮은 용량이었다고 지적했어요. 부작용은 대체로 가벼웠고, 가장 흔한 것은 묽은 변이었어요. 어떤 형태가 가장 좋은지는 대부분 산화마그네슘을 썼기 때문에 가릴 수 없었어요.\n\n정리하면, 한 리뷰 논문에 따르면 마그네슘이 가벼운 불안·불면에 도움이 될 수 있다는 결과가 많았지만, 확정하려면 더 큰 무작위 대조 시험이 필요해요.\n\n✅ 오늘의 행동: 보충제를 사기 전에 라벨에서 원소 마그네슘 함량과 형태를 확인하세요. 복용 중인 약이 있다면 전문가와 먼저 상의하세요.\n\n📄 출처: Rawji A, Peltier MR, Mourtzanakis K 외, Cureus (2024). DOI 10.7759/cureus.59317\n\n#논문팩트체크 #paper_factcheck #마그네슘 #마그네슘효과 #불면 #불안 #수면의질 #수면건강 #영양제 #영양제팩트체크 #체계적문헌고찰 #건강정보\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "마그네슘이 불안·불면에 정말 좋을까?\n\n한 체계적 문헌고찰이 사람 대상 시험 15편을 모아 봤어요. 수면 연구 8편 중 5편, 불안 연구 7편 중 5편에서 개선이 보고됐대요. 다만 연구가 작고 용량·형태가 제각각이라 확정은 어렵다고 해요. 효과 없던 연구들은 용량이 낮았고, 흔한 부작용은 묽은 변이었어요. 여러분은 마그네슘 드셔보셨나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Examining the Effects of Supplemental Magnesium on Self-Reported Anxiety and Sleep Quality: A Systematic Review.",
+    "journal": "Cureus",
+    "year": "2024",
+    "doi": "10.7759/cureus.59317",
+    "pmid": "38817505",
+    "authors": "Rawji A, Peltier MR, Mourtzanakis K et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38817505/"
+  },
+  "drafted_at": "2026-10-11T22:05:53.442639+09:00",
+  "model": "claude_code:default"
+}

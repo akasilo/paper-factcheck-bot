@@ -1,0 +1,88 @@
+{
+  "id": "2149-olive_oil",
+  "approved": false,
+  "link": "",
+  "topic": "olive_oil",
+  "topic_ko": "올리브유",
+  "verdict": "good",
+  "evidence_level": "review",
+  "source_text": "PMC10180651 전문",
+  "answer": "올리브유가 포함된 지중해식 식단은 부티르산 생성균과 비피더스균 증가, 퍼미큐테스·블라우티아 감소 등 장내 미생물 변화와 관련이 있다고 보고됐다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "엑스트라 버진 올리브유",
+  "image_prompt": "a clear glass bottle of olive oil beside a small bowl of green olives on a wooden table",
+  "caveats": [
+    "올리브유 단독 효과가 아닌 지중해식 식단 전체에 대한 결과",
+    "서술형(내러티브) 리뷰로 선별된 논문만 포함",
+    "장내 미생물 변화가 건강 효과의 원인인지는 미확인"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "올리브유 먹으면\n[[장내 세균]]이\n{{달라진다}}는데\n진짜일까?"
+    },
+    {
+      "type": "body",
+      "text": "한 리뷰 논문에 따르면, 올리브유가 중심인 지중해식 식단은 [[장내 미생물 변화]]와 관련이 있었어요.\n주로 식이섬유·엑스트라 버진 올리브유·오메가-3 지방산을 통해서라고 해요.",
+      "note": "※ 올리브유 단독이 아니라 식단 전체의 결과예요"
+    },
+    {
+      "type": "body",
+      "text": "짧은사슬지방산(부티르산)을 만드는 균과 비피더스균, 박테로이데스 등은 [[늘고]], 퍼미큐테스와 블라우티아 균은 줄었다고 보고됐어요."
+    },
+    {
+      "type": "body",
+      "text": "이런 변화는 염증·산화 상태, 전반적인 대사 건강과 좋은 방향으로 관련이 있다고 알려져 있어요.\n다만 건강 효과가 이 변화 때문인지는 아직 [[앞으로의 과제]]예요."
+    },
+    {
+      "type": "body",
+      "text": "지중해식 식단 연구에선 2형 당뇨 위험이 무작위 대조 시험(PREDIMED)에서 30% 낮았고, 올리브유 보충군의 심혈관 사건도 30% 적었어요.",
+      "note": "※ 올리브유 하루 최대 8회 분량을 포함한 식단 기준이에요"
+    },
+    {
+      "type": "body",
+      "text": "고섬유 식단이 맞지 않는 사람도 있고, 지역·문화에 따라 따라 하기 어려울 수 있어요.",
+      "note": "※ 리뷰 논문 1편이라 단정할 수 없어요"
+    },
+    {
+      "type": "body",
+      "text": "오늘 샐러드나 나물에 [[올리브유]] 한 숟갈을 곁들이고, 채소·곡물·콩을 함께 늘려 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "The Effects of the Mediterranean Diet on Health and Gut Microbiota.",
+        "journal": "Nutrients",
+        "year": "2023",
+        "doi": "10.3390/nu15092150",
+        "authors": "Barber TM, Kabisch S, Pfeiffer AFH et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2149-olive_oil/01.jpg",
+    "images/2149-olive_oil/02.jpg",
+    "images/2149-olive_oil/03.jpg",
+    "images/2149-olive_oil/04.jpg",
+    "images/2149-olive_oil/05.jpg",
+    "images/2149-olive_oil/06.jpg",
+    "images/2149-olive_oil/07.jpg",
+    "images/2149-olive_oil/08.jpg"
+  ],
+  "instagram_caption": "올리브유를 먹으면 장내 세균이 달라질까요? 🫒\n\n한 리뷰 논문에 따르면, 올리브유가 핵심인 지중해식 식단은 장내 미생물 변화와 관련이 있었어요. 식이섬유, 엑스트라 버진 올리브유, 오메가-3 지방산이 그 역할을 한다고 해요.\n\n부티르산을 만드는 균과 비피더스균, 박테로이데스 등은 늘고, 퍼미큐테스와 블라우티아 균은 줄었다고 보고됐어요. 이런 변화는 염증·산화 상태, 대사 건강과 좋은 방향으로 관련이 있다고 알려져 있어요.\n\n지중해식 식단 연구에서는 2형 당뇨 발생 위험 30% 감소(PREDIMED), 올리브유 보충군의 심혈관 사건 30% 감소가 보고됐어요. 다만 이 효과가 장내 미생물 변화 때문인지는 아직 밝혀지지 않았어요.\n\n올리브유 단독이 아닌 식단 전체의 결과이고, 고섬유 식단이 맞지 않는 사람도 있어요. 리뷰 논문 1편이라 단정은 어려워요.\n\n✅ 오늘의 행동: 샐러드나 나물에 올리브유 한 숟갈을 곁들이고 채소·곡물·콩을 함께 늘려 보세요.\n\n📄 출처: Barber TM, Kabisch S, Pfeiffer AFH et al., Nutrients (2023). DOI 10.3390/nu15092150\n\n#논문팩트체크 #paper_factcheck #올리브유 #엑스트라버진올리브유 #지중해식단 #장내미생물 #장건강 #식이섬유 #부티르산 #비피더스균 #건강식단 #식단관리\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "올리브유 먹으면 장내 세균이 달라질까?\n\n한 리뷰 논문을 보니 올리브유가 핵심인 지중해식 식단은 부티르산을 만드는 균, 비피더스균 증가와 관련이 있었대요. 퍼미큐테스나 블라우티아 균은 줄었고요. 다만 올리브유만의 효과가 아니라 식이섬유 등 식단 전체의 결과예요. 이 변화가 건강 효과의 원인인지도 아직 연구 과제라고 해요. 여러분은 올리브유 어떻게 드세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "The Effects of the Mediterranean Diet on Health and Gut Microbiota.",
+    "journal": "Nutrients",
+    "year": "2023",
+    "doi": "10.3390/nu15092150",
+    "pmid": "37432307",
+    "authors": "Barber TM, Kabisch S, Pfeiffer AFH et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37432307/"
+  },
+  "drafted_at": "2026-10-11T22:08:48.563034+09:00",
+  "model": "claude_code:default"
+}
