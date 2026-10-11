@@ -1,0 +1,81 @@
+{
+  "id": "2133-ultra_processed",
+  "approved": false,
+  "link": "",
+  "topic": "ultra_processed",
+  "topic_ko": "라면·가공식품",
+  "verdict": "bad",
+  "evidence_level": "review",
+  "source_text": "PMC10960188 전문",
+  "answer": "초가공식품을 가장 많이 먹은 브라질 청소년은 가장 적게 먹은 그룹보다 평균 BMI가 0.84 높았지만, 비만 가능성 증가(2.74배)는 신뢰구간이 넓어 불확실했다.",
+  "style": "geo",
+  "accent": "orange",
+  "product_hint": "나트륨이 낮은 라면, 또는 과일·삶은 달걀처럼 가공이 덜한 간식",
+  "image_prompt": "a bowl of instant noodles next to an open packaged snack and a plain apple on a wooden table",
+  "caveats": [
+    "서술형 리뷰이고 포함된 연구 19편 중 13편이 브라질 연구라 다른 나라에 그대로 적용하기 어려움",
+    "관찰 연구라 초가공식품이 비만의 원인이라고 말할 수 없고, 비만·과체중 오즈비의 신뢰구간이 1을 포함함",
+    "저자도 이 연령대 연구가 부족하고 결론이 뚜렷하지 않다고 밝힘"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "아이 간식\n[[초가공식품]]\n{{비만}}과 관련 있을까?"
+    },
+    {
+      "type": "body",
+      "text": "한 리뷰 논문이 어린이·청소년 대상 관찰 연구 19편(약 30만 명)을 살펴봤어요. 결론은 초가공식품 섭취가 [[과체중·비만]] 등과 관련이 있다는 거예요."
+    },
+    {
+      "type": "body",
+      "text": "브라질 10세 이상 7,534명 연구에서 초가공식품을 가장 많이 먹은 그룹은 가장 적게 먹은 그룹보다 평균 [[BMI가 0.84]] 높았어요."
+    },
+    {
+      "type": "body",
+      "text": "비만 가능성은 2.74배, 과체중은 1.52배로 나왔어요. 다만 신뢰구간이 넓어(비만 0.78~9.60) {{확실하다고 보기는 어려운}} 수치예요."
+    },
+    {
+      "type": "body",
+      "text": "상파울루 청소년의 64%가 초가공식품을 매일 먹었어요. 아침을 거르는 것도 비만·과체중과 관련 있다는 결과가 연구 2편에서 나왔어요.",
+      "note": "※ 관찰 연구라 원인과 결과는 알 수 없고, 저자도 이 연령대 연구가 부족하다고 밝혔어요."
+    },
+    {
+      "type": "body",
+      "text": "오늘 [[아침 한 끼]]를 챙기고, 간식 하나를 과일처럼 가공이 덜한 것으로 바꿔 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Ultra-processed food consumption and children and adolescents' health.",
+        "journal": "Jornal de pediatria",
+        "year": "2024",
+        "doi": "10.1016/j.jped.2023.09.006",
+        "authors": "Mescoloto SB, Pongiluppi G, Domene SMÁ"
+      }
+    }
+  ],
+  "images": [
+    "images/2133-ultra_processed/01.jpg",
+    "images/2133-ultra_processed/02.jpg",
+    "images/2133-ultra_processed/03.jpg",
+    "images/2133-ultra_processed/04.jpg",
+    "images/2133-ultra_processed/05.jpg",
+    "images/2133-ultra_processed/06.jpg",
+    "images/2133-ultra_processed/07.jpg"
+  ],
+  "instagram_caption": "아이 간식, 초가공식품이 비만과 관련 있을까?\n\n한 리뷰 논문이 어린이·청소년의 초가공식품 섭취를 다룬 관찰 연구 19편(약 30만 명)을 정리했어요. 저자들은 초가공식품 섭취가 과체중, 비만, 운동 부족 등과 관련이 있다고 보고했어요.\n\n브라질 10세 이상 7,534명 연구에서는 초가공식품을 가장 많이 먹은 그룹의 평균 BMI가 가장 적게 먹은 그룹보다 0.84 높았어요. 비만 가능성은 2.74배로 나왔지만 신뢰구간이 0.78~9.60으로 넓어서 확실하다고 보기는 어려워요.\n\n상파울루 청소년의 64%는 초가공식품을 매일 먹었어요. 아침을 거르는 것도 비만·과체중과 관련 있다는 결과가 연구 2편에서 나왔고요.\n\n다만 관찰 연구라 원인과 결과를 말할 수는 없어요. 저자들도 이 연령대 연구가 부족하고 결론이 뚜렷하지 않은 부분이 있다고 밝혔어요.\n\n✅ 오늘의 행동: 아침 한 끼를 챙기고, 간식 하나를 과일처럼 가공이 덜한 것으로 바꿔 보세요.\n\n📄 출처: Mescoloto SB, Pongiluppi G, Domene SMÁ, Jornal de pediatria (2024). DOI 10.1016/j.jped.2023.09.006\n\n#논문팩트체크 #paper_factcheck #초가공식품 #아이간식 #어린이비만 #청소년건강 #가공식품 #라면 #아침식사 #육아정보 #식습관 #간식추천\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "아이 간식, 초가공식품이 비만과 관련 있을까?\n\n한 리뷰 논문이 어린이·청소년 대상 관찰 연구 19편을 정리했어요. 브라질 연구에서 초가공식품을 가장 많이 먹은 그룹은 가장 적게 먹은 그룹보다 평균 BMI가 0.84 높았대요. 비만 가능성 2.74배는 신뢰구간이 넓어서 확실하진 않고요. 아침을 거르는 것도 비만·과체중과 관련 있다는 결과가 있었어요. 관찰 연구라 원인은 알 수 없어요. 여러분 집 아이 간식은 뭐예요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Ultra-processed food consumption and children and adolescents' health.",
+    "journal": "Jornal de pediatria",
+    "year": "2024",
+    "doi": "10.1016/j.jped.2023.09.006",
+    "pmid": "37866398",
+    "authors": "Mescoloto SB, Pongiluppi G, Domene SMÁ",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37866398/"
+  },
+  "drafted_at": "2026-10-11T21:48:26.698320+09:00",
+  "model": "claude_code:default"
+}

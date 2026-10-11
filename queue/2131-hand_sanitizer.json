@@ -1,0 +1,81 @@
+{
+  "id": "2131-hand_sanitizer",
+  "approved": false,
+  "link": "",
+  "topic": "hand_sanitizer",
+  "topic_ko": "손소독제·물티슈",
+  "verdict": "bad",
+  "evidence_level": "other",
+  "source_text": "PMC9961637 전문",
+  "answer": "리야드 매장의 아기 물티슈 8종 중 6개에서 CMIT, 3개에서 MIT가 약 0.1~3ppm 검출됐고, 이는 남아 있는 제품에서 사용이 금지된 방부제였다.",
+  "style": "geo",
+  "accent": "yellow",
+  "product_hint": "무향 저자극 물티슈 중 성분표에 이소티아졸리논계 방부제가 없는 제품",
+  "image_prompt": "an open plastic pack of white baby wet wipes with one wipe pulled out on a plain table",
+  "caveats": [
+    "시료가 8개뿐이고 무작위로 고르지 않아 대표성이 낮다",
+    "사우디 리야드 제품에 한정된 결과이며 제품별 농도는 본문 발췌만으로 확인되지 않는다",
+    "연구의 주목적은 검출 방법 검증이며 건강 영향을 직접 평가하지 않았다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "아기 [[물티슈]]에서\n{{금지 방부제}}가\n정말 검출될까?"
+    },
+    {
+      "type": "body",
+      "text": "사우디 리야드 매장에서 산 [[아기 물티슈 8종]]을 분석한 연구예요.\n결과는 6개에서 CMIT, 3개에서 MIT 방부제가 검출됐어요."
+    },
+    {
+      "type": "body",
+      "text": "검출된 농도는 [[약 0.1~3ppm]] 범위였어요.\n아주 적은 양이지만, 규정상 쓰면 안 되는 제품군에서 나왔다는 점이 문제예요."
+    },
+    {
+      "type": "body",
+      "text": "논문에 따르면 EU와 사우디 규정에서 물티슈 같은 {{남아 있는 제품}}에는 MIT와 CMIT 사용이 금지돼 있어요. 씻어내는 제품에만 제한적으로 허용돼요."
+    },
+    {
+      "type": "body",
+      "text": "MIT와 CMIT는 알레르기성 접촉피부염을 일으키는 것으로 알려진 방부제예요. 알레르기 사례가 계속 늘고 있다고 논문은 소개해요.",
+      "note": "※ 시료 8개, 무작위 선정 아님, 사우디 제품 한정이라 전체 제품으로 일반화는 어려워요."
+    },
+    {
+      "type": "body",
+      "text": "물티슈를 사기 전 성분표에서 [[메틸이소티아졸리논]]이나 메틸클로로이소티아졸리논이 있는지 확인해 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Quantification of Methylisothiazolinone and Methylchloroisothiazolinone Preservatives by High-Performance Liquid Chromatography.",
+        "journal": "Molecules (Basel, Switzerland)",
+        "year": "2023",
+        "doi": "10.3390/molecules28041760",
+        "authors": "Alanazi S, Tabassum H, Abudawood M et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2131-hand_sanitizer/01.jpg",
+    "images/2131-hand_sanitizer/02.jpg",
+    "images/2131-hand_sanitizer/03.jpg",
+    "images/2131-hand_sanitizer/04.jpg",
+    "images/2131-hand_sanitizer/05.jpg",
+    "images/2131-hand_sanitizer/06.jpg",
+    "images/2131-hand_sanitizer/07.jpg"
+  ],
+  "instagram_caption": "아기 물티슈에서 금지된 방부제가 정말 검출될까?\n\n사우디 리야드 매장에서 산 아기 물티슈 8종을 분석한 연구가 있어요. 그 결과 6개에서 CMIT, 3개에서 MIT라는 방부제가 검출됐어요. 농도는 약 0.1~3ppm 정도였어요.\n\n논문에 따르면 EU와 사우디 규정상 물티슈처럼 피부에 남는 제품에는 이 방부제를 쓸 수 없어요. 샴푸처럼 씻어내는 제품에만 제한적으로 허용돼요.\n\n이 방부제는 알레르기성 접촉피부염과 관련이 있는 것으로 알려져 있어요.\n\n다만 이 연구의 주목적은 검출 방법을 검증하는 것이었어요. 시료는 8개뿐이고 무작위로 고르지 않았어요. 사우디 제품에 한정된 결과라서 모든 물티슈가 그렇다는 뜻은 아니에요.\n\n✅ 오늘의 행동: 물티슈를 살 때 성분표에서 메틸이소티아졸리논, 메틸클로로이소티아졸리논 표기가 있는지 확인해 보세요.\n\n📄 출처: Alanazi S 외, Molecules (2023). DOI 10.3390/molecules28041760\n\n#논문팩트체크 #paper_factcheck #아기물티슈 #물티슈 #방부제 #성분표 #화장품성분 #접촉피부염 #육아정보 #육아템 #신생아용품 #생활속과학\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "아기 물티슈에서 금지 방부제가 검출될까?\n\n사우디 리야드 매장의 아기 물티슈 8종을 분석한 논문을 봤어요. 6개에서 CMIT, 3개에서 MIT 방부제가 약 0.1~3ppm 검출됐대요. 논문에 따르면 이 방부제는 피부에 남는 제품에는 쓰면 안 되는 성분이에요. 다만 시료가 8개뿐이고 무작위가 아니라서 모든 제품이 그렇다고 보긴 어려워요. 여러분은 물티슈 살 때 성분표 확인하시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Quantification of Methylisothiazolinone and Methylchloroisothiazolinone Preservatives by High-Performance Liquid Chromatography.",
+    "journal": "Molecules (Basel, Switzerland)",
+    "year": "2023",
+    "doi": "10.3390/molecules28041760",
+    "pmid": "36838748",
+    "authors": "Alanazi S, Tabassum H, Abudawood M et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36838748/"
+  },
+  "drafted_at": "2026-10-11T21:47:28.449870+09:00",
+  "model": "claude_code:default"
+}
