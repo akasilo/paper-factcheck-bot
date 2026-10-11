@@ -1,7 +1,7 @@
 {
   "id": "2123-nonstick_pan",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hHYkh0AVzM",
   "topic": "nonstick_pan",
   "topic_ko": "코팅 프라이팬",
   "verdict": "mixed",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/37141244/"
   },
   "drafted_at": "2026-10-09T02:44:10.086956+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-10-11T21:43:04.243718+09:00"
 }

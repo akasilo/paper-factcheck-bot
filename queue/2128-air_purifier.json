@@ -1,7 +1,7 @@
 {
   "id": "2128-air_purifier",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hLh6cbxCwK",
   "topic": "air_purifier",
   "topic_ko": "공기청정기",
   "verdict": "mixed",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/40767818/"
   },
   "drafted_at": "2026-10-11T00:59:08.655872+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-10-11T21:43:04.244531+09:00"
 }

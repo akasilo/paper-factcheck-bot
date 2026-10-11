@@ -1,7 +1,7 @@
 {
   "id": "2121-omega3",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hHYgGQ2Hy8",
   "topic": "omega3",
   "topic_ko": "오메가3",
   "verdict": "good",
@@ -78,5 +78,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/39810703/"
   },
   "drafted_at": "2026-10-09T02:42:41.884952+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-10-11T21:43:04.243387+09:00"
 }
