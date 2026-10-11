@@ -1,7 +1,7 @@
 {
   "id": "2142-earphones",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hLpNsHzb4K",
   "topic": "earphones",
   "topic_ko": "이어폰",
   "verdict": "bad",
@@ -78,5 +78,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/37815076/"
   },
   "drafted_at": "2026-10-11T22:01:46.980134+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-10-12T08:11:51.163062+09:00"
 }

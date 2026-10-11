@@ -1,7 +1,7 @@
 {
   "id": "2157-multivitamin",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hLqA2ELZWC",
   "topic": "multivitamin",
   "topic_ko": "종합비타민",
   "verdict": "good",
@@ -78,5 +78,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/36102337/"
   },
   "drafted_at": "2026-10-11T22:21:29.930283+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-10-12T08:11:51.164905+09:00"
 }

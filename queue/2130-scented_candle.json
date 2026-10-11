@@ -1,7 +1,7 @@
 {
   "id": "2130-scented_candle",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hLopKsLblA",
   "topic": "scented_candle",
   "topic_ko": "향초·디퓨저",
   "verdict": "mixed",
@@ -78,5 +78,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/40128575/"
   },
   "drafted_at": "2026-10-11T21:46:03.664885+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-10-12T08:11:51.161530+09:00"
 }

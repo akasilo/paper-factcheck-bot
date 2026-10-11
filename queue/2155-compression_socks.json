@@ -1,7 +1,7 @@
 {
   "id": "2155-compression_socks",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hLqzbGIF7Q",
   "topic": "compression_socks",
   "topic_ko": "압박 스타킹",
   "verdict": "mixed",
@@ -79,5 +79,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/38753045/"
   },
   "drafted_at": "2026-10-11T22:20:27.622356+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-10-12T08:11:51.164671+09:00"
 }

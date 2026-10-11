@@ -1,7 +1,7 @@
 {
   "id": "2132-air_fryer",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hLoz4adzb2",
   "topic": "air_fryer",
   "topic_ko": "에어프라이어",
   "verdict": "mixed",
@@ -77,5 +77,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/38959799/"
   },
   "drafted_at": "2026-10-11T21:47:53.786174+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-10-12T08:11:51.161858+09:00"
 }

@@ -1,7 +1,7 @@
 {
   "id": "2144-magnesium",
-  "approved": false,
-  "link": "",
+  "approved": true,
+  "link": "https://link.coupang.com/a/hLpDBachgG",
   "topic": "magnesium",
   "topic_ko": "마그네슘",
   "verdict": "mixed",
@@ -78,5 +78,6 @@
     "url": "https://pubmed.ncbi.nlm.nih.gov/38817505/"
   },
   "drafted_at": "2026-10-11T22:05:53.442639+09:00",
-  "model": "claude_code:default"
+  "model": "claude_code:default",
+  "approved_at": "2026-10-12T08:11:51.163303+09:00"
 }
