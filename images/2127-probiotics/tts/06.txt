@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘은 유산균 라벨에서 균 이름(속, 종, 균주 번호)을 확인해 보세요. 증상이 계속되면 병원 상담이 먼저입니다.

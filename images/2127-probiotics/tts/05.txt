@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|유산균의 먹이인 프리바이오틱스, 그리고 유산균과 먹이를 섞은 신바이오틱스는 유의한 개선이 없었습니다. 참고로, 가장 효과적인 균주, 조합은 아직 불분명하고, 출판 편향 가능성도 있습니다.

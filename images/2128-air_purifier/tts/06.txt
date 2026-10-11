@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|고속도로나 큰 도로 가까이 산다면 내 수축기 혈압부터 재 보세요. 백이십 이상이면 침실에 HEPA 청정기를 두는 것을 고려해 볼 만해요.

@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|수축기 혈압이 백이십 이상이던 사람은 HEPA 사용 후 평균 이점팔 밀리미터 수은주 내려갔고, 가짜 장치에서는 영점이 올랐어요. 둘의 차이는 삼점영 밀리미터 수은주였어요.

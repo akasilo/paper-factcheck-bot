@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|균 종류별로 보면 비피도박테리움과 락토바실러스 계열 모두 증상 개선 결과를 보였습니다. 복통은 두 계열, 복부 팽만은 비피도박테리움이 가장 좋았습니다.

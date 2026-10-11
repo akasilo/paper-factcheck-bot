@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|과민성 장 증후군(IBS) 성인 대상 무작위 대조 시험을 종합한 한 리뷰에 따르면, 유산균은 위약보다 전반적 증상을 더 개선했습니다. 참고로, 유산균 시험 오십사 편, 참가자 약 육천칠백 명.

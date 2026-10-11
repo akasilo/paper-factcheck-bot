@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|반면 수축기 혈압이 백이십 미만인 사람과 이완기 혈압(아래 숫자)에서는 유의한 효과가 없었다고 해요.

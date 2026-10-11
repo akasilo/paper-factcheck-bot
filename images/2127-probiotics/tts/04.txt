@@ -1,0 +1,1 @@
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|하지만 모든 균이 같지는 않았습니다. 대장균 계열 일 편은 유의한 개선이 없었고, 균 조합 이 건도 유의한 이득이 없었습니다. 균에 따라 결과가 갈렸습니다
