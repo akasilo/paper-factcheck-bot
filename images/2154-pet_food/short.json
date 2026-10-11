@@ -1,0 +1,15 @@
+{
+  "cards": "77eb16ec929930e8",
+  "script": "8657c4abe03625b2",
+  "voice": "ko-KR-Neural2-A",
+  "rate": "1.15",
+  "style": "",
+  "music": "lake_jupiter.mp3@0.350",
+  "music_title": "Lake Jupiter",
+  "music_credit": "",
+  "seconds": 69.7,
+  "tts_fallback": {
+    "wanted": "gemini:gemini-3.8-flash-tts:Aoede",
+    "date": "2026-10-11"
+  }
+}

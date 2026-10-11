@@ -1,0 +1,15 @@
+{
+  "cards": "ce61e7f11a0ea031",
+  "script": "e0af7a06c03aabc4",
+  "voice": "ko-KR-Neural2-A",
+  "rate": "1.15",
+  "style": "",
+  "music": "from_here_on_in.mp3@0.350",
+  "music_title": "From Here on In",
+  "music_credit": "",
+  "seconds": 62.1,
+  "tts_fallback": {
+    "wanted": "gemini:gemini-3.8-flash-tts:Aoede",
+    "date": "2026-10-11"
+  }
+}

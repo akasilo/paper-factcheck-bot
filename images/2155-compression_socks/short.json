@@ -1,0 +1,15 @@
+{
+  "cards": "ac92304294fecb67",
+  "script": "7a1e3f877d8c1ff8",
+  "voice": "ko-KR-Neural2-A",
+  "rate": "1.15",
+  "style": "",
+  "music": "rain_over_kyoto_station.mp3@0.350",
+  "music_title": "Rain Over Kyoto Station",
+  "music_credit": "",
+  "seconds": 64.3,
+  "tts_fallback": {
+    "wanted": "gemini:gemini-3.8-flash-tts:Aoede",
+    "date": "2026-10-11"
+  }
+}
