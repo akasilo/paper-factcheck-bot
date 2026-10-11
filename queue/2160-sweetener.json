@@ -1,0 +1,82 @@
+{
+  "id": "2160-sweetener",
+  "approved": false,
+  "link": "",
+  "topic": "sweetener",
+  "topic_ko": "인공감미료",
+  "verdict": "mixed",
+  "evidence_level": "review",
+  "source_text": "PMC11435027 전문",
+  "answer": "이 리뷰에서 제로 칼로리 감미료의 체중 감량 효과는 연구마다 엇갈렸고, 혈당 조절·충치 예방 같은 이점과 인슐린 저항성 등 우려가 함께 보고됐으며 장기 안전성 근거는 부족했다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "무가당 탄산수 또는 스테비아 감미료",
+  "image_prompt": "a clear glass of sparkling water next to a small open jar of white sweetener powder on a plain table",
+  "caveats": [
+    "어린이·청소년 중심의 리뷰로 성인에게 그대로 적용하기 어렵다",
+    "체계적 선별이 아닌 PubMed 키워드 검색 기반 서술형 리뷰",
+    "일부 우려(암 등)는 동물 연구에서 시작됐고 인과관계는 불명확"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "제로 칼로리\n[[감미료]]\n살 빠질까?\n{{해로울까?}}"
+    },
+    {
+      "type": "body",
+      "text": "한 리뷰 논문(141편 검토)에 따르면 인공감미료의 [[체중 감량 효과는 엇갈렸습니다]]. 설탕 음료를 저칼로리 음료로 바꾸자 BMI가 줄었다는 보고도, 효과가 없거나 늘었다는 보고도 있었어요."
+    },
+    {
+      "type": "body",
+      "text": "어린이·청소년 3682명 연구에서는 감미료 음료를 마신 쪽의 BMI 증가가 47% 더 컸다는 결과가 있었습니다. WHO·미국소아과학회는 대체해도 유의한 체중 감소는 어렵다고 봤어요.",
+      "note": "※ 보상 섭취 등 교란 요인 가능성"
+    },
+    {
+      "type": "body",
+      "text": "장점도 있었습니다. 장기 사용이 제2형 당뇨 환자의 [[혈당 조절]]과 충치 예방에 유리하다고 보고됐고, 12~16주 연구에선 인슐린 수치에 영향이 없었어요."
+    },
+    {
+      "type": "body",
+      "text": "우려도 있습니다. 인슐린 저항성, 지방간, 위장 증상, 일부 암과의 연관이 보고됐어요. 다만 {{대부분 장기 근거가 부족}}하고 결과가 엇갈립니다. 2세 미만에겐 권하지 않아요.",
+      "note": "※ 일부는 동물·세포 실험 기반"
+    },
+    {
+      "type": "body",
+      "text": "음료를 고를 땐 [[무가당 탄산수]]처럼 단맛 자체를 줄이는 쪽부터 시도해 보세요. 감미료는 '대체'보다 '줄이기'가 먼저예요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Chronic Use of Artificial Sweeteners: Pros and Cons.",
+        "journal": "Nutrients",
+        "year": "2024",
+        "doi": "10.3390/nu16183162",
+        "authors": "Kossiva L, Kakleas K, Christodouli F et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2160-sweetener/01.jpg",
+    "images/2160-sweetener/02.jpg",
+    "images/2160-sweetener/03.jpg",
+    "images/2160-sweetener/04.jpg",
+    "images/2160-sweetener/05.jpg",
+    "images/2160-sweetener/06.jpg",
+    "images/2160-sweetener/07.jpg"
+  ],
+  "instagram_caption": "제로 칼로리 감미료, 살 빼는 데 도움될까 vs 몸에 해로울까?\n\n한 리뷰 논문이 2004~2024년 연구 141편을 살펴봤어요. 결론부터 말하면 '엇갈린다'입니다.\n\n체중은 설탕 음료를 바꾸면 BMI가 줄었다는 보고도, 효과가 없거나 오히려 늘었다는 보고도 있었어요. 3682명 연구에선 감미료 음료를 마신 쪽의 BMI 증가가 47% 더 컸다고 해요. WHO와 미국소아과학회는 대체만으로 뚜렷한 체중 감소는 어렵다고 봤습니다.\n\n장점으로는 제2형 당뇨 환자의 혈당 조절, 충치 예방과 관련한 긍정적 보고가 있었고, 12~16주 연구에서 인슐린 수치 변화는 없었어요. 반면 인슐린 저항성, 지방간, 위장 증상, 일부 암과의 연관 보고도 있습니다. 일부는 동물·세포 실험이고, 장기 안전성 근거는 아직 부족해요. 논문은 2세 미만에게는 권하지 않는다고 했습니다.\n\n✅ 오늘의 행동: 음료를 고를 때 무가당 탄산수처럼 단맛 자체를 줄이는 쪽부터 시도해 보세요.\n\n📄 출처: Kossiva L, Kakleas K, Christodouli F et al., Nutrients (2024). DOI 10.3390/nu16183162\n\n#논문팩트체크 #paper_factcheck #인공감미료 #제로칼로리 #제로음료 #설탕대체 #스테비아 #탄산수 #다이어트 #혈당관리 #충치 #건강정보 #식품상식\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "제로 칼로리 감미료, 살 빠질까 해로울까?\n\n한 리뷰 논문(141편 검토)을 보니 체중 효과는 연구마다 엇갈렸어요. 설탕 음료를 바꿔 BMI가 줄었다는 보고도, 3682명 연구에서 BMI 증가가 47% 더 컸다는 결과도 있었죠. 혈당 조절·충치엔 긍정적 보고가 있고, 인슐린 저항성·지방간 우려도 있지만 장기 근거는 부족하대요. 여러분은 제로 음료 자주 드시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Chronic Use of Artificial Sweeteners: Pros and Cons.",
+    "journal": "Nutrients",
+    "year": "2024",
+    "doi": "10.3390/nu16183162",
+    "pmid": "39339762",
+    "authors": "Kossiva L, Kakleas K, Christodouli F et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39339762/"
+  },
+  "drafted_at": "2026-10-11T22:23:18.874036+09:00",
+  "model": "claude_code:default"
+}

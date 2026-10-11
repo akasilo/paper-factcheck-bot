@@ -1,0 +1,81 @@
+{
+  "id": "2153-protein_powder",
+  "approved": false,
+  "link": "",
+  "topic": "protein_powder",
+  "topic_ko": "단백질 보충제",
+  "verdict": "mixed",
+  "evidence_level": "meta-analysis",
+  "source_text": "PMC10334153 전문",
+  "answer": "이 리뷰에 따르면 유청 단백질은 건강한 노인의 근육량·근력은 늘리지 못했지만 신체 기능(걷는 속도)은 개선했다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "유청 또는 식물성 단백질 보충제 중 1회 단백질 함량이 표기된 제품",
+  "image_prompt": "a plain white tub of protein powder with a scoop resting beside it on a light wooden table",
+  "caveats": [
+    "대부분의 결과에서 근거 수준이 낮거나 매우 낮고 연구 간 차이(이질성)가 큼",
+    "하위 분석은 연구 수가 적어 조심스럽게 해석해야 함",
+    "비타민 D 효과는 부족 상태 교정 때문이라는 저자의 추정이며 직접 확인되지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "단백질 보충제,\n[[근육]] 늘려줄까?\n노인 대상\n{{반전}} 결과"
+    },
+    {
+      "type": "body",
+      "text": "무작위 대조 시험 30편을 종합한 리뷰에서, 유청 단백질은 건강한 노인의 [[근육량·근력]]을 늘리지 못했다는 결과가 나왔어요."
+    },
+    {
+      "type": "body",
+      "text": "다만 신체 기능은 달랐어요. 유청 단백질 섭취군에서 {{걷는 속도}} 등 신체 기능이 유의하게 좋아졌다는 결과입니다."
+    },
+    {
+      "type": "body",
+      "text": "근감소증·허약 노인에서는 근육량(특히 팔다리 근육량)도 늘었어요. 건강한 노인에서는 이런 효과가 없었습니다."
+    },
+    {
+      "type": "body",
+      "text": "비타민 D를 함께 먹은 경우엔 근육량·근력·기능이 모두 좋아졌지만, 운동을 같이 하면 추가 효과는 없었어요.",
+      "note": "※ 근거 수준은 대부분 낮거나 매우 낮고 연구 간 차이가 큽니다."
+    },
+    {
+      "type": "body",
+      "text": "보충제만 믿기보다 [[근력 운동]]을 먼저 챙기고, 비타민 D 수치가 걱정되면 전문가와 상담해 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Whey Protein Supplementation with or without Vitamin D on Sarcopenia-Related Measures: A Systematic Review and Meta-Analysis.",
+        "journal": "Advances in nutrition (Bethesda, Md.)",
+        "year": "2023",
+        "doi": "10.1016/j.advnut.2023.05.011",
+        "authors": "Nasimi N, Sohrabi Z, Nunes EA et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2153-protein_powder/01.jpg",
+    "images/2153-protein_powder/02.jpg",
+    "images/2153-protein_powder/03.jpg",
+    "images/2153-protein_powder/04.jpg",
+    "images/2153-protein_powder/05.jpg",
+    "images/2153-protein_powder/06.jpg",
+    "images/2153-protein_powder/07.jpg"
+  ],
+  "instagram_caption": "단백질 보충제를 먹으면 노인도 근육이 늘까요? 🤔\n\n2023년 한 리뷰 논문은 무작위 대조 시험 30편을 종합했어요. 그 결과 유청 단백질은 건강한 노인의 근육량과 근력에는 효과가 없었어요. 대신 걷는 속도 같은 신체 기능은 좋아졌다는 결과가 나왔습니다.\n\n근감소증이나 허약 상태의 노인에서는 근육량도 늘었다고 해요. 비타민 D를 함께 먹은 경우엔 근육량·근력·신체 기능이 모두 개선됐지만, 저자들은 비타민 D 부족을 바로잡은 효과일 수 있다고 추정했어요.\n\n또 운동을 함께 하면 보충제의 추가 효과는 나타나지 않았어요. 운동 효과가 훨씬 컸기 때문으로 해석됩니다. 다만 근거 수준이 대부분 낮거나 매우 낮고 연구 간 차이가 커서 조심스럽게 봐야 해요.\n\n✅ 오늘의 행동: 보충제만 믿기보다 근력 운동을 먼저 챙기세요.\n\n📄 출처: Nasimi N, Sohrabi Z, Nunes EA 외, Advances in Nutrition (2023). DOI 10.1016/j.advnut.2023.05.011\n\n#논문팩트체크 #paper_factcheck #단백질보충제 #유청단백질 #근감소증 #노인건강 #근력운동 #비타민D #보행속도 #시니어건강 #영양제 #건강정보\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "단백질 보충제, 노인 근육을 늘려줄까?\n\n무작위 대조 시험 30편을 종합한 리뷰를 보니, 유청 단백질은 건강한 노인의 근육량·근력은 못 늘렸대요. 대신 걷는 속도 같은 신체 기능은 좋아졌다는 결과가 나왔어요. 근감소증·허약 노인에선 근육량도 늘었고요. 운동을 같이 하면 보충제의 추가 효과는 없었지만, 근거 수준은 낮은 편이에요. 여러분은 보충제와 운동 중 뭘 먼저 챙기세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Whey Protein Supplementation with or without Vitamin D on Sarcopenia-Related Measures: A Systematic Review and Meta-Analysis.",
+    "journal": "Advances in nutrition (Bethesda, Md.)",
+    "year": "2023",
+    "doi": "10.1016/j.advnut.2023.05.011",
+    "pmid": "37196876",
+    "authors": "Nasimi N, Sohrabi Z, Nunes EA et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37196876/"
+  },
+  "drafted_at": "2026-10-11T22:19:26.011570+09:00",
+  "model": "claude_code:default"
+}

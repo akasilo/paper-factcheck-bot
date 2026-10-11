@@ -1,0 +1,81 @@
+{
+  "id": "2152-e_cigarette",
+  "approved": false,
+  "link": "",
+  "topic": "e_cigarette",
+  "topic_ko": "전자담배",
+  "verdict": "good",
+  "evidence_level": "rct",
+  "source_text": "PMC11307165 전문",
+  "answer": "이 무작위 대조 시험에서 7개월 뒤 금연율은 문자 프로그램군 37.8%, 대조군 28.0%로 문자 프로그램군이 더 높았다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "금연 보조제(니코틴 패치)",
+  "image_prompt": "a smartphone lying on a plain table next to a closed disposable vape device",
+  "caveats": [
+    "금연 여부는 본인이 직접 보고한 값이에요",
+    "7개월 추적률이 70.8%였어요",
+    "소셜미디어로 모집된 미국 청소년이 대상이라 다른 집단에 그대로 적용하기 어려워요"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "청소년 [[금연 문자]]\n진짜\n{{효과}} 있을까?\n논문 확인"
+    },
+    {
+      "type": "body",
+      "text": "미국 13~17세 전자담배 사용 청소년 [[1,503명]]을 무작위로 나눠 비교한 대규모 시험이었어요.\n한쪽은 금연 문자 프로그램을 받았습니다."
+    },
+    {
+      "type": "body",
+      "text": "7개월 뒤 최근 30일 금연율은 문자 프로그램군 [[37.8%]], 문자 프로그램 없이 확인 문자만 받은 대조군 28.0%였어요."
+    },
+    {
+      "type": "body",
+      "text": "상대위험도는 1.35(95% 신뢰구간 1.17~1.57)로, 통계적으로 유의한 차이였어요. 니코틴 의존도 등 기본 특성에 따른 차이는 없었습니다."
+    },
+    {
+      "type": "body",
+      "text": "금연에 성공한 청소년이 일반 담배로 옮겨갔다는 근거는 없었다고 해요.",
+      "note": "※ 금연 여부는 본인 보고이고, 7개월 추적률은 70.8%예요. 결측은 흡연으로 처리했고, 대조군도 28%는 끊었어요."
+    },
+    {
+      "type": "body",
+      "text": "끊고 싶은 청소년이 주변에 있다면 [[금연 지원 문자 프로그램]]이나 상담 서비스부터 함께 찾아보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "A Vaping Cessation Text Message Program for Adolescent E-Cigarette Users: A Randomized Clinical Trial.",
+        "journal": "JAMA",
+        "year": "2024",
+        "doi": "10.1001/jama.2024.11057",
+        "authors": "Graham AL, Cha S, Jacobs MA et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2152-e_cigarette/01.jpg",
+    "images/2152-e_cigarette/02.jpg",
+    "images/2152-e_cigarette/03.jpg",
+    "images/2152-e_cigarette/04.jpg",
+    "images/2152-e_cigarette/05.jpg",
+    "images/2152-e_cigarette/06.jpg",
+    "images/2152-e_cigarette/07.jpg"
+  ],
+  "instagram_caption": "청소년 전자담배 금연 문자, 정말 효과가 있었을까?\n\n미국 13~17세 전자담배 사용 청소년 1,503명을 무작위로 두 집단에 나눠 비교한 시험이 있었어요. 한 집단은 대처 기술 훈련과 사회적 지지를 담은 쌍방향 금연 문자 프로그램을 받았고, 다른 집단은 사용 여부를 묻는 확인 문자만 받았습니다.\n\n7개월 뒤 최근 30일 금연율은 문자 프로그램군 37.8%, 대조군 28.0%였어요. 상대위험도는 1.35(95% 신뢰구간 1.17~1.57)였고, 니코틴 의존도를 포함한 기본 특성에 따라 효과가 달라지지 않았습니다. 금연한 청소년이 일반 담배로 옮겨갔다는 근거도 없었어요.\n\n다만 금연 여부는 본인이 직접 보고한 값이고, 7개월 추적률은 70.8%였어요. 소셜미디어 광고로 모집된 청소년이 대상이라는 점도 감안해야 합니다. 대조군도 28%는 끊었다는 점 역시 기억해 둘 만해요.\n\n오늘의 행동: 끊고 싶은 청소년이 주변에 있다면 금연 지원 문자 프로그램이나 상담 서비스부터 함께 찾아보세요.\n\n📄 출처: Graham AL 외, JAMA (2024). DOI 10.1001/jama.2024.11057\n\n#논문팩트체크 #paper_factcheck #전자담배 #청소년금연 #금연 #니코틴 #금연문자 #무작위대조시험 #청소년건강 #액상형전자담배 #금연상담\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "청소년 전자담배 금연 문자, 효과가 있었을까?\n\n미국 청소년 1,503명을 무작위로 나눈 시험이 있었어요. 7개월 뒤 최근 30일 금연율은 금연 문자 프로그램군 37.8%, 확인 문자만 받은 대조군 28.0%였습니다.\n\n다만 금연 여부는 본인 보고였고, 7개월 추적률은 70.8%였어요. 대조군도 28%는 끊었다는 점도 같이 봐야 해요.\n\n주변에 끊고 싶어 하는 청소년이 있다면, 이런 지원 프로그램을 권해 보실 건가요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "A Vaping Cessation Text Message Program for Adolescent E-Cigarette Users: A Randomized Clinical Trial.",
+    "journal": "JAMA",
+    "year": "2024",
+    "doi": "10.1001/jama.2024.11057",
+    "pmid": "39110436",
+    "authors": "Graham AL, Cha S, Jacobs MA et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39110436/"
+  },
+  "drafted_at": "2026-10-11T22:18:59.454163+09:00",
+  "model": "claude_code:default"
+}

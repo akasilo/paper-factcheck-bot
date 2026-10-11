@@ -1,0 +1,81 @@
+{
+  "id": "2161-smartphone_sleep",
+  "approved": false,
+  "link": "",
+  "topic": "smartphone_sleep",
+  "topic_ko": "스마트폰 밤 사용",
+  "verdict": "bad",
+  "evidence_level": "review",
+  "source_text": "초록만",
+  "answer": "이 리뷰에 따르면 취침 전 화면을 오래 쓰면 수면 시간 단축, 잠드는 시간 지연, 수면 쪼개짐과 관련이 있었고, SNS·게임은 불면과 낮 졸림 위험과 특히 연결되어 있었다.",
+  "style": "geo",
+  "accent": "violet",
+  "product_hint": "취침 알람 기능이 있는 별도 알람시계, 수면 추적 기기",
+  "image_prompt": "a smartphone lying on a bedside table next to a small alarm clock in a dark bedroom",
+  "caveats": [
+    "범위 문헌 리뷰라 개별 연구의 질을 평가하지 않았고 관련성만 보여줌",
+    "화면 시간의 정의와 측정 방법이 연구마다 달라 비교가 어려움",
+    "초록에는 구체적 수치가 제시되지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "자기 전\n[[스마트폰]]\n{{수면}}을 망칠까?\n아이·청소년"
+    },
+    {
+      "type": "body",
+      "text": "청소년 수면 연구 32편을 훑어본 한 범위 문헌 리뷰가 있어요. 관찰 연구, 실험 연구, 체계적 문헌고찰이 함께 포함됐습니다."
+    },
+    {
+      "type": "body",
+      "text": "자기 전 화면을 오래 본 경우 [[수면 시간이 짧아지고]], 잠드는 데 걸리는 시간이 늘고, 자다가 자주 깨는 것과 관련이 있었어요."
+    },
+    {
+      "type": "body",
+      "text": "특히 {{SNS와 비디오 게임}}은 불면 위험과 낮 시간 졸림이 더 높은 것과 연결되어 있었습니다."
+    },
+    {
+      "type": "body",
+      "text": "화면 시간의 정의와 측정 방법이 연구마다 제각각이었고, 블루라이트 필터나 부모 교육 같은 대책의 효과는 앞으로 검증이 필요하다고 해요.",
+      "note": "※ 관련성을 보여주는 결과라 인과관계를 단정할 수는 없어요."
+    },
+    {
+      "type": "body",
+      "text": "오늘 밤부터 [[취침 1시간 전]]에는 폰을 충전기에 두고, 알람은 따로 맞춰 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Consequences of Screen Time on Sleep Quality in Children and Adolescents: A Scoping Review.",
+        "journal": "Journal of pediatric health care : official publication of National Association of Pediatric Nurse Associates & Practitioners",
+        "year": "2026",
+        "doi": "10.1016/j.pedhc.2025.08.005",
+        "authors": "Silva RL, Gonçalves BPC, Ferreira MHL et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2161-smartphone_sleep/01.jpg",
+    "images/2161-smartphone_sleep/02.jpg",
+    "images/2161-smartphone_sleep/03.jpg",
+    "images/2161-smartphone_sleep/04.jpg",
+    "images/2161-smartphone_sleep/05.jpg",
+    "images/2161-smartphone_sleep/06.jpg",
+    "images/2161-smartphone_sleep/07.jpg"
+  ],
+  "instagram_caption": "자기 전 스마트폰, 아이와 청소년의 잠을 정말 망칠까요?\n\n청소년의 화면 사용과 수면을 다룬 연구 32편을 정리한 범위 문헌 리뷰가 나왔어요. 관찰 연구, 실험 연구, 체계적 문헌고찰이 함께 포함됐습니다.\n\n결과를 보면, 잠들기 전 화면을 오래 사용한 경우 수면 시간이 짧아지고, 잠드는 데 걸리는 시간이 길어지고, 자다가 자주 깨는 것과 관련이 있었어요. 특히 SNS와 비디오 게임은 불면 위험, 낮 시간 졸림과 더 연결되어 있었습니다.\n\n다만 화면 시간을 정의하고 측정하는 방식이 연구마다 달라 단정하기는 어려워요. 블루라이트 필터나 부모 교육 프로그램 같은 대책의 효과도 앞으로 더 살펴봐야 한다고 합니다.\n\n✅ 오늘의 행동: 취침 1시간 전에는 폰을 침대에서 떨어진 곳에 충전해 두고, 알람은 별도로 맞춰 보세요.\n\n📄 출처: Silva RL, Gonçalves BPC, Ferreira MHL et al., Journal of Pediatric Health Care (2026). DOI 10.1016/j.pedhc.2025.08.005\n\n#논문팩트체크 #paper_factcheck #스마트폰 #청소년수면 #수면건강 #스크린타임 #SNS #게임시간 #자기전폰 #불면 #육아정보 #수면습관\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "자기 전 스마트폰, 아이 잠을 망칠까?\n\n청소년 화면 사용과 수면을 다룬 연구 32편을 정리한 리뷰를 봤어요. 잠들기 전 화면을 오래 쓰면 수면 시간이 짧아지고, 잠드는 데 오래 걸리고, 자주 깨는 것과 관련이 있었대요. 특히 SNS와 게임은 불면, 낮 졸림과 더 연결돼 있었고요. 다만 연구마다 화면 시간 측정 방식이 달라 단정은 어렵다고 해요. 여러분 집은 자기 전 폰, 어떻게 하고 계세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Consequences of Screen Time on Sleep Quality in Children and Adolescents: A Scoping Review.",
+    "journal": "Journal of pediatric health care : official publication of National Association of Pediatric Nurse Associates & Practitioners",
+    "year": "2026",
+    "doi": "10.1016/j.pedhc.2025.08.005",
+    "pmid": "41071140",
+    "authors": "Silva RL, Gonçalves BPC, Ferreira MHL et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41071140/"
+  },
+  "drafted_at": "2026-10-11T22:23:45.905452+09:00",
+  "model": "claude_code:default"
+}

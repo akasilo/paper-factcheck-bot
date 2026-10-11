@@ -1,0 +1,80 @@
+{
+  "id": "2158-receipt",
+  "approved": false,
+  "link": "",
+  "topic": "receipt",
+  "topic_ko": "영수증",
+  "verdict": "mixed",
+  "evidence_level": "cross-sectional",
+  "source_text": "초록만",
+  "answer": "BPA는 영수증의 1%에서만 검출될 만큼 줄었지만, 대체물질인 BPS가 검사한 영수증의 85%에서 검출되어 가장 흔한 발색제가 됐다.",
+  "style": "geo",
+  "accent": "yellow",
+  "product_hint": "비스페놀이 아닌 발색제를 쓴 감열지 또는 전자영수증",
+  "image_prompt": "a crumpled white thermal paper receipt with faint printed lines lying on a plain countertop",
+  "caveats": [
+    "미국 소매점 영수증 조사라 국내 상황과 다를 수 있음",
+    "영수증 속 물질 검출 빈도만 다뤘고 인체 노출·건강 영향은 초록에 없음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "영수증 속\n[[BPA]]는 줄었는데\n{{대체물질}}이\n85%라고?"
+    },
+    {
+      "type": "body",
+      "text": "미국 소매점 영수증 571장을 2022년에 모아 감열지 발색 물질을 분석한 연구예요. 2017년 167장 조사와 비교했어요."
+    },
+    {
+      "type": "body",
+      "text": "가장 많이 검출된 건 [[비스페놀 S(BPS)]]로, 검사한 영수증의 85%였어요. 그다음은 다른 발색제 12%, 비스페놀 A(BPA)는 1%였어요."
+    },
+    {
+      "type": "body",
+      "text": "2017년에서 2022년 사이 BPA 사용 빈도는 줄고, BPS와 다른 대체 발색제는 늘었어요. 특히 대기업에서 두드러졌어요."
+    },
+    {
+      "type": "body",
+      "text": "전국 단위 유통업체는 지역·로컬 업체보다 비스페놀이 아닌 대안을 더 많이 쓰는 경향이 있었어요.",
+      "note": "※ 영수증 속 물질을 분석한 것으로, 사람에게 미치는 영향을 직접 측정한 연구는 아니에요."
+    },
+    {
+      "type": "body",
+      "text": "결제할 때 영수증이 꼭 필요하지 않다면 [[전자영수증]]을 선택해 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Bisphenols and alternative developers in thermal paper receipts from the U.S. market assessed by Fourier transform infrared spectroscopy.",
+        "journal": "Environmental pollution (Barking, Essex : 1987)",
+        "year": "2023",
+        "doi": "10.1016/j.envpol.2023.122232",
+        "authors": "Miller GZ, Pitzzu DT, Sargent MC et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2158-receipt/01.jpg",
+    "images/2158-receipt/02.jpg",
+    "images/2158-receipt/03.jpg",
+    "images/2158-receipt/04.jpg",
+    "images/2158-receipt/05.jpg",
+    "images/2158-receipt/06.jpg",
+    "images/2158-receipt/07.jpg"
+  ],
+  "instagram_caption": "영수증 속 BPA는 줄었는데, 대체물질이 85%라고?\n\n미국 소매점에서 2022년에 모은 영수증 571장을 분석한 연구가 있어요. 2017년 167장 조사와 비교해 발색 물질이 어떻게 달라졌는지 살폈어요.\n\n결과를 보면 가장 많이 검출된 물질은 비스페놀 S(BPS)로 85%였고, 다른 발색제가 12%, 비스페놀 A(BPA)는 1%였어요. 2017년보다 BPA는 줄고 BPS 등 대체 물질은 늘었고, 특히 대기업에서 두드러졌다고 해요.\n\n한편 전국 단위 유통업체는 비스페놀이 아닌 대안을 쓰는 경우가 더 많았어요. 다만 이 연구는 영수증 속 물질을 분석한 것이라 사람 몸에 미치는 영향을 직접 확인한 건 아니에요.\n\n오늘의 행동: 영수증이 꼭 필요하지 않다면 전자영수증을 선택해 보세요.\n\n📄 출처: Miller GZ 외, Environmental Pollution (2023). DOI 10.1016/j.envpol.2023.122232\n\n#논문팩트체크 #paper_factcheck #영수증 #감열지 #BPA #BPS #비스페놀 #전자영수증 #환경호르몬 #생활상식 #팩트체크 #쇼핑\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "영수증 속 BPA, 정말 사라졌을까?\n\n미국 소매점 영수증 571장을 분석한 연구를 봤어요. BPA는 1%만 검출됐는데, 대체물질인 BPS는 85%에서 나왔대요. 2017년보다 BPA는 줄고 대체 물질은 늘었고요. 물질이 바뀐 거지 비스페놀이 사라진 건 아니었어요. 여러분은 영수증, 꼭 종이로 받으세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Bisphenols and alternative developers in thermal paper receipts from the U.S. market assessed by Fourier transform infrared spectroscopy.",
+    "journal": "Environmental pollution (Barking, Essex : 1987)",
+    "year": "2023",
+    "doi": "10.1016/j.envpol.2023.122232",
+    "pmid": "37481030",
+    "authors": "Miller GZ, Pitzzu DT, Sargent MC et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37481030/"
+  },
+  "drafted_at": "2026-10-11T22:21:55.030023+09:00",
+  "model": "claude_code:default"
+}

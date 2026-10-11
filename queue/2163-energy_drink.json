@@ -1,0 +1,81 @@
+{
+  "id": "2163-energy_drink",
+  "approved": false,
+  "link": "",
+  "topic": "energy_drink",
+  "topic_ko": "에너지드링크",
+  "verdict": "mixed",
+  "evidence_level": "other",
+  "source_text": "PMC9893714 전문",
+  "answer": "이 연구에서 에너지드링크 250mL를 마신 뒤 30~60분 사이 목동맥과 뇌동맥의 혈류 속도가 줄었고, 심박수와 추정 심박출량도 감소했다.",
+  "style": "geo",
+  "accent": "orange",
+  "product_hint": "저카페인 또는 무카페인 음료",
+  "image_prompt": "a single slim silver energy drink can with condensation on a dark table",
+  "caveats": [
+    "가짜 음료를 마신 대조군이 없는 비무작위 전후 비교 연구",
+    "참가자가 30명의 젊은 여성뿐이라 다른 집단에 일반화하기 어려움",
+    "혈류 속도가 줄어든 원인 기전이 불분명하고, 다른 연구와 결과가 엇갈림"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "에너지드링크\n[[한 캔]] 마신 뒤\n혈류는 어떻게\n변할까?"
+    },
+    {
+      "type": "body",
+      "text": "건강한 20대 여성 30명이 에너지드링크 250mL를 마시고, 마시기 전·30분 뒤·60분 뒤에 목동맥과 뇌동맥 혈류 속도를 초음파로 쟀어요."
+    },
+    {
+      "type": "body",
+      "text": "결과는 의외로 [[혈류 속도 감소]]였어요. 60분 뒤 총목동맥의 확장기 말 속도는 약 18.7%, 내경동맥은 약 20.4% 느려졌어요."
+    },
+    {
+      "type": "body",
+      "text": "심박수는 81.5회에서 74.3회로 약 8.8% 줄었고, 추정 심박출량도 약 11.8% 줄었어요. 혈압 변화는 통계적으로 유의하지 않았어요."
+    },
+    {
+      "type": "body",
+      "text": "뇌로 가는 중간뇌동맥의 확장기 말 속도도 30분 뒤 8.2%, 60분 뒤 8.7% 줄었어요. 연구진은 일부 참가자가 졸림을 말했다고 적었어요.",
+      "note": "※ 가짜 음료를 마신 대조군이 없고, 30명 여성만 대상이에요. 원인 기전도 불분명해요."
+    },
+    {
+      "type": "body",
+      "text": "졸릴 때 습관처럼 캔을 따기 전에, 먼저 [[물 한 잔과 가벼운 스트레칭]]부터 해 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Cardiovascular and Cerebrovascular Response to RedBull® Energy Drink Intake in Young Adults.",
+        "journal": "Anatolian journal of cardiology",
+        "year": "2023",
+        "doi": "10.14744/AnatolJCardiol.2022.2315",
+        "authors": "Costa R, Rocha C, Santos H"
+      }
+    }
+  ],
+  "images": [
+    "images/2163-energy_drink/01.jpg",
+    "images/2163-energy_drink/02.jpg",
+    "images/2163-energy_drink/03.jpg",
+    "images/2163-energy_drink/04.jpg",
+    "images/2163-energy_drink/05.jpg",
+    "images/2163-energy_drink/06.jpg",
+    "images/2163-energy_drink/07.jpg"
+  ],
+  "instagram_caption": "에너지드링크 한 캔, 마시고 나면 혈관에선 무슨 일이 생길까요?\n\n한 임상 연구에서 건강한 20대 여성 30명이 에너지드링크 250mL를 마시고, 마시기 전·30분 뒤·60분 뒤에 목동맥과 뇌동맥 혈류 속도를 초음파로 쟀어요.\n\n결과는 '빨라질 것'이라는 예상과 달랐어요. 목동맥과 중간뇌동맥의 혈류 속도가 줄었어요. 60분 뒤 총목동맥의 확장기 말 속도는 약 18.7%, 내경동맥은 약 20.4% 감소했어요. 심박수는 약 8.8%, 추정 심박출량은 약 11.8% 줄었고, 혈압은 통계적으로 유의한 변화가 없었어요.\n\n다만 한계가 분명해요. 가짜 음료를 마신 대조군이 없고, 참가자는 30명의 젊은 여성뿐이에요. 왜 이런 변화가 생겼는지도 연구진이 '아직 불분명하다'고 밝혔어요. 다른 연구에서는 심박수와 혈압이 오른 결과도 있어서, 결과가 엇갈리는 분야예요.\n\n✅ 오늘의 행동: 졸릴 때 습관처럼 캔을 따기 전에, 물 한 잔과 가벼운 스트레칭부터 해 보세요.\n\n📄 출처: Costa R, Rocha C, Santos H, Anatolian Journal of Cardiology (2023). DOI 10.14744/AnatolJCardiol.2022.2315\n\n#논문팩트체크 #paper_factcheck #에너지드링크 #카페인 #혈류 #목동맥 #심박수 #뇌혈류 #졸음 #저카페인 #음료상식 #건강정보\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "에너지드링크 한 캔, 혈관엔 무슨 일이 생길까?\n\n한 임상 연구에서 건강한 젊은 여성 30명이 250mL를 마시고 초음파로 혈류를 쟀어요. 마신 뒤 30~60분 사이 목동맥과 뇌동맥의 혈류 속도가 줄었고, 심박수도 약 8.8% 줄었어요. 혈압은 유의한 변화가 없었어요. 다만 대조군이 없고 30명 여성만 대상이라 단정하긴 어려워요. 여러분은 졸릴 때 뭘 마시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Cardiovascular and Cerebrovascular Response to RedBull® Energy Drink Intake in Young Adults.",
+    "journal": "Anatolian journal of cardiology",
+    "year": "2023",
+    "doi": "10.14744/AnatolJCardiol.2022.2315",
+    "pmid": "36680443",
+    "authors": "Costa R, Rocha C, Santos H",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36680443/"
+  },
+  "drafted_at": "2026-10-11T22:24:42.737966+09:00",
+  "model": "claude_code:default"
+}

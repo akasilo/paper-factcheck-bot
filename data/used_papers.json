@@ -873,5 +873,103 @@
     "date": "2026-10-11",
     "topic": "olive_oil",
     "title": "The Effects of the Mediterranean Diet on Health and Gut Microbiota."
+  },
+  {
+    "pmid": "36924723",
+    "doi": "10.1016/j.foodchem.2023.135852",
+    "date": "2026-10-11",
+    "topic": "microwave",
+    "title": "Cooking food in microwavable plastic containers: in situ formation of a new chemical substance and increased migration of polypropylene polymers."
+  },
+  {
+    "pmid": "37913820",
+    "doi": "10.1016/j.jped.2023.09.010",
+    "date": "2026-10-11",
+    "topic": "plastic_container",
+    "title": "Food packaging and endocrine disruptors."
+  },
+  {
+    "pmid": "39110436",
+    "doi": "10.1001/jama.2024.11057",
+    "date": "2026-10-11",
+    "topic": "e_cigarette",
+    "title": "A Vaping Cessation Text Message Program for Adolescent E-Cigarette Users: A Randomized Clinical Trial."
+  },
+  {
+    "pmid": "37196876",
+    "doi": "10.1016/j.advnut.2023.05.011",
+    "date": "2026-10-11",
+    "topic": "protein_powder",
+    "title": "Whey Protein Supplementation with or without Vitamin D on Sarcopenia-Related Measures: A Systematic Review and Meta-Analysis."
+  },
+  {
+    "pmid": "38029842",
+    "doi": "10.1016/j.jfp.2023.100199",
+    "date": "2026-10-11",
+    "topic": "pet_food",
+    "title": "A Review of Pet Food Recalls from 2003 Through 2022."
+  },
+  {
+    "pmid": "38753045",
+    "doi": "10.1186/s40798-024-00724-6",
+    "date": "2026-10-11",
+    "topic": "compression_socks",
+    "title": "Effectiveness of Recovery Strategies After Training and Competition in Endurance Athletes: An Umbrella Review."
+  },
+  {
+    "pmid": "36805158",
+    "doi": "10.1016/j.envint.2023.107739",
+    "date": "2026-10-11",
+    "topic": "sunscreen",
+    "title": "Benzophenone-3: Comprehensive review of the toxicological and human evidence with meta-analysis of human biomonitoring studies."
+  },
+  {
+    "pmid": "36102337",
+    "doi": "10.1002/alz.12767",
+    "date": "2026-10-11",
+    "topic": "multivitamin",
+    "title": "Effects of cocoa extract and a multivitamin on cognitive function: A randomized clinical trial."
+  },
+  {
+    "pmid": "37481030",
+    "doi": "10.1016/j.envpol.2023.122232",
+    "date": "2026-10-11",
+    "topic": "receipt",
+    "title": "Bisphenols and alternative developers in thermal paper receipts from the U.S. market assessed by Fourier transform infrared spectroscopy."
+  },
+  {
+    "pmid": "38662859",
+    "doi": "10.1161/CIRCRESAHA.124.323697",
+    "date": "2026-10-11",
+    "topic": "nonstick_pan",
+    "title": "Perfluoroalkyl/Polyfluoroalkyl Substances: Links to Cardiovascular Disease Risk."
+  },
+  {
+    "pmid": "39339762",
+    "doi": "10.3390/nu16183162",
+    "date": "2026-10-11",
+    "topic": "sweetener",
+    "title": "Chronic Use of Artificial Sweeteners: Pros and Cons."
+  },
+  {
+    "pmid": "41071140",
+    "doi": "10.1016/j.pedhc.2025.08.005",
+    "date": "2026-10-11",
+    "topic": "smartphone_sleep",
+    "title": "Consequences of Screen Time on Sleep Quality in Children and Adolescents: A Scoping Review."
+  },
+  {
+    "pmid": "39163284",
+    "doi": "10.5014/ajot.2024.050676",
+    "date": "2026-10-11",
+    "topic": "weighted_blanket",
+    "title": "Weighted Blankets as a Sleep Intervention: A Scoping Review."
+  },
+  {
+    "pmid": "36680443",
+    "doi": "10.14744/AnatolJCardiol.2022.2315",
+    "date": "2026-10-11",
+    "topic": "energy_drink",
+    "title": "Cardiovascular and Cerebrovascular Response to RedBull® Energy Drink Intake in Young Adults."
   }
 ]

@@ -1,0 +1,82 @@
+{
+  "id": "2157-multivitamin",
+  "approved": false,
+  "link": "",
+  "topic": "multivitamin",
+  "topic_ko": "종합비타민",
+  "verdict": "good",
+  "evidence_level": "rct",
+  "source_text": "PMC10011015 전문",
+  "answer": "3년간 종합비타민을 먹은 노인은 가짜약 그룹보다 전반적 인지기능(0.07 표준편차), 기억력, 실행기능 점수가 통계적으로 유의하게 더 높았다.",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "성분과 1일 섭취량이 표시된 종합비타민",
+  "image_prompt": "an open clear bottle of assorted multivitamin tablets with a few scattered on a light wooden table",
+  "caveats": [
+    "참가자의 89%가 비히스패닉 백인이라 일반화에 한계가 있음",
+    "복용 이행과 심혈관 질환 이력은 본인 보고에 의존함",
+    "어떤 성분이 효과를 냈는지 알 수 없고 2차·3차 분석은 다중비교 보정이 없었음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "종합비타민\n[[3년]] 먹으면\n[[기억력]]에\n{{도움}}될까?"
+    },
+    {
+      "type": "body",
+      "text": "미국 노인 2,262명(평균 73세)을 대상으로 한 [[3년 무작위 대조 시험]]입니다. 종합비타민 또는 가짜약을 매일 먹고, 해마다 전화로 인지기능을 검사했어요."
+    },
+    {
+      "type": "body",
+      "text": "종합비타민 그룹은 가짜약 그룹보다 전반적 인지기능 점수가 [[0.07 표준편차]] 더 높았습니다(95% 신뢰구간 0.02~0.12). 기억력과 실행기능도 각각 0.06 높았어요."
+    },
+    {
+      "type": "body",
+      "text": "연구진이 점수 차이를 나이에 따른 자연 하락 속도와 견줘 보니 약 1.8년 치 인지 노화를 늦춘 것에 해당했어요. 다만 연구진도 이 계산이 부정확하다고 밝혔습니다.",
+      "note": "※ 반복 검사에 익숙해지는 효과가 결과를 왜곡했을 수 있음"
+    },
+    {
+      "type": "body",
+      "text": "함께 시험한 코코아 추출물(플라바놀 500mg)은 인지기능에 {{효과가 없었습니다}}. 이번 결과는 한 시험의 결과라, 더 다양한 집단에서 다시 확인해야 한다고 해요.",
+      "note": "※ 참가자 89%가 비히스패닉 백인, 복용 여부는 본인 보고"
+    },
+    {
+      "type": "body",
+      "text": "이미 먹고 있다면 [[성분표와 1일 섭취량]]을 확인해 보세요. 새로 시작하기 전에는 복용 중인 약이 있는지 의사·약사와 상담하는 게 좋아요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Effects of cocoa extract and a multivitamin on cognitive function: A randomized clinical trial.",
+        "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+        "year": "2023",
+        "doi": "10.1002/alz.12767",
+        "authors": "Baker LD, Manson JE, Rapp SR et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2157-multivitamin/01.jpg",
+    "images/2157-multivitamin/02.jpg",
+    "images/2157-multivitamin/03.jpg",
+    "images/2157-multivitamin/04.jpg",
+    "images/2157-multivitamin/05.jpg",
+    "images/2157-multivitamin/06.jpg",
+    "images/2157-multivitamin/07.jpg"
+  ],
+  "instagram_caption": "종합비타민, 3년 먹으면 기억력에 도움이 될까요?\n\n한 대규모 무작위 대조 시험(COSMOS-Mind)에서 평균 73세 노인 2,262명이 종합비타민 또는 가짜약을 3년간 매일 먹었어요. 인지기능은 해마다 전화로 검사했습니다.\n\n결과, 종합비타민 그룹은 전반적 인지기능 점수가 가짜약 그룹보다 0.07 표준편차 높았어요(95% 신뢰구간 0.02~0.12). 기억력과 실행기능도 각각 0.06 더 높았습니다. 연구진은 이를 자연스러운 노화 속도와 견줘 약 1.8년 치에 해당한다고 추정했지만, 부정확한 계산이라고 덧붙였어요.\n\n함께 시험한 코코아 추출물은 효과가 없었습니다. 참가자의 89%가 비히스패닉 백인이었고 복용 여부를 본인이 보고했으며, 어떤 성분 덕분인지는 알 수 없어요. 연구진도 더 다양한 집단에서 다시 확인이 필요하다고 했습니다.\n\n✅ 오늘의 행동: 먹고 있는 종합비타민의 성분표와 1일 섭취량을 확인해 보세요. 복용 중인 약이 있다면 의사·약사와 상담하세요.\n\n📄 출처: Baker LD, Manson JE, Rapp SR et al., Alzheimer's & dementia (2023). DOI 10.1002/alz.12767\n\n#논문팩트체크 #paper_factcheck #종합비타민 #멀티비타민 #기억력 #인지기능 #노년건강 #영양제 #건강정보 #무작위대조시험 #뇌건강 #영양제추천\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "종합비타민 3년 먹으면 기억력에 도움이 될까?\n\n노인 2,262명을 3년간 추적한 무작위 대조 시험을 봤어요. 종합비타민 그룹이 가짜약 그룹보다 전반적 인지기능, 기억력, 실행기능 점수가 조금 더 높았대요. 같이 시험한 코코아 추출물은 효과가 없었고요. 다만 참가자 대부분이 백인이라 더 다양한 집단에서 확인이 필요하다고 해요. 여러분은 종합비타민 챙겨 드시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Effects of cocoa extract and a multivitamin on cognitive function: A randomized clinical trial.",
+    "journal": "Alzheimer's & dementia : the journal of the Alzheimer's Association",
+    "year": "2023",
+    "doi": "10.1002/alz.12767",
+    "pmid": "36102337",
+    "authors": "Baker LD, Manson JE, Rapp SR et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36102337/"
+  },
+  "drafted_at": "2026-10-11T22:21:29.930283+09:00",
+  "model": "claude_code:default"
+}

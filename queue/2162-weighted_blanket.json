@@ -1,0 +1,81 @@
+{
+  "id": "2162-weighted_blanket",
+  "approved": false,
+  "link": "",
+  "topic": "weighted_blanket",
+  "topic_ko": "중량 이불",
+  "verdict": "mixed",
+  "evidence_level": "review",
+  "source_text": "초록만",
+  "answer": "한 범위 검토 논문에서 성인은 수면·기분 개선과 약 사용 감소 등 긍정적 결과가 보고됐고, 아이와 청소년은 수면 결과가 엇갈렸다.",
+  "style": "soft",
+  "accent": "blue",
+  "product_hint": "중량 이불 (불편하면 쉽게 걷어낼 수 있는 것)",
+  "image_prompt": "a folded grey weighted blanket with quilted squares resting on a bed",
+  "caveats": [
+    "스코핑 리뷰라 효과의 크기나 확정적 효과는 알 수 없음",
+    "포함 연구의 방법론 질이 variable하고 사용 지침이 없음",
+    "적정 무게·사용법에 대한 정보가 초록에 없음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "중량 이불,\n[[수면]]에\n진짜\n도움 될까?"
+    },
+    {
+      "type": "body",
+      "text": "18편의 연구를 훑어본 한 범위 검토(스코핑 리뷰) 논문에 따르면, [[성인]]에서는 수면 개선, 약 사용 감소, 기분 개선 등 긍정적 결과가 보고됐습니다."
+    },
+    {
+      "type": "body",
+      "text": "요약문에는 성인에서 수면·기분·약 사용·통증이 나아졌다는 보고가 정리돼 있습니다. 다만 연구 간 방법의 질은 들쭉날쭉했습니다."
+    },
+    {
+      "type": "body",
+      "text": "아이와 청소년은 달랐습니다. 수면 결과는 {{엇갈렸고}}, 일상 수행 능력이 좋아진 경우가 있었습니다. 부모들은 대체로 긍정적으로 평가했습니다."
+    },
+    {
+      "type": "body",
+      "text": "결론적으로 성인 쪽 근거가 더 많지만, 사용 지침은 따로 제시되지 않았습니다. 이불 무게 등 구체적 기준은 이 논문에서 알 수 없습니다.",
+      "note": "※ 18편 대상 범위 검토로, 효과를 확정하는 연구는 아닙니다."
+    },
+    {
+      "type": "body",
+      "text": "써보고 싶다면 [[수면 문제가 계속될 때]] 전문가(예: 작업치료사)와 상의하고, 불편하면 바로 걷어낼 수 있게 쓰세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Weighted Blankets as a Sleep Intervention: A Scoping Review.",
+        "journal": "The American journal of occupational therapy : official publication of the American Occupational Therapy Association",
+        "year": "2024",
+        "doi": "10.5014/ajot.2024.050676",
+        "authors": "Dawson S, Charlton K, Ng L et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2162-weighted_blanket/01.jpg",
+    "images/2162-weighted_blanket/02.jpg",
+    "images/2162-weighted_blanket/03.jpg",
+    "images/2162-weighted_blanket/04.jpg",
+    "images/2162-weighted_blanket/05.jpg",
+    "images/2162-weighted_blanket/06.jpg",
+    "images/2162-weighted_blanket/07.jpg"
+  ],
+  "instagram_caption": "중량 이불, 정말 잠을 도와줄까요?\n\n18편의 연구를 훑어본 범위 검토(스코핑 리뷰) 논문을 살펴봤어요. 성인에서는 수면 개선, 약 사용 감소, 기분 개선 같은 긍정적 결과가 보고됐습니다. 요약문에는 통증 개선도 언급돼 있어요.\n\n아이와 청소년은 수면 결과가 엇갈렸지만, 일상 수행 능력이 좋아진 경우가 있었고 부모들은 대체로 긍정적으로 평가했어요.\n\n다만 포함된 연구들의 방법론 수준은 제각각이었고, 구체적인 사용 지침은 아직 없다고 합니다. 이 논문만으로 효과를 단정하기는 어려워요.\n\n✅ 오늘의 행동: 수면 문제가 계속된다면 전문가와 상의해 보고, 써본다면 불편할 때 바로 걷어낼 수 있게 사용하세요.\n\n📄 출처: Dawson S 외, The American Journal of Occupational Therapy (2024). DOI 10.5014/ajot.2024.050676\n\n#논문팩트체크 #paper_factcheck #중량이불 #무거운이불 #수면 #숙면 #수면습관 #불면 #수면환경 #침구 #잠잘자는법 #작업치료\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "중량 이불, 정말 잠에 도움이 될까?\n\n18편의 연구를 훑어본 리뷰 논문을 보니, 성인에서는 수면 개선·약 사용 감소·기분 개선 같은 긍정적 결과가 보고됐대요. 아이와 청소년은 수면 결과가 엇갈렸고요. 다만 연구 수준이 들쭉날쭉하고 사용 지침도 아직 없어요. 여러분은 써보신 적 있나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Weighted Blankets as a Sleep Intervention: A Scoping Review.",
+    "journal": "The American journal of occupational therapy : official publication of the American Occupational Therapy Association",
+    "year": "2024",
+    "doi": "10.5014/ajot.2024.050676",
+    "pmid": "39163284",
+    "authors": "Dawson S, Charlton K, Ng L et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39163284/"
+  },
+  "drafted_at": "2026-10-11T22:24:10.236338+09:00",
+  "model": "claude_code:default"
+}

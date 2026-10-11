@@ -1,0 +1,81 @@
+{
+  "id": "2156-sunscreen",
+  "approved": false,
+  "link": "",
+  "topic": "sunscreen",
+  "topic_ko": "선크림",
+  "verdict": "mixed",
+  "evidence_level": "meta-analysis",
+  "source_text": "초록만",
+  "answer": "이 논문에 따르면 BP-3는 사람 몸에서 널리 검출되며, 소변 농도는 북미가 유럽보다 평균 약 10배, 아시아보다 약 20배 높았다.",
+  "style": "geo",
+  "accent": "yellow",
+  "product_hint": "벤조페논·옥토크릴렌 무첨가 무기자차(징크옥사이드·티타늄디옥사이드) 선크림",
+  "image_prompt": "a plain white sunscreen tube lying on a light sandy surface next to a small closed jar",
+  "caveats": [
+    "사람 대상 건강영향 자료는 아직 제한적이며 인과관계를 확인하지 못함",
+    "초록에는 유럽 내 BP-3 소변 농도의 구체적 수치가 없어 상대 비교만 반영함",
+    "동물·세포 실험 결과가 포함되어 있어 사람에게 그대로 적용할 수 없음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "선크림 속\n[[BP-3]]\n{{몸에서}}\n검출될까?"
+    },
+    {
+      "type": "body",
+      "text": "선크림 자외선 차단 성분 [[BP-3(옥시벤존)]]과 그 대사물 BP-1은 환경과 야생동물, 사람에게서 어디서나 발견되는 물질로 보고됩니다."
+    },
+    {
+      "type": "body",
+      "text": "한 리뷰·메타분석 논문에 따르면, 선크림(4%)을 온몸에 한 번 바르면 몸속 최고 농도가 세포 실험에서 내분비 교란 효과가 나타난 농도와 겹칠 수 있었습니다."
+    },
+    {
+      "type": "body",
+      "text": "소변 속 BP-3 농도는 북미 사람들이 유럽인보다 평균 약 10배, 아시아인보다 약 20배 높게 나타났습니다."
+    },
+    {
+      "type": "body",
+      "text": "설치류 실험에서는 생식 관련 이상이 보였고, 사람 자료는 아직 제한적이지만 월경 주기 호르몬 변화·자궁근종·자궁내막증 위험 증가와 관련이 있다는 결과가 있었습니다.",
+      "note": "※ 사람 자료는 제한적이며 인과관계를 단정할 수 없습니다."
+    },
+    {
+      "type": "body",
+      "text": "선크림을 끊지 말고, 성분표에서 [[벤조페논-3·옥시벤존]] 표기를 확인해 보세요. 무기자차(징크옥사이드·티타늄디옥사이드) 제품도 대안입니다."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Benzophenone-3: Comprehensive review of the toxicological and human evidence with meta-analysis of human biomonitoring studies.",
+        "journal": "Environment international",
+        "year": "2023",
+        "doi": "10.1016/j.envint.2023.107739",
+        "authors": "Mustieles V, Balogh RK, Axelstad M et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2156-sunscreen/01.jpg",
+    "images/2156-sunscreen/02.jpg",
+    "images/2156-sunscreen/03.jpg",
+    "images/2156-sunscreen/04.jpg",
+    "images/2156-sunscreen/05.jpg",
+    "images/2156-sunscreen/06.jpg",
+    "images/2156-sunscreen/07.jpg"
+  ],
+  "instagram_caption": "선크림 속 BP-3, 실제로 몸에서 검출될까?\n\n옥시벤존으로도 불리는 BP-3와 그 대사물 BP-1은 선크림과 화장품에 자외선 차단·안정제로 널리 쓰입니다. 한 리뷰·메타분석 논문은 이 물질이 환경과 야생동물, 사람에게서 어디서나 발견된다고 정리했어요.\n\n유럽 인체 바이오모니터링 사업의 일부로 진행된 분석에서, 소변 속 BP-3 농도는 북미 사람들이 유럽인보다 평균 약 10배, 아시아인보다 약 20배 높게 나타났습니다.\n\n또 선크림(4%)을 온몸에 한 번 바르면 몸속 최고 농도가 세포 실험에서 내분비 교란 효과를 보인 농도와 겹칠 수 있었습니다. 설치류 실험에서는 생식 관련 이상이, 제한적인 사람 자료에서는 월경 주기 호르몬 변화·자궁근종·자궁내막증 위험 증가와 관련이 있다는 결과가 있었습니다. 다만 사람 자료는 아직 제한적이고 인과관계는 단정할 수 없어요.\n\n논문 저자들도 선크림 사용 자체를 피하지는 말라고 밝혔습니다. 몸에 거의 흡수되지 않는 무기 자외선 차단 성분 제품은 민감한 사람에게 권할 수 있다고 했어요.\n\n✅ 오늘의 행동: 쓰는 선크림의 성분표에서 벤조페논-3·옥시벤존 표기가 있는지 확인해 보세요.\n\n📄 출처: Mustieles V, Balogh RK, Axelstad M et al., Environment International (2023). DOI 10.1016/j.envint.2023.107739\n\n#논문팩트체크 #paper_factcheck #선크림 #자외선차단제 #옥시벤존 #벤조페논 #무기자차 #성분표확인 #내분비교란 #생활속팩트체크 #선크림추천 #화장품성분\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "선크림 속 BP-3, 몸에서 검출될까?\n\n한 리뷰·메타분석 논문을 보니 BP-3(옥시벤존)와 대사물은 사람에게서도 널리 검출된다고 해요. 소변 농도는 북미 사람들이 유럽인보다 평균 약 10배, 아시아인보다 약 20배 높았대요. 설치류 실험에서 생식 관련 이상이 보였고 사람 자료는 아직 제한적이에요. 저자들은 선크림을 끊지 말고, 무기 성분 제품을 고려해 보라고 했어요. 여러분은 선크림 성분표 확인해 보셨나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Benzophenone-3: Comprehensive review of the toxicological and human evidence with meta-analysis of human biomonitoring studies.",
+    "journal": "Environment international",
+    "year": "2023",
+    "doi": "10.1016/j.envint.2023.107739",
+    "pmid": "36805158",
+    "authors": "Mustieles V, Balogh RK, Axelstad M et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36805158/"
+  },
+  "drafted_at": "2026-10-11T22:20:55.233087+09:00",
+  "model": "claude_code:default"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "2154-pet_food",
+  "approved": false,
+  "link": "",
+  "topic": "pet_food",
+  "topic_ko": "반려동물 사료",
+  "verdict": "mixed",
+  "evidence_level": "review",
+  "source_text": "초록만",
+  "answer": "20년간 3,691건의 리콜 중 생물학적 오염이 35%, 화학적 오염이 32%여서 약 3분의 2가 오염 때문이었다.",
+  "style": "geo",
+  "accent": "yellow",
+  "product_hint": "AAFCO 기준을 충족한다고 표시된 사료, 포장에 로트 번호와 제조사 연락처가 분명히 적힌 제품",
+  "image_prompt": "a stainless steel bowl filled with dry kibble pet food next to a sealed pet food bag on a kitchen floor",
+  "caveats": [
+    "미국 FDA 리콜 기록 기반이라 다른 나라에는 그대로 적용하기 어렵다",
+    "리콜 건수에 사료뿐 아니라 약·원료·보충제가 포함되어 있다",
+    "초록만으로는 리콜 1~3등급의 구체적 기준과 실제 피해 규모를 알 수 없다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "20년간 사료 리콜\n[[3,691건]]\n{{3분의 2}}가 오염?\n진짜일까?"
+    },
+    {
+      "type": "body",
+      "text": "미국 FDA의 2003~2022년 반려동물 제품 리콜은 [[3,691건]]. 사료·간식·원료가 68%, 약이 27%, 비타민·미네랄이 5%였어요."
+    },
+    {
+      "type": "body",
+      "text": "리콜 이유는 생물학적 오염 35%, 화학적 오염 32%. 합치면 약 3분의 2가 {{오염}} 때문이었어요."
+    },
+    {
+      "type": "body",
+      "text": "전체의 약 25%는 2007~2008년 멜라민 사건이었어요. 살모넬라 리콜은 23%였고, 그중 94%가 가장 높은 1등급(Class I)이었어요."
+    },
+    {
+      "type": "body",
+      "text": "비타민·미네랄 보충제는 리콜의 5%였지만, 그중 70%가 1등급이었어요.",
+      "note": "※ 미국 FDA 리콜 기록 기준이에요. 특정 제품의 안전 여부를 말해 주진 않아요."
+    },
+    {
+      "type": "body",
+      "text": "지금 쓰는 사료 포장지의 [[로트 번호]]를 사진으로 찍어 두고, 리콜 공지가 나왔는지 가끔 확인해 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "A Review of Pet Food Recalls from 2003 Through 2022.",
+        "journal": "Journal of food protection",
+        "year": "2024",
+        "doi": "10.1016/j.jfp.2023.100199",
+        "authors": "DeBeer J, Finke M, Maxfield A et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2154-pet_food/01.jpg",
+    "images/2154-pet_food/02.jpg",
+    "images/2154-pet_food/03.jpg",
+    "images/2154-pet_food/04.jpg",
+    "images/2154-pet_food/05.jpg",
+    "images/2154-pet_food/06.jpg",
+    "images/2154-pet_food/07.jpg"
+  ],
+  "instagram_caption": "반려동물 사료 리콜, 3분의 2가 오염 때문이었다는데 진짜일까요? 🐶🐱\n\n한 리뷰 논문이 미국 FDA의 2003~2022년 반려동물 제품 리콜을 정리했어요. 사료·간식·씹는 간식, 원료, 비타민·미네랄 보충제, 약까지 포함해 총 3,691건이었습니다.\n\n리콜 이유를 보면 생물학적 오염이 35%, 화학적 오염이 32%였어요. 합치면 약 3분의 2가 오염과 관련된 리콜이었죠. 전체의 약 25%는 2007~2008년 멜라민 사건이었고, 살모넬라 리콜은 23%였으며 그중 94%가 가장 높은 1등급이었어요.\n\n다만 이 자료는 미국 리콜 기록이고 약·원료도 포함돼 있어요. 지금 먹이는 특정 사료가 위험하다는 뜻은 아니에요. 논문은 제조사가 식품안전 문화와 공급업체 승인 체계를 갖춰야 한다고 강조합니다.\n\n✅ 오늘의 행동: 지금 쓰는 사료 포장지의 로트 번호를 사진으로 찍어 두세요. 리콜 공지가 나왔을 때 바로 대조할 수 있어요.\n\n📄 출처: DeBeer J, Finke M, Maxfield A et al., Journal of Food Protection (2024). DOI 10.1016/j.jfp.2023.100199\n\n#논문팩트체크 #paper_factcheck #반려동물사료 #사료리콜 #강아지사료 #고양이사료 #반려견 #반려묘 #펫푸드 #식품안전 #살모넬라 #멜라민 #로트번호 #집사필독\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "반려동물 사료 리콜, 3분의 2가 오염 때문일까?\n\n한 리뷰 논문이 미국 FDA의 20년치(2003~2022) 반려동물 제품 리콜 3,691건을 정리했어요. 이유를 보니 생물학적 오염 35%, 화학적 오염 32%로 합치면 약 3분의 2가 오염 때문이었대요. 2007~2008년 멜라민 사건이 전체의 약 25%였고요. 미국 기록이고 약·원료도 포함된 수치라 특정 사료가 위험하다는 뜻은 아니에요. 여러분은 사료 로트 번호 챙겨 두시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "A Review of Pet Food Recalls from 2003 Through 2022.",
+    "journal": "Journal of food protection",
+    "year": "2024",
+    "doi": "10.1016/j.jfp.2023.100199",
+    "pmid": "38029842",
+    "authors": "DeBeer J, Finke M, Maxfield A et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38029842/"
+  },
+  "drafted_at": "2026-10-11T22:19:59.157142+09:00",
+  "model": "claude_code:default"
+}

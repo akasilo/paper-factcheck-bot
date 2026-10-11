@@ -1,0 +1,82 @@
+{
+  "id": "2159-nonstick_pan",
+  "approved": false,
+  "link": "",
+  "topic": "nonstick_pan",
+  "topic_ko": "코팅 프라이팬",
+  "verdict": "mixed",
+  "evidence_level": "review",
+  "source_text": "PMC11047059 전문",
+  "answer": "이 리뷰에 따르면 PFAS 혈중 농도는 고혈압·고콜레스테롤·고요산혈증 위험과 더 강한 연관이 있었지만, 비만·혈당 이상과는 일관되지 않았다.",
+  "style": "geo",
+  "accent": "yellow",
+  "product_hint": "PFAS-free 세라믹 코팅 또는 스테인리스·무쇠 프라이팬",
+  "image_prompt": "a single dark nonstick frying pan with a slightly scratched coating on a plain kitchen counter",
+  "caveats": [
+    "논문은 프라이팬 사용으로 인한 PFAS 노출량을 직접 다루지 않았다",
+    "관찰 연구 중심이라 인과관계는 확립되지 않았다",
+    "연구마다 결과가 엇갈리는 항목이 많다"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "코팅 프라이팬\n[[PFAS]]가\n{{심장}}과\n관련 있을까?"
+    },
+    {
+      "type": "body",
+      "text": "PFAS는 눈·물·기름을 튕겨내는 '영원한 화학물질'이에요. 논문은 코팅 프라이팬 같은 [[논스틱 제품]]도 쓰임새 중 하나로 꼽습니다.",
+      "note": "※ 프라이팬 자체의 노출량은 이 논문에서 다루지 않았어요"
+    },
+    {
+      "type": "body",
+      "text": "한 리뷰 논문에 따르면 혈중 PFAS는 [[고혈압·고콜레스테롤·고요산혈증]] 위험과 더 강한 연관이 있다는 결과였어요."
+    },
+    {
+      "type": "body",
+      "text": "혈압 연구 9건 중 대부분에서 PFOA·PFOS가 수축기 혈압 상승과 관련 있었어요. 다만 크로아티아 연구(1,430명)는 연관이 없었어요."
+    },
+    {
+      "type": "body",
+      "text": "반면 비만과 혈당 이상은 연구마다 결과가 엇갈려, 일관된 연관은 {{지지되지 않았어요}}.",
+      "note": "※ 관찰 연구라 인과관계는 확인되지 않았어요"
+    },
+    {
+      "type": "body",
+      "text": "코팅이 [[긁히거나 벗겨진]] 프라이팬은 교체를 고려하고, 센 불 빈 팬 예열은 피해 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Perfluoroalkyl/Polyfluoroalkyl Substances: Links to Cardiovascular Disease Risk.",
+        "journal": "Circulation research",
+        "year": "2024",
+        "doi": "10.1161/CIRCRESAHA.124.323697",
+        "authors": "Schlezinger JJ, Gokce N"
+      }
+    }
+  ],
+  "images": [
+    "images/2159-nonstick_pan/01.jpg",
+    "images/2159-nonstick_pan/02.jpg",
+    "images/2159-nonstick_pan/03.jpg",
+    "images/2159-nonstick_pan/04.jpg",
+    "images/2159-nonstick_pan/05.jpg",
+    "images/2159-nonstick_pan/06.jpg",
+    "images/2159-nonstick_pan/07.jpg"
+  ],
+  "instagram_caption": "코팅 프라이팬의 PFAS, 심장과 관련 있을까?\n\n한 리뷰 논문은 PFAS가 눈·물·기름을 튕겨내는 성질 때문에 논스틱 제품 등 다양한 생활용품에 쓰인다고 설명해요. 분해가 잘 안 돼서 몸에도 오래 남을 수 있다고 합니다.\n\n리뷰 결과, 혈중 PFAS 농도는 고혈압·고콜레스테롤·고요산혈증 위험과 더 강한 연관이 있다는 결과였어요. 혈압 연구는 대체로 양의 연관을 보였지만 연관이 없다는 연구도 있었습니다.\n\n반면 비만과 혈당 이상은 연구마다 결과가 엇갈렸어요. 또 관찰 연구가 중심이라 원인과 결과를 확정할 수는 없다고 저자들도 밝혔습니다.\n\n참고로 이 논문은 프라이팬 자체의 노출량을 따로 다루지는 않았어요. 물질 중심의 리뷰라는 점을 기억해 주세요.\n\n✅ 오늘의 행동: 코팅이 긁히거나 벗겨진 프라이팬은 교체를 고려하고, 센 불 빈 팬 예열은 피해 보세요. 교체 시엔 PFAS-free 세라믹 코팅이나 스테인리스·무쇠도 선택지예요.\n\n📄 출처: Schlezinger JJ, Gokce N, Circulation research (2024). DOI 10.1161/CIRCRESAHA.124.323697\n\n#논문팩트체크 #paper_factcheck #PFAS #코팅프라이팬 #영원한화학물질 #심혈관 #고혈압 #콜레스테롤 #주방용품 #프라이팬 #스테인리스 #무쇠팬 #생활속화학물질\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "코팅 프라이팬 PFAS, 심장과 관련 있을까?\n\n한 리뷰 논문을 보니 혈중 PFAS는 고혈압·고콜레스테롤·고요산혈증 위험과 더 강한 연관이 있다는 결과였어요. 반면 비만이나 혈당 이상은 연구마다 엇갈렸고요. 관찰 연구라 원인은 확정 못 한다고 해요. 프라이팬 자체의 노출량은 다루지 않았지만, 논스틱 제품에도 PFAS가 쓰인다고 합니다. 긁힌 팬은 교체 고려, 센 불 빈 팬 예열은 피하기! 여러분 집 프라이팬은 괜찮은가요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Perfluoroalkyl/Polyfluoroalkyl Substances: Links to Cardiovascular Disease Risk.",
+    "journal": "Circulation research",
+    "year": "2024",
+    "doi": "10.1161/CIRCRESAHA.124.323697",
+    "pmid": "38662859",
+    "authors": "Schlezinger JJ, Gokce N",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38662859/"
+  },
+  "drafted_at": "2026-10-11T22:22:33.699629+09:00",
+  "model": "claude_code:default"
+}
