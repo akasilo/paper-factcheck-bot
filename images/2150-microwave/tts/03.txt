@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|그 결과 용기에서 나온 자외선 광개시제 성분이 감자 전분 유래 맥아당과 결합한 새로운 화합물이 확인됐습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|그 결과 용기에서 나온 자외선 광개시제 성분이 감자 전분 유래 맥아당과 결합한 새로운 화합물이 확인됐습니다.

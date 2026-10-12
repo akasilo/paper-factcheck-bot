@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|그중 비스페놀과 프탈레이트가 가장 자주 언급됩니다. 가열, 오래 담아두기, 반복 사용, 기름지거나 신 음식일 때 넘어오기 쉽다고 합니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|그중 비스페놀과 프탈레이트가 가장 자주 언급됩니다. 가열, 오래 담아두기, 반복 사용, 기름지거나 신 음식일 때 넘어오기 쉽다고 합니다.

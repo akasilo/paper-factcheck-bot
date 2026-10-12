@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|오일풀링을 해보고 싶다면 칫솔질 대신이 아니라 추가로, 입에 맞는 방식으로 시도해 보세요. 잇몸이 불편하면 치과 상담이 먼저예요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오일풀링을 해보고 싶다면 칫솔질 대신이 아니라 추가로, 입에 맞는 방식으로 시도해 보세요. 잇몸이 불편하면 치과 상담이 먼저예요.

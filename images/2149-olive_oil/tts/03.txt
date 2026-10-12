@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|짧은사슬지방산(부티르산)을 만드는 균과 비피더스균, 박테로이데스 등은 늘고, 퍼미큐테스와 블라우티아 균은 줄었다고 보고됐어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|짧은사슬지방산(부티르산)을 만드는 균과 비피더스균, 박테로이데스 등은 늘고, 퍼미큐테스와 블라우티아 균은 줄었다고 보고됐어요.

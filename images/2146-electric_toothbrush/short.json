@@ -1,15 +1,11 @@
 {
   "cards": "890052633e4ce0eb",
   "script": "d16787320b248cee",
-  "voice": "ko-KR-Neural2-A",
-  "rate": "1.15",
-  "style": "",
+  "voice": "gemini:gemini-3.8-flash-tts:Aoede",
+  "rate": "1.0",
+  "style": "calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace",
   "music": "from_here_on_in.mp3@0.350",
   "music_title": "From Here on In",
   "music_credit": "",
-  "seconds": 65.0,
-  "tts_fallback": {
-    "wanted": "gemini:gemini-3.8-flash-tts:Aoede",
-    "date": "2026-10-11"
-  }
+  "seconds": 75.7
 }

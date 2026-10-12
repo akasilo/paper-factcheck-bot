@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|커피 많이 마시면 혈압이 오를까요? 논문 확인
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|커피 많이 마시면 혈압이 오를까요? 논문 확인

@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|플라스틱 생수병 실험에서는 최대 사십 도 환경에 노출됐을 때 프탈레이트(DEHP) 농도가 네 배로 늘었습니다. 다만 독성 기준보다는 훨씬 낮았습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|플라스틱 생수병 실험에서는 최대 사십 도 환경에 노출됐을 때 프탈레이트(DEHP) 농도가 네 배로 늘었습니다. 다만 독성 기준보다는 훨씬 낮았습니다.

@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|무작위 대조 시험 이십오 편(천백팔십사 명)을 종합한 리뷰예요. 식용유로 칠 일 이상 가글한 결과를 클로르헥시딘 및 다른 구강청결제와 비교했어요. 참고로, 절반은 참기름을 썼고, 십칠 편은 구강 문제가 없던 사람 대상.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|무작위 대조 시험 이십오 편(천백팔십사 명)을 종합한 리뷰예요. 식용유로 칠 일 이상 가글한 결과를 클로르헥시딘 및 다른 구강청결제와 비교했어요. 참고로, 절반은 참기름을 썼고, 십칠 편은 구강 문제가 없던 사람 대상.

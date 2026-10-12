@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|PPD 대신 PTD가 든 염색약은 PPD 알레르기 환자의 오십칠 퍼센트가 견뎠다는 보고가 있습니다. 증상은 두피 가려움, 이마, 목 발진 등입니다. 참고로, 일부는 PTD에도 반응할 수 있어요. 진단 기준은 피부과 패치 검사입니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|PPD 대신 PTD가 든 염색약은 PPD 알레르기 환자의 오십칠 퍼센트가 견뎠다는 보고가 있습니다. 증상은 두피 가려움, 이마, 목 발진 등입니다. 참고로, 일부는 PTD에도 반응할 수 있어요. 진단 기준은 피부과 패치 검사입니다.

@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|오늘부터 뜨거운 음식은 플라스틱 용기 대신 유리나 스테인리스 용기에 담아 보세요. 전자레인지에 돌릴 때도 마찬가지입니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘부터 뜨거운 음식은 플라스틱 용기 대신 유리나 스테인리스 용기에 담아 보세요. 전자레인지에 돌릴 때도 마찬가지입니다.

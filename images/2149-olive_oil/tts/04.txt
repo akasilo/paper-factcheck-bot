@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|이런 변화는 염증, 산화 상태, 전반적인 대사 건강과 좋은 방향으로 관련이 있다고 알려져 있어요. 다만 건강 효과가 이 변화 때문인지는 아직 앞으로의 과제예요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이런 변화는 염증, 산화 상태, 전반적인 대사 건강과 좋은 방향으로 관련이 있다고 알려져 있어요. 다만 건강 효과가 이 변화 때문인지는 아직 앞으로의 과제예요.

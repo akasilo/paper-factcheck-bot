@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|수면 연구 팔 편 중 오 편에서 수면 지표가 좋아졌어요. 이 편은 개선이 없었고, 일 편은 결과가 엇갈렸어요. 참고로, 대부분 설문(수면 질 지수)으로 잰 주관적 수면이에요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|수면 연구 팔 편 중 오 편에서 수면 지표가 좋아졌어요. 이 편은 개선이 없었고, 일 편은 결과가 엇갈렸어요. 참고로, 대부분 설문(수면 질 지수)으로 잰 주관적 수면이에요.

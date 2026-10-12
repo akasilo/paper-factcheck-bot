@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|가장 큰 차이는 커피(마이너스 구점이 퍼센트)였어요. 세 그룹 비교(p값 영점영영이)에서 커피가 녹차와 허브티보다 유리했고, 녹차는 '그보다 덜한 정도'였어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|가장 큰 차이는 커피(마이너스 구점이 퍼센트)였어요. 세 그룹 비교(p값 영점영영이)에서 커피가 녹차와 허브티보다 유리했고, 녹차는 '그보다 덜한 정도'였어요.

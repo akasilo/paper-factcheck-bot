@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|무작위 대조 시험 삼십 편을 종합한 리뷰에서, 유청 단백질은 건강한 노인의 근육량, 근력을 늘리지 못했다는 결과가 나왔어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|무작위 대조 시험 삼십 편을 종합한 리뷰에서, 유청 단백질은 건강한 노인의 근육량, 근력을 늘리지 못했다는 결과가 나왔어요.

@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|소음을 받는 정도에 따라 위험이 더 커지는 유전자 변이도 확인됐어요. 소음과 유전자가 함께 작용할 수 있다는 결과예요. 참고로, 공장 노동자 대상 연구라 일반 이어폰 사용자에게 그대로 적용하긴 어려워요. 인과가 아닌 연관이에요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|소음을 받는 정도에 따라 위험이 더 커지는 유전자 변이도 확인됐어요. 소음과 유전자가 함께 작용할 수 있다는 결과예요. 참고로, 공장 노동자 대상 연구라 일반 이어폰 사용자에게 그대로 적용하긴 어려워요. 인과가 아닌 연관이에요.

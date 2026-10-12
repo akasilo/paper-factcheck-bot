@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|무작위 대조 시험 십사 편(참가자 구백육십칠 명)을 종합한 한 리뷰 논문이 있어요. 건강한 성인이 가수분해 콜라겐을 먹은 그룹과 가짜약 그룹을 비교했습니다. 참고로, 섭취 기간은 사에서 십이주였어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|무작위 대조 시험 십사 편(참가자 구백육십칠 명)을 종합한 한 리뷰 논문이 있어요. 건강한 성인이 가수분해 콜라겐을 먹은 그룹과 가짜약 그룹을 비교했습니다. 참고로, 섭취 기간은 사에서 십이주였어요.

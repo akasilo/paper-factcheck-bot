@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|보충제만 믿기보다 근력 운동을 먼저 챙기고, 비타민 D 수치가 걱정되면 전문가와 상담해 보세요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|보충제만 믿기보다 근력 운동을 먼저 챙기고, 비타민 D 수치가 걱정되면 전문가와 상담해 보세요.

@@ -1,15 +1,11 @@
 {
   "cards": "2851e3cfd1ff8498",
   "script": "069046a7b17f82c1",
-  "voice": "ko-KR-Neural2-A",
-  "rate": "1.15",
-  "style": "",
+  "voice": "gemini:gemini-3.8-flash-tts:Aoede",
+  "rate": "1.0",
+  "style": "calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace",
   "music": "laniakea.mp3@0.350",
   "music_title": "Laniakea",
   "music_credit": "",
-  "seconds": 79.1,
-  "tts_fallback": {
-    "wanted": "gemini:gemini-3.8-flash-tts:Aoede",
-    "date": "2026-10-11"
-  }
+  "seconds": 86.7
 }

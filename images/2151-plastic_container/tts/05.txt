@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|소량이라도 문제가 될 수 있는지, 여러 물질이 섞이면 어떤지는 아직 불확실합니다. 해로움은 단정하기 어렵고, 장기 영향 연구가 더 필요하다고 합니다. 참고로, 원인과 결과를 확정하기 어렵다고 논문도 밝힙니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|소량이라도 문제가 될 수 있는지, 여러 물질이 섞이면 어떤지는 아직 불확실합니다. 해로움은 단정하기 어렵고, 장기 영향 연구가 더 필요하다고 합니다. 참고로, 원인과 결과를 확정하기 어렵다고 논문도 밝힙니다.

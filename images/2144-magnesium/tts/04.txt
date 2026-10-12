@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|불안 연구 칠 편 중 오 편에서 자가 보고 불안이 줄었어요. 효과가 없던 이 편은 월경 전 증상 여성, 출산 후 여성 대상이었어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|불안 연구 칠 편 중 오 편에서 자가 보고 불안이 줄었어요. 효과가 없던 이 편은 월경 전 증상 여성, 출산 후 여성 대상이었어요.

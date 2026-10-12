@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|지중해식 식단 연구에선 이 형 당뇨 위험이 무작위 대조 시험(PREDIMED)에서 삼십 퍼센트 낮았고, 올리브유 보충군의 심혈관 사건도 삼십 퍼센트 적었어요. 참고로, 올리브유 하루 최대 팔 회 분량을 포함한 식단 기준이에요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|지중해식 식단 연구에선 이 형 당뇨 위험이 무작위 대조 시험(PREDIMED)에서 삼십 퍼센트 낮았고, 올리브유 보충군의 심혈관 사건도 삼십 퍼센트 적었어요. 참고로, 올리브유 하루 최대 팔 회 분량을 포함한 식단 기준이에요.

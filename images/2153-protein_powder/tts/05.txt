@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|비타민 D를 함께 먹은 경우엔 근육량, 근력, 기능이 모두 좋아졌지만, 운동을 같이 하면 추가 효과는 없었어요. 참고로, 근거 수준은 대부분 낮거나 매우 낮고 연구 간 차이가 큽니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|비타민 D를 함께 먹은 경우엔 근육량, 근력, 기능이 모두 좋아졌지만, 운동을 같이 하면 추가 효과는 없었어요. 참고로, 근거 수준은 대부분 낮거나 매우 낮고 연구 간 차이가 큽니다.

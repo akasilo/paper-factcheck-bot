@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|비만 청소년 마흔여덟 명을 세 그룹으로 나눈 무작위 대조 시험이에요. 모두 가족 영양 상담을 받고, 녹차 세 잔, 커피 두 잔, 허브티 세 잔 중 하나를 마셨어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|비만 청소년 마흔여덟 명을 세 그룹으로 나눈 무작위 대조 시험이에요. 모두 가족 영양 상담을 받고, 녹차 세 잔, 커피 두 잔, 허브티 세 잔 중 하나를 마셨어요.

@@ -1,15 +1,11 @@
 {
   "cards": "bbc13b2d551dc539",
   "script": "3dde857482d05afd",
-  "voice": "ko-KR-Neural2-A",
-  "rate": "1.15",
-  "style": "",
+  "voice": "gemini:gemini-3.8-flash-tts:Aoede",
+  "rate": "1.0",
+  "style": "calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace",
   "music": "rain_over_kyoto_station.mp3@0.350",
   "music_title": "Rain Over Kyoto Station",
   "music_credit": "",
-  "seconds": 77.2,
-  "tts_fallback": {
-    "wanted": "gemini:gemini-3.8-flash-tts:Aoede",
-    "date": "2026-10-11"
-  }
+  "seconds": 87.0
 }

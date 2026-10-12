@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|논문이 인용한 기존 연구는 하루 세 잔 미만에서는 위험이 낮아지지 않았다고 봤습니다. 다만 원인이라는 증거는 아닙니다. 참고로, 커피 종류, 흡연, 나트륨 섭취는 충분히 분석되지 않았습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|논문이 인용한 기존 연구는 하루 세 잔 미만에서는 위험이 낮아지지 않았다고 봤습니다. 다만 원인이라는 증거는 아닙니다. 참고로, 커피 종류, 흡연, 나트륨 섭취는 충분히 분석되지 않았습니다.

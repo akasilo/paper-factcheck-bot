@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|혈압이 신경 쓰인다면 하루에 커피를 몇 잔 마시는지 먼저 적어보세요. 설탕, 시럽은 줄이고 원두 드립으로 즐겨보세요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|혈압이 신경 쓰인다면 하루에 커피를 몇 잔 마시는지 먼저 적어보세요. 설탕, 시럽은 줄이고 원두 드립으로 즐겨보세요.

@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|미국 FDA의 이천삼 년에서 이천이십이 년 반려동물 제품 리콜은 삼천육백구십일 건. 사료, 간식, 원료가 육십팔 퍼센트, 약이 이십칠 퍼센트, 비타민, 미네랄이 오 퍼센트였어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|미국 FDA의 이천삼 년에서 이천이십이 년 반려동물 제품 리콜은 삼천육백구십일 건. 사료, 간식, 원료가 육십팔 퍼센트, 약이 이십칠 퍼센트, 비타민, 미네랄이 오 퍼센트였어요.

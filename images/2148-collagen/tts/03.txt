@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|결과: 콜라겐 섭취 그룹이 가짜약 그룹보다 피부 수분도가 유의하게 높았다는 결과예요. (효과 크기 영점오팔, 구십오 퍼센트 신뢰구간 영점사이에서 영점칠삼)
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|결과: 콜라겐 섭취 그룹이 가짜약 그룹보다 피부 수분도가 유의하게 높았다는 결과예요. (효과 크기 영점오팔, 구십오 퍼센트 신뢰구간 영점사이에서 영점칠삼)

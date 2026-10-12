@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|관찰연구 이십오 편(단면 십삼, 코호트 십이)을 합친 메타분석에서, 커피를 가장 많이 마신 집단은 가장 적게 마신 집단보다 고혈압 위험이 칠 퍼센트 낮았습니다. 참고로, 추적 관찰한 코호트 연구 기준 (RR 영점구삼).
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|관찰연구 이십오 편(단면 십삼, 코호트 십이)을 합친 메타분석에서, 커피를 가장 많이 마신 집단은 가장 적게 마신 집단보다 고혈압 위험이 칠 퍼센트 낮았습니다. 참고로, 추적 관찰한 코호트 연구 기준 (RR 영점구삼).

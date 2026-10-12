@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|시작 때와 비교한 BMI 변화는 녹차 마이너스 이점삼 퍼센트, 대조용 허브티 플러스 영점칠육 퍼센트였어요. 녹차 쪽이 조금 줄어든 방향이었어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|시작 때와 비교한 BMI 변화는 녹차 마이너스 이점삼 퍼센트, 대조용 허브티 플러스 영점칠육 퍼센트였어요. 녹차 쪽이 조금 줄어든 방향이었어요.

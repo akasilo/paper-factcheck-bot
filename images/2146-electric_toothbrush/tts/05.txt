@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|출혈 부위 십 퍼센트 미만의 '건강' 상태가 된 비율은 수동 이십 퍼센트, 전동 민감모드 사십육점칠 퍼센트, 일상세정모드 육십 퍼센트였습니다. 참고로, 사 주 단기 시험이며, 새로 나온 전동칫솔 한 종류의 결과예요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|출혈 부위 십 퍼센트 미만의 '건강' 상태가 된 비율은 수동 이십 퍼센트, 전동 민감모드 사십육점칠 퍼센트, 일상세정모드 육십 퍼센트였습니다. 참고로, 사 주 단기 시험이며, 새로 나온 전동칫솔 한 종류의 결과예요.

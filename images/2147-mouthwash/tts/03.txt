@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|클로르헥시딘이 아닌 구강청결제와 비교하면, 오일풀링 쪽 잇몸 지수(MGI)가 더 낮았어요. (SMD 마이너스 일점일사, 구십오 퍼센트 신뢰구간 마이너스 일점삼일~마이너스 영점구칠)
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|클로르헥시딘이 아닌 구강청결제와 비교하면, 오일풀링 쪽 잇몸 지수(MGI)가 더 낮았어요. (SMD 마이너스 일점일사, 구십오 퍼센트 신뢰구간 마이너스 일점삼일~마이너스 영점구칠)

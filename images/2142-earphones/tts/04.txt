@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|소음이 불규칙하게 튀는 작업장은 일정한 소음보다 난청 위험이 약 일점팔 배(오즈비 일점팔영육)였어요. 흡연도 위험과 관련이 있었어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|소음이 불규칙하게 튀는 작업장은 일정한 소음보다 난청 위험이 약 일점팔 배(오즈비 일점팔영육)였어요. 흡연도 위험과 관련이 있었어요.

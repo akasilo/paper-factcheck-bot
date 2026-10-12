@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|피부 탄력도 섭취 그룹에서 더 좋아졌어요. (효과 크기 영점육오, 신뢰구간 영점사사에서 영점팔오) 피부 수분 손실량은 줄고, 주름은 소폭 개선됐다는 결과였습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|피부 탄력도 섭취 그룹에서 더 좋아졌어요. (효과 크기 영점육오, 신뢰구간 영점사사에서 영점팔오) 피부 수분 손실량은 줄고, 주름은 소폭 개선됐다는 결과였습니다.

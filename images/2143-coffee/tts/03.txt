@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|한 시점만 조사한 단면연구에서는 위험이 이십일 퍼센트 낮았습니다(RR 영점칠구). 다만 연구마다 결과 편차가 커서 조심해서 봐야 합니다. 참고로, 단면연구는 선후 관계를 알 수 없습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 시점만 조사한 단면연구에서는 위험이 이십일 퍼센트 낮았습니다(RR 영점칠구). 다만 연구마다 결과 편차가 커서 조심해서 봐야 합니다. 참고로, 단면연구는 선후 관계를 알 수 없습니다.

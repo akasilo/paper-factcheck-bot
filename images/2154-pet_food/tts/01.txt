@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|이십 년간 사료 리콜 삼천육백구십일 건 삼 분의 이 가 오염? 진짜일까?
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이십 년간 사료 리콜 삼천육백구십일 건 삼 분의 이 가 오염? 진짜일까?

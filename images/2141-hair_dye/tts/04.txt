@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|PPD 알레르기가 있는 사람은 헤어 제품 알레르기 검사 성분 중 다른 것에도 양성인 비율이 오십오 퍼센트로, 없는 사람(십일 퍼센트)보다 높았습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|PPD 알레르기가 있는 사람은 헤어 제품 알레르기 검사 성분 중 다른 것에도 양성인 비율이 오십오 퍼센트로, 없는 사람(십일 퍼센트)보다 높았습니다.

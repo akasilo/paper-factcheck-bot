@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|염색 전 팔 안쪽에 동전 크기로 소량을 바르고 사십오 분 뒤 씻어낸 뒤, 사에서 육일간 붉어짐, 두드러기가 없는지 확인하세요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|염색 전 팔 안쪽에 동전 크기로 소량을 바르고 사십오 분 뒤 씻어낸 뒤, 사에서 육일간 붉어짐, 두드러기가 없는지 확인하세요.

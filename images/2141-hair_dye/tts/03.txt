@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|북미 패치 테스트 자료(약 삼 만 팔 천 명)에서 헤어 제품 알레르기는 전체 양성 반응의 구 퍼센트였고, 그중 삼십육 퍼센트가 염색약 성분 PPD 양성이었습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|북미 패치 테스트 자료(약 삼 만 팔 천 명)에서 헤어 제품 알레르기는 전체 양성 반응의 구 퍼센트였고, 그중 삼십육 퍼센트가 염색약 성분 PPD 양성이었습니다.

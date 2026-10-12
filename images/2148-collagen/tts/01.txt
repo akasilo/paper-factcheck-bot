@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|콜라겐 먹으면 피부 수분, 탄력 정말 달라질까? 메타분석 확인
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|콜라겐 먹으면 피부 수분, 탄력 정말 달라질까? 메타분석 확인

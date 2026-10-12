@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|소변 속 MECPP가 높을수록 신장 손상 초기 신호인 소변 알부민 수치(UACR)도 높았습니다(p값 영점영영일 미만).
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|소변 속 MECPP가 높을수록 신장 손상 초기 신호인 소변 알부민 수치(UACR)도 높았습니다(p값 영점영영일 미만).

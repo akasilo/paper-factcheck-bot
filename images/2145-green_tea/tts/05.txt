@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|연구진은 상담에 커피, 그리고 그보다 덜하게 차의 카테킨을 더하면 체중, 체지방 감소와 관련이 있을 수 있다고 정리했어요. 참고로, 그룹당 열세 명에서 열여덟 명인 소규모 예비 연구예요. 녹차와 허브티의 차이가 통계적으로 의미 있었는지는 초록에 나와 있지 않아요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|연구진은 상담에 커피, 그리고 그보다 덜하게 차의 카테킨을 더하면 체중, 체지방 감소와 관련이 있을 수 있다고 정리했어요. 참고로, 그룹당 열세 명에서 열여덟 명인 소규모 예비 연구예요. 녹차와 허브티의 차이가 통계적으로 의미 있었는지는 초록에 나와 있지 않아요.

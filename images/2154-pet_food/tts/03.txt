@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|리콜 이유는 생물학적 오염 삼십오 퍼센트, 화학적 오염 삼십이 퍼센트. 합치면 약 삼 분의 이 가 오염 때문이었어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|리콜 이유는 생물학적 오염 삼십오 퍼센트, 화학적 오염 삼십이 퍼센트. 합치면 약 삼 분의 이 가 오염 때문이었어요.
