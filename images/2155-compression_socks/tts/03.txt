@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|다만 훈련 사이 회복 시간대(여덟 시간에서 스물네 시간)만 따로 보면 압박 의류와 냉치료는 긍정적인 경향을 보였습니다. 참고로, 이 시간대를 다룬 연구는 팔 편뿐.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|다만 훈련 사이 회복 시간대(여덟 시간에서 스물네 시간)만 따로 보면 압박 의류와 냉치료는 긍정적인 경향을 보였습니다. 참고로, 이 시간대를 다룬 연구는 팔 편뿐.

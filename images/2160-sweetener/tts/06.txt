@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|음료를 고를 땐 무가당 탄산수처럼 단맛 자체를 줄이는 쪽부터 시도해 보세요. 감미료는 '대체'보다 '줄이기'가 먼저예요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|음료를 고를 땐 무가당 탄산수처럼 단맛 자체를 줄이는 쪽부터 시도해 보세요. 감미료는 '대체'보다 '줄이기'가 먼저예요.

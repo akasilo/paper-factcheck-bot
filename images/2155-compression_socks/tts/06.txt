@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|다음 장거리 달리기 뒤엔 압박 의류를 한 번 시험 삼아 신어 보고, 내 몸의 느낌을 기록해 보세요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|다음 장거리 달리기 뒤엔 압박 의류를 한 번 시험 삼아 신어 보고, 내 몸의 느낌을 기록해 보세요.

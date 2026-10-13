@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|반면 비만과 혈당 이상은 연구마다 결과가 엇갈려, 일관된 연관은 지지되지 않았어요. 참고로, 관찰 연구라 인과관계는 확인되지 않았어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|반면 비만과 혈당 이상은 연구마다 결과가 엇갈려, 일관된 연관은 지지되지 않았어요. 참고로, 관찰 연구라 인과관계는 확인되지 않았어요.

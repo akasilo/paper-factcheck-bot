@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|건강한 이십 대 여성 서른 명이 에너지드링크 이백오십 밀리리터를 마시고, 마시기 전, 삼십 분 뒤, 육십 분 뒤에 목동맥과 뇌동맥 혈류 속도를 초음파로 쟀어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|건강한 이십 대 여성 서른 명이 에너지드링크 이백오십 밀리리터를 마시고, 마시기 전, 삼십 분 뒤, 육십 분 뒤에 목동맥과 뇌동맥 혈류 속도를 초음파로 쟀어요.

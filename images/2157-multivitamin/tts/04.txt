@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|연구진이 점수 차이를 나이에 따른 자연 하락 속도와 견줘 보니 약 일점팔 년 치 인지 노화를 늦춘 것에 해당했어요. 다만 연구진도 이 계산이 부정확하다고 밝혔습니다. 참고로, 반복 검사에 익숙해지는 효과가 결과를 왜곡했을 수 있어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|연구진이 점수 차이를 나이에 따른 자연 하락 속도와 견줘 보니 약 일점팔 년 치 인지 노화를 늦춘 것에 해당했어요. 다만 연구진도 이 계산이 부정확하다고 밝혔습니다. 참고로, 반복 검사에 익숙해지는 효과가 결과를 왜곡했을 수 있어요.

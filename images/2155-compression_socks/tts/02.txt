@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|지구력 선수 대상 이십이 편의 리뷰를 종합한 리뷰에서, 어떤 회복법도 일관된 효과를 보이지 않았습니다. 참고로, 예순세 개 연구, 지구력 선수 천백 명 기준.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|지구력 선수 대상 이십이 편의 리뷰를 종합한 리뷰에서, 어떤 회복법도 일관된 효과를 보이지 않았습니다. 참고로, 예순세 개 연구, 지구력 선수 천백 명 기준.

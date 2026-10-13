@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|소변 속 BP-삼 농도는 북미 사람들이 유럽인보다 평균 약 열 배, 아시아인보다 약 스무 배 높게 나타났습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|소변 속 BP-삼 농도는 북미 사람들이 유럽인보다 평균 약 열 배, 아시아인보다 약 스무 배 높게 나타났습니다.

@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|아이와 청소년은 달랐습니다. 수면 결과는 엇갈렸고, 일상 수행 능력이 좋아진 경우가 있었습니다. 부모들은 대체로 긍정적으로 평가했습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|아이와 청소년은 달랐습니다. 수면 결과는 엇갈렸고, 일상 수행 능력이 좋아진 경우가 있었습니다. 부모들은 대체로 긍정적으로 평가했습니다.

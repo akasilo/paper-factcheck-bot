@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|이미 먹고 있다면 성분표와 일 일 섭취량을 확인해 보세요. 새로 시작하기 전에는 복용 중인 약이 있는지 의사, 약사와 상담하는 게 좋아요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|이미 먹고 있다면 성분표와 일 일 섭취량을 확인해 보세요. 새로 시작하기 전에는 복용 중인 약이 있는지 의사, 약사와 상담하는 게 좋아요.

@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|십팔 편의 연구를 훑어본 한 범위 검토(스코핑 리뷰) 논문에 따르면, 성인에서는 수면 개선, 약 사용 감소, 기분 개선 등 긍정적 결과가 보고됐습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|십팔 편의 연구를 훑어본 한 범위 검토(스코핑 리뷰) 논문에 따르면, 성인에서는 수면 개선, 약 사용 감소, 기분 개선 등 긍정적 결과가 보고됐습니다.

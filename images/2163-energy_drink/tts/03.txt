@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|결과는 의외로 혈류 속도 감소였어요. 육십 분 뒤 총목동맥의 확장기 말 속도는 약 십팔점칠 퍼센트, 내경동맥은 약 이십점사 퍼센트 느려졌어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|결과는 의외로 혈류 속도 감소였어요. 육십 분 뒤 총목동맥의 확장기 말 속도는 약 십팔점칠 퍼센트, 내경동맥은 약 이십점사 퍼센트 느려졌어요.

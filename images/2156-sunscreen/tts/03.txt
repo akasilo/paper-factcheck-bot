@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|한 리뷰, 메타분석 논문에 따르면, 선크림(사 퍼센트)을 온몸에 한 번 바르면 몸속 최고 농도가 세포 실험에서 내분비 교란 효과가 나타난 농도와 겹칠 수 있었습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 리뷰, 메타분석 논문에 따르면, 선크림(사 퍼센트)을 온몸에 한 번 바르면 몸속 최고 농도가 세포 실험에서 내분비 교란 효과가 나타난 농도와 겹칠 수 있었습니다.

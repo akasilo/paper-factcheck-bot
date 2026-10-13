@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|자기 전 화면을 오래 본 경우 수면 시간이 짧아지고, 잠드는 데 걸리는 시간이 늘고, 자다가 자주 깨는 것과 관련이 있었어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|자기 전 화면을 오래 본 경우 수면 시간이 짧아지고, 잠드는 데 걸리는 시간이 늘고, 자다가 자주 깨는 것과 관련이 있었어요.

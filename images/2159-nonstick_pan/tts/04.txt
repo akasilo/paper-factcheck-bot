@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|혈압 연구 구 건 중 대부분에서 PFOA, PFOS가 수축기 혈압 상승과 관련 있었어요. 다만 크로아티아 연구(천사백삼십 명)는 연관이 없었어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|혈압 연구 구 건 중 대부분에서 PFOA, PFOS가 수축기 혈압 상승과 관련 있었어요. 다만 크로아티아 연구(천사백삼십 명)는 연관이 없었어요.

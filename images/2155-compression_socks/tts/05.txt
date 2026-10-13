@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|결론: 한 가지 회복법을 권할 근거는 부족합니다. 압박 의류는 유망하지만 확정은 아닙니다. 참고로, 포함된 리뷰 이십이 편 중 십구 편이 품질 낮음~보통.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|결론: 한 가지 회복법을 권할 근거는 부족합니다. 압박 의류는 유망하지만 확정은 아닙니다. 참고로, 포함된 리뷰 이십이 편 중 십구 편이 품질 낮음~보통.

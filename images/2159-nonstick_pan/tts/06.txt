@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|코팅이 긁히거나 벗겨진 프라이팬은 교체를 고려하고, 센 불 빈 팬 예열은 피해 보세요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|코팅이 긁히거나 벗겨진 프라이팬은 교체를 고려하고, 센 불 빈 팬 예열은 피해 보세요.

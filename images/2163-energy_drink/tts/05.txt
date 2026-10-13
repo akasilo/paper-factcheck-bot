@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|뇌로 가는 중간뇌동맥의 확장기 말 속도도 삼십 분 뒤 팔점이 퍼센트, 육십 분 뒤 팔점칠 퍼센트 줄었어요. 연구진은 일부 참가자가 졸림을 말했다고 적었어요. 참고로, 가짜 음료를 마신 대조군이 없고, 서른 명 여성만 대상이에요. 원인 기전도 불분명해요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|뇌로 가는 중간뇌동맥의 확장기 말 속도도 삼십 분 뒤 팔점이 퍼센트, 육십 분 뒤 팔점칠 퍼센트 줄었어요. 연구진은 일부 참가자가 졸림을 말했다고 적었어요. 참고로, 가짜 음료를 마신 대조군이 없고, 서른 명 여성만 대상이에요. 원인 기전도 불분명해요.

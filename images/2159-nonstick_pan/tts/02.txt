@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|PFAS는 눈, 물, 기름을 튕겨내는 '영원한 화학물질'이에요. 논문은 코팅 프라이팬 같은 논스틱 제품도 쓰임새 중 하나로 꼽습니다. 참고로, 프라이팬 자체의 노출량은 이 논문에서 다루지 않았어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|PFAS는 눈, 물, 기름을 튕겨내는 '영원한 화학물질'이에요. 논문은 코팅 프라이팬 같은 논스틱 제품도 쓰임새 중 하나로 꼽습니다. 참고로, 프라이팬 자체의 노출량은 이 논문에서 다루지 않았어요.

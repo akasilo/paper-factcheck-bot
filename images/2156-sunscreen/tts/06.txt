@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|선크림을 끊지 말고, 성분표에서 벤조페논-삼, 옥시벤존 표기를 확인해 보세요. 무기자차(징크옥사이드, 티타늄디옥사이드) 제품도 대안입니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|선크림을 끊지 말고, 성분표에서 벤조페논-삼, 옥시벤존 표기를 확인해 보세요. 무기자차(징크옥사이드, 티타늄디옥사이드) 제품도 대안입니다.

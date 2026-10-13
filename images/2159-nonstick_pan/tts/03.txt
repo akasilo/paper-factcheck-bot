@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|한 리뷰 논문에 따르면 혈중 PFAS는 고혈압, 고콜레스테롤, 고요산혈증 위험과 더 강한 연관이 있다는 결과였어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|한 리뷰 논문에 따르면 혈중 PFAS는 고혈압, 고콜레스테롤, 고요산혈증 위험과 더 강한 연관이 있다는 결과였어요.

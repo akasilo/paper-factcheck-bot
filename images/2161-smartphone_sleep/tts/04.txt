@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|특히 SNS와 비디오 게임은 불면 위험과 낮 시간 졸림이 더 높은 것과 연결되어 있었습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|특히 SNS와 비디오 게임은 불면 위험과 낮 시간 졸림이 더 높은 것과 연결되어 있었습니다.

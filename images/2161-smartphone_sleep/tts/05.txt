@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|화면 시간의 정의와 측정 방법이 연구마다 제각각이었고, 블루라이트 필터나 부모 교육 같은 대책의 효과는 앞으로 검증이 필요하다고 해요. 참고로, 관련성을 보여주는 결과라 인과관계를 단정할 수는 없어요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|화면 시간의 정의와 측정 방법이 연구마다 제각각이었고, 블루라이트 필터나 부모 교육 같은 대책의 효과는 앞으로 검증이 필요하다고 해요. 참고로, 관련성을 보여주는 결과라 인과관계를 단정할 수는 없어요.

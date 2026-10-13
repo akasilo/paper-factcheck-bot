@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|우려도 있습니다. 인슐린 저항성, 지방간, 위장 증상, 일부 암과의 연관이 보고됐어요. 다만 대부분 장기 근거가 부족하고 결과가 엇갈립니다. 이 세 미만에겐 권하지 않아요. 참고로, 일부는 동물, 세포 실험 기반.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|우려도 있습니다. 인슐린 저항성, 지방간, 위장 증상, 일부 암과의 연관이 보고됐어요. 다만 대부분 장기 근거가 부족하고 결과가 엇갈립니다. 이 세 미만에겐 권하지 않아요. 참고로, 일부는 동물, 세포 실험 기반.

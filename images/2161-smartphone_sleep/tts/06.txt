@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|오늘 밤부터 취침 한 시간 전에는 폰을 충전기에 두고, 알람은 따로 맞춰 보세요.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|오늘 밤부터 취침 한 시간 전에는 폰을 충전기에 두고, 알람은 따로 맞춰 보세요.

@@ -1,1 +1,1 @@
-ko-KR-Neural2-A|1.15|요약문에는 성인에서 수면, 기분, 약 사용, 통증이 나아졌다는 보고가 정리돼 있습니다. 다만 연구 간 방법의 질은 들쭉날쭉했습니다.
+gemini:gemini-3.8-flash-tts:Aoede|1.0|calm, clear and trustworthy Korean narration for a short explainer video, like a friendly science reporter; natural but slightly brisk pace|요약문에는 성인에서 수면, 기분, 약 사용, 통증이 나아졌다는 보고가 정리돼 있습니다. 다만 연구 간 방법의 질은 들쭉날쭉했습니다.
