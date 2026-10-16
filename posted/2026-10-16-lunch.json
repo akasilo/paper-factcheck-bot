@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-16",
+  "slot": "lunch",
+  "queue": {
+    "id": "2129-stainless_cookware",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hLooPh7gXs",
+    "topic": "stainless_cookware",
+    "topic_ko": "스테인리스·무쇠 조리기구",
+    "verdict": "bad",
+    "evidence_level": "experimental",
+    "source_text": "PMC12069085 전문",
+    "answer": "한 연구에서 일부 알루미늄·황동 조리기구는 식초 성분 용액에서 어린이 일일 납 권고 한도를 크게 넘는 납(최대 약 1400배)을 내놓았고, 스테인리스는 훨씬 적게 나왔다.",
+    "style": "geo",
+    "accent": "orange",
+    "product_hint": "스테인리스 304 조리기구, 제조국·재질이 명확히 표시된 제품",
+    "image_prompt": "a dented aluminum cooking pot beside a brass cooking pot on a plain dark kitchen counter",
+    "caveats": [
+      "온라인 구매 일부 제품만 검사해 전체 시장을 대표하지 않음",
+      "판매자가 제시한 재질·원산지 정보는 검증되지 않음",
+      "실험실 모의 조건(식초 성분 용액)의 결과이며 실제 섭취량·혈중 납 수치를 측정한 것은 아님"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "알루미늄·황동\n[[조리기구]]\n{{납}}이 음식에\n녹아 나올까?"
+      },
+      {
+        "type": "body",
+        "text": "미국 온라인몰에서 산 알루미늄 28점, 황동 5점의 납 함량을 검사했습니다. 알루미늄 제품 중 [[다수]]가 납 100ppm을 넘었습니다."
+      },
+      {
+        "type": "body",
+        "text": "식초 성분 용액으로 조리·보관을 흉내 냈더니, 15분 뒤 14점, 24시간 뒤 23점이 어린이 일일 납 권고 한도를 넘었습니다."
+      },
+      {
+        "type": "body",
+        "text": "인도산 알루미늄 프라이팬은 어린이 한도의 [[1400배]], 인도산 황동 냄비는 1200배 넘게 납이 나왔습니다. {{24시간 보관 기준}}입니다."
+      },
+      {
+        "type": "body",
+        "text": "반면 스테인리스 17점은 납이 [[훨씬 적게]] 녹았습니다. 연구팀은 알루미늄·황동보다 스테인리스가 더 안전한 대안이라고 봤습니다.",
+        "note": "※ 온라인 구매 일부 제품만 검사했고, 판매자 정보는 검증하지 않았습니다. 모든 제품을 대표하진 않습니다."
+      },
+      {
+        "type": "body",
+        "text": "오늘 주방의 냄비 중 출처가 불분명한 알루미늄·황동 제품이 있는지 확인하고, 새로 살 땐 [[스테인리스]] 제품을 살펴보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Evaluating metal cookware as a source of lead exposure.",
+          "journal": "Journal of exposure science & environmental epidemiology",
+          "year": "2025",
+          "doi": "10.1038/s41370-024-00686-7",
+          "authors": "Fellows KM, Samy S, Whittaker SG"
+        }
+      }
+    ],
+    "images": [
+      "images/2129-stainless_cookware/01.jpg",
+      "images/2129-stainless_cookware/02.jpg",
+      "images/2129-stainless_cookware/03.jpg",
+      "images/2129-stainless_cookware/04.jpg",
+      "images/2129-stainless_cookware/05.jpg",
+      "images/2129-stainless_cookware/06.jpg",
+      "images/2129-stainless_cookware/07.jpg"
+    ],
+    "instagram_caption": "알루미늄·황동 냄비에서 납이 음식으로 나올까?\n\n미국 연구팀이 온라인몰에서 산 알루미늄 조리기구 28점과 황동 5점의 납 함량을 검사했습니다. 알루미늄 제품 중 다수가 납 100ppm을 넘었습니다.\n\n식초 성분 용액으로 조리·보관 조건을 흉내 낸 실험에서는 15분 뒤 14점, 24시간 뒤 23점이 어린이 일일 납 권고 한도를 넘었습니다. 인도산 알루미늄 프라이팬은 한도의 1400배, 인도산 황동 냄비는 1200배 넘게 납이 나왔습니다.\n\n반면 스테인리스 조리기구 17점은 납이 훨씬 적게 녹았습니다. 다만 온라인에서 산 일부 제품만 검사했고 판매자 정보도 검증하지 않아, 모든 알루미늄·황동 제품이 위험하다는 뜻은 아닙니다.\n\n✅ 오늘의 행동: 주방의 냄비 중 출처가 불분명한 알루미늄·황동 제품이 있는지 확인하고, 새로 살 땐 스테인리스 제품을 살펴보세요.\n\n📄 출처: Fellows KM, Samy S, Whittaker SG, Journal of exposure science & environmental epidemiology (2025). DOI 10.1038/s41370-024-00686-7\n\n#논문팩트체크 #paper_factcheck #조리기구 #알루미늄냄비 #황동 #스테인리스 #납 #중금속 #주방용품 #냄비 #프라이팬 #생활정보\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.\n\n🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요",
+    "threads_text": "알루미늄·황동 냄비에서 납이 음식으로 나올까?\n\n미국 연구팀이 온라인몰에서 산 알루미늄 28점, 황동 5점을 검사했어요. 식초 성분 용액으로 조리·보관을 흉내 냈더니 24시간 뒤 23점이 어린이 일일 납 권고 한도를 넘었고, 인도산 프라이팬 하나는 한도의 1400배가 나왔대요. 스테인리스 17점은 훨씬 적게 녹았고요. 다만 일부 제품만 검사한 결과예요. 여러분 집 냄비는 뭘로 만들어졌나요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Evaluating metal cookware as a source of lead exposure.",
+      "journal": "Journal of exposure science & environmental epidemiology",
+      "year": "2025",
+      "doi": "10.1038/s41370-024-00686-7",
+      "pmid": "38773235",
+      "authors": "Fellows KM, Samy S, Whittaker SG",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38773235/"
+    },
+    "drafted_at": "2026-10-11T21:45:39.447650+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-10-12T08:11:51.161300+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "18124461248486609",
+  "instagram_posted_at": "2026-10-16T12:13:22.413295+09:00",
+  "instagram_reel_id": "18142395904717734",
+  "instagram_reel_posted_at": "2026-10-16T12:14:34.973874+09:00",
+  "threads_post_id": "18150569257493081",
+  "threads_posted_at": "2026-10-16T12:15:38.510553+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/Deii4JDDF1y",
+  "threads_reply_id": "17873075472643592",
+  "youtube_video_id": "GpK4rZct8EU",
+  "youtube_url": "https://youtube.com/shorts/GpK4rZct8EU",
+  "youtube_posted_at": "2026-10-16T12:15:56.420319+09:00",
+  "youtube_privacy": "public",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/GpK4rZct8EU/maxresdefault.jpg",
+  "completed_at": "2026-10-16T12:15:58.941161+09:00"
+}
