@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-18",
+  "slot": "morning",
+  "queue": {
+    "id": "2134-dark_chocolate",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hLoITHvXd6",
+    "topic": "dark_chocolate",
+    "topic_ko": "다크초콜릿",
+    "verdict": "good",
+    "evidence_level": "cohort",
+    "source_text": "PMC11616007 전문",
+    "answer": "이 논문에서 다크초콜릿을 주 5회 이상 먹은 사람은 당뇨 위험이 21% 낮았고, 밀크초콜릿은 유의한 연관이 없었다(관찰연구라 인과는 불확실).",
+    "style": "paper",
+    "accent": "green",
+    "product_hint": "카카오 70% 이상 다크초콜릿(설탕·우유 함량이 낮은 것)",
+    "image_prompt": "a few squares of broken dark chocolate bar stacked on a plain wooden board",
+    "caveats": [
+      "관찰연구라 인과관계를 증명하지 못함",
+      "대규모 무작위 시험(COSMOS)에서는 플라바놀 보충제가 당뇨 위험에 영향이 없었음",
+      "참가자 대부분이 백인 의료 종사자라 일반화에 한계",
+      "연관은 70세 미만과 남성에서 더 뚜렷해 코호트 간 이질성이 있었음"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "다크초콜릿,\n당뇨 위험을\n[[낮춘다는데]]\n진짜일까?"
+      },
+      {
+        "type": "body",
+        "text": "미국 3개 대규모 코호트, 약 19만 명을 최대 30여 년 추적한 BMJ 논문입니다.\n초콜릿을 종류별로 나눠 [[제2형 당뇨 위험]]을 비교했어요."
+      },
+      {
+        "type": "body",
+        "text": "다크초콜릿을 주 5회 이상 먹은 사람은 거의 안 먹는 사람보다 당뇨 위험이 [[21%]] 낮았습니다(95% CI 5~34%).\n한 번 더 먹을 때마다 약 3%씩 낮아지는 직선 관계였어요."
+      },
+      {
+        "type": "body",
+        "text": "밀크초콜릿은 당뇨 위험과 {{유의한 관련이 없었고}}, 오히려 장기간 체중 증가와 관련이 있었습니다.\n다크초콜릿은 체중 증가와 관련이 없었어요."
+      },
+      {
+        "type": "body",
+        "text": "연관은 70세 미만에서 더 뚜렷했고 코호트마다 결과 차이도 있었습니다.\n최근 대규모 시험에서 카카오 플라바놀 보충제는 당뇨 위험에 영향이 없었어요.",
+        "note": "※ 관찰연구라 인과관계는 확인되지 않았고, 저자들도 무작위 대조 시험이 필요하다고 밝혔습니다."
+      },
+      {
+        "type": "body",
+        "text": "초콜릿을 고른다면 설탕·우유가 많은 제품보다 [[카카오 함량이 높은 다크초콜릿]]을 소량 선택해 보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Chocolate intake and risk of type 2 diabetes: prospective cohort studies.",
+          "journal": "BMJ (Clinical research ed.)",
+          "year": "2024",
+          "doi": "10.1136/bmj-2023-078386",
+          "authors": "Liu B, Zong G, Zhu L et al."
+        }
+      }
+    ],
+    "images": [
+      "images/2134-dark_chocolate/01.jpg",
+      "images/2134-dark_chocolate/02.jpg",
+      "images/2134-dark_chocolate/03.jpg",
+      "images/2134-dark_chocolate/04.jpg",
+      "images/2134-dark_chocolate/05.jpg",
+      "images/2134-dark_chocolate/06.jpg",
+      "images/2134-dark_chocolate/07.jpg"
+    ],
+    "instagram_caption": "다크초콜릿, 먹으면 당뇨 위험이 줄까요? 🍫\n\nBMJ(2024)에 실린 미국 3개 대규모 코호트 연구(약 19만 명)는 초콜릿을 다크와 밀크로 나눠 제2형 당뇨 위험을 비교했습니다.\n\n그 결과 다크초콜릿을 주 5회 이상 먹은 사람은 거의 안 먹는 사람보다 당뇨 위험이 21% 낮았고, 한 번 더 먹을 때마다 약 3%씩 낮아지는 경향이 있었어요. 밀크초콜릿은 유의한 연관이 없었고, 장기 체중 증가와 관련이 있었습니다.\n\n다만 관찰연구라 '먹어서 줄었다'고 단정할 수는 없습니다. 연관은 70세 미만에서 더 뚜렷했고, 카카오 플라바놀 보충제를 쓴 대규모 시험에서는 당뇨 위험 차이가 없었어요. 저자들도 무작위 대조 시험이 필요하다고 밝혔습니다.\n\n✅ 오늘의 행동: 초콜릿을 먹는다면 설탕·우유가 많은 제품보다 카카오 함량이 높은 다크초콜릿을 소량 골라보세요.\n\n📄 출처: Liu B, Zong G, Zhu L et al., BMJ (2024). DOI 10.1136/bmj-2023-078386\n\n#논문팩트체크 #paper_factcheck #다크초콜릿 #초콜릿 #제2형당뇨 #당뇨위험 #카카오 #밀크초콜릿 #체중증가 #간식추천 #식습관 #건강정보\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.\n\n🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요",
+    "threads_text": "다크초콜릿이 당뇨 위험을 낮출까?\n\nBMJ에 실린 미국 코호트 연구(약 19만 명)를 봤어요. 다크초콜릿을 주 5회 이상 먹은 사람은 거의 안 먹는 사람보다 제2형 당뇨 위험이 21% 낮았대요. 밀크초콜릿은 유의한 연관이 없었고 체중 증가와 관련이 있었고요. 다만 관찰연구라 인과는 알 수 없어요. 여러분은 간식으로 어떤 초콜릿 드세요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Chocolate intake and risk of type 2 diabetes: prospective cohort studies.",
+      "journal": "BMJ (Clinical research ed.)",
+      "year": "2024",
+      "doi": "10.1136/bmj-2023-078386",
+      "pmid": "39631943",
+      "authors": "Liu B, Zong G, Zhu L et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39631943/"
+    },
+    "drafted_at": "2026-10-11T21:48:49.454536+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-10-12T08:11:51.162106+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "18144893560590078",
+  "instagram_posted_at": "2026-10-18T08:13:07.582565+09:00",
+  "instagram_reel_id": "18072936044782349",
+  "instagram_reel_posted_at": "2026-10-18T08:13:57.208858+09:00",
+  "threads_post_id": "18081239603345530",
+  "threads_posted_at": "2026-10-18T08:15:00.380540+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DenQ7S2kZRi",
+  "threads_reply_id": "17902197360600946",
+  "youtube_video_id": "cDbTU7Q5SHE",
+  "youtube_url": "https://youtube.com/shorts/cDbTU7Q5SHE",
+  "youtube_posted_at": "2026-10-18T08:15:17.112982+09:00",
+  "youtube_privacy": "public",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/cDbTU7Q5SHE/maxresdefault.jpg",
+  "completed_at": "2026-10-18T08:15:22.060285+09:00"
+}
