@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-18",
+  "slot": "lunch",
+  "queue": {
+    "id": "2135-nail_polish",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hLoJOxglW0",
+    "topic": "nail_polish",
+    "topic_ko": "네일·젤네일",
+    "verdict": "bad",
+    "evidence_level": "other",
+    "source_text": "초록만",
+    "answer": "이 논문에서 아크릴계 네일 제품에 의한 알레르기 접촉피부염 환자 67명 중 49명(73%)이 일반 소비자였고, 97%가 HEMA 양성이었다.",
+    "style": "geo",
+    "accent": "orange",
+    "product_hint": "3-free 네일 폴리시 또는 UV 차단 장갑",
+    "image_prompt": "a row of glossy gel nail polish bottles beside a small UV curing lamp on a white surface",
+    "caveats": [
+      "병원에서 첩포 검사를 받은 환자를 대상으로 한 후향 연구라 일반 인구의 발생률이나 위험도를 알 수 없음",
+      "네덜란드 단일 병원 자료라 다른 지역에 그대로 적용하기 어려움",
+      "시술 빈도나 셀프 키트 사용 여부에 따른 차이는 초록에 나와 있지 않음"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "젤네일 하는\n[[소비자]]도\n{{알레르기}}\n걸릴 수 있을까?"
+      },
+      {
+        "type": "body",
+        "text": "네덜란드 암스테르담 대학병원에서 8년여(2015~2023년) 진료 기록을 돌아본 연구예요. 네일 제품에 의한 [[알레르기 접촉피부염]] 환자는 67명, 전원 여성이었어요."
+      },
+      {
+        "type": "body",
+        "text": "이 중 49명(73%)이 시술자가 아닌 일반 [[소비자]]였고, 네일 전문가는 18명(27%)이었어요. 답은 '네, 소비자도 걸릴 수 있다'입니다."
+      },
+      {
+        "type": "body",
+        "text": "67명 중 65명(97%)이 {{HEMA}}라는 아크릴계 성분에 대한 첩포 검사(피부에 붙여 보는 알레르기 검사)에서 양성이었어요. 증상은 손가락(79%), 손(40%), 머리·목에도 나타났어요."
+      },
+      {
+        "type": "body",
+        "text": "아크릴 함유 제품과의 접촉을 피하자 환자의 [[80%]]에서 피부염이 완전히 가라앉았어요.",
+        "note": "※ 피부과 검사를 받은 환자 대상 연구라 일반 인구의 발생률은 아니에요."
+      },
+      {
+        "type": "body",
+        "text": "셀프 키트와 젤네일 시술 [[횟수를 줄이고]], 손끝이 가렵거나 붉어지면 사용을 멈추고 피부과 상담을 받아보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Contact allergy to acrylate-containing nail cosmetics: A retrospective 8-year study.",
+          "journal": "Contact dermatitis",
+          "year": "2024",
+          "doi": "10.1111/cod.14475",
+          "authors": "Steunebrink IM, de Groot A, Rustemeyer T"
+        }
+      }
+    ],
+    "images": [
+      "images/2135-nail_polish/01.jpg",
+      "images/2135-nail_polish/02.jpg",
+      "images/2135-nail_polish/03.jpg",
+      "images/2135-nail_polish/04.jpg",
+      "images/2135-nail_polish/05.jpg",
+      "images/2135-nail_polish/06.jpg",
+      "images/2135-nail_polish/07.jpg"
+    ],
+    "instagram_caption": "젤네일, 시술하는 사람만 알레르기에 걸릴까요?\n\n네덜란드 암스테르담 대학병원의 8년여(2015~2023년) 진료 기록을 분석한 한 연구에 따르면, 아크릴 함유 네일 제품에 의한 알레르기 접촉피부염 진단을 받은 환자는 67명(전원 여성)이었어요. 첩포 검사를 받은 여성 환자의 2.3%에 해당하는 수치예요.\n\n이 중 73%는 네일 전문가가 아닌 일반 소비자였어요. 97%는 HEMA라는 성분에 대한 첩포 검사에서 양성이었고, 피부염은 손가락(79%), 손(40%) 외에 머리·목에도 나타났어요.\n\n제품과의 접촉을 피하자 환자의 80%는 피부염이 완전히 가라앉았다고 해요. 다만 피부과를 찾은 환자들을 대상으로 한 연구라 일반 인구 전체의 발생률로 보기는 어려워요.\n\n👉 오늘의 행동: 셀프 키트와 젤네일 시술 횟수를 줄이고, 손끝이 가렵거나 붉어지면 사용을 멈추고 피부과 상담을 받아보세요.\n\n📄 출처: Steunebrink IM, de Groot A, Rustemeyer T, Contact dermatitis (2024). DOI 10.1111/cod.14475\n\n#논문팩트체크 #paper_factcheck #젤네일 #네일케어 #셀프젤네일 #HEMA #접촉피부염 #네일알레르기 #손톱관리 #피부알레르기 #네일폴리시 #뷰티팩트체크\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.\n\n🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요",
+    "threads_text": "젤네일, 소비자도 알레르기에 걸릴 수 있을까?\n\n네덜란드 대학병원의 8년여 진료 기록을 분석한 연구를 봤어요. 아크릴 함유 네일 제품에 의한 알레르기 접촉피부염 환자 67명 중 73%가 시술자가 아닌 일반 소비자였고, 97%는 HEMA 성분 검사에서 양성이었대요. 제품을 피하자 80%는 피부염이 완전히 가라앉았고요. 다만 병원을 찾은 환자 대상 연구라 일반 발생률은 아니에요. 여러분은 젤네일 얼마나 자주 하세요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Contact allergy to acrylate-containing nail cosmetics: A retrospective 8-year study.",
+      "journal": "Contact dermatitis",
+      "year": "2024",
+      "doi": "10.1111/cod.14475",
+      "pmid": "38093676",
+      "authors": "Steunebrink IM, de Groot A, Rustemeyer T",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38093676/"
+    },
+    "drafted_at": "2026-10-11T21:49:15.115149+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-10-12T08:11:51.162226+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "17916061236521715",
+  "instagram_posted_at": "2026-10-18T13:25:39.508003+09:00",
+  "instagram_reel_id": "18127974539493158",
+  "instagram_reel_posted_at": "2026-10-18T13:26:34.329015+09:00",
+  "threads_post_id": "18024859244863877",
+  "threads_posted_at": "2026-10-18T13:27:37.092361+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/Den0s0-lPje",
+  "threads_reply_id": "18394153891167807",
+  "youtube_video_id": "T3r1ft6V12o",
+  "youtube_url": "https://youtube.com/shorts/T3r1ft6V12o",
+  "youtube_posted_at": "2026-10-18T13:28:03.993681+09:00",
+  "youtube_privacy": "public",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/T3r1ft6V12o/maxresdefault.jpg",
+  "completed_at": "2026-10-18T13:28:06.246520+09:00"
+}
