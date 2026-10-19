@@ -85,18 +85,19 @@
   },
   "attempts": 1,
   "instagram_post_id": "18090881348695537",
-  "instagram_posted_at": "2026-10-19T19:14:05.962631+09:00",
+  "verified": [
+    "instagram:이미 있음",
+    "instagram_reel:이미 있음",
+    "youtube:이미 있음"
+  ],
   "instagram_reel_id": "17991204044859276",
-  "instagram_reel_posted_at": "2026-10-19T19:15:01.438135+09:00",
-  "threads_post_id": "17883327333528242",
-  "threads_posted_at": "2026-10-19T19:16:07.279284+09:00",
-  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DerBYLJAOHO",
-  "threads_reply_id": "18070089491767575",
+  "threads_post_id": "17976468399134269",
+  "threads_posted_at": "2026-10-19T19:18:43.074630+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DerBr0yDbG4",
+  "threads_reply_id": "18108901247219763",
   "youtube_video_id": "ZecSs0DZKRs",
   "youtube_url": "https://youtube.com/shorts/ZecSs0DZKRs",
-  "youtube_posted_at": "2026-10-19T19:16:28.058583+09:00",
-  "youtube_privacy": "public",
   "youtube_thumbnail": "01.jpg",
   "youtube_thumbnail_url": "https://i.ytimg.com/vi/ZecSs0DZKRs/maxresdefault.jpg",
-  "completed_at": "2026-10-19T19:16:33.088507+09:00"
+  "completed_at": "2026-10-19T19:18:56.337538+09:00"
 }
