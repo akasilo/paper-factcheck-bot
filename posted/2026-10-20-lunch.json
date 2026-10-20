@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-20",
+  "slot": "lunch",
+  "queue": {
+    "id": "2141-hair_dye",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hLpA9PFBgO",
+    "topic": "hair_dye",
+    "topic_ko": "염색약",
+    "verdict": "bad",
+    "evidence_level": "review",
+    "source_text": "PMC11088418 전문",
+    "answer": "한 리뷰 논문에 따르면 헤어 제품 중 염색약이 알레르기성 접촉피부염의 가장 흔한 원인이었고, 그중 PPD가 가장 흔한 성분이었다.",
+    "style": "geo",
+    "accent": "yellow",
+    "product_hint": "PPD 무첨가 염색약(성분표 확인), 사용 전 피부 반응 확인 후 사용",
+    "image_prompt": "a plain unlabeled hair dye tube and a small mixing bowl with a brush on a clean bathroom shelf",
+    "caveats": [
+      "리뷰 1편의 요약이며 PTD 등 대체 성분도 일부 사람에게는 반응할 수 있음",
+      "염색약을 쓰는 모든 사람의 알레르기 비율이 아니라 패치 테스트를 받은 환자 집단의 자료임",
+      "미용사 등 직업적 노출은 별도로 위험이 더 높다고 보고됨"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "헤어 제품\n알레르기 1순위\n[[염색약]]\n{{PPD}} 때문?"
+      },
+      {
+        "type": "body",
+        "text": "한 리뷰 논문에 따르면 헤어 제품 중 [[염색약]]이 알레르기성 접촉피부염을 일으키는 가장 흔한 원인이었습니다. 그다음은 샴푸·컨디셔너의 향료였어요."
+      },
+      {
+        "type": "body",
+        "text": "북미 패치 테스트 자료(약 3만 8천 명)에서 헤어 제품 알레르기는 전체 양성 반응의 9%였고, 그중 36%가 염색약 성분 {{PPD}} 양성이었습니다."
+      },
+      {
+        "type": "body",
+        "text": "PPD 알레르기가 있는 사람은 헤어 제품 알레르기 검사 성분 중 다른 것에도 양성인 비율이 55%로, 없는 사람(11%)보다 높았습니다."
+      },
+      {
+        "type": "body",
+        "text": "PPD 대신 PTD가 든 염색약은 PPD 알레르기 환자의 57%가 견뎠다는 보고가 있습니다. 증상은 두피 가려움, 이마·목 발진 등입니다.",
+        "note": "※ 일부는 PTD에도 반응할 수 있어요. 진단 기준은 피부과 패치 검사입니다."
+      },
+      {
+        "type": "body",
+        "text": "염색 전 팔 안쪽에 [[동전 크기]]로 소량을 바르고 45분 뒤 씻어낸 뒤, 4~6일간 붉어짐·두드러기가 없는지 확인하세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Hair Product Allergy: A Review of Epidemiology and Management.",
+          "journal": "Cureus",
+          "year": "2024",
+          "doi": "10.7759/cureus.58054",
+          "authors": "Alajaji AN"
+        }
+      }
+    ],
+    "images": [
+      "images/2141-hair_dye/01.jpg",
+      "images/2141-hair_dye/02.jpg",
+      "images/2141-hair_dye/03.jpg",
+      "images/2141-hair_dye/04.jpg",
+      "images/2141-hair_dye/05.jpg",
+      "images/2141-hair_dye/06.jpg",
+      "images/2141-hair_dye/07.jpg"
+    ],
+    "instagram_caption": "염색약, 헤어 제품 알레르기 1순위라는데 진짜일까요?\n\n한 리뷰 논문에 따르면 헤어 제품 중 염색약이 알레르기성 접촉피부염을 일으키는 가장 흔한 원인이었습니다. 그다음은 샴푸·컨디셔너에 든 향료였어요.\n\n북미 패치 테스트 자료(약 3만 8천 명)에서 헤어 제품 알레르기는 전체 양성 반응의 9%였습니다. 그중 36%가 염색약 성분 PPD에 양성이었어요.\n\nPPD 알레르기가 있는 사람은 다른 헤어 제품 알레르기 성분에도 양성인 비율이 55%로, 없는 사람(11%)보다 높았습니다. PPD 대신 PTD가 든 염색약은 PPD 알레르기 환자의 57%가 견뎠다고 해요. 다만 일부는 PTD에도 반응할 수 있고, 진단 기준은 피부과 패치 검사입니다.\n\n✅ 오늘의 행동\n염색 전 팔 안쪽에 동전 크기로 소량을 바르고 45분 뒤 씻어내세요. 이후 4~6일간 붉어짐이나 두드러기가 없는지 확인해 보세요. 이상이 있으면 사용을 멈추고 피부과 상담을 받으세요.\n\n📄 출처: Alajaji AN, Cureus (2024). DOI 10.7759/cureus.58054\n\n#논문팩트체크 #paper_factcheck #염색약 #염색약알레르기 #PPD #패치테스트 #접촉피부염 #셀프염색 #염색부작용 #두피관리 #피부과 #알레르기\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.\n\n🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요",
+    "threads_text": "염색약, 헤어 제품 알레르기 1순위일까?\n\n한 리뷰 논문을 보니 헤어 제품 중 염색약이 알레르기성 접촉피부염의 가장 흔한 원인이었대요. 북미 패치 테스트 자료에서 헤어 제품 알레르기 중 36%가 염색약 성분 PPD 양성이었고요. PPD 대신 PTD가 든 제품은 PPD 알레르기 환자의 57%가 견뎠다지만, 일부는 거기에도 반응할 수 있대요. 염색 전에 팔 안쪽에 소량 발라 45분 뒤 씻어내고, 며칠간 확인해 보는 게 좋아요. 여러분은 염색 전에 패치 테스트 해보시나요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Hair Product Allergy: A Review of Epidemiology and Management.",
+      "journal": "Cureus",
+      "year": "2024",
+      "doi": "10.7759/cureus.58054",
+      "pmid": "38738072",
+      "authors": "Alajaji AN",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38738072/"
+    },
+    "drafted_at": "2026-10-11T22:01:12.952600+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-10-12T08:11:51.162945+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "17974559445175763",
+  "instagram_posted_at": "2026-10-20T13:43:39.731532+09:00",
+  "instagram_reel_id": "17914230324516217",
+  "instagram_reel_posted_at": "2026-10-20T13:44:34.700846+09:00",
+  "threads_post_id": "18107389223235939",
+  "threads_posted_at": "2026-10-20T13:45:38.112632+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DetAXJVAAgo",
+  "threads_reply_id": "18124142917709625",
+  "youtube_video_id": "8zAUO_0Qyco",
+  "youtube_url": "https://youtube.com/shorts/8zAUO_0Qyco",
+  "youtube_posted_at": "2026-10-20T13:46:00.262486+09:00",
+  "youtube_privacy": "public",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/8zAUO_0Qyco/maxresdefault.jpg",
+  "completed_at": "2026-10-20T13:46:02.968153+09:00"
+}
