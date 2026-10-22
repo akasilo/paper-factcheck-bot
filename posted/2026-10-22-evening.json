@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-22",
+  "slot": "evening",
+  "queue": {
+    "id": "2148-collagen",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hLpHiMQSwS",
+    "topic": "collagen",
+    "topic_ko": "콜라겐",
+    "verdict": "good",
+    "evidence_level": "meta-analysis",
+    "source_text": "PMC10773595 전문",
+    "answer": "한 메타분석에서 가수분해 콜라겐을 4~12주 먹은 그룹은 가짜약 그룹보다 피부 수분도와 탄력이 유의하게 좋아졌다.",
+    "style": "paper",
+    "accent": "green",
+    "product_hint": "저분자 콜라겐 펩타이드(가수분해 콜라겐) 성분 표기 제품",
+    "image_prompt": "a small white jar of collagen peptide powder with a wooden scoop on a light table",
+    "caveats": [
+      "포함된 시험들 사이에 콜라겐 출처·측정 단위 차이가 있었음",
+      "주름 개선은 효과 크기가 작고 신뢰구간이 0에 가까움",
+      "생활습관을 통제한 대규모 시험이 더 필요함"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "콜라겐 먹으면\n피부 [[수분·탄력]]\n정말 달라질까?\n메타분석 확인"
+      },
+      {
+        "type": "body",
+        "text": "무작위 대조 시험 14편(참가자 967명)을 종합한 한 리뷰 논문이 있어요.\n건강한 성인이 [[가수분해 콜라겐]]을 먹은 그룹과 가짜약 그룹을 비교했습니다.",
+        "note": "섭취 기간은 4~12주였어요."
+      },
+      {
+        "type": "body",
+        "text": "결과: 콜라겐 섭취 그룹이 가짜약 그룹보다 [[피부 수분도]]가 유의하게 높았다는 결과예요. (효과 크기 0.58, 95% 신뢰구간 0.42~0.73)"
+      },
+      {
+        "type": "body",
+        "text": "피부 탄력도 섭취 그룹에서 더 좋아졌어요. (효과 크기 0.65, 신뢰구간 0.44~0.85)\n피부 수분 손실량은 줄고, 주름은 {{소폭}} 개선됐다는 결과였습니다."
+      },
+      {
+        "type": "body",
+        "text": "다만 피부 단단함(firmness)은 통계적으로 유의하지 않았어요 (P=0.30).\n콜라겐 출처에 따라 결과 차이도 있었습니다.",
+        "note": "※ 생활습관을 함께 따진 대규모 시험이 더 필요하다고 저자들도 밝혔어요."
+      },
+      {
+        "type": "body",
+        "text": "먹어본다면 최소 [[12주]]는 꾸준히 먹어 보고, 그 사이 자외선 차단도 함께 챙겨 보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Exploring the Impact of Hydrolyzed Collagen Oral Supplementation on Skin Rejuvenation: A Systematic Review and Meta-Analysis.",
+          "journal": "Cureus",
+          "year": "2023",
+          "doi": "10.7759/cureus.50231",
+          "authors": "Dewi DAR, Arimuko A, Norawati L et al."
+        }
+      }
+    ],
+    "images": [
+      "images/2148-collagen/01.jpg",
+      "images/2148-collagen/02.jpg",
+      "images/2148-collagen/03.jpg",
+      "images/2148-collagen/04.jpg",
+      "images/2148-collagen/05.jpg",
+      "images/2148-collagen/06.jpg",
+      "images/2148-collagen/07.jpg"
+    ],
+    "instagram_caption": "콜라겐 먹으면 피부 수분·탄력이 정말 달라질까?\n\n한 리뷰 논문이 무작위 대조 시험 14편(참가자 967명)을 종합했어요. 건강한 성인이 가수분해 콜라겐을 4~12주 먹은 그룹과 가짜약 그룹을 비교한 연구들입니다.\n\n결과를 보면 콜라겐 섭취 그룹에서 피부 수분도와 탄력이 가짜약 그룹보다 유의하게 높았다는 결과가 나왔어요. 피부 수분 손실량은 줄고 주름도 소폭 개선됐다고 해요.\n\n다만 피부 단단함은 유의한 차이가 없었고, 콜라겐 출처에 따라 결과가 달랐어요. 저자들도 생활습관을 함께 고려한 대규모 시험이 더 필요하다고 했습니다.\n\n✅ 오늘의 행동: 먹어본다면 최소 12주는 꾸준히 먹어 보고, 자외선 차단도 함께 챙겨 보세요.\n\n📄 출처: Dewi DAR, Arimuko A, Norawati L et al., Cureus (2023). DOI 10.7759/cureus.50231\n\n#논문팩트체크 #paper_factcheck #콜라겐 #콜라겐펩타이드 #피부탄력 #피부수분 #주름 #이너뷰티 #피부노화 #건강정보 #영양제 #메타분석\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.\n\n🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요",
+    "threads_text": "콜라겐 먹으면 피부가 정말 달라질까?\n\n한 리뷰 논문이 무작위 대조 시험 14편(967명)을 종합했는데, 가수분해 콜라겐을 4~12주 먹은 그룹이 가짜약 그룹보다 피부 수분도와 탄력이 유의하게 좋았다고 해요. 주름도 소폭 개선, 다만 피부 단단함은 차이가 없었고요. 여러분은 콜라겐 챙겨 드시나요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Exploring the Impact of Hydrolyzed Collagen Oral Supplementation on Skin Rejuvenation: A Systematic Review and Meta-Analysis.",
+      "journal": "Cureus",
+      "year": "2023",
+      "doi": "10.7759/cureus.50231",
+      "pmid": "38192916",
+      "authors": "Dewi DAR, Arimuko A, Norawati L et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38192916/"
+    },
+    "drafted_at": "2026-10-11T22:08:23.571512+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-10-12T08:11:51.163759+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "17923263588222430",
+  "instagram_posted_at": "2026-10-22T19:12:50.354291+09:00",
+  "instagram_reel_id": "18124752349930501",
+  "instagram_reel_posted_at": "2026-10-22T19:13:43.933368+09:00",
+  "threads_post_id": "17980433211129205",
+  "threads_posted_at": "2026-10-22T19:14:43.560269+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/DeyvnXlEqRD",
+  "threads_reply_id": "18636188920059343",
+  "youtube_video_id": "jYyoCR9u7CE",
+  "youtube_url": "https://youtube.com/shorts/jYyoCR9u7CE",
+  "youtube_posted_at": "2026-10-22T19:15:02.021303+09:00",
+  "youtube_privacy": "public",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/jYyoCR9u7CE/maxresdefault.jpg",
+  "completed_at": "2026-10-22T19:15:04.772039+09:00"
+}
