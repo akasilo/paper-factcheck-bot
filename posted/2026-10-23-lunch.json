@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-23",
+  "slot": "lunch",
+  "queue": {
+    "id": "2150-microwave",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hLqwpBLUDA",
+    "topic": "microwave",
+    "topic_ko": "전자레인지 용기",
+    "verdict": "bad",
+    "evidence_level": "experimental",
+    "source_text": "초록만",
+    "answer": "이 논문에서 전자레인지용 플라스틱 용기로 감자를 조리하자, 용기 유래 광개시제와 감자 맥아당이 결합한 새 화합물이 확인됐다.",
+    "style": "geo",
+    "accent": "orange",
+    "product_hint": "전자레인지 사용 가능 표시가 있는 유리 또는 도자기 용기",
+    "image_prompt": "a clear rectangular plastic food container with a vented lid holding cooked potato pieces on a plain kitchen counter",
+    "caveats": [
+      "초록에 검출량·농도 수치가 없어 실제 노출 수준을 알 수 없음",
+      "새로 확인된 화합물의 독성이나 인체 영향은 초록에 언급되지 않음",
+      "감자를 조리한 한 가지 조건의 결과라 다른 음식·용기에 일반화하기 어려움"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "전자레인지 용기에\n[[감자]]를 데웠더니\n{{새 물질}}이\n생겼다고?"
+      },
+      {
+        "type": "body",
+        "text": "한 연구진이 [[전자레인지용]] 플라스틱 용기에 감자를 조리한 뒤, 고해상도 질량분석으로 음식 성분을 분석했습니다."
+      },
+      {
+        "type": "body",
+        "text": "그 결과 용기에서 나온 자외선 광개시제 성분이 감자 전분 유래 맥아당과 결합한 {{새로운 화합물}}이 확인됐습니다."
+      },
+      {
+        "type": "body",
+        "text": "연구진은 이런 반응이 보고된 것은 이번이 처음이라고 밝혔습니다. 용기 성분이 음식 성분과 반응할 수 있다는 결과입니다."
+      },
+      {
+        "type": "body",
+        "text": "폴리프로필렌 글리콜 계열 물질도 전자레인지 조리 과정에서 음식으로 옮겨간 것으로 확인됐습니다.",
+        "note": "※ 초록에 검출량과 인체 영향 수치가 없어 위험한 수준인지는 알 수 없습니다."
+      },
+      {
+        "type": "body",
+        "text": "오늘 음식을 데울 때는 플라스틱 대신 [[전자레인지용 유리·도자기 용기]]에 옮겨 담아 보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Cooking food in microwavable plastic containers: in situ formation of a new chemical substance and increased migration of polypropylene polymers.",
+          "journal": "Food chemistry",
+          "year": "2023",
+          "doi": "10.1016/j.foodchem.2023.135852",
+          "authors": "Díaz-Galiano FJ, Gómez-Ramos MJ, Beraza I et al."
+        }
+      }
+    ],
+    "images": [
+      "images/2150-microwave/01.jpg",
+      "images/2150-microwave/02.jpg",
+      "images/2150-microwave/03.jpg",
+      "images/2150-microwave/04.jpg",
+      "images/2150-microwave/05.jpg",
+      "images/2150-microwave/06.jpg",
+      "images/2150-microwave/07.jpg"
+    ],
+    "instagram_caption": "전자레인지 용기에 감자를 데웠더니 새 물질이 생겼다고?\n\n한 연구진이 전자레인지용 표시가 있는 플라스틱 용기에 감자를 조리한 뒤, 고해상도 질량분석 장비로 음식 성분을 분석했습니다.\n\n그 결과 용기에서 나온 자외선 광개시제 성분이 감자 전분 유래 맥아당과 결합한 새로운 화합물이 확인됐습니다. 연구진은 이런 사례를 처음 보고했다고 밝혔습니다. 폴리프로필렌 글리콜 계열 물질이 음식으로 옮겨간 것도 확인됐습니다.\n\n다만 초록에는 검출량이나 인체 영향에 대한 수치가 없어, 이 물질이 건강에 해로운지는 이 논문만으로 알 수 없습니다. 한 편의 연구 결과라는 점도 기억해 주세요.\n\n오늘의 행동: 음식을 데울 때 전자레인지용 유리나 도자기 용기에 옮겨 담아 보세요.\n\n📄 출처: Díaz-Galiano FJ 외, Food chemistry (2023). DOI 10.1016/j.foodchem.2023.135852\n\n#논문팩트체크 #paper_factcheck #전자레인지 #플라스틱용기 #식품포장 #폴리프로필렌 #유리용기 #주방꿀팁 #식품안전 #감자 #생활정보 #팩트체크 #플라스틱 #전자레인지용기\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.\n\n🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요",
+    "threads_text": "전자레인지 용기에서 새 물질이 생길 수 있을까?\n\n최근 식품화학 논문을 보니, 전자레인지용 플라스틱 용기에 감자를 조리했을 때 용기 유래 광개시제 성분이 감자 전분의 맥아당과 결합한 새 화합물이 확인됐대요. 폴리프로필렌 글리콜 계열 물질도 음식으로 옮겨갔고요. 다만 얼마나 나왔는지, 몸에 해로운지는 초록만으로는 알 수 없어요. 그래서 저는 데울 때만이라도 유리나 도자기 용기에 옮겨 담아 보려고요. 여러분은 어떤 용기에 데우세요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Cooking food in microwavable plastic containers: in situ formation of a new chemical substance and increased migration of polypropylene polymers.",
+      "journal": "Food chemistry",
+      "year": "2023",
+      "doi": "10.1016/j.foodchem.2023.135852",
+      "pmid": "36924723",
+      "authors": "Díaz-Galiano FJ, Gómez-Ramos MJ, Beraza I et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36924723/"
+    },
+    "drafted_at": "2026-10-11T22:17:12.476367+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-10-12T08:11:51.163988+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "18097372682449372",
+  "instagram_posted_at": "2026-10-23T12:13:16.705772+09:00",
+  "instagram_reel_id": "18045162440822479",
+  "instagram_reel_posted_at": "2026-10-23T12:14:11.541861+09:00",
+  "threads_post_id": "18228598249330451",
+  "threads_posted_at": "2026-10-23T12:14:48.225958+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/De0kWXRlfZr",
+  "threads_reply_id": "18109465988221768",
+  "youtube_video_id": "8IxJNyI6kM4",
+  "youtube_url": "https://youtube.com/shorts/8IxJNyI6kM4",
+  "youtube_posted_at": "2026-10-23T12:15:11.040805+09:00",
+  "youtube_privacy": "public",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/8IxJNyI6kM4/maxresdefault.jpg",
+  "completed_at": "2026-10-23T12:15:13.775434+09:00"
+}
