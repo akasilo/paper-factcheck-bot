@@ -1,0 +1,81 @@
+{
+  "id": "2164-energy_drink",
+  "approved": false,
+  "link": "",
+  "topic": "energy_drink",
+  "topic_ko": "에너지드링크",
+  "verdict": "bad",
+  "evidence_level": "experimental",
+  "source_text": "PMC12512267 전문",
+  "answer": "한 체외 실험에서 제로 버전을 포함한 모든 음료가 5분 만에 법랑질 표면 거칠기를 높였고, 에너지드링크의 변화가 가장 컸다.",
+  "style": "geo",
+  "accent": "orange",
+  "product_hint": "저카페인 음료 중 산도가 낮은 제품",
+  "image_prompt": "a single unlabeled aluminum energy drink can with condensation next to a clear glass of dark soda on a dark table",
+  "caveats": [
+    "사람 치아 조각을 정지된 음료에 5분 담근 체외 실험이라 침의 보호 효과가 빠져 있다.",
+    "오렌지주스는 초록 결과에는 변화 없음, 결론에는 거칠기 증가로 적혀 있어 서술이 엇갈린다.",
+    "에너지드링크의 유기 성분 신호 변화는 음료 속 첨가물 영향일 수 있다고 저자도 언급한다."
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "제로여도\n[[산성]]이면\n치아엔\n똑같을까?"
+    },
+    {
+      "type": "body",
+      "text": "사람 어금니 표면을 콜라, 에너지드링크, 각각의 제로 버전, 병 오렌지주스에 [[5분]]만 담가 비교한 실험이에요."
+    },
+    {
+      "type": "body",
+      "text": "결과는 이래요. 모든 음료가 5분 만에 치아 겉면(법랑질)의 {{거칠기를 높였고}}, 제로 버전도 예외가 아니었어요."
+    },
+    {
+      "type": "body",
+      "text": "변화는 [[에너지드링크]]에서 가장 컸어요. 산도를 중화하는 데 필요한 양(적정산도)도 가장 높았어요."
+    },
+    {
+      "type": "body",
+      "text": "산성도(pH)는 콜라가 2.36으로 가장 낮았고, 오렌지주스는 3.68이었어요. 제로 버전은 일반 버전보다 산성이 덜했어요.",
+      "note": "※ 체외 실험이라 침의 보호 효과가 빠져 있고, 실제 입안과는 다를 수 있어요."
+    },
+    {
+      "type": "body",
+      "text": "산성 음료는 [[빨대]]로 짧게 마시고, 마신 뒤엔 물로 입을 헹궈 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Quantitative and spectroscopic assessment of early-stage enamel erosion induced by popular acidic beverages.",
+        "journal": "BMC oral health",
+        "year": "2025",
+        "doi": "10.1186/s12903-025-07009-8",
+        "authors": "AlHelal F, AlHomaizi Z, AlOmair M et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2164-energy_drink/01.jpg",
+    "images/2164-energy_drink/02.jpg",
+    "images/2164-energy_drink/03.jpg",
+    "images/2164-energy_drink/04.jpg",
+    "images/2164-energy_drink/05.jpg",
+    "images/2164-energy_drink/06.jpg",
+    "images/2164-energy_drink/07.jpg"
+  ],
+  "instagram_caption": "제로여도 산성이면 치아엔 똑같을까?\n\n사람 어금니 표면을 콜라, 에너지드링크, 각각의 제로 버전, 병 오렌지주스에 5분만 담가 비교한 실험 논문이 있어요.\n\n결과를 보면 모든 음료가 5분 만에 치아 겉면(법랑질)의 거칠기를 높였어요. 제로 버전도 예외가 아니었고, 변화는 에너지드링크에서 가장 컸어요.\n\n산성도(pH)는 콜라가 2.36으로 가장 낮았어요. 하지만 산을 중화하는 데 필요한 양(적정산도)은 에너지드링크가 가장 높았어요. 논문은 침식 정도가 pH 하나로만 정해지지 않고, 완충력과 산의 종류에도 달려 있을 수 있다고 설명해요.\n\n다만 사람 치아 조각을 정지된 음료에 담근 체외 실험이에요. 침이 씻어 내는 효과가 빠져 있어서 실제 입안과는 다를 수 있어요. 5분 한 번의 노출이라 초기 변화만 본 결과이기도 해요.\n\n✅ 오늘의 행동: 산성 음료는 빨대로 짧게 마시고, 마신 뒤엔 물로 입을 헹궈 보세요.\n\n📄 출처: AlHelal F 외, BMC oral health (2025). DOI 10.1186/s12903-025-07009-8\n\n#논문팩트체크 #paper_factcheck #에너지드링크 #제로음료 #치아건강 #법랑질 #치아침식 #탄산음료 #산성음료 #오렌지주스 #구강건강 #생활상식\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "제로 음료도 치아엔 똑같이 산성일까?\n\n사람 어금니를 콜라, 에너지드링크, 제로 버전, 오렌지주스에 5분 담가 본 실험 논문을 봤어요. 모든 음료가 치아 겉면의 거칠기를 높였고, 제로 버전도 예외가 아니었대요. 에너지드링크의 변화가 가장 컸고요.\n\n다만 침이 없는 체외 실험이라 실제 입안과는 다를 수 있어요. 마신 뒤 물로 헹구는 건 해볼 만하겠죠?\n\n여러분은 음료 마신 뒤 물로 헹구시나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Quantitative and spectroscopic assessment of early-stage enamel erosion induced by popular acidic beverages.",
+    "journal": "BMC oral health",
+    "year": "2025",
+    "doi": "10.1186/s12903-025-07009-8",
+    "pmid": "41074138",
+    "authors": "AlHelal F, AlHomaizi Z, AlOmair M et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41074138/"
+  },
+  "drafted_at": "2026-10-24T00:56:41.888662+09:00",
+  "model": "claude_code:default"
+}

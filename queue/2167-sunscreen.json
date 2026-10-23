@@ -1,0 +1,81 @@
+{
+  "id": "2167-sunscreen",
+  "approved": false,
+  "link": "",
+  "topic": "sunscreen",
+  "topic_ko": "선크림",
+  "verdict": "good",
+  "evidence_level": "review",
+  "source_text": "PMC12566446 전문",
+  "answer": "이 리뷰에 따르면 선크림의 내분비교란 근거는 세포 실험이나 비현실적으로 높은 용량 연구에 한정되어, 사람에게 임상적으로 의미 있는 수준은 아니었다.",
+  "style": "paper",
+  "accent": "blue",
+  "product_hint": "UVA·UVB를 모두 막는 SPF50+ 광범위 차단 제품. 성분이 걱정되면 징크옥사이드·티타늄디옥사이드 기반 무기자차",
+  "image_prompt": "a plain white sunscreen tube with a small dollop of white cream beside it on a light surface",
+  "caveats": [
+    "호주 의료진을 위한 실용 가이드 리뷰 1편이라 국내 제품 규정과 다를 수 있음",
+    "특정 성분(벤조페논·옥토크릴렌)의 안전성은 자료에 직접 나오지 않음",
+    "SPF 표기가 부정확할 수 있다는 보고가 있어 표기 수치를 그대로 믿기 어려울 수 있음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "선크림이\n[[호르몬]]을\n{{교란}}한다는데\n진짜일까?"
+    },
+    {
+      "type": "body",
+      "text": "한 리뷰 논문에 따르면 선크림의 [[내분비교란]] 근거는 세포 실험이나 사람 몸에는 비현실적으로 높은 용량을 쓴 연구에 한정됐고, 사람에게 임상적으로 의미 있는 결과는 아니었어요."
+    },
+    {
+      "type": "body",
+      "text": "나노입자 걱정은 어떨까요? 징크옥사이드·티타늄디옥사이드는 각질층에 거의 스며들지 않아 전신 흡수나 독성 위험이 {{매우 낮다}}고 규제기관 검토에서 평가됐어요."
+    },
+    {
+      "type": "body",
+      "text": "비타민D가 부족해진다는 말도 있죠. 관찰 연구와 무작위 대조 시험 대부분에서 혈중 비타민D에 미치는 영향은 [[거의 없거나 미미]]했어요."
+    },
+    {
+      "type": "body",
+      "text": "이 리뷰는 UV 지수 3 이상이면 계절·날씨와 상관없이 매일 [[SPF50+]] 광범위 차단제를 바르고, 2시간마다 덧바르라고 권해요.",
+      "note": "※ 호주 기준 리뷰 논문 1편이라 국내 제품 규정과 다를 수 있어요."
+    },
+    {
+      "type": "body",
+      "text": "오늘 날씨 앱에서 [[UV 지수]]를 확인하세요. 3 이상이면 외출 20분 전에 얼굴·목·귀까지 선크림을 바르세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Sun protection: a practical guide for health professionals.",
+        "journal": "Australian prescriber",
+        "year": "2025",
+        "doi": "10.18773/austprescr.2025.046",
+        "authors": "Morriss S, Scardamaglia L"
+      }
+    }
+  ],
+  "images": [
+    "images/2167-sunscreen/01.jpg",
+    "images/2167-sunscreen/02.jpg",
+    "images/2167-sunscreen/03.jpg",
+    "images/2167-sunscreen/04.jpg",
+    "images/2167-sunscreen/05.jpg",
+    "images/2167-sunscreen/06.jpg",
+    "images/2167-sunscreen/07.jpg"
+  ],
+  "instagram_caption": "선크림이 호르몬을 교란한다는 말, 진짜일까요?\n\n호주의 한 리뷰 논문이 선크림에 대한 흔한 속설을 정리했어요. 내분비교란의 근거는 세포 실험이나 사람 몸에는 비현실적으로 높은 용량을 쓴 연구에 한정됐고, 사람에게 임상적으로 의미 있는 결과는 아니라고 해요.\n\n나노입자 걱정도 다뤘어요. 징크옥사이드와 티타늄디옥사이드는 피부 각질층에 거의 스며들지 않아 전신 흡수나 독성 위험이 매우 낮다고 규제기관이 평가했다고 해요. 비타민D 결핍 우려도 대부분의 연구에서 영향이 거의 없거나 미미했어요.\n\n이 리뷰는 UV 지수가 3 이상이면 계절과 날씨에 상관없이 매일 SPF50+ 광범위 차단제를 쓰라고 권해요. 외출 20분 전에 바르고, 2시간마다 덧바르고, 수영이나 땀 뒤에도 다시 발라야 해요. 모자, 옷, 선글라스, 그늘도 함께 쓰는 게 좋다고 해요.\n\n※ 호주 기준으로 쓴 리뷰 1편이라 국내 규정과 다를 수 있어요.\n\n✅ 오늘의 행동: 날씨 앱에서 UV 지수를 확인하고, 3 이상이면 얼굴·목·귀까지 선크림을 바르세요.\n\n📄 출처: Morriss S, Scardamaglia L, Australian Prescriber (2025). DOI 10.18773/austprescr.2025.046\n\n#논문팩트체크 #paper_factcheck #선크림 #자외선차단제 #무기자차 #자외선지수 #피부건강 #선크림추천 #SPF50 #광노화 #생활팩트체크 #비타민D\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "선크림이 호르몬을 교란한다는 말, 진짜일까?\n\n호주의 한 리뷰 논문을 보니, 내분비교란 근거는 세포 실험이나 비현실적으로 높은 용량 연구에 한정됐고 사람에게 임상적으로 의미 있는 결과는 아니라고 해요. 나노입자 독성이나 비타민D 결핍 우려도 위험이 매우 낮거나 영향이 미미하다고 정리했어요. 이 리뷰는 UV 지수 3 이상이면 매일 SPF50+를 바르라고 권해요. 여러분은 UV 지수 확인하고 선크림 바르세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Sun protection: a practical guide for health professionals.",
+    "journal": "Australian prescriber",
+    "year": "2025",
+    "doi": "10.18773/austprescr.2025.046",
+    "pmid": "41164102",
+    "authors": "Morriss S, Scardamaglia L",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41164102/"
+  },
+  "drafted_at": "2026-10-24T00:58:52.417670+09:00",
+  "model": "claude_code:default"
+}

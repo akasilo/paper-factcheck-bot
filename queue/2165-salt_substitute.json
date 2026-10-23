@@ -1,0 +1,82 @@
+{
+  "id": "2165-salt_substitute",
+  "approved": false,
+  "link": "",
+  "topic": "salt_substitute",
+  "topic_ko": "저염 소금",
+  "verdict": "good",
+  "evidence_level": "meta-analysis",
+  "source_text": "초록만",
+  "answer": "6개월 이상 추적한 시험들을 종합하니, 소금 대체품을 쓴 쪽의 전체 사망 위험이 약 12%, 심혈관 사망 위험이 약 17% 낮았다(둘 다 근거 확실성 낮음).",
+  "style": "paper",
+  "accent": "green",
+  "product_hint": "칼륨이 들어간 저염 소금 (신장 질환 등 칼륨 제한이 있으면 전문가와 상담)",
+  "image_prompt": "a small glass bowl of coarse white salt crystals next to a wooden spoon on a light kitchen counter",
+  "caveats": [
+    "근거 확실성이 낮거나 매우 낮음",
+    "한 대규모 시험이 근거를 지배함",
+    "대부분 중국·대만의 고령·고위험군이라 서구 인구 적용은 제한적"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "소금을 바꾸면\n[[사망 위험]]이\n달라질까?\n저염 소금 팩트체크"
+    },
+    {
+      "type": "body",
+      "text": "무작위 대조 시험 16편을 종합한 리뷰예요.\n그중 6개월 이상 추적한 8편이 사망·심혈관 사건을 분석했어요."
+    },
+    {
+      "type": "body",
+      "text": "소금 대체품을 쓴 쪽은 전체 사망 위험이 [[12% 낮은]] 경향이었어요.\n(6편, 2만 7천여 명, 위험비 0.88)",
+      "note": "※ 근거 확실성은 '낮음'"
+    },
+    {
+      "type": "body",
+      "text": "심혈관 질환 사망도 17% 낮았어요(위험비 0.83).\n주요 심혈관 사건은 15% 낮았지만 통계적 경계선이고 확실성은 매우 낮았어요."
+    },
+    {
+      "type": "body",
+      "text": "심각한 부작용은 큰 차이가 없었다는 결과(위험비 1.04)지만, 이 역시 확실성이 매우 낮아요.",
+      "note": "※ 한 대규모 시험이 근거 대부분을 차지, 8편 중 7편이 중국·대만 연구, 고위험·고령층 중심이라 서구 일반인에게 적용은 제한적"
+    },
+    {
+      "type": "body",
+      "text": "저염 소금은 [[칼륨]]이 들어 있어요. 신장 질환이나 칼륨 제한이 있다면 쓰기 전에 의사·약사와 먼저 상의하세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Long-Term Effect of Salt Substitution for Cardiovascular Outcomes : A Systematic Review and Meta-analysis.",
+        "journal": "Annals of internal medicine",
+        "year": "2024",
+        "doi": "10.7326/M23-2626",
+        "authors": "Greenwood H, Barnes K, Clark J et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2165-salt_substitute/01.jpg",
+    "images/2165-salt_substitute/02.jpg",
+    "images/2165-salt_substitute/03.jpg",
+    "images/2165-salt_substitute/04.jpg",
+    "images/2165-salt_substitute/05.jpg",
+    "images/2165-salt_substitute/06.jpg",
+    "images/2165-salt_substitute/07.jpg"
+  ],
+  "instagram_caption": "소금을 바꾸면 사망 위험이 달라질까?\n\n무작위 대조 시험 16편을 종합한 리뷰 논문을 살펴봤어요. 6개월 이상 추적해 사망과 심혈관 사건을 분석한 시험은 8편이었어요.\n\n소금 대체품을 쓴 쪽은 전체 사망 위험이 12%, 심혈관 사망 위험이 17% 낮은 경향이 있었어요. 다만 두 결과 모두 근거 확실성은 '낮음'이었어요. 주요 심혈관 사건은 15% 낮았지만 통계적으로 경계선이었고, 심각한 부작용은 큰 차이가 없었다는 결과지만 확실성이 매우 낮았어요.\n\n한계도 분명해요. 근거 대부분이 한 대규모 시험에서 나왔고, 8편 중 7편이 중국·대만 연구이며 고령·고위험군 중심이었어요. 서구 인구에 그대로 적용하기는 어려워요.\n\n👉 오늘의 행동: 저염 소금은 칼륨이 들어 있어요. 신장 질환이나 칼륨 제한이 있다면 쓰기 전에 의사·약사와 먼저 상의하세요.\n\n📄 출처: Greenwood H, Barnes K, Clark J et al., Annals of internal medicine (2024). DOI 10.7326/M23-2626\n\n#논문팩트체크 #paper_factcheck #저염소금 #소금 #나트륨 #칼륨 #혈압 #심혈관 #건강식단 #저염식 #메타분석 #식습관\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "소금을 바꾸면 사망 위험이 달라질까?\n\n무작위 대조 시험 16편을 종합한 리뷰를 보니, 소금 대체품을 쓴 쪽은 전체 사망 위험이 12%, 심혈관 사망 위험이 17% 낮은 경향이었대요. 다만 근거 확실성은 낮고, 대부분 중국·대만의 고령·고위험군 연구라 일반화는 조심해야 해요. 심각한 부작용은 큰 차이가 없다는 결과였지만 이것도 확실성이 매우 낮아요. 여러분은 저염 소금 써보셨나요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Long-Term Effect of Salt Substitution for Cardiovascular Outcomes : A Systematic Review and Meta-analysis.",
+    "journal": "Annals of internal medicine",
+    "year": "2024",
+    "doi": "10.7326/M23-2626",
+    "pmid": "38588546",
+    "authors": "Greenwood H, Barnes K, Clark J et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38588546/"
+  },
+  "drafted_at": "2026-10-24T00:57:12.531086+09:00",
+  "model": "claude_code:default"
+}
