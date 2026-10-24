@@ -1,0 +1,81 @@
+{
+  "id": "2169-standing_desk",
+  "approved": false,
+  "link": "",
+  "topic": "standing_desk",
+  "topic_ko": "스탠딩 데스크",
+  "verdict": "mixed",
+  "evidence_level": "rct",
+  "source_text": "PMC11492196 전문",
+  "answer": "이 6개월 무작위 대조 시험에서 스탠딩 데스크 집단은 대조군과 비교해 앉는 시간이 유의하게 줄지 않았다.",
+  "style": "paper",
+  "accent": "blue",
+  "product_hint": "높이 조절이 쉽고 키보드·서류를 둘 작업 공간이 넉넉한 스탠딩 데스크",
+  "image_prompt": "a height-adjustable sit-stand desk raised to standing height with an empty monitor stand in a plain office",
+  "caveats": [
+    "참가자 39명(분석 38명)으로 표본이 작고 대학 사무직·대부분 여성이라 일반화에 한계가 있음",
+    "3개월 결과는 데스크 집단 일부 11명만 측정했고 대조군과 비교한 것이 아님",
+    "피로·불편 감소 등은 집단 내 변화이며 대조군과의 차이로 확인되지 않음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "스탠딩 데스크\n사면 [[앉는 시간]]\n{{줄어들까요?}}"
+    },
+    {
+      "type": "body",
+      "text": "포르투갈 사무직 39명을 6개월간 추적한 무작위 대조 시험입니다.\n스탠딩 데스크를 받은 집단과 받지 않은 집단을 비교했어요."
+    },
+    {
+      "type": "body",
+      "text": "결과: 6개월 뒤 [[앉는 시간]]은 두 집단 사이에 유의한 차이가 없었습니다. 대부분의 다른 지표도 마찬가지였어요."
+    },
+    {
+      "type": "body",
+      "text": "일부(11명)를 본 3개월 시점에는 앉는 시간이 하루 44분 줄었지만, 사용 일수는 주 4.6일에서 3.1일로 줄었습니다."
+    },
+    {
+      "type": "body",
+      "text": "{{허리둘레}}는 대조군 쪽이 1.81cm 더 줄어 오히려 유리했습니다. 한편 데스크 집단 안에서는 피로와 근골격계 불편이 줄었다는 결과도 있었어요.",
+      "note": "※ 대학 사무직 위주, 대부분 여성. 일부 지표는 표본이 작아 검출력이 부족했을 수 있음"
+    },
+    {
+      "type": "body",
+      "text": "책상만 바꾸지 말고 [[30분마다 알람]]을 맞춰 일어서는 습관을 함께 만들어 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "The effectiveness of a 6-month intervention with sit-stand workstation in office workers: Results from the SUFHA cluster randomized controlled trial.",
+        "journal": "Work (Reading, Mass.)",
+        "year": "2024",
+        "doi": "10.3233/WOR-230624",
+        "authors": "Júdice PB, Silva H, Teno SC et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2169-standing_desk/01.jpg",
+    "images/2169-standing_desk/02.jpg",
+    "images/2169-standing_desk/03.jpg",
+    "images/2169-standing_desk/04.jpg",
+    "images/2169-standing_desk/05.jpg",
+    "images/2169-standing_desk/06.jpg",
+    "images/2169-standing_desk/07.jpg"
+  ],
+  "instagram_caption": "스탠딩 데스크만 사면 앉는 시간이 줄어들까요?\n\n포르투갈 사무직 39명을 6개월간 비교한 무작위 대조 시험이 있습니다. 한 집단에는 높이 조절 책상을 주었고, 다른 집단은 그대로 두었어요.\n\n결과는 의외였습니다. 6개월 뒤 앉는 시간은 두 집단 사이에 유의한 차이가 없었고, 대부분의 지표도 비슷했습니다. 허리둘레는 오히려 대조군 쪽이 1.81cm 더 줄었어요.\n\n다만 일부(11명)를 본 3개월 시점에는 앉는 시간이 하루 44분 줄었습니다. 시간이 지나며 사용 일수가 주 4.6일에서 3.1일로 줄었고, 연구진은 바쁜 업무와 독려 부족을 이유로 짚었어요. 데스크 집단 안에서는 피로와 근골격계 불편이 줄었다는 결과도 있었지만, 대조군과의 차이로 확인된 것은 아닙니다.\n\n✅ 오늘의 행동: 책상만 바꾸지 말고 30분마다 알람을 맞춰 일어서는 습관을 함께 만들어 보세요.\n\n📄 출처: Júdice PB 외, Work (2024). DOI 10.3233/WOR-230624\n\n#논문팩트체크 #paper_factcheck #스탠딩데스크 #높이조절책상 #사무직건강 #오래앉기 #좌식생활 #직장인건강 #사무실 #재택근무 #거북목 #생활습관\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "스탠딩 데스크 사면 앉는 시간이 줄까?\n\n포르투갈 사무직 39명을 6개월 비교한 무작위 대조 시험을 봤어요. 결과는 의외로, 6개월 뒤 앉는 시간이 대조군과 유의하게 다르지 않았습니다. 3개월쯤엔 하루 44분 줄었는데(일부 11명), 쓰는 날이 주 4.6일에서 3.1일로 줄었대요. 연구진은 바쁜 업무와 독려 부족을 이유로 봤습니다. 책상만 바꾸기보다 알람 같은 습관 장치가 필요해 보여요. 여러분은 스탠딩 데스크 얼마나 쓰세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "The effectiveness of a 6-month intervention with sit-stand workstation in office workers: Results from the SUFHA cluster randomized controlled trial.",
+    "journal": "Work (Reading, Mass.)",
+    "year": "2024",
+    "doi": "10.3233/WOR-230624",
+    "pmid": "38669507",
+    "authors": "Júdice PB, Silva H, Teno SC et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38669507/"
+  },
+  "drafted_at": "2026-10-24T23:10:13.902696+09:00",
+  "model": "claude_code:default"
+}

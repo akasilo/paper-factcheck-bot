@@ -1,0 +1,82 @@
+{
+  "id": "2168-plastic_container",
+  "approved": false,
+  "link": "",
+  "topic": "plastic_container",
+  "topic_ko": "플라스틱 용기",
+  "verdict": "mixed",
+  "evidence_level": "review",
+  "source_text": "초록만",
+  "answer": "한 역학 리뷰에서 프탈레이트 노출은 남성의 정자 질 저하·전립선 질환·발기부전과 연관됐고, 여성의 생식 질환과의 연관은 보고됐으나 근거가 엇갈렸다.",
+  "style": "geo",
+  "accent": "yellow",
+  "product_hint": "유리·스테인리스 재질의 밀폐용기",
+  "image_prompt": "a stack of clear plastic food storage containers with snap lids on a plain kitchen counter",
+  "caveats": [
+    "식품 용기에서의 실제 노출량이나 용기 제품의 위험을 직접 측정한 연구가 아님",
+    "여성 생식 질환과의 연관은 근거가 일관되지 않음",
+    "초록에 구체적 수치가 없음"
+  ],
+  "cards": [
+    {
+      "type": "hook",
+      "kicker": "논문 팩트체크",
+      "text": "플라스틱 용기\n[[가소제]]\n{{생식 건강}}\n정말 영향?"
+    },
+    {
+      "type": "body",
+      "text": "플라스틱 용기·포장에 쓰이는 [[프탈레이트]]는 호르몬 작용을 방해하는 물질로 분류돼요. 아주 낮은 노출에서도 영향이 있을 수 있다고 해요.",
+      "note": "※ 식품 용기 자체의 위험을 직접 잰 연구는 아니에요."
+    },
+    {
+      "type": "body",
+      "text": "한 역학 리뷰에 따르면 남성에서는 프탈레이트 노출이 {{정자 질 저하}}, 전립선 질환, 발기부전과 연관이 있다는 결과가 있었어요."
+    },
+    {
+      "type": "body",
+      "text": "여성에서는 자궁내막증, 다낭성난소증후군, 조기 난소부전, 불임, 유산과 연관이 보고됐지만 [[근거가 엇갈렸어요]]."
+    },
+    {
+      "type": "body",
+      "text": "반면 태아 때 노출과 신생아 항문-생식기 거리 단축의 연관은 아직 불분명하다고 해요. 연관성이라는 뜻이지 인과가 확정된 건 아니에요.",
+      "note": "※ 세포·동물 실험 결과도 함께 종합한 리뷰예요."
+    },
+    {
+      "type": "body",
+      "text": "가임기 여성·임신부·아이가 쓰는 용기라면, 특히 뜨거운 음식은 [[유리나 스테인리스 용기]]에 옮겨 담아 보세요."
+    },
+    {
+      "type": "source",
+      "paper": {
+        "title": "Phthalate exposure and human reproductive health: an epidemiological review.",
+        "journal": "Drug and chemical toxicology",
+        "year": "2026",
+        "doi": "10.1080/01480545.2026.2711644",
+        "authors": "Sun B, Shi H, Liu X et al."
+      }
+    }
+  ],
+  "images": [
+    "images/2168-plastic_container/01.jpg",
+    "images/2168-plastic_container/02.jpg",
+    "images/2168-plastic_container/03.jpg",
+    "images/2168-plastic_container/04.jpg",
+    "images/2168-plastic_container/05.jpg",
+    "images/2168-plastic_container/06.jpg",
+    "images/2168-plastic_container/07.jpg"
+  ],
+  "instagram_caption": "플라스틱 용기 속 가소제, 생식 건강과 정말 관련 있을까요?\n\n플라스틱 포장과 용기에는 프탈레이트라는 가소제가 쓰여요. 호르몬 작용을 방해하는 물질로 분류되고, 아주 낮은 수준의 노출에서도 영향이 있을 수 있다고 해요.\n\n한 역학 리뷰에 따르면 남성에서는 정자 질 저하, 전립선 질환, 발기부전과의 연관이 나타났어요. 이는 불임에 일조할 가능성을 시사한다고 해요.\n\n여성에서는 자궁내막증, 다낭성난소증후군, 조기 난소부전, 불임, 유산과의 연관이 보고됐지만 연구 결과가 일관되지 않았어요. 신생아 항문-생식기 거리 단축과의 연관도 아직 불분명해요.\n\n※ 연관성을 본 결과이고 인과가 확정된 건 아니에요. 용기 제품 자체의 위험을 직접 측정한 연구도 아니에요.\n\n✅ 오늘의 행동: 특히 가임기 여성·임신부·아이가 먹는 뜨거운 음식은 유리나 스테인리스 용기에 옮겨 담아 보세요.\n\n📄 출처: Sun B, Shi H, Liu X et al., Drug and chemical toxicology (2026). DOI 10.1080/01480545.2026.2711644\n\n#논문팩트체크 #paper_factcheck #프탈레이트 #가소제 #플라스틱용기 #환경호르몬 #내분비교란물질 #생식건강 #임신준비 #유리용기 #스테인리스용기 #식품용기\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.",
+  "threads_text": "플라스틱 용기 속 가소제, 생식 건강과 관련 있을까?\n\n최근 역학 리뷰를 보니 프탈레이트 노출이 남성의 정자 질 저하, 전립선 질환, 발기부전과 연관이 있다는 결과가 있었대요. 여성은 자궁내막증, 유산 등과 연관이 보고됐지만 근거가 엇갈렸고요. 인과가 확정된 건 아니라서 겁먹을 필요는 없지만, 뜨거운 음식은 유리나 스테인리스 용기에 담아 보는 것도 방법이에요. 여러분은 어떤 용기 쓰세요?",
+  "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "paper": {
+    "title": "Phthalate exposure and human reproductive health: an epidemiological review.",
+    "journal": "Drug and chemical toxicology",
+    "year": "2026",
+    "doi": "10.1080/01480545.2026.2711644",
+    "pmid": "42572446",
+    "authors": "Sun B, Shi H, Liu X et al.",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42572446/"
+  },
+  "drafted_at": "2026-10-24T23:09:27.241495+09:00",
+  "model": "claude_code:default"
+}

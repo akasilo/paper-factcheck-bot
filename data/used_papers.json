@@ -999,5 +999,19 @@
     "date": "2026-10-24",
     "topic": "sunscreen",
     "title": "Sun protection: a practical guide for health professionals."
+  },
+  {
+    "pmid": "42572446",
+    "doi": "10.1080/01480545.2026.2711644",
+    "date": "2026-10-24",
+    "topic": "plastic_container",
+    "title": "Phthalate exposure and human reproductive health: an epidemiological review."
+  },
+  {
+    "pmid": "38669507",
+    "doi": "10.3233/WOR-230624",
+    "date": "2026-10-24",
+    "topic": "standing_desk",
+    "title": "The effectiveness of a 6-month intervention with sit-stand workstation in office workers: Results from the SUFHA cluster randomized controlled trial."
   }
 ]
