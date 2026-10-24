@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-24",
+  "slot": "evening",
+  "queue": {
+    "id": "2155-compression_socks",
+    "approved": true,
+    "link": "https://link.coupang.com/a/hLqzbGIF7Q",
+    "topic": "compression_socks",
+    "topic_ko": "압박 스타킹",
+    "verdict": "mixed",
+    "evidence_level": "systematic review",
+    "source_text": "PMC11098991 전문",
+    "answer": "한 리뷰 논문에서 어떤 회복법도 일관된 효과는 없었지만, 8~24시간 회복에서는 압박 의류가 긍정적인 경향을 보였다.",
+    "style": "paper",
+    "accent": "blue",
+    "product_hint": "의료용 압박 스타킹 등 단계별 압박 강도가 표시된 압박 의류",
+    "image_prompt": "a pair of plain gray knee-high compression socks laid flat on a wooden floor",
+    "caveats": [
+      "회복 시간대(8~24시간) 분석은 8편의 연구에만 근거함",
+      "포함된 리뷰 22편 중 19편이 품질 낮음~보통 수준",
+      "압박 스타킹과 스포츠용 압박 의류가 완전히 같은지는 자료에 없음"
+    ],
+    "cards": [
+      {
+        "type": "hook",
+        "kicker": "논문 팩트체크",
+        "text": "달린 뒤 신는\n[[압박 스타킹]]\n회복에 {{진짜}}\n도움 될까?"
+      },
+      {
+        "type": "body",
+        "text": "지구력 선수 대상 22편의 리뷰를 종합한 리뷰에서, [[어떤 회복법도 일관된 효과]]를 보이지 않았습니다.",
+        "note": "※ 63개 연구, 지구력 선수 1,100명 기준"
+      },
+      {
+        "type": "body",
+        "text": "다만 훈련 사이 회복 시간대(8~24시간)만 따로 보면 압박 의류와 냉치료는 [[긍정적인 경향]]을 보였습니다.",
+        "note": "※ 이 시간대를 다룬 연구는 8편뿐"
+      },
+      {
+        "type": "body",
+        "text": "마사지는 같은 시간대 분석에서 효과가 없는 것으로 나타났습니다. 근육통은 압박 의류·마사지·냉치료에서 줄었다는 보고가 있었습니다."
+      },
+      {
+        "type": "body",
+        "text": "결론: 한 가지 회복법을 권할 근거는 부족합니다. 압박 의류는 {{유망하지만 확정은 아닙니다}}.",
+        "note": "※ 포함된 리뷰 22편 중 19편이 품질 낮음~보통"
+      },
+      {
+        "type": "body",
+        "text": "다음 장거리 달리기 뒤엔 압박 의류를 [[한 번 시험 삼아]] 신어 보고, 내 몸의 느낌을 기록해 보세요."
+      },
+      {
+        "type": "source",
+        "paper": {
+          "title": "Effectiveness of Recovery Strategies After Training and Competition in Endurance Athletes: An Umbrella Review.",
+          "journal": "Sports medicine - open",
+          "year": "2024",
+          "doi": "10.1186/s40798-024-00724-6",
+          "authors": "Li S, Kempe M, Brink M et al."
+        }
+      }
+    ],
+    "images": [
+      "images/2155-compression_socks/01.jpg",
+      "images/2155-compression_socks/02.jpg",
+      "images/2155-compression_socks/03.jpg",
+      "images/2155-compression_socks/04.jpg",
+      "images/2155-compression_socks/05.jpg",
+      "images/2155-compression_socks/06.jpg",
+      "images/2155-compression_socks/07.jpg"
+    ],
+    "instagram_caption": "달린 뒤 신는 압박 스타킹, 회복에 진짜 도움 될까요?\n\n지구력 선수 대상 22편의 리뷰를 종합해 살펴본 한 논문이 있습니다. 63개 연구, 지구력 선수 1,100명이 대상이었어요. 결과는 어떤 회복법도 일관된 효과를 보이지 않았다는 것이었습니다.\n\n다만 훈련 사이 회복 시간대(8~24시간)만 따로 보면 압박 의류와 냉치료가 긍정적인 경향을 보였고, 마사지는 효과가 없었습니다. 근육통은 압박 의류, 마사지, 냉치료에서 줄었다는 보고도 있었어요.\n\n하지만 이 시간대를 다룬 연구가 적고, 포함된 리뷰 대부분이 품질 낮음~보통 수준이라 확정하기는 어렵습니다. 압박 의류는 유망하지만 아직 더 확인이 필요한 방법입니다.\n\n✅ 오늘의 행동: 다음 장거리 달리기 뒤 압박 의류를 한 번 시험 삼아 신어 보고 내 느낌을 기록해 보세요.\n\n📄 출처: Li S, Kempe M, Brink M 외, Sports Medicine - Open (2024). DOI 10.1186/s40798-024-00724-6\n\n#논문팩트체크 #paper_factcheck #압박스타킹 #압박의류 #러닝회복 #마라톤 #회복법 #냉수욕 #마사지 #러닝 #지구력운동 #운동후회복\n*본 카드뉴스는 AI의 도움을 받아 제작되었습니다.\n\n🔗 제품 링크는 프로필 링크(링크 모음)에서 볼 수 있어요",
+    "threads_text": "달린 뒤 압박 스타킹, 회복에 도움 될까?\n\n지구력 선수 대상 22편의 리뷰를 종합한 논문을 보니, 어떤 회복법도 일관된 효과는 없었대요. 그래도 훈련 사이 8~24시간 회복만 보면 압박 의류와 냉치료는 긍정적인 경향이 있었고, 마사지는 효과가 없었어요. 다만 이 시간대를 본 연구가 적어서 확정은 어렵대요. 여러분은 달리고 나서 뭐 하세요?",
+    "threads_reply": "📎 논문에서 말한 조건에 맞는 제품 예시예요\n{link}\n\n이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+    "paper": {
+      "title": "Effectiveness of Recovery Strategies After Training and Competition in Endurance Athletes: An Umbrella Review.",
+      "journal": "Sports medicine - open",
+      "year": "2024",
+      "doi": "10.1186/s40798-024-00724-6",
+      "pmid": "38753045",
+      "authors": "Li S, Kempe M, Brink M et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38753045/"
+    },
+    "drafted_at": "2026-10-11T22:20:27.622356+09:00",
+    "model": "claude_code:default",
+    "approved_at": "2026-10-12T08:11:51.164671+09:00"
+  },
+  "attempts": 1,
+  "instagram_post_id": "18221338147356309",
+  "instagram_posted_at": "2026-10-24T19:12:42.638798+09:00",
+  "instagram_reel_id": "18115836131026086",
+  "instagram_reel_posted_at": "2026-10-24T19:14:08.134463+09:00",
+  "threads_post_id": "18024663095930828",
+  "threads_posted_at": "2026-10-24T19:15:16.552559+09:00",
+  "threads_permalink": "https://www.threads.com/@paper_factcheck/post/De35QaBk2pw",
+  "threads_reply_id": "18064726709543490",
+  "youtube_video_id": "e7Gv1sD_EzA",
+  "youtube_url": "https://youtube.com/shorts/e7Gv1sD_EzA",
+  "youtube_posted_at": "2026-10-24T19:15:39.307798+09:00",
+  "youtube_privacy": "public",
+  "youtube_thumbnail": "01.jpg",
+  "youtube_thumbnail_url": "https://i.ytimg.com/vi/e7Gv1sD_EzA/maxresdefault.jpg",
+  "completed_at": "2026-10-24T19:15:42.382852+09:00"
+}
